@@ -1,0 +1,693 @@
+{% doc %}
+  @prompt
+    Create a section that can have up to 6 videos on a carousel. The videos should have the option of text overlay with or without a container. The size should be adjustable.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-video-carousel-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-video-carousel__track-{{ ai_gen_id }} {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: {{ block.settings.gap }}px;
+  }
+
+  .ai-video-carousel__slide-{{ ai_gen_id }} {
+    flex: 0 0 100%;
+    position: relative;
+    aspect-ratio: {{ block.settings.aspect_ratio }};
+    background-color: #000000;
+  }
+
+  .ai-video-carousel__video-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-video-carousel__overlay-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: {{ block.settings.text_vertical_alignment }};
+    justify-content: {{ block.settings.text_horizontal_alignment }};
+    padding: 20px;
+    pointer-events: none;
+  }
+
+  .ai-video-carousel__text-container-{{ ai_gen_id }} {
+    {% if block.settings.show_text_container %}
+      background-color: {{ block.settings.container_background_color }};
+      padding: {{ block.settings.container_padding }}px;
+      border-radius: {{ block.settings.container_border_radius }}px;
+    {% endif %}
+    max-width: 90%;
+    text-align: {{ block.settings.text_alignment }};
+  }
+
+  .ai-video-carousel__heading-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.heading_size }}px;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+  }
+
+  .ai-video-carousel__subtext-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.subtext_size }}px;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .ai-video-carousel__controls-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .ai-video-carousel__nav-button-{{ ai_gen_id }} {
+    background-color: {{ block.settings.nav_button_color }};
+    color: {{ block.settings.nav_button_icon_color }};
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-video-carousel__nav-button-{{ ai_gen_id }}:hover {
+    opacity: 0.8;
+  }
+
+  .ai-video-carousel__nav-button-{{ ai_gen_id }}:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .ai-video-carousel__dots-{{ ai_gen_id }} {
+    display: flex;
+    gap: 8px;
+  }
+
+  .ai-video-carousel__dot-{{ ai_gen_id }} {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: {{ block.settings.dot_color }};
+    opacity: 0.5;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-video-carousel__dot-{{ ai_gen_id }}.active {
+    opacity: 1;
+  }
+
+  .ai-video-carousel__placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-video-carousel__placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .ai-video-carousel__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-video-carousel__heading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.heading_size }}px * 0.8);
+    }
+
+    .ai-video-carousel__subtext-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.subtext_size }}px * 0.8);
+    }
+
+    .ai-video-carousel__text-container-{{ ai_gen_id }} {
+      {% if block.settings.show_text_container %}
+        padding: calc({{ block.settings.container_padding }}px * 0.7);
+      {% endif %}
+    }
+  }
+{% endstyle %}
+
+<video-carousel-{{ ai_gen_id }}
+  class="ai-video-carousel-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-video-carousel__track-{{ ai_gen_id }}">
+    {% for i in (1..6) %}
+      {% liquid
+        assign video_key = 'video_' | append: i
+        assign heading_key = 'heading_' | append: i
+        assign subtext_key = 'subtext_' | append: i
+        assign video = block.settings[video_key]
+        assign heading = block.settings[heading_key]
+        assign subtext = block.settings[subtext_key]
+      %}
+
+      {% if video != blank %}
+        <div class="ai-video-carousel__slide-{{ ai_gen_id }}" data-slide="{{ i }}">
+          <video
+            class="ai-video-carousel__video-{{ ai_gen_id }}"
+            src="{{ video.sources[1].url }}"
+            {% if block.settings.autoplay %}autoplay{% endif %}
+            {% if block.settings.loop %}loop{% endif %}
+            {% if block.settings.muted %}muted{% endif %}
+            playsinline
+          ></video>
+
+          {% if heading != blank or subtext != blank %}
+            <div class="ai-video-carousel__overlay-{{ ai_gen_id }}">
+              <div class="ai-video-carousel__text-container-{{ ai_gen_id }}">
+                {% if heading != blank %}
+                  <h2 class="ai-video-carousel__heading-{{ ai_gen_id }}">{{ heading }}</h2>
+                {% endif %}
+                {% if subtext != blank %}
+                  <p class="ai-video-carousel__subtext-{{ ai_gen_id }}">{{ subtext }}</p>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+
+    {% assign has_video = false %}
+    {% for i in (1..6) %}
+      {% liquid
+        assign video_key = 'video_' | append: i
+        assign video = block.settings[video_key]
+      %}
+      {% if video != blank %}
+        {% assign has_video = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+    {% unless has_video %}
+      <div class="ai-video-carousel__slide-{{ ai_gen_id }}">
+        <div class="ai-video-carousel__placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-video-carousel__empty-state-{{ ai_gen_id }}">
+            Next, add videos to your carousel
+          </div>
+        </div>
+      </div>
+    {% endunless %}
+  </div>
+
+  {% if has_video %}
+    <div class="ai-video-carousel__controls-{{ ai_gen_id }}">
+      <button
+        class="ai-video-carousel__nav-button-{{ ai_gen_id }} ai-video-carousel__prev-{{ ai_gen_id }}"
+        aria-label="Previous video"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="ai-video-carousel__dots-{{ ai_gen_id }}"></div>
+
+      <button
+        class="ai-video-carousel__nav-button-{{ ai_gen_id }} ai-video-carousel__next-{{ ai_gen_id }}"
+        aria-label="Next video"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+  {% endif %}
+</video-carousel-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class VideoCarousel{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.currentSlide = 0;
+        this.slides = [];
+      }
+
+      connectedCallback() {
+        this.track = this.querySelector('.ai-video-carousel__track-{{ ai_gen_id }}');
+        this.slides = Array.from(this.querySelectorAll('.ai-video-carousel__slide-{{ ai_gen_id }}[data-slide]'));
+        this.prevButton = this.querySelector('.ai-video-carousel__prev-{{ ai_gen_id }}');
+        this.nextButton = this.querySelector('.ai-video-carousel__next-{{ ai_gen_id }}');
+        this.dotsContainer = this.querySelector('.ai-video-carousel__dots-{{ ai_gen_id }}');
+
+        if (this.slides.length === 0) return;
+
+        this.createDots();
+        this.setupEventListeners();
+        this.updateCarousel();
+      }
+
+      createDots() {
+        this.slides.forEach((slide, index) => {
+          const dot = document.createElement('button');
+          dot.className = 'ai-video-carousel__dot-{{ ai_gen_id }}';
+          dot.setAttribute('aria-label', `Go to video ${index + 1}`);
+          dot.addEventListener('click', () => this.goToSlide(index));
+          this.dotsContainer.appendChild(dot);
+        });
+      }
+
+      setupEventListeners() {
+        if (this.prevButton) {
+          this.prevButton.addEventListener('click', () => this.previousSlide());
+        }
+        if (this.nextButton) {
+          this.nextButton.addEventListener('click', () => this.nextSlide());
+        }
+      }
+
+      goToSlide(index) {
+        this.currentSlide = index;
+        this.updateCarousel();
+      }
+
+      previousSlide() {
+        this.currentSlide = Math.max(0, this.currentSlide - 1);
+        this.updateCarousel();
+      }
+
+      nextSlide() {
+        this.currentSlide = Math.min(this.slides.length - 1, this.currentSlide + 1);
+        this.updateCarousel();
+      }
+
+      updateCarousel() {
+        const gap = {{ block.settings.gap }};
+        const slideWidth = this.slides[0].offsetWidth;
+        const offset = -(this.currentSlide * (slideWidth + gap));
+        this.track.style.transform = `translateX(${offset}px)`;
+
+        const dots = this.dotsContainer.querySelectorAll('.ai-video-carousel__dot-{{ ai_gen_id }}');
+        dots.forEach((dot, index) => {
+          if (index === this.currentSlide) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+
+        if (this.prevButton) {
+          this.prevButton.disabled = this.currentSlide === 0;
+        }
+        if (this.nextButton) {
+          this.nextButton.disabled = this.currentSlide === this.slides.length - 1;
+        }
+      }
+    }
+
+    customElements.define('video-carousel-{{ ai_gen_id }}', VideoCarousel{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Video carousel",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "select",
+      "id": "aspect_ratio",
+      "label": "Aspect ratio",
+      "options": [
+        {
+          "value": "16/9",
+          "label": "16:9"
+        },
+        {
+          "value": "4/3",
+          "label": "4:3"
+        },
+        {
+          "value": "1/1",
+          "label": "1:1"
+        },
+        {
+          "value": "3/4",
+          "label": "3:4"
+        },
+        {
+          "value": "9/16",
+          "label": "9:16"
+        }
+      ],
+      "default": "16/9"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Gap between slides",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Video playback"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Autoplay",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "loop",
+      "label": "Loop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "muted",
+      "label": "Muted",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Text overlay"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_text_container",
+      "label": "Show text container",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "container_background_color",
+      "label": "Container background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "container_padding",
+      "label": "Container padding",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "container_border_radius",
+      "label": "Container border radius",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 16,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "subtext_size",
+      "label": "Subtext size",
+      "min": 12,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "text_horizontal_alignment",
+      "label": "Horizontal position",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "text_vertical_alignment",
+      "label": "Vertical position",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Top"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Bottom"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Navigation"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_color",
+      "label": "Button background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_icon_color",
+      "label": "Button icon color",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "dot_color",
+      "label": "Dot color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Video 1"
+    },
+    {
+      "type": "video",
+      "id": "video_1",
+      "label": "Video"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading_1",
+      "label": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtext_1",
+      "label": "Subtext"
+    },
+    {
+      "type": "header",
+      "content": "Video 2"
+    },
+    {
+      "type": "video",
+      "id": "video_2",
+      "label": "Video"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading_2",
+      "label": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtext_2",
+      "label": "Subtext"
+    },
+    {
+      "type": "header",
+      "content": "Video 3"
+    },
+    {
+      "type": "video",
+      "id": "video_3",
+      "label": "Video"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading_3",
+      "label": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtext_3",
+      "label": "Subtext"
+    },
+    {
+      "type": "header",
+      "content": "Video 4"
+    },
+    {
+      "type": "video",
+      "id": "video_4",
+      "label": "Video"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading_4",
+      "label": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtext_4",
+      "label": "Subtext"
+    },
+    {
+      "type": "header",
+      "content": "Video 5"
+    },
+    {
+      "type": "video",
+      "id": "video_5",
+      "label": "Video"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading_5",
+      "label": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtext_5",
+      "label": "Subtext"
+    },
+    {
+      "type": "header",
+      "content": "Video 6"
+    },
+    {
+      "type": "video",
+      "id": "video_6",
+      "label": "Video"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading_6",
+      "label": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtext_6",
+      "label": "Subtext"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video carousel"
+    }
+  ]
+}
+{% endschema %}

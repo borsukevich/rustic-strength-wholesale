@@ -1,0 +1,227 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1659729891c8991dca": {
+      "type": "video",
+      "settings": {
+        "heading": "Retail Pricing Tool",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/ijKHDZ0Fpk4",
+        "cover_image": "shopify://shop_images/1.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1659730176b6cf0fd0": {
+      "type": "rich-text",
+      "blocks": {
+        "165973017667d98ea7-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download Free Pricing Tool",
+            "button_link": "https://cdn.shopify.com/s/files/1/0344/1809/8221/files/Retail_Pricing_Tool.xlsx?v=1659734336",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "165973017667d98ea7-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Easily find your: </p><p>- per ounce cost of any item, including shipping</p><p>- pricing to make a 2x, 3x or 4x mark-up on that product</p>"
+          }
+        }
+      },
+      "block_order": [
+        "165973017667d98ea7-2",
+        "165973017667d98ea7-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "1659971708e78101ff": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/idgvPydyArA",
+        "cover_image": "shopify://shop_images/2.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "165997179202f421bf": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/CoRgxpDsciA",
+        "cover_image": "shopify://shop_images/3.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16599718599a439c3b": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/tjMcsGLjq98",
+        "cover_image": "shopify://shop_images/4.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16599719481195fa3a": {
+      "type": "rich-text",
+      "blocks": {
+        "1659971948e6188da3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "More business tools and learning videos coming soon",
+            "heading_size": "h1"
+          }
+        },
+        "1659971948e6188da3-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "1659971948e6188da3-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1659971948e6188da3-0",
+        "1659971948e6188da3-1",
+        "1659971948e6188da3-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "165972978820b8ba32": {
+      "type": "multicolumn",
+      "blocks": {
+        "16597297880c558334-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2022-08-05_at_3.57.47_PM.png",
+            "title": "Example 2",
+            "text": "<p>Discovering pricing for two cubetainers</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16597297880c558334-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2022-08-05_at_4.04.08_PM.png",
+            "title": "Example 3",
+            "text": "<p>Breaking down a more complicated invoice, with different products</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16597297880c558334-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2022-08-05_at_4.05.04_PM.png",
+            "title": "Example 4",
+            "text": "<p>Finding pricing on an invoice with a shipping refund + different products + non-liquid products</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16597297880c558334-0",
+        "16597297880c558334-1",
+        "16597297880c558334-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1659729891c8991dca",
+    "1659730176b6cf0fd0",
+    "1659971708e78101ff",
+    "165997179202f421bf",
+    "16599718599a439c3b",
+    "16599719481195fa3a",
+    "165972978820b8ba32"
+  ]
+}

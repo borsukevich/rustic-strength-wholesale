@@ -1,0 +1,365 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_NidJbD": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_YP9JLi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up with your email",
+            "heading_size": "hxl"
+          }
+        },
+        "text_YCeYRb": {
+          "type": "text",
+          "settings": {
+            "text": "Stay in the loop with Exclusive Offers, Early Access and Valuable Information",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YP9JLi",
+        "text_YCeYRb"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Mock_Refill_Shop_3X2_2_bd14e841-96ec-41b8-8ab7-b92fb6c06bb4.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "rich_text_XzRNAw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7Lhiyh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up with email to receive access to:",
+            "heading_size": "h1"
+          }
+        },
+        "text_9XTERw": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Discounts and Promotions</li><li>Exclusive Offers</li><li>Early Access</li><li>Toxin-Free Living tips to share with your Customers</li></ul>"
+          }
+        },
+        "button_T9xxHG": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7Lhiyh",
+        "text_9XTERw",
+        "button_T9xxHG"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "newsletter_MyWbdY": {
+      "type": "newsletter",
+      "blocks": {
+        "paragraph_8GLnfR": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<h5>No Spam, we promise!</h5>"
+          }
+        },
+        "email_form_ELpVJF": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "paragraph_8GLnfR",
+        "email_form_ELpVJF"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "18cfd24b-7c40-4c9e-92f3-cd67457c438a": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<center>\n<div class=\"elfsight-sapp-2e3d9916-1c81-4e01-96d5-026f5d446cf1\"></div>\n<p>Above is based on total gallons sold to refill shops as of 9/1/2023, converted to units of 16oz single-use containers.</p> <div class=\"elfsight-sapp-87907066-fea9-460d-b1a6-13c38cf1af95\"></div>\n<center>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_4Tj9qx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HNaxWj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get even more perks when you sign up for SMS!",
+            "heading_size": "h1"
+          }
+        },
+        "text_qr8Fqm": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_PYbE4n": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HNaxWj",
+        "text_qr8Fqm",
+        "button_PYbE4n"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-85956505-aafa-4bf3-8b68-54c9e4bac973",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "17550064844c9990ff": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_XfDpwy": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "W6NABT"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_XfDpwy"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "1755008802a981a734": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a57c09e_HeCB6P": {
+          "type": "ai_gen_block_a57c09e",
+          "settings": {
+            "social_platform": "instagram",
+            "social_url": "https://www.instagram.com/rusticstrength_wholesale/",
+            "rich_text": "<p>Follow our Wholesale Page on <strong>Instagram</strong> for the latest updates!</p>",
+            "alignment": "center",
+            "layout": "vertical",
+            "show_icon": true,
+            "icon_size": 48,
+            "icon_text_spacing": 16,
+            "font_size": 24,
+            "background_color": "#c0bb85",
+            "text_color": "#f3f3f3",
+            "hover_background_color": "#e8e8e8",
+            "hover_text_color": "#000000",
+            "border_color": "#c0bb85",
+            "hover_border_color": "#cccccc",
+            "padding_vertical": 22,
+            "padding_horizontal": 48,
+            "border_radius": 0,
+            "border_width": 0,
+            "hover_lift": 4
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_a57c09e_Xrqfwr": {
+          "type": "ai_gen_block_a57c09e",
+          "settings": {
+            "social_platform": "facebook",
+            "social_url": "https://www.instagram.com/rusticstrength_wholesale/",
+            "rich_text": "<p>Follow our Wholesale Page on <strong>Facebook</strong> for the latest updates!</p>",
+            "alignment": "center",
+            "layout": "vertical",
+            "show_icon": true,
+            "icon_size": 48,
+            "icon_text_spacing": 16,
+            "font_size": 24,
+            "background_color": "#c0bb85",
+            "text_color": "#f3f3f3",
+            "hover_background_color": "#e8e8e8",
+            "hover_text_color": "#000000",
+            "border_color": "#c0bb85",
+            "hover_border_color": "#cccccc",
+            "padding_vertical": 22,
+            "padding_horizontal": 48,
+            "border_radius": 0,
+            "border_width": 4,
+            "hover_lift": 4
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a57c09e_HeCB6P",
+        "ai_gen_block_a57c09e_Xrqfwr"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "featured_collection_rVTRLL": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "best-sellers",
+        "products_to_show": 4,
+        "title": "Trending now",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_8dfKbK": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_LBj43X": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "affordable-effective"
+          }
+        },
+        "featured_collection_fqYWtY": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "seasonal-scents"
+          }
+        },
+        "featured_collection_REPzyt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "body-care"
+          }
+        },
+        "featured_collection_3M3eYz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "retail-ready-cases"
+          }
+        },
+        "featured_collection_UhHcrr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "household-goods"
+          }
+        },
+        "featured_collection_6tWzi7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "starter-kits-bundles"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_LBj43X",
+        "featured_collection_fqYWtY",
+        "featured_collection_REPzyt",
+        "featured_collection_3M3eYz",
+        "featured_collection_UhHcrr",
+        "featured_collection_6tWzi7"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Explore More High-Purity Products",
+        "heading_size": "h2",
+        "image_ratio": "adapt",
+        "columns_desktop": 6,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_NidJbD",
+    "rich_text_XzRNAw",
+    "newsletter_MyWbdY",
+    "18cfd24b-7c40-4c9e-92f3-cd67457c438a",
+    "rich_text_4Tj9qx",
+    "17550064844c9990ff",
+    "1755008802a981a734",
+    "featured_collection_rVTRLL",
+    "collection_list_8dfKbK"
+  ]
+}

@@ -1,0 +1,39 @@
+<script> 
+  function enrichProductJSON(products) {
+    for (var i = 0; i < products.length; i++) {
+      updateProductJSON(products[i]);
+    }
+
+  function updateProductJSON(product) {
+    fetch(Shopify.routes.root + "products/" + product.handle + ".js")
+      .then((res) => res.json())
+      .then((data) => {
+        var b2bProduct = data;
+        for (var i = 0; i < products.length; i++) {
+          if (products[i].id === b2bProduct.id) {
+
+            for (var j = 0, b2b_variant; j < b2bProduct.variants.length; j++) {
+              b2b_variant = b2bProduct.variants[j];
+
+              for (var x = 0, widget_variant; x < product.variants.length; x++) {
+                widget_variant = product.variants[x];
+
+                if (b2b_variant.id === widget_variant.id) {
+                  widget_variant.price = b2b_variant.price;
+                  break;
+                }
+              }
+            }
+            break;
+          }
+        }
+      });
+    }
+  }
+
+  document.addEventListener("rebuy.beforeProductsChange", (event) => {
+    setTimeout(() => {
+      enrichProductJSON(event.detail.widget.data.products);
+    }, 500)
+  });
+</script>

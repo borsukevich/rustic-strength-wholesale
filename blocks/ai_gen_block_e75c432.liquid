@@ -1,0 +1,808 @@
+{% doc %}
+  @prompt
+    Create a section that is exactly the same as the multicolumn section option available. Add the ability to use video instead of image. Add sizing options for the columns 1:1, 2:3
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-multicolumn-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-multicolumn-container-{{ ai_gen_id }} {
+    padding: {{ block.settings.padding_top }}px 0 {{ block.settings.padding_bottom }}px;
+  }
+
+  .ai-multicolumn-inner-{{ ai_gen_id }} {
+    max-width: {{ block.settings.container_width }}px;
+    margin: 0 auto;
+    padding: 0 {{ block.settings.spacing_grid_horizontal }}px;
+  }
+
+  .ai-multicolumn-heading-{{ ai_gen_id }} {
+    text-align: {{ block.settings.heading_alignment }};
+    margin: 0 0 {{ block.settings.heading_spacing }}px;
+    font-size: {{ block.settings.heading_size }}px;
+  }
+
+  .ai-multicolumn-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
+    gap: {{ block.settings.column_gap }}px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .ai-multicolumn-item-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    text-align: {{ block.settings.text_alignment }};
+  }
+
+  .ai-multicolumn-media-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    margin-bottom: {{ block.settings.media_spacing }}px;
+    overflow: hidden;
+    border-radius: {{ block.settings.media_radius }}px;
+  }
+
+  .ai-multicolumn-media-wrapper-{{ ai_gen_id }}--1-1 {
+    padding-bottom: 100%;
+  }
+
+  .ai-multicolumn-media-wrapper-{{ ai_gen_id }}--2-3 {
+    padding-bottom: 150%;
+  }
+
+  .ai-multicolumn-media-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-multicolumn-video-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ai-multicolumn-video-{{ ai_gen_id }} video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-multicolumn-placeholder-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-multicolumn-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-multicolumn-title-{{ ai_gen_id }} {
+    margin: 0 0 {{ block.settings.title_spacing }}px;
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 600;
+  }
+
+  .ai-multicolumn-text-{{ ai_gen_id }} {
+    margin: 0 0 {{ block.settings.text_spacing }}px;
+    font-size: {{ block.settings.text_size }}px;
+    line-height: 1.5;
+  }
+
+  .ai-multicolumn-link-{{ ai_gen_id }} {
+    display: inline-block;
+    margin-top: auto;
+    padding: {{ block.settings.button_padding_vertical }}px {{ block.settings.button_padding_horizontal }}px;
+    background-color: {{ block.settings.button_color }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: {{ block.settings.button_radius }}px;
+    transition: background-color 0.3s ease;
+  }
+
+  .ai-multicolumn-link-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-multicolumn-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_tablet }}, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-multicolumn-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_mobile }}, 1fr);
+    }
+
+    .ai-multicolumn-heading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.heading_size }}px * 0.85);
+    }
+
+    .ai-multicolumn-title-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.title_size }}px * 0.9);
+    }
+  }
+{% endstyle %}
+
+<multicolumn-block-{{ ai_gen_id }} class="ai-multicolumn-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-multicolumn-container-{{ ai_gen_id }}">
+    <div class="ai-multicolumn-inner-{{ ai_gen_id }}">
+      {% if block.settings.heading != blank %}
+        <h2 class="ai-multicolumn-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+      {% endif %}
+
+      <ul class="ai-multicolumn-grid-{{ ai_gen_id }}">
+        {% for i in (1..6) %}
+          {% liquid
+            assign image_key = 'column_' | append: i | append: '_image'
+            assign video_key = 'column_' | append: i | append: '_video'
+            assign title_key = 'column_' | append: i | append: '_title'
+            assign text_key = 'column_' | append: i | append: '_text'
+            assign link_key = 'column_' | append: i | append: '_link'
+            assign link_label_key = 'column_' | append: i | append: '_link_label'
+
+            assign column_image = block.settings[image_key]
+            assign column_video = block.settings[video_key]
+            assign column_title = block.settings[title_key]
+            assign column_text = block.settings[text_key]
+            assign column_link = block.settings[link_key]
+            assign column_link_label = block.settings[link_label_key]
+
+            assign has_content = false
+            if column_image != blank or column_video != blank or column_title != blank or column_text != blank
+              assign has_content = true
+            endif
+          %}
+
+          {% if has_content and i <= block.settings.columns_desktop %}
+            <li class="ai-multicolumn-item-{{ ai_gen_id }}">
+              {% if column_video != blank or column_image != blank %}
+                <div class="ai-multicolumn-media-wrapper-{{ ai_gen_id }} ai-multicolumn-media-wrapper-{{ ai_gen_id }}--{{ block.settings.aspect_ratio }}">
+                  {% if column_video != blank %}
+                    <div class="ai-multicolumn-video-{{ ai_gen_id }}">
+                      {{
+                        column_video
+                        | video_tag:
+                          image_size: '1024x',
+                          autoplay: block.settings.video_autoplay,
+                          loop: block.settings.video_loop,
+                          muted: block.settings.video_muted,
+                          controls: block.settings.video_controls
+                      }}
+                    </div>
+                  {% elsif column_image != blank %}
+                    <img
+                      src="{{ column_image | image_url: width: 800 }}"
+                      alt="{{ column_image.alt | escape }}"
+                      loading="lazy"
+                      width="{{ column_image.width }}"
+                      height="{{ column_image.height }}"
+                      class="ai-multicolumn-media-{{ ai_gen_id }}"
+                    >
+                  {% endif %}
+                </div>
+              {% endif %}
+
+              {% if column_title != blank %}
+                <h3 class="ai-multicolumn-title-{{ ai_gen_id }}">{{ column_title }}</h3>
+              {% endif %}
+
+              {% if column_text != blank %}
+                <div class="ai-multicolumn-text-{{ ai_gen_id }}">{{ column_text }}</div>
+              {% endif %}
+
+              {% if column_link != blank and column_link_label != blank %}
+                <a href="{{ column_link }}" class="ai-multicolumn-link-{{ ai_gen_id }}">
+                  {{ column_link_label }}
+                </a>
+              {% endif %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</multicolumn-block-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class MulticolumnBlock{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.videos = this.querySelectorAll('.ai-multicolumn-video-{{ ai_gen_id }} video');
+        this.setupVideoObserver();
+      }
+
+      setupVideoObserver() {
+        if (!this.videos.length) return;
+
+        const options = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+              video.play().catch(() => {});
+            } else {
+              video.pause();
+            }
+          });
+        }, options);
+
+        this.videos.forEach((video) => {
+          observer.observe(video);
+        });
+      }
+    }
+
+    customElements.define('multicolumn-block-{{ ai_gen_id }}', MulticolumnBlock{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Multicolumn with video",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 16,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "heading_spacing",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Heading spacing",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 1000,
+      "max": 1600,
+      "step": 100,
+      "unit": "px",
+      "label": "Container width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Columns on desktop",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "columns_tablet",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Columns on tablet",
+      "default": 2
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Column gap",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "spacing_grid_horizontal",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "Horizontal spacing",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Media"
+    },
+    {
+      "type": "select",
+      "id": "aspect_ratio",
+      "label": "Aspect ratio",
+      "options": [
+        {
+          "value": "1-1",
+          "label": "1:1 (Square)"
+        },
+        {
+          "value": "2-3",
+          "label": "2:3 (Portrait)"
+        }
+      ],
+      "default": "1-1"
+    },
+    {
+      "type": "range",
+      "id": "media_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Media corner radius",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "media_spacing",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "Media spacing",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Video settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "video_autoplay",
+      "label": "Autoplay videos",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "video_loop",
+      "label": "Loop videos",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "video_muted",
+      "label": "Mute videos",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "video_controls",
+      "label": "Show video controls",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "title_spacing",
+      "min": 0,
+      "max": 32,
+      "step": 4,
+      "unit": "px",
+      "label": "Title spacing",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Text size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "text_spacing",
+      "min": 0,
+      "max": 32,
+      "step": 4,
+      "unit": "px",
+      "label": "Text spacing",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Background color",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Hover background color",
+      "default": "#3c4540"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "button_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "button_padding_vertical",
+      "min": 4,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "button_padding_horizontal",
+      "min": 8,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Column 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "column_1_video",
+      "label": "Video"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "column_1_title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "column_1_text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "column_1_link",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "column_1_link_label",
+      "label": "Link label"
+    },
+    {
+      "type": "header",
+      "content": "Column 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "column_2_video",
+      "label": "Video"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "column_2_title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "column_2_text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "column_2_link",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "column_2_link_label",
+      "label": "Link label"
+    },
+    {
+      "type": "header",
+      "content": "Column 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "column_3_video",
+      "label": "Video"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "column_3_title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "column_3_text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "column_3_link",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "column_3_link_label",
+      "label": "Link label"
+    },
+    {
+      "type": "header",
+      "content": "Column 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_4_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "column_4_video",
+      "label": "Video"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "column_4_title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "column_4_text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "column_4_link",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "column_4_link_label",
+      "label": "Link label"
+    },
+    {
+      "type": "header",
+      "content": "Column 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_5_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "column_5_video",
+      "label": "Video"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "column_5_title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "column_5_text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "column_5_link",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "column_5_link_label",
+      "label": "Link label"
+    },
+    {
+      "type": "header",
+      "content": "Column 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_6_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "column_6_video",
+      "label": "Video"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "column_6_title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "column_6_text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "column_6_link",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "column_6_link_label",
+      "label": "Link label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multicolumn with video"
+    }
+  ]
+}
+{% endschema %}

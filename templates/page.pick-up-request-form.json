@@ -1,0 +1,509 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_Fmr4CJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_m7NQbK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Schedule a Pickup",
+            "heading_size": "h1"
+          }
+        },
+        "text_WYFRKk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>for your Close the Loop™ barrel returns. </p>"
+          }
+        },
+        "text_BGX4Pk": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Make the arrangements and pay for shipping. Earn Partner Perks Reward Points when we receive your shipment.</em></p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_m7NQbK",
+        "text_WYFRKk",
+        "text_BGX4Pk"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_dhpxzt": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_idyp8V": {
+          "type": "heading",
+          "settings": {
+            "heading": "Full Pallets",
+            "heading_size": "h1"
+          }
+        },
+        "text_cTPJXg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Control how and when your pallets are picked up. </p><p><em>Earn Partner Perks Reward Points when we receive your shipment.</em></p><p><strong>Some Freight Shipping Options:</strong></p><p><a href=\"https://www.xpo.com/\" target=\"_blank\" title=\"https://www.xpo.com/\"><strong>XPO.com</strong></a> - <em>DIY online</em></p><ul><li>provides quote & online payment with XPO Freight</li><li>receive all tracing and information directly</li><li>XPO Customer Care Team: 1-800-755-2728</li></ul><p><a href=\"https://www.freightquote.com/\" target=\"_blank\" title=\"https://www.freightquote.com/\"><strong>FreightQuote.com</strong></a> - <em>DIY online</em></p><ul><li>instant quote & online payment</li><li>provides multiple carriers to choose from</li><li>receive all tracing and information directly</li></ul>",
+            "text_style": "body"
+          }
+        },
+        "button_cPhPeM": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Request a Pallet Pick-up",
+            "button_link": "shopify://pages/schedule-a-pallet-pickup",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_idyp8V",
+        "text_cTPJXg",
+        "button_cPhPeM"
+      ],
+      "name": "Pallet Returns",
+      "settings": {
+        "image": "shopify://shop_images/Barrels_with_truck_5626ac12-0a46-47cc-8898-f9d57564711b.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "image_with_text_YGjkaB": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_pptFpH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Be Prepared",
+            "heading_size": "h1"
+          }
+        },
+        "text_J3X3Qe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Information the freight carrier will need:</p><ul><li>Business & Contact Information</li><li>Hours of Operation</li><li>Payment Information</li><li>Measurements of Pallet(s)</li><li>Weight of Pallet(s)</li><li>Description of contents</li><li>Pallet will need to be properly and safely secured.<br/></li></ul>",
+            "text_style": "body"
+          }
+        },
+        "button_zknVgQ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Video- How to Strap Barrels to a Pallet",
+            "button_link": "https://cdn.shopify.com/videos/c/o/v/434363fc8f8d403581f42ac15722168b.mp4https://cdn.shopify.com/videos/c/o/v/434363fc8f8d403581f42ac15722168b.mp4https://cdn.shopify.com/videos/c/o/v/434363fc8f8d403581f42ac15722168b.mp4",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_pptFpH",
+        "text_J3X3Qe",
+        "button_zknVgQ"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Screenshot-2025-05-29-at-3.16.32-PM.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "collapsible_content_9mmCKG": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_Dyfxg4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I schedule a pick-up for my empty drums or totes?",
+            "icon": "recycle",
+            "row_content": "<p>To schedule a pick-up:</p><p>Contact the carrier of your choice. We suggest freightquote.com, RXO or XPO, however you are in complete control of your pallet pick-ups.</p><p>Your empties must be securely fastened to the pallet in order for the driver to pick them up. </p><p>On the date scheduled, the driver will pickup during your business hours, typically in the afternoon.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Gff966": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How many returns need to be on a pallet?",
+            "icon": "recycle",
+            "row_content": "<p>In order to maximize your value for pallet returns, we recommend:</p><p>8 Barrels</p><p>or</p><p>80 Eco-Jugs</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_npVCPP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you need the caps and lids for the containers?",
+            "icon": "recycle",
+            "row_content": "<p>Yes, the caps for the Eco Jugs and Barrels are required when sending returns to ensure the process remains truly “Close the Loop.” </p><p>Unfortunately, bucket lids cannot be reused due to the integrity of the seal and the specific lidding process needed to secure shipments safely.<br/><br/>Keep your pumps and spouts for reuse!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_TAqtpB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I find the weights and measurements of my containers for return?",
+            "icon": "recycle",
+            "row_content": "<p>For Pallet Returns, you will need the weights and measurements of our containers. Here is a quick guide to help you:</p><p><em>Weights and measurements can vary due to differences in the amount of soap left, caps or lack of, differences in size / material of pallet or other factors. Always estimate higher or get exact details to avoid additional charges.</em></p><p>8 30 gallon drums: </p><ul><li>200 lb</li><li>48 x 40 x 63</li></ul><p>8 55 gallon drums:</p><ul><li>250 lb</li><li>48 x 40 x 75</li></ul><p>80 eco-jugs:</p><ul><li>200 lb</li><li>48 x 40 x 78</li></ul><p></p><p>Single container details:</p><p>5 Gallon Eco-Jug Dimensions: </p><ul><li>2 lb</li><li>14.5 x 10.5 x 10 </li></ul><p>5 Gallon Bucket Dimensions: </p><ul><li>2 lb     </li><li>15 x 12 </li></ul><p>30 Gallon Drum Dimensions:   </p><ul><li>13lb</li><li>29 x 19 </li></ul><p>55 Gallon Drum Dimensions: </p><ul><li>24 lb</li><li>35 x 24</li></ul><p>275 Gallon Tote Dimensions:</p><ul><li>135 lb</li><li>48 x 40 x 46</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_d6h8cE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why does Rustic Strength not offer or schedule pallet pick-ups any longer?",
+            "icon": "recycle",
+            "row_content": "<p>Due to the growing success and high demand of our Close the Loop program among wholesale partners, we will no longer be scheduling pallet pickups. This change allows you full control over when and how you return your items—on your own schedule and at your convenience. Your returns will continue to earn rewards points, helping you save while supporting a more sustainable future.<br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_PB8FbN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will Rustic Strength accept other companies' containers?",
+            "icon": "recycle",
+            "row_content": "<p>While not all Gallons, Eco Jugs, Buckets, and Barrels are created equal, we’re happy to accept containers from other companies as part of our Close the Loop initiative. </p><p>If we're able to wash, sanitize, and return them to circulation, we absolutely will. </p><p>Please note: containers without caps or those taller than our standard sizes cannot be reused.  </p><p>Other companies' containers do not qualify for reward points. We appreciate your help in keeping the program sustainable and effective!<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_MQnPe4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How many points do I receive when I return containers?",
+            "icon": "recycle",
+            "row_content": "<p>Plastic or Glass Gallon jugs - 200 points</p><p>5 Gallon Buckets no lids - 600 points</p><p>5 Gallon Eco-Jugs with both caps - 800 points</p><p>30 Gallon Drums with both caps  - 5000 points</p><p>55 Gallon Drums with both caps- 6000 points</p><p>275 Gallon Tote with top cap - 20,000 points<br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_N8A837": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where do I ship my returns?",
+            "icon": "recycle",
+            "row_content": "<p><strong>Return your empty containers to:</strong></p><p>Rustic Strength<br/>403 N. Oak Ave<br/>Mansfield, MO 65704</p><p>We will clean, sanitize and recirculate Rustic Strength containers, preventing them from reaching a landfill. When one is ready to retire, we will ensure that they are properly recycled.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_Dyfxg4",
+        "collapsible_row_Gff966",
+        "collapsible_row_npVCPP",
+        "collapsible_row_TAqtpB",
+        "collapsible_row_d6h8cE",
+        "collapsible_row_PB8FbN",
+        "collapsible_row_MQnPe4",
+        "collapsible_row_N8A837"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Pallet Pick-up FAQs",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "18cfd24b-7c40-4c9e-92f3-cd67457c438a": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<center>\n<div class=\"elfsight-sapp-2e3d9916-1c81-4e01-96d5-026f5d446cf1\"></div>\n<p>Above is based on total gallons sold to refill shops as of 9/1/2023, converted to units of 16oz single-use containers.</p> <div class=\"elfsight-sapp-87907066-fea9-460d-b1a6-13c38cf1af95\"></div>\n<center>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "contact_form_section_zMVz9E": {
+      "type": "contact-form-section",
+      "blocks": {
+        "textfield_zpTcNL": {
+          "type": "textfield",
+          "settings": {
+            "title": "Name",
+            "placeholder": "",
+            "required": true,
+            "width": "half"
+          }
+        },
+        "textfield_ph6NiC": {
+          "type": "textfield",
+          "settings": {
+            "title": "Store name",
+            "placeholder": "",
+            "required": true,
+            "width": "half"
+          }
+        },
+        "email_jQh3PA": {
+          "type": "email",
+          "settings": {
+            "title": "Email address",
+            "placeholder": "",
+            "width": "full"
+          }
+        },
+        "phone_number_T7Ua4Y": {
+          "type": "phone_number",
+          "settings": {
+            "title": "Phone number",
+            "placeholder": "",
+            "required": false,
+            "width": "full"
+          }
+        },
+        "date_ARhzcE": {
+          "type": "date",
+          "settings": {
+            "title": "Pickup Request Date ( 72 hours notice preferred )",
+            "required": true,
+            "width": "full"
+          }
+        },
+        "textfield_LjKdNm": {
+          "type": "textfield",
+          "settings": {
+            "title": "Store Hours",
+            "placeholder": "Enter store hours",
+            "required": true,
+            "width": "full"
+          }
+        },
+        "textfield_9zKy4m": {
+          "type": "textfield",
+          "settings": {
+            "title": "Pickup Street Address",
+            "placeholder": "Enter pickup street address",
+            "required": true,
+            "width": "half"
+          }
+        },
+        "textfield_3jKUEE": {
+          "type": "textfield",
+          "settings": {
+            "title": "Pickup City",
+            "placeholder": "Enter City",
+            "required": true,
+            "width": "half"
+          }
+        },
+        "textfield_eR3pRd": {
+          "type": "textfield",
+          "settings": {
+            "title": "Pickup State",
+            "placeholder": "Enter State",
+            "required": true,
+            "width": "half"
+          }
+        },
+        "textfield_aUN3EX": {
+          "type": "textfield",
+          "settings": {
+            "title": "Pickup Zip Code",
+            "placeholder": "Enter Zip",
+            "required": true,
+            "width": "half"
+          }
+        },
+        "radio_L3qXNn": {
+          "type": "radio",
+          "settings": {
+            "title": "Pallet 1",
+            "required": true,
+            "width": "half",
+            "per_row": 1,
+            "option_list": "8 Drums, 80 Eco-Jugs"
+          }
+        },
+        "radio_4NCtha": {
+          "type": "radio",
+          "settings": {
+            "title": "Pallet 2 (optional)",
+            "required": false,
+            "width": "half",
+            "per_row": 1,
+            "option_list": "No Second Pallet, 8 Drums, 80 Eco-Jugs"
+          }
+        },
+        "textarea_bDwQbT": {
+          "type": "textarea",
+          "settings": {
+            "title": "I have something else:",
+            "placeholder": "Detailed description",
+            "required": false,
+            "width": "full"
+          }
+        },
+        "info_text_BmmPcn": {
+          "type": "info_text",
+          "settings": {
+            "heading": "<h6>NOTE: For pallet pickups that are booked by Rustic Strength, we do not accept any other company's containers. Return containers must have originated from Rustic Strength. Return of eco-lids/ caps with containers is appreciated.</h6>",
+            "text": "",
+            "width": "full"
+          }
+        }
+      },
+      "block_order": [
+        "textfield_zpTcNL",
+        "textfield_ph6NiC",
+        "email_jQh3PA",
+        "phone_number_T7Ua4Y",
+        "date_ARhzcE",
+        "textfield_LjKdNm",
+        "textfield_9zKy4m",
+        "textfield_3jKUEE",
+        "textfield_eR3pRd",
+        "textfield_aUN3EX",
+        "radio_L3qXNn",
+        "radio_4NCtha",
+        "textarea_bDwQbT",
+        "info_text_BmmPcn"
+      ],
+      "disabled": true,
+      "settings": {
+        "form_position": "center",
+        "heading": "",
+        "text": "<p>On the date scheduled, the driver will arrive during you store's hours, most typically in the afternoon.</p><p>The barrels will need to be strapped securely to a pallet for a driver to be able to pick them up.</p><p><strong>Due to numerous instances of careless packaging and to ensure secure transit, a picture of your staged pallet will now be requiered in order to schedule a pickup.</strong></p><p>Watch this <a href=\"https://cdn.shopify.com/videos/c/o/v/434363fc8f8d403581f42ac15722168b.mp4\" title=\"https://cdn.shopify.com/videos/c/o/v/434363fc8f8d403581f42ac15722168b.mp4\">VIDEO</a> to see the best way to secure your pallet</p>",
+        "text_position": "center top",
+        "text_size": 100,
+        "text_color": "#666666",
+        "button_label_color": "#ffffff",
+        "button_background_color": "#3c3a3a",
+        "background_color": "",
+        "button_radius": 10,
+        "base_width": 60,
+        "max_width": "",
+        "inner_padding": 0,
+        "outer_margin": 30,
+        "custom_css": "",
+        "mobile_custom_css": "",
+        "override_theme_font": false,
+        "heading_font": "serif",
+        "main_font": "system_ui_n4"
+      }
+    },
+    "image_banner_FyMNcw": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_tLc39k": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_zkPqmD": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_ejEiGb": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_tLc39k",
+        "text_zkPqmD",
+        "buttons_ejEiGb"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/2_Container-Return-Checklist.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "custom_liquid_8Y7YxR": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"oDZZ26___bhe4lvNFBYb1A\"></div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_Fmr4CJ",
+    "image_with_text_dhpxzt",
+    "image_with_text_YGjkaB",
+    "collapsible_content_9mmCKG",
+    "18cfd24b-7c40-4c9e-92f3-cd67457c438a",
+    "contact_form_section_zMVz9E",
+    "image_banner_FyMNcw",
+    "custom_liquid_8Y7YxR"
+  ]
+}

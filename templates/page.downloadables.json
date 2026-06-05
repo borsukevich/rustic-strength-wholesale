@@ -1,0 +1,241 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "18cfd24b-7c40-4c9e-92f3-cd67457c438a": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"elfsight-sapp-87907066-fea9-460d-b1a6-13c38cf1af95\"></div>\n<center> <p>Above is based on total gallons sold to refill shops as of 9/1/2023, converted to units of 16oz single-use containers.</p> <center>\n<div class=\"elfsight-sapp-2e3d9916-1c81-4e01-96d5-026f5d446cf1\"></div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_amUxji": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dfiExY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rustic Strength Brand Kit",
+            "heading_size": "h1"
+          }
+        },
+        "text_NrQDjf": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>Logos, color palette, and lifestyle images so you can represent Rustic Strength accurately in your store, online, and in print.</h5><h5>Please use these assets when creating signage, shelf talkers, social posts, emails, and website features.</h5>"
+          }
+        },
+        "button_R7eNzV": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download the Brand Kit",
+            "button_link": "https://drive.google.com/drive/folders/1JSoc-5-wCJI1XNbrF09FhnAq2lq461wm?usp=drive_link",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dfiExY",
+        "text_NrQDjf",
+        "button_R7eNzV"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_XFPYKX": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GDnYYq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Downloadable Labels",
+            "heading_size": "h1"
+          }
+        },
+        "text_m97nMf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The refill industry is booming and with that comes regulations.  As the primary manufacturer of household goods for refill shops we want to make sure that you, the retailer, are adhering to industry standards.  One required practice that may be overlooked or even missed is the labeling of products before they leave the store. <strong>ALL products have to have a label on them with certain requirements. </strong></p><p>We have made this really easy for you to do.  We have converted our labels to meet those requirements.  Simply hand write how many ounces your customer has purchased on this label before their container leaves your store.</p><p>Please allow up to three business days to be granted access.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_GFnLTW": {
+          "type": "button",
+          "settings": {
+            "button_label": "Request Access",
+            "button_link": "https://drive.google.com/drive/folders/13nR8D2XZAjwDf1Onl3OZmJFqH70ZZ8tA?usp=drive_link",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_GDnYYq",
+        "text_m97nMf",
+        "button_GFnLTW"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Label_Pile.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "background-1",
+        "padding_top": 84,
+        "padding_bottom": 84
+      }
+    },
+    "multicolumn_eYFU94": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_FaUh7f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CTL_StatsIG2024_5.jpg",
+            "title": "#ZeroWasteAchievement",
+            "text": "<p>Thank you to our amazing customers and refill partners! Together, we are making a difference and closing the loop on plastic waste!</p>",
+            "link_label": "Share",
+            "link": "https://www.instagram.com/p/C4s9o8Xu85p/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+          }
+        },
+        "column_FXpqUB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Title3.png",
+            "title": "#PodsvsPurity",
+            "text": "<p>Discover the science behind the high-purity ingredients in our detergent versus laundry pods.</p>",
+            "link_label": "Share",
+            "link": "https://www.instagram.com/p/C4f2yZFuBfc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+          }
+        },
+        "column_7VXXPW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Title.png",
+            "title": "#UnleashUnBleach",
+            "text": "<p>Are you STILL using toxic chlorine bleach? Unlock a healthier home, and unleash the power of Un-Bleach.</p>",
+            "link_label": "Share",
+            "link": "https://www.instagram.com/p/C4Q0BB6uC3U/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+          }
+        }
+      },
+      "block_order": [
+        "column_FaUh7f",
+        "column_FXpqUB",
+        "column_7VXXPW"
+      ],
+      "settings": {
+        "title": "Social Shares",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_7W6U7U": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_ec8rab": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1_a19fe0e3-89f4-4276-9ade-a2cc422fe19d.jpg",
+            "title": "Ethoxylated Alcohols",
+            "text": "<p>Ethoxylation may leave behind traces of known carcinogens.</p>",
+            "link_label": "Download",
+            "link": "https://cdn.shopify.com/s/files/1/0344/1809/8221/files/Ethoxylated_Alcohol_IGIG_JPGs.zip?v=1708099265"
+          }
+        },
+        "column_mMpmVz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Cocoamidopropyl_Betaine.jpg",
+            "title": "Coming Soon",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hEb9wN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sodium_Borate_0a33815e-596f-4753-ae8d-438f02c67774.jpg",
+            "title": "Coming Soon",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_ec8rab",
+        "column_mMpmVz",
+        "column_hEb9wN"
+      ],
+      "settings": {
+        "title": "Ingredients To Avoid In Laundry Detergent",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "background-2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "18cfd24b-7c40-4c9e-92f3-cd67457c438a",
+    "rich_text_amUxji",
+    "image_with_text_XFPYKX",
+    "multicolumn_eYFU94",
+    "multicolumn_7W6U7U"
+  ]
+}

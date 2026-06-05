@@ -1,0 +1,229 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "background-2"
+      }
+    },
+    "e66bba48-2aef-43a8-ac28-5afda5eabc9e": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-0",
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-1",
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Bath.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "8136786b-e666-4273-b215-94f5dc194302": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16773411274992__8136786b-e666-4273-b215-94f5dc194302-1688747232945a3177-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--16773411274992__8136786b-e666-4273-b215-94f5dc194302-1688747232945a3177-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--16773411274992__8136786b-e666-4273-b215-94f5dc194302-1688747232945a3177-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16773411274992__8136786b-e666-4273-b215-94f5dc194302-1688747232945a3177-0",
+        "template--16773411274992__8136786b-e666-4273-b215-94f5dc194302-1688747232945a3177-1",
+        "template--16773411274992__8136786b-e666-4273-b215-94f5dc194302-1688747232945a3177-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Epsom_Salt.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "1698255403ce2e2622": {
+      "type": "apps",
+      "blocks": {
+        "95852e5f-5c80-447c-955e-d06f5ffbbb33": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 2000
+          }
+        }
+      },
+      "block_order": [
+        "95852e5f-5c80-447c-955e-d06f5ffbbb33"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "collection_list_hmGhdt": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_KDNwXx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "castile-soap"
+          }
+        },
+        "featured_collection_87MaKh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "essential-oils"
+          }
+        },
+        "featured_collection_fepmnL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "heritage-bar-soap"
+          }
+        },
+        "featured_collection_wqDNGX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "household-goods"
+          }
+        },
+        "featured_collection_EfHtBJ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "body-care"
+          }
+        },
+        "featured_collection_T3dUXR": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "starter-kits-bundles"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_KDNwXx",
+        "featured_collection_87MaKh",
+        "featured_collection_fepmnL",
+        "featured_collection_wqDNGX",
+        "featured_collection_EfHtBJ",
+        "featured_collection_T3dUXR"
+      ],
+      "settings": {
+        "title": "Explore more high purity cleaning + wellness",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "e66bba48-2aef-43a8-ac28-5afda5eabc9e",
+    "product-grid",
+    "8136786b-e666-4273-b215-94f5dc194302",
+    "1698255403ce2e2622",
+    "collection_list_hmGhdt"
+  ]
+}

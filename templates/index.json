@@ -1,0 +1,1093 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_VBPAhT": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_wrEB6R": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Autumn Scents Have Arrived.",
+            "heading_size": "h0"
+          }
+        },
+        "text_E6pJNq": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<strong>Warm Flannel</strong> and <strong>Pumpkin Harvest</strong> are back — for a limited time.",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons_3Wi3CY": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify://collections/seasonal-scents",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wrEB6R",
+        "text_E6pJNq",
+        "buttons_3Wi3CY"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Laundry_Detergent_Pumpkin_Harvest_Garden_2X3_12d79e4e-d3f5-4009-986a-4ba8c3040764.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_fzhWGH": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_PzMcBL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cool Off With Crystal Creek",
+            "heading_size": "h1"
+          }
+        },
+        "text_Nrf4La": {
+          "type": "text",
+          "settings": {
+            "text": "A crisp aquatic scent with fresh water, soft mineral notes, and clean air over stone. Refresh your everyday routine while this limited seasonal collection is here.",
+            "text_style": "body"
+          }
+        },
+        "buttons_cLcpxj": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Summer Scents",
+            "button_link_1": "shopify://collections/seasonal-scents",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PzMcBL",
+        "text_Nrf4La",
+        "buttons_cLcpxj"
+      ],
+      "name": "Summer banner",
+      "settings": {
+        "image": "shopify://shop_images/Crystal_Creek_LD_24OZ_16x9_f1f33e29-465f-4701-9a65-84d9f5d72936.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "left",
+        "show_text_below": false
+      }
+    },
+    "image_banner_LX9r3y": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_gj9ibT": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Autumn Scents Have Arrived.",
+            "heading_size": "h0"
+          }
+        },
+        "text_RDgeDd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<strong>Warm Flannel</strong> and <strong>Pumpkin Harvest</strong> are back — for a limited time.",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons_4pGfUa": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify://collections/seasonal-scents",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gj9ibT",
+        "text_RDgeDd",
+        "buttons_4pGfUa"
+      ],
+      "disabled": true,
+      "name": "Winter Banner",
+      "settings": {
+        "image": "shopify://shop_images/Formal_Collection_3X2_99b0a9b5-62ba-495a-a4ed-39a5c5d47099.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_ebRiPN": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_rQiEfz": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "WELCOME SPRING",
+            "heading_size": "h1"
+          }
+        },
+        "text_Gp8RtN": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_3mc8NG": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_rQiEfz",
+        "text_Gp8RtN",
+        "buttons_3mc8NG"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Collection_Wild_Flowers_3X2-2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "right",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_with_text_c7wzzF": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_WDYqiq": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Summer Collection",
+            "heading_size": "h1"
+          }
+        },
+        "text_RYGMcn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>has returned</p>",
+            "text_style": "subtitle"
+          }
+        },
+        "button_XdiX8B": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "https://rusticstrengthwholesale.com/collections/seasonal-scents",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_WDYqiq",
+        "text_RYGMcn",
+        "button_XdiX8B"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Summer_Collection_1X1_130beff8-ba37-4903-9519-c3c44ed50b6f.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-5",
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_XcBLWh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_eeLDPQ": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Welcome Back, Winter",
+            "heading_size": "h1"
+          }
+        },
+        "text_7mDt6g": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>Gingerbread, Winter Solstice</strong> and <strong>Silver Spruce</strong> are back — for a limited time. </p>"
+          }
+        },
+        "button_JeC9ph": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop The Spring Collection",
+            "button_link": "shopify://collections/seasonal-scents",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_eeLDPQ",
+        "text_7mDt6g",
+        "button_JeC9ph"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "4aa7feb8-120c-4986-84cd-ccc1d9ee515d": {
+      "type": "slideshow",
+      "blocks": {
+        "b2d4430b-bdd2-4d95-8a7f-4111e0c2a61f": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/wholesaletab-3x2.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Shop Spring Samples",
+            "link": "shopify://collections/seasonal-scents",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "background-1"
+          }
+        },
+        "slide_MiAjPB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Linen_Spray_Fresh_Linen_3X2_1f3d3c4e-f2af-4f99-afee-0c4a7ee50145.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Shop Refillable Room & Linen Spray",
+            "link": "shopify://collections/room-linen-sprays",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-3"
+          }
+        },
+        "dd16bdc2-bbd3-4719-81ed-4ddc70f2f757": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Laundry_Line_Banner_3X2_a12ab088-d7c1-49f7-95c1-398c70ee4a60.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://collections/laundry-detergent",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "background-1"
+          }
+        },
+        "slide_xpq3dB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Floor_Cleaner_Look_2_3X2-1.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "shop floor cleaner",
+            "link": "shopify://products/multi-surface-floor-cleaner-concentrate",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "background-1"
+          }
+        },
+        "5ebe6199-6028-4454-ae1d-a6f9509ca9da": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Wholesale_Essential_Oil_Shelf_b1ecb710-95ce-46bc-9c80-be6715f674e1.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "shop essential oils",
+            "link": "shopify://collections/essential-oils",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "b2d4430b-bdd2-4d95-8a7f-4111e0c2a61f",
+        "slide_MiAjPB",
+        "dd16bdc2-bbd3-4719-81ed-4ddc70f2f757",
+        "slide_xpq3dB",
+        "5ebe6199-6028-4454-ae1d-a6f9509ca9da"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "c14fb3d9-e08b-4501-8e58-dce3dd868c8e": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div data-rebuy-id=\"110071\" data-rebuy-shopify-product-ids=\"{{ product.id }}\"></div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_PUhPzh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_xYEVXc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rustic Strength ranked<strong> No. 11 </strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_DTdiQt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Recognized by Inc. as one of the Midwest’s <strong>fastest-growing</strong> private companies<strong> </strong>on the<strong> </strong><a href=\"https://www.inc.com/regionals/midwest\" target=\"_blank\"><strong>2026 Regionals: Midwest list</strong></a><strong>.</strong></p>",
+            "text_style": "body"
+          }
+        },
+        "button_ijVTRr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more",
+            "button_link": "shopify://blogs/company/named-one-of-the-midwest-s-fastest-growing-private-companies-by-inc",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xYEVXc",
+        "text_DTdiQt",
+        "button_ijVTRr"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/RUSTIC_STRENGTH_RANKED_NO._11.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_TcHGXK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6kDWX6": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_P6N9Tz": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Recognized by Inc. as one of the Midwest’s fastest-growing private companies, Rustic Strength ranked No. 11 on the </strong><a href=\"https://www.inc.com/regionals/midwest\" target=\"_blank\"><strong>2026 Regionals: Midwest list</strong></a><strong>.</strong></p>"
+          }
+        },
+        "button_KFTqWB": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more",
+            "button_link": "shopify://blogs/company/named-one-of-the-midwest-s-fastest-growing-private-companies-by-inc",
+            "button_style_secondary": false,
+            "button_label_2": "Inc. Regionals",
+            "button_link_2": "https://www.inc.com/regionals/midwest",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_6kDWX6",
+        "text_P6N9Tz",
+        "button_KFTqWB"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "all",
+        "products_to_show": 8,
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "169628122367bcf8ca": {
+      "type": "apps",
+      "blocks": {
+        "e18d42b7-50ae-4082-8a11-c7acdfde04e7": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "110071",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "e18d42b7-50ae-4082-8a11-c7acdfde04e7"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "17183822453828793b": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_FHdgTa": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "disabled": true,
+          "settings": {
+            "enabled": true,
+            "id": "154086",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_FHdgTa"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "featured_collection_WV9GeM": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "best-sellers",
+        "products_to_show": 4,
+        "title": "Proven Best Sellers",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "165029122494cdd2fb": {
+      "type": "collection-list",
+      "blocks": {
+        "1650291224726e04f5-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry-detergent"
+          }
+        },
+        "11c4431c-7ea3-42b1-92c4-0ee334407fd5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "auto-dishwasher"
+          }
+        },
+        "1650291224726e04f5-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dish-soap"
+          }
+        },
+        "1650291224726e04f5-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hand-soap"
+          }
+        },
+        "d1676293-fa93-44c7-83f5-5c965615a4c5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "castile-soap"
+          }
+        },
+        "5bf5edf3-9f9e-4f61-91bb-6f2801f30118": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hair-care-products"
+          }
+        },
+        "7a100d83-6538-4986-80c7-a826f7a18848": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "body-care"
+          }
+        },
+        "9fbf985b-ae3b-4edb-bf96-1215676c96a7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "essential-oils"
+          }
+        },
+        "fcff871e-ec50-4e6d-a150-4ceeb678eae6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "household-goods"
+          }
+        },
+        "featured_collection_P7FMWY": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "room-linen-sprays"
+          }
+        }
+      },
+      "block_order": [
+        "1650291224726e04f5-0",
+        "11c4431c-7ea3-42b1-92c4-0ee334407fd5",
+        "1650291224726e04f5-1",
+        "1650291224726e04f5-2",
+        "d1676293-fa93-44c7-83f5-5c965615a4c5",
+        "5bf5edf3-9f9e-4f61-91bb-6f2801f30118",
+        "7a100d83-6538-4986-80c7-a826f7a18848",
+        "9fbf985b-ae3b-4edb-bf96-1215676c96a7",
+        "fcff871e-ec50-4e6d-a150-4ceeb678eae6",
+        "featured_collection_P7FMWY"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "a308f92a-0225-4967-8964-a114869def99": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"elfsight-sapp-2e3d9916-1c81-4e01-96d5-026f5d446cf1\"></div>\n<center> <p>Above is based on total gallons sold to refill shops as of 03/01/2024, converted to units of 16oz single-use containers.</p> <center>\n<!-- Elfsight Number Counter | CTL Number Counter -->\n<script src=\"https://elfsightcdn.com/platform.js\" async></script>\n<div class=\"elfsight-app-6418a398-c72d-45bd-8c6b-2dbd8c8e0a1e\" data-elfsight-app-lazy></div> <center> <p>Total containers returned to us to be Sanitized & Refilled as of 03/31/2026</p>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_6pqahJ": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_kTzdfx": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_iMczGN": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_J3wAab": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kTzdfx",
+        "text_iMczGN",
+        "buttons_J3wAab"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/1_An_Image_size_1584x396_px__2_baeb638b-70a9-4f41-96a3-e040ea5612d3.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "18b24e8b-0559-4630-997f-c1182f95decf": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16648113357040__18b24e8b-0559-4630-997f-c1182f95decf-168304537455981a46-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Pure. Refillable.",
+            "heading_size": "h1"
+          }
+        },
+        "template--16648113357040__18b24e8b-0559-4630-997f-c1182f95decf-168304537455981a46-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Rustic Strength manufactures high-purity, toxin-free refillable plant-based cleaning + wellness products. With hundreds of bulk refill locations from Hawaii to the East Coast, you can sustainably refill. </p><p>My husband and I started this company to reduce toxins in our own life. Now we help others do the same. </p><p>The difference between our products vs. others on the market is that we use highly concentrated active ingredients that are sourced with no impurities. We strictly avoid harsh allergenic chemicals and the processes that produce known carcinogens and hormone disruption. Our products are all <em>phthalate-free, paraben-free, phosphate-free, SLS-free, SLES-free, </em><a href=\"https://rusticstrength.com/pages/why-we-dont\" target=\"_blank\" title=\"https://rusticstrength.com/pages/why-we-dont\"><em>and much more</em></a>. </p><p>We didn’t sweat when New York recently placed restrictions on the sale of cleaning products containing high levels of the known carcinogen <a href=\"https://rusticstrength.com/blogs/why-we-dont-do-what-other-companies-do/what-is-1-4-dioxane-and-why-dont-we-use-it-in-our-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/why-we-dont-do-what-other-companies-do/what-is-1-4-dioxane-and-why-dont-we-use-it-in-our-products\"><em>1,4 Dioxane</em></a>. Where many big brands fell short of the standard and lost public trust, we were able to gain it by not having this impurity. </p><p>Rustic Strength was the first in our industry to establish a “<a href=\"https://rusticstrengthwholesale.com/pages/close-the-loop-program™\" title=\"https://rusticstrengthwholesale.com/pages/close-the-loop-program™\">Close The Loop Program</a>” to re-use our containers and we have paved the way for other manufacturers to follow in our footsteps.  Our closed loop program credits our refill partners to send back our containers for washing and sanitizing after their use. Look out for our cute sticker badges we use to show if you have received a <a href=\"https://www.instagram.com/reel/Cn7VRmAvQ-6/\" target=\"_blank\" title=\"https://www.instagram.com/reel/Cn7VRmAvQ-6/\"><em>bonafide sanitized re-used container</em></a>.</p><p>Most of our products are produced daily at our family-run factory in The Ozarks, USA — arriving to directly you made the same week. While with larger companies product may have sat on shelves for up to a year. </p><p>We often promote our wholesale partners to our retail audience on our instagram - especially when we are tagged. Let us know if you are not already on <a href=\"https://rusticstrength.com/pages/locations\" target=\"_blank\" title=\"https://rusticstrength.com/pages/locations\">our store locator</a>, so we can help our customers refill with you!</p>"
+          }
+        },
+        "template--16648113357040__18b24e8b-0559-4630-997f-c1182f95decf-168304537455981a46-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16648113357040__18b24e8b-0559-4630-997f-c1182f95decf-168304537455981a46-0",
+        "template--16648113357040__18b24e8b-0559-4630-997f-c1182f95decf-168304537455981a46-1",
+        "template--16648113357040__18b24e8b-0559-4630-997f-c1182f95decf-168304537455981a46-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "b25d8c77-6a64-4fdc-a716-35932bc8cb3d": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16810216554736__b25d8c77-6a64-4fdc-a716-35932bc8cb3d-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--16810216554736__b25d8c77-6a64-4fdc-a716-35932bc8cb3d-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--16810216554736__b25d8c77-6a64-4fdc-a716-35932bc8cb3d-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16810216554736__b25d8c77-6a64-4fdc-a716-35932bc8cb3d-heading-1",
+        "template--16810216554736__b25d8c77-6a64-4fdc-a716-35932bc8cb3d-text-1",
+        "template--16810216554736__b25d8c77-6a64-4fdc-a716-35932bc8cb3d-buttons-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Media_Incentive_Smaller.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "image_banner_qpnzRi": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ig8pWQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join The Refill Revolution",
+            "heading_size": "h1"
+          }
+        },
+        "text_YGGM8W": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Receive discounted pricing on our high purity products <em>for your current or future business</em>",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons_7WFf8F": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Apply to Bring Rustic Strength to Your Business",
+            "button_link_1": "https://rusticstrengthwholesale.com/account/register",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ig8pWQ",
+        "text_YGGM8W",
+        "buttons_7WFf8F"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/WholesaleBanner.gif",
+        "image_overlay_opacity": 60,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "1a535f70-d5dd-42ad-818a-ee69cbf4a0e4": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16810216554736__1a535f70-d5dd-42ad-818a-ee69cbf4a0e4-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "template--16810216554736__1a535f70-d5dd-42ad-818a-ee69cbf4a0e4-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "template--16810216554736__1a535f70-d5dd-42ad-818a-ee69cbf4a0e4-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More About This Offer",
+            "button_link": "shopify://pages/help-us-promote-your-shop",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16810216554736__1a535f70-d5dd-42ad-818a-ee69cbf4a0e4-heading-1",
+        "template--16810216554736__1a535f70-d5dd-42ad-818a-ee69cbf4a0e4-text-1",
+        "template--16810216554736__1a535f70-d5dd-42ad-818a-ee69cbf4a0e4-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_GHg6Ay": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<script src=\"https://static.elfsight.com/platform/platform.js\" data-use-service-core defer></script>\n<div class=\"elfsight-app-6a86d5a2-5043-4859-9a74-c64a390bcc91\" data-elfsight-app-lazy></div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_fkMdUB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wf6eKV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join The Refill Revolution",
+            "heading_size": "h1"
+          }
+        },
+        "text_WHHgG4": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Receive discounted pricing on our high purity products</h2><h2><em>for your current or future business</em></h2>"
+          }
+        },
+        "button_dVmVJ8": {
+          "type": "button",
+          "settings": {
+            "button_label": "Create an Account + Claim Free Samples",
+            "button_link": "https://rusticstrengthwholesale.com/account/register",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wf6eKV",
+        "text_WHHgG4",
+        "button_dVmVJ8"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "e88814db-98b0-4c7b-aea3-51eb9414bcfd": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16648113357040__e88814db-98b0-4c7b-aea3-51eb9414bcfd-16765787700fabe7e6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Questions?",
+            "heading_size": "h1"
+          }
+        },
+        "template--16648113357040__e88814db-98b0-4c7b-aea3-51eb9414bcfd-16765787700fabe7e6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Call or text <strong>417-701-1406</strong></p><p>We'll answer Monday thru Friday 9am-4pm CST</p>"
+          }
+        },
+        "template--16648113357040__e88814db-98b0-4c7b-aea3-51eb9414bcfd-16765787700fabe7e6-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16648113357040__e88814db-98b0-4c7b-aea3-51eb9414bcfd-16765787700fabe7e6-0",
+        "template--16648113357040__e88814db-98b0-4c7b-aea3-51eb9414bcfd-16765787700fabe7e6-1",
+        "template--16648113357040__e88814db-98b0-4c7b-aea3-51eb9414bcfd-16765787700fabe7e6-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "image_banner_VBPAhT",
+    "image_banner_fzhWGH",
+    "image_banner_LX9r3y",
+    "image_banner_ebRiPN",
+    "image_with_text_c7wzzF",
+    "rich_text_XcBLWh",
+    "4aa7feb8-120c-4986-84cd-ccc1d9ee515d",
+    "c14fb3d9-e08b-4501-8e58-dce3dd868c8e",
+    "image_with_text_PUhPzh",
+    "rich_text_TcHGXK",
+    "featured_collection",
+    "169628122367bcf8ca",
+    "17183822453828793b",
+    "featured_collection_WV9GeM",
+    "165029122494cdd2fb",
+    "a308f92a-0225-4967-8964-a114869def99",
+    "image_banner_6pqahJ",
+    "18b24e8b-0559-4630-997f-c1182f95decf",
+    "b25d8c77-6a64-4fdc-a716-35932bc8cb3d",
+    "image_banner_qpnzRi",
+    "1a535f70-d5dd-42ad-818a-ee69cbf4a0e4",
+    "custom_liquid_GHg6Ay",
+    "rich_text_fkMdUB",
+    "e88814db-98b0-4c7b-aea3-51eb9414bcfd"
+  ]
+}

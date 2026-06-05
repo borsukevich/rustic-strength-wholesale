@@ -1,0 +1,43 @@
+<script>
+  function updateSearchPrices(products, type) {
+    setTimeout(() => {
+      products.forEach(product => {
+        fetch(Shopify.routes.root + "products/" + product.handle + ".js")
+          .then((res) => res.json())
+          .then((data) => {
+            var updatedProductData = data;
+            if (Number(product.id) === updatedProductData.id || product.productId === updatedProductData.id) {
+              product.price = updatedProductData.price;
+              product.compareAtPrice = updatedProductData.compare_at_price;
+              if (product.variants) {
+                for (var j = 0, updatedProductVariant; j < updatedProductData.variants?.length; j++) {
+                  updatedProductVariant = updatedProductData.variants[j];
+                  for (var x = 0, productVariant; x < product.variants?.length; x++) {
+                    productVariant = product.variants[x];
+                    if (updatedProductVariant.id === Number(productVariant.id)) {
+                      productVariant.price = updatedProductVariant.price;
+                      productVariant.compareAtPrice = updatedProductVariant.compare_at_price;
+                      break;
+                    }
+                  }
+                }
+              } else {
+                product.selected_variant.price = updatedProductData.price;
+                product.selected_variant.compareAtPrice = updatedProductData.compare_at_price;
+              }
+            }
+          });
+      })
+    }, 500)
+  }
+
+  document.addEventListener('rebuy:smartsearch.quickview.ready', (event) => {
+    setTimeout(() => { updateSearchPrices(event.detail.smartSearchQuickView.setting.suggestedProducts, "QUICKVIEW ready"); }, 500)
+  });
+  document.addEventListener('rebuy:smartsearch.quickview.productsChange', (event) => {
+    updateSearchPrices(event.detail.products, "QUICKVIEW change");
+  });
+  document.addEventListener('rebuy:smartsearch.resultsPage.productsChange', (event) => {
+    setTimeout(() => { updateSearchPrices(event.detail.products, "RESULTSPAGE"); }, 500)
+  });
+</script>

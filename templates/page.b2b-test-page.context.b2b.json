@@ -1,0 +1,77 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "context": {
+    "market": "all-b2b"
+  },
+  "parent": "page.b2b-test-page.json",
+  "sections": {
+    "rich_text_eEhzE": {
+      "type": "rich-text",
+      "disabled": false,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "header-408c5582df2b9cc6d5d010a9b90181b6": null,
+        "padding_top": 40,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "heading_D3DAL": {
+          "type": "heading",
+          "disabled": false,
+          "settings": {
+            "heading": "This is a Test",
+            "heading_size": "h1"
+          }
+        },
+        "text_Ryzme": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "text": "<p>Information on this page should only be visible to B2B customers who are logged in and have approved B2B accounts. </p>"
+          }
+        },
+        "button_fxwgx": {
+          "type": "button",
+          "disabled": false,
+          "settings": {
+            "header-a5a2e87182348c157b057e209e6994af": null,
+            "button_label": "Inactive Button",
+            "button_link": "shopify://pages/sds-library",
+            "button_style_secondary": false,
+            "header-4755ee792a3d13b132300aa041ef5aa2": null,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_D3DAL",
+        "text_Ryzme",
+        "button_fxwgx"
+      ],
+      "name": "t:sections.rich-text.presets.name"
+    },
+    "main": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    }
+  },
+  "order": [
+    "rich_text_eEhzE",
+    "main",
+    "18cfd24b-7c40-4c9e-92f3-cd67457c438a"
+  ]
+}

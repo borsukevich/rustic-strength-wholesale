@@ -1,0 +1,456 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "165039110937e5ab93": {
+      "type": "collapsible-content",
+      "blocks": {
+        "165039110956edf9a9-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is there a Minimum Order Quantity (MOQ)?",
+            "icon": "check_mark",
+            "row_content": "<p>Currently, we do not have a minimum order quantity.  Rustic Strength's stance is everyone has<br/>to start somewhere.  We love helping the small business entrepreneurs get a foot hold in this business.</p>",
+            "page": ""
+          }
+        },
+        "165039110956edf9a9-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I get samples of the product before I purchase it?",
+            "icon": "check_mark",
+            "row_content": "<p>Of course you can! We encourage you to get samples of the products you want to carry. In each product listing is a 4 oz sample. You may order as many samples as you need to at a very reasonable price. Additionally, when you first sign up for your Wholesale account, you will receive a discount code that is good for 1 of our Welcome Sample Packs (a $40 value). </p>",
+            "page": ""
+          }
+        },
+        "165039110956edf9a9-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why no pump or spout?",
+            "icon": "check_mark",
+            "row_content": "<p>This is about sustainability and decreasing waste in the environment. We do not automatically provide a pump or spout with our products because we are trying to reduce waste in the environment. <br/>• If you are refilling a eco-jug or gallon container you do not need an addition spigot. <br/>• You may already have a pump or spigot from your last order.If so, just keep this and reuse it when refilling containers.</p>",
+            "page": ""
+          }
+        },
+        "165039110956edf9a9-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Spouts and Pumps",
+            "icon": "check_mark",
+            "row_content": "<p><strong>All-in-one Spout</strong> - This \"Swiss Army Spout\" can do it all. </p><ul><li>Versatile Flow Control</li><li>Fast Flow for Large Containers</li><li>Slow Flow for Precision Filling</li><li>Rotates- Entire Spout Rotates in place to prevent dripping</li><li>360 degree Flow Control - Handle rotates 360 degrees for omnidirectional control</li><li>Should be used with our eco-jug dispenser only.<br/><br/><strong>Easy Flow Pump </strong>for eco-jug,<br/>buckets and drums<br/>• These pumps are used for any material<br/>• The tip can be moved up or down to control drips<br/>• They can have a reducer added onto the tip to pump into smaller opening containers</li></ul>",
+            "page": ""
+          }
+        },
+        "b8e3128e-8c91-4b3d-a2fa-8a0816455f93": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Retail Ready Items",
+            "icon": "check_mark",
+            "row_content": "<p>12oz, 16oz, 64oz and 128oz containers that are ready on shelves as grab and go items. They can be used for a quick sale and returned to the shop for refill purposes. These are sold in packs and have material and labels on them.</p>",
+            "page": ""
+          }
+        },
+        "9d449c5c-dc3a-4bb5-95fa-06ba0f5cb172": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Bulk Containers",
+            "icon": "check_mark",
+            "row_content": "<p>4 pack of 1 gallon, 5-gallon, 30-gallon drum and 55-gallon drum. These are used to refill existing containers of material you have on your shelf or containers brought in by customers.</p>",
+            "page": ""
+          }
+        },
+        "571aef3a-e384-4d2c-a792-0f09ee76bc0c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Empty Containers for resell",
+            "icon": "check_mark",
+            "row_content": "<p>We have 12oz, 16oz, 64oz, 128oz containers for you to resell to your customers. We will be adding glass, aluminum, stainless steel containers in varying sizes.</p>",
+            "page": ""
+          }
+        },
+        "20968c07-3e41-49e4-87b8-45ff3c181133": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "5 gallon fill weights in ounces",
+            "icon": "check_mark",
+            "row_content": "<p>Hand Soap -689</p><p>Dish Soap - 689</p><p>Laundry Detergent - 689</p><p>Shampoo - 684</p><p>Body Wash - 689</p><p>Conditioner - 640</p><p>Lotion - 640</p><p>Vinegar 100g - 680</p><p>Vinegar 200g - 684</p><p>Fabric Softener - 658.5</p><p>Lots of Purpose - 659</p><p>Rinse Aid - 661</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_6449X3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How much room will I need (container sizes)?",
+            "icon": "check_mark",
+            "row_content": "<p><strong>1-gallon Jugs</strong><br/><strong>PLASTIC</strong> - 12\" h x 6\" w - with pump 17\" h<br/><strong>GLASS</strong> - 11\" h x 5.25\" w - with pump 16\" h<br/><br/><strong>5-gallon Eco-Jug</strong><br/><strong>VERTICAL</strong> - 14.5\" h x 10.5\" d x 10\" w - with economy pump 20\" h<br/><strong>VERTICAL</strong> - 14.5\" h x 10.5\" d x 10\" w - with premium pump 30\" h<br/><strong>HORIZONTAL </strong>- 14.5\" h x 10.5\" d x 10\" w - with spout 17\" d<br/><br/><strong>5-gallon Buckets</strong><br/><strong>BUCKET</strong> - 15\" h x 12\" d/w - with pump 21\" h<br/><br/><strong>30-gallon Drum</strong><br/><strong>Drum</strong> - 29\" h x 19\" d/w - with 30 g pump 38 to 48\" h (when extended)<br/><strong>Drum</strong> - 29\" h x 19\" d/w - with 55 g pump 44 to 54\" h (when extended)<br/><br/><strong>55-gallon Drum</strong><br/><strong>Drum</strong> - 35\" h x 24\" d/w - with 55 g pump 44 to 54\" h (when extended)</p>",
+            "page": ""
+          }
+        },
+        "134fe9fd-e362-4888-8369-f0d7318c065c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How much laundry detergent should I use? Do you have an exact calculation?",
+            "icon": "check_mark",
+            "row_content": "<p>An exact calculation would only work under perfect conditions and every person's laundry set up is different.  We recommend starting with 1/2 to 1 oz of laundry detergent per load and adjust to your personal liking and efficiency. </p><p>The factors that affect dosage amounts are:</p><p><strong>Water type -</strong> </p><p>Hard water vs soft water</p><p>Well water vs city water</p><p>Mineral types found in the water</p><p>Hot water vs cold water</p><p><strong>Washing machine-</strong></p><p>Different machines work at different levels of efficiency. Also the amount of water added<br/>in a \"normal\" load will vary machine to machine. </p><p><strong>Soil level- </strong></p><p>The heavier the soil load on the clothes the more laundry detergent will be required to be effective. </p><p><strong>Machine load-</strong></p><p>The larger the load of garments in a machine the larger the laundry detergent load will be required. Especially true in older machines where the use is required to select the load size. Newer machines typically load sense and deliver the amount of water needed for the load of the garments inside.</p><p>So, all of this put together equals; as you use a particular laundry detergent the best way to determine the amount to use is to test and tune based on your<br/>particular sets of circumstances.</p>",
+            "page": ""
+          }
+        },
+        "025d74b6-bd36-41f8-9d1e-4d34f1d79240": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is your pallet wrap recyclable?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, it is!!! The plastic wrap we use is denoted as a category 4 in the recycling programs. You should be able to drop it in the boxes at Walmart or participating grocery stores.</p>",
+            "page": ""
+          }
+        },
+        "5c7be51c-5ea4-405f-86a3-c9677a082c07": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can your laundry detergent be used on cloth diapers or reusable menstrual pads?",
+            "icon": "check_mark",
+            "row_content": "<p>YES!!! We also recommend using our OxyBoost Stain Remover in conjunction with cleaning these items.  Pre-soaking the above items helps remove those tough stains as well.  If you want them bright white again, just hang them out to dry in the sun.  It is a natural bleaching agent. </p>",
+            "page": ""
+          }
+        },
+        "d3587a59-1e36-418d-a1a5-fa7f119ab36f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How much should I sell your product to make a profit?",
+            "icon": "check_mark",
+            "row_content": "<p>Set Your Retail Pricing, Easily ⚡  With our <a href=\"https://rusticstrengthwholesale.com/_t/c/A1020005-1709B3C2180976C3-66C24B67?l=AABJ%2Bzq10t92SluvRZ8yDBfLalHErjnws%2BRHiRVgxV635J%2F0KKYSKs9zRFNgbmb2BHHhq8ApipKU5HCdcZIuk7gJzpTAqfOtRIEpOSYNyX1fPSYKeJ2qa6OK5pK%2Fo50cuFkqFROuh0kpM8fgF9kmofD9%2Bm3EYLEof6Fer%2Fd9WjWYnn0c3FQaa4IbtjhtxYZMBYnB09QO%2Fd2X5YzMaaxoFxoMJ%2Faw6KSF2gGB2GI5XhV1Ob9ahucKqqDjWo2linz5v3BzKd4N8CF1NZ38AATKaxAUqizKaV7d%2FOVn2N%2BTObuzTpPUfsdWhIelXA3hikym9GS3uMYTOOxXUQ9p&c=AAASwj%2Bwi1x7YtiCIqKJmshRhFyaNhkcrU4ozNyqJf26lU4YE7HRFyyeYoOxTnYiM%2FKJLcovI63b9NJKUUc52He%2BB8%2FLMbRjV96dyQYmAe8sCrtZ4xnT3f17ashnErkhKE00Rp3A3qj8wUsb8NVDKaF8eDHIeQAAxizXt%2FKZcl5IwCeDkfMtM8WqZFh%2B0O6Exy3wQeqwUHBaEuZkrgYcG7m84M1oT9k%2FC8i7PhAEigyeThumb9QxlO%2BqIGHMAjYKRGQbK%2Bi%2BSPjKbdcLZst0wgbVKRzPze13jZWxzLIuFW0gNxt4khgnCQDmuRc8M9SyqGCsju5JYMc3K82fZQ0Tx%2BNnuYBNFhm8MKNeT49kWs4qowChFo7fFo550GniHvStsuOxZgr5uwxZrMhjX22Cfa3Z%2F%2F7zeP0UpSI98k1MemXZ9Pn5n4ZzT8cOp0bZJcR75oaLa7tbBnv4LFASMi0%2Fw%2Bj0sklO56x9ebm00d2IrvxInz9qDmmLRDRJohGTpy0Dj9E9JLlVKltq%2FeZDeqx5MwoJ6EmMhpbdYvHm7PX5hJaCzOvXMSNJyf%2BiTYwwpCp0%2FayHLv8%3D\" title=\"https://rusticstrengthwholesale.com/_t/c/A1020005-1709B3C2180976C3-66C24B67?l=AABJ%2Bzq10t92SluvRZ8yDBfLalHErjnws%2BRHiRVgxV635J%2F0KKYSKs9zRFNgbmb2BHHhq8ApipKU5HCdcZIuk7gJzpTAqfOtRIEpOSYNyX1fPSYKeJ2qa6OK5pK%2Fo50cuFkqFROuh0kpM8fgF9kmofD9%2Bm3EYLEof6Fer%2Fd9WjWYnn0c3FQaa4IbtjhtxYZMBYnB09QO%2Fd2X5YzMaaxoFxoMJ%2Faw6KSF2gGB2GI5XhV1Ob9ahucKqqDjWo2linz5v3BzKd4N8CF1NZ38AATKaxAUqizKaV7d%2FOVn2N%2BTObuzTpPUfsdWhIelXA3hikym9GS3uMYTOOxXUQ9p&c=AAASwj%2Bwi1x7YtiCIqKJmshRhFyaNhkcrU4ozNyqJf26lU4YE7HRFyyeYoOxTnYiM%2FKJLcovI63b9NJKUUc52He%2BB8%2FLMbRjV96dyQYmAe8sCrtZ4xnT3f17ashnErkhKE00Rp3A3qj8wUsb8NVDKaF8eDHIeQAAxizXt%2FKZcl5IwCeDkfMtM8WqZFh%2B0O6Exy3wQeqwUHBaEuZkrgYcG7m84M1oT9k%2FC8i7PhAEigyeThumb9QxlO%2BqIGHMAjYKRGQbK%2Bi%2BSPjKbdcLZst0wgbVKRzPze13jZWxzLIuFW0gNxt4khgnCQDmuRc8M9SyqGCsju5JYMc3K82fZQ0Tx%2BNnuYBNFhm8MKNeT49kWs4qowChFo7fFo550GniHvStsuOxZgr5uwxZrMhjX22Cfa3Z%2F%2F7zeP0UpSI98k1MemXZ9Pn5n4ZzT8cOp0bZJcR75oaLa7tbBnv4LFASMi0%2Fw%2Bj0sklO56x9ebm00d2IrvxInz9qDmmLRDRJohGTpy0Dj9E9JLlVKltq%2FeZDeqx5MwoJ6EmMhpbdYvHm7PX5hJaCzOvXMSNJyf%2BiTYwwpCp0%2FayHLv8%3D\">FREE Pricing Tool</a>. </p><p></p><p>Easily find your: </p><p>- per ounce cost of any item, including shipping</p><p>- pricing to make a 2x, 3x or 4x mark-up on that product</p><p></p><p>Whether you are starting up your business or want to expand, we know that setting your prices with confidence can be tricky. Especially when the cost of goods is ever-changing.</p><p>To help empower your business Brandon has spent a great deal of time creating this <a href=\"https://rusticstrengthwholesale.com/_t/c/A1020005-1709B3C2180976C3-66C24B67?l=AABJ%2Bzq10t92SluvRZ8yDBfLalHErjnws%2BRHiRVgxV635J%2F0KKYSKs9zRFNgbmb2BHHhq8ApipKU5HCdcZIuk7gJzpTAqfOtRIEpOSYNyX1fPSYKeJ2qa6OK5pK%2Fo50cuFkqFROuh0kpM8fgF9kmofD9%2Bm3EYLEof6Fer%2Fd9WjWYnn0c3FQaa4IbtjhtxYZMBYnB09QO%2Fd2X5YzMaaxoFxoMJ%2Faw6KSF2gGB2GI5XhV1Ob9ahucKqqDjWo2linz5v3BzKd4N8CF1NZ38AATKaxAUqizKaV7d%2FOVn2N%2BTObuzTpPUfsdWhIelXA3hikym9GS3uMYTOOxXUQ9p&c=AAASwj%2Bwi1x7YtiCIqKJmshRhFyaNhkcrU4ozNyqJf26lU4YE7HRFyyeYoOxTnYiM%2FKJLcovI63b9NJKUUc52He%2BB8%2FLMbRjV96dyQYmAe8sCrtZ4xnT3f17ashnErkhKE00Rp3A3qj8wUsb8NVDKaF8eDHIeQAAxizXt%2FKZcl5IwCeDkfMtM8WqZFh%2B0O6Exy3wQeqwUHBaEuZkrgYcG7m84M1oT9k%2FC8i7PhAEigyeThumb9QxlO%2BqIGHMAjYKRGQbK%2Bi%2BSPjKbdcLZst0wgbVKRzPze13jZWxzLIuFW0gNxt4khgnCQDmuRc8M9SyqGCsju5JYMc3K82fZQ0Tx%2BNnuYBNFhm8MKNeT49kWs4qowChFo7fFo550GniHvStsuOxZgr5uwxZrMhjX22Cfa3Z%2F%2F7zeP0UpSI98k1MemXZ9Pn5n4ZzT8cOp0bZJcR75oaLa7tbBnv4LFASMi0%2Fw%2Bj0sklO56x9ebm00d2IrvxInz9qDmmLRDRJohGTpy0Dj9E9JLlVKltq%2FeZDeqx5MwoJ6EmMhpbdYvHm7PX5hJaCzOvXMSNJyf%2BiTYwwpCp0%2FayHLv8%3D\">FREE Retail Pricing Tool</a> for you.  Accompanied by demonstration videos.</p><p>Simply punch in the numbers from your invoice or quote, to easily find your per-ounce cost of any item, including shipping. It also tells you what you need to price that item to make a 2x, 3x, or 4x markup on that product. </p><p>This will help take the guesswork out of making a return on your investment.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bcLPQW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I sign up for Email + SMS?",
+            "icon": "check_mark",
+            "row_content": "<p>If you didn't sign up when you created your account, but would like to receive the updates, you can sign up at checkout by simply clicking on the option(s) you would like. The email that is associated with your account will be signed up. We offer discounts and perks to our subscribers!</p><p>You will also receive the Points Rewards associated with signing up. They will be automatically added to your account within 24 hours.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "165039110956edf9a9-0",
+        "165039110956edf9a9-1",
+        "165039110956edf9a9-2",
+        "165039110956edf9a9-3",
+        "b8e3128e-8c91-4b3d-a2fa-8a0816455f93",
+        "9d449c5c-dc3a-4bb5-95fa-06ba0f5cb172",
+        "571aef3a-e384-4d2c-a792-0f09ee76bc0c",
+        "20968c07-3e41-49e4-87b8-45ff3c181133",
+        "collapsible_row_6449X3",
+        "134fe9fd-e362-4888-8369-f0d7318c065c",
+        "025d74b6-bd36-41f8-9d1e-4d34f1d79240",
+        "5c7be51c-5ea4-405f-86a3-c9677a082c07",
+        "d3587a59-1e36-418d-a1a5-fa7f119ab36f",
+        "collapsible_row_bcLPQW"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "General Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "background-2",
+        "color_scheme": "background-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "165039270103654311": {
+      "type": "collapsible-content",
+      "blocks": {
+        "165039270179e08d9b-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you ship internationally?",
+            "icon": "check_mark",
+            "row_content": "<p>We sure do! We can ship products to most countries around the<br/>world.</p><p>Please be aware that different countries have unique customs rules and regulations. Unfortunately, if your package gets held at customs you will be responsible for communication and any additional costs required to release your item(s).</p>",
+            "page": ""
+          }
+        },
+        "165039270179e08d9b-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I track my order?",
+            "icon": "check_mark",
+            "row_content": "<p>When your order ships you will receive a separate email providing you with a tracking number to track your order. Sometimes this email gets sorted into spam or promotions folders so be sure to look in there if it feels like you have been waiting a little too long.</p><p>You can also log into your account and click on the order in question to see the status.</p><p>If you have multiple pieces in your order, sometimes they arrive on different days.</p><p>*Please note that sometimes the tracking can take a day or two to be updated by the carrier.</p>",
+            "page": ""
+          }
+        },
+        "8a143851-6ebf-44e0-bcca-ce5630ee03e4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I need to change the size of a container I ordered.",
+            "icon": "check_mark",
+            "row_content": "<p>Currently, Shopify does not allow us to change an existing order. If you need to change a size, you will need to place another order with the correct size, and we can cancel that other size from your order.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_NUVkF8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I need to add an item to an order I already placed.",
+            "icon": "check_mark",
+            "row_content": "<p>I already placed my order but forgot to add an item. What do I do?</p><p><br/><strong>1</strong>. Fill out a Customer Care Ticket with your order information to alert the customer care team that there will be an addition.<br/><strong>2</strong>. Place an additional order with your extra item(s).</p><p><br/>What about shipping for the second order? Can’t they ship together?</p><p><br/>In many cases, we will combine the orders and issue a refund for the second shipping cost. Here are some example scenarios:<br/><br/>1. <strong>The original order is over $3000 and includes free shipping</strong>.<br/>IF - the wholesale team is alerted of the addition before the order is fulfilled<br/>and palletized.<br/>THEN - The item(s) will be added to the pallet with the original order, and<br/>shipping on the additional order will be refunded.<br/><br/>2. <strong>The original order is under $3000 but qualified for Flat-Rate shipping</strong>.<br/>IF- the wholesale team is alerted of the addition before the order is fulfilled<br/>and the addition does not bring the total to over $3000.<br/>THEN - Item(s) are added to the original order, and the shipping for the<br/>addition is refunded.<br/><br/>3. <strong>The original order is under $3000 and qualified for Flat-Rate shipping</strong>.<br/>IF - the wholesale team is alerted of the addition before the order is fulfilled,<br/>boxed, and ready for shipping. and IF the addition brings the item total<br/>over $3000.<br/>THEN – Item(s) are added to the pallet with the original order, and the Flat-<br/>Rate shipping plus the shipping for the addition will be refunded.<br/><br/>4. <strong>The original order is under $1000 and does not qualify for Flat-Rate shipping</strong>.<br/>IF - the wholesale team is alerted of the addition before the order is fulfilled,<br/>boxed, and ready for shipping. and IF The addition brings the item total<br/>over $1000. Item(s) are added to the order and Flat-Rate shipping will now<br/>apply.<br/>THEN - The difference in shipping over $250 as well as the shipping for<br/>the addition will be refunded.<br/><br/>5. <strong>The original order is under $1000 and does not qualify for Flat Rate shipping</strong>.<br/>IF- the wholesale team is alerted of the addition before the order is fulfilled,<br/>boxed, and ready for shipping. and IF the addition does not bring the total<br/>over $1000.<br/>THEN – Item(s) are added to the order. Shipping for the addition will not<br/>be refunded unless the addition can safely be packed into the same<br/>shipping box as an item from the original order.<br/><br/>6.<strong> If the request is put in after the original order is fulfilled</strong>, the addition will remain a second order and will be filled and charged on its own.<br/><br/>7.<strong> If the request is put in after the original order is packed and / or palletized</strong> and prepared to ship – <em>even if it has not yet been fulfilled in the system</em> – the addition<br/>will remain a second order and will be filled and charged on its own.</p>",
+            "page": ""
+          }
+        },
+        "165039270179e08d9b-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "My order was damaged, now what?",
+            "icon": "check_mark",
+            "row_content": "<p>The first thing you should do is make sure all your packages arrived. UPS will repack items if they break in transit. Sometimes they won't even tell you they broke. Take pictures and send them to <a href=\"mailto:customercare@rusticstrength.com\" target=\"_self\">customercare@rusticstrength.com</a><br/><br/>Contact us at the above email and let us know what was missing from the order. We will get a replacement out to you ASAP.</p>",
+            "page": ""
+          }
+        },
+        "533366df-b791-415c-94ca-1148ccc636b0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "My order never got to me, what do I do?",
+            "icon": "check_mark",
+            "row_content": "<p>If it's been marked delivered and it's only been one day-sit tight! Sometimes the carriers scan it before it gets to you. Keep an eye out for the next few hours!</p><p>If the tracking hasn’t been updated in an unusually long time or if it was never updated since it was made, chances are it was lost in transit.</p><p><br/>Please file a claim with the carrier. If there is no conclusion after two weeks, please let us know and we will investigate replacing or crediting you<br/>for your order.</p>",
+            "page": ""
+          }
+        },
+        "f61fecf9-4876-4aef-868b-97584b0bdaaa": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I received the wrong scent! Now what do I do?",
+            "icon": "check_mark",
+            "row_content": "<p>Just send an email to<a href=\"mailto:customercare@rusticstrength.com\"> customercare@rusticstrength.com </a>tell us your name, order number and which product the scent was incorrect on.<br/>We will get it changed and send you the correction.</p>",
+            "page": ""
+          }
+        },
+        "165039270179e08d9b-0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "How long will it take to receive my order?",
+            "icon": "check_mark",
+            "row_content": "<p>We typically ship in 5-9 business days Monday through Friday excluding major holidays. Time of arrival depends on the carrier. We will send tracking information regarding your order.</p>",
+            "page": ""
+          }
+        },
+        "1b816a10-4e22-411c-9a6e-e86f7224e077": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your return and refund policy?",
+            "icon": "check_mark",
+            "row_content": "<p><span style=\"text-decoration:underline\"><strong>Return, Refund, Missed Shipment, & Damages Policy</strong></span></p><p> </p><p><strong>Damaged-in-Transit Orders:</strong> If an order is damaged in transit, please let us know. We will ship you a replacement at our expense and file a claim with the shipper.</p><p> </p><p><strong>Returning Items: </strong>Products no longer wanted can be returned in new, un-opened condition. We do not cover the cost of return transit. Once the item arrives back it will be inspected and once approved, we will give you a full refund of the item, minus our original shipping cost and a 25% restocking fee.</p><p> </p><p><strong>Refunding Orders: </strong>If you would like to refund an order before it has shipped you can do so by contacting customer care. We will provide a full refund minus a 5% processing fee.</p><p> </p><p><strong>Missed Shipments:</strong> If a shipment carrier exhausts its delivery attempts the items are returned to us by default.</p><ul><li><em>To re-ship the order: </em>an invoice will be sent with the shipping charges. If your address is commercial, we recommend changing it to a residential one so that the carrier will leave it if no one is present to receive it.</li></ul><p><em> </em></p><ul><li><em>To refund the order:</em> we will perform an inspection to make sure the items are still in sellable condition after their journey. We will then provide a full refund minus our original shipping cost and a 25% restocking fee. The shipping cost deduction applies even to orders that qualified for free or flat-rate shipping.</li></ul><p><br/></p><p></p><p><strong>Return Address:</strong><br/>403 North Oak Avenue, Mansfield, MO 65704<br/></p><p><strong>Return Inquiries:</strong><br/>customercare@rusticstrength.com</p><p></p><p><em>If you are shipping an item please consider using a trackable shipping service or purchasing shipping insurance. We don’t guarantee that we will receive your returned item. If your returning item is damaged or destroyed in transit you are responsible for filing a claim- having tracking or insurance greatly facilitates the claim filing process</em></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "165039270179e08d9b-1",
+        "165039270179e08d9b-2",
+        "8a143851-6ebf-44e0-bcca-ce5630ee03e4",
+        "collapsible_row_NUVkF8",
+        "165039270179e08d9b-3",
+        "533366df-b791-415c-94ca-1148ccc636b0",
+        "f61fecf9-4876-4aef-868b-97584b0bdaaa",
+        "165039270179e08d9b-0",
+        "1b816a10-4e22-411c-9a6e-e86f7224e077"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "Orders & Shipping",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "background-2",
+        "color_scheme": "background-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1650392705a005a490": {
+      "type": "collapsible-content",
+      "blocks": {
+        "165039270565b4aa81-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What custom scent should I get?",
+            "icon": "check_mark",
+            "row_content": "<p>Here is a list with many of the custom scents our customers have made!</p><p>Amyris Anise</p><p>Amyris Basil</p><p>Amyris Bergamot</p><p>Amyris Butter Cookie</p><p>Amyris Eucalyptus</p><p>Amyris Fresh Linen</p><p>Amyris Geranium</p><p>Amyris Grapefruit</p><p>Amyris Ho Wood</p><p>Amyris Lavender</p><p>Amyris Palmarosa</p><p>Amyris Sandalwood</p><p>Amyris Tea Tree</p><p>Amyris Vanilla</p><p>Anise Bitter Almond</p><p>Anise Lime</p><p>Aromatherapy Blend Eucalyptus</p><p>Aromatherapy Blend Lavender</p><p>Aromatherapy Blend Lemon</p><p>Aromatherapy Blend Petitgrain</p><p>Bay Spice Coconut</p><p>Bergamot Bitter Almond</p><p>Bergamot Cedarwood</p><p>Bergamot Chamomile</p><p>Bergamot Cypress</p><p>Bergamot Ginger</p><p>Bergamot Grapefruit</p><p>Bergamot Jasmine</p><p>Bergamot Lavender</p><p>Bergamot Lemon</p><p>Bergamot Lemongrass</p><p>Bergamot Lilac</p><p>Bergamot Lime</p><p>Bergamot Mandarin</p><p>Bergamot Orange</p><p>Bergamot Patchouli</p><p>Bergamot Peppermint</p><p>Bergamot Rosemary</p><p>Bergamot Sandalwood</p><p>Bitter Almond Clove</p><p>Bitter Almond Coconut</p><p>Bitter Almond Fresh Linen</p><p>Bitter Almond Ho Wood</p><p>Bitter Almond Lemon</p><p>Blood Orange Basil</p><p>Blood Orange Fresh Linen</p><p>Blood Orange Ginger</p><p>Butter Cookie Orange</p><p>Cassia Rosemary</p><p>Cedarwood Bitter Almond</p><p>Cedarwood Cinnamon</p><p>Cedarwood Clementine</p><p>Cedarwood Clove</p><p>Cedarwood Coconut</p><p>Cedarwood Fir Needle</p><p>Cedarwood Fresh Linen</p><p>Cedarwood Geranium</p><p>Cedarwood Ho Wood</p><p>Cedarwood Jasmine</p><p>Cedarwood Lavender</p><p>Cedarwood Rosemary</p><p>Cedarwood Spearmint</p><p>Cedarwood Tea Tree</p><p>Cedarwood Vanilla</p><p>Cinnamon Bark Replacer Cassia</p><p>Cinnamon Bark Replacer Patchouli</p><p>Cinnamon Clove</p><p>Clementine Chamomile</p><p>Clementine Cinnamon</p><p>Clementine Clove</p><p>Clementine Sage</p><p>Clove Basil</p><p>Clove Ginger</p><p>Clove Petitgrain</p><p>Coconut Lemon</p><p>Coconut Lime</p><p>Cucumber Melon Basil</p><p>Cucumber Melon Fruity Green Tea</p><p>Cypress Cinnamon</p><p>Cypress Ho Wood</p><p>Eucalyptus Bergamot</p><p>Eucalyptus Cypress</p><p>Eucalyptus Fir Needle</p><p>Eucalyptus Fresh Linen</p><p>Eucalyptus Ginger</p><p>Eucalyptus Ho Wood</p><p>Eucalyptus Jasmine</p><p>Eucalyptus Lavender</p><p>Eucalyptus Lemon</p><p>Eucalyptus Mango Coconut</p><p>Eucalyptus Peppermint</p><p>Eucalyptus Rosemary</p><p>Eucalyptus Spearmint</p><p>Eucalyptus Tea Tree</p><p>Eucalyptus Vanilla</p><p>Fir Needle Tea Tree</p><p>Fresh Linen Bitter Almond</p><p>Fresh Linen Coconut</p><p>Fresh Linen Grapefruit</p><p>Fresh Linen Lemon</p><p>Fresh Linen Magnolia</p><p>Fruity Green Tea Coconut</p><p>Grapefruit Basil</p><p>Grapefruit Bergamot</p><p>Grapefruit Eucalyptus</p><p>Grapefruit Geranium</p><p>Grapefruit Ginger</p><p>Grapefruit Ho Wood</p><p>Grapefruit Lemon</p><p>Grapefruit Lemongrass</p><p>Grapefruit Lime</p><p>Grapefruit Orange</p><p>Grapefruit Peppermint</p><p>Grapefruit Sage</p><p>Grapefruit Tangerine</p><p>Honeysuckle Bitter Almond</p><p>Honeysuckle Chamomile</p><p>Honeysuckle Coconut</p><p>Honeysuckle Cucumber Melon</p><p>Honeysuckle Fresh Linen</p><p>Honeysuckle Ho Wood</p><p>Honeysuckle Jasmine</p><p>Honeysuckle Jasmine</p><p>Honeysuckle Lilac</p><p>Jasmine Bergamot</p><p>Jasmine Chamomile</p><p>Jasmine Fir Needle</p><p>Jasmine Fresh Linen</p><p>Jasmine Lemongrass</p><p>Jasmine Lime</p><p>Jasmine Palmarosa</p><p>Jasmine Tangerine</p><p>Jasmine Vanilla</p><p>Lavender Aromatherapy Blend</p><p>Lavender Bergamot</p><p>Lavender Chamomile</p><p>Lavender Coconut</p><p>Lavender Cypress</p><p>Lavender Eucalyptus</p><p>Lavender Fir Needle</p><p>Lavender Geranium</p><p>Lavender Ho Wood</p><p>Lavender Lemon</p><p>Lavender Lemongrass</p><p>Lavender Lilac</p><p>Lavender Lime</p><p>Lavender Orange</p><p>Lavender Patchouli</p><p>Lavender Peppermint</p><p>Lavender Rosemary</p><p>Lavender Tea Tree</p><p>Lavender Vanilla</p><p>Lemon Basil</p><p>Lemon Clementine</p><p>Lemon Clove</p><p>Lemon Cypress</p><p>Lemon Eucalyptus</p><p>Lemon Fir Needle</p><p>Lemon Ginger</p><p>Lemon Ho Wood</p><p>Lemon Lavender</p><p>Lemon Lime</p><p>Lemon Orange</p><p>Lemon Peppermint</p><p>Lemon Rosemary</p><p>Lemon Strawberry</p><p>Lemon Tangerine</p><p>Lemon Tea Tree</p><p>Lemon Vanilla</p><p>Lemongrass Basil</p><p>Lemongrass Blood Orange</p><p>Lemongrass Eucalyptus</p><p>Lemongrass Fresh Linen</p><p>Lemongrass Ginger</p><p>Lemongrass Patchouli</p><p>Lemongrass Peppermint</p><p>Lemongrass Rosemary</p><p>Lemongrass Rosemary</p><p>Lemongrass Tangerine</p><p>Lemongrass Tea Tree</p><p>Lilac Patchouli</p><p>Magnolia Bitter Almond</p><p>Magnolia Geranium</p><p>Magnolia Lilac</p><p>Magnolia Mango Coconut</p><p>Magnolia Patchouli</p><p>Magnolia Pine Needle</p><p>Mandarin Sage</p><p>Mango Coconut Bergamot</p><p>Orange Anise</p><p>Orange Basil</p><p>Orange Bitter Almond</p><p>Orange Cedarwood</p><p>Orange Clove</p><p>Orange Fir Needle</p><p>Orange Ginger</p><p>Orange Grapefruit</p><p>Orange Lavender</p><p>Orange Lemon</p><p>Orange Patchouli</p><p>Orange Rosemary</p><p>Orange Vanilla</p><p>Patchouli Spearmint</p><p>Peppermint Basil</p><p>Peppermint Bergamot</p><p>Peppermint Eucalyptus</p><p>Peppermint Grapefruit</p><p>Peppermint Lavender</p><p>Peppermint Lemon</p><p>Peppermint Lime</p><p>Peppermint Rosemary</p><p>Peppermint Tea Tree</p><p>Pine Needle Eucalyptus</p><p>Rosemary Petitgrain</p><p>Rosemary Tea Tree</p><p>Sage Ginger</p><p>Sandalwood Chamomile</p><p>Sandalwood Clementine</p><p>Sandalwood Grapefruit</p><p>Sandalwood Ho Wood</p><p>Sandalwood Patchouli</p><p>Tangerine Basil</p><p>Tangerine Bergamot</p><p>Tangerine Clove</p><p>Tangerine Ginger</p><p>Tangerine Jasmine</p><p>Tangerine Lime</p><p>Tangerine Patchouli</p><p>Tea Tree Coconut</p><p>Tea Tree Lime</p><p>Vanilla Bitter Almond</p><p>Vanilla Cinnamon</p><p>Vanilla Coconut</p><p>Vanilla Cypress</p><p>Vanilla Fresh Linen</p><p>Vanilla Ho Wood</p><p>Vanilla Jasmine</p><p>Vanilla Lavender</p><p>Vanilla Lemon</p><p>Vanilla Lemon</p><p>Vanilla Lilac</p><p>Vanilla Lime</p><p>Vanilla Orange</p><p>Vanilla Patchouli</p><p>Vanilla Peppermint</p><p>Vanilla Sandalwood</p><p>Vanilla Strawberry</p><p>Wintergreen Candy Vanilla</p>",
+            "page": ""
+          }
+        },
+        "aeefcf08-1656-4467-8839-5e665686510e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Glass container display option",
+            "icon": "check_mark",
+            "row_content": "<p>This would be for items that customers purchase in small quantities, conditioner and lotion. The glass container is used as a display and when you reorder, you just refill your glass display from your refill bag.</p>",
+            "page": ""
+          }
+        },
+        "165039270565b4aa81-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Eco-Jug container display option",
+            "icon": "check_mark",
+            "row_content": "<p><strong> Horizontal position of eco-jug</strong><br/>This option takes up a floor space of 14. 5” length x 10” wide x 11.5” deep. The spigot would be in a downward facing position. Some dripping may occur.You will want to get small cups to place directly under the spigot, a drip pan on the floor to place under all the spigots, or some other upcycle technique.</p><p><strong>Vertical position of eco-jug </strong>This option takes up a floor space of 10” wide x 14.5 tall x 11.5” deep.  When fully extended the easy flow, pump takes up another 34” above the front of the container.  You do not need to fully extend the pump to get material out.  The pump pushes material out while the pump is moving up or down. The tip of the easy flow pump will turn upward to control drips.</p>",
+            "page": ""
+          }
+        },
+        "165039270565b4aa81-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Bucket container",
+            "icon": "check_mark",
+            "row_content": "<p>This option takes up a floor space of approximately 1 square foot (about 14” total).</p>",
+            "page": ""
+          }
+        },
+        "165039270565b4aa81-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Drums or Barrels",
+            "icon": "check_mark",
+            "row_content": "<p><strong>30-gallon drum </strong>stands 29” and needs approximately 4 square feet of floor space. The easy flow pump takes up another 39” above the front of the drum. You do not need to fully extend the pump to get material out. While moving the pump up or down, the pump pushes material out. The tip of the easy flow pump will turn upward to control<br/>drips.</p><p><br/><strong>55-gallon drum</strong> stands 37” and needs approximately 4 square feet of floor space. The easy flow pump takes up another 36” above the 55-gallon. You do not need to fully extend the pump to get material out.While moving the pump up or down, the pump<br/>pushes material out. The tip of the easy flow pump will turn upward to control drips.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "165039270565b4aa81-0",
+        "aeefcf08-1656-4467-8839-5e665686510e",
+        "165039270565b4aa81-1",
+        "165039270565b4aa81-2",
+        "165039270565b4aa81-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "Help I am new to refilling! What do I need?",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "background-2",
+        "color_scheme": "background-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16503934304b8b7578": {
+      "type": "collapsible-content",
+      "blocks": {
+        "1650393430b8752ec4-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are Rustic Strength's no-no ingredients?",
+            "icon": "check_mark",
+            "row_content": "<p>Our products do not contain any of these ingredients and here is why.<br/><br/><strong>• parabens</strong> – xenoestorgens (agents that mimic estrogen) that has been linked to cancer<br/><strong>• fragrances with phthalates</strong>– some can be toxic (phthalates); perceived clean vs real clean because of the smell<br/><br/><strong>• phthalates</strong>– can damage liver, kidneys, lungs and reproductive system<br/><br/><strong>• SLS and SLES</strong>can irritate eyes, skin and lungs. Tested on animals and not environmentally friendly<br/><br/><strong>• dyes</strong> – skin irritant<br/><br/><strong>• brighteners-</strong> chemicals that remain on the clothes to absorb UV light (naphthotriazolystilbenes, benzoxazolyl, diaminostilbene, disulfonate)</p>",
+            "page": ""
+          }
+        },
+        "1650393430b8752ec4-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Plastic, Glass, Boxes... why so many choices?",
+            "icon": "check_mark",
+            "row_content": "<p>It's all about keeping our core values of sustainability by recycling, reusing and upcycling<br/>materials. <br/>• The plastic bottles that we sell come from other manufacturer's surplus of supply (avoiding the landfill).<br/>• The glass jugs are made locally (supporting local business)<br/>• The boxes can be reused, recycled or upcycled for crafts and other projects.</p>",
+            "page": ""
+          }
+        },
+        "1650393430b8752ec4-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why do you use deionized water?",
+            "icon": "check_mark",
+            "row_content": "<p>The deionization process removes mineral ions such as sodium, calcium, iron, copper, chloride, and sulfate to make the water as PURE as possible.  </p>",
+            "page": ""
+          }
+        },
+        "1650393430b8752ec4-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are your products cruelty free, vegan and gluten free?",
+            "icon": "check_mark",
+            "row_content": "<p>YES!! All of the product line is gluten free, vegan and cruelty free. Unless otherwise marked (lotion bars are not vegan)</p>",
+            "page": ""
+          }
+        },
+        "8200a33d-645a-4548-a865-eeca99fb703c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do you help control waste in the environment?",
+            "icon": "check_mark",
+            "row_content": "<p>We offer a unique <a href=\"/pages/close-the-loop-program\" title=\"Close The Loop Program\">Close The Loop™ Program</a> that encourages the end user to send back containers to be sanitized, and reused.  When customers do this, they are refilling their existing containers vs throwing them away. </p>",
+            "page": ""
+          }
+        },
+        "c8186c1d-d292-41e2-bb73-8feda9123469": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What makes you a zero-waste manufacturer? How are you making a difference in the war on waste and saving our planet?",
+            "icon": "check_mark",
+            "row_content": "<p>• We make a conscious effort to recycle, reuse and upcycle all of the materials that come into our facility.  We purchase bottles and caps from other businesses that don't want or can't use them anymore.  These bottles would typically end up in a landfill somewhere.</p><p><br/>• All of our label stock is reused as paper for tickets, notes, formulations and even packing material. If we have leftover label parts, they are used as<br/>tape. </p><p><br/>• Boxes that we receive supplies in are reused to ship our products. We also shred them as filler paper in our boxes for shipping purposes.</p><p><br/>• If containers come in that are slightly damaged or discolored, we sell them as seconds.</p><p><br/>• We share a building with another company.  This helps decrease land usage and increase power-sharing.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "1650393430b8752ec4-0",
+        "1650393430b8752ec4-1",
+        "1650393430b8752ec4-2",
+        "1650393430b8752ec4-3",
+        "8200a33d-645a-4548-a865-eeca99fb703c",
+        "c8186c1d-d292-41e2-bb73-8feda9123469"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "Company Differences",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "background-2",
+        "color_scheme": "background-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165039110937e5ab93",
+    "165039270103654311",
+    "1650392705a005a490",
+    "16503934304b8b7578"
+  ]
+}

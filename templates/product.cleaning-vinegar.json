@@ -1,0 +1,399 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "smile_io_smile_points_on_product_page_tBxYe6": {
+          "type": "shopify://apps/smile-io/blocks/smile-points-on-product-page/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "disabled": true,
+          "settings": {
+            "primary_colour": "#121212",
+            "secondary_colour": "#f8f8f8",
+            "preview_scenario": "customer_can_earn_points",
+            "should_show_icon": true,
+            "should_show_points_label": true,
+            "points_text_logged_in": "<p>Earn [points_amount] when you buy this item.</p>",
+            "points_text_logged_out": "<p>Members earn [points_amount] when they buy this item. <a href=\"/account/register/\">Sign up</a> or <a href=\"/account/login/\">log in</a>.</p>"
+          }
+        },
+        "rebuy_personalization_engine_rebuy_widget_ydci7H": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "149854",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Instructions",
+            "icon": "clipboard",
+            "content": "Diluting Directions\n----\n5% or 50 Grain Cleaning Vinegar:\nSpray or wipe directly on surface for cleaning.\n----\n10% or 100 Grain Cleaning Vinegar:\nThis product should be diluted with distilled water at a 1 to 1 ratio (50%) to reach standard vinegar dilution.\nex. 1 gallon of 100 Grain Vinegar mixed with 1 gallon of water = 2 gallons of 50 Grain Vinegar. After diluting, spray or wipe directly on surface.\n----\n20% or 200 Grain Vinegar:\nTo create 100 grain (10%) vinegar-\nCombine equal parts of 200-grain vinegar with distilled water (1-1 ratio)\nExample: to make 1 gallon of 100 grain (10%) add 2 quarts vinegar and 2 quarts water in a 1-gallon jug\n\nTo create 50 grain ( 5% - standard grocery store dilution) vinegar-\nCombine 1 part 200 grain vinegar with 3 parts distilled water (1-3 ratio)\nExample: to make 1 gallon of 50 grain (5%) add 1-quart vinegar and 3 quarts of water in a 1-gallon jug",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "plant",
+            "content": "50 Grain & 100 Grain:\nOrganic Acetic Acid (vinegar, derived from sugar cane)\nHigh-Purity Water  ( charcoal-filtered, reverse osmosis, UV-sanitized )\n\n200 Grain:\nOrganic Acetic Acid (vinegar, derived from sugar cane)",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Scent Ingredients",
+            "icon": "leaf",
+            "content": "<p>{{ product.metafields.my_fields.scent_ingredients | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Ingredient Description",
+            "icon": "clipboard",
+            "content": "<p>{{ product.metafields.my_fields.ingredient_description | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "fc0233ef-ed1d-47be-898d-569b36d52e32": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Tips for displaying",
+            "icon": "check_mark",
+            "content": "<p>{{ product.metafields.my_fields.tricks | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "0ebd724d-4223-4871-b5e4-f5371d971a61": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Product Tips",
+            "icon": "star",
+            "content": "<p>{{ product.metafields.my_fields.tips | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "smile_io_smile_points_on_product_page_tBxYe6",
+        "rebuy_personalization_engine_rebuy_widget_ydci7H",
+        "description",
+        "collapsible-row-3",
+        "collapsible-row-0",
+        "collapsible-row-2",
+        "collapsible-row-1",
+        "fc0233ef-ed1d-47be-898d-569b36d52e32",
+        "0ebd724d-4223-4871-b5e4-f5371d971a61",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "169809719168faf0f4": {
+      "type": "apps",
+      "blocks": {
+        "2816107f-345b-4143-be58-244bec82e9b2": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "109995",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "2816107f-345b-4143-be58-244bec82e9b2"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1649954547ee9ee859": {
+      "type": "collapsible-content",
+      "blocks": {
+        "164995454784ae9827-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Directions",
+            "icon": "check_mark",
+            "row_content": "<p>{{ product.metafields.my_fields.directions | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "164995454784ae9827-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Tips",
+            "icon": "check_mark",
+            "row_content": "<p>{{ product.metafields.my_fields.tips | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "164995454784ae9827-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Tricks",
+            "icon": "check_mark",
+            "row_content": "<p>{{ product.metafields.my_fields.tricks | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "164995454784ae9827-3": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "164995454784ae9827-0",
+        "164995454784ae9827-1",
+        "164995454784ae9827-2",
+        "164995454784ae9827-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "Suggested Use",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "background-2",
+        "color_scheme": "background-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image-with-text": {
+      "type": "image-with-text",
+      "blocks": {
+        "image-with-text-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Don't Forget",
+            "heading_size": "h1"
+          }
+        },
+        "image-with-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pumps and spouts are sold separate of each item.  This is to help reduce waste in the environment and your store.  <br/><a href=\"/collections/pumps-and-spouts-for-containers\" title=\"Spouts and Pumps\">Purchase pumps or spouts here</a></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "image-with-text-0",
+        "image-with-text-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/CarboyWithEasySpout.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "background-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1695060069b8468616": {
+      "type": "apps",
+      "blocks": {
+        "4824e412-d4f1-4e13-8713-0d380820a5b0": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "4824e412-d4f1-4e13-8713-0d380820a5b0"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "image_with_text_QfXTnN": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VntrG9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get Rewarded for Sustainability.",
+            "heading_size": "h1"
+          }
+        },
+        "text_nWkHgc": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Earn points for every container you return! Redeem points for store credit and exclusive discounts. Join our <em>Close The Loop Program</em> and help the planet while rewarding yourself.</h3>",
+            "text_style": "body"
+          }
+        },
+        "button_i7xi3M": {
+          "type": "button",
+          "settings": {
+            "button_label": "Close The Loop program details",
+            "button_link": "shopify://pages/close-the-loop-program™",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VntrG9",
+        "text_nWkHgc",
+        "button_i7xi3M"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/ClosedLoopPromo_2024_2-ezgif.com-optimize.gif",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "169809719168faf0f4",
+    "1649954547ee9ee859",
+    "image-with-text",
+    "1695060069b8468616",
+    "image_with_text_QfXTnN"
+  ]
+}

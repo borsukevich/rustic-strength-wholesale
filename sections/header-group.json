@@ -1,0 +1,139 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "rs_top_banner_6nxtGB": {
+      "type": "rs-top-banner",
+      "name": "BECOME A WHOLESALE PARTNER",
+      "settings": {
+        "heading_text": "Wholesale Access: up to 50% off for approved partners",
+        "heading_size_desktop": 28,
+        "heading_size_mobile": 22,
+        "heading_font_weight": 500,
+        "background_color": "#121212",
+        "heading_color": "#ffffff",
+        "content_alignment": "center",
+        "max_width": 3500,
+        "padding_y": 18,
+        "gap": 10,
+        "show_button": true,
+        "button_label": "APPLY NOW",
+        "button_link": "https://rusticstrengthwholesale.com/pages/wholesale-application-landing-page",
+        "button_style": "filled",
+        "button_color": "#f2f2f2",
+        "button_text_color": "#283120",
+        "button_radius": 8,
+        "button_full_width_mobile": false
+      }
+    },
+    "custom_liquid_baqnEk": {
+      "type": "custom-liquid",
+      "name": "Countdown Timer",
+      "settings": {
+        "custom_liquid": "<!-- Elfsight Countdown Timer | Small Business Appriciation -->\n<script src=\"https://elfsightcdn.com/platform.js\" async></script>\n<div class=\"elfsight-app-aebc3d18-9bb2-4c4e-8392-e07e540aca51\" data-elfsight-app-lazy></div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "1f346827-8a28-4855-bb94-fec500264148": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE + Flat Rate Shipping - click for more details",
+            "link": "shopify://policies/shipping-policy"
+          }
+        },
+        "announcement_aPnkwi": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Shop Limited-Edition Seasonal Scents ❄️",
+            "link": "shopify://collections/seasonal-scents"
+          }
+        },
+        "announcement_QjfXtW": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "📣 NEW to Store ✨ Linen & Room Sprays",
+            "link": "shopify://collections/room-linen-sprays"
+          }
+        },
+        "03988ec4-3297-4038-b4a0-4be8e4d08138": {
+          "type": "announcement",
+          "settings": {
+            "text": "Looking to spread out payments (with terms like net 30)? Use PayPal at checkout",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1f346827-8a28-4855-bb94-fec500264148",
+        "announcement_aPnkwi",
+        "announcement_QjfXtW",
+        "03988ec4-3297-4038-b4a0-4be8e4d08138"
+      ],
+      "settings": {
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "color_scheme": "",
+        "show_line_separator": true,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "custom_liquid_UnnHYW": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ":has( .section-sections--22327943364848__custom_liquid_UnnHYW-padding > script:only-child ) {display: none !important;}",
+        ":has( .section-sections--22327943364848__custom_liquid_UnnHYW-padding div[class*=\"elfsight-app-\"]:empty ) {display: none !important;}"
+      ],
+      "name": "Elfsight Banner",
+      "settings": {
+        "custom_liquid": "<!-- Elfsight Countdown Timer | 10% Off Nourish -->\n<script src=\"https://elfsightcdn.com/platform.js\" async></script>\n<div class=\"elfsight-app-d2be9431-cdc7-4fd5-95e6-a48a177cc5e6\" data-elfsight-app-lazy></div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "top-left",
+        "mobile_logo_position": "center",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "enable_customer_avatar": true,
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "rs_top_banner_6nxtGB",
+    "custom_liquid_baqnEk",
+    "announcement-bar",
+    "custom_liquid_UnnHYW",
+    "header"
+  ]
+}

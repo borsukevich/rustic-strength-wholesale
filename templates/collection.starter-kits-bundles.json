@@ -1,0 +1,290 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "background-2"
+      }
+    },
+    "e66bba48-2aef-43a8-ac28-5afda5eabc9e": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-0",
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-1",
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Castile_Banner.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "7d3c2ec6-7db3-4f14-913f-f3516dd45313": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16810216161520__7d3c2ec6-7db3-4f14-913f-f3516dd45313-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Discover your essential oil",
+            "heading_size": "h1"
+          }
+        },
+        "template--16810216161520__7d3c2ec6-7db3-4f14-913f-f3516dd45313-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--16810216161520__7d3c2ec6-7db3-4f14-913f-f3516dd45313-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16810216161520__7d3c2ec6-7db3-4f14-913f-f3516dd45313-heading-1",
+        "template--16810216161520__7d3c2ec6-7db3-4f14-913f-f3516dd45313-text-1",
+        "template--16810216161520__7d3c2ec6-7db3-4f14-913f-f3516dd45313-buttons-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Front.jpg",
+        "image_overlay_opacity": 60,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1753209161ea7cec30": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_UL8gYW": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "disabled": true,
+          "settings": {
+            "enabled": true,
+            "id": "227003",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_UL8gYW"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "17533014098cdc1bd8": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_AWWXAy": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "disabled": true,
+          "settings": {
+            "enabled": true,
+            "id": "228634",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_AWWXAy"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1698255345d44ce2f1": {
+      "type": "apps",
+      "blocks": {
+        "ac2deb59-e515-425c-80ed-2275146f0527": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 2000
+          }
+        }
+      },
+      "block_order": [
+        "ac2deb59-e515-425c-80ed-2275146f0527"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "collection_list_qNa9iP": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_mQwYjz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry-detergent"
+          }
+        },
+        "featured_collection_3d343q": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hand-soap"
+          }
+        },
+        "featured_collection_HycJdi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dish-soap"
+          }
+        },
+        "featured_collection_rxTVnB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "auto-dishwasher"
+          }
+        },
+        "featured_collection_tMTq7X": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "body-care"
+          }
+        },
+        "featured_collection_fLwGAk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hair-care-products"
+          }
+        },
+        "featured_collection_Uanx4j": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "household-goods"
+          }
+        },
+        "featured_collection_RytFAL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "panda-eco-paper"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_mQwYjz",
+        "featured_collection_3d343q",
+        "featured_collection_HycJdi",
+        "featured_collection_rxTVnB",
+        "featured_collection_tMTq7X",
+        "featured_collection_fLwGAk",
+        "featured_collection_Uanx4j",
+        "featured_collection_RytFAL"
+      ],
+      "settings": {
+        "title": "Explore other High-Purity Products",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "e66bba48-2aef-43a8-ac28-5afda5eabc9e",
+    "7d3c2ec6-7db3-4f14-913f-f3516dd45313",
+    "product-grid",
+    "1753209161ea7cec30",
+    "17533014098cdc1bd8",
+    "1698255345d44ce2f1",
+    "collection_list_qNa9iP"
+  ]
+}

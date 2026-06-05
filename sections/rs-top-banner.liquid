@@ -1,0 +1,275 @@
+{% comment %}
+  RS Top Banner - usable in Header group
+{% endcomment %}
+
+<section
+  id="rs-promo-banner-{{ section.id }}"
+  class="rs-promo-banner"
+  style="
+    background-color: {{ section.settings.background_color }};
+    padding-block: {{ section.settings.padding_y }}px;
+  "
+>
+  <div
+    class="rs-promo-banner__inner"
+    style="
+      max-width: {{ section.settings.max_width }}px;
+      margin: 0 auto;
+      padding-inline: 16px;
+    "
+  >
+    <div class="rs-promo-banner__content rs-promo-banner__content--{{ section.settings.content_alignment }}">
+      {% if section.settings.heading_text != blank %}
+        <h2 class="rs-promo-banner__heading">
+          {{ section.settings.heading_text }}
+        </h2>
+      {% endif %}
+
+      {% if section.settings.show_button and section.settings.button_label != blank %}
+        <a
+          href="{{ section.settings.button_link | default: '#' }}"
+          class="rs-promo-banner__button rs-promo-banner__button--{{ section.settings.button_style }}"
+        >
+          {{ section.settings.button_label }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+
+  <style>
+    {% liquid
+      assign strong_weight = section.settings.heading_font_weight | plus: 200
+    %}
+
+    #rs-promo-banner-{{ section.id }} .rs-promo-banner__content {
+      display: flex;
+      align-items: center;
+      gap: {{ section.settings.gap }}px;
+    }
+
+    {% case section.settings.content_alignment %}
+      {% when 'left' %}
+        #rs-promo-banner-{{ section.id }} .rs-promo-banner__content {
+          justify-content: flex-start;
+        }
+      {% when 'right' %}
+        #rs-promo-banner-{{ section.id }} .rs-promo-banner__content {
+          justify-content: flex-end;
+        }
+      {% else %}
+        #rs-promo-banner-{{ section.id }} .rs-promo-banner__content {
+          justify-content: center;
+        }
+    {% endcase %}
+
+    #rs-promo-banner-{{ section.id }} .rs-promo-banner__heading {
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: {{ section.settings.heading_color }};
+      font-size: {{ section.settings.heading_size_desktop }}px;
+      text-align: center;
+      font-weight: {{ section.settings.heading_font_weight }};
+    }
+
+    #rs-promo-banner-{{ section.id }} .rs-promo-banner__heading strong {
+      font-weight: {{ strong_weight }} !important;
+    }
+
+    #rs-promo-banner-{{ section.id }} .rs-promo-banner__heading em {
+      font-style: italic;
+    }
+
+    #rs-promo-banner-{{ section.id }} .rs-promo-banner__button {
+      text-decoration: none;
+      padding: 0.7em 1.8em;
+      border-radius: {{ section.settings.button_radius }}px;
+      font-size: 14px;
+      text-align: center;
+      white-space: nowrap;
+      border: 1px solid transparent;
+    }
+
+    #rs-promo-banner-{{ section.id }} .rs-promo-banner__button--filled {
+      background-color: {{ section.settings.button_color }};
+      color: {{ section.settings.button_text_color }};
+      border-color: {{ section.settings.button_color }};
+    }
+
+    #rs-promo-banner-{{ section.id }} .rs-promo-banner__button--outline {
+      background-color: transparent;
+      color: {{ section.settings.button_color }};
+      border-color: {{ section.settings.button_color }};
+    }
+
+    @media (max-width: 767px) {
+      #rs-promo-banner-{{ section.id }} .rs-promo-banner__content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      #rs-promo-banner-{{ section.id }} .rs-promo-banner__heading {
+        font-size: {{ section.settings.heading_size_mobile }}px;
+      }
+
+      {% if section.settings.button_full_width_mobile %}
+        #rs-promo-banner-{{ section.id }} .rs-promo-banner__button {
+          width: 100%;
+        }
+      {% endif %}
+    }
+  </style>
+</section>
+
+{% schema %}
+{
+  "name": "RS Top Banner",
+  "enabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading_text",
+      "label": "Heading text",
+      "default": "FREE STOCKING STUFFERS WITH PURCHASE"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Heading font size (desktop, px)",
+      "min": 12,
+      "max": 48,
+      "step": 1,
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Heading font size (mobile, px)",
+      "min": 10,
+      "max": 36,
+      "step": 1,
+      "default": 22
+    },
+    {
+      "type": "range",
+      "id": "heading_font_weight",
+      "label": "Heading font weight",
+      "min": 100,
+      "max": 900,
+      "step": 100,
+      "default": 500
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#5A6548"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading text color",
+      "default": "#FFFCDB"
+    },
+    {
+      "type": "select",
+      "id": "content_alignment",
+      "label": "Content alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Content max width (px)",
+      "min": 800,
+      "max": 3500,
+      "step": 50,
+      "default": 3500
+    },
+    {
+      "type": "range",
+      "id": "padding_y",
+      "label": "Vertical padding (px)",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Spacing between heading and button (px)",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "default": 10
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "label": "Show button",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button text",
+      "default": "VIEW CART FOR DETAILS"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button style",
+      "options": [
+        { "value": "filled", "label": "Filled" },
+        { "value": "outline", "label": "Outline" }
+      ],
+      "default": "filled"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button color",
+      "default": "#FFFCDB"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#283120"
+    },
+    {
+      "type": "range",
+      "id": "button_radius",
+      "label": "Button corner radius (px)",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "default": 8
+    },
+    {
+      "type": "checkbox",
+      "id": "button_full_width_mobile",
+      "label": "Full-width button on mobile",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "RS Top Banner"
+    }
+  ]
+}
+{% endschema %}

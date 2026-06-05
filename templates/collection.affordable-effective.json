@@ -1,0 +1,462 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "background-2"
+      }
+    },
+    "e66bba48-2aef-43a8-ac28-5afda5eabc9e": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-0",
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-1",
+        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Affordable_Effective_Banner.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "background-2",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "35aae8a4-344b-4b46-bb83-e4dedbe80239": {
+      "type": "featured-product",
+      "blocks": {
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-3": {
+          "type": "price",
+          "settings": {}
+        },
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-5": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-7": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-0",
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-1",
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-2",
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-3",
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-4",
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-5",
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-6",
+        "template--16767067947248__35aae8a4-344b-4b46-bb83-e4dedbe80239-16873790532123307e-7"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "panda-eco-paper-bamboo-toilet-paper",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1f71fc79-14ef-40d2-8f42-5f2b452181ce": {
+      "type": "featured-product",
+      "blocks": {
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-3": {
+          "type": "price",
+          "settings": {}
+        },
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-5": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-7": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-0",
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-1",
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-2",
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-3",
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-4",
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-5",
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-6",
+        "template--16767067947248__1f71fc79-14ef-40d2-8f42-5f2b452181ce-16873790532123307e-7"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "panda-eco-paper-unbleached-bamboo-paper-towels",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 8,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3416f089-bf50-4cbc-a78b-d0f89611eb1f": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "affordable-effective",
+        "products_to_show": 3,
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 3,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cf497485-20c9-44a4-99ca-4887326c4b43": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16769100775664__cf497485-20c9-44a4-99ca-4887326c4b43-16878968389f3fabb2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "template--16769100775664__cf497485-20c9-44a4-99ca-4887326c4b43-16878968389f3fabb2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "template--16769100775664__cf497485-20c9-44a4-99ca-4887326c4b43-16878968389f3fabb2-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16769100775664__cf497485-20c9-44a4-99ca-4887326c4b43-16878968389f3fabb2-0",
+        "template--16769100775664__cf497485-20c9-44a4-99ca-4887326c4b43-16878968389f3fabb2-1",
+        "template--16769100775664__cf497485-20c9-44a4-99ca-4887326c4b43-16878968389f3fabb2-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "d2feca19-9636-4649-9058-d77e2b971dfb": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16769100775664__d2feca19-9636-4649-9058-d77e2b971dfb-16878989393f0ab5cc-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--16769100775664__d2feca19-9636-4649-9058-d77e2b971dfb-16878989393f0ab5cc-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--16769100775664__d2feca19-9636-4649-9058-d77e2b971dfb-16878989393f0ab5cc-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16769100775664__d2feca19-9636-4649-9058-d77e2b971dfb-16878989393f0ab5cc-0",
+        "template--16769100775664__d2feca19-9636-4649-9058-d77e2b971dfb-16878989393f0ab5cc-1",
+        "template--16769100775664__d2feca19-9636-4649-9058-d77e2b971dfb-16878989393f0ab5cc-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Comparison_Chart_Wide_09f1c3d1-9174-48cd-825b-af1e8e969c2c.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "1698255383a8df68fe": {
+      "type": "apps",
+      "blocks": {
+        "3d00250c-b1ce-4cfd-8892-10074d6b7f42": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "3d00250c-b1ce-4cfd-8892-10074d6b7f42"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "collection_list_bykAjz": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_Urin7x": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "body-care"
+          }
+        },
+        "featured_collection_9mKdjA": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hair-care-products"
+          }
+        },
+        "featured_collection_PETQCC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "essential-oils"
+          }
+        },
+        "featured_collection_Wp9qHA": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "heritage-bar-soap"
+          }
+        },
+        "featured_collection_kjYGGr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "castile-soap"
+          }
+        },
+        "featured_collection_XyFTAy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "household-goods"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Urin7x",
+        "featured_collection_9mKdjA",
+        "featured_collection_PETQCC",
+        "featured_collection_Wp9qHA",
+        "featured_collection_kjYGGr",
+        "featured_collection_XyFTAy"
+      ],
+      "settings": {
+        "title": "Explore Other High-Purity Products",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "e66bba48-2aef-43a8-ac28-5afda5eabc9e",
+    "35aae8a4-344b-4b46-bb83-e4dedbe80239",
+    "1f71fc79-14ef-40d2-8f42-5f2b452181ce",
+    "product-grid",
+    "3416f089-bf50-4cbc-a78b-d0f89611eb1f",
+    "cf497485-20c9-44a4-99ca-4887326c4b43",
+    "d2feca19-9636-4649-9058-d77e2b971dfb",
+    "1698255383a8df68fe",
+    "collection_list_bykAjz"
+  ]
+}
