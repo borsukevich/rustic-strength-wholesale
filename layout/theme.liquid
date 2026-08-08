@@ -39,10 +39,12 @@
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    {% unless request.design_mode %}<!-- Widget : FREE Face Bar w/ Nourish Purchase -->
-    <div data-rebuy-id="278769"></div>
-    <!-- End Widget : FREE Face Bar w/ Nourish Purchase -->{% endunless %}
-{{ content_for_header }}
+    {% unless request.design_mode %}
+      <!-- Widget : FREE Face Bar w/ Nourish Purchase -->
+      <div data-rebuy-id="278769"></div>
+      <!-- End Widget : FREE Face Bar w/ Nourish Purchase -->
+    {% endunless %}
+    {{ content_for_header }}
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -299,6 +301,38 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+
+    <script>
+      (function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const trackingParams = [
+          'utm_source',
+          'utm_medium',
+          'utm_campaign',
+          'utm_content',
+          'utm_term',
+          'gclid',
+          'fbclid',
+        ];
+
+        trackingParams.forEach((param) => {
+          if (urlParams.has(param)) {
+            sessionStorage.setItem('ws_' + param, urlParams.get(param));
+          }
+        });
+
+        if (!sessionStorage.getItem('ws_landing_page')) {
+          sessionStorage.setItem('ws_landing_page', window.location.href);
+        }
+
+        if (!sessionStorage.getItem('ws_referrer') && document.referrer) {
+          const currentHost = window.location.hostname;
+          if (!document.referrer.includes(currentHost)) {
+            sessionStorage.setItem('ws_referrer', document.referrer);
+          }
+        }
+      })();
+    </script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
@@ -390,10 +424,10 @@
 
         const replacePriceText = () => {
           const prices = document.querySelectorAll('.rebuy-product-price .rebuy-money');
-          
+
           prices.forEach(price => {
             const priceContainer = price.closest('.rebuy-product-price');
-            
+
             if (priceContainer && !priceContainer.classList.contains('wholesale-hidden')) {
               priceContainer.innerHTML = '<a href="{{ routes.account_login_url }}" class="login-link-price">Please login for pricing</a>';
               priceContainer.classList.add('wholesale-hidden');
@@ -404,7 +438,7 @@
         let debounceTimer;
         const observer = new MutationObserver((mutations) => {
           let hasNewNodes = false;
-          
+
           mutations.forEach((mutation) => {
             if (mutation.addedNodes.length > 0) {
               hasNewNodes = true;
@@ -430,7 +464,7 @@
 
     {% unless customer %}
       <style>
-        form[data-type="add-to-cart-form"],
+        form[data-type='add-to-cart-form'],
         .rebuy-product-actions,
         .appattic_price_span,
         .quick-add,
@@ -447,14 +481,113 @@
       </style>
     {% endunless %}
 
-    {%- if customer.tags contains "B2B" -%}
-      {%- render "rebuy-b2b" -%}
-      {%- render "rebuy-extensions" -%}
+    {%- if customer.tags contains 'B2B' -%}
+      {%- render 'rebuy-b2b' -%}
+      {%- render 'rebuy-extensions' -%}
     {%- endif -%}
 
-         <!-- Widget : FREE Face Bar w/ Nourish Purchase -->
-<div data-rebuy-id="278769"></div>
-<!-- End Widget : FREE Face Bar w/ Nourish Purchase -->
+    <!-- Widget : FREE Face Bar w/ Nourish Purchase -->
+    <div data-rebuy-id="278769"></div>
+    <!-- End Widget : FREE Face Bar w/ Nourish Purchase -->
 
+    {%- if template == 'page.Forms - B2B Wholesale Application' -%}
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const targetTag = 'shopify-forms-embed';
+
+          function initiateHoneypotAndUtms(embedEl) {
+            if (!embedEl || !embedEl.shadowRoot) {
+              return false;
+            }
+
+            const appForm = embedEl.shadowRoot.querySelector('form[data-testid="form"]');
+
+            if (!appForm) {
+              return false;
+            }
+
+            if (embedEl.shadowRoot.getElementById('ws_honeypot_wrapper')) {
+              return true;
+            }
+
+            const honeypotWrapper = document.createElement('div');
+
+            honeypotWrapper.id = 'ws_honeypot_wrapper';
+            honeypotWrapper.style.cssText =
+              'position: absolute !important; left: -9999px !important; top: -9999px !important; opacity: 0 !important; pointer-events: none !important; z-index: -1 !important;';
+
+            honeypotWrapper.innerHTML = `
+              <label for="form_secondary_email_verification">Secondary Contact Email (Leave Blank)</label>
+              <input id="form_secondary_email_verification" type="text" name="secondary_email_verification" autocomplete="off" tabindex="-1">
+            `;
+            appForm.prepend(honeypotWrapper);
+
+            const trackingParams = [
+              'utm_source',
+              'utm_medium',
+              'utm_campaign',
+              'utm_content',
+              'utm_term',
+              'gclid',
+              'fbclid',
+              'landing_page',
+              'referrer',
+            ];
+
+            trackingParams.forEach((param) => {
+              const storedValue = sessionStorage.getItem('ws_' + param) || '';
+              const hiddenInput = document.createElement('input');
+
+              hiddenInput.type = 'hidden';
+              hiddenInput.id = 'ws_hidden_' + param;
+              hiddenInput.name = 'customer[note][' + param + ']';
+              hiddenInput.value = storedValue;
+
+              appForm.appendChild(hiddenInput);
+            });
+
+            appForm.addEventListener('submit', function (e) {
+              const honeypotInput = embedEl.shadowRoot.getElementById('form_secondary_email_verification');
+
+              if (honeypotInput && honeypotInput.value.trim() !== '') {
+                e.preventDefault();
+                e.stopPropagation();
+
+                appForm.innerHTML = `
+                  <div style="padding: 24px; color: #2e7d32; background-color: #edf7ed; border: 1px solid #2e7d32; border-radius: 6px; text-align: center; font-weight: 500; font-family: inherit;">
+                    Thank you for your application! We will review your business credentials shortly.
+                  </div>
+                `;
+              }
+            });
+
+            return true;
+          }
+
+          const embedEl = document.getElementById('app-embed') || document.querySelector(targetTag);
+
+          if (embedEl && initiateHoneypotAndUtms(embedEl)) {
+            return;
+          }
+
+          const observer = new MutationObserver((mutations, obs) => {
+            const currentEmbed = document.getElementById('app-embed') || document.querySelector(targetTag);
+
+            if (currentEmbed && currentEmbed.shadowRoot) {
+              const success = initiateHoneypotAndUtms(currentEmbed);
+
+              if (success) {
+                obs.disconnect();
+              }
+            }
+          });
+
+          observer.observe(document.body, {
+            childList: true,
+            subtree: true,
+          });
+        });
+      </script>
+    {%- endif -%}
   </body>
 </html>
