@@ -1,0 +1,361 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "price_panda_price_per_unit_product_block_6Fb3GT": {
+          "type": "shopify://apps/price-panda-price-per-unit/blocks/productBlock/8fe89266-7c30-4ab1-946d-3dcc05d9c8b2",
+          "settings": {}
+        },
+        "variant_picker_baqgrH": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_fFPAYP": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "rebuy_personalization_engine_rebuy_widget_TCc7fH": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "149854",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
+        "buy_buttons_BkQNGe": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "judge_me_reviews_review_snippet_widget_bhEqe8": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "reviews_selection": "auto",
+            "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
+            "min_star_rating": "inherit",
+            "show_review_media": true,
+            "max_reviews": 5,
+            "review_length": "medium",
+            "text_size": "medium",
+            "max_width": 1100,
+            "max_image_size": "small",
+            "arrows_visibility": "always_shown",
+            "transition_speed": 5,
+            "corner_styling": "inherit",
+            "text_color": "",
+            "card_color": "",
+            "stars_color": "",
+            "arrows_color": "",
+            "arrows_background_color": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Directions",
+            "icon": "washing",
+            "content": "<p><strong>Directions</strong> - For general soaking to ease minor aches and pains add 2 cups of Epsom salt to your warm (not hot) bathtub. Soak for up to 20 minutes.</p><p><strong>For minor sprains</strong> - add 1 cup of Epsom salt to about a gallon of warm water. Soak for 30 to 45 minutes.</p><p><strong>For exfoliating </strong>-<strong> </strong>after soaking your desired body part, massage a handful of Epsom salt into your skin.</p><p><strong>Storage instructions</strong> - Do not store in direct sunlight. Keep sealed in a cool, dry place. If caking occurs, gently tab or crush between fingers. Package sold by weight not by volume. Some settling may occur.</p><p></p><p><strong>Warning</strong>  - Where prompt relief is not obtained or where there is evidence of irritation or infection, discontinue use and consult a doctor. Do not use if pregnant or diabetic, unless advised by a doctor.</p><p><strong>CAUTION: KEEP OUT OF REACH OF CHILDREN.</strong> Do not use on open wounds. Use only as directed. If irritation occurs, stop use immediately. Contact a physician if irritation persists. Do not ingest. In case of overdose, get medical help or contact a Poison Control Center (1-800-222-1222) immediately</p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "plant",
+            "content": "<p>100% Magnesium Sulfate</p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Scent",
+            "icon": "leaf",
+            "content": "",
+            "page": "merchandising-tips"
+          }
+        },
+        "gorgias_live_chat_helpdesk_spq_LAHx4e": {
+          "type": "shopify://apps/gorgias-live-chat-helpdesk/blocks/spq/a66db725-7b96-4e3f-916e-6c8e6f87aaaa",
+          "settings": {
+            "text_style": "none",
+            "icon_color": "#1e242e",
+            "font_color": "#1e242e",
+            "show_icons": true,
+            "font_size": 16,
+            "font_weight": "500",
+            "border_radius": 8,
+            "font_family": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "price_panda_price_per_unit_product_block_6Fb3GT",
+        "variant_picker_baqgrH",
+        "quantity_selector_fFPAYP",
+        "rebuy_personalization_engine_rebuy_widget_TCc7fH",
+        "buy_buttons_BkQNGe",
+        "judge_me_reviews_review_snippet_widget_bhEqe8",
+        "description",
+        "collapsible-row-1",
+        "collapsible-row-0",
+        "collapsible-row-2",
+        "gorgias_live_chat_helpdesk_spq_LAHx4e"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "hide",
+        "media_position": "right",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_FHp7MF": {
+      "type": "rich-text",
+      "blocks": {
+        "button_adFAmL": {
+          "type": "button",
+          "name": "Product SDS",
+          "settings": {
+            "button_label": "📋Epsom Salt SDS",
+            "button_link": "https://cdn.shopify.com/s/files/1/0344/1809/8221/files/Epsom_Salt_SDS.pdf?v=1774463882",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_adFAmL"
+      ],
+      "disabled": true,
+      "name": "MSDS Button",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "1758138687f48ea8c5": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "quick-order-list": {
+      "type": "quick-order-list",
+      "settings": {
+        "variants_per_page": 50,
+        "show_image": true,
+        "show_sku": true,
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 16
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "Industry favorites",
+        "heading_size": "h2",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 44
+      }
+    },
+    "1762450183b75e33a7": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_crUR8M": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "109995",
+            "product_id_enabled": true,
+            "collection_id_enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_crUR8M"
+      ],
+      "disabled": true,
+      "name": "Rebuy 109995",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "175623938176d21caa": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_BDFTHC": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "154086",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_BDFTHC"
+      ],
+      "disabled": true,
+      "name": "Rebuy 154086",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1754511058878b6d45": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_RAHjjB": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 850,
+            "show_shop_reviews": false,
+            "empty_state": "hide_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_RAHjjB"
+      ],
+      "name": "Judge.Me Testimonial",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "collection_list_hXEcJK": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_Ge9qYg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "body-care"
+          }
+        },
+        "featured_collection_J6bcK9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "essential-oils"
+          }
+        },
+        "featured_collection_DWYgnF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hair-care-products"
+          }
+        },
+        "featured_collection_JNA3DX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hand-soap"
+          }
+        },
+        "featured_collection_d4eqhh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dish-soap"
+          }
+        },
+        "featured_collection_i8UCBF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry-detergent"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Ge9qYg",
+        "featured_collection_J6bcK9",
+        "featured_collection_DWYgnF",
+        "featured_collection_JNA3DX",
+        "featured_collection_d4eqhh",
+        "featured_collection_i8UCBF"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_FHp7MF",
+    "1758138687f48ea8c5",
+    "quick-order-list",
+    "related-products",
+    "1762450183b75e33a7",
+    "175623938176d21caa",
+    "1754511058878b6d45",
+    "collection_list_hXEcJK"
+  ]
+}

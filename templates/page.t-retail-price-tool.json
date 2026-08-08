@@ -1,0 +1,557 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "17558884447de2b3d0": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_ae46ec2_9btjtK": {
+          "type": "ai_gen_block_ae46ec2",
+          "settings": {
+            "layout": "video_text",
+            "mobile_layout": "video_first",
+            "section_padding": 60,
+            "content_gap": 60,
+            "mobile_gap": 40,
+            "video_source": "url",
+            "video_url": "https://youtu.be/ijKHDZ0Fpk4",
+            "autoplay": false,
+            "muted": true,
+            "loop": false,
+            "video_border_radius": 8,
+            "heading": "Retail Pricing Tool",
+            "content": "<p>Use this tool to find your:</p><p>•  per ounce cost of any item, including shipping</p><p>•  pricing to make a 2x, 3x or 4x mark-up on that product</p><p></p>",
+            "text_spacing": 40,
+            "show_buttons": true,
+            "primary_button_text": "Download the Free Pricing Tool",
+            "primary_button_link": "",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "button_gap": 16,
+            "button_padding": 12,
+            "button_border_radius": 6,
+            "background_color": "#ffffff",
+            "heading_color": "#000000",
+            "text_color": "#666666",
+            "primary_button_color": "#000000",
+            "primary_button_text_color": "#ffffff",
+            "primary_button_hover_color": "#333333",
+            "secondary_button_color": "rgba(0,0,0,0)",
+            "secondary_button_text_color": "#000000",
+            "secondary_button_border_color": "#000000",
+            "secondary_button_hover_color": "#f4f4f4",
+            "heading_size": 36,
+            "text_size": 16,
+            "button_text_size": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_ae46ec2_9btjtK"
+      ],
+      "settings": {}
+    },
+    "blocks_7ERkiA": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_ae46ec2_3fcHTp": {
+          "type": "ai_gen_block_ae46ec2",
+          "settings": {
+            "layout": "video_text",
+            "mobile_layout": "video_first",
+            "section_padding": 60,
+            "content_gap": 60,
+            "mobile_gap": 40,
+            "video_source": "url",
+            "video_url": "https://youtu.be/idgvPydyArA",
+            "autoplay": false,
+            "muted": true,
+            "loop": false,
+            "video_border_radius": 8,
+            "heading": "Example 2",
+            "content": "<p>In this video, you will see how to see your cost per ounce on <strong>multiple products</strong> <strong>that are the same</strong> and how determine a retail price.</p>",
+            "text_spacing": 40,
+            "show_buttons": true,
+            "primary_button_text": "",
+            "primary_button_link": "",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "button_gap": 16,
+            "button_padding": 12,
+            "button_border_radius": 6,
+            "background_color": "#ffffff",
+            "heading_color": "#000000",
+            "text_color": "#666666",
+            "primary_button_color": "#000000",
+            "primary_button_text_color": "#ffffff",
+            "primary_button_hover_color": "#333333",
+            "secondary_button_color": "rgba(0,0,0,0)",
+            "secondary_button_text_color": "#000000",
+            "secondary_button_border_color": "#000000",
+            "secondary_button_hover_color": "#f4f4f4",
+            "heading_size": 36,
+            "text_size": 16,
+            "button_text_size": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_ae46ec2_3fcHTp"
+      ],
+      "settings": {}
+    },
+    "blocks_RqxheR": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_ae46ec2_CwajK3": {
+          "type": "ai_gen_block_ae46ec2",
+          "settings": {
+            "layout": "video_text",
+            "mobile_layout": "video_first",
+            "section_padding": 60,
+            "content_gap": 60,
+            "mobile_gap": 40,
+            "video_source": "url",
+            "video_url": "https://youtu.be/CoRgxpDsciA",
+            "autoplay": false,
+            "muted": true,
+            "loop": false,
+            "video_border_radius": 8,
+            "heading": "Example 3",
+            "content": "<p>Learn to break down a more <strong>complex invoice</strong> in order to determine your cost per ounce and how to determine a retail price.</p><p></p>",
+            "text_spacing": 40,
+            "show_buttons": true,
+            "primary_button_text": "",
+            "primary_button_link": "",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "button_gap": 16,
+            "button_padding": 12,
+            "button_border_radius": 6,
+            "background_color": "#ffffff",
+            "heading_color": "#000000",
+            "text_color": "#666666",
+            "primary_button_color": "#000000",
+            "primary_button_text_color": "#ffffff",
+            "primary_button_hover_color": "#333333",
+            "secondary_button_color": "rgba(0,0,0,0)",
+            "secondary_button_text_color": "#000000",
+            "secondary_button_border_color": "#000000",
+            "secondary_button_hover_color": "#f4f4f4",
+            "heading_size": 36,
+            "text_size": 16,
+            "button_text_size": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_ae46ec2_CwajK3"
+      ],
+      "settings": {}
+    },
+    "blocks_kzpbxb": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_ae46ec2_Q8rR9P": {
+          "type": "ai_gen_block_ae46ec2",
+          "settings": {
+            "layout": "video_text",
+            "mobile_layout": "video_first",
+            "section_padding": 60,
+            "content_gap": 60,
+            "mobile_gap": 40,
+            "video_source": "url",
+            "video_url": "https://youtu.be/tjMcsGLjq98",
+            "autoplay": false,
+            "muted": true,
+            "loop": false,
+            "video_border_radius": 8,
+            "heading": "Example 4",
+            "content": "<p>See an additional example of how to calculate cost per ounce in a complex invoice in order to determine a retail price</p><p></p>",
+            "text_spacing": 40,
+            "show_buttons": true,
+            "primary_button_text": "",
+            "primary_button_link": "",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "button_gap": 16,
+            "button_padding": 12,
+            "button_border_radius": 6,
+            "background_color": "#ffffff",
+            "heading_color": "#000000",
+            "text_color": "#666666",
+            "primary_button_color": "#000000",
+            "primary_button_text_color": "#ffffff",
+            "primary_button_hover_color": "#333333",
+            "secondary_button_color": "rgba(0,0,0,0)",
+            "secondary_button_text_color": "#000000",
+            "secondary_button_border_color": "#000000",
+            "secondary_button_hover_color": "#f4f4f4",
+            "heading_size": 36,
+            "text_size": 16,
+            "button_text_size": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_ae46ec2_Q8rR9P"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "collapsible_content_kbDrge": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_4hx7Hc": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do I have to use Rustic Strength's MSRP?",
+            "icon": "price_tag",
+            "row_content": "<p><strong>Short answer: No — absolutely not.</strong><br/><br/>Every community, every refill shop, and every small business has its own rhythm, costs, and customer needs. We respect that. Our MSRP is simply a <em>helpful guide</em>, not a rule.</p><p>We know that what works in a rural town might look very different from what works in a busy urban neighborhood — and both deserve the flexibility to thrive. You’re the expert on your community. You know what your customers value, what they can afford, and how to keep your doors open while making a meaningful impact.</p><p>Rustic Strength exists to empower you, not restrict you.<br/><br/>Set the price that makes sense for <em>your</em> people, <em>your</em> margins, and <em>your</em> mission. We’ll always be here to support you with high-purity, toxin-free products, transparent information, and a partnership built on honesty and care.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_xmeA3Q": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I determine weight per oz from fluid oz?",
+            "icon": "price_tag",
+            "row_content": "<p>Depending on the regulations within your municipality you may need to sell products in your refillery by either weight ounces of fluid ounces. </p><p>To convert any fluid measurement into a weight measurement, you can do a simple calculation. All you'll need is a graduated cylinder, a scale, and the product you're trying to sell. Simply fill the graduated cylinder (or beaker or other accurate volumetric filling vessel) to the point where the meniscus of the fluid you are measuring is lined up with a specific number. This could be the 10oz fill point. That is 10oz by volume, the weight that the scale displays is 10oz by weight!</p><p>Then you simply divide this number. So if 10oz of hand soap weighs 10.1oz, then your multiplier will be 1.01! Use this multiplier to quickly calculate the weight of any volume of this same hand soap...640oz (5 gallons) would therefore weigh 646.4oz.</p><p>To easily do this on a large scale, program your multipliers into <a href=\"https://www.google.com/search?q=counting+scale&sca_esv=6405bf69fd380f07&ei=aUEbaemRHcqwqtsP4NTK4AM&ved=0ahUKEwip6u6WwvmQAxVKmGoFHWCqEjwQ4dUDCBE&uact=5&oq=counting+scale&gs_lp=Egxnd3Mtd2l6LXNlcnAiDmNvdW50aW5nIHNjYWxlMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMg0QABiABBiwAxhDGIoFMg0QABiABBiwAxhDGIoFSJICUABYAHABeACQAQCYAUSgAUSqAQExuAEDyAEAmAIBoAIGmAMAiAYBkAYKkgcBMaAH_gWyBwC4BwDCBwMyLTHIBwU&sclient=gws-wiz-serp\" target=\"_blank\">counting scales</a> for each product. This way once you've done the math once, the scale will do the math on the spot for any volume your customer wants to purchase!</p><p><br/></p><p>Here are some examples of some standards weights for 640oz size products:</p><p>Hand Soap - 689</p><p>Dish Soap - 689</p><p>Shampoo - 684</p><p>Body Wash - 689</p><p>Conditioner - 640</p><p>Lotion - 640</p><p>Vinegar 100 Grain - 680</p><p>Vinegar 200 Grain - 684</p><p>Fabric Softener - 658.5</p><p>Lots of Purpose - 659</p><p>Rinse Aid - 661</p><p>Please note that these weights are estimates. The exact weight can fluctuate slightly from batch to batch.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_4hx7Hc",
+        "collapsible_row_xmeA3Q"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Pricing Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "video_MJLfEx": {
+      "type": "video",
+      "disabled": true,
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Retail Pricing Tool",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/ijKHDZ0Fpk4",
+        "cover_image": "shopify://shop_images/retail_pricing_intro.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_xbya4M": {
+      "type": "rich-text",
+      "blocks": {
+        "button_7r4DzU": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download Free Pricing Tool",
+            "button_link": "https://cdn.shopify.com/s/files/1/0344/1809/8221/files/Retail_Pricing_Tool.xlsx?v=1659734336",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "heading_AhTfWG": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_jLcriK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Easily find your: </p><p>- per ounce cost of any item, including shipping</p><p>- pricing to make a 2x, 3x or 4x mark-up on that product</p>"
+          }
+        }
+      },
+      "block_order": [
+        "button_7r4DzU",
+        "heading_AhTfWG",
+        "text_jLcriK"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_VHd6bC": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_yV4yWB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design.png",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_gRnDWV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_VMjwVV": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled_129e331e-5fd0-42c2-8e5d-dcc50570e10b.png",
+            "title": "",
+            "text": "",
+            "link_label": "Private Label Information",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_b8zmRt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_nPHdTf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_zchtFd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Untitled_580d6abd-1ae3-4e38-9bc8-b083c07a3b45.png",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_bqRhak": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blog Center",
+            "link": "shopify://pages/blog-landing-page"
+          }
+        },
+        "column_BVKCfJ": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        }
+      },
+      "block_order": [
+        "column_yV4yWB",
+        "column_gRnDWV",
+        "column_VMjwVV",
+        "column_b8zmRt",
+        "column_nPHdTf",
+        "column_zchtFd",
+        "column_bqRhak",
+        "column_BVKCfJ"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_x6phJf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_akYPXL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/pump_bottles_banner.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_XtzQK7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CTL_banner_2.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_HegPwy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/label_pile.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_pMighT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Long_banner.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Private Label Information",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_KX4FfY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rewards_laundry_line.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_DPQTRj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/RS_refillery_banner.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_Qt9Cm9": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/pricing_tool_banner.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        }
+      },
+      "block_order": [
+        "column_akYPXL",
+        "column_XtzQK7",
+        "column_HegPwy",
+        "column_pMighT",
+        "column_KX4FfY",
+        "column_DPQTRj",
+        "column_Qt9Cm9"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "More Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "17558884447de2b3d0",
+    "blocks_7ERkiA",
+    "blocks_RqxheR",
+    "blocks_kzpbxb",
+    "collapsible_content_kbDrge",
+    "main",
+    "video_MJLfEx",
+    "rich_text_xbya4M",
+    "multicolumn_VHd6bC",
+    "multicolumn_x6phJf"
+  ]
+}

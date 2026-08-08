@@ -1,0 +1,839 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_zyrbpn": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_gETmTJ": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_iaFbK8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_9ANBHY": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gETmTJ",
+        "text_iaFbK8",
+        "buttons_9ANBHY"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Media_Incentive_Banner_bae45eff-673b-476a-b20c-629ad938795b.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true,
+        "content_max_width": 800
+      }
+    },
+    "rich_text_mw8efF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HMUMdk": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Get Noticed by Thousands of Refill Customers</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_BhaJ7E": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Partner with us to reach a wider audience. Simply share some details about your refill shop with us, and we’ll promote you through our ad campaigns and our popular store locator, which attracts over 30,000 visitors weekly.</p>"
+          }
+        },
+        "button_a6QdxH": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HMUMdk",
+        "text_BhaJ7E",
+        "button_a6QdxH"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_aXeXUU": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_jnrnkd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Store Locator",
+            "heading_size": "h2"
+          }
+        },
+        "text_8hhUdi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This is where Retail customers can find our products! </p><p>If you are stocking Rustic Strength and would like to be added, complete a quick Store Locator Request form with all of the information that customers need to know.</p><p>We do our best to keep our listings up to date, but we need your help. Please let us know if there are any changes to your address or your business status.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_CntYKT": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "View the Locator",
+            "button_link": "https://rusticstrength.com/pages/store-locator",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_jnrnkd",
+        "text_8hhUdi",
+        "button_CntYKT"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/wip1_0f6453b8-facb-49d9-a6f0-c9504b7ac825.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "1758125119838296de": {
+      "type": "apps",
+      "blocks": {
+        "hulk_form_builder_form_block_GrTGT6": {
+          "type": "shopify://apps/hulk-form-builder/blocks/form-block/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "disabled": true,
+          "settings": {
+            "form_uuid": "T16b8g4kJ0aUjHX4HoYg0Q",
+            "form_settings": true,
+            "font_color": "#000000",
+            "size": 14,
+            "input_background_color": "#ffffff",
+            "input_background_color_focus": "#f4dada",
+            "input_border_radius": 1,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2d2727",
+            "input_font_color": "#3d3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 2,
+            "border": 1,
+            "fill_color": "#ebe9e9",
+            "padding": 35,
+            "form_width": 600,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#f3f3f3",
+            "sub_btn_bg_color": "#3f3333",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#ffffff",
+            "sub_btn_bdr_rad": 3,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Times New Roman"
+          }
+        }
+      },
+      "block_order": [
+        "hulk_form_builder_form_block_GrTGT6"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "rich_text_rYaCTN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VCeagW": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_XqENrV": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_NwQrpr": {
+          "type": "button",
+          "settings": {
+            "button_label": "View the Locator",
+            "button_link": "https://rusticstrength.com/pages/store-locator",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "button_NE43jc": {
+          "type": "button",
+          "settings": {
+            "button_label": "Submit a Store Locator Request",
+            "button_link": "shopify://pages/store-locator-request",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VCeagW",
+        "text_XqENrV",
+        "button_NwQrpr",
+        "button_NE43jc"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 12,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_ghLDgJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_G9dd8F": {
+          "type": "heading",
+          "settings": {
+            "heading": "Help Us Promote You",
+            "heading_size": "h2"
+          }
+        },
+        "text_qJJgxF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We want to promote your answers along with pictures/ videos of your shop accross:</p><ul><li>Rustic Strength's national social media campaigns</li><li>Mainstream media outlets</li><li>Mainstream news publications</li><li>Rustic Strength's social media channels, where we will individually spotlight your store and location to our retail and wholesale customers</li><li>Rustic Strength's retail and wholesale websites</li></ul><p>Simply answer our interview questions AND submit the photos and/ or videos described in the prompts below.</p><p><em>We know it's hard for business owners to make time, so we're offering participants up to $375 off our products.</em></p>",
+            "text_style": "body"
+          }
+        },
+        "button_iWLEfe": {
+          "type": "button",
+          "settings": {
+            "button_label": "Answer a few questions",
+            "button_link": "https://docs.google.com/forms/d/e/1FAIpQLSdQ5FtcA8z-jolFLiop7PGFx6tNX3UQBDP-Z6xpGoXC1P6jiA/viewform",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_G9dd8F",
+        "text_qJJgxF",
+        "button_iWLEfe"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/tall_bottles_a9b0c2b0-2bf6-48a7-9f79-8079ab66965a.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_EQYiTy": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_fVyUVE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CollabMedia_3a5c1a26-6711-45d2-b349-b54abfe648ab.png",
+            "title": "",
+            "text": "",
+            "link_label": "Submit Your Info",
+            "link": "https://docs.google.com/forms/d/e/1FAIpQLSdQ5FtcA8z-jolFLiop7PGFx6tNX3UQBDP-Z6xpGoXC1P6jiA/viewform"
+          }
+        },
+        "column_WPNKpD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CollabInterview_1d8debf8-416d-41a2-9771-aaad593f5050.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_fVyUVE",
+        "column_WPNKpD"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "How To Participate",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_8NNQKk": {
+      "type": "multirow",
+      "blocks": {
+        "row_HhmggV": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Prompt_Options_1_2_0e687798-d093-481e-81c1-18701c4f85d6_1.png",
+            "caption": "",
+            "heading": "Share",
+            "text": "<ul><li>Receive a shipment</li><li>Show off your space</li></ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_hADJ7z": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Prompt_2_3_4cd8371e-0064-4508-b0a8-3ca164073721.png",
+            "caption": "",
+            "heading": "Inspire",
+            "text": "<ul><li>Share your displays</li><li>Replenish your supply</li></ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_KTfBct": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Prompt_4_5_1b8dbd29-d4ec-40ea-87ec-abf4ed5587a0.png",
+            "caption": "",
+            "heading": "Connect",
+            "text": "<ul><li>Customer spotlight</li><li>Close the Loop™</li></ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_HhmggV",
+        "row_hADJ7z",
+        "row_KTfBct"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "large",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "row_color_scheme": "scheme-3",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_mE6aUk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HzR8zb": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_WtGVVU": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_P6aF89": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HzR8zb",
+        "text_WtGVVU",
+        "button_P6aF89"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "image_banner_JfwwGG": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_qPAWnY": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_ctmGcz": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_NN3hFY": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qPAWnY",
+        "text_ctmGcz",
+        "buttons_NN3hFY"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/RUles_tips_c8aeffea-472a-4f12-98b5-4399d0823d99.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-434ca482-719d-4587-a82b-0cc063b73cf5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true,
+        "content_max_width": 800
+      }
+    },
+    "multicolumn_3iHRPV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_mreLgM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/01_8.png",
+            "title": "One Entry per Prompt",
+            "text": "<p>There is no time limit for submitting, but each shop can only submit one entry per prompt.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_agiwKP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/01_7.png",
+            "title": "Image Rights",
+            "text": "<p>Make sure that you have permission from everyone who appears in the media, so that we will be able to use their image.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_kbBYfh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/01_6.png",
+            "title": "Visible Logos",
+            "text": "<p>Our logo or labels need to be seen clearly, so that it is specific to our collaboration and not another brand.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_GN8p9z": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/01_5.png",
+            "title": "No Editing Needed",
+            "text": "<p>With pictures, don't feel the need to edit them. We can edit them in-house.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_mreLgM",
+        "column_agiwKP",
+        "column_kbBYfh",
+        "column_GN8p9z"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-3",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "multicolumn_Wz8RpE": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_C4yLKA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/01_9.png",
+            "title": "Video Length",
+            "text": "<p>Long videos can make large, difficult to sent files. Feel free to send short clips or edited clips. </p><p>Minimum Length - 15 seconds</p><p>Maximum Length - 5 minutes</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qWxbfc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/01_10.png",
+            "title": "Reuse ♻️ Recycle",
+            "text": "<p>Submit media you've made for other uses. You might have something you love from another project. No need to make new media.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_MdrBN4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/01_11.png",
+            "title": "An Exception",
+            "text": "<p>You cannot use media from a review that you have already received a discount for on Rusticstrengthwholesale.com</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_PdJzf3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/01_12.png",
+            "title": "Share Freely",
+            "text": "<p>Get excited and get sharing! Post any media you create on your social media as well as on our instagram: @rusticstrengthwholesale</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_C4yLKA",
+        "column_qWxbfc",
+        "column_MdrBN4",
+        "column_PdJzf3"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-3",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "image_with_text_UenGMV": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_RnQbwz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ready to Share?",
+            "heading_size": "h1"
+          }
+        },
+        "text_LKQWzU": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
+        "button_6kG7NX": {
+          "type": "button",
+          "settings": {
+            "button_label": "Submit Media",
+            "button_link": "https://rusticstrength.com/pages/media-submission-page?syclid=cksnbfnvoevs73biofmg&utm_campaign=emailmarketing_147772670192&utm_medium=email&utm_source=shopify_email",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RnQbwz",
+        "text_LKQWzU",
+        "button_6kG7NX"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/socialmedia-chaos.png",
+        "height": "small",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-434ca482-719d-4587-a82b-0cc063b73cf5",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_anjmDm": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_BMhVV9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design.png",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_fDJTGt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Untitled_580d6abd-1ae3-4e38-9bc8-b083c07a3b45.png",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_EDUFGU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_7krzXR": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled_129e331e-5fd0-42c2-8e5d-dcc50570e10b.png",
+            "title": "",
+            "text": "",
+            "link_label": "Private Label Information",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_Ge9FNf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_HFkL7y": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_UxVKXz": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blog Center",
+            "link": "shopify://pages/blog-landing-page"
+          }
+        },
+        "column_npLLgL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        }
+      },
+      "block_order": [
+        "column_BMhVV9",
+        "column_fDJTGt",
+        "column_EDUFGU",
+        "column_7krzXR",
+        "column_Ge9FNf",
+        "column_HFkL7y",
+        "column_UxVKXz",
+        "column_npLLgL"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_zyrbpn",
+    "rich_text_mw8efF",
+    "image_with_text_aXeXUU",
+    "1758125119838296de",
+    "rich_text_rYaCTN",
+    "image_with_text_ghLDgJ",
+    "multicolumn_EQYiTy",
+    "multirow_8NNQKk",
+    "rich_text_mE6aUk",
+    "image_banner_JfwwGG",
+    "multicolumn_3iHRPV",
+    "multicolumn_Wz8RpE",
+    "image_with_text_UenGMV",
+    "multicolumn_anjmDm"
+  ]
+}

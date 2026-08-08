@@ -1,0 +1,264 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_WWYzh8": {
+      "type": "image-banner",
+      "blocks": {
+        "text_V8eQTK": {
+          "type": "text",
+          "settings": {
+            "text": "OUR FAMILY'S JOURNEY",
+            "text_style": "body"
+          }
+        },
+        "heading_RmE67M": {
+          "type": "heading",
+          "settings": {
+            "heading": "From Sickness to <em>Strength</em>",
+            "heading_size": "h1"
+          }
+        },
+        "buttons_AXKWjy": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_V8eQTK",
+        "heading_RmE67M",
+        "buttons_AXKWjy"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Adamson_Family_Portrait_Wide.webp",
+        "image_overlay_opacity": 20,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false,
+        "content_max_width": 800
+      }
+    },
+    "rich_text_R7Nt93": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EyE4DC": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_bfUxtr": {
+          "type": "text",
+          "settings": {
+            "text": "<h4><strong>Rustic Strength</strong> was born from a personal health crisis: </h4><p>Our infant son developed severe, unexplained sensitivities and anaphylactic reactions, leading to a desperate search for answers and a radical home overhaul. </p><p>Simultaneously, Alicia's own health issues prompted an investigation into harmful chemicals in everyday products. Frustrated by the lack of safe options, they began experimenting, creating their own laundry detergent.</p><p>What started as a personal journey to protect our family’s health has grown into a mission to help other businesses offer safer, more sustainable choices to their customers. </p><p>Through <strong>Rustic Strength</strong>, we’ve taken the lessons learned from battling hidden chemicals and created <em>high-purity</em>, <em>refillable</em> products that are both <em>worry-free</em> and <em>effective</em>. </p><p>By partnering with us, businesses gain the ability to provide <strong>healthy living solutions</strong> while also embracing <strong>bulk refills</strong> that reduce packaging waste and strengthen <strong>customer loyalty</strong>. Together, we can be at the forefront of the refill revolution—empowering communities, protecting the planet, and setting a new standard for how wellness products are made, shared, and refilled.<br/><br/></p><p>– The Adamson Family</p>"
+          }
+        },
+        "button_pW6HL7": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read About The Journey Here",
+            "button_link": "shopify://blogs/company/our-story-from-sickness-to-strength",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_EyE4DC",
+        "text_bfUxtr",
+        "button_pW6HL7"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "video_zNi9Qa": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/bJpY4lxN-sY?si=T1tuBl8rOqUkE5iq",
+        "cover_image": "shopify://shop_images/Thumbnail_Quote.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_VBabNw": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "blog": "our-packaging",
+        "post_limit": 3,
+        "heading": "Learn About Our Practices",
+        "heading_size": "h2",
+        "columns_desktop": 3,
+        "show_view_all": true,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_pJTE7L": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_RNtNry": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "seasonal-scents"
+          }
+        },
+        "featured_collection_dhrCRf": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-scent"
+          }
+        },
+        "featured_collection_r9fEij": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry-detergent"
+          }
+        },
+        "featured_collection_6X3w7M": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hand-soap"
+          }
+        },
+        "featured_collection_EpawrW": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dish-soap"
+          }
+        },
+        "featured_collection_i9TifD": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "household-goods"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_RNtNry",
+        "featured_collection_dhrCRf",
+        "featured_collection_r9fEij",
+        "featured_collection_6X3w7M",
+        "featured_collection_EpawrW",
+        "featured_collection_i9TifD"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop Top Categories",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1755788069b49b24b5": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_YagytF": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_YagytF"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "175578976168029f0e": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_f9eba0d_dKGJ6D": {
+          "type": "ai_gen_block_f9eba0d",
+          "settings": {
+            "desktop_height": 85,
+            "mobile_height": 30,
+            "show_label": false,
+            "show_border": false,
+            "border_thickness": 1,
+            "border_style": "solid",
+            "border_color": "#e0e0e0",
+            "color_scheme": "scheme-1"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_f9eba0d_dKGJ6D"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_WWYzh8",
+    "rich_text_R7Nt93",
+    "video_zNi9Qa",
+    "featured_blog_VBabNw",
+    "collection_list_pJTE7L",
+    "1755788069b49b24b5",
+    "175578976168029f0e"
+  ]
+}

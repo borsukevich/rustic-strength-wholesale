@@ -1,0 +1,243 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "178586808744845720": {
+      "type": "apps",
+      "blocks": {
+        "hulk_form_builder_form_block_BkXXbM": {
+          "type": "shopify://apps/hulk-form-builder/blocks/form-block/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "settings": {
+            "form_uuid": "GP7u6HDZ2NOcMi8ATSA9gQ",
+            "form_settings": false,
+            "font_color": "#000000",
+            "size": 14,
+            "input_background_color": "#FFF",
+            "input_background_color_focus": "#F4DADA",
+            "input_border_radius": 1,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2D2727",
+            "input_font_color": "#3D3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 12,
+            "border": 1,
+            "fill_color": "#EBE9E9",
+            "padding": 35,
+            "form_width": 600,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#F3F3F3",
+            "sub_btn_bg_color": "#A48A7A",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#FFFFFF",
+            "sub_btn_bdr_rad": 13,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Times New Roman"
+          }
+        }
+      },
+      "block_order": [
+        "hulk_form_builder_form_block_BkXXbM"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "collection_list_dpJAaE": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_AzHkzG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry-detergent"
+          }
+        },
+        "featured_collection_ctdhJT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hand-soap"
+          }
+        },
+        "featured_collection_wirQM7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dish-soap"
+          }
+        },
+        "featured_collection_V83h3F": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "household-goods"
+          }
+        },
+        "featured_collection_QLbzKm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-scent"
+          }
+        },
+        "featured_collection_DE9bUj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "body-care"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_AzHkzG",
+        "featured_collection_ctdhJT",
+        "featured_collection_wirQM7",
+        "featured_collection_V83h3F",
+        "featured_collection_QLbzKm",
+        "featured_collection_DE9bUj"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop Top Categories",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_pDwpqY": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RCLdhQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design.png",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_WhdeDw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Untitled_580d6abd-1ae3-4e38-9bc8-b083c07a3b45.png",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_XFRxKQ": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_wehmLr": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled_129e331e-5fd0-42c2-8e5d-dcc50570e10b.png",
+            "title": "",
+            "text": "",
+            "link_label": "Private Label Information",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_zahWXF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_9xCiVB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_Lw4zfN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blog Center",
+            "link": "shopify://pages/blog-landing-page"
+          }
+        },
+        "column_XiEUPq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        }
+      },
+      "block_order": [
+        "column_RCLdhQ",
+        "column_WhdeDw",
+        "column_XFRxKQ",
+        "column_wehmLr",
+        "column_zahWXF",
+        "column_9xCiVB",
+        "column_Lw4zfN",
+        "column_XiEUPq"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "178586808744845720",
+    "collection_list_dpJAaE",
+    "multicolumn_pDwpqY"
+  ]
+}

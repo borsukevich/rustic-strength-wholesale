@@ -1,0 +1,325 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_GHdj4Y": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_FAmrbQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ingredients We Avoid",
+            "heading_size": "h1"
+          }
+        },
+        "text_MYYwJj": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_Gx4Ehq": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FAmrbQ",
+        "text_MYYwJj",
+        "buttons_Gx4Ehq"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/avoid.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false,
+        "content_max_width": 800
+      }
+    },
+    "multicolumn_xh8CHX": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_DrWNBJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1_4_Dioxane-Free_e6904790-2feb-4b7d-87df-8112a747f600.png",
+            "title": "1,4 Dioxane",
+            "text": "<p>Synthetic, cancer-linked impurity: <strong>Avoided</strong></p>",
+            "link_label": "Read more",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-is-1-4-dioxane-and-what-are-the-health-concerns"
+          }
+        },
+        "column_ytziWN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Amonia-Free_1_ffc19e81-77dd-49c8-922a-b291e968963f.png",
+            "title": "Ammonia",
+            "text": "<p>Nitrogen and hydrogen, toxic and harmful: <strong>Avoided</strong></p>",
+            "link_label": "Read more",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-is-ammonia-and-what-does-it-do-in-products"
+          }
+        },
+        "column_zCgkey": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Fabric_Softener_Free_2_2e1325ef-c766-406b-80bb-056707ac21e6.png",
+            "title": "Artificial Fabric Softeners",
+            "text": "<p>Chemical based, irritate and harm: <strong>Avoided</strong></p>",
+            "link_label": "Read more",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-artificial-fabric-softeners-and-what-are-the-health-concerns"
+          }
+        },
+        "column_PUaNPL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Bleach-Free_8fdc2b75-4875-4be5-8027-98a6d406b458.png",
+            "title": "Chlorine Bleach",
+            "text": "<p>Chemical compound, harsh and irritating: <strong>Avoided</strong></p>",
+            "link_label": "Read more",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-is-bleach-and-what-are-the-health-concerns"
+          }
+        },
+        "column_EpPqfq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Dye-Free_1_c422b493-b12c-49f4-ae30-af41d60464d8.png",
+            "title": "Dyes",
+            "text": "<p>Synthetic chemicals, cause irritation and toxicity: <strong>Avoided</strong></p>",
+            "link_label": "Read more",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-the-health-concerns-of-products-containing-dyes-and-added-colors"
+          }
+        },
+        "column_k4nWqz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Filler_Free_a31ec845-cbbc-452b-9867-7b584cefff5f.png",
+            "title": "Fillers",
+            "text": "<p>Various substances, reduce product effectiveness: <strong>Avoided</strong></p>",
+            "link_label": "Read more",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-fillers-and-what-are-the-health-concerns"
+          }
+        },
+        "column_zEHtpK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Gluten_Free_1c0887cc-67f4-41a1-a217-3d5708f0475e.png",
+            "title": "Gluten",
+            "text": "<p>Wheat protein, potential skin allergen: <strong>Avoided</strong></p>",
+            "link_label": "Read more",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-is-gluten-and-what-are-the-health-concerns"
+          }
+        },
+        "column_F9nWbU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Brightener_Free_1_601f0947-a5d7-4441-91ea-25f3b4a52503.png",
+            "title": "Optical Brighteners",
+            "text": "<p>Absorbing chemicals, irritation and biaccumulation: <strong>Avoided</strong></p>",
+            "link_label": "Read more",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-optical-brighteners-and-what-are-the-health-concerns"
+          }
+        },
+        "column_Ef9dXH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Paraben-Free_1.png",
+            "title": "Parabens",
+            "text": "<p>Chemical preservatives, hormone and health concerns: <strong>Avoided</strong></p>",
+            "link_label": "Read more",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-parabens-and-what-are-the-health-concerns"
+          }
+        },
+        "column_BBzHUQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Petro_Chemical-Free_3b31a44e-5647-43f2-9437-9a922eee0f31.png",
+            "title": "Petroleum",
+            "text": "<p>Earth-extracted oil, potential health concerns: <strong>Avoided</strong></p>",
+            "link_label": "Read more",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-is-petroleum-and-what-are-the-health-concerns"
+          }
+        },
+        "column_KaqPGH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Phosphate-Free_eb1fe197-ffd4-48a8-b4a3-dd47676b18cc.png",
+            "title": "Phosphates",
+            "text": "<p>Phosphoric compounds, kidney/ environmental concerns: <strong>Avoided</strong></p>",
+            "link_label": "Read more",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-phosphates-and-what-are-the-health-concerns"
+          }
+        },
+        "column_GK7zMb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Phthalate_Free_1.png",
+            "title": "Phthalates",
+            "text": "<p>Man-made chemicals, hormone disruption and health risks: <strong>Avoided</strong></p>",
+            "link_label": "Read more",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-phthalates-and-what-are-the-health-concerns"
+          }
+        },
+        "column_TbxTGJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SLS_SLES_Free_1_78255a14-1830-4a38-841d-d126a230093b.png",
+            "title": "SLS and SLES",
+            "text": "<p>Synthetic cleaners, irritate and pollute: <strong>Avoided</strong></p>",
+            "link_label": "Read more",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-sls-and-sles-and-what-are-the-health-concerns"
+          }
+        },
+        "column_jwCihJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sulfate_Free_f5e065ee-5c36-453a-8a69-cdc4d8811405.png",
+            "title": "Sulfates",
+            "text": "<p>Chemical cleaners, cause irritation and dryness: <strong>Avoided</strong></p>",
+            "link_label": "Read more",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-sulfates-and-what-are-the-health-concerns"
+          }
+        }
+      },
+      "block_order": [
+        "column_DrWNBJ",
+        "column_ytziWN",
+        "column_zCgkey",
+        "column_PUaNPL",
+        "column_EpPqfq",
+        "column_k4nWqz",
+        "column_zEHtpK",
+        "column_F9nWbU",
+        "column_Ef9dXH",
+        "column_BBzHUQ",
+        "column_KaqPGH",
+        "column_GK7zMb",
+        "column_TbxTGJ",
+        "column_jwCihJ"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 5,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_cyPNBK": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_AwJiPf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_Editorial_illustration_of_person_replacing_ch_2_08ad338b-c25a-42d3-93dd-2c0c80739cec.png",
+            "title": "Ingredients We Use",
+            "text": "",
+            "link_label": "Learn Why",
+            "link": "shopify://blogs/ingredients-we-stand-by"
+          }
+        },
+        "column_PaEfyg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/wanderingperson_dbe4c6e9-fb9c-4c6f-b4cc-75befe171e09.png",
+            "title": "The Toxic Truth",
+            "text": "",
+            "link_label": "Deep Dive",
+            "link": "shopify://blogs/news"
+          }
+        },
+        "column_KCVMiX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sustainability.jpg",
+            "title": "Our Sustainability",
+            "text": "",
+            "link_label": "Get Circular",
+            "link": "shopify://blogs/our-packaging"
+          }
+        },
+        "column_4NGLBB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_Flat_2-D_editorial_illustration_New-Yorker_styl_961f6b7d-8411-49cf-bcae-a53ace2ff789.png",
+            "title": "Tips + Guides",
+            "text": "",
+            "link_label": "Clean Smart",
+            "link": "shopify://blogs/tips-tricks"
+          }
+        }
+      },
+      "block_order": [
+        "column_AwJiPf",
+        "column_PaEfyg",
+        "column_KCVMiX",
+        "column_4NGLBB"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "More Blogs",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "circle",
+        "button_label": "All Blogs",
+        "button_link": "shopify://pages/blog-landing-page",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_GHdj4Y",
+    "multicolumn_xh8CHX",
+    "multicolumn_cyPNBK"
+  ]
+}

@@ -14,14 +14,53 @@
   }
 {%- endstyle -%}
 
-<div class="page-width page-width-{{ section.id }}-padding">
-  <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-    {{ page.title | escape }}
-  </h1>
-  <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    {{ page.content }}
-  </div>
+<div class="page-width page-width--narrow section-{{ section.id }}-padding">
+
+  {% assign is_b2b_page = false %}
+  {% if page.handle contains 'b2b' %}
+    {% assign is_b2b_page = true %}
+  {% endif %}
+
+  {% if is_b2b_page %}
+
+    {% if customer and customer.tags contains 'B2B' %}
+
+      <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+        {{ page.title | escape }}
+      </h1>
+
+      <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        {{ page.content }}
+      </div>
+
+    {% else %}
+
+      <div style="text-align:center; padding: 60px;">
+        <h2>Wholesale Access, Built for Our Partners</h2>
+        <p>
+          This space is reserved for approved B2B customers.<br><br>
+          Please login to access or apply for a 
+          <a href="/pages/wholesale-application-landing-page">Wholesale Account</a>
+        </p>
+      </div>
+
+    {% endif %}
+
+  {% else %}
+
+    <!-- NORMAL PAGE -->
+    <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      {{ page.title | escape }}
+    </h1>
+
+    <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      {{ page.content }}
+    </div>
+
+  {% endif %}
+
 </div>
+  </div>
 
 {% schema %}
 {

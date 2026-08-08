@@ -1,0 +1,51 @@
+{%- liquid
+  assign section_container = section_container | default: section.settings.section_container
+
+  assign section_vertical_spacing_on_desktop = section.settings.section_vertical_spacing_on_desktop
+  assign section_vertical_spacing_on_mobile = section.settings.section_vertical_spacing_on_mobile
+
+  assign section_padding_top_on_desktop = section_padding_top_on_desktop | default: section.settings.section_padding_top_on_desktop
+  assign section_padding_bottom_on_desktop = section_padding_bottom_on_desktop | default: section.settings.section_padding_bottom_on_desktop
+  assign section_padding_top_on_mobile = section_padding_top_on_mobile | default: section.settings.section_padding_top_on_mobile
+  assign section_padding_bottom_on_mobile = section_padding_bottom_on_mobile | default: section.settings.section_padding_bottom_on_mobile
+
+  if section_vertical_spacing_on_desktop != blank
+    assign section_padding_top_on_desktop = section_vertical_spacing_on_desktop
+    assign section_padding_bottom_on_desktop = section_vertical_spacing_on_desktop
+  endif
+
+  if section_vertical_spacing_on_mobile != blank
+    assign section_padding_top_on_mobile = section_vertical_spacing_on_mobile
+    assign section_padding_bottom_on_mobile = section_vertical_spacing_on_mobile
+  endif
+
+
+  assign corner_border_radius_value = settings.border_radius | at_least: 10
+  assign corner_border_radius_on_desktop = corner_border_radius_value | times: 3
+  assign corner_border_radius_on_mobile = corner_border_radius_value
+
+
+  assign spacing_top_for_corner_on_desktop = 0
+  assign spacing_bottom_for_corner_on_desktop = 0
+
+  assign spacing_top_for_corner_on_mobile = 0
+  assign spacing_bottom_for_corner_on_mobile = 0
+
+  if section_padding_top_on_desktop > 0
+    assign spacing_top_for_corner_on_desktop = section_padding_top_on_desktop | plus: corner_border_radius_on_desktop
+  endif
+
+  assign spacing_bottom_for_corner_on_desktop = section_padding_bottom_on_desktop | plus: corner_border_radius_on_desktop
+
+  if section_padding_top_on_mobile > 0
+    assign spacing_top_for_corner_on_mobile = section_padding_top_on_mobile | plus: corner_border_radius_on_mobile
+  endif
+
+  assign spacing_bottom_for_corner_on_mobile = section_padding_bottom_on_mobile | plus: corner_border_radius_on_mobile
+-%}
+
+{%- capture style -%}
+  --section-pt-mb: {{ section_padding_top_on_mobile }}; --section-pb-mb: {{ section_padding_bottom_on_mobile }}; --section-pt: {{ section_padding_top_on_desktop }}; --section-pb: {{ section_padding_bottom_on_desktop }}; --space-top: {{ spacing_top_for_corner_on_desktop }}; --space-bottom: {{ spacing_bottom_for_corner_on_desktop }}; --space-top-mb: {{ spacing_top_for_corner_on_mobile }}; --space-bottom-mb: {{ spacing_bottom_for_corner_on_mobile }};
+{%- endcapture -%}
+
+{{- style -}}

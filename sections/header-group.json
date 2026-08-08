@@ -11,82 +11,183 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "rs_top_banner_6nxtGB": {
-      "type": "rs-top-banner",
-      "name": "BECOME A WHOLESALE PARTNER",
+    "promotional_bar_xyEkyX": {
+      "type": "promotional-bar",
+      "disabled": true,
+      "name": "Promotional bar",
       "settings": {
-        "heading_text": "Wholesale Access: up to 50% off for approved partners",
-        "heading_size_desktop": 28,
-        "heading_size_mobile": 22,
-        "heading_font_weight": 500,
-        "background_color": "#121212",
-        "heading_color": "#ffffff",
-        "content_alignment": "center",
-        "max_width": 3500,
-        "padding_y": 18,
-        "gap": 10,
+        "show_on_home_page_only": false,
+        "enable_close_button": true,
+        "enable_scheduling": false,
+        "start_date": "12-30-2025",
+        "start_time": "0:00",
+        "end_date": "12-31-2030",
+        "end_time": "0:00",
+        "timezone": "America/New_York",
+        "layout_desktop": "horizontal",
+        "layout_mobile": "horizontal",
+        "spacing_on_desktop": 25,
+        "spacing_on_mobile": 15,
+        "max_content_width": 1200,
+        "text": "Promotional text goes here.",
+        "text_font_size_on_desktop": 18,
+        "text_font_size_on_mobile": 12,
+        "alignment_desktop": "center",
+        "alignment_mobile": "center",
         "show_button": true,
-        "button_label": "APPLY NOW",
-        "button_link": "https://rusticstrengthwholesale.com/pages/wholesale-application-landing-page",
-        "button_style": "filled",
-        "button_color": "#f2f2f2",
-        "button_text_color": "#283120",
-        "button_radius": 8,
-        "button_full_width_mobile": false
+        "show_button_on_mobile": false,
+        "button_text": "Shop",
+        "button_link": "",
+        "button_style": "primary",
+        "button_text_transform": "unset",
+        "open_new_tab": true,
+        "make_whole_clickable": false,
+        "color_scheme": "scheme-4",
+        "overlay_opacity": 0,
+        "color_overlay": "#171717",
+        "section_show_on_desktop": true,
+        "section_show_on_mobile": true,
+        "section_padding_top_on_desktop": 10,
+        "section_padding_bottom_on_desktop": 10,
+        "section_padding_top_on_mobile": 10,
+        "section_padding_bottom_on_mobile": 10
       }
     },
-    "custom_liquid_baqnEk": {
-      "type": "custom-liquid",
-      "name": "Countdown Timer",
+    "countdown_timer_bar_a6hUwU": {
+      "type": "countdown-timer-bar",
+      "name": "Countdown timer bar",
       "settings": {
-        "custom_liquid": "<!-- Elfsight Countdown Timer | Small Business Appriciation -->\n<script src=\"https://elfsightcdn.com/platform.js\" async></script>\n<div class=\"elfsight-app-aebc3d18-9bb2-4c4e-8392-e07e540aca51\" data-elfsight-app-lazy></div>",
+        "show_on_home_page_only": false,
+        "start_date": "12-30-2025",
+        "start_time": "0:00",
+        "end_date": "03-01-2026",
+        "end_time": "0:00",
+        "timezone": "-5",
+        "text": "Timer text goes here. Hurry up! Offer ends in:",
+        "text_font_size_on_desktop": 16,
+        "text_font_size_on_mobile": 12,
+        "show_days": true,
+        "show_hours": true,
+        "show_minutes": true,
+        "show_seconds": true,
+        "show_button": true,
+        "button_text": "Shop",
+        "button_link": "shopify://collections/all",
+        "button_style": "primary",
+        "button_text_transform": "unset",
+        "open_new_tab": true,
+        "make_whole_clickable": false,
         "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "overlay_opacity": 0,
+        "color_overlay": "#171717",
+        "section_show_on_desktop": true,
+        "section_show_on_mobile": true,
+        "section_padding_top_on_desktop": 10,
+        "section_padding_bottom_on_desktop": 10,
+        "section_padding_top_on_mobile": 10,
+        "section_padding_bottom_on_mobile": 10
+      }
+    },
+    "promotional_bar_LPUid6": {
+      "type": "promotional-bar",
+      "name": "Promotional bar",
+      "settings": {
+        "show_on_home_page_only": true,
+        "enable_close_button": true,
+        "enable_scheduling": false,
+        "start_date": "12-30-2025",
+        "start_time": "0:00",
+        "end_date": "12-31-2030",
+        "end_time": "0:00",
+        "timezone": "America/New_York",
+        "layout_desktop": "horizontal",
+        "layout_mobile": "horizontal",
+        "spacing_on_desktop": 25,
+        "spacing_on_mobile": 15,
+        "max_content_width": 1500,
+        "text": "Wholesale Access: Up to 50% Off for Approved Partners",
+        "text_font_size_on_desktop": 16,
+        "text_font_size_on_mobile": 12,
+        "alignment_desktop": "center",
+        "alignment_mobile": "center",
+        "show_button": true,
+        "show_button_on_mobile": true,
+        "button_text": "APPLY NOW",
+        "button_link": "shopify://pages/wholesale-application-landing-page",
+        "button_style": "primary",
+        "button_text_transform": "unset",
+        "open_new_tab": true,
+        "make_whole_clickable": false,
+        "color_scheme": "",
+        "overlay_opacity": 0,
+        "color_overlay": "#171717",
+        "section_show_on_desktop": true,
+        "section_show_on_mobile": true,
+        "section_padding_top_on_desktop": 10,
+        "section_padding_bottom_on_desktop": 10,
+        "section_padding_top_on_mobile": 10,
+        "section_padding_bottom_on_mobile": 10
       }
     },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "1f346827-8a28-4855-bb94-fec500264148": {
+        "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "FREE + Flat Rate Shipping - click for more details",
+            "text": "FREE + Flat Rate Shipping - click for details",
             "link": "shopify://policies/shipping-policy"
           }
         },
-        "announcement_aPnkwi": {
+        "announcement_q3xfMm": {
+          "type": "announcement",
+          "settings": {
+            "text": "Shop Limited-Edition Autumn Scents 🍁",
+            "link": ""
+          }
+        },
+        "announcement_pWmckD": {
           "type": "announcement",
           "disabled": true,
           "settings": {
-            "text": "Shop Limited-Edition Seasonal Scents ❄️",
-            "link": "shopify://collections/seasonal-scents"
-          }
-        },
-        "announcement_QjfXtW": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "text": "📣 NEW to Store ✨ Linen & Room Sprays",
-            "link": "shopify://collections/room-linen-sprays"
-          }
-        },
-        "03988ec4-3297-4038-b4a0-4be8e4d08138": {
-          "type": "announcement",
-          "settings": {
-            "text": "Looking to spread out payments (with terms like net 30)? Use PayPal at checkout",
+            "text": "Welcome to our store",
             "link": ""
           }
         }
       },
       "block_order": [
-        "1f346827-8a28-4855-bb94-fec500264148",
-        "announcement_aPnkwi",
-        "announcement_QjfXtW",
-        "03988ec4-3297-4038-b4a0-4be8e4d08138"
+        "announcement-bar-0",
+        "announcement_q3xfMm",
+        "announcement_pWmckD"
       ],
       "settings": {
-        "auto_rotate": true,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "color_scheme": "scheme-9890a002-3c64-4f5f-9c52-9627db2d29b5",
+        "show_line_separator": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "announcement_bar_CGeXPV": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_r3Th4p": {
+          "type": "announcement",
+          "settings": {
+            "text": "🚧 Planned Maintenance Today, 8/5/26, 8am - 4pm. Intermittent downtime, limited functionality, and broken links may occur. 🚧",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_r3Th4p"
+      ],
+      "disabled": true,
+      "name": "t:sections.announcement-bar.presets.name",
+      "settings": {
+        "auto_rotate": false,
         "change_slides_speed": 5,
         "color_scheme": "",
         "show_line_separator": true,
@@ -95,45 +196,32 @@
         "enable_language_selector": false
       }
     },
-    "custom_liquid_UnnHYW": {
-      "type": "custom-liquid",
-      "custom_css": [
-        ":has( .section-sections--22327943364848__custom_liquid_UnnHYW-padding > script:only-child ) {display: none !important;}",
-        ":has( .section-sections--22327943364848__custom_liquid_UnnHYW-padding div[class*=\"elfsight-app-\"]:empty ) {display: none !important;}"
-      ],
-      "name": "Elfsight Banner",
-      "settings": {
-        "custom_liquid": "<!-- Elfsight Countdown Timer | 10% Off Nourish -->\n<script src=\"https://elfsightcdn.com/platform.js\" async></script>\n<div class=\"elfsight-app-d2be9431-cdc7-4fd5-95e6-a48a177cc5e6\" data-elfsight-app-lazy></div>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "header": {
       "type": "header",
       "settings": {
-        "logo_position": "top-left",
+        "logo_position": "middle-left",
         "mobile_logo_position": "center",
-        "menu": "main-menu",
+        "menu": "main-menu-trade",
         "menu_type_desktop": "dropdown",
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "reduce-logo-size",
         "show_line_separator": true,
-        "color_scheme": "background-1",
+        "color_scheme": "scheme-5",
         "menu_color_scheme": "",
         "enable_country_selector": false,
         "enable_language_selector": false,
         "enable_customer_avatar": true,
         "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "padding_top": 8,
+        "padding_bottom": 8
       }
     }
   },
   "order": [
-    "rs_top_banner_6nxtGB",
-    "custom_liquid_baqnEk",
+    "promotional_bar_xyEkyX",
+    "countdown_timer_bar_a6hUwU",
+    "promotional_bar_LPUid6",
     "announcement-bar",
-    "custom_liquid_UnnHYW",
+    "announcement_bar_CGeXPV",
     "header"
   ]
 }

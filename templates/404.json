@@ -12,9 +12,168 @@
     "main": {
       "type": "main-404",
       "settings": {}
+    },
+    "rich_text_mAHiwj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rmViyC": {
+          "type": "heading",
+          "settings": {
+            "heading": "🫧A Fresh New Look is Coming🫧",
+            "heading_size": "h1"
+          }
+        },
+        "text_Diizf9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Planned Website updates will be happening <strong>today, 8/5/26</strong>. Expect intermittent downtime, limited functionality and broken links. We are working as quickly as we can to launch this exciting new look and to have the website back and better than ever by the end of the business day.</p><p>Thank you so much for your patience!</p>"
+          }
+        },
+        "button_peW3zn": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_rmViyC",
+        "text_Diizf9",
+        "button_peW3zn"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_Vwep7A": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RMC6aB": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_QAwRdV": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_VCjK6A": {
+          "type": "button",
+          "settings": {
+            "button_label": "Report Broken Link",
+            "button_link": "shopify://pages/report-a-broken-link",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RMC6aB",
+        "text_QAwRdV",
+        "button_VCjK6A"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-9890a002-3c64-4f5f-9c52-9627db2d29b5",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_rx49zk": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_8rJnBp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dish-soap"
+          }
+        },
+        "featured_collection_LCQLiB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "essential-oils"
+          }
+        },
+        "featured_collection_grn43F": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "retail-ready-cases"
+          }
+        },
+        "featured_collection_WajchR": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hair-care-products"
+          }
+        },
+        "featured_collection_i9FRYf": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "perfumes"
+          }
+        },
+        "featured_collection_8wQYRq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "room-linen-sprays"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_8rJnBp",
+        "featured_collection_LCQLiB",
+        "featured_collection_grn43F",
+        "featured_collection_WajchR",
+        "featured_collection_i9FRYf",
+        "featured_collection_8wQYRq"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Get Back to Shopping",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_mAHiwj",
+    "rich_text_Vwep7A",
+    "collection_list_rx49zk"
   ]
 }

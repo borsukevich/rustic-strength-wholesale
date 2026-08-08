@@ -1,0 +1,344 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "page_Axy3cK": {
+      "type": "page",
+      "name": "t:sections.page.presets.name",
+      "settings": {
+        "page": "faqs",
+        "heading_size": "h2",
+        "color_scheme": "scheme-5",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_ry8NpW": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_KtrCCC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design.png",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_KBWWMw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blog Center",
+            "link": "shopify://pages/blog-landing-page"
+          }
+        },
+        "column_ecD7JM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Untitled_580d6abd-1ae3-4e38-9bc8-b083c07a3b45.png",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_pzzUEE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        },
+        "column_3kFCPt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_gkpXtp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_wnXXfV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_mJbTdB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled_129e331e-5fd0-42c2-8e5d-dcc50570e10b.png",
+            "title": "",
+            "text": "",
+            "link_label": "Labels & Guidelines",
+            "link": "shopify://pages/private-label-information"
+          }
+        }
+      },
+      "block_order": [
+        "column_KtrCCC",
+        "column_KBWWMw",
+        "column_ecD7JM",
+        "column_pzzUEE",
+        "column_3kFCPt",
+        "column_gkpXtp",
+        "column_wnXXfV",
+        "column_mJbTdB"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_aWR89t": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_HjP3ym": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/pump_bottles_banner.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_UBT8Vk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CTL_banner_2.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_LVHLRP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/label_pile.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_XUKJ77": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Long_banner.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Private Label Information",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_6KxddE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rewards_laundry_line.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_fAXWLb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/RS_refillery_banner.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_LxLQcm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/pricing_tool_banner.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        }
+      },
+      "block_order": [
+        "column_HjP3ym",
+        "column_UBT8Vk",
+        "column_LVHLRP",
+        "column_XUKJ77",
+        "column_6KxddE",
+        "column_fAXWLb",
+        "column_LxLQcm"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "More Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_jLgxdd": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6XRdrf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sustainability.jpg",
+            "title": "Our Sustainability",
+            "text": "",
+            "link_label": "Get Circular",
+            "link": "shopify://blogs/our-packaging"
+          }
+        },
+        "column_DyE6NX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_Flat_2-D_editorial_illustration_New-Yorker_styl_961f6b7d-8411-49cf-bcae-a53ace2ff789.png",
+            "title": "Tips + Guides",
+            "text": "",
+            "link_label": "Clean Smart",
+            "link": "shopify://blogs/tips-tricks"
+          }
+        },
+        "column_JitBdf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/wanderingperson_dbe4c6e9-fb9c-4c6f-b4cc-75befe171e09.png",
+            "title": "The Toxic Truth",
+            "text": "",
+            "link_label": "Deep Dive",
+            "link": "shopify://blogs/news"
+          }
+        },
+        "column_YzQx9M": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Our_Story_Cover.jpg",
+            "title": "Our Story",
+            "text": "",
+            "link_label": "Sickness to Strength",
+            "link": "shopify://blogs/company"
+          }
+        },
+        "column_WWRq83": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_modern_2-D_editorial_illustration--sleek_lab__3_7e6af2cf-c2c7-456d-a2d9-fdfa1c76a3f6.png",
+            "title": "Ingredients We Use",
+            "text": "",
+            "link_label": "Learn why",
+            "link": "shopify://blogs/ingredients-we-stand-by"
+          }
+        },
+        "column_zrgdzt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/avoid.jpg",
+            "title": "Ingredients We Avoid",
+            "text": "",
+            "link_label": "Avoid Toxins",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products"
+          }
+        }
+      },
+      "block_order": [
+        "column_6XRdrf",
+        "column_DyE6NX",
+        "column_JitBdf",
+        "column_YzQx9M",
+        "column_WWRq83",
+        "column_zrgdzt"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Blog Menu",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "circle",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "page_Axy3cK",
+    "multicolumn_ry8NpW",
+    "multicolumn_aWR89t",
+    "multicolumn_jLgxdd"
+  ]
+}

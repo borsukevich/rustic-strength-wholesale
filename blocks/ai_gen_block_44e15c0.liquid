@@ -1,0 +1,810 @@
+{% doc %}
+  @prompt
+    help me create a section that is exactly like the native Collection list section. I would like for the desktop and mobile both to have a carousel option when the number of collections exceeds 5. The visible Name of the collection should be able to be changed. The collection name should have the option to overlap with the image. 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-collection-list-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: {{ block.settings.padding_top }}px 0 {{ block.settings.padding_bottom }}px;
+  }
+
+  .ai-collection-list-container-{{ ai_gen_id }} {
+    max-width: {{ settings.page_width }}px;
+    margin: 0 auto;
+    padding: 0 {{ settings.spacing_grid_horizontal }}px;
+  }
+
+  .ai-collection-list-header-{{ ai_gen_id }} {
+    text-align: {{ block.settings.heading_alignment }};
+    margin-bottom: 32px;
+  }
+
+  .ai-collection-list-title-{{ ai_gen_id }} {
+    margin: 0 0 16px;
+    font-size: calc({{ settings.heading_scale }}% * 2.4rem / 100);
+    line-height: 1.2;
+  }
+
+  .ai-collection-list-description-{{ ai_gen_id }} {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.85;
+  }
+
+  .ai-collection-list-wrapper-{{ ai_gen_id }} {
+    position: relative;
+  }
+
+  .ai-collection-list-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
+    gap: {{ settings.spacing_grid_vertical }}px {{ settings.spacing_grid_horizontal }}px;
+  }
+
+  .ai-collection-list-grid-{{ ai_gen_id }}.carousel-enabled {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: {{ settings.spacing_grid_horizontal }}px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .ai-collection-list-grid-{{ ai_gen_id }}.carousel-enabled::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ai-collection-list-grid-{{ ai_gen_id }}.carousel-enabled .ai-collection-card-{{ ai_gen_id }} {
+    flex: 0 0 calc((100% - ({{ block.settings.columns_desktop }} - 1) * {{ settings.spacing_grid_horizontal }}px) / {{ block.settings.columns_desktop }});
+    scroll-snap-align: start;
+  }
+
+  .ai-collection-card-{{ ai_gen_id }} {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-collection-card-link-{{ ai_gen_id }} {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    border-radius: {{ settings.collection_card_corner_radius }}px;
+    {% if settings.collection_card_style == 'card' %}
+      background-color: rgb(var(--color-background));
+      border: {{ settings.collection_card_border_thickness }}px solid rgba(var(--color-foreground), {{ settings.collection_card_border_opacity | divided_by: 100.0 }});
+      box-shadow: 0 {{ settings.collection_card_shadow_vertical_offset }}px {{ settings.collection_card_shadow_blur }}px rgba(var(--color-shadow), {{ settings.collection_card_shadow_opacity | divided_by: 100.0 }});
+    {% endif %}
+  }
+
+  .ai-collection-card-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    padding-bottom: {{ 100.0 | divided_by: block.settings.image_ratio }}%;
+    overflow: hidden;
+    {% if settings.collection_card_style == 'card' %}
+      padding: {{ settings.collection_card_image_padding }}px;
+    {% endif %}
+  }
+
+  .ai-collection-card-image-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    {% if settings.collection_card_style == 'card' and settings.collection_card_image_padding > 0 %}
+      border-radius: calc({{ settings.collection_card_corner_radius }}px - {{ settings.collection_card_image_padding }}px);
+    {% endif %}
+  }
+
+  .ai-collection-card-link-{{ ai_gen_id }}:hover .ai-collection-card-image-{{ ai_gen_id }} {
+    transform: scale(1.05);
+  }
+
+  .ai-collection-card-placeholder-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(var(--color-foreground), 0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-collection-card-placeholder-{{ ai_gen_id }} svg {
+    width: 40%;
+    height: 40%;
+    opacity: 0.3;
+  }
+
+  .ai-collection-card-content-{{ ai_gen_id }} {
+    padding: 16px;
+    text-align: {{ settings.collection_card_text_alignment }};
+    {% if block.settings.title_position == 'overlay' %}
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      color: #ffffff;
+    {% endif %}
+  }
+
+  .ai-collection-card-title-{{ ai_gen_id }} {
+    margin: 0;
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .ai-collection-card-count-{{ ai_gen_id }} {
+    margin: 4px 0 0;
+    font-size: 0.875rem;
+    opacity: 0.7;
+  }
+
+  .ai-carousel-nav-{{ ai_gen_id }} {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  .ai-carousel-nav-{{ ai_gen_id }}.show {
+    display: block;
+  }
+
+  .ai-carousel-nav-prev-{{ ai_gen_id }} {
+    left: -20px;
+  }
+
+  .ai-carousel-nav-next-{{ ai_gen_id }} {
+    right: -20px;
+  }
+
+  .ai-carousel-button-{{ ai_gen_id }} {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgb(var(--color-background));
+    border: 1px solid rgba(var(--color-foreground), 0.2);
+    box-shadow: 0 2px 8px rgba(var(--color-shadow), 0.15);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+  }
+
+  .ai-carousel-button-{{ ai_gen_id }}:hover {
+    background-color: rgb(var(--color-button));
+    border-color: rgb(var(--color-button));
+  }
+
+  .ai-carousel-button-{{ ai_gen_id }}:hover svg {
+    color: rgb(var(--color-button-text));
+  }
+
+  .ai-carousel-button-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+    color: rgb(var(--color-foreground));
+  }
+
+  .ai-carousel-dots-{{ ai_gen_id }} {
+    display: none;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .ai-carousel-dots-{{ ai_gen_id }}.show {
+    display: flex;
+  }
+
+  .ai-carousel-dot-{{ ai_gen_id }} {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(var(--color-foreground), 0.2);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .ai-carousel-dot-{{ ai_gen_id }}.active {
+    background-color: rgb(var(--color-button));
+    width: 24px;
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-collection-list-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_mobile }}, 1fr);
+    }
+
+    .ai-collection-list-grid-{{ ai_gen_id }}.carousel-enabled .ai-collection-card-{{ ai_gen_id }} {
+      flex: 0 0 calc((100% - ({{ block.settings.columns_mobile }} - 1) * {{ settings.spacing_grid_horizontal }}px) / {{ block.settings.columns_mobile }});
+    }
+
+    .ai-carousel-nav-{{ ai_gen_id }} {
+      display: none !important;
+    }
+  }
+{% endstyle %}
+
+<collection-list-{{ ai_gen_id }} class="ai-collection-list-{{ ai_gen_id }} color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
+  <div class="ai-collection-list-container-{{ ai_gen_id }}">
+    {% if block.settings.title != blank or block.settings.description != blank %}
+      <div class="ai-collection-list-header-{{ ai_gen_id }}">
+        {% if block.settings.title != blank %}
+          <h2 class="ai-collection-list-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+        {% endif %}
+        {% if block.settings.description != blank %}
+          <div class="ai-collection-list-description-{{ ai_gen_id }}">{{ block.settings.description }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-collection-list-wrapper-{{ ai_gen_id }}">
+      <div class="ai-collection-list-grid-{{ ai_gen_id }}" data-carousel-container>
+        {% for i in (1..12) %}
+          {% assign collection_key = 'collection_' | append: i %}
+          {% assign custom_title_key = 'collection_' | append: i | append: '_custom_title' %}
+          {% assign collection = block.settings[collection_key] %}
+          {% assign custom_title = block.settings[custom_title_key] %}
+
+          {% if collection != blank %}
+            <div class="ai-collection-card-{{ ai_gen_id }}">
+              <a href="{{ collection.url }}" class="ai-collection-card-link-{{ ai_gen_id }}">
+                <div class="ai-collection-card-image-wrapper-{{ ai_gen_id }}">
+                  {% if collection.featured_image %}
+                    <img
+                      src="{{ collection.featured_image | image_url: width: 800 }}"
+                      alt="{{ collection.featured_image.alt | escape }}"
+                      class="ai-collection-card-image-{{ ai_gen_id }}"
+                      loading="lazy"
+                      width="800"
+                      height="{{ 800 | divided_by: block.settings.image_ratio }}"
+                    >
+                  {% else %}
+                    <div class="ai-collection-card-placeholder-{{ ai_gen_id }}">
+                      {{ 'collection-1' | placeholder_svg_tag }}
+                    </div>
+                  {% endif %}
+                  {% if block.settings.title_position == 'overlay' %}
+                    <div class="ai-collection-card-content-{{ ai_gen_id }}">
+                      <h3 class="ai-collection-card-title-{{ ai_gen_id }}">
+                        {% if custom_title != blank %}
+                          {{ custom_title }}
+                        {% else %}
+                          {{ collection.title }}
+                        {% endif %}
+                      </h3>
+                      {% if block.settings.show_product_count %}
+                        <div class="ai-collection-card-count-{{ ai_gen_id }}">
+                          {{ collection.products_count }} {% if collection.products_count == 1 %}product{% else %}products{% endif %}
+                        </div>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                </div>
+                {% if block.settings.title_position == 'below' %}
+                  <div class="ai-collection-card-content-{{ ai_gen_id }}">
+                    <h3 class="ai-collection-card-title-{{ ai_gen_id }}">
+                      {% if custom_title != blank %}
+                        {{ custom_title }}
+                      {% else %}
+                        {{ collection.title }}
+                      {% endif %}
+                    </h3>
+                    {% if block.settings.show_product_count %}
+                      <div class="ai-collection-card-count-{{ ai_gen_id }}">
+                        {{ collection.products_count }} {% if collection.products_count == 1 %}product{% else %}products{% endif %}
+                      </div>
+                    {% endif %}
+                  </div>
+                {% endif %}
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="ai-carousel-nav-{{ ai_gen_id }} ai-carousel-nav-prev-{{ ai_gen_id }}" data-carousel-prev>
+        <button class="ai-carousel-button-{{ ai_gen_id }}" aria-label="Previous">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="ai-carousel-nav-{{ ai_gen_id }} ai-carousel-nav-next-{{ ai_gen_id }}" data-carousel-next>
+        <button class="ai-carousel-button-{{ ai_gen_id }}" aria-label="Next">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="ai-carousel-dots-{{ ai_gen_id }}" data-carousel-dots></div>
+  </div>
+</collection-list-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class CollectionList{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.container = this.querySelector('[data-carousel-container]');
+        this.prevButton = this.querySelector('[data-carousel-prev]');
+        this.nextButton = this.querySelector('[data-carousel-next]');
+        this.dotsContainer = this.querySelector('[data-carousel-dots]');
+        this.cards = this.querySelectorAll('.ai-collection-card-{{ ai_gen_id }}');
+        this.carouselThreshold = {{ block.settings.carousel_threshold }};
+        this.isCarousel = false;
+      }
+
+      connectedCallback() {
+        this.checkCarousel();
+        window.addEventListener('resize', () => this.checkCarousel());
+        
+        if (this.prevButton && this.nextButton) {
+          this.prevButton.querySelector('button').addEventListener('click', () => this.scroll('prev'));
+          this.nextButton.querySelector('button').addEventListener('click', () => this.scroll('next'));
+        }
+
+        if (this.container) {
+          this.container.addEventListener('scroll', () => this.updateDots());
+        }
+      }
+
+      checkCarousel() {
+        const isMobile = window.innerWidth < 750;
+        const columns = isMobile ? {{ block.settings.columns_mobile }} : {{ block.settings.columns_desktop }};
+        const shouldBeCarousel = this.cards.length > this.carouselThreshold;
+
+        if (shouldBeCarousel !== this.isCarousel) {
+          this.isCarousel = shouldBeCarousel;
+          
+          if (this.isCarousel) {
+            this.container.classList.add('carousel-enabled');
+            this.prevButton.classList.add('show');
+            this.nextButton.classList.add('show');
+            this.createDots();
+            this.dotsContainer.classList.add('show');
+          } else {
+            this.container.classList.remove('carousel-enabled');
+            this.prevButton.classList.remove('show');
+            this.nextButton.classList.remove('show');
+            this.dotsContainer.classList.remove('show');
+            this.dotsContainer.innerHTML = '';
+          }
+        }
+      }
+
+      scroll(direction) {
+        const scrollAmount = this.container.offsetWidth;
+        const currentScroll = this.container.scrollLeft;
+        
+        if (direction === 'prev') {
+          this.container.scrollTo({
+            left: currentScroll - scrollAmount,
+            behavior: 'smooth'
+          });
+        } else {
+          this.container.scrollTo({
+            left: currentScroll + scrollAmount,
+            behavior: 'smooth'
+          });
+        }
+      }
+
+      createDots() {
+        const isMobile = window.innerWidth < 750;
+        const columns = isMobile ? {{ block.settings.columns_mobile }} : {{ block.settings.columns_desktop }};
+        const totalPages = Math.ceil(this.cards.length / columns);
+        
+        this.dotsContainer.innerHTML = '';
+        
+        for (let i = 0; i < totalPages; i++) {
+          const dot = document.createElement('button');
+          dot.classList.add('ai-carousel-dot-{{ ai_gen_id }}');
+          dot.setAttribute('aria-label', `Go to page ${i + 1}`);
+          dot.addEventListener('click', () => {
+            const scrollAmount = this.container.offsetWidth * i;
+            this.container.scrollTo({
+              left: scrollAmount,
+              behavior: 'smooth'
+            });
+          });
+          this.dotsContainer.appendChild(dot);
+        }
+        
+        this.updateDots();
+      }
+
+      updateDots() {
+        const dots = this.dotsContainer.querySelectorAll('.ai-carousel-dot-{{ ai_gen_id }}');
+        if (dots.length === 0) return;
+        
+        const scrollLeft = this.container.scrollLeft;
+        const containerWidth = this.container.offsetWidth;
+        const currentPage = Math.round(scrollLeft / containerWidth);
+        
+        dots.forEach((dot, index) => {
+          if (index === currentPage) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }
+    }
+
+    customElements.define('collection-list-{{ ai_gen_id }}', CollectionList{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Collection list carousel",
+  "tag": null,
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Heading",
+      "default": "Collections"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Columns on desktop",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "range",
+      "id": "carousel_threshold",
+      "label": "Enable carousel when collections exceed",
+      "min": 3,
+      "max": 12,
+      "step": 1,
+      "default": 5,
+      "info": "Carousel will activate when the number of collections exceeds this value"
+    },
+    {
+      "type": "range",
+      "id": "image_ratio",
+      "label": "Image ratio",
+      "min": 0.5,
+      "max": 2,
+      "step": 0.1,
+      "default": 1,
+      "info": "1 = square, 0.5 = landscape, 2 = portrait"
+    },
+    {
+      "type": "header",
+      "content": "Collection card"
+    },
+    {
+      "type": "select",
+      "id": "title_position",
+      "label": "Title position",
+      "options": [
+        {
+          "value": "below",
+          "label": "Below image"
+        },
+        {
+          "value": "overlay",
+          "label": "Overlay on image"
+        }
+      ],
+      "default": "below"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title size",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_count",
+      "label": "Show product count",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Collection 1"
+    },
+    {
+      "type": "collection",
+      "id": "collection_1",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_1_custom_title",
+      "label": "Custom title",
+      "info": "Leave blank to use collection name"
+    },
+    {
+      "type": "header",
+      "content": "Collection 2"
+    },
+    {
+      "type": "collection",
+      "id": "collection_2",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_2_custom_title",
+      "label": "Custom title",
+      "info": "Leave blank to use collection name"
+    },
+    {
+      "type": "header",
+      "content": "Collection 3"
+    },
+    {
+      "type": "collection",
+      "id": "collection_3",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_3_custom_title",
+      "label": "Custom title",
+      "info": "Leave blank to use collection name"
+    },
+    {
+      "type": "header",
+      "content": "Collection 4"
+    },
+    {
+      "type": "collection",
+      "id": "collection_4",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_4_custom_title",
+      "label": "Custom title",
+      "info": "Leave blank to use collection name"
+    },
+    {
+      "type": "header",
+      "content": "Collection 5"
+    },
+    {
+      "type": "collection",
+      "id": "collection_5",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_5_custom_title",
+      "label": "Custom title",
+      "info": "Leave blank to use collection name"
+    },
+    {
+      "type": "header",
+      "content": "Collection 6"
+    },
+    {
+      "type": "collection",
+      "id": "collection_6",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_6_custom_title",
+      "label": "Custom title",
+      "info": "Leave blank to use collection name"
+    },
+    {
+      "type": "header",
+      "content": "Collection 7"
+    },
+    {
+      "type": "collection",
+      "id": "collection_7",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_7_custom_title",
+      "label": "Custom title",
+      "info": "Leave blank to use collection name"
+    },
+    {
+      "type": "header",
+      "content": "Collection 8"
+    },
+    {
+      "type": "collection",
+      "id": "collection_8",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_8_custom_title",
+      "label": "Custom title",
+      "info": "Leave blank to use collection name"
+    },
+    {
+      "type": "header",
+      "content": "Collection 9"
+    },
+    {
+      "type": "collection",
+      "id": "collection_9",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_9_custom_title",
+      "label": "Custom title",
+      "info": "Leave blank to use collection name"
+    },
+    {
+      "type": "header",
+      "content": "Collection 10"
+    },
+    {
+      "type": "collection",
+      "id": "collection_10",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_10_custom_title",
+      "label": "Custom title",
+      "info": "Leave blank to use collection name"
+    },
+    {
+      "type": "header",
+      "content": "Collection 11"
+    },
+    {
+      "type": "collection",
+      "id": "collection_11",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_11_custom_title",
+      "label": "Custom title",
+      "info": "Leave blank to use collection name"
+    },
+    {
+      "type": "header",
+      "content": "Collection 12"
+    },
+    {
+      "type": "collection",
+      "id": "collection_12",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_12_custom_title",
+      "label": "Custom title",
+      "info": "Leave blank to use collection name"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection list carousel"
+    }
+  ]
+}
+{% endschema %}

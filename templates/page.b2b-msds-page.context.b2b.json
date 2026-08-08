@@ -1,0 +1,89 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "context": {
+    "market": "all-b2b"
+  },
+  "parent": "page.b2b-msds-page.json",
+  "sections": {
+    "multicolumn_HibVk": {
+      "type": "multicolumn",
+      "disabled": false,
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "header-cca914bffa020fff09ab51abd1b2964b": null,
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "header-8dc66bcf48b95d8d3a7be8b9533aa539": null,
+        "button_label": "Button label",
+        "button_link": "",
+        "header-42dfef5ec2d85275da77d4f6bdd3f8d7": null,
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "header-7e5c2ed787e995c8d27a13c453999fb5": null,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "header-727939d20a10b73ddcc60609722bdd21": null,
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "column_dgfMc": {
+          "type": "column",
+          "disabled": false,
+          "settings": {
+            "image": "shopify://shop_images/PowerDishwasherDetergent_5LB_Pouch.jpg",
+            "title": "Automatic Dishwasher Powder SDS",
+            "text": "",
+            "link_label": "download PDF",
+            "link": "https://cdn.shopify.com/s/files/1/0344/1809/8221/files/Auto_Dish_Powder_SDS.pdf?v=1774463494"
+          }
+        },
+        "column_dxTEM": {
+          "type": "column",
+          "disabled": false,
+          "settings": {
+            "image": null,
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9qdkY": {
+          "type": "column",
+          "disabled": false,
+          "settings": {
+            "image": null,
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_dgfMc",
+        "column_dxTEM",
+        "column_9qdkY"
+      ],
+      "name": "t:sections.multicolumn.presets.name"
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_HibVk",
+    "collection_list_dpJAaE",
+    "multicolumn_pDwpqY"
+  ]
+}

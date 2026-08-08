@@ -12,60 +12,30 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
         },
         "price": {
           "type": "price",
           "settings": {}
         },
-        "variant_picker": {
+        "price_panda_price_per_unit_product_block_6Fb3GT": {
+          "type": "shopify://apps/price-panda-price-per-unit/blocks/productBlock/8fe89266-7c30-4ab1-946d-3dcc05d9c8b2",
+          "settings": {}
+        },
+        "variant_picker_baqgrH": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "dropdown",
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector": {
+        "quantity_selector_fFPAYP": {
           "type": "quantity_selector",
           "settings": {}
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "smile_io_smile_points_on_product_page_tBxYe6": {
-          "type": "shopify://apps/smile-io/blocks/smile-points-on-product-page/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
-          "disabled": true,
-          "settings": {
-            "primary_colour": "#121212",
-            "secondary_colour": "#f8f8f8",
-            "preview_scenario": "customer_can_earn_points",
-            "should_show_icon": true,
-            "should_show_points_label": true,
-            "points_text_logged_in": "<p>Earn [points_amount] when you buy this item.</p>",
-            "points_text_logged_out": "<p>Members earn [points_amount] when they buy this item. <a href=\"/account/register/\">Sign up</a> or <a href=\"/account/login/\">log in</a>.</p>"
-          }
-        },
-        "rebuy_personalization_engine_rebuy_widget_ydci7H": {
+        "rebuy_personalization_engine_rebuy_widget_TCc7fH": {
           "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
           "settings": {
             "enabled": true,
@@ -74,16 +44,48 @@
             "collection_id_enabled": false
           }
         },
+        "buy_buttons_BkQNGe": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "judge_me_reviews_review_snippet_widget_YaPkxU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "reviews_selection": "auto",
+            "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
+            "min_star_rating": "inherit",
+            "show_review_media": true,
+            "max_reviews": 5,
+            "review_length": "medium",
+            "text_size": "medium",
+            "max_width": 1100,
+            "max_image_size": "small",
+            "arrows_visibility": "always_shown",
+            "transition_speed": 5,
+            "corner_styling": "inherit",
+            "text_color": "",
+            "card_color": "",
+            "stars_color": "",
+            "arrows_color": "",
+            "arrows_background_color": ""
+          }
+        },
         "description": {
           "type": "description",
           "settings": {}
         },
-        "collapsible-row-3": {
+        "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Instructions",
-            "icon": "clipboard",
-            "content": "Fill fabric softener dispenser or fabric softener ball with Fabric Softener.  There is no left over fabric softener smell on clothing after use.",
+            "heading": "Directions",
+            "icon": "washing",
+            "content": "<p>Fill fabric softener dispenser or fabric softener ball with 100% Organic Fabric Softener.  </p><p>There is no left over fabric softener smell on clothing after use.</p>",
             "page": ""
           }
         },
@@ -92,7 +94,16 @@
           "settings": {
             "heading": "Ingredients",
             "icon": "plant",
-            "content": "Organic Acetic Acid (vinegar, derived from sugar cane)\nHigh Purity Water (charcoal-filtered, reverse osmisis, UV-treated)",
+            "content": "<p><strong>Acetic Acid, </strong><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong> </strong></p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_jVYagL": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredient Description",
+            "icon": "eye",
+            "content": "<p><strong>Acetic Acid</strong> (Organic vinegar, derived from sugar cane)</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p>",
             "page": ""
           }
         },
@@ -100,288 +111,252 @@
           "type": "collapsible_tab",
           "disabled": true,
           "settings": {
-            "heading": "Scent Ingredients",
+            "heading": "Scent",
             "icon": "leaf",
-            "content": "<p>{{ product.metafields.my_fields.scent_ingredients | metafield_tag }}</p>",
-            "page": ""
+            "content": "",
+            "page": "merchandising-tips"
           }
         },
-        "collapsible-row-1": {
+        "collapsible_tab_hrdQhj": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
-            "heading": "Ingredient Description",
-            "icon": "clipboard",
-            "content": "<p>{{ product.metafields.my_fields.ingredient_description | metafield_tag }}</p>",
+            "heading": "Does this product come with a pump?",
+            "icon": "question_mark",
+            "content": "<p>We do not automatically provide a pump or spout with our products because our goal is to reduce waste.</p><p>If you would like a pump or spout, we offer options as an add-on in our accessory section. </p><ul><li><a href=\"/products/1-gallon-glass-or-plastic-container-pump\" target=\"_blank\" title=\"Pump | fits 1 Gallon Glass or Plastic Jug\">Gallon (Glass or Plastic) Jug Pump</a></li><li><a href=\"/pages/how-to-assemble-the-wide-mouth-jar-pump\" target=\"_blank\" title=\"Wide-Mouth Jar Pump Help\">1 Gallon Wide Mouth Jar Pump</a></li><li><a href=\"/pages/eco-jug-help\" target=\"_blank\" title=\"Eco-Jug Help\">Eco Jug Accessories</a></li><li><a href=\"/products/bucket-dispenser-pump-5-gallon\" target=\"_blank\" title=\"Bucket Pump | fits 5 Gallon Bucket\">Bucket Pump</a></li><li><a href=\"/collections/drum-pumps\" target=\"_blank\" title=\"drum pumps\">Drum Pumps</a></li></ul><p><strong>Retail Ready Case (2 oz, 4 oz & 16 oz) : </strong>Retail Ready products come as shown in the case image. Pump, Sprayer or Flip-Top Cap is included if shown.</p><p>No pump is available for the <strong>24 oz Glass Jug</strong>. </p>",
             "page": ""
           }
         },
-        "fc0233ef-ed1d-47be-898d-569b36d52e32": {
-          "type": "collapsible_tab",
-          "disabled": true,
+        "gorgias_live_chat_helpdesk_spq_LAHx4e": {
+          "type": "shopify://apps/gorgias-live-chat-helpdesk/blocks/spq/a66db725-7b96-4e3f-916e-6c8e6f87aaaa",
           "settings": {
-            "heading": "Tips for displaying",
-            "icon": "check_mark",
-            "content": "<p>{{ product.metafields.my_fields.tricks | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "0ebd724d-4223-4871-b5e4-f5371d971a61": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Product Tips",
-            "icon": "star",
-            "content": "<p>{{ product.metafields.my_fields.tips | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
+            "text_style": "none",
+            "icon_color": "#1e242e",
+            "font_color": "#1e242e",
+            "show_icons": true,
+            "font_size": 16,
+            "font_weight": "500",
+            "border_radius": 8,
+            "font_family": "inherit"
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
-        "caption",
         "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "smile_io_smile_points_on_product_page_tBxYe6",
-        "rebuy_personalization_engine_rebuy_widget_ydci7H",
+        "price_panda_price_per_unit_product_block_6Fb3GT",
+        "variant_picker_baqgrH",
+        "quantity_selector_fFPAYP",
+        "rebuy_personalization_engine_rebuy_widget_TCc7fH",
+        "buy_buttons_BkQNGe",
+        "judge_me_reviews_review_snippet_widget_YaPkxU",
         "description",
-        "collapsible-row-3",
-        "collapsible-row-0",
-        "collapsible-row-2",
         "collapsible-row-1",
-        "fc0233ef-ed1d-47be-898d-569b36d52e32",
-        "0ebd724d-4223-4871-b5e4-f5371d971a61",
-        "share"
+        "collapsible-row-0",
+        "collapsible_tab_jVYagL",
+        "collapsible-row-2",
+        "collapsible_tab_hrdQhj",
+        "gorgias_live_chat_helpdesk_spq_LAHx4e"
       ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
         "media_size": "small",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
         "gallery_layout": "thumbnail_slider",
-        "mobile_thumbnails": "show",
-        "media_position": "left",
+        "mobile_thumbnails": "hide",
+        "media_position": "right",
         "image_zoom": "lightbox",
         "hide_variants": true,
-        "enable_video_looping": false,
-        "padding_top": 20,
+        "enable_video_looping": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_FHp7MF": {
+      "type": "rich-text",
+      "blocks": {
+        "button_NeL8Tm": {
+          "type": "button",
+          "settings": {
+            "button_label": "📋 Fabric Softener SDS",
+            "button_link": "https://cdn.shopify.com/s/files/1/0344/1809/8221/files/Fabric_Softener_SDS.pdf?v=1774464080",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_NeL8Tm"
+      ],
+      "disabled": true,
+      "name": "MSDS Button",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 0,
         "padding_bottom": 20
+      }
+    },
+    "quick-order-list": {
+      "type": "quick-order-list",
+      "settings": {
+        "variants_per_page": 50,
+        "show_image": true,
+        "show_sku": true,
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 16
       }
     },
     "related-products": {
       "type": "related-products",
       "disabled": true,
       "settings": {
-        "heading": "You may also like",
+        "heading": "Industry favorites",
         "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
+        "products_to_show": 5,
+        "columns_desktop": 5,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
-        "image_ratio": "square",
+        "image_ratio": "portrait",
         "image_shape": "default",
-        "show_secondary_image": true,
+        "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
         "padding_top": 36,
-        "padding_bottom": 28
+        "padding_bottom": 44
       }
     },
-    "169809719168faf0f4": {
+    "1762450183b75e33a7": {
       "type": "apps",
       "blocks": {
-        "2816107f-345b-4143-be58-244bec82e9b2": {
+        "rebuy_personalization_engine_rebuy_widget_crUR8M": {
           "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
           "settings": {
             "enabled": true,
             "id": "109995",
+            "product_id_enabled": true,
+            "collection_id_enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_crUR8M"
+      ],
+      "disabled": true,
+      "name": "Rebuy 109995",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "175623938176d21caa": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_BDFTHC": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "154086",
             "product_id_enabled": true,
             "collection_id_enabled": false
           }
         }
       },
       "block_order": [
-        "2816107f-345b-4143-be58-244bec82e9b2"
+        "rebuy_personalization_engine_rebuy_widget_BDFTHC"
       ],
+      "disabled": true,
+      "name": "Rebuy 154086",
       "settings": {
         "include_margins": true
       }
     },
-    "1649954547ee9ee859": {
-      "type": "collapsible-content",
-      "blocks": {
-        "164995454784ae9827-0": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Directions",
-            "icon": "check_mark",
-            "row_content": "<p>{{ product.metafields.my_fields.directions | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "164995454784ae9827-1": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Tips",
-            "icon": "check_mark",
-            "row_content": "<p>{{ product.metafields.my_fields.tips | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "164995454784ae9827-2": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Tricks",
-            "icon": "check_mark",
-            "row_content": "<p>{{ product.metafields.my_fields.tricks | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "164995454784ae9827-3": {
-          "type": "collapsible_row",
-          "disabled": true,
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "164995454784ae9827-0",
-        "164995454784ae9827-1",
-        "164995454784ae9827-2",
-        "164995454784ae9827-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "caption": "",
-        "heading": "Suggested Use",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "container_color_scheme": "background-2",
-        "color_scheme": "background-1",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image-with-text": {
-      "type": "image-with-text",
-      "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Don't Forget",
-            "heading_size": "h1"
-          }
-        },
-        "image-with-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pumps and spouts are sold separate of each item.  This is to help reduce waste in the environment and your store.  <br/><a href=\"/collections/pumps-and-spouts-for-containers\" title=\"Spouts and Pumps\">Purchase pumps or spouts here</a></p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/CarboyWithEasySpout.jpg",
-        "height": "small",
-        "desktop_image_width": "small",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "background-2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1695060069b8468616": {
+    "1754511058878b6d45": {
       "type": "apps",
       "blocks": {
-        "4824e412-d4f1-4e13-8713-0d380820a5b0": {
+        "judge_me_reviews_review_widget_pd6hMN": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200,
+            "review_data": "real_data",
+            "max_width": 850,
             "show_shop_reviews": false,
-            "empty_state": "empty_widget"
+            "empty_state": "hide_widget"
           }
         }
       },
       "block_order": [
-        "4824e412-d4f1-4e13-8713-0d380820a5b0"
+        "judge_me_reviews_review_widget_pd6hMN"
       ],
+      "name": "Judge.Me Testimonial",
       "settings": {
         "include_margins": true
       }
     },
-    "image_with_text_QfXTnN": {
-      "type": "image-with-text",
+    "collection_list_hXEcJK": {
+      "type": "collection-list",
       "blocks": {
-        "heading_VntrG9": {
-          "type": "heading",
+        "featured_collection_Ge9qYg": {
+          "type": "featured_collection",
           "settings": {
-            "heading": "Get Rewarded for Sustainability.",
-            "heading_size": "h1"
+            "collection": "body-care"
           }
         },
-        "text_nWkHgc": {
-          "type": "text",
+        "featured_collection_J6bcK9": {
+          "type": "featured_collection",
           "settings": {
-            "text": "<h3>Earn points for every container you return! Redeem points for store credit and exclusive discounts. Join our <em>Close The Loop Program</em> and help the planet while rewarding yourself.</h3>",
-            "text_style": "body"
+            "collection": "essential-oils"
           }
         },
-        "button_i7xi3M": {
-          "type": "button",
+        "featured_collection_DWYgnF": {
+          "type": "featured_collection",
           "settings": {
-            "button_label": "Close The Loop program details",
-            "button_link": "shopify://pages/close-the-loop-program™",
-            "button_style_secondary": false
+            "collection": "hair-care-products"
+          }
+        },
+        "featured_collection_JNA3DX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hand-soap"
+          }
+        },
+        "featured_collection_d4eqhh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dish-soap"
+          }
+        },
+        "featured_collection_i8UCBF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry-detergent"
           }
         }
       },
       "block_order": [
-        "heading_VntrG9",
-        "text_nWkHgc",
-        "button_i7xi3M"
+        "featured_collection_Ge9qYg",
+        "featured_collection_J6bcK9",
+        "featured_collection_DWYgnF",
+        "featured_collection_JNA3DX",
+        "featured_collection_d4eqhh",
+        "featured_collection_i8UCBF"
       ],
+      "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "image": "shopify://shop_images/ClosedLoopPromo_2024_2-ezgif.com-optimize.gif",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-2",
+        "title": "Collections",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -389,11 +364,12 @@
   },
   "order": [
     "main",
+    "rich_text_FHp7MF",
+    "quick-order-list",
     "related-products",
-    "169809719168faf0f4",
-    "1649954547ee9ee859",
-    "image-with-text",
-    "1695060069b8468616",
-    "image_with_text_QfXTnN"
+    "1762450183b75e33a7",
+    "175623938176d21caa",
+    "1754511058878b6d45",
+    "collection_list_hXEcJK"
   ]
 }

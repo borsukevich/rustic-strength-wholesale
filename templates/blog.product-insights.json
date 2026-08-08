@@ -1,0 +1,246 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "small",
+        "show_date": false,
+        "show_author": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_mRKKFj": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_ATFnar": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sustainability.jpg",
+            "title": "Our Sustainability",
+            "text": "",
+            "link_label": "Get Circular",
+            "link": "shopify://blogs/our-packaging"
+          }
+        },
+        "column_zwwqLw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_Flat_2-D_editorial_illustration_New-Yorker_styl_961f6b7d-8411-49cf-bcae-a53ace2ff789.png",
+            "title": "Tips + Guides",
+            "text": "",
+            "link_label": "Clean Smart",
+            "link": "shopify://blogs/tips-tricks"
+          }
+        },
+        "column_KPRHDX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/wanderingperson_dbe4c6e9-fb9c-4c6f-b4cc-75befe171e09.png",
+            "title": "The Toxic Truth",
+            "text": "",
+            "link_label": "Deep Dive",
+            "link": "shopify://blogs/news"
+          }
+        },
+        "column_mNVVig": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Our_Story_Cover.jpg",
+            "title": "Our Story",
+            "text": "",
+            "link_label": "Sickness to Strength",
+            "link": "shopify://blogs/company"
+          }
+        },
+        "column_PVKDdm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_modern_2-D_editorial_illustration--sleek_lab__3_7e6af2cf-c2c7-456d-a2d9-fdfa1c76a3f6.png",
+            "title": "Ingredients We Use",
+            "text": "",
+            "link_label": "Learn why",
+            "link": "shopify://blogs/ingredients-we-stand-by"
+          }
+        },
+        "column_j3gnTn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/avoid.jpg",
+            "title": "Ingredients We Avoid",
+            "text": "",
+            "link_label": "Avoid Toxins",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products"
+          }
+        },
+        "column_EyTEMb": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_Editorial_illustration_of_person_replacing_ch_2_08ad338b-c25a-42d3-93dd-2c0c80739cec.png",
+            "title": "Product Insights",
+            "text": "",
+            "link_label": "Expert Advice",
+            "link": "shopify://blogs/soap"
+          }
+        }
+      },
+      "block_order": [
+        "column_ATFnar",
+        "column_zwwqLw",
+        "column_KPRHDX",
+        "column_mNVVig",
+        "column_PVKDdm",
+        "column_j3gnTn",
+        "column_EyTEMb"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Blog Menu",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "circle",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_3qynzC": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_hYKa6y": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design.png",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_Y4X4er": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Untitled_580d6abd-1ae3-4e38-9bc8-b083c07a3b45.png",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_eqkpbc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_8MMWjn": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled_129e331e-5fd0-42c2-8e5d-dcc50570e10b.png",
+            "title": "",
+            "text": "",
+            "link_label": "Private Label Information",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_M4g3bU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_q9bKzF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_MQHx4X": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blog Center",
+            "link": "shopify://pages/blog-landing-page"
+          }
+        },
+        "column_FkQz7x": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        }
+      },
+      "block_order": [
+        "column_hYKa6y",
+        "column_Y4X4er",
+        "column_eqkpbc",
+        "column_8MMWjn",
+        "column_M4g3bU",
+        "column_q9bKzF",
+        "column_MQHx4X",
+        "column_FkQz7x"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_mRKKFj",
+    "multicolumn_3qynzC"
+  ]
+}

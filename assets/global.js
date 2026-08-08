@@ -1,8 +1,4 @@
 function getFocusableElements(container) {
-  if (!container) {
-    return [];
-  }
-
   return Array.from(
     container.querySelectorAll(
       "summary, a[href], button:enabled, [tabindex]:not([tabindex^='-']), [draggable], area, input:not([type=hidden]):enabled, select:enabled, textarea:enabled, object, iframe"
@@ -1302,7 +1298,7 @@ class CartPerformance {
     const endMarker = performance.mark(`${metricName}:end`);
 
     performance.measure(
-      benchmarkName,
+      metricName,
       `${metricName}:start`,
       `${metricName}:end`
     );
@@ -1313,7 +1309,7 @@ class CartPerformance {
     const endMarker = performance.mark(`${metricName}:end`);
 
     performance.measure(
-      benchmarkName,
+      metricName,
       startMarker.name,
       `${metricName}:end`
     );
@@ -1328,7 +1324,7 @@ class CartPerformance {
     const endMarker = performance.mark(`${metricName}:end`);
 
     performance.measure(
-      benchmarkName,
+      metricName,
       `${metricName}:start`,
       `${metricName}:end`
     );

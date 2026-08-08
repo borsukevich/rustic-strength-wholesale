@@ -1,0 +1,283 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_xyFrMA": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Eb9HXg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rustic Strength Wholesale Partnerships",
+            "heading_size": "h1"
+          }
+        },
+        "text_nmcBLt": {
+          "type": "text",
+          "settings": {
+            "text": "Apply for Wholesale pricing on high-purity products <em>for your business.</em>",
+            "text_style": "body"
+          }
+        },
+        "buttons_CtnJ8H": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Wholesale Application",
+            "button_link_1": "shopify://pages/b2b-wholesale-application",
+            "button_style_secondary_1": false,
+            "button_label_2": "Shopping for Yourself?",
+            "button_link_2": "https://rusticstrength.com/",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_Eb9HXg",
+        "text_nmcBLt",
+        "buttons_CtnJ8H"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/760_refill_RS_3bc04811-8fd4-4774-a35d-f8873e661e0e.jpg",
+        "image_overlay_opacity": 30,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false,
+        "content_max_width": 800
+      }
+    },
+    "image_with_text_Pyw44G": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VGxiYJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Looking for Bulk without a Business?",
+            "heading_size": "h2"
+          }
+        },
+        "text_btbHHU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shop our companion site, Refill Wholesale.</p><p>Bulk sizes perfect for getting started without a business license, providing for your Homestead or Large Family</p>",
+            "text_style": "body"
+          }
+        },
+        "button_PgjyNe": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Bulk for Home",
+            "button_link": "https://refillwholesale.com/",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_VGxiYJ",
+        "text_btbHHU",
+        "button_PgjyNe"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/happy_affiliate_wide_7a1b0f23-ec96-4c14-90fc-19debca10fca.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_MyPdj6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JhwTy8": {
+          "type": "heading",
+          "settings": {
+            "heading": "We are also on Faire",
+            "heading_size": "h2"
+          }
+        },
+        "text_EPtXnH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>While Faire has many of our products available, for our complete catalog, including custom scents, bulk sizes (30, 55 + 275 gallon sizes), and the best value wholesale pricing, please apply with RusticStrengthWholesale.</p>"
+          }
+        },
+        "button_yydef7": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JhwTy8",
+        "text_EPtXnH",
+        "button_yydef7"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-13df7ca3-181d-4c91-91be-660492569192",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "custom_liquid_Q4PXzG": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<iframe src=\"https://www.faire.com/embed/bw_49ps9yd9u3\" width=\"900\" height=\"600\" scrolling=\"no\" style=\"margin:0 auto;border:none;display:block;max-width:100%;width:900px;height:600px;\"></iframe>",
+        "color_scheme": "scheme-13df7ca3-181d-4c91-91be-660492569192",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_8ycKHq": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BGqQjq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Are you passionate about your Toxin-Free Lifestyle?",
+            "heading_size": "h2"
+          }
+        },
+        "text_YpKjd7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you already <em>Love</em> Rustic Strength, have 1,000+ followers and are committed to sharing at least once a month, our Affiliate Program may be what you are looking for! Apply for commission-based collaboration:</p>",
+            "text_style": "body"
+          }
+        },
+        "button_zH99ty": {
+          "type": "button",
+          "settings": {
+            "button_label": "Apply to Affiliate with us",
+            "button_link": "https://rusticstrength.aspireiq.com/join/rustic-strength-affiliate?clientId=IsqGxUMyf6ZChTsgLbkWnO5PRHOP2IvG",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_BGqQjq",
+        "text_YpKjd7",
+        "button_zH99ty"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/socialmedia-chaos_9f5ce312-09b8-45d5-a5fc-9cf73002e39f.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_BXD8Rp": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_EHTHk7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join the Refill Revolution",
+            "heading_size": "h1"
+          }
+        },
+        "text_Y6LxC4": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_Qa6Tpi": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Wholesale Application",
+            "button_link_1": "shopify://pages/b2b-wholesale-application",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_EHTHk7",
+        "text_Y6LxC4",
+        "buttons_Qa6Tpi"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/refill_map.png",
+        "image_overlay_opacity": 40,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false,
+        "content_max_width": 800
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_xyFrMA",
+    "image_with_text_Pyw44G",
+    "rich_text_MyPdj6",
+    "custom_liquid_Q4PXzG",
+    "image_with_text_8ycKHq",
+    "image_banner_BXD8Rp"
+  ]
+}

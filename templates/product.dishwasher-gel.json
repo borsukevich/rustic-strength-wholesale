@@ -1,0 +1,380 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "price_panda_price_per_unit_product_block_6Fb3GT": {
+          "type": "shopify://apps/price-panda-price-per-unit/blocks/productBlock/8fe89266-7c30-4ab1-946d-3dcc05d9c8b2",
+          "settings": {}
+        },
+        "variant_picker_baqgrH": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_fFPAYP": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "rebuy_personalization_engine_rebuy_widget_TCc7fH": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "149854",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
+        "buy_buttons_BkQNGe": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "judge_me_reviews_review_snippet_widget_eQEKBT": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "reviews_selection": "auto",
+            "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
+            "min_star_rating": "inherit",
+            "show_review_media": true,
+            "max_reviews": 5,
+            "review_length": "medium",
+            "text_size": "medium",
+            "max_width": 1100,
+            "max_image_size": "small",
+            "arrows_visibility": "always_shown",
+            "transition_speed": 5,
+            "corner_styling": "inherit",
+            "text_color": "",
+            "card_color": "",
+            "stars_color": "",
+            "arrows_color": "",
+            "arrows_background_color": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Directions",
+            "icon": "washing",
+            "content": "<p>For use in Automatic Dishwashers:</p><p>Gently squeeze bottle to dispense. </p><p>Fill detergent receptacle of your dishwasher up to the fill line. <em>Amount will vary by dishwasher model, each manufacturer creates a receptacle that’s perfectly sized for the most efficient clean.</em> </p><p>If desired, fill pre-wash compartment.<br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "plant",
+            "content": "<p>High-purity water, tetrasodium glutamate diacetate, octyl dimethyl amine oxide, citric acid, sodium metasilicate, sunburst citrus<br/>essential oil [citrus limon (lemon)oil, citrus sinensis (orange) oil, citrus paradisi (grapefruit) oil, citrus aurantifolia (lime) oil, limonene], caprylyl glycol, phenoxyethanol, xanthan gum</p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Scent",
+            "icon": "leaf",
+            "content": "<p><a href=\"/products/lemon-orange-grapefruit-lime-essential-oil\" title=\"Lemon, Orange, Grapefruit & Lime Essential Oil Blend\"><strong>Sunburst Citrus</strong></a> - </p><p>Citrus Limon (Lemon) Oil, Citrus Sinensis (Sweet Orange) Oil Citrus Paradisi (Grapefruit) Oil, Citrus Aurantifolia (Lime) Oil, Limonene<br/></p><p><em>Dishwasher Gel is scented with  –</em></p><p><strong>Pure essential oils</strong> that are hand selected by us from small farms all around the world.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_RRTJ6K": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredient Descriptions",
+            "icon": "eye",
+            "content": "<p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><strong>Tetrasodium Glutamate Diacetate</strong> (plant-based cleaner)</p><p><strong>Octyl Dimethyl Amine Oxide </strong>(plant-based cleaner)</p><p><a href=\"/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" title=\"Everything You Need to Know About Citric Acid\"><strong>Citric Acid</strong></a> (earth mineral)</p><p><a href=\"/blogs/ingredients/what-is-sodium-metasilicate\" title=\"What is Sodium Metasilicate and what does it do in products?\"><strong>Sodium Metasilicate</strong></a> (earth mineral)</p><p><a href=\"/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a><strong> </strong>(safe preservative)</p><p><strong>Caprylyl Glycol</strong> (safe preservative)</p><p><a href=\"/products/lemon-orange-grapefruit-lime-essential-oil\" title=\"Lemon, Orange, Grapefruit & Lime Essential Oil Blend\"><strong>Sunburst Citrus</strong></a> Essential Oil Blend (scent)</p><p><strong>Xanthan Gum</strong> (formula stabilizer)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_hFHktL": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Does this product come with a pump?",
+            "icon": "question_mark",
+            "content": "<p>We do not automatically provide a pump or spout with our products because our goal is to reduce waste.</p><p>If you would like a pump or spout, we offer options as an add-on in our accessory section. </p><ul><li><a href=\"/products/1-gallon-glass-or-plastic-container-pump\" target=\"_blank\" title=\"Pump | fits 1 Gallon Glass or Plastic Jug\">Gallon (Glass or Plastic) Jug Pump</a></li><li><a href=\"/pages/how-to-assemble-the-wide-mouth-jar-pump\" target=\"_blank\" title=\"Wide-Mouth Jar Pump Help\">1 Gallon Wide Mouth Jar Pump</a></li><li><a href=\"/pages/eco-jug-help\" target=\"_blank\" title=\"Eco-Jug Help\">Eco Jug Accessories</a></li><li><a href=\"/products/bucket-dispenser-pump-5-gallon\" target=\"_blank\" title=\"Bucket Pump | fits 5 Gallon Bucket\">Bucket Pump</a></li><li><a href=\"/collections/drum-pumps\" target=\"_blank\" title=\"drum pumps\">Drum Pumps</a></li></ul><p><strong>Retail Ready Case (2 oz, 4 oz & 16 oz) : </strong>Retail Ready products come as shown in the case image. Pump, Sprayer or Flip-Top Cap is included if shown.</p><p>No pump is available for the <strong>24 oz Glass Jug</strong>. </p>",
+            "page": ""
+          }
+        },
+        "gorgias_live_chat_helpdesk_spq_LAHx4e": {
+          "type": "shopify://apps/gorgias-live-chat-helpdesk/blocks/spq/a66db725-7b96-4e3f-916e-6c8e6f87aaaa",
+          "settings": {
+            "text_style": "none",
+            "icon_color": "#1e242e",
+            "font_color": "#1e242e",
+            "show_icons": true,
+            "font_size": 16,
+            "font_weight": "500",
+            "border_radius": 8,
+            "font_family": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "price_panda_price_per_unit_product_block_6Fb3GT",
+        "variant_picker_baqgrH",
+        "quantity_selector_fFPAYP",
+        "rebuy_personalization_engine_rebuy_widget_TCc7fH",
+        "buy_buttons_BkQNGe",
+        "judge_me_reviews_review_snippet_widget_eQEKBT",
+        "description",
+        "collapsible-row-1",
+        "collapsible-row-0",
+        "collapsible-row-2",
+        "collapsible_tab_RRTJ6K",
+        "collapsible_tab_hFHktL",
+        "gorgias_live_chat_helpdesk_spq_LAHx4e"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "hide",
+        "media_position": "right",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_FHp7MF": {
+      "type": "rich-text",
+      "blocks": {
+        "button_adFAmL": {
+          "type": "button",
+          "name": "Product SDS",
+          "settings": {
+            "button_label": "📋Bubble Bath SDS",
+            "button_link": "https://cdn.shopify.com/s/files/1/0344/1809/8221/files/Bubble_Bath_SDS.pdf?v=1758138349",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_adFAmL"
+      ],
+      "disabled": true,
+      "name": "MSDS Button",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "1758138687f48ea8c5": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "quick-order-list": {
+      "type": "quick-order-list",
+      "settings": {
+        "variants_per_page": 50,
+        "show_image": true,
+        "show_sku": true,
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 16
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "Industry favorites",
+        "heading_size": "h2",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 44
+      }
+    },
+    "1762450183b75e33a7": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_crUR8M": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "109995",
+            "product_id_enabled": true,
+            "collection_id_enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_crUR8M"
+      ],
+      "disabled": true,
+      "name": "Rebuy 109995",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "175623938176d21caa": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_BDFTHC": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "154086",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_BDFTHC"
+      ],
+      "disabled": true,
+      "name": "Rebuy 154086",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1754511058878b6d45": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_MJ9Nre": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 850,
+            "show_shop_reviews": false,
+            "empty_state": "hide_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_MJ9Nre"
+      ],
+      "name": "Judge.Me Testimonial",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "collection_list_hXEcJK": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_Ge9qYg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "body-care"
+          }
+        },
+        "featured_collection_J6bcK9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "essential-oils"
+          }
+        },
+        "featured_collection_DWYgnF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hair-care-products"
+          }
+        },
+        "featured_collection_JNA3DX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hand-soap"
+          }
+        },
+        "featured_collection_d4eqhh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dish-soap"
+          }
+        },
+        "featured_collection_i8UCBF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry-detergent"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Ge9qYg",
+        "featured_collection_J6bcK9",
+        "featured_collection_DWYgnF",
+        "featured_collection_JNA3DX",
+        "featured_collection_d4eqhh",
+        "featured_collection_i8UCBF"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_FHp7MF",
+    "1758138687f48ea8c5",
+    "quick-order-list",
+    "related-products",
+    "1762450183b75e33a7",
+    "175623938176d21caa",
+    "1754511058878b6d45",
+    "collection_list_hXEcJK"
+  ]
+}

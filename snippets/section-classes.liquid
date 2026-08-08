@@ -1,0 +1,47 @@
+{%- liquid
+  assign show_on_desktop = show_on_desktop | default: section.settings.section_show_on_desktop
+  assign show_on_mobile = show_on_mobile | default: section.settings.section_show_on_mobile
+  assign show_divider = show_divider | default: section.settings.section_show_divider
+
+  assign section_make_rounded = section_make_rounded | default: section.settings.section_make_rounded
+  assign color_scheme = color_scheme | default: section.settings.color_scheme
+
+  assign visibility_class = ''
+
+  if show_on_desktop == null and show_on_mobile == null
+  else
+    assign visibility_class = 'hidden'
+
+    if show_on_mobile
+      assign visibility_class = 'flex flex-column'
+
+      unless show_on_desktop
+        assign visibility_class = visibility_class | append: ' hidden-md'
+      endunless
+    elsif show_on_desktop
+      assign visibility_class = 'hidden flex-md flex-md-column'
+    endif
+  endif
+
+  assign classes = 'section ' | append: visibility_class
+
+  if no_spacing
+    assign classes = classes | append: ' section--no-spacing'
+  endif
+
+  if section_make_rounded
+    assign classes = classes | append: ' section--rounded'
+  endif
+
+  if no_spacing != true
+    if section.location != 'footer'
+      assign classes = classes | append: ' !next-rounded-pb-custom'
+    endif
+  endif
+
+  if color_scheme != blank and prevent_color_scheme != true
+    assign classes = classes | append: ' bg-gradient color-' | append: color_scheme
+  endif
+-%}
+
+{{- classes | strip -}}

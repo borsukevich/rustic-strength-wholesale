@@ -17,13 +17,70 @@
         "padding_bottom": 28
       }
     },
-    "featured_collection_hfLqEL": {
+    "multicolumn_FhHdUy": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_pAhy6M": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Eco_Jug_Spout_d056a4f8-9ebb-4f0e-b480-2ae39c0ad0a3.png",
+            "title": "How-To Install an Eco-Jug Spout",
+            "text": "",
+            "link_label": "Watch the Video",
+            "link": "https://www.youtube.com/shorts/y2e66Gqdvrw"
+          }
+        },
+        "column_ychFwk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/LOP_E_5_Gallon_Hyp_w_pump.jpg",
+            "title": "How-To Install an Eco-Jug Economy Pump",
+            "text": "",
+            "link_label": "Watch the Video",
+            "link": "https://www.youtube.com/shorts/y2e66Gqdvrw"
+          }
+        },
+        "column_7mbVQX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Premium_Pump_still.jpg",
+            "title": "How-To Install an Eco-Jug Premium Pump",
+            "text": "",
+            "link_label": "Watch the Video",
+            "link": "https://www.youtube.com/shorts/O_mDwvyf7M8"
+          }
+        }
+      },
+      "block_order": [
+        "column_pAhy6M",
+        "column_ychFwk",
+        "column_7mbVQX"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "How-To Videos",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "circle",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-3",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_Un43y8": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "eco-jug-collection",
-        "products_to_show": 4,
-        "title": "Eco-Jug Accessories",
+        "products_to_show": 10,
+        "title": "eco-jug collection",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -46,174 +103,188 @@
         "padding_bottom": 36
       }
     },
-    "18cfd24b-7c40-4c9e-92f3-cd67457c438a": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<center>\n<div class=\"elfsight-sapp-2e3d9916-1c81-4e01-96d5-026f5d446cf1\"></div>\n<p>Above is based on total gallons sold to refill shops as of 9/1/2023, converted to units of 16oz single-use containers.</p> <div class=\"elfsight-sapp-87907066-fea9-460d-b1a6-13c38cf1af95\"></div>\n<center>",
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "rich_text_NFh7gG": {
-      "type": "rich-text",
+    "collection_list_dpJAaE": {
+      "type": "collection-list",
       "blocks": {
-        "heading_erPdGy": {
-          "type": "heading",
+        "featured_collection_AzHkzG": {
+          "type": "featured_collection",
           "settings": {
-            "heading": "How-To Videos",
-            "heading_size": "h1"
+            "collection": "laundry-detergent"
           }
         },
-        "text_E6YGbD": {
-          "type": "text",
-          "disabled": true,
+        "featured_collection_ctdhJT": {
+          "type": "featured_collection",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "collection": "hand-soap"
           }
         },
-        "button_4JYyiy": {
-          "type": "button",
-          "disabled": true,
+        "featured_collection_wirQM7": {
+          "type": "featured_collection",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "collection": "dish-soap"
+          }
+        },
+        "featured_collection_V83h3F": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "household-goods"
+          }
+        },
+        "featured_collection_QLbzKm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-scent"
+          }
+        },
+        "featured_collection_DE9bUj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "body-care"
           }
         }
       },
       "block_order": [
-        "heading_erPdGy",
-        "text_E6YGbD",
-        "button_4JYyiy"
+        "featured_collection_AzHkzG",
+        "featured_collection_ctdhJT",
+        "featured_collection_wirQM7",
+        "featured_collection_V83h3F",
+        "featured_collection_QLbzKm",
+        "featured_collection_DE9bUj"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "title": "Shop Top Categories",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "blocks_jVHYJB": {
-      "type": "_blocks",
+    "multicolumn_pDwpqY": {
+      "type": "multicolumn",
       "blocks": {
-        "ai_gen_block_e75c432_7q3kg6": {
-          "type": "ai_gen_block_e75c432",
-          "name": "Multicolumn with video",
+        "column_RCLdhQ": {
+          "type": "column",
           "settings": {
-            "heading": "",
-            "heading_alignment": "center",
-            "heading_size": 32,
-            "heading_spacing": 32,
-            "container_width": 1200,
-            "padding_top": 40,
-            "padding_bottom": 40,
-            "columns_desktop": 3,
-            "columns_tablet": 2,
-            "columns_mobile": "1",
-            "column_gap": 24,
-            "spacing_grid_horizontal": 16,
-            "text_alignment": "left",
-            "aspect_ratio": "1-1",
-            "media_radius": 0,
-            "media_spacing": 16,
-            "video_autoplay": true,
-            "video_loop": true,
-            "video_muted": true,
-            "video_controls": false,
-            "title_size": 20,
-            "title_spacing": 12,
-            "text_size": 14,
-            "text_spacing": 16,
-            "button_color": "#262626",
-            "button_hover_color": "#868282",
-            "button_text_color": "#ffffff",
-            "button_radius": 8,
-            "button_padding_vertical": 12,
-            "button_padding_horizontal": 24,
-            "column_1_image": "shopify://shop_images/LOP_E_5_Gallon_Hyp_w_pump.jpg",
-            "column_1_title": "",
-            "column_1_text": "",
-            "column_1_link": "https://youtu.be/wWYW6Nv6FKE",
-            "column_1_link_label": "How-To Install an Eco-Jug Economy Pump",
-            "column_2_image": "shopify://shop_images/Eco_Jug_Spout_d056a4f8-9ebb-4f0e-b480-2ae39c0ad0a3.png",
-            "column_2_title": "",
-            "column_2_text": "",
-            "column_2_link": "https://youtu.be/zzfxQQq3Dhg",
-            "column_2_link_label": "How-To Install an Eco-Jug Spout",
-            "column_3_image": "shopify://shop_images/Premium_Pump_still.jpg",
-            "column_3_title": "",
-            "column_3_text": "",
-            "column_3_link": "https://www.youtube.com/shorts/6FGS8ZfijLQ",
-            "column_3_link_label": "How-To Install an Eco-Jug Premium Pump",
-            "column_4_title": "",
-            "column_4_text": "",
-            "column_4_link": "",
-            "column_4_link_label": "",
-            "column_5_title": "",
-            "column_5_text": "",
-            "column_5_link": "",
-            "column_5_link_label": "",
-            "column_6_title": "",
-            "column_6_text": "",
-            "column_6_link": "",
-            "column_6_link_label": ""
-          },
-          "blocks": {}
+            "image": "shopify://shop_images/Untitled_design.png",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
         },
-        "ai_gen_block_0e53617_QXhXMg": {
-          "type": "ai_gen_block_0e53617",
+        "column_WhdeDw": {
+          "type": "column",
           "disabled": true,
           "settings": {
-            "enable_autoplay": true,
-            "enable_loop": true,
-            "enable_mute": true,
-            "active_video_width": 600,
-            "active_video_height": 400,
-            "inactive_video_width": 400,
-            "inactive_video_height": 300,
-            "inactive_opacity": 0.6,
-            "video_spacing": 20,
-            "track_padding": 40,
-            "section_padding_top": 50,
-            "section_padding_bottom": 50,
-            "background_color": "#ffffff",
-            "video_border_radius": 12,
-            "show_controls": true,
-            "controls_margin_top": 30,
-            "control_spacing": 20,
-            "button_size": 50,
-            "button_color": "#000000",
-            "button_hover_color": "#333333",
-            "button_icon_color": "#ffffff",
-            "dot_size": 10,
-            "dot_spacing": 8,
-            "dot_color": "#cccccc",
-            "dot_active_color": "#000000"
-          },
-          "blocks": {}
+            "image": "shopify://shop_images/Copy_of_Untitled_580d6abd-1ae3-4e38-9bc8-b083c07a3b45.png",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_XFRxKQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_wehmLr": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled_129e331e-5fd0-42c2-8e5d-dcc50570e10b.png",
+            "title": "",
+            "text": "",
+            "link_label": "Private Label Information",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_zahWXF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_9xCiVB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_Lw4zfN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blog Center",
+            "link": "shopify://pages/blog-landing-page"
+          }
+        },
+        "column_XiEUPq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
         }
       },
       "block_order": [
-        "ai_gen_block_e75c432_7q3kg6",
-        "ai_gen_block_0e53617_QXhXMg"
+        "column_RCLdhQ",
+        "column_WhdeDw",
+        "column_XFRxKQ",
+        "column_wehmLr",
+        "column_zahWXF",
+        "column_9xCiVB",
+        "column_Lw4zfN",
+        "column_XiEUPq"
       ],
-      "name": "Video carousel",
-      "settings": {}
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "featured_collection_hfLqEL",
-    "18cfd24b-7c40-4c9e-92f3-cd67457c438a",
-    "rich_text_NFh7gG",
-    "blocks_jVHYJB"
+    "multicolumn_FhHdUy",
+    "featured_collection_Un43y8",
+    "collection_list_dpJAaE",
+    "multicolumn_pDwpqY"
   ]
 }

@@ -1,0 +1,402 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "price_panda_price_per_unit_product_block_6Fb3GT": {
+          "type": "shopify://apps/price-panda-price-per-unit/blocks/productBlock/8fe89266-7c30-4ab1-946d-3dcc05d9c8b2",
+          "settings": {}
+        },
+        "variant_picker_baqgrH": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_fFPAYP": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "rebuy_personalization_engine_rebuy_widget_TCc7fH": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "149854",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
+        "buy_buttons_BkQNGe": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "judge_me_reviews_review_snippet_widget_U7rX4F": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "reviews_selection": "auto",
+            "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
+            "min_star_rating": "inherit",
+            "show_review_media": true,
+            "max_reviews": 5,
+            "review_length": "medium",
+            "text_size": "medium",
+            "max_width": 1100,
+            "max_image_size": "small",
+            "arrows_visibility": "always_shown",
+            "transition_speed": 5,
+            "corner_styling": "inherit",
+            "text_color": "",
+            "card_color": "",
+            "stars_color": "",
+            "arrows_color": "",
+            "arrows_background_color": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care & Longevity",
+            "icon": "washing",
+            "content": "<p>Wool products are <strong>reusable for hundreds of uses</strong>.</p><p>Store in a dry place between uses.</p><p>Replace when fibers begin to naturally break down.</p><p>When you’re ready to retire your wool products, you can do so in your own backyard. They will break down naturally without assistance.</p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "plant",
+            "content": "",
+            "page": "materials-and-care"
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Adding Scent to Laundry",
+            "icon": "leaf",
+            "content": "<p>Add a few drops of essential oil to your wool product for a faint lingering smell on your fresh laundry. The amount of drops depends on your desired scent strength.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_pkgRt7": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Why use the wrapping?",
+            "icon": "plant",
+            "content": "<p>Our Bamboo Paper products are all individually wrapped using a paper made from 80% wood pulp and 20% recycled pulp. The ink is an eco-friendly, water-based ink.</p><p>We used to sell the paper products unwrapped, but received too many complaints and concerns about it being unsanitary. The wrapping also helps to protect the rolls from damage during shipping and handling.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_y6mq86": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Where are your Bamboo Products sourced?",
+            "icon": "plant",
+            "content": "<p>ALL bamboo products come from China or Vietnam because they are the largest producers of bamboo. The type of bamboo used does not contribute to deforestation and does not threaten pandas’ food source.</p><p>The USA does not currently grow the amount needed to produce pulp for paper products. There are only 3 species grown in the USA and there are over 1400 species in the world and China has the best-growing conditions for bamboo. </p><p>The USA has destroyed most of its natural resources for bamboo by expanding cities, making towns, growing food crops, and building roads. If and when the USA produces enough bamboo to make the pulp, we will source from here.</p><p>We currently source our alpaca and wool dryer balls from small business owners in the USA vs China like other companies. We source 99% of our materials from the USA and we manufacture everything in the USA.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_YmiPDL": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Is there an adhesive?",
+            "icon": "plant",
+            "content": "<p>There is a minimal amount of glue used to adhere the paper to the roll. It is a food-grade, plant adhesive made from Corn Starch. Should it contact skin, it is safe for even the most sensitive areas.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_3BwA8k": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Why Wool?",
+            "icon": "question_mark",
+            "content": "<p>Unlike conventional dryer sheets and synthetic scrubbers that can leave behind residues, wool works naturally—no fillers, no fragrances hiding phthalates, no coatings that build up on your fabrics or surfaces.</p><p>This is a <strong>small swap that helps reduce your daily toxin exposure</strong>—and over time, that matters.</p>",
+            "page": ""
+          }
+        },
+        "gorgias_live_chat_helpdesk_spq_LAHx4e": {
+          "type": "shopify://apps/gorgias-live-chat-helpdesk/blocks/spq/a66db725-7b96-4e3f-916e-6c8e6f87aaaa",
+          "settings": {
+            "text_style": "none",
+            "icon_color": "#1e242e",
+            "font_color": "#1e242e",
+            "show_icons": true,
+            "font_size": 16,
+            "font_weight": "500",
+            "border_radius": 8,
+            "font_family": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "price_panda_price_per_unit_product_block_6Fb3GT",
+        "variant_picker_baqgrH",
+        "quantity_selector_fFPAYP",
+        "rebuy_personalization_engine_rebuy_widget_TCc7fH",
+        "buy_buttons_BkQNGe",
+        "judge_me_reviews_review_snippet_widget_U7rX4F",
+        "description",
+        "collapsible-row-1",
+        "collapsible-row-0",
+        "collapsible-row-2",
+        "collapsible_tab_pkgRt7",
+        "collapsible_tab_y6mq86",
+        "collapsible_tab_YmiPDL",
+        "collapsible_tab_3BwA8k",
+        "gorgias_live_chat_helpdesk_spq_LAHx4e"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "hide",
+        "media_position": "right",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_FHp7MF": {
+      "type": "rich-text",
+      "blocks": {
+        "button_adFAmL": {
+          "type": "button",
+          "name": "Product SDS",
+          "settings": {
+            "button_label": "📋Bubble Bath SDS",
+            "button_link": "https://cdn.shopify.com/s/files/1/0344/1809/8221/files/Bubble_Bath_SDS.pdf?v=1758138349",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_adFAmL"
+      ],
+      "disabled": true,
+      "name": "MSDS Button",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "1758138687f48ea8c5": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "quick-order-list": {
+      "type": "quick-order-list",
+      "settings": {
+        "variants_per_page": 50,
+        "show_image": true,
+        "show_sku": true,
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 16
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "Industry favorites",
+        "heading_size": "h2",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 44
+      }
+    },
+    "1762450183b75e33a7": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_crUR8M": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "109995",
+            "product_id_enabled": true,
+            "collection_id_enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_crUR8M"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "175623938176d21caa": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_BDFTHC": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "154086",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_BDFTHC"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1754511058878b6d45": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_DahGih": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 850,
+            "show_shop_reviews": false,
+            "empty_state": "hide_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_DahGih"
+      ],
+      "name": "Judge.me",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "collection_list_hXEcJK": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_Ge9qYg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "body-care"
+          }
+        },
+        "featured_collection_J6bcK9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "essential-oils"
+          }
+        },
+        "featured_collection_DWYgnF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hair-care-products"
+          }
+        },
+        "featured_collection_JNA3DX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hand-soap"
+          }
+        },
+        "featured_collection_d4eqhh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dish-soap"
+          }
+        },
+        "featured_collection_i8UCBF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry-detergent"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Ge9qYg",
+        "featured_collection_J6bcK9",
+        "featured_collection_DWYgnF",
+        "featured_collection_JNA3DX",
+        "featured_collection_d4eqhh",
+        "featured_collection_i8UCBF"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_FHp7MF",
+    "1758138687f48ea8c5",
+    "quick-order-list",
+    "related-products",
+    "1762450183b75e33a7",
+    "175623938176d21caa",
+    "1754511058878b6d45",
+    "collection_list_hXEcJK"
+  ]
+}

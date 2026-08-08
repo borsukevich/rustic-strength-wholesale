@@ -1,0 +1,558 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_rNipMD": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_A94eJi": {
+          "type": "heading",
+          "settings": {
+            "heading": "We don't ask you to trust us. We prove it.",
+            "heading_size": "h1"
+          }
+        },
+        "text_dpwPKx": {
+          "type": "text",
+          "settings": {
+            "text": "Anyone can print \"non-toxic\" on a label. We send our products to independent, accredited labs and publish exactly what comes back, in full.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_A94eJi",
+        "text_dpwPKx"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/DevintheScienceGuy_copy_1.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true,
+        "content_max_width": 700
+      }
+    },
+    "multicolumn_kK3iNf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_D7AxpK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/accredited-labs.svg",
+            "title": "Independent, accredited labs",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_QPmQUT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/iso-17025.svg",
+            "title": "ISO/IEC 17025 standard",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XqyWbz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/report-in-full.svg",
+            "title": "Every report, in full",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_D7AxpK",
+        "column_QPmQUT",
+        "column_XqyWbz"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "quarter",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-9890a002-3c64-4f5f-9c52-9627db2d29b5",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_xRHqan": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UUfQUQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "How our testing works",
+            "heading_size": "h1"
+          }
+        },
+        "text_XDi7PU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Transparency should be something you can verify, not just something we say. So we send our finished products to independent labs, the kind accredited to recognized international testing standards, and we publish what they find. They are not us, and they have no stake in the result.</p><p>When a report says \"none detected,\" it means the substance was below the level the lab's instruments can measure. That is not the same as a flat zero, and we would rather tell you what the science actually says than round it into a slogan. You will see the threshold on every result, so you know how sensitive the test was.</p><p>We test finished product, we publish the reports, and we retest as we go. This program is expanding across every product line, and each report names the lab that ran it, so this page will keep growing.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UUfQUQ",
+        "text_XDi7PU"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "full_width_content": true,
+        "hide_side_padding_mobile": true,
+        "padding_top": 60,
+        "padding_bottom": 24
+      }
+    },
+    "multicolumn_ydciFd": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_qCx3dz": {
+          "type": "column",
+          "settings": {
+            "title": "Independent and accredited",
+            "text": "<p>Tested by outside labs, not in-house.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_VGyWDr": {
+          "type": "column",
+          "settings": {
+            "title": "Finished product",
+            "text": "<p>We test what ships, not just an ingredient list.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_WqYUNW": {
+          "type": "column",
+          "settings": {
+            "title": "Published in full",
+            "text": "<p>Every report is here to download, with the lab named.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_qCx3dz",
+        "column_VGyWDr",
+        "column_WqYUNW"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 12,
+        "padding_bottom": 60
+      }
+    },
+    "custom_lab_results_mhMkwk": {
+      "type": "custom-lab-results",
+      "blocks": {
+        "product_line_GEcBq3": {
+          "type": "product_line",
+          "settings": {
+            "product_line_name": "Liquid Laundry Detergent",
+            "scope_note": "We tested our unscented base formula, the same base every liquid laundry scent is built on. So these results cover the entire liquid laundry line.",
+            "card_list": [
+              "laundry-heavy-metals",
+              "laundry-glyphosate",
+              "laundry-pesticides"
+            ],
+            "shop_link": "shopify://collections/laundry-detergent-copy",
+            "shop_link_label": "Shop Laundry Products"
+          }
+        },
+        "product_line_MrXiqW": {
+          "type": "product_line",
+          "settings": {
+            "product_line_name": "Panda Eco Paper",
+            "scope_note": "Our bamboo paper line, screened for the contaminants that matter most in paper.",
+            "card_list": [
+              "paper-heavy-metals",
+              "paper-formaldehyde",
+              "paper-pcp",
+              "paper-pfas"
+            ],
+            "shop_link": "shopify://collections/panda-eco-paper",
+            "shop_link_label": "Shop Bamboo Paper Products"
+          }
+        }
+      },
+      "block_order": [
+        "product_line_GEcBq3",
+        "product_line_MrXiqW"
+      ],
+      "name": "Lab results grid",
+      "settings": {
+        "color_scheme": "",
+        "card_color_scheme": "scheme-2",
+        "card_background_color": "#ffffff",
+        "section_show_on_desktop": true,
+        "section_show_on_mobile": true,
+        "section_padding_top_on_desktop": 60,
+        "section_padding_bottom_on_desktop": 60,
+        "section_padding_top_on_mobile": 40,
+        "section_padding_bottom_on_mobile": 40,
+        "section_make_rounded": true
+      }
+    },
+    "custom_lab_intake_nf3378": {
+      "type": "custom-lab-intake",
+      "blocks": {
+        "tag_row_nHFrzq": {
+          "type": "tag_row",
+          "settings": {
+            "label": "Next screens",
+            "tags": "Phthalates; 1,4-dioxane; Parabens"
+          }
+        },
+        "tag_row_grGwgH": {
+          "type": "tag_row",
+          "settings": {
+            "label": "Next lines",
+            "tags": "Dish soap; Hand & body; Castile soap"
+          }
+        }
+      },
+      "block_order": [
+        "tag_row_nHFrzq",
+        "tag_row_grGwgH"
+      ],
+      "name": "Lab results growth intake",
+      "settings": {
+        "info_heading": "This program is growing",
+        "info_body": "<p>We test as fast as we responsibly can. Independent lab testing is expensive and takes time, so we roll it out in waves, starting with the products you use most and the contaminants that matter most. We would rather test fewer things properly than put a badge on everything. We add results here as they come back, and every report names the lab that ran it.</p>",
+        "suggest_heading": "Tell us what to test next",
+        "suggest_description": "Is there an ingredient or a product you want screened? Tell us. The most-requested tests move up the list.",
+        "input_what_label": "An ingredient or a product, like 1,4-dioxane or dish soap",
+        "input_email_label": "Email (optional, so we can tell you when we test it)",
+        "submit_label": "Submit a test request",
+        "success_message": "Thanks. We read every request, and the ones we hear most move up the list.",
+        "success_email_message": "We will let you know when this one is tested.",
+        "color_scheme": "scheme-2",
+        "card_background_color": "",
+        "input_background_color": "",
+        "section_show_on_desktop": true,
+        "section_show_on_mobile": true,
+        "section_padding_top_on_desktop": 60,
+        "section_padding_bottom_on_desktop": 20,
+        "section_padding_top_on_mobile": 40,
+        "section_padding_bottom_on_mobile": 40,
+        "section_make_rounded": true
+      }
+    },
+    "rich_text_bDynEi": {
+      "type": "rich-text",
+      "blocks": {
+        "text_WaGdRU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>*None detected means below the lab's detection limit, which is not the same as a flat zero. ppm, ppb, and mg per square decimeter are units of concentration. For scale, 10 ppb is roughly 10 drops in an Olympic pool.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_WaGdRU"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "full_width_content": true,
+        "hide_side_padding_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 68
+      }
+    },
+    "rich_text_3zEWDH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QCKL3R": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our commitment",
+            "heading_size": "h1"
+          }
+        },
+        "text_c9KNEt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We will keep testing, keep publishing, and keep adding to this page. If we test it, you will see it here, in full.</p>"
+          }
+        },
+        "button_7K9DqY": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop High-Purity Products",
+            "button_link": "shopify://collections",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_QCKL3R",
+        "text_c9KNEt",
+        "button_7K9DqY"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collection_list_dpJAaE": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_AzHkzG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry-detergent"
+          }
+        },
+        "featured_collection_ctdhJT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hand-soap"
+          }
+        },
+        "featured_collection_wirQM7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dish-soap"
+          }
+        },
+        "featured_collection_V83h3F": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "household-goods"
+          }
+        },
+        "featured_collection_QLbzKm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-scent"
+          }
+        },
+        "featured_collection_DE9bUj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "body-care"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_AzHkzG",
+        "featured_collection_ctdhJT",
+        "featured_collection_wirQM7",
+        "featured_collection_V83h3F",
+        "featured_collection_QLbzKm",
+        "featured_collection_DE9bUj"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop Top Categories",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_pDwpqY": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RCLdhQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design.png",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_WhdeDw": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Untitled_580d6abd-1ae3-4e38-9bc8-b083c07a3b45.png",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_XFRxKQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_wehmLr": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled_129e331e-5fd0-42c2-8e5d-dcc50570e10b.png",
+            "title": "",
+            "text": "",
+            "link_label": "Private Label Information",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_zahWXF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_9xCiVB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_Lw4zfN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blog Center",
+            "link": "shopify://pages/blog-landing-page"
+          }
+        },
+        "column_XiEUPq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        }
+      },
+      "block_order": [
+        "column_RCLdhQ",
+        "column_WhdeDw",
+        "column_XFRxKQ",
+        "column_wehmLr",
+        "column_zahWXF",
+        "column_9xCiVB",
+        "column_Lw4zfN",
+        "column_XiEUPq"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_rNipMD",
+    "multicolumn_kK3iNf",
+    "rich_text_xRHqan",
+    "multicolumn_ydciFd",
+    "custom_lab_results_mhMkwk",
+    "custom_lab_intake_nf3378",
+    "rich_text_bDynEi",
+    "rich_text_3zEWDH",
+    "main",
+    "collection_list_dpJAaE",
+    "multicolumn_pDwpqY"
+  ]
+}

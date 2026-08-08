@@ -1,0 +1,926 @@
+{%- if section.settings.section_show_on_desktop or section.settings.section_show_on_mobile -%}
+  {%- if section.settings.show_on_home_page_only == false or template == 'index' -%}
+    {%- liquid
+      assign full_start_date = section.settings.start_date | append: ' ' | append: section.settings.start_time
+      assign full_end_date = section.settings.end_date | append: ' ' | append: section.settings.end_time
+
+      assign color_overlay = section.settings.color_overlay
+    -%}
+
+    {%- style -%}
+      :root {
+        --bs-gutter-x: 1.5rem;
+        --color-overlay-background: 0, 0, 0;
+      }
+
+      .button-reset {
+        background: #fff0;
+        border: 0;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+        color: inherit;
+        width: auto;
+        min-width: auto;
+        min-height: auto;
+      }
+
+      .button-reset:before,
+      .button-reset:after {
+        content: none;
+      }
+
+      button[disabled], 
+      .disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+
+      .section {
+        --border-radius-multiplier: 1;
+        position: relative;
+      }
+
+      .section:not(.section--no-spacing) {
+        padding-top: calc(var(--section-pt-mb, var(--section-pt)) * 1px) !important;
+        padding-bottom: calc(var(--section-pb-mb, var(--section-pb)) * 1px) !important;
+      }
+
+      .section.section--pb-0 {
+        padding-bottom: 0 !important;
+      }
+
+      .section-header {
+        gap: 1rem;
+      }
+
+      .countdown-timer-bar .flex { display: flex; }
+      .countdown-timer-bar .flex-column { flex-direction: column; }
+      .countdown-timer-bar .items-center, .countdown-timer-bar .align-center { align-items: center; }
+      .countdown-timer-bar .justify-center { justify-content: center; }
+      .countdown-timer-bar .block { display: block; }
+      .countdown-timer-bar .hidden { display: none; }
+      .countdown-timer-bar .w-full { width: 100%; }
+      .countdown-timer-bar .h-full { height: 100%; }
+      .countdown-timer-bar .shrink-0 { flex-shrink: 0; }
+      .countdown-timer-bar .relative { position: relative; }
+      .countdown-timer-bar .absolute { position: absolute; }
+      .countdown-timer-bar .inset-0 { inset: 0; left: 0; right: 0; bottom: 0; top: 0; }
+      .countdown-timer-bar .z-0 { z-index: 0; }
+      .countdown-timer-bar .z-10 { z-index: 10; }
+      .countdown-timer-bar .z-20 { z-index: 20; }
+      .countdown-timer-bar .object-fit-cover { object-fit: cover; object-position: center center; }
+
+      .countdown-timer-bar .container-wide { padding-left: var(--bs-gutter-x, 1.5rem); padding-right: var(--bs-gutter-x, 1.5rem); margin-left: auto; margin-right: auto; width: 100%; }
+      .countdown-timer-bar .gap-5 { gap: 0.5rem; }
+      .countdown-timer-bar .gap-10 { gap: 1rem; }
+      .countdown-timer-bar .pe-30 { padding-right: 3rem; }
+
+      .countdown-timer-bar .text-center { text-align: center; }
+      .countdown-timer-bar .lh-1 { line-height: 1; }
+      .countdown-timer-bar .bold { font-weight: 700; }
+      .countdown-timer-bar .font-medium { font-weight: 500; }
+      .countdown-timer-bar .fs-10 { font-size: 1rem; }
+      .countdown-timer-bar .fs-14 { font-size: 1.4rem; }
+      .countdown-timer-bar .fs-custom { font-size: calc(var(--font-size-mb, var(--font-size)) * 1px); }
+      .countdown-timer-bar .line-clamp-2 { -webkit-box-orient: vertical; display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; }
+      .countdown-timer-bar .no-underline { text-decoration: none; }
+
+      .countdown-timer-bar .button-reset { background: transparent; border: 0; padding: 0; border-radius: 0; box-shadow: none; color: inherit; }
+      .countdown-timer-bar .button { appearance: none; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; text-decoration: none; min-width: auto;
+    min-height: auto; }
+      
+      @media (max-width: 767.98px) {
+        .countdown-timer-bar .hidden-mobile { display: none; }
+      }
+
+      @media (min-width: 768px) {
+        .countdown-timer-bar .flex-md-row { flex-direction: row; }
+        .countdown-timer-bar .flex-md { display: flex; }
+        .countdown-timer-bar .text-md-start { text-align: start; }
+        .countdown-timer-bar .gap-md-30 { gap: 3rem; }
+        .countdown-timer-bar .fs-md-12 { font-size: 1.2rem; }
+        .countdown-timer-bar .fs-md-20 { font-size: 2rem; }
+        .countdown-timer-bar .fs-custom { font-size: calc(var(--font-size) * 1px); }
+
+        .section {
+          --border-radius-multiplier: 3;
+        }
+        
+        .section:not(.section--no-spacing) {
+          padding-top: calc(var(--section-pt) * 1px) !important;
+          padding-bottom: calc(var(--section-pb) * 1px) !important;
+        }
+        
+        .section.section--pb-0 {
+          padding-bottom: 0 !important;
+        }
+
+        .section-header {
+          column-gap: 7rem;
+        }
+      }
+
+      .countdown-timer-bar[data-id="{{ section.id }}"] {
+        --color-overlay-background: {{ color_overlay.red }}, {{ color_overlay.green }}, {{ color_overlay.blue }};
+
+        display: block;
+        position: relative;
+        overflow: hidden;
+        {% if section.settings.make_whole_clickable %}
+          cursor: pointer;
+        {% endif %}
+      }
+
+      .countdown-timer-bar[data-id="{{ section.id }}"].countdown-timer-bar--overlay::after {
+        {%- assign overlay_alpha = section.settings.overlay_opacity | divided_by: 100.0 -%}
+
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-color: rgba(var(--color-overlay-background), {{ overlay_alpha }});
+        pointer-events: none;
+        transform: translateZ(0);
+      }
+
+      .countdown-timer-bar[data-id="{{ section.id }}"] .countdown-timer-bar__block {
+        min-width: 43px;
+      }
+
+      .countdown-timer-bar[data-id="{{ section.id }}"] .countdown-timer-bar__close-button {
+        position: absolute;
+        top: 0;
+        right: 0.5rem;
+        padding: 1rem;
+        cursor: pointer;
+      }
+
+      .countdown-timer-bar[data-id="{{ section.id }}"] .countdown-timer-bar__close-button svg {
+        width: 18px;
+        height: 18px;
+        display: block;
+      }
+
+      .countdown-timer-bar[data-id="{{ section.id }}"] .countdown-timer-bar__button {
+        padding: 0.7rem 2rem;
+        border-radius: var(--buttons-radius-outset);
+        font-size: 1.4rem;
+        text-transform: {{ section.settings.button_text_transform }};
+      }
+
+      @media (min-width: 768px) {
+        .countdown-timer-bar[data-id="{{ section.id }}"] .countdown-timer-bar__wrapper {
+          padding-right: 5rem;
+        }
+
+        .countdown-timer-bar[data-id="{{ section.id }}"] .countdown-timer-bar__block {
+          min-width: 52px;
+        }
+
+        .countdown-timer-bar[data-id="{{ section.id }}"] .countdown-timer-bar__close-button {
+          top: 50%;
+          right: 1rem;
+          transform: translateY(-50%);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .countdown-timer-bar[data-id="{{ section.id }}"] .countdown-timer-bar__wrapper {
+          padding-right: 3rem;
+        }
+      }
+    {%- endstyle -%}
+
+    <countdown-banner
+      class="countdown-timer-bar block w-full {% render 'section-classes', section %}{% if section.settings.overlay_opacity > 0 %} countdown-timer-bar--overlay{% endif %}"
+      data-id="{{ section.id }}"
+      style="{% render 'section-style', section %}"
+      data-start="{{ full_start_date }}"
+      data-end="{{ full_end_date }}"
+      data-timezone="{{ section.settings.timezone }}"
+    >
+      {%- if section.settings.image != blank -%}
+        {{
+          section.settings.image
+          | image_url: width: 3840
+          | image_tag:
+            loading: 'eager',
+            fetchpriority: 'high',
+            decoding: 'async',
+            sizes: '100vw',
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            alt: section.settings.image.alt,
+            class: 'absolute inset-0 w-full h-full object-fit-cover z-0'
+        }}
+      {%- endif -%}
+
+      <div class="container-wide relative z-10">
+        {%- if section.settings.make_whole_clickable and section.settings.button_link != blank -%}
+          <a
+            href="{{ section.settings.button_link }}"
+            {% if section.settings.open_new_tab %}
+              target="_blank"
+            {% endif %}
+            class="absolute inset-0 z-10 no-underline"
+          ></a>
+        {%- endif -%}
+
+        <div class="countdown-timer-bar__wrapper flex flex-column flex-md-row align-center justify-center gap-10 gap-md-30 pe-30">
+          <div class="text-center text-md-start">
+            <div
+              class="fs-custom line-clamp-2 font-medium"
+              style="--font-size: {{ section.settings.text_font_size_on_desktop }}; --font-size-mb: {{ section.settings.text_font_size_on_mobile }};"
+            >
+              {{- section.settings.text -}}
+            </div>
+          </div>
+
+          <div class="flex items-center gap-10 text-center shrink-0">
+            {%- if section.settings.show_days -%}
+              <div class="countdown-timer-bar__block flex flex-column gap-5 lh-1">
+                <span class="block fs-14 fs-md-20 bold js-timer-days">00</span>
+                <span class="fs-10 fs-md-12">Days</span>
+              </div>
+            {%- endif -%}
+
+            {%- if section.settings.show_hours -%}
+              <div class="countdown-timer-bar__block flex flex-column gap-5 lh-1">
+                <span class="block fs-14 fs-md-20 bold js-timer-hours">00</span>
+                <span class="fs-10 fs-md-12">Hours</span>
+              </div>
+            {%- endif -%}
+
+            {%- if section.settings.show_minutes -%}
+              <div class="countdown-timer-bar__block flex flex-column gap-5 lh-1">
+                <span class="block fs-14 fs-md-20 bold js-timer-minutes">00</span>
+                <span class="fs-10 fs-md-12">Minutes</span>
+              </div>
+            {%- endif -%}
+
+            {%- if section.settings.show_seconds -%}
+              <div class="countdown-timer-bar__block flex flex-column gap-5 lh-1">
+                <span class="block fs-14 fs-md-20 bold js-timer-seconds">00</span>
+                <span class="fs-10 fs-md-12">Seconds</span>
+              </div>
+            {%- endif -%}
+          </div>
+
+          {%- if section.settings.show_button and section.settings.button_text != blank -%}
+            <div class="relative z-20 hidden-mobile flex-md align-center shrink-0">
+              <a
+                href="{{ section.settings.button_link }}"
+                {% if section.settings.open_new_tab %}
+                  target="_blank"
+                {% endif %}
+                aria-label="{{ section.settings.button_text }}"
+                class="countdown-timer-bar__button no-underline button button-{{ section.settings.button_style }} button-sm"
+              >
+                <span class="button__flair"></span>
+
+                <span class="button__inner">
+                  {{- section.settings.button_text -}}
+                </span>
+              </a>
+            </div>
+          {%- endif -%}
+
+          <button
+            type="button"
+            class="countdown-timer-bar__close-button button button-reset z-20 js-close-button"
+            aria-label="Close timer"
+          >
+            <svg
+              focusable="false"
+              width="16"
+              height="16"
+              class="shrink-0"
+              viewBox="0 0 20 20"
+            >
+              <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </countdown-banner>
+
+    <script>
+      if (!customElements.get('countdown-banner')) {
+        customElements.define(
+          'countdown-banner',
+          class extends HTMLElement {
+            constructor() {
+              super();
+
+              this.timerInterval = null;
+            }
+
+            connectedCallback() {
+              this.endDateStr = this.dataset.end;
+              this.startDateStr = this.dataset.start;
+
+              if (!this.endDateStr || this._getDistance(this.endDateStr) < 0) {
+                this.classList.add('hidden');
+                return;
+              }
+
+              if (this.startDateStr && this._getDistance(this.startDateStr) > 0) {
+                this.classList.add('hidden');
+                return;
+              }
+
+              this.closeButton = this.querySelector('.js-close-button');
+
+              if (this.closeButton) {
+                this.closeButton.addEventListener('click', () => this.classList.add('hidden'));
+              }
+
+              this.updateTimer();
+
+              this.timerInterval = setInterval(() => {
+                this.updateTimer();
+              }, 1000);
+            }
+
+            disconnectedCallback() {
+              if (this.timerInterval) {
+                clearInterval(this.timerInterval);
+              }
+            }
+
+            _getDistance(dateStr) {
+              const targetStr = dateStr || this.endDateStr;
+              if (!targetStr) return -1;
+
+              const parts = targetStr.split(' ');
+              if (parts.length < 2) return -1;
+
+              const dateParts = parts[0].split('-');
+              const timeParts = parts[1].split(':');
+
+              const year = parseInt(dateParts[2]);
+              const month = parseInt(dateParts[0]);
+              const day = parseInt(dateParts[1]);
+              const hour = parseInt(timeParts[0]);
+              const minute = parseInt(timeParts[1]);
+
+              if (isNaN(year) || isNaN(month) || isNaN(day) || isNaN(hour) || isNaN(minute)) {
+                return -1;
+              }
+
+              const wallClockUtc = Date.UTC(year, month - 1, day, hour, minute, 0);
+              const tz = this.dataset.timezone || 'UTC';
+
+              if (tz === 'UTC') {
+                return wallClockUtc - Date.now();
+              }
+
+              try {
+                const formatter = new Intl.DateTimeFormat('en-US', {
+                  timeZone: tz,
+                  year: 'numeric', month: 'numeric', day: 'numeric',
+                  hour: 'numeric', minute: 'numeric', second: 'numeric', hourCycle: 'h23'
+                });
+
+                const partsArr = formatter.formatToParts(new Date(wallClockUtc));
+                const tzParts = {};
+                partsArr.forEach(p => tzParts[p.type] = p.value);
+
+                const localUtc = Date.UTC(
+                  parseInt(tzParts.year),
+                  parseInt(tzParts.month) - 1,
+                  parseInt(tzParts.day),
+                  parseInt(tzParts.hour),
+                  parseInt(tzParts.minute),
+                  0
+                );
+
+                const timezoneOffsetMs = wallClockUtc - localUtc;
+                const targetUtcTimestamp = wallClockUtc + timezoneOffsetMs;
+
+                return targetUtcTimestamp - Date.now();
+              } catch (e) {
+                console.error('Timezone error:', e);
+                return wallClockUtc - Date.now();
+              }
+            }
+
+            updateTimer() {
+              const distance = this._getDistance(this.endDateStr);
+
+              if (distance < 0) {
+                this.classList.add('hidden');
+
+                if (this.timerInterval) {
+                  clearInterval(this.timerInterval);
+                }
+
+                return;
+              }
+
+              const _msSecond = 1000;
+              const _msMinute = _msSecond * 60;
+              const _msHour = _msMinute * 60;
+              const _msDay = _msHour * 24;
+
+              const days = Math.floor(distance / _msDay);
+              const hours = Math.floor((distance % _msDay) / _msHour);
+              const minutes = Math.floor((distance % _msHour) / _msMinute);
+              const seconds = Math.floor((distance % _msMinute) / _msSecond);
+
+              const daysEl = this.querySelector('.js-timer-days');
+              const hoursEl = this.querySelector('.js-timer-hours');
+              const minutesEl = this.querySelector('.js-timer-minutes');
+              const secondsEl = this.querySelector('.js-timer-seconds');
+
+              if (daysEl) {
+                daysEl.innerText = days < 10 ? '0' + days : days;
+              }
+
+              if (hoursEl) {
+                hoursEl.innerText = hours < 10 ? '0' + hours : hours;
+              }
+
+              if (minutesEl) {
+                minutesEl.innerText = minutes < 10 ? '0' + minutes : minutes;
+              }
+
+              if (secondsEl) {
+                secondsEl.innerText = seconds < 10 ? '0' + seconds : seconds;
+              }
+            }
+          }
+        );
+      }
+    </script>
+  {%- endif -%}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Countdown timer bar",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_on_home_page_only",
+      "label": "Show on home page only",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "start_date",
+      "label": "Start date",
+      "info": "Format: MM-DD-YYYY",
+      "default": "12-30-2025"
+    },
+    {
+      "type": "select",
+      "id": "start_time",
+      "label": "Start time",
+      "options": [
+        { "value": "0:00", "label": "12:00 AM" },
+        { "value": "0:15", "label": "12:15 AM" },
+        { "value": "0:30", "label": "12:30 AM" },
+        { "value": "0:45", "label": "12:45 AM" },
+        { "value": "1:00", "label": "1:00 AM" },
+        { "value": "1:15", "label": "1:15 AM" },
+        { "value": "1:30", "label": "1:30 AM" },
+        { "value": "1:45", "label": "1:45 AM" },
+        { "value": "2:00", "label": "2:00 AM" },
+        { "value": "2:15", "label": "2:15 AM" },
+        { "value": "2:30", "label": "2:30 AM" },
+        { "value": "2:45", "label": "2:45 AM" },
+        { "value": "3:00", "label": "3:00 AM" },
+        { "value": "3:15", "label": "3:15 AM" },
+        { "value": "3:30", "label": "3:30 AM" },
+        { "value": "3:45", "label": "3:45 AM" },
+        { "value": "4:00", "label": "4:00 AM" },
+        { "value": "4:15", "label": "4:15 AM" },
+        { "value": "4:30", "label": "4:30 AM" },
+        { "value": "4:45", "label": "4:45 AM" },
+        { "value": "5:00", "label": "5:00 AM" },
+        { "value": "5:15", "label": "5:15 AM" },
+        { "value": "5:30", "label": "5:30 AM" },
+        { "value": "5:45", "label": "5:45 AM" },
+        { "value": "6:00", "label": "6:00 AM" },
+        { "value": "6:15", "label": "6:15 AM" },
+        { "value": "6:30", "label": "6:30 AM" },
+        { "value": "6:45", "label": "6:45 AM" },
+        { "value": "7:00", "label": "7:00 AM" },
+        { "value": "7:15", "label": "7:15 AM" },
+        { "value": "7:30", "label": "7:30 AM" },
+        { "value": "7:45", "label": "7:45 AM" },
+        { "value": "8:00", "label": "8:00 AM" },
+        { "value": "8:15", "label": "8:15 AM" },
+        { "value": "8:30", "label": "8:30 AM" },
+        { "value": "8:45", "label": "8:45 AM" },
+        { "value": "9:00", "label": "9:00 AM" },
+        { "value": "9:15", "label": "9:15 AM" },
+        { "value": "9:30", "label": "9:30 AM" },
+        { "value": "9:45", "label": "9:45 AM" },
+        { "value": "10:00", "label": "10:00 AM" },
+        { "value": "10:15", "label": "10:15 AM" },
+        { "value": "10:30", "label": "10:30 AM" },
+        { "value": "10:45", "label": "10:45 AM" },
+        { "value": "11:00", "label": "11:00 AM" },
+        { "value": "11:15", "label": "11:15 AM" },
+        { "value": "11:30", "label": "11:30 AM" },
+        { "value": "11:45", "label": "11:45 AM" },
+        { "value": "12:00", "label": "12:00 PM" },
+        { "value": "12:15", "label": "12:15 PM" },
+        { "value": "12:30", "label": "12:30 PM" },
+        { "value": "12:45", "label": "12:45 PM" },
+        { "value": "13:00", "label": "1:00 PM" },
+        { "value": "13:15", "label": "1:15 PM" },
+        { "value": "13:30", "label": "1:30 PM" },
+        { "value": "13:45", "label": "1:45 PM" },
+        { "value": "14:00", "label": "2:00 PM" },
+        { "value": "14:15", "label": "2:15 PM" },
+        { "value": "14:30", "label": "2:30 PM" },
+        { "value": "14:45", "label": "2:45 PM" },
+        { "value": "15:00", "label": "3:00 PM" },
+        { "value": "15:15", "label": "3:15 PM" },
+        { "value": "15:30", "label": "3:30 PM" },
+        { "value": "15:45", "label": "3:45 PM" },
+        { "value": "16:00", "label": "4:00 PM" },
+        { "value": "16:15", "label": "4:15 PM" },
+        { "value": "16:30", "label": "4:30 PM" },
+        { "value": "16:45", "label": "4:45 PM" },
+        { "value": "17:00", "label": "5:00 PM" },
+        { "value": "17:15", "label": "5:15 PM" },
+        { "value": "17:30", "label": "5:30 PM" },
+        { "value": "17:45", "label": "5:45 PM" },
+        { "value": "18:00", "label": "6:00 PM" },
+        { "value": "18:15", "label": "6:15 PM" },
+        { "value": "18:30", "label": "6:30 PM" },
+        { "value": "18:45", "label": "6:45 PM" },
+        { "value": "19:00", "label": "7:00 PM" },
+        { "value": "19:15", "label": "7:15 PM" },
+        { "value": "19:30", "label": "7:30 PM" },
+        { "value": "19:45", "label": "7:45 PM" },
+        { "value": "20:00", "label": "8:00 PM" },
+        { "value": "20:15", "label": "8:15 PM" },
+        { "value": "20:30", "label": "8:30 PM" },
+        { "value": "20:45", "label": "8:45 PM" },
+        { "value": "21:00", "label": "9:00 PM" },
+        { "value": "21:15", "label": "9:15 PM" },
+        { "value": "21:30", "label": "9:30 PM" },
+        { "value": "21:45", "label": "9:45 PM" },
+        { "value": "22:00", "label": "10:00 PM" },
+        { "value": "22:15", "label": "10:15 PM" },
+        { "value": "22:30", "label": "10:30 PM" },
+        { "value": "22:45", "label": "10:45 PM" },
+        { "value": "23:00", "label": "11:00 PM" },
+        { "value": "23:15", "label": "11:15 PM" },
+        { "value": "23:30", "label": "11:30 PM" },
+        { "value": "23:45", "label": "11:45 PM" }
+      ],
+      "default": "0:00"
+    },
+    {
+      "type": "text",
+      "id": "end_date",
+      "label": "End date",
+      "info": "Format: MM-DD-YYYY",
+      "default": "03-01-2026"
+    },
+    {
+      "type": "select",
+      "id": "end_time",
+      "label": "End time",
+      "options": [
+        { "value": "0:00", "label": "12:00 AM" },
+        { "value": "0:15", "label": "12:15 AM" },
+        { "value": "0:30", "label": "12:30 AM" },
+        { "value": "0:45", "label": "12:45 AM" },
+        { "value": "1:00", "label": "1:00 AM" },
+        { "value": "1:15", "label": "1:15 AM" },
+        { "value": "1:30", "label": "1:30 AM" },
+        { "value": "1:45", "label": "1:45 AM" },
+        { "value": "2:00", "label": "2:00 AM" },
+        { "value": "2:15", "label": "2:15 AM" },
+        { "value": "2:30", "label": "2:30 AM" },
+        { "value": "2:45", "label": "2:45 AM" },
+        { "value": "3:00", "label": "3:00 AM" },
+        { "value": "3:15", "label": "3:15 AM" },
+        { "value": "3:30", "label": "3:30 AM" },
+        { "value": "3:45", "label": "3:45 AM" },
+        { "value": "4:00", "label": "4:00 AM" },
+        { "value": "4:15", "label": "4:15 AM" },
+        { "value": "4:30", "label": "4:30 AM" },
+        { "value": "4:45", "label": "4:45 AM" },
+        { "value": "5:00", "label": "5:00 AM" },
+        { "value": "5:15", "label": "5:15 AM" },
+        { "value": "5:30", "label": "5:30 AM" },
+        { "value": "5:45", "label": "5:45 AM" },
+        { "value": "6:00", "label": "6:00 AM" },
+        { "value": "6:15", "label": "6:15 AM" },
+        { "value": "6:30", "label": "6:30 AM" },
+        { "value": "6:45", "label": "6:45 AM" },
+        { "value": "7:00", "label": "7:00 AM" },
+        { "value": "7:15", "label": "7:15 AM" },
+        { "value": "7:30", "label": "7:30 AM" },
+        { "value": "7:45", "label": "7:45 AM" },
+        { "value": "8:00", "label": "8:00 AM" },
+        { "value": "8:15", "label": "8:15 AM" },
+        { "value": "8:30", "label": "8:30 AM" },
+        { "value": "8:45", "label": "8:45 AM" },
+        { "value": "9:00", "label": "9:00 AM" },
+        { "value": "9:15", "label": "9:15 AM" },
+        { "value": "9:30", "label": "9:30 AM" },
+        { "value": "9:45", "label": "9:45 AM" },
+        { "value": "10:00", "label": "10:00 AM" },
+        { "value": "10:15", "label": "10:15 AM" },
+        { "value": "10:30", "label": "10:30 AM" },
+        { "value": "10:45", "label": "10:45 AM" },
+        { "value": "11:00", "label": "11:00 AM" },
+        { "value": "11:15", "label": "11:15 AM" },
+        { "value": "11:30", "label": "11:30 AM" },
+        { "value": "11:45", "label": "11:45 AM" },
+        { "value": "12:00", "label": "12:00 PM" },
+        { "value": "12:15", "label": "12:15 PM" },
+        { "value": "12:30", "label": "12:30 PM" },
+        { "value": "12:45", "label": "12:45 PM" },
+        { "value": "13:00", "label": "1:00 PM" },
+        { "value": "13:15", "label": "1:15 PM" },
+        { "value": "13:30", "label": "1:30 PM" },
+        { "value": "13:45", "label": "1:45 PM" },
+        { "value": "14:00", "label": "2:00 PM" },
+        { "value": "14:15", "label": "2:15 PM" },
+        { "value": "14:30", "label": "2:30 PM" },
+        { "value": "14:45", "label": "2:45 PM" },
+        { "value": "15:00", "label": "3:00 PM" },
+        { "value": "15:15", "label": "3:15 PM" },
+        { "value": "15:30", "label": "3:30 PM" },
+        { "value": "15:45", "label": "3:45 PM" },
+        { "value": "16:00", "label": "4:00 PM" },
+        { "value": "16:15", "label": "4:15 PM" },
+        { "value": "16:30", "label": "4:30 PM" },
+        { "value": "16:45", "label": "4:45 PM" },
+        { "value": "17:00", "label": "5:00 PM" },
+        { "value": "17:15", "label": "5:15 PM" },
+        { "value": "17:30", "label": "5:30 PM" },
+        { "value": "17:45", "label": "5:45 PM" },
+        { "value": "18:00", "label": "6:00 PM" },
+        { "value": "18:15", "label": "6:15 PM" },
+        { "value": "18:30", "label": "6:30 PM" },
+        { "value": "18:45", "label": "6:45 PM" },
+        { "value": "19:00", "label": "7:00 PM" },
+        { "value": "19:15", "label": "7:15 PM" },
+        { "value": "19:30", "label": "7:30 PM" },
+        { "value": "19:45", "label": "7:45 PM" },
+        { "value": "20:00", "label": "8:00 PM" },
+        { "value": "20:15", "label": "8:15 PM" },
+        { "value": "20:30", "label": "8:30 PM" },
+        { "value": "20:45", "label": "8:45 PM" },
+        { "value": "21:00", "label": "9:00 PM" },
+        { "value": "21:15", "label": "9:15 PM" },
+        { "value": "21:30", "label": "9:30 PM" },
+        { "value": "21:45", "label": "9:45 PM" },
+        { "value": "22:00", "label": "10:00 PM" },
+        { "value": "22:15", "label": "10:15 PM" },
+        { "value": "22:30", "label": "10:30 PM" },
+        { "value": "22:45", "label": "10:45 PM" },
+        { "value": "23:00", "label": "11:00 PM" },
+        { "value": "23:15", "label": "11:15 PM" },
+        { "value": "23:30", "label": "11:30 PM" },
+        { "value": "23:45", "label": "11:45 PM" }
+      ],
+      "default": "0:00"
+    },
+    {
+      "type": "select",
+      "id": "timezone",
+      "label": "Time zone",
+      "options": [
+        { "value": "America/New_York", "label": "Eastern Time (ET)" },
+        { "value": "America/Chicago", "label": "Central Time (CT)" },
+        { "value": "America/Denver", "label": "Mountain Time (MT)" },
+        { "value": "America/Los_Angeles", "label": "Pacific Time (PT)" },
+        { "value": "UTC", "label": "GMT (UTC)" }
+      ],
+      "default": "America/New_York"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "Timer text goes here. Hurry up! Offer ends in:"
+    },
+    {
+      "type": "range",
+      "id": "text_font_size_on_desktop",
+      "label": "Text font size on desktop",
+      "default": 16,
+      "min": 12,
+      "max": 22,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "text_font_size_on_mobile",
+      "label": "Text font size on mobile",
+      "default": 12,
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Countdown"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_days",
+      "label": "Show days",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_hours",
+      "label": "Show hours",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_minutes",
+      "label": "Show minutes",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_seconds",
+      "label": "Show seconds",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "label": "Show button",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button label",
+      "default": "Shop",
+      "visible_if": "{{ section.settings.show_button }}"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link",
+      "visible_if": "{{ section.settings.show_button }}"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button style",
+      "options": [
+        { "value": "primary", "label": "Primary" },
+        { "value": "outline", "label": "Outline" }
+      ],
+      "default": "primary",
+      "visible_if": "{{ section.settings.show_button }}"
+    },
+    {
+      "type": "select",
+      "id": "button_text_transform",
+      "label": "Text transform",
+      "default": "unset",
+      "options": [
+        {
+          "value": "unset",
+          "label": "Default"
+        },
+        {
+          "value": "lowercase",
+          "label": "Lowercase"
+        },
+        {
+          "value": "capitalize",
+          "label": "Capitalize"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        }
+      ],
+      "visible_if": "{{ section.settings.show_button }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_new_tab",
+      "label": "Open the link in a new tab",
+      "default": true,
+      "visible_if": "{{ section.settings.show_button }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "make_whole_clickable",
+      "label": "Make the whole timer clickable",
+      "default": false,
+      "visible_if": "{{ section.settings.show_button }}"
+    },
+    {
+      "type": "header",
+      "content": "Appearance"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-22b523ce-adb9-4f08-a326-9544fe490b1e"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Overlay opacity",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "color_overlay",
+      "label": "Overlay color",
+      "default": "#171717"
+    },
+    {
+      "type": "header",
+      "content": "Section settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "section_show_on_desktop",
+      "label": "Show on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "section_show_on_mobile",
+      "label": "Show on mobile",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_on_desktop",
+      "label": "Top spacing on desktop",
+      "default": 10,
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_on_desktop",
+      "label": "Bottom spacing on desktop",
+      "default": 10,
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_on_mobile",
+      "label": "Top spacing on mobile",
+      "default": 10,
+      "min": 0,
+      "max": 15,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_on_mobile",
+      "label": "Bottom spacing on mobile",
+      "default": 10,
+      "min": 0,
+      "max": 15,
+      "step": 1,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Countdown timer bar"
+    }
+  ]
+}
+{% endschema %}

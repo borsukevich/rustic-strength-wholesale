@@ -1,0 +1,410 @@
+{% doc %}
+  @prompt
+    create a section that allows the addition of 1-3 rich text blocks. The section should also have 1-3 blocks that contain number counters. Make the number counters display horizontally as columns with image option above and text option below.
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-content-section-{{ ai_gen_id }} {
+    padding: {{ block.settings.section_padding }}px 20px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-content-section__container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-content-section__rich-text-{{ ai_gen_id }} {
+    margin-bottom: {{ block.settings.spacing_between_sections }}px;
+  }
+
+  .ai-content-section__rich-text-item-{{ ai_gen_id }} {
+    margin-bottom: 24px;
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-content-section__rich-text-item-{{ ai_gen_id }}:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-content-section__counters-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: {{ block.settings.counter_spacing }}px;
+  }
+
+  .ai-content-section__counter-{{ ai_gen_id }} {
+    text-align: center;
+    padding: 24px;
+    background-color: {{ block.settings.counter_background_color }};
+    border-radius: {{ block.settings.counter_border_radius }}px;
+    border: {{ block.settings.counter_border_width }}px solid {{ block.settings.counter_border_color }};
+  }
+
+  .ai-content-section__counter-image-{{ ai_gen_id }} {
+    width: {{ block.settings.counter_image_size }}px;
+    height: {{ block.settings.counter_image_size }}px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .ai-content-section__counter-image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-content-section__counter-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .ai-content-section__counter-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.5;
+  }
+
+  .ai-content-section__counter-number-{{ ai_gen_id }} {
+    font-size: {{ block.settings.counter_number_size }}px;
+    font-weight: 700;
+    color: {{ block.settings.counter_number_color }};
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+
+  .ai-content-section__counter-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.counter_text_size }}px;
+    color: {{ block.settings.counter_text_color }};
+    line-height: 1.4;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-content-section__counters-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .ai-content-section__counter-number-{{ ai_gen_id }} {
+      font-size: {{ block.settings.counter_number_size | times: 0.8 }}px;
+    }
+  }
+{% endstyle %}<div class="ai-content-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-content-section__container-{{ ai_gen_id }}">
+    {% if block.settings.rich_text_1 != blank or block.settings.rich_text_2 != blank or block.settings.rich_text_3 != blank %}
+      <div class="ai-content-section__rich-text-{{ ai_gen_id }}">
+        {% if block.settings.rich_text_1 != blank %}
+          <div class="ai-content-section__rich-text-item-{{ ai_gen_id }}">
+            {{ block.settings.rich_text_1 }}
+          </div>
+        {% endif %}
+        
+        {% if block.settings.rich_text_2 != blank %}
+          <div class="ai-content-section__rich-text-item-{{ ai_gen_id }}">
+            {{ block.settings.rich_text_2 }}
+          </div>
+        {% endif %}
+        
+        {% if block.settings.rich_text_3 != blank %}
+          <div class="ai-content-section__rich-text-item-{{ ai_gen_id }}">
+            {{ block.settings.rich_text_3 }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-content-section__counters-{{ ai_gen_id }}">
+      {% for i in (1..3) %}
+        {% liquid
+          assign counter_enabled_key = 'counter_' | append: i | append: '_enabled'
+          assign counter_image_key = 'counter_' | append: i | append: '_image'
+          assign counter_number_key = 'counter_' | append: i | append: '_number'
+          assign counter_text_key = 'counter_' | append: i | append: '_text'
+          assign counter_enabled = block.settings[counter_enabled_key]
+          assign counter_image = block.settings[counter_image_key]
+          assign counter_number = block.settings[counter_number_key]
+          assign counter_text = block.settings[counter_text_key]
+        %}
+
+        {% if counter_enabled %}
+          <div class="ai-content-section__counter-{{ ai_gen_id }}">
+            <div class="ai-content-section__counter-image-{{ ai_gen_id }}">
+              {% if counter_image %}
+                <img
+                  src="{{ counter_image | image_url: width: 200 }}"
+                  alt="{{ counter_image.alt | escape }}"
+                  loading="lazy"
+                  width="200"
+                  height="200"
+                >
+              {% else %}
+                <div class="ai-content-section__counter-image-placeholder-{{ ai_gen_id }}">
+                  {{ 'image' | placeholder_svg_tag }}
+                </div>
+              {% endif %}
+            </div>
+            
+            {% if counter_number != blank %}
+              <div class="ai-content-section__counter-number-{{ ai_gen_id }}">
+                {{ counter_number }}
+              </div>
+            {% endif %}
+            
+            {% if counter_text != blank %}
+              <div class="ai-content-section__counter-text-{{ ai_gen_id }}">
+                {{ counter_text }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Rich text with counters",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Rich text content"
+    },
+    {
+      "type": "richtext",
+      "id": "rich_text_1",
+      "label": "Rich text 1",
+      "default": "<h2>Welcome to our story</h2><p>Share your brand's journey and values with your customers.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "rich_text_2",
+      "label": "Rich text 2"
+    },
+    {
+      "type": "richtext",
+      "id": "rich_text_3",
+      "label": "Rich text 3"
+    },
+    {
+      "type": "header",
+      "content": "Counter 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "counter_1_enabled",
+      "label": "Enable counter 1",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "counter_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "counter_1_number",
+      "label": "Number",
+      "default": "100+"
+    },
+    {
+      "type": "text",
+      "id": "counter_1_text",
+      "label": "Description",
+      "default": "Happy customers"
+    },
+    {
+      "type": "header",
+      "content": "Counter 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "counter_2_enabled",
+      "label": "Enable counter 2",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "counter_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "counter_2_number",
+      "label": "Number",
+      "default": "50+"
+    },
+    {
+      "type": "text",
+      "id": "counter_2_text",
+      "label": "Description",
+      "default": "Products sold"
+    },
+    {
+      "type": "header",
+      "content": "Counter 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "counter_3_enabled",
+      "label": "Enable counter 3",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "counter_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "counter_3_number",
+      "label": "Number",
+      "default": "5"
+    },
+    {
+      "type": "text",
+      "id": "counter_3_text",
+      "label": "Description",
+      "default": "Years of experience"
+    },
+    {
+      "type": "header",
+      "content": "Section style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Section padding",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "spacing_between_sections",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Spacing between text and counters",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Counter style"
+    },
+    {
+      "type": "color",
+      "id": "counter_background_color",
+      "label": "Counter background color",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "color",
+      "id": "counter_border_color",
+      "label": "Counter border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "range",
+      "id": "counter_border_width",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "label": "Counter border width",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "counter_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Counter border radius",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "counter_spacing",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Counter spacing",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "counter_image_size",
+      "min": 60,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "label": "Counter image size",
+      "default": 80
+    },
+    {
+      "type": "color",
+      "id": "counter_number_color",
+      "label": "Counter number color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "counter_number_size",
+      "min": 24,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Counter number size",
+      "default": 36
+    },
+    {
+      "type": "color",
+      "id": "counter_text_color",
+      "label": "Counter text color",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "counter_text_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Counter text size",
+      "default": 16
+    }
+  ],
+  "presets": [
+    {
+      "name": "Rich text with counters"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}

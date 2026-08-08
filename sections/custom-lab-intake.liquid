@@ -1,0 +1,529 @@
+{%- style -%}
+  [data-section-id="{{ section.id }}"] {
+    padding-top: calc(var(--section-pt-mb) * 1px) !important;
+    padding-bottom: calc(var(--section-pb-mb) * 1px) !important;
+  }
+
+  @media screen and (min-width: 750px) {
+    [data-section-id="{{ section.id }}"] {
+      padding-top: calc(var(--section-pt) * 1px) !important;
+      padding-bottom: calc(var(--section-pb) * 1px) !important;
+    }
+  }
+
+  .lab-intake__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    --color-text: var(--color-foreground);
+    --color-heading: var(--color-foreground);
+    --color-border: var(--color-foreground);
+    --color-success: 138, 149, 112;
+    --border-radius: 10px;
+  }
+
+  @media screen and (min-width: 992px) {
+    .lab-intake__grid {
+      grid-template-columns: 1.2fr 1fr;
+      align-items: stretch;
+    }
+  }
+
+  .lab-intake__info-card {
+    background-color: rgb(var(--color-background));
+    border: 1px solid rgba(var(--color-border), 0.6);
+    border-radius: var(--border-radius);
+    padding: 3rem;
+    box-shadow: 0 4px 12px rgba(var(--color-shadow), 0.03);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lab-intake__heading {
+    margin: 0 0 2rem 0;
+    color: rgb(var(--color-heading));
+  }
+
+  .lab-intake__body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: rgba(var(--color-text), 0.85);
+    margin: 0 0 3rem 0;
+  }
+  .lab-intake__body p {
+    margin: 0;
+  }
+
+  .lab-intake__tag-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(var(--color-border), 0.4);
+    margin-top: auto;
+  }
+
+  .lab-intake__tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .lab-intake__tag-label {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgb(var(--color-heading));
+    min-width: 110px;
+  }
+
+  .lab-intake__tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .lab-intake__tag-pill {
+    display: inline-block;
+    padding: 0.6rem 1.6rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(var(--color-text));
+    background-color: rgba(var(--color-text), 0.06);
+    border-radius: 9999px;
+    letter-spacing: 0.02em;
+  }
+
+  .lab-intake__suggest-box {
+    background-color: rgb(var(--color-background));
+    border: 1px solid rgba(var(--color-border), 0.6);
+    border-radius: var(--border-radius);
+    padding: 3rem;
+    box-shadow: 0 4px 12px rgba(var(--color-shadow), 0.03);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    .lab-intake__info-card,
+    .lab-intake__suggest-box {
+      padding: 2.5rem;
+    }
+  }
+
+  .lab-intake__suggest-heading {
+    margin: 0;
+    color: rgb(var(--color-heading));
+  }
+
+  .lab-intake__suggest-description {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: rgba(var(--color-text), 0.8);
+    margin: 0;
+  }
+
+  .lab-intake__success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  .lab-intake__success-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    background-color: rgba(var(--color-success), 0.1);
+    color: rgb(var(--color-success));
+  }
+
+  .lab-intake__success-text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: rgb(var(--color-text));
+    margin: 0;
+  }
+
+  #shopify-section-{{ section.id }} .field__input {
+    {% if section.settings.input_background_color != 'rgba(0,0,0,0)' and section.settings.input_background_color != blank %}
+      background-color: {{ section.settings.input_background_color }};
+    {% endif %}
+  }
+
+  #shopify-section-{{ section.id }} .field__label {
+    font-size: 1.3rem;
+    top: calc(1.5rem + var(--inputs-border-width));
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 4rem);
+  }
+
+  #shopify-section-{{ section.id }} .field__input:focus ~ .field__label,
+  #shopify-section-{{ section.id }} .field__input:not(:placeholder-shown) ~ .field__label,
+  #shopify-section-{{ section.id }} .field__input:-webkit-autofill ~ .field__label {
+    font-size: 0.9rem;
+    top: calc(var(--inputs-border-width) + 0.5rem);
+  }
+{%- endstyle -%}
+
+<div
+  class="{% render 'section-classes', section %}"
+  style="{% render 'section-style', section %}"
+  data-section-id="{{ section.id }}"
+>
+  <div class="page-width relative">
+    <div class="lab-intake__grid">
+      <div
+        class="lab-intake__info-card"
+        {% if section.settings.card_background_color != 'rgba(0,0,0,0)'
+          and section.settings.card_background_color != blank
+        %}
+          style="background-color: {{ section.settings.card_background_color }};"
+        {% endif %}
+      >
+        {%- if section.settings.info_heading != blank -%}
+          <h2 class="lab-intake__heading h2">{{ section.settings.info_heading | escape }}</h2>
+        {%- endif -%}
+        {%- if section.settings.info_body != blank -%}
+          <div class="lab-intake__body rte">
+            {{ section.settings.info_body }}
+          </div>
+        {%- endif -%}
+
+        <div class="lab-intake__tag-rows">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'tag_row' and block.settings.label != blank -%}
+              <div class="lab-intake__tag-row" {{ block.shopify_attributes }}>
+                <span class="lab-intake__tag-label">{{ block.settings.label | escape }}</span>
+                <div class="lab-intake__tag-list">
+                  {%- assign tag_array = block.settings.tags | split: ';' -%}
+                  {%- for tag_item in tag_array -%}
+                    {%- assign trimmed_tag = tag_item | strip -%}
+                    {%- if trimmed_tag != blank -%}
+                      <span class="lab-intake__tag-pill">{{ trimmed_tag | escape }}</span>
+                    {%- endif -%}
+                  {%- endfor -%}
+                </div>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+
+      <div
+        id="suggest-box-{{ section.id }}"
+        class="lab-intake__suggest-box"
+        {% if section.settings.card_background_color != 'rgba(0,0,0,0)'
+          and section.settings.card_background_color != blank
+        %}
+          style="background-color: {{ section.settings.card_background_color }};"
+        {% endif %}
+      >
+        {%- if section.settings.suggest_heading != blank -%}
+          <h3 class="lab-intake__suggest-heading h3">{{ section.settings.suggest_heading | escape }}</h3>
+        {%- endif -%}
+        {%- if section.settings.suggest_description != blank -%}
+          <p class="lab-intake__suggest-description">
+            {{ section.settings.suggest_description | escape }}
+          </p>
+        {%- endif -%}
+
+        <div class="field">
+          <input
+            type="text"
+            id="lr-suggest-what-{{ section.id }}"
+            class="field__input w-full"
+            placeholder="{{ section.settings.input_what_label | escape }}"
+            required
+          >
+          <label for="lr-suggest-what-{{ section.id }}" class="field__label">
+            {{ section.settings.input_what_label | escape }}
+            <span class="required">*</span>
+          </label>
+        </div>
+
+        <div class="field">
+          <input
+            type="email"
+            id="lr-suggest-email-{{ section.id }}"
+            class="field__input w-full"
+            placeholder="{{ section.settings.input_email_label | escape }}"
+          >
+          <label for="lr-suggest-email-{{ section.id }}" class="field__label">
+            {{ section.settings.input_email_label | escape }}
+          </label>
+        </div>
+
+        <div>
+          <button
+            type="button"
+            id="suggest-btn-{{ section.id }}"
+            class="button button--primary w-full"
+          >
+            {{ section.settings.submit_label | escape }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('suggest-btn-{{ section.id }}');
+    if (!btn) return;
+
+    btn.addEventListener('click', () => {
+      const whatEl = document.getElementById('lr-suggest-what-{{ section.id }}');
+      const emailEl = document.getElementById('lr-suggest-email-{{ section.id }}');
+      if (!whatEl || !emailEl) return;
+
+      const whatVal = whatEl.value.trim();
+      const emailVal = emailEl.value.trim();
+
+      if (whatVal === '') return;
+
+      const klaviyo = window.klaviyo || window._learnq || [];
+
+      if (window._learnq && typeof window._learnq.push === 'function') {
+        window._learnq.push(['account', 'XhPTSU']);
+      }
+
+      const hasEmail = emailVal !== '';
+      if (hasEmail) {
+        klaviyo.push(['identify', { '$email': emailVal }]);
+      }
+
+      klaviyo.push(['track', 'Requested Test', {
+        'Requested Test': whatVal,
+        'Source': 'Lab Results page',
+        'Provided Email': hasEmail
+      }]);
+
+      const suggestBox = document.getElementById('suggest-box-{{ section.id }}');
+      if (suggestBox) {
+        let msg = {{ section.settings.success_message | json }};
+        if (hasEmail) {
+          msg += {{ section.settings.success_email_message | json }};
+        }
+
+        suggestBox.innerHTML = `
+          <div class="lab-intake__success">
+            <div class="lab-intake__success-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <p class="lab-intake__success-text">${msg}</p>
+          </div>
+        `;
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Growth intake",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.overlay", "custom.general"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Card content"
+    },
+    {
+      "type": "text",
+      "id": "info_heading",
+      "label": "Heading",
+      "default": "This program is growing"
+    },
+    {
+      "type": "richtext",
+      "id": "info_body",
+      "label": "Text",
+      "default": "<p>We test as fast as we responsibly can. Independent lab testing is expensive and takes time, so we roll it out in waves, starting with the products you use most and the contaminants that matter most. We would rather test fewer things properly than put a badge on everything. We add results here as they come back, and every report names the lab that ran it.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Form content"
+    },
+    {
+      "type": "text",
+      "id": "suggest_heading",
+      "label": "Heading",
+      "default": "Tell us what to test next"
+    },
+    {
+      "type": "textarea",
+      "id": "suggest_description",
+      "label": "Text",
+      "default": "Is there an ingredient or a product you want screened? Tell us. The most-requested tests move up the list."
+    },
+    {
+      "type": "text",
+      "id": "input_what_label",
+      "label": "Request input label",
+      "default": "An ingredient or a product, like 1,4-dioxane or dish soap"
+    },
+    {
+      "type": "text",
+      "id": "input_email_label",
+      "label": "Email input label",
+      "default": "Email (optional, so we can tell you when we test it)"
+    },
+    {
+      "type": "text",
+      "id": "submit_label",
+      "label": "Submit button label",
+      "default": "Submit a test request"
+    },
+    {
+      "type": "textarea",
+      "id": "success_message",
+      "label": "Success message",
+      "default": "Thanks. We read every request, and the ones we hear most move up the list."
+    },
+    {
+      "type": "textarea",
+      "id": "success_email_message",
+      "label": "Success message (with email suffix)",
+      "default": " We will let you know when this one is tested."
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color",
+      "id": "card_background_color",
+      "label": "Card background color"
+    },
+    {
+      "type": "color",
+      "id": "input_background_color",
+      "label": "Input background color"
+    },
+    {
+      "type": "header",
+      "content": "Section settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "section_show_on_desktop",
+      "label": "Show on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "section_show_on_mobile",
+      "label": "Show on mobile",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_on_desktop",
+      "label": "Top spacing on desktop",
+      "default": 40,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_on_desktop",
+      "label": "Bottom spacing on desktop",
+      "default": 40,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_on_mobile",
+      "label": "Top spacing on mobile",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_on_mobile",
+      "label": "Bottom spacing on mobile",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "section_make_rounded",
+      "label": "Make section rounded",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tag_row",
+      "name": "Tag row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Row Label",
+          "default": "Next screens"
+        },
+        {
+          "type": "text",
+          "id": "tags",
+          "label": "Pills / Tags (semicolon-separated)",
+          "default": "Phthalates; 1,4-dioxane; Parabens"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lab Results Growth Intake",
+      "blocks": [
+        {
+          "type": "tag_row",
+          "settings": {
+            "label": "Next screens",
+            "tags": "Phthalates; 1,4-dioxane; Parabens"
+          }
+        },
+        {
+          "type": "tag_row",
+          "settings": {
+            "label": "Next lines",
+            "tags": "Dish soap; Hand & body; Castile soap"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

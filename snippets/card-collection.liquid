@@ -81,7 +81,7 @@
           {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
         </div>
       {%- else -%}
-        <div class="card__content">
+        <div class="card__content card__content--{{ title_layout }}">
           <div class="card__information">
             <h3 class="card__heading">
               <a
@@ -93,7 +93,7 @@
                 class="full-unstyled-link"
               >
                 {%- if card_collection.title != blank -%}
-                  {{- card_collection.title | escape -}}
+                   {{ custom_title | default: card_collection.title | escape }}
                 {%- else -%}
                   {{ 'onboarding.collection_title' | t }}
                 {%- endif -%}
@@ -117,7 +117,7 @@
       {%- endif -%}
     </div>
     {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
-      <div class="card__content">
+      <div class="card__content card__content--{{ title_layout }}">
         <div class="card__information">
           <h3 class="card__heading">
             <a
@@ -129,7 +129,7 @@
               class="full-unstyled-link"
             >
               {%- if card_collection.title != blank -%}
-                {{- card_collection.title | escape -}}
+                 {{ custom_title | default: card_collection.title | escape }}
               {%- else -%}
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
@@ -152,7 +152,7 @@
       </div>
     {%- endif -%}
     {%- if card_collection == blank -%}
-      <div class="card__content">
+      <div class="card__content card__content--{{ title_layout }}">
         <div class="card__information">
           <h3 class="card__heading card__heading--placeholder">
             <a role="link" aria-disabled="true" class="full-unstyled-link">

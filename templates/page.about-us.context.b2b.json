@@ -1,0 +1,27 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "page.t-about-us.json",
+  "context": {
+    "market": "all-b2b"
+  },
+  "sections": {
+    "rich_text_R7Nt93": {
+      "settings": {},
+      "blocks": {
+        "text_bfUxtr": {
+          "settings": {
+            "text": "<h4><strong>Rustic Strength</strong> was born from a personal health crisis: </h4><p>Our infant son developed severe, unexplained sensitivities and anaphylactic reactions, leading to a desperate search for answers and a radical home overhaul. </p><p>Simultaneously, Alicia's own health issues prompted an investigation into harmful chemicals in everyday products. Frustrated by the lack of safe options, they began experimenting, creating their own laundry detergent.</p><p>What started as a personal journey to protect our family’s health has grown into a mission to help other businesses offer safer, more sustainable choices to their customers. </p><p>Through <strong>Rustic Strength</strong>, we’ve taken the lessons learned from battling hidden chemicals and created <em>high-purity</em>, <em>refillable</em> products that are both <em>worry-free</em> and <em>effective</em>. </p><p>By partnering with us, businesses gain the ability to provide <strong>healthy living solutions</strong> while also embracing <strong>bulk refills</strong> that reduce packaging waste and strengthen <strong>customer loyalty</strong>. Together, we can be at the forefront of the refill revolution—empowering communities, protecting the planet, and setting a new standard for how wellness products are made, shared, and refilled.<br/><br/></p><p>– The Adamson Family</p>"
+          }
+        }
+      }
+    }
+  }
+}

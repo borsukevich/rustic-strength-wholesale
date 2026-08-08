@@ -1,0 +1,51 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "product.json",
+  "context": {
+    "market": "all-b2b"
+  },
+  "sections": {
+    "17558758191cf7e968": {
+      "type": "apps",
+      "disabled": false,
+      "settings": {
+        "include_margins": true
+      },
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_Qqy8U": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "disabled": false,
+          "settings": {
+            "enabled": true,
+            "id": "110071",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_Qqy8U"
+      ]
+    },
+    "related-products": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    }
+  },
+  "order": [
+    "main",
+    "quick-order-list",
+    "17558758191cf7e968",
+    "related-products",
+    "1754511058878b6d45"
+  ]
+}

@@ -1,0 +1,586 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_6Aniwh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_efkEq6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welcome to Rustic Strength Wholesale",
+            "heading_size": "h1"
+          }
+        },
+        "text_hpwjgy": {
+          "type": "text",
+          "settings": {
+            "text": "<h4><br/>Welcome to our wholesale partner website! We’re excited to have you here and look forward to supporting your business with our products. This platform is designed to make ordering, account management, and accessing resources as simple and seamless as possible.<br/><br/></h4>"
+          }
+        },
+        "button_tA3wPe": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_efkEq6",
+        "text_hpwjgy",
+        "button_tA3wPe"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_qgpcMM": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_amizJr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welcome to Rustic Strength Wholesale",
+            "heading_size": "h1"
+          }
+        },
+        "text_Kk39yf": {
+          "type": "text",
+          "settings": {
+            "text": "Welcome to our wholesale partner website! We’re excited to have you here and look forward to supporting your business with our products. This platform is designed to make ordering, account management, and accessing resources as simple and seamless as possible.",
+            "text_style": "body"
+          }
+        },
+        "buttons_J4xURA": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_amizJr",
+        "text_Kk39yf",
+        "buttons_J4xURA"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/pump_bottles_banner.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "scheme-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true,
+        "content_max_width": 800
+      }
+    },
+    "multicolumn_HPXGDK": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_43abpW": {
+          "type": "column",
+          "settings": {
+            "title": "Expert Insight",
+            "text": "<p>We formulate and manufacture all our products, so we have unmatched knowledge of our ingredients and how they work together. This means you can rely on us to solve any ingredient challenge or question to help you achieve your best possible results.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_A44bTx": {
+          "type": "column",
+          "settings": {
+            "title": "Zero-Waste Solutions",
+            "text": "<p>At Rustic Strength, we focus on everyday essentials your customers actually need—like our best-selling laundry detergent. Thanks to our pioneering Close the Loop Program, and the support of partners like you, empty containers are returned, sanitized, refilled, and reused. Together we are reducing waste and protecting our planet.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mjA3Ec": {
+          "type": "column",
+          "settings": {
+            "title": "Natural that <em>truly</em> works",
+            "text": "<p>Customers often say, <em>“I tried natural brand after natural brand, but nothing worked until Rustic Strength.”</em> Our plant- and mineral-based formulas are packed with active ingredients, never cheap fillers, and always free from harsh chemicals still found in many “eco-friendly” brands. Every product is <em>toxin-free, worry-free </em>and 100% biodegradable, septic- and greywater-safe.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_43abpW",
+        "column_A44bTx",
+        "column_mjA3Ec"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Our Promise",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Read Our Story",
+        "button_link": "shopify://blogs/company/our-story-from-sickness-to-strength",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_zHECQD": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_bKie3x": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet Franki, our helpful Ai Agent",
+            "heading_size": "h1"
+          }
+        },
+        "text_jcJVxm": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bKie3x",
+        "text_jcJVxm"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/socialmedia-chaos_0ca8b973-8f27-4695-a356-5432a791ef19.png",
+        "image_overlay_opacity": 20,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true,
+        "content_max_width": 800
+      }
+    },
+    "rich_text_GWVa7H": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_GgLDL9": {
+          "type": "caption",
+          "disabled": true,
+          "settings": {
+            "caption": "we know you'll have lots of questions",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_chyWyJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "We know you'll have lots of questions!",
+            "heading_size": "h1"
+          }
+        },
+        "text_fRgBPN": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Franki,Ai</strong> our Ai assistant, is here to help you 24/7. She can answer hundreds of your most common questions and even assist with tasks like:</p><ul><li>Canceling orders</li><li>Updating addresses</li><li>Starting a Customer Care request</li></ul><p>For the best results, please be clear and kind with your requests.</p><p></p><h3><strong>Need to Contact Us?</strong></h3><p></p><p>If your question is more complex, our team is ready to help. Please use one of the following methods:</p><p><strong>Customer Care Tickets:</strong> Start a new request using the <strong>\"Contact Us\"</strong> link at the bottom of every page or by using the form in our Help Center. We answer inquiries Monday - Friday, from 9 a.m. to 4 p.m. (excluding holidays).</p><p><strong>Wholesale Support:</strong> For our wholesale partners, please use the dedicated email: <strong>support@rusticstrengthwholesale.com</strong>.</p><p><strong>A friendly reminder:</strong> Submitting multiple tickets or contacting us through more than one channel can cause delays and lead to confusing resolutions. We appreciate your patience with our small team!</p>"
+          }
+        },
+        "button_9RTffL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Help Center",
+            "button_link": "shopify://pages/faqs",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_GgLDL9",
+        "heading_chyWyJ",
+        "text_fRgBPN",
+        "button_9RTffL"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_iVRzNM": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_YJptga": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design.png",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_jNLeh8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_TW7BPB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled_129e331e-5fd0-42c2-8e5d-dcc50570e10b.png",
+            "title": "",
+            "text": "",
+            "link_label": "Labels & Guidelines",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_LHn3nr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_EtkebT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_MzAE4B": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Untitled_580d6abd-1ae3-4e38-9bc8-b083c07a3b45.png",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_jp4pwt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blog Center",
+            "link": "shopify://pages/blog-landing-page"
+          }
+        },
+        "column_Kkf9fm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        }
+      },
+      "block_order": [
+        "column_YJptga",
+        "column_jNLeh8",
+        "column_TW7BPB",
+        "column_LHn3nr",
+        "column_EtkebT",
+        "column_MzAE4B",
+        "column_jp4pwt",
+        "column_Kkf9fm"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Merchant Tools - Resources to Help You Succeed",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_LqanGC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VPcVWJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Interested in your own brand?",
+            "heading_size": "h2"
+          }
+        },
+        "text_ENGmr7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Transform your brand with our customizable eco-friendly product lines.</p>",
+            "text_style": "body"
+          }
+        },
+        "caption_nWPUf8": {
+          "type": "caption",
+          "settings": {
+            "caption": "Our Formulations, Your Brand!",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "button_qUwh6a": {
+          "type": "button",
+          "settings": {
+            "button_label": "All Your Private Label Questions Answered",
+            "button_link": "shopify://pages/private-label-information",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VPcVWJ",
+        "text_ENGmr7",
+        "caption_nWPUf8",
+        "button_qUwh6a"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/wanderingperson_dbe4c6e9-fb9c-4c6f-b4cc-75befe171e09.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_dDWR7t": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "starter-kits-bundles",
+        "products_to_show": 15,
+        "title": "Sample Sets & Bundles",
+        "heading_size": "h2",
+        "description": "<p>Not sure where to start? We've curated these bundles to help you! </p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_MdLrqE": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hwQVwq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Customize a Sample Bundle",
+            "heading_size": "h1"
+          }
+        },
+        "text_KaEFiC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Create a Sample Bundle of the products you would most like to try!</p>"
+          }
+        },
+        "button_dnAJyL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Begin Building",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_hwQVwq",
+        "text_KaEFiC",
+        "button_dnAJyL"
+      ],
+      "disabled": true,
+      "name": "Sample Bundle link",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-13df7ca3-181d-4c91-91be-660492569192",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_xK3Cyt": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_r7Bby3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry-detergent"
+          }
+        },
+        "featured_collection_Dpz4ft": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hand-soap"
+          }
+        },
+        "featured_collection_3VnCaV": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dish-soap"
+          }
+        },
+        "featured_collection_4QckDC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "body-care"
+          }
+        },
+        "featured_collection_Dy8CFF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "household-goods"
+          }
+        },
+        "featured_collection_BewELR": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "seasonal-scents"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_r7Bby3",
+        "featured_collection_Dpz4ft",
+        "featured_collection_3VnCaV",
+        "featured_collection_4QckDC",
+        "featured_collection_Dy8CFF",
+        "featured_collection_BewELR"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop Top Categories",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_6Aniwh",
+    "image_banner_qgpcMM",
+    "multicolumn_HPXGDK",
+    "image_banner_zHECQD",
+    "rich_text_GWVa7H",
+    "multicolumn_iVRzNM",
+    "image_with_text_LqanGC",
+    "featured_collection_dDWR7t",
+    "rich_text_MdLrqE",
+    "collection_list_xK3Cyt"
+  ]
+}

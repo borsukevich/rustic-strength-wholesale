@@ -1,0 +1,152 @@
+{% doc %}
+  @prompt
+    spacer that can be customized to go with any scheme, make it visible
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-spacer-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.desktop_height }}px;
+    background-color: {{ block.settings.color_scheme.settings.background }};
+    {% if block.settings.color_scheme.settings.background_gradient != blank %}
+      background: {{ block.settings.color_scheme.settings.background_gradient }};
+    {% endif %}
+    {% if block.settings.show_border %}
+      border-top: {{ block.settings.border_thickness }}px {{ block.settings.border_style }} {{ block.settings.border_color }};
+      border-bottom: {{ block.settings.border_thickness }}px {{ block.settings.border_style }} {{ block.settings.border_color }};
+    {% endif %}
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-spacer-label-{{ ai_gen_id }} {
+    color: {{ block.settings.color_scheme.settings.text }};
+    font-size: 12px;
+    opacity: 0.6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    {% unless block.settings.show_label %}
+      display: none;
+    {% endunless %}
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-spacer-{{ ai_gen_id }} {
+      height: {{ block.settings.mobile_height }}px;
+    }
+  }
+{% endstyle %}
+
+<div
+  class="ai-spacer-{{ ai_gen_id }} color-{{ block.settings.color_scheme }}"
+  {{ block.shopify_attributes }}
+>
+  {% if block.settings.show_label %}
+    <span class="ai-spacer-label-{{ ai_gen_id }}">Spacer</span>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Spacer",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "desktop_height",
+      "min": 10,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Desktop height",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "mobile_height",
+      "min": 10,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile height",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Visibility"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_label",
+      "label": "Show spacer label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_border",
+      "label": "Show borders",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "border_thickness",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Border thickness",
+      "default": 1
+    },
+    {
+      "type": "select",
+      "id": "border_style",
+      "label": "Border style",
+      "options": [
+        {
+          "value": "solid",
+          "label": "Solid"
+        },
+        {
+          "value": "dashed",
+          "label": "Dashed"
+        },
+        {
+          "value": "dotted",
+          "label": "Dotted"
+        }
+      ],
+      "default": "solid"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Spacer"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}

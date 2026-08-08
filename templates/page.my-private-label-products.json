@@ -1,0 +1,1093 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "featured_collection_3dqA7V": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "private-label",
+        "products_to_show": 25,
+        "title": "My Custom Products",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_a6FdHY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_iFXnBE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Private Label Solutions",
+            "heading_size": "h2"
+          }
+        },
+        "text_Ja67tm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Transform your brand with our customizable eco-friendly product lines.</p>",
+            "text_style": "body"
+          }
+        },
+        "caption_zhTWyH": {
+          "type": "caption",
+          "settings": {
+            "caption": "Our Formulations, Your Brand!",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "button_wAbhxA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify://pages/private-label-information",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_iFXnBE",
+        "text_Ja67tm",
+        "caption_zhTWyH",
+        "button_wAbhxA"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/wanderingperson_dbe4c6e9-fb9c-4c6f-b4cc-75befe171e09.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_c8cmWE": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_ctqkgL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "White Label",
+            "icon": "price_tag",
+            "row_content": "<p><strong>Zero Cost</strong></p><p>You are free to purchase our products as-is and relabel them yourself. You are free to sell the products as you like under your own brand.</p><p>This includes:</p><ul><li>Ordering products, removing our label & replacing it with your own label.</li><li>Ordering bulk product and repacking it into your own containers for retail or refill applications.</li><li>You are also free to order unscented product and add your own signature scent to it.</li><li>See more information in the \"relabeling guidelines\" section.</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7jAzQU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Blank Product ( No Label )",
+            "icon": "price_tag",
+            "row_content": "<p><strong>10% fee</strong></p><p>Unlabeled, ready-to-sell inventory that you can apply your label to.</p><ul><li>Product is produced without a label affixed for a 10% fee. ($100 order would cost $110)</li><li>The fee for production of blank labeled items is waived for order quantities over 500 items or for repeat orders totaling over 1,000 items over the span of 3 months ( min. 250 units per order )</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ygUiRR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Custom-Labeled Products",
+            "icon": "price_tag",
+            "row_content": "<p><strong>$100 Set up fee + 20%</strong></p><p>Ready-to-sell items shipped with your brand's label affixed.</p><ul><li>The initial $100 set up fee is to test the provided label and make sure it works within our printing process. If more development is needed, additional charges may apply. <em>This fee is waived if pre-printed labels are provided.</em></li><li>20% fee applies to each order where Custom-Labeled Products are ordered.</li><li>The fee for production of Custom Labeled items is waived for order quantities over 500 items or for repeat orders totaling over 1,000 items over the span of 3 months ( min. 250 units per order ).</li><li>Assessment is Free: We want to be able to help you get into business easily! You're more than welcome to send us an email if you have questions about an idea you have. </li></ul><p><em>At this time, our team will not be able to help you design or execute your vision in a manner that is cost-effective. Instead, we recommend seeking out a design agency that specializes in producing multi-faceted work.</em></p><p></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_ctqkgL",
+        "collapsible_row_7jAzQU",
+        "collapsible_row_ygUiRR"
+      ],
+      "disabled": true,
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Label Customization",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "section",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_R4KdDA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GWDncn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rustic Strength's Relabeling Guidelines",
+            "heading_size": "h1"
+          }
+        },
+        "text_p64V3V": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This guide is to help explain our White Label and Private Label programs.</p>"
+          }
+        },
+        "button_UUQxrY": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_GWDncn",
+        "text_p64V3V",
+        "button_UUQxrY"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-13df7ca3-181d-4c91-91be-660492569192",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "image_with_text_agEJmf": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VDyREi": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Requesting Additional Labels</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_jEziip": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are happy to provide you with additional labels for your order. When requested, we will include them when shipping any order so that you can label additional display containers in your store. Feel free to attach these labels to any display container, even if they are not our original vessels!</p><p>We do not provide labels for your Retail bottles or customer bottles. Please see our downloadable labels for printing.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_pbrCTC": {
+          "type": "button",
+          "settings": {
+            "button_label": "Downloadable Labels",
+            "button_link": "shopify://pages/downloadable-assets",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VDyREi",
+        "text_jEziip",
+        "button_pbrCTC"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/RS_refillery_banner.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-13df7ca3-181d-4c91-91be-660492569192",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_3K4fYD": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_ifXA4U": {
+          "type": "caption",
+          "settings": {
+            "caption": "A Guide for Wholesale Customers: Using the Rustic Strength Brand",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_zJUjhE": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Rustic Strength's Relabeling Guidelines</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_fYNRnd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The logo, images, and design work used in our labels is proprietary and trademarked. It is our intellectual property into which we have invested a significant amount of time, money, and creative effort to produce.</p><p>To ensure a consistent and authentic representation of the Rustic Strength brand, we ask our wholesale partners to adhere to the following guidelines when using our logo, labels, and other brand assets.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "caption_ifXA4U",
+        "heading_zJUjhE",
+        "text_fYNRnd"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_7qqxDR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_k7pB9G": {
+          "type": "heading",
+          "settings": {
+            "heading": "Creating your own labels using our content:",
+            "heading_size": "h2"
+          }
+        },
+        "text_AFBUbF": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_wf4nh6": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_k7pB9G",
+        "text_AFBUbF",
+        "button_wf4nh6"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "multirow_WF3J4E": {
+      "type": "multirow",
+      "blocks": {
+        "row_PMX4X9": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/RS_refillery_banner.jpg",
+            "caption": "1.",
+            "heading": "Understand Our Mission and Values",
+            "text": "<p>Before applying our branding, it's helpful to understand what drives us. This will help you represent Rustic Strength in a way that is true to its identity.</p><p><strong>Our Mission:</strong> We aim to offer safe, non-toxic household and personal care products that protect your health, the planet, and the people who make them.</p><p><strong>Our Core Values:</strong></p><ul><li>Radical Transparency</li><li>Sustainability Over Waste</li><li>Human + Earth Friendly Ingredients</li><li>Bold Simplicity</li><li>Family-Owned Authenticity</li></ul><p><strong>Our Voice:</strong> When you write about Rustic Strength, aim for a tone that is Honest & Empowering, Educated & Well-versed, and Friendly & Approachable.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_ANMQRV": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/760_refill_RS_42d83ee5-ab1b-4c1f-a5d7-8bb21e200d8d.jpg",
+            "caption": "2.",
+            "heading": "How to Use Our Logo",
+            "text": "<p>Proper logo usage is key to brand recognition. Please follow these simple rules.</p><p><strong>Sizing:</strong></p><ul><li>For print materials, the logo must have a minimum width of 1 inch.</li><li>For digital platforms (websites, social media), the logo must have a minimum width of 150 pixels.</li></ul><p><strong>Clear Space:</strong> To ensure its visibility and impact, always maintain a clear space around the logo that is at least the height of the \"X\" in the design.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_qPYadi": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/tall_bottles_a9b0c2b0-2bf6-48a7-9f79-8079ab66965a.jpg",
+            "caption": "3.",
+            "heading": "How NOT to Use Our Logo",
+            "text": "<p>To protect the integrity of our brand, please avoid the following:</p><ul><li><strong>Do not stretch or distort the logo.</strong></li><li><strong>Do not change the logo's colors.</strong> Only use the colors from the approved brand palette.</li><li><strong>Do not place the logo on a busy background</strong> without enough contrast for it to be read clearly. </li></ul><p></p><p>If you would like to sell our product under our brand name but using a different label format, please transfer the elements over as information text only. For example, instead of our logo just type out “Rustic Strength” and instead of the graphics just type “Lavender Hand Soap”. We recommend avoiding bold colors and sticking to neutral, desaturate, or understated color schemes for this set up.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_PMX4X9",
+        "row_ANMQRV",
+        "row_qPYadi"
+      ],
+      "disabled": true,
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "small",
+        "desktop_image_width": "small",
+        "image_layout": "align-right",
+        "heading_size": "h2",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "row_color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_Qgpbgq": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_fbeTCd": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Creating your own labels using our content</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_HByxqA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The logo, images, and design work used in our labels is proprietary and trademarked. It is our intellectual property into which we have invested a significant amount of time, money, and creative effort to produce.</p><h3><strong>A Guide for Wholesale Customers: Using the Rustic Strength Brand</strong></h3><p></p><p>To ensure a consistent and authentic representation of the Rustic Strength brand, we ask our wholesale partners to adhere to the following guidelines when using our logo, labels, and other brand assets.</p><p></p><h4><strong> 1: Understand Our Mission and Values</strong></h4><p></p><p>Before applying our branding, it's helpful to understand what drives us. This will help you represent Rustic Strength in a way that is true to its identity.</p><p><strong>Our Mission:</strong> We aim to offer safe, non-toxic household and personal care products that protect your health, the planet, and the people who make them.</p><p><strong>Our Core Values:</strong></p><ul><li>Radical Transparency</li><li>Sustainability Over Waste</li><li>Human + Earth Friendly Ingredients</li><li>Bold Simplicity</li><li>Family-Owned Authenticity</li></ul><p><strong>Our Voice:</strong> When you write about Rustic Strength, aim for a tone that is Honest & Empowering, Educated & Well-versed, and Friendly & Approachable.</p><h4><strong> 2: How to Use Our Logo</strong></h4><p>Proper logo usage is key to brand recognition. Please follow these simple rules.</p><p><strong>Sizing:</strong></p><ul><li>For print materials, the logo must have a minimum width of 1 inch.</li><li>For digital platforms (websites, social media), the logo must have a minimum width of 150 pixels.</li></ul><p><strong>Clear Space:</strong> To ensure its visibility and impact, always maintain a clear space around the logo that is at least the height of the \"X\" in the design.</p><p></p><h4><strong>3: How NOT to Use Our Logo</strong></h4><p></p><p>To protect the integrity of our brand, please avoid the following:</p><ul><li><strong>Do not stretch or distort the logo.</strong></li><li><strong>Do not change the logo's colors.</strong> Only use the colors from the approved brand palette.</li><li><strong>Do not place the logo on a busy background</strong> without enough contrast for it to be read clearly. </li></ul><p></p><p>If you would like to sell our product under our brand name but using a different label format, please transfer the elements over as information text only. For example, instead of our logo just type out “Rustic Strength” and instead of the graphics just type “Lavender Hand Soap”. We recommend avoiding bold colors and sticking to neutral, desaturate, or understated color schemes for this set up.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_766xgq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Rustic Strength Logo Download",
+            "button_link": "https://drive.google.com/file/d/1otLgIdpWziobLo1pWqoAztoOlu2Gk6mz/view?usp=drive_link",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fbeTCd",
+        "text_HByxqA",
+        "button_766xgq"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/tall_bottles.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-13df7ca3-181d-4c91-91be-660492569192",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_r7mRjH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JX7CXn": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_dRwVXw": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_yeRpAr": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JX7CXn",
+        "text_dRwVXw",
+        "button_yeRpAr"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 8,
+        "padding_bottom": 20
+      }
+    },
+    "image_with_text_ajnedc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_gTmARX": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Creating your own brand</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_KaKG9D": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We ask that you respect the work put into our brand by NOT making any modifications to our labels. If you are in the process of designing a label used to sell our products, please do not reuse any element of our original labels, including the logo. If you have a specific creative direction in mind that significantly deviates from ours, we recommend fully following it through and creating your own brand name and logo to accompany it.</p><p>If our name is not associated with the products we sell you (meaning you are selling them under your own brand and company) you have complete freedom of design. This is your business, and as long as the Rustic Strength brand name is not mentioned you can create any design you please! </p><p>The manufacturer information would simply need to state, “manufactured for MyNewBusiness”. </p><p>You can learn more about the legal requirements of cosmetic labeling here: <br/><br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_bDkqd9": {
+          "type": "button",
+          "settings": {
+            "button_label": "FDA Label Requirements",
+            "button_link": "https://www.fda.gov/cosmetics/cosmetics-labeling-regulations/cosmetics-labeling-guide",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gTmARX",
+        "text_KaKG9D",
+        "button_bDkqd9"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Long_banner.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-13df7ca3-181d-4c91-91be-660492569192",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_3mExg9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CzeLmA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Can you design labels for me?",
+            "heading_size": "h2"
+          }
+        },
+        "text_YBwCdm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our branding team's sole focus is to produce work that fits our brand's vision. All creative output is done in our specialized style, with no deviation. We will not be able to help you execute your unique vision in a manner that is cost effective. Instead, we recommend seeking out a design agency that specializes in producing multi-faceted work.</p>"
+          }
+        },
+        "button_3tCTGf": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_CzeLmA",
+        "text_YBwCdm",
+        "button_3tCTGf"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-13df7ca3-181d-4c91-91be-660492569192",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_8eQaNU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_BAUVDt": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_8m7aBc": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_4rPdqL": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_BAUVDt",
+        "text_8m7aBc",
+        "button_4rPdqL"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-13df7ca3-181d-4c91-91be-660492569192",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "collapsible_content_wUre8J": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_DP9xGK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Combine 2 Available Scents",
+            "icon": "leaf",
+            "row_content": "<p>Included with all of our <a href=\"/collections/custom-scent\" title=\"Custom Scent\">Custom Scent </a>product options.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_yGbjtx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Adding Your Custom Scent",
+            "icon": "leaf",
+            "row_content": "<p><strong>Add scents yourself:</strong></p><p><strong>$0 additional cost - </strong>Purchase our Unscented formula and add your own fragrance. </p><p>Each Fragrance or Essential Oil will react differently with our formulas. Some may thin, and some may thicken. It is recommended to start with small tests of about 4 oz to ensure that you get the scent strength and consistency you are looking for.</p><p><strong>Let Rustic Strength produce your scented product:</strong></p><p><strong>$250+</strong></p><p>Send us your fragrance. We will put the scent into products of your choice and send you a sample to test.</p><ul><li>Putting a fragrance in a product does not guarantee it will work. Additional development may be required ( see below options )</li><li>Ordering is simple, you will be able to check out from our wholesale website and purchase your custom item. Please note this process can take up to 30 days.</li><li><em>Making additional changes after samples are received ( such as changing the scent load ) incurs an additional $250 per 3 items, per change.</em></li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_FmhedJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Create a Custom Scent",
+            "icon": "leaf",
+            "row_content": "<p><strong>$500 +</strong></p><p>Send us your favorite scent and we will replicate it! These fees are inclusive of sending a sample in the product that you choose.</p><ul><li><em>While we can guarantee a close replication of the scent itself, we cannot change the laws of chemistry:</em></li><li><em>Not all fragrances are guaranteed to work within all products.</em></li><li><em>Not all fragrances in a product smell exactly the same as they do in a bottle.</em></li><li><em>Not all fragrances may smell strongly in a product.</em></li><li><em>We do not know in advance whether or not the fragrance you chose will have or not have any of these problems.</em></li><li><em>Additional modifications to the scent will be billed at the hourly rate of $400, in some cases a flat $500 fee may be offered.</em></li></ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_DP9xGK",
+        "collapsible_row_yGbjtx",
+        "collapsible_row_FmhedJ"
+      ],
+      "disabled": true,
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Scent Customization",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "section",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_kT97p4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CYWhUi": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_Jy8QWE": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_HzkfeJ": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_CYWhUi",
+        "text_Jy8QWE",
+        "button_HzkfeJ"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-13df7ca3-181d-4c91-91be-660492569192",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "collapsible_content_xXMGyQ": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_aR3wnf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Making Formula Changes",
+            "icon": "washing",
+            "row_content": "<p><strong>$2,000 +</strong></p><p>$2,000 minimum spend, + $400/ hour ( Non-inclusive of material costs )</p><p><em>Example: Jane's Soaps wants to use Rustic Strength Body Wash but add aloe and make it foamier</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9JQNGD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Manufacturing Your Formula",
+            "icon": "washing",
+            "row_content": "<p><strong>$2,000 + | Free Evaluation</strong></p><p>Send us your existing product formula. We will manufacture it on your behalf in our facility. </p><ul><li>Beginning production & any development work begins at: $2,000 minimum spend, + $400/ hour</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_N7hkfm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Custom Product Development",
+            "icon": "washing",
+            "row_content": "<p><strong>$50,000 +</strong></p><p>Develop a new product from scratch</p><ul><li>$50,000 minimum spend, + $400/ hour ( Non-inclusive of material/ sample/ shipping costs )</li></ul><p><em>Example: Jane's Soaps wants to make their own Body Wash, preferably using a mixture of ingredients X, Y & Z</em></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_aR3wnf",
+        "collapsible_row_9JQNGD",
+        "collapsible_row_N7hkfm"
+      ],
+      "disabled": true,
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Formula Customization",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "section",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_EtBV83": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qeKAt9": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_wm3EVk": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_AqwDWW": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qeKAt9",
+        "text_wm3EVk",
+        "button_AqwDWW"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-13df7ca3-181d-4c91-91be-660492569192",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "multicolumn_4FzX7b": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RaGENh": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design.png",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_WXaBFp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Untitled_580d6abd-1ae3-4e38-9bc8-b083c07a3b45.png",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_yRErDy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        },
+        "column_a87UgJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_dkKBFX": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled_129e331e-5fd0-42c2-8e5d-dcc50570e10b.png",
+            "title": "",
+            "text": "",
+            "link_label": "Private Label Information",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_hpWa7d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_yy8G3K": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_VePhkr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blog Center",
+            "link": "shopify://pages/blog-landing-page"
+          }
+        }
+      },
+      "block_order": [
+        "column_RaGENh",
+        "column_WXaBFp",
+        "column_yRErDy",
+        "column_a87UgJ",
+        "column_dkKBFX",
+        "column_hpWa7d",
+        "column_yy8G3K",
+        "column_VePhkr"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_6PBUDi": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_gCzT6q": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/pump_bottles_banner.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_Ye6pUK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CTL_banner_2.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_W7Pnk4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/label_pile.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_mcJ8Dn": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Long_banner.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Private Label Information",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_yeawiX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rewards_laundry_line.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_TwHiJk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/RS_refillery_banner.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_Bn98at": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/pricing_tool_banner.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        }
+      },
+      "block_order": [
+        "column_gCzT6q",
+        "column_Ye6pUK",
+        "column_W7Pnk4",
+        "column_mcJ8Dn",
+        "column_yeawiX",
+        "column_TwHiJk",
+        "column_Bn98at"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "More Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_collection_3dqA7V",
+    "image_with_text_a6FdHY",
+    "collapsible_content_c8cmWE",
+    "rich_text_R4KdDA",
+    "image_with_text_agEJmf",
+    "rich_text_3K4fYD",
+    "rich_text_7qqxDR",
+    "multirow_WF3J4E",
+    "image_with_text_Qgpbgq",
+    "rich_text_r7mRjH",
+    "image_with_text_ajnedc",
+    "rich_text_3mExg9",
+    "rich_text_8eQaNU",
+    "collapsible_content_wUre8J",
+    "rich_text_kT97p4",
+    "collapsible_content_xXMGyQ",
+    "rich_text_EtBV83",
+    "multicolumn_4FzX7b",
+    "multicolumn_6PBUDi"
+  ]
+}

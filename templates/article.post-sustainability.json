@@ -1,0 +1,173 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "small"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": false,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "content",
+        "share"
+      ],
+      "settings": {}
+    },
+    "featured_blog_MLzPem": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "blog": "our-packaging",
+        "post_limit": 3,
+        "heading": "Related Articles",
+        "heading_size": "h2",
+        "columns_desktop": 3,
+        "show_view_all": true,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_9DRe6i": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JTjfYR": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Sustainability.jpg",
+            "title": "Our Sustainability",
+            "text": "",
+            "link_label": "Get Circular",
+            "link": "shopify://blogs/our-packaging"
+          }
+        },
+        "column_JEqkUf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_Flat_2-D_editorial_illustration_New-Yorker_styl_961f6b7d-8411-49cf-bcae-a53ace2ff789.png",
+            "title": "Tips + Guides",
+            "text": "",
+            "link_label": "Clean Smart",
+            "link": "shopify://blogs/tips-tricks"
+          }
+        },
+        "column_BWixT8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/wanderingperson_dbe4c6e9-fb9c-4c6f-b4cc-75befe171e09.png",
+            "title": "The Toxic Truth",
+            "text": "",
+            "link_label": "Deep Dive",
+            "link": "shopify://blogs/news"
+          }
+        },
+        "column_4pggFw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Our_Story_Cover.jpg",
+            "title": "Our Story",
+            "text": "",
+            "link_label": "Sickness to Strength",
+            "link": "shopify://blogs/company"
+          }
+        },
+        "column_GPAcAx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_modern_2-D_editorial_illustration--sleek_lab__3_7e6af2cf-c2c7-456d-a2d9-fdfa1c76a3f6.png",
+            "title": "Ingredients We Use",
+            "text": "",
+            "link_label": "Learn why",
+            "link": "shopify://blogs/ingredients-we-stand-by"
+          }
+        },
+        "column_ygrA4K": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/avoid.jpg",
+            "title": "Ingredients We Avoid",
+            "text": "",
+            "link_label": "Avoid Toxins",
+            "link": "shopify://blogs/you-will-never-find-these-in-our-products"
+          }
+        },
+        "column_eaxzj9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_Editorial_illustration_of_person_replacing_ch_2_08ad338b-c25a-42d3-93dd-2c0c80739cec.png",
+            "title": "Product Insights",
+            "text": "",
+            "link_label": "Expert Advice",
+            "link": "shopify://blogs/soap"
+          }
+        }
+      },
+      "block_order": [
+        "column_JTjfYR",
+        "column_JEqkUf",
+        "column_BWixT8",
+        "column_4pggFw",
+        "column_GPAcAx",
+        "column_ygrA4K",
+        "column_eaxzj9"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Blog Menu",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "circle",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_blog_MLzPem",
+    "multicolumn_9DRe6i"
+  ]
+}

@@ -1,0 +1,641 @@
+{%- style -%}
+  [data-section-id="{{ section.id }}"] {
+    padding-top: calc(var(--section-pt-mb) * 1px) !important;
+    padding-bottom: calc(var(--section-pb-mb) * 1px) !important;
+  }
+
+  @media screen and (min-width: 750px) {
+    [data-section-id="{{ section.id }}"] {
+      padding-top: calc(var(--section-pt) * 1px) !important;
+      padding-bottom: calc(var(--section-pb) * 1px) !important;
+    }
+  }
+
+  .lab-results__wrapper {
+    margin: 0 auto;
+    --color-text: var(--color-foreground);
+    --color-heading: var(--color-foreground);
+    --color-border: var(--color-foreground);
+    --color-success: 138, 149, 112;
+    --border-radius: 10px;
+  }
+
+  .lab-results__product-block {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+  }
+
+  .lab-results__product-block.is-refreshing {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+  }
+
+  .lab-results__product-block:not(:first-of-type) {
+    margin-top: 5rem;
+  }
+
+  .lab-results__header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .lab-results__heading {
+    margin: 0;
+    color: rgb(var(--color-heading));
+  }
+
+  .lab-results__scope-note {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 1.5rem auto 0 auto;
+    color: rgba(var(--color-text), 0.85);
+  }
+
+  .lab-results__grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 3rem;
+    margin-top: 3.5rem;
+    margin-bottom: 4rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .lab-results__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    .lab-results__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .lab-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-text));
+    border: 1px solid rgba(var(--color-border), 0.6);
+    border-radius: var(--border-radius);
+    padding: 3rem;
+    box-shadow: 0 4px 12px rgba(var(--color-shadow), 0.03);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 767px) {
+    .lab-card {
+      padding: 2.5rem;
+    }
+  }
+
+  .lab-card > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .lab-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(var(--color-shadow), 0.08);
+  }
+
+  .lab-card__header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .lab-card__category {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: rgb(var(--color-heading));
+    line-height: 1.2;
+  }
+
+  .lab-card__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  .lab-card__icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    flex-shrink: 0;
+  }
+
+  .lab-card__icon-wrapper svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .lab-card__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 9999px;
+    background-color: rgba(var(--color-success), 0.08);
+    color: rgb(var(--color-success));
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .lab-card__statement {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 0 2rem 0;
+    color: rgb(var(--color-text));
+  }
+
+  .lab-card__sensitivity {
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-size: 1.25rem;
+    background-color: rgba(var(--color-text), 0.04);
+    color: rgb(var(--color-text));
+    padding: 1.2rem 1.6rem;
+    border-radius: var(--border-radius);
+    border-left: 3px solid rgb(var(--color-text));
+    margin: 0 0 2rem 0;
+    word-break: break-all;
+  }
+
+  .lab-card__why-we-test {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 0 0 2rem 0;
+    color: rgb(var(--color-text));
+  }
+
+  .lab-card__why-we-test strong {
+    font-weight: 700;
+    color: rgb(var(--color-heading));
+  }
+
+  .lab-card__details {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: rgba(var(--color-text), 0.7);
+    margin: auto 0 2.5rem 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(var(--color-border), 0.4);
+  }
+
+  .lab-card__download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: underline;
+    color: rgb(var(--color-link));
+    width: fit-content;
+    transition: color 0.2s ease;
+  }
+
+  .lab-card__download:hover {
+    color: rgba(var(--color-link), 0.8);
+  }
+
+  .lab-card__download svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+  }
+
+  .lab-card__download:hover svg {
+    transform: translateX(3px);
+  }
+
+  .lab-results__cta-wrapper {
+    text-align: center;
+    margin-top: 3.5rem;
+  }
+
+  .lab-results__cta-wrapper .button--primary {
+    min-width: 240px;
+  }
+
+  .lab-results-filters {
+    margin-bottom: 4rem;
+  }
+
+  .lab-results-filters.scrolling-area {
+    --gutter-x: var(--bs-gutter-x, 1.5rem);
+    margin-left: calc(var(--gutter-x) * -1);
+    margin-right: calc(var(--gutter-x) * -1);
+  }
+
+  .lab-results-filters .scrolling-area__content {
+    --gutter-x: var(--bs-gutter-x, 1.5rem);
+    padding-left: var(--gutter-x);
+    padding-right: var(--gutter-x);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .lab-results-filters.scrolling-area {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .lab-results-filters .scrolling-area__content {
+      padding-left: 0;
+      padding-right: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow-x: visible;
+    }
+  }
+
+  .lab-results-filters button {
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    flex-shrink: 0;
+  }
+{%- endstyle -%}
+
+<div
+  class="{% render 'section-classes', section %}"
+  style="{% render 'section-style', section %}"
+  data-section-id="{{ section.id }}"
+>
+  <div class="page-width relative">
+    <div class="lab-results__wrapper">
+      {%- if section.blocks.size >= 2 -%}
+        <div class="lab-results-filters scrolling-area block mb-50">
+          <div class="scrolling-area__content" role="tablist">
+            <button
+              type="button"
+              class="button button--primary is-active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All products
+            </button>
+
+            {%- for block in section.blocks -%}
+              {%- if block.settings.product_line_name != blank -%}
+                <button
+                  type="button"
+                  class="button button--secondary"
+                  data-filter="{{ block.settings.product_line_name | handleize }}-{{ forloop.index }}"
+                  aria-pressed="false"
+                >
+                  {{ block.settings.product_line_name | escape }}
+                </button>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+
+      {%- for block in section.blocks -%}
+        <div
+          class="lab-results__product-block mb-60"
+          data-product="{{ block.settings.product_line_name | handleize }}-{{ forloop.index }}"
+          {{ block.shopify_attributes }}
+        >
+          <div class="lab-results__header">
+            <h2 class="lab-results__heading h2{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+              {{ block.settings.product_line_name | escape }}
+            </h2>
+            {%- if block.settings.scope_note != blank -%}
+              <p class="lab-results__scope-note{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+                {{ block.settings.scope_note | escape }}
+              </p>
+            {%- endif -%}
+          </div>
+
+          {%- if block.settings.card_list != blank -%}
+            <div class="lab-results__grid">
+              {%- for card in block.settings.card_list -%}
+                {%- if card != blank -%}
+                  <div
+                    class="lab-card{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} color-{{ section.settings.card_color_scheme }}"
+                    {% if settings.animations_reveal_on_scroll %}
+                      data-cascade
+                      style="--animation-order: {{ forloop.index }};{% if section.settings.card_background_color != 'rgba(0,0,0,0)' and section.settings.card_background_color != blank %} background-color: {{ section.settings.card_background_color }};{% endif %}"
+                    {% else %}
+                      {% if section.settings.card_background_color != 'rgba(0,0,0,0)'
+                        and section.settings.card_background_color != blank
+                      -%}
+                        style="background-color: {{ section.settings.card_background_color }};"
+                      {%- endif %}
+                    {% endif %}
+                  >
+                    <div class="lab-card__header-row">
+                      <h3 class="lab-card__category">
+                        {%- if card.svg_icon.value != blank -%}
+                          {%- if card.svg_icon.value.src != blank or card.svg_icon.value.url != blank -%}
+                            <img
+                              src="{{ card.svg_icon.value | image_url: width: 48 }}"
+                              alt=""
+                              class="lab-card__icon"
+                              loading="lazy"
+                            >
+                          {%- else -%}
+                            {%- if card.svg_icon.value contains '<svg' -%}
+                              <span class="lab-card__icon-wrapper">{{ card.svg_icon.value }}</span>
+                            {%- else -%}
+                              {%- render 'icon',
+                                icon: card.svg_icon.value,
+                                class: 'lab-card__icon',
+                                width: 24,
+                                height: 24
+                              -%}
+                            {%- endif -%}
+                          {%- endif -%}
+                        {%- endif -%}
+                        <span>{{ card.category.value }}</span>
+                      </h3>
+                      <span class="lab-card__badge">None detected</span>
+                    </div>
+
+                    <p class="lab-card__statement">{{ card.result_statement.value }}</p>
+
+                    {%- if card.detection_sensitivity.value != blank -%}
+                      <div class="lab-card__sensitivity">
+                        {{ card.detection_sensitivity.value }}
+                      </div>
+                    {%- endif -%}
+
+                    {%- if card.why_we_test.value != blank -%}
+                      <p class="lab-card__why-we-test"><strong>Why we test:</strong> {{ card.why_we_test.value }}</p>
+                    {%- endif -%}
+
+                    {%- if card.lab_details.value != blank -%}
+                      <p class="lab-card__details">{{ card.lab_details.value }}</p>
+                    {%- endif -%}
+
+                    {%- if card.report_pdf.value.url != blank -%}
+                      <a
+                        href="{{ card.report_pdf.value.url }}"
+                        class="lab-card__download"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        Download report
+                        {{- 'icon-arrow.svg' | inline_asset_content -}}
+                      </a>
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+
+          {%- if block.settings.shop_link != blank -%}
+            <div class="lab-results__cta-wrapper">
+              <a
+                href="{{ block.settings.shop_link }}"
+                class="button button--primary"
+              >
+                {%- if block.settings.shop_link_label != blank -%}
+                  {{- block.settings.shop_link_label | escape -}}
+                {%- else -%}
+                  Shop the {{ block.settings.product_line_name | escape }} line
+                {%- endif -%}
+              </a>
+            </div>
+          {%- endif -%}
+
+          {%- if block.settings.card_list != blank -%}
+            <script type="application/ld+json">
+              {
+                "@context": "https://schema.org/",
+                "@type": "Product",
+                "name": {{ block.settings.product_line_name | json }},
+                "additionalProperty": [
+                  {%- assign first_prop = true -%}
+                  {%- for card in block.settings.card_list -%}
+                    {%- if card != blank -%}
+                      {%- unless first_prop -%},{%- endunless -%}
+                      {%- assign first_prop = false -%}
+                      {
+                        "@type": "PropertyValue",
+                        "name": {{ card.category.value | json }},
+                        "value": "None detected",
+                        "description": {{ card.result_statement.value | append: " (Sensitivity: " | append: card.detection_sensitivity.value | append: ")" | json }}
+                      }
+                    {%- endif -%}
+                  {%- endfor -%}
+                ]
+              }
+            </script>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const section = document.getElementById('shopify-section-{{ section.id }}');
+    if (!section) return;
+
+    const chips = section.querySelectorAll('.lab-results-filters button');
+    const products = section.querySelectorAll('.lab-results__product-block');
+
+    chips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        chips.forEach((c) => {
+          c.classList.remove('is-active', 'button--primary');
+          c.classList.add('button--secondary');
+          c.setAttribute('aria-pressed', 'false');
+        });
+
+        chip.classList.add('is-active', 'button--primary');
+        chip.classList.remove('button--secondary');
+        chip.setAttribute('aria-pressed', 'true');
+
+        const filterValue = chip.getAttribute('data-filter');
+
+        products.forEach((prod) => {
+          if (prod.style.display !== 'none') {
+            prod.classList.add('is-refreshing');
+          }
+        });
+
+        setTimeout(() => {
+          products.forEach((prod) => {
+            const prodKey = prod.getAttribute('data-product');
+            const shouldShow = filterValue === 'all' || prodKey === filterValue;
+
+            if (shouldShow) {
+              prod.classList.add('is-refreshing');
+              prod.style.display = '';
+              void prod.offsetWidth;
+              prod.classList.remove('is-refreshing');
+            } else {
+              prod.style.display = 'none';
+              prod.classList.remove('is-refreshing');
+            }
+          });
+        }, 150);
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Lab results grid",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.overlay", "custom.general"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color_scheme",
+      "id": "card_color_scheme",
+      "label": "Card color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color",
+      "id": "card_background_color",
+      "label": "Card background color"
+    },
+    {
+      "type": "header",
+      "content": "Section settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "section_show_on_desktop",
+      "label": "Show on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "section_show_on_mobile",
+      "label": "Show on mobile",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_on_desktop",
+      "label": "Top spacing on desktop",
+      "default": 40,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_on_desktop",
+      "label": "Bottom spacing on desktop",
+      "default": 40,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_on_mobile",
+      "label": "Top spacing on mobile",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_on_mobile",
+      "label": "Bottom spacing on mobile",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "section_make_rounded",
+      "label": "Make section rounded",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product_line",
+      "name": "Product line",
+      "limit": 12,
+      "settings": [
+        {
+          "type": "text",
+          "id": "product_line_name",
+          "label": "Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "scope_note",
+          "label": "Text"
+        },
+        {
+          "type": "metaobject_list",
+          "id": "card_list",
+          "label": "Lab result cards",
+          "metaobject_type": "lab_result_card"
+        },
+        {
+          "type": "url",
+          "id": "shop_link",
+          "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "shop_link_label",
+          "label": "Link label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lab results grid"
+    }
+  ]
+}
+{% endschema %}

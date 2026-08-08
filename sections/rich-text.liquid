@@ -6,12 +6,30 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
-  @media screen and (min-width: 750px) {
+  .rich-text.content-container--full-width:after {
+    display: none !important;
+  }
+
+  @media screen and (min-width: 1550px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  {%- if section.settings.full_width_content -%}
+    .section-{{ section.id }}-padding .rich-text__blocks {
+      max-width: 100%;
+    }
+  {%- endif -%}
+
+  {%- if section.settings.hide_side_padding_mobile -%}
+    @media screen and (max-width: 749px) {
+      .section-{{ section.id }}-padding .rich-text__wrapper {
+        width: 100% !important;
+      }
+    }
+  {%- endif -%}
 {%- endstyle -%}
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
@@ -156,6 +174,18 @@
       "label": "t:sections.rich-text.settings.full_width.label"
     },
     {
+      "type": "checkbox",
+      "id": "full_width_content",
+      "default": false,
+      "label": "Make content inside full width"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_side_padding_mobile",
+      "default": false,
+      "label": "Hide side padding on mobile"
+    },
+    {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
     },
@@ -225,7 +255,7 @@
     {
       "type": "caption",
       "name": "t:sections.rich-text.blocks.caption.name",
-      "limit": 3,
+      "limit": 4,
       "settings": [
         {
           "type": "text",

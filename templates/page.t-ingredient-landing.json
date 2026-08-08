@@ -1,0 +1,454 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn_Ry9XTF": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_KmUeWX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_Editorial_illustration_of_person_replacing_ch_2_08ad338b-c25a-42d3-93dd-2c0c80739cec.png",
+            "title": "Ingredients We Use",
+            "text": "",
+            "link_label": "Read our research",
+            "link": "shopify://pages/ingredients-we-use"
+          }
+        },
+        "column_wdLzqY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_Editorial-style_2D_illustration_of_a_tired_wo_1_abb1ad87-fd58-45af-bcab-baf122909663.png",
+            "title": "Ingredients We Avoid",
+            "text": "",
+            "link_label": "Learn why",
+            "link": "shopify://pages/ingredients-we-avoid"
+          }
+        },
+        "column_j3BtKf": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_KmUeWX",
+        "column_wdLzqY",
+        "column_j3BtKf"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Ingredient Transparency",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_UPKXAn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_U6jaWa": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ingredients by Product",
+            "heading_size": "h1"
+          }
+        },
+        "text_EDTc6X": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For the most detailed information about product ingredients, visit the \"Ingredient\" dropdown menu within each product's listing.</p><p><em>Our commitment to better performance, environmental responsibility, and value means our formulas and ingredients are subject to change as we make improvements.</em></p>"
+          }
+        },
+        "button_7Ux6J7": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_U6jaWa",
+        "text_EDTc6X",
+        "button_7Ux6J7"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-fce67c10-f267-4233-a76d-748e5aca8d49",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 20
+      }
+    },
+    "collapsible_content_wG6Ytp": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_D4iDq8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Automatic Dishwasher Gel",
+            "icon": "plant",
+            "row_content": "<p>Automatic Dishwasher Gel Ingredients:</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><strong>Tetrasodium Glutamate Diacetate</strong> (plant-based cleaner)</p><p><strong>Octyl Dimethyl Amine Oxide </strong>(plant-based cleaner)</p><p><a href=\"/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" title=\"Everything You Need to Know About Citric Acid\"><strong>Citric Acid</strong></a> (earth mineral)</p><p><a href=\"/blogs/ingredients/what-is-sodium-metasilicate\" title=\"What is Sodium Metasilicate and what does it do in products?\"><strong>Sodium Metasilicate</strong></a> (earth mineral)</p><p><a href=\"/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a><strong> </strong>(safe preservative)</p><p><strong>Caprylyl Glycol</strong> (safe preservative)</p><p><a href=\"/products/lemon-orange-grapefruit-lime-essential-oil\" title=\"Lemon, Orange, Grapefruit & Lime Essential Oil Blend\"><strong>Sunburst Citrus</strong></a> Essential Oil Blend (scent)</p><p><strong>Xanthan Gum</strong> (formula stabilizer)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_D7H7CF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Avocado Lotion",
+            "icon": "plant",
+            "row_content": "<p>Lotion Ingredients:</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><a href=\"/blogs/ingredients/your-ultimate-guide-to-food-grade-cold-pressed-avocado-oil\" title=\"Your Ultimate Guide to Food Grade, Cold Pressed Avocado Oil\"><strong>Persea Gratissima (Avocado) Oil</strong> </a><br/> (cold-pressed, nutrient packed oil)</p><p><a href=\"/blogs/ingredients/what-is-cetearyl-alcohol-and-what-does-it-do-in-hair-and-skin-products\" title=\"What is Cetearyl Alcohol and what does it do in hair and skin products?\"><strong>Cetearyl Alcohol</strong></a> (gives skin soft feel)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-cetyl-alcohol-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Cetyl Alcohol and what does it do in products?\"><strong>Cetyl Alcohol</strong></a> (soft feel)</p><p><a href=\"/blogs/ingredients/what-is-cetyl-alcohol-and-what-does-it-do-in-products\" title=\"What is Cetyl Alcohol and what does it do in products?\"><strong>Stearic Acid </strong></a>(veggie-based, satiny feel)</p><p><a href=\"/blogs/ingredients/what-is-glycerin-and-what-does-it-do-in-products\" title=\"What is Glycerin and what does it do in products?\"><strong>Vegetable Glycerin (Glycerin)</strong></a> (veggie-based, moisturizes skin. USP, kosher quality.)</p><p><a href=\"/blogs/ingredients/what-is-glyceryl-stearate-and-what-does-it-do-in-products\" title=\"What is Glyceryl Stearate and what does it do in products?\"><strong>Glyceryl Stearate </strong></a>(veggie-based, moisturizer)</p><p><strong>Caprylyl Glycol,</strong><a href=\"/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong> Phenoxyethanol</strong></a> (preservatives used sparingly, prevents bacteria from growing in container) </p><p><a href=\"/blogs/ingredients/what-are-essential-oils\" title=\"What are Essential Oils?\"><strong>Essential Oils</strong></a><strong> and/or </strong><a href=\"/blogs/ingredients/what-are-fragrance-oils\" title=\"What are Fragrance Oils?\"><strong>Phthalate-Free Fragrance Oils</strong></a><strong> </strong>(scent, if scented)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_p6kT8f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Body Wash",
+            "icon": "plant",
+            "row_content": "<p>Body Wash Ingredients:</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-charcoal-filtered-deionized-water-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  (</strong>charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-cocamidopropyl-hydroxysultaine-sultaine-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Cocamidopropyl Hydroxysultaine (Sultaine) and what does it do in products?\"><strong>Cocamidopropyl Betaine</strong></a><strong> </strong>(Naturally derived from coconut and palm-free. It is an environmentally friendly and biodegradable surfactant with mild chemistry.)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-sodium-c14-16-alpha-olefin-sulfonate-aos-40-and-what-does-it-do\" target=\"_blank\" title=\"What is Sodium C14-16 Alpha Olefin Sulfonate (AOS-40) and what does it do?\"><strong>Sodium C14-16 Olefin Sulfonate</strong></a><strong> </strong>(This mild-surfactant helps grab oil, dirt, and grease. It is also derived from coconuts, palm-free and is biodegradable.)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-cocamidopropyl-hydroxysultaine-sultaine-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Cocamidopropyl Hydroxysultaine (Sultaine) and what does it do in products?\"><strong>Cocamidopropyl Hydroxysultaine</strong></a><strong> (</strong>Naturally derived from coconut, palm-free, it is a biodegradable conditioning agent for the skin with high foaming and mild chemistry.)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-coco-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Coco-Glucoside and what does it do in products?\"><strong>Coco-Glucoside</strong></a><strong> </strong>(A plant-derived, biodegradable surfactant. It is mild and safe for sensitive skin.)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-glycerin-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Glycerin and what does it do in products?\"><strong>Vegetable Glycerin (glycerin)</strong></a><strong> </strong>(Derived from vegetables. It is a biodegradable, powerful moisturizer that can increase skin hydration. Food-grade & UPP kosher.)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-sodium-gluconate-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Sodium Gluconate and what does it do in products?\"><strong>Sodium Gluconate</strong></a><strong> (</strong>A natural mineral that helps remove minerals from hard water.)</p><p><strong>Sodium Benzoate</strong> (gentle preservative)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Caprylyl Capryl Glucoside and what does it do in products?\"><strong>Caprylyl Capryl Glucoside</strong></a><strong> </strong>(A biodegradable plant-based surfactant with mild chemistry and sensitive skin compatibility.)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-food-grade-polysorbate-20-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Food-Grade Polysorbate 20 and what does it do in products?\"><strong>Polysorbate 20</strong></a><strong> </strong>(Plant-based formula stabilizer. USP, food-grade, kosher quality, containing no dioxane.)</p><p><a href=\"/blogs/ingredients-we-stand-by/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" target=\"_blank\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a><strong>, Caprylyl Glycol, Sodium Benzoate, Potassium Sorbate (</strong>Food-grade preservatives. Used sparingly to prevent bacteria growth in the container.)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Citric Acid and what does it do in products?\"><strong>Citric Acid</strong></a><strong> </strong>(Balances pH for ideal skincare.)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-are-essential-oils\" target=\"_blank\" title=\"What are Essential Oils?\"><strong>Essential Oils</strong></a> and/or <a href=\"/blogs/tips-tricks/why-we-scent-safely-and-how-to-boost-your-laundrys-smell\" target=\"_blank\" title=\"Why We Scent Safely and How To Boost Your Laundry's Smell\"><strong>Phthalate-Free Fragrance Oil</strong></a> (Scent, if scented)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LEdGfR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Bubble Bath",
+            "icon": "plant",
+            "row_content": "<p>Bubble Bath Ingredients:</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-charcoal-filtered-deionized-water-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a> (charcoal-filtered, reverse osmosis, UV-treated water)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-sodium-c14-16-alpha-olefin-sulfonate-aos-40-and-what-does-it-do\" target=\"_blank\" title=\"What is Sodium C14-16 Alpha Olefin Sulfonate (AOS-40) and what does it do?\"><strong>Sodium C14-16 Olefin Sulfonate</strong></a> (coconut-based cleanser)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-cocamidopropyl-hydroxysultaine-sultaine-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Cocamidopropyl Hydroxysultaine (Sultaine) and what does it do in products?\"><strong>Cocamidopropyl Hydroxysultaine</strong></a> (mild coconut-based cleanser)</p><p><strong>Cocamidopropyl Betaine</strong> (coconut-based cleanser)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-coco-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Coco-Glucoside and what does it do in products?\"><strong>Coco-Glucoside</strong></a> (plant-based cleanser)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-glycerin-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Glycerin and what does it do in products?\"><strong>Vegetable Glycerin (glycerin)</strong></a> (plant-based, hydrates skin,<br/>USP kosher)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Caprylyl Capryl Glucoside and what does it do in products?\"><strong>Caprylyl Capryl Glucoside</strong></a> (plant-based cleanser)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-food-grade-polysorbate-20-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Food-Grade Polysorbate 20 and what does it do in products?\"><strong>Polyquaternium 10 (gives skin soft feel)</strong></a></p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-food-grade-polysorbate-20-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Food-Grade Polysorbate 20 and what does it do in products?\"><strong>Polysorbate 20</strong></a> (food-grade, USP kosher with no dioxane,<br/>plant-based formula stabilizer)</p><p><strong>Sodium Benzoate, Potassium Sorbate, Capryl Glycol</strong> and<br/><a href=\"/blogs/ingredients-we-stand-by/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" target=\"_blank\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a> (food-grade preservatives, used sparingly to prevent bacteria<br/>from growing in container)</p><p><strong>Cucumis Sativus Fruit Extract</strong> (Cucumber Extract, hydrates<br/>skin)</p><p><strong>DL-Panthenol</strong> (Provitamin B5, plant-based, hydrates skin)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Citric Acid and what does it do in products?\"><strong>Citric Acid </strong></a>(balances pH)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-are-essential-oils\" target=\"_blank\" title=\"What are Essential Oils?\"><strong>Essential Oil</strong></a> (scent, if scented)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qWfnhn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Castile Soap",
+            "icon": "plant",
+            "row_content": "<p>Castile Soap Ingredients</p><p>Organic Trade Association. GMO-Free. 100% biodegradable.<br/>Septic & greywater-safe</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\">Water</a></p><p><a href=\"/blogs/ingredients/what-is-coconut-oil-and-what-does-it-do-in-hair-products\" title=\"What is Coconut Oil and what does it do in hair products?\">Organic Coconut Oil</a></p><p>Organic Extra Virgin Olive Oil</p><p>Organic Castor Oil</p><p>Organic Sunflower Oil</p><p><a href=\"/blogs/ingredients/unlock-the-soothing-power-of-aloe-vera-leaf-juice-for-hair-and-skin-your-ultimate-guide\" title=\"Unlock the Soothing Power of Aloe Vera Leaf Juice for Hair and Skin: Your Ultimate Guide\">Organic Aloe</a></p><p>Potassium Hydroxide</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\">Citric Acid</a></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_m9bwaw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Coconut Conditioner",
+            "icon": "plant",
+            "row_content": "<p>Conditioner Ingredients</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-cetyl-alcohol-and-what-does-it-do-in-products\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-cetyl-alcohol-and-what-does-it-do-in-products\"><strong>Cetyl Alcohol</strong></a><strong> </strong>(softens, smooths hair)</p><p>Behentrimonium Methosulfate (plant-based detangler)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-coconut-oil-and-what-does-it-do-in-hair-products\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-coconut-oil-and-what-does-it-do-in-hair-products\"><strong>Cocos Nucifera (Coconut) Oil</strong></a><strong> </strong><br/>(moisturizes and seals)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-shea-butter-and-what-does-it-do-in-hair-products\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-shea-butter-and-what-does-it-do-in-hair-products\"><strong>Butyrospermum Parkii (Shea Butter)</strong> <strong>Fruit</strong></a><strong> </strong>(moisturizes)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-glyceryl-stearate-and-what-does-it-do-in-products\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-glyceryl-stearate-and-what-does-it-do-in-products\"><strong>Glyceryl Stearate</strong></a> (veggie-based, protective barrier. PEG-free) </p><p><a href=\"/blogs/ingredients/what-is-polysorbate-20-and-what-does-it-do-in-products\" title=\"What is Food-Grade Polysorbate 20 and what does it do in products?\"><strong>Polysorbate 20</strong></a> (plant-based formula stabilizer. USP, food-grade, kosher quality, containing no dioxane)</p><p><a href=\"/blogs/ingredients/what-is-sodium-gluconate\" target=\"_blank\" title=\"What is Sodium Gluconate and what does it do in products?\"><strong>Sodium Gluconate</strong></a><strong> </strong>(helps hydrate scalp and follicles)</p><p><a href=\"/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a><strong>, Caprylyl Glycol </strong>(preservatives used sparingly, prevents bacteria from growing in container)</p><p><a href=\"/blogs/ingredients/what-are-essential-oils\" target=\"_blank\" title=\"What are Essential Oils?\"><strong>Essential Oils</strong></a><strong> and/or </strong><a href=\"/blogs/ingredients/what-are-fragrance-oils\" target=\"_blank\" title=\"What are Fragrance Oils?\"><strong>Phthalate-Free Fragrance Oils</strong></a> (scent, if scented)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GEdyUp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Dish Soap",
+            "icon": "plant",
+            "row_content": "<p>Dish Soap Ingredients:</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-c14-16-alpha-olefin-sulfonate-aos-40-and-what-does-it-do\" target=\"_blank\" title=\"What is Sodium C14-16 Alpha Olefin Sulfonate (AOS-40) and what does it do?\"><strong>Sodium C14-C16 Olefin Sulfonate</strong></a> (This mild-surfactant helps grab oil, dirt,<br/>and grease. It is also derived from coconuts, palm-free and is  biodegradable.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-cocamidopropyl-hydroxysultaine-sultaine-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Cocamidopropyl Hydroxysultaine (Sultaine) and what does it do in products?\"><strong>Cocamidopropyl Hydroxysultaine</strong></a> (Naturally derived from coconut, palm-free, it is a biodegradable conditioning agent for the skin with high foaming and mild<br/>chemistry.)</p><p><strong>Cocamidopropyl Betaine</strong> (Naturally derived from coconut and palm-free. It is an environmentally friendly, high-foaming, and biodegradable surfactant with mild chemistry.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-coco-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Coco-Glucoside and what does it do in products?\"><strong>Coco-Glucoside</strong></a> (A plant-derived, biodegradable surfactant. It is mild and safe for sensitive skin.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-glycerin-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Glycerin and what does it do in products?\"><strong>Vegetable Glycerin</strong></a> (Derived from vegetables. It is a biodegradable,<br/>powerful moisturizer that can increase skin hydration. Food-grade &<br/>USP kosher.)</p><p><strong>Tetrasodium Glutamate Diacetate</strong> (A natural mineral that helps remove minerals from hard water.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-gluconate\" target=\"_blank\" title=\"What is Sodium Gluconate and what does it do in products?\"><strong>Sodium Gluconate</strong></a> (A natural mineral that helps remove minerals from<br/>hard water.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Caprylyl Capryl Glucoside and what does it do in products?\"><strong>Caprylyl Capryl Glucoside</strong></a> (A biodegradable plant-based surfactant with mild chemistry and sensitive skin compatibility.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-polysorbate-20-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Food-Grade Polysorbate 20 and what does it do in products?\"><strong>Polysorbate 20</strong></a> (Plant-based surfactant that helps stabilize the<br/>formula when adding essential oils or phthalate-free fragrances. <em>Biodegradable.<br/>USP kosher. Food-Grade. 100% Dioxane-free.)</em></p><p><strong>Caprylyl Glycol</strong> & <a href=\"/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a> (Safe preservatives that are used sparingly in order to prevent bacteria from growing in container.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Citric Acid and what does it do in products?\"><strong>Citric Acid</strong></a> (Balances pH)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KPBEQA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Fabric Softener",
+            "icon": "plant",
+            "row_content": "<p>Fabric Softener Ingredients:</p><p><strong>Acetic Acid</strong> (Organic vinegar, derived from sugar cane)</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_WQW3U3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Floor Cleaner Concentrate",
+            "icon": "plant",
+            "row_content": "<p>Floor Cleaner Ingredients</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><a href=\"/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products\" title=\"What is Caprylyl Capryl Glucoside and what does it do in products?\"><strong>Caprylyl Capryl Glucoside</strong></a><strong> </strong>(A biodegradable plant-based surfactant with mild chemistry and sensitive skin compatibility.)</p><p><a href=\"/blogs/ingredients/what-is-ethyl-alcohol\" target=\"_blank\" title=\"What is Ethyl Alcohol and what does it do in products?\"><strong>Alcohol (Ethyl)</strong></a><strong> </strong>(Speeds drying.)</p><p><a href=\"/blogs/ingredients/what-is-coco-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Coco-Glucoside and what does it do in products?\"><strong>Coco-Glucoside</strong></a><strong> </strong>(A plant-derived, biodegradable surfactant. It is mild and safe for sensitive skin.)</p><p><strong>Sodium Citrate </strong>(formula stabilizer)</p><p><a href=\"/blogs/ingredients/what-is-sodium-gluconate\" target=\"_blank\" title=\"What is Sodium Gluconate and what does it do in products?\"><strong>Sodium Gluconate </strong></a>(Mineral based. Helps grab and remove metals.)</p><p><strong>Caprylyl Glycol, </strong><a href=\"/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a> (preservatives used sparingly, prevents bacteria from growing in container)</p><p><a href=\"/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" title=\"What is Citric Acid and what does it do in products?\"><strong>Citric Acid</strong></a> <strong> </strong>(Plant-based. Neutralizes PH.)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-are-essential-oils\" target=\"_blank\" title=\"What are Essential Oils?\"><strong>Essential Oil</strong></a><strong> </strong>(scent, if scented)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_A6fK7D": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hand Soap",
+            "icon": "plant",
+            "row_content": "<p>Hand Soap Ingredients:</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><a href=\"/blogs/ingredients/what-is-cocamidopropyl-hydroxysultaine-sultaine-and-what-does-it-do-in-products\" title=\"What is Cocamidopropyl Hydroxysultaine (Sultaine) and what does it do in products?\"><strong>Cocamidopropyl Hydroxysultaine</strong></a><strong> </strong>(Naturally derived from coconut, palm-free, it is a biodegradable conditioning agent for the skin with high foaming and mild chemistry.)</p><p><a href=\"/blogs/ingredients/what-is-sodium-c14-16-alpha-olefin-sulfonate-aos-40-and-what-does-it-do\" title=\"What is Sodium C14-16 Alpha Olefin Sulfonate (AOS-40) and what does it do?\"><strong>Sodium C14-C16 Olefin Sulfonate</strong></a><strong> </strong>(This mild-surfactant helps grab oil, dirt, and grease. It is also derived from coconuts, palm-free and is biodegradable.)</p><p><strong>Cocamidopropyl Betaine (</strong>Naturally derived from coconut and palm-free. It is an environmentally friendly, high-foaming, and biodegradable surfactant with mild chemistry.)</p><p><a href=\"/blogs/ingredients/what-is-coco-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Coco-Glucoside and what does it do in products?\"><strong>Coco-Glucoside</strong></a><strong> </strong>(A plant-derived, biodegradable surfactant. It is mild and safe for sensitive skin.)</p><p><a href=\"/blogs/ingredients/what-is-glycerin-and-what-does-it-do-in-products\" title=\"What is Glycerin and what does it do in products?\"><strong>Vegetable Glycerin</strong></a><strong> </strong>(Derived from vegetables. It is a biodegradable, powerful moisturizer that can increase skin hydration. Food-grade & USP kosher.)</p><p><strong>Sodium Citrate (</strong>A natural mineral that helps remove minerals from hard water.)</p><p><strong>Caprylyl Glycol & </strong><a href=\"/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a><strong> </strong>(Safe preservatives that are used sparingly in order to prevent bacteria from growing in container.)</p><p><a href=\"/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products\" title=\"What is Caprylyl Capryl Glucoside and what does it do in products?\"><strong>Caprylyl Capryl Glucoside</strong></a><strong> </strong>(A biodegradable plant-based surfactant with mild chemistry and sensitive skin compatibility.)</p><p><a href=\"/blogs/ingredients/what-is-sodium-gluconate\" target=\"_blank\" title=\"What is Sodium Gluconate and what does it do in products?\"><strong>Sodium Gluconate</strong></a><strong> (</strong>A natural mineral that helps remove minerals from hard water.)</p><p><a href=\"/blogs/ingredients/what-is-polysorbate-20-and-what-does-it-do-in-products\" title=\"What is Food-Grade Polysorbate 20 and what does it do in products?\"><strong>Polysorbate 20</strong></a><strong> </strong>(Plant-based surfactant that helps stabilize the formula when adding essential oils or phthalate-free fragrances. <em>Biodegradable. USP kosher.<br/>Food-Grade. 100% Dioxane-free.)</em></p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Citric Acid and what does it do in products?\"><strong>Citric Acid</strong></a> (balances pH)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-are-essential-oils\" target=\"_blank\" title=\"What are Essential Oils?\"><strong>Essential Oil</strong></a> and/or <a href=\"/blogs/tips-tricks/why-we-scent-safely-and-how-to-boost-your-laundrys-smell\" target=\"_blank\" title=\"Why We Scent Safely and How To Boost Your Laundry's Smell\"><strong>Phthalate-Free Fragrance Oil </strong></a>(scent, if scented)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_hFMqxG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Laundry Detergent",
+            "icon": "plant",
+            "row_content": "<p>Laundry Detergent Ingredients:</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><strong>Cocamidopropyl Betaine (</strong>Naturally derived from coconut and palm-free. It is an environmentally friendly, high-foaming, and biodegradable surfactant.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-cocamidopropyl-hydroxysultaine-sultaine-and-what-does-it-do-in-products?_pos=1&_sid=72f5ba39a&_ss=r\" target=\"_blank\"><strong>Cocamidopropyl Hydroxysultaine </strong></a>(Naturally derived from coconut, palm-free, it is an environmentally friendly and biodegradable surfactant with high foaming and mild chemistry.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-c14-16-alpha-olefin-sulfonate-aos-40-and-what-does-it-do\" target=\"_blank\"><strong>Sodium C14-C16 Olefin Sulfonate </strong></a>(Derived from coconuts, palm-free, this mild-surfactant helps to lift dirt and debris from surfaces, so the water can whisk them away. Biodegradable. )</p><p><a href=\"/blogs/ingredients/what-is-coco-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Coco-Glucoside and what does it do in products?\"><strong>Coco-Glucoside </strong></a>(A plant-derived, biodegradable surfactant. It is mild and safe for sensitive skin.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-glycerin-and-what-does-it-do-in-products?_pos=1&_sid=873f11cd7&_ss=r\"><strong>Vegetable Glycerin</strong></a> (Derived from vegetables. It is biodegradable and helps the plant surfactants do their job. Food-grade & USP kosher.)</p><p><strong>Sodium Citrate (</strong>Natural mineral, helps grab onto and remove pollutants.)</p><p><strong>Caprylyl Glycol, </strong><a href=\"/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a><strong> (</strong>Safe preservatives used sparingly, prevents bacteria from growing in container.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-polysorbate-20-and-what-does-it-do-in-products?_pos=1&_sid=633b8b42f&_ss=r\" target=\"_blank\"><strong>Polysorbate 20 </strong></a>(Plant-based performance stabilizer. Helps in the spreadability of liquids and stabilizes the formula when adding essential oils and phthalate-free fragrances. <em>Biodegradable. USP kosher. Food-Grade. Dioxane-free. )</em></p><p> <a href=\"https://rusticstrength.com/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products?_pos=1&_sid=c51e07020&_ss=r\" target=\"_blank\"><strong>Caprylyl Capryl Glucoside </strong></a>(A biodegradable plant-based surfactant with mild chemistry and sensitive skin compatibility.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-dimethyl-9-decenamide-and-what-does-it-do?_pos=1&_sid=cc46b9ea9&_ss=r\" target=\"_blank\"><strong>Dimethyl 9-Decenamide </strong></a>(A plant-based, biodegradable nonionic surfactant that helps clean and removes grease and other substances.)</p><p><a href=\"/blogs/ingredients/what-is-sodium-gluconate\" target=\"_blank\" title=\"What is Sodium Gluconate and what does it do in products?\"><strong>Sodium Gluconate</strong></a><strong> (</strong>Natural mineral, helps grab onto and remove foreign contaminants.)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Citric Acid and what does it do in products?\"><strong>Citric Acid</strong></a> (balances pH)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_nwimeY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Lots of Purpose Multipurpose Cleaner",
+            "icon": "plant",
+            "row_content": "<p>Lots of Purpose Cleaner Ingredients</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><a href=\"/blogs/ingredients/what-is-ethyl-alcohol\" title=\"What is Ethyl Alcohol and what does it do in products?\"><strong>Alcohol (Ethyl)</strong></a><strong> </strong>(Speeds drying.)</p><p><a href=\"/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products\" title=\"What is Caprylyl Capryl Glucoside and what does it do in products?\"><strong>Capryl Caprylyl Glucoside</strong></a><strong> </strong>(A biodegradable plant-based surfactant with mild chemistry and sensitive skin compatibility.)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-coco-glucoside-and-what-does-it-do-in-products\" title=\"What is Coco-Glucoside and what does it do in products?\"><strong>Coco- Glucoside</strong></a><strong> </strong>(A plant-derived, biodegradable surfactant. It is mild and safe for sensitive skin.)</p><p><strong>Sodium Citrate </strong>(Mineral based. Helps grab and remove minerals.)</p><p><a href=\"/blogs/ingredients/what-is-sodium-gluconate\" title=\"What is Sodium Gluconate and what does it do in products?\"><strong>Sodium Gluconate</strong></a><strong> </strong>(Mineral based. Helps grab and remove metals.)</p><p><a href=\"/blogs/ingredients-we-stand-by/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a><strong> & Caprylyl Glycol</strong> (gentle preservatives, used sparingly to prevent bacteria growth)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-citric-acid-and-what-does-it-do-in-products\" title=\"What is Citric Acid and what does it do in products?\"><strong>Citric Acid</strong></a><strong> </strong>(neutralizes pH)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-are-essential-oils\" target=\"_blank\" title=\"What are Essential Oils?\"><strong>Essential Oil</strong></a> (scent, if scented)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_WUDNek": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Pet Conditioner",
+            "icon": "paw_print",
+            "row_content": "<p>Pet Conditioner Ingredients:</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><a href=\"/blogs/ingredients/what-is-ethyl-alcohol\" title=\"What is Ethyl Alcohol and what does it do in products?\"><strong>Alcohol (Ethyl)</strong></a><strong> </strong>(Speeds drying.)</p><p><a href=\"/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products\" title=\"What is Caprylyl Capryl Glucoside and what does it do in products?\"><strong>Capryl Caprylyl Glucoside</strong></a><strong> </strong>(A biodegradable plant-based surfactant with mild chemistry and sensitive skin compatibility.)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-coco-glucoside-and-what-does-it-do-in-products\" title=\"What is Coco-Glucoside and what does it do in products?\"><strong>Coco- Glucoside</strong></a><strong> </strong>(A plant-derived, biodegradable surfactant. It is mild and safe for sensitive skin.)</p><p><strong>Sodium Citrate </strong>(Mineral based. Helps grab and remove minerals.)</p><p><a href=\"/blogs/ingredients/what-is-sodium-gluconate\" title=\"What is Sodium Gluconate and what does it do in products?\"><strong>Sodium Gluconate</strong></a><strong> </strong>(Mineral based. Helps grab and remove metals.)</p><p><a href=\"/blogs/ingredients-we-stand-by/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a><strong> & Caprylyl Glycol</strong> (gentle preservatives, used sparingly to prevent bacteria growth)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-citric-acid-and-what-does-it-do-in-products\" title=\"What is Citric Acid and what does it do in products?\"><strong>Citric Acid</strong></a><strong> </strong>(neutralizes pH)</p><p>Scent: Pet Safe Phthalate Free Fragrance Oil</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_NHLbHz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Pet Shampoo",
+            "icon": "paw_print",
+            "row_content": "<p>Pet Shampoo Ingredients</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><a href=\"/blogs/ingredients/what-is-cocamidopropyl-hydroxysultaine-sultaine-and-what-does-it-do-in-products\" title=\"What is Cocamidopropyl Hydroxysultaine (Sultaine) and what does it do in products?\"><strong>Cocamidopropyl Hydroxysultaine</strong></a><strong> </strong>(Naturally derived from coconut, palm-free, it is a biodegradable conditioning agent for hair and skin with high foaming and mild chemistry)</p><p><a href=\"/blogs/ingredients/what-is-sodium-c14-16-alpha-olefin-sulfonate-aos-40-and-what-does-it-do\" title=\"What is Sodium C14-16 Alpha Olefin Sulfonate (AOS-40) and what does it do?\"><strong>Sodium C14-16 Olefin Sulfonate</strong></a><strong> </strong>(This mild-surfactant helps grab oil, dirt, and grease. It is also derived from coconuts, palm-free and is biodegradable)</p><p><strong>Cocamidopropyl Betaine (</strong>Naturally derived from coconut and palm-free. It is an environmentally friendly, high-foaming, and biodegradable surfactant with mild chemistry)</p><p><a href=\"/blogs/ingredients/what-is-glycerin-and-what-does-it-do-in-products\" title=\"What is Glycerin and what does it do in products?\"><strong>Vegetable Glycerin (glycerin)</strong></a><strong> </strong>(Derived from vegetables. It is biodegradable and helps the plant surfactants do their job. Food-grade & USP kosher)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-coco-glucoside-and-what-does-it-do-in-products\" title=\"What is Coco-Glucoside and what does it do in products?\"><strong>Coco- Glucoside</strong></a><strong>  </strong>(A plant-derived, biodegradable surfactant. It is mild and<br/>safe for sensitive skin)</p><p><a href=\"/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products\" title=\"What is Caprylyl Capryl Glucoside and what does it do in products?\"><strong>Caprylyl Capryl Glucoside</strong></a><strong> </strong>(A plant-based surfactant that increases lather potential with mild chemistry for sensitive skin)</p><p><a href=\"/blogs/ingredients/what-is-polysorbate-20-and-what-does-it-do-in-products\" title=\"What is Food-Grade Polysorbate 20 and what does it do in products?\"><strong>Polysorbate 20</strong></a><strong> </strong>(Plant-based surfactant that helps stabilize the formula when<br/>adding essential oils or phthalate-free fragrances. <em>Biodegradable. Kosher.<br/>Food-Grade. 100% Dioxane-free)</em></p><p><a href=\"/blogs/ingredients/what-is-sodium-chloride\" title=\"What is Sodium Chloride and what does it do in products?\"><strong>Sodium Chloride</strong></a><strong> (</strong>Salt)</p><p><strong>Sodium Benzoate & Potassium Sorbate (</strong>Food-grade preservatives that are used sparingly to prevent bacteria from growing in the container)</p><p><strong>Caprylyl Glycol & </strong><a href=\"/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a><strong> (</strong>Safe preservatives which are used sparingly to prevent bacteria from growing in container)</p><p>Scent: Pet Safe Phthalate Free Fragrance Oil</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_wwtjfU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Rinse Aid",
+            "icon": "plant",
+            "row_content": "<p>Rinse Aid Ingredients:</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-charcoal-filtered-deionized-water-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><strong>Sodium Citrate  </strong>(salt, prevents cloudiness)</p><p><strong>Octyl Dimethylamine Oxide</strong> (low-foaming surfactant to help prevent water spots)</p><p><a href=\"/blogs/ingredients-we-stand-by/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" target=\"_blank\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a> & <strong>Caprylyl Glycol (</strong>safe preservatives and stabilizers) </p><p><a href=\"/blogs/ingredients-we-stand-by/what-are-essential-oils\" target=\"_blank\" title=\"What are Essential Oils?\"><strong>Essential Oil </strong></a>(scent, if scented)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GAHxM8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Shampoo",
+            "icon": "plant",
+            "row_content": "<p>Shampoo Ingredients:</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><strong>Cocamidopropyl Bentaine (</strong>Naturally derived from coconut and palm-free. It is an environmentally friendly and biodegradable surfactant with mild chemistry.)<br/><br/><a href=\"/blogs/ingredients/what-is-cocamidopropyl-hydroxysultaine-sultaine-and-what-does-it-do-in-products\" title=\"What is Cocamidopropyl Hydroxysultaine (Sultaine) and what does it do in products?\"><strong>Cocamidopropyl Hydroxysultaine</strong></a><strong> </strong>(Naturally derived from coconut, palm-free, it is a biodegradable conditioning agent for hair and skin with high foaming and mild chemistry.)</p><p><a href=\"/blogs/ingredients/what-is-sodium-c14-16-alpha-olefin-sulfonate-aos-40-and-what-does-it-do\" title=\"What is Sodium C14-16 Alpha Olefin Sulfonate (AOS-40) and what does it do?\"><strong>Sodium C14-16 Olefin Sulfonate</strong></a><strong> </strong>(This mild-surfactant helps grab oil, dirt, and grease. It is also derived from coconuts, palm-free and is biodegradable.)</p><p><a href=\"/blogs/ingredients/what-is-glycerin-and-what-does-it-do-in-products\" title=\"What is Glycerin and what does it do in products?\"><strong>Vegetable Glycerin (glycerin)</strong></a><strong> (</strong>Derived from vegetables. It is a biodegradable, powerful moisturizer that can increase skin hydration. Food-grade & Kosher.)</p><p><a href=\"/blogs/ingredients/what-is-coco-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Coco-Glucoside and what does it do in products?\"><strong>Coco-Glucoside</strong></a><strong> </strong>(A plant-derived, biodegradable surfactant. It is mild and safe for sensitive skin.)</p><p><a href=\"/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products\" title=\"What is Caprylyl Capryl Glucoside and what does it do in products?\"><strong>Caprylyl Capryl Glucoside</strong></a><strong> </strong>(A plant-based surfactant that increases lather potential with mild chemistry for sensitive skin.)</p><p><a href=\"/blogs/ingredients/what-is-polyquaternium-7-and-what-does-it-do-in-products\" title=\"What is Polyquaternium 7 and what does it do in products?\"><strong>Polyquaternium 10</strong></a><strong> </strong>(Gives skin soft feel. Formaldehyde-free.)</p><p><a href=\"/blogs/ingredients/what-is-polysorbate-20-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Food-Grade Polysorbate 20 and what does it do in products?\"><strong>Polysorbate 20</strong></a><strong> (</strong>Plant-based formula stabilizer. USP, food-grade, kosher quality, containing no dioxane.)</p><p><a href=\"/blogs/ingredients/what-is-sodium-gluconate\" target=\"_blank\" title=\"What is Sodium Gluconate and what does it do in products?\"><strong>Sodium Gluconate </strong></a><strong>(</strong>A natural mineral that helps remove minerals from hard water.)<br/><br/><a href=\"/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a><strong>, Caprylyl Glycol, </strong><a href=\"/blogs/ingredients/what-is-sodium-benzoate\" target=\"_blank\" title=\"What is Sodium Benzoate and what does it do in products?\"><strong>Sodium Benzoate</strong></a><strong>, </strong><a href=\"/blogs/ingredients/what-is-potassium-sorbate\" target=\"_blank\" title=\"What is Potassium Sorbate and what does it do in products?\"><strong>Potassium Sorbate</strong></a><strong>  </strong>(Food-grade preservatives. Used sparingly to prevent bacteria from growing in container.)</p><p><a href=\"/blogs/ingredients/what-are-essential-oils\" target=\"_blank\" title=\"What are Essential Oils?\"><strong>Essential Oils</strong></a><strong>  </strong>and/or <a href=\"/blogs/ingredients/what-are-fragrance-oils\" target=\"_blank\" title=\"What are Fragrance Oils?\"><strong>Phthalate-Free Fragrance Oils</strong></a> (Scent, if scented)</p><p><a href=\"/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" title=\"What is Citric Acid and what does it do in products?\"><strong>Citric Acid</strong></a><strong> </strong>(Balances pH)</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_D4iDq8",
+        "collapsible_row_D7H7CF",
+        "collapsible_row_p6kT8f",
+        "collapsible_row_LEdGfR",
+        "collapsible_row_qWfnhn",
+        "collapsible_row_m9bwaw",
+        "collapsible_row_GEdyUp",
+        "collapsible_row_KPBEQA",
+        "collapsible_row_WQW3U3",
+        "collapsible_row_A6fK7D",
+        "collapsible_row_hFMqxG",
+        "collapsible_row_nwimeY",
+        "collapsible_row_WUDNek",
+        "collapsible_row_NHLbHz",
+        "collapsible_row_wwtjfU",
+        "collapsible_row_GAHxM8"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "UPDATED 4 JUNE 2026",
+        "heading": "Liquid Products",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "row",
+        "container_color_scheme": "scheme-fce67c10-f267-4233-a76d-748e5aca8d49",
+        "color_scheme": "scheme-434ca482-719d-4587-a82b-0cc063b73cf5",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "collapsible_content_QctRYU": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_EwtzGg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Automatic Dishwasher Powder",
+            "icon": "plant",
+            "row_content": "<p>Auto Dish Powder Ingredients:</p><p><a href=\"/blogs/ingredients/what-is-sodium-percarbonate\" target=\"_blank\" title=\"What is Sodium Percarbonate and what does it do in products?\"><strong>Sodium Percarbonate</strong></a><strong> </strong>(non-chlorine oxygen bleach, whitener)</p><p><a href=\"/blogs/ingredients/what-is-sodium-carbonate\" target=\"_blank\" title=\"What is Sodium Carbonate and what does it do in products?\"><strong>Sodium Carbonate</strong></a><strong> </strong>(washing soda, cleaner)</p><p><strong>Sodium Citrate</strong> (salt, prevents cloudiness)</p><p><a href=\"/blogs/ingredients/what-is-sodium-metasilicate\" target=\"_blank\" title=\"What is Sodium Metasilicate and what does it do in products?\"><strong>Sodium Metasilicate</strong></a> (salt, removes organic matter on dishes)</p><p><a href=\"/blogs/ingredients/what-is-sodium-chloride\" target=\"_blank\" title=\"What is Sodium Chloride and what does it do in products?\"><strong>Sodium Chloride</strong></a><strong> </strong>(salt, removes spots)</p><p><a href=\"/blogs/ingredients/what-is-sodium-gluconate\" target=\"_blank\" title=\"What is Sodium Gluconate and what does it do in products?\"><strong>Sodium Gluconate</strong></a><strong> </strong>(salt, reduces water tension)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_THmAMN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cleaning Soda",
+            "icon": "plant",
+            "row_content": "<p>Cleaning Soda Ingredient:</p><p>100% <a href=\"/blogs/ingredients-we-stand-by/what-is-sodium-bicarbonate-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Sodium Bicarbonate and what does it do in products?\"><strong>Sodium Bicarbonate</strong></a></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9LANMK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Epic Washing Soda",
+            "icon": "plant",
+            "row_content": "<p>Epic Washing Soda Ingredient:</p><p>100% <a href=\"/blogs/ingredients-we-stand-by/what-is-sodium-carbonate-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Sodium Carbonate and what does it do in products?\"><strong>Sodium Carbonate</strong></a></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_84N6Hw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Epsom Salt Soak",
+            "icon": "plant",
+            "row_content": "<p>Epsom Salt Soak Ingredient:</p><p>100% <strong>Magnesium Sulfate</strong></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_mhmF3f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Oxy Boost",
+            "icon": "plant",
+            "row_content": "<p>Oxy Boost Ingredients:</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-sodium-percarbonate-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Sodium Percarbonate and what does it do in products?\"><strong>Sodium Percarbonate</strong></a> (non-chlorine bleach, whitener)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-sodium-bicarbonate-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Sodium Bicarbonate and what does it do in products?\"><strong>Sodium Bicarbonate</strong></a> (odor remover)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_R3VQH3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Powder Laundry Detergent",
+            "icon": "plant",
+            "row_content": "<p>Powder Laundry Detergent Ingredients:</p><p><a href=\"/blogs/ingredients/what-is-sodium-carbonate\" target=\"_blank\" title=\"What is Sodium Carbonate and what does it do in products?\"><strong>Sodium Carbonate</strong></a><strong> </strong>(washing soda, cleaner)</p><p><a href=\"/blogs/ingredients/what-is-sodium-percarbonate\" target=\"_blank\" title=\"What is Sodium Percarbonate and what does it do in products?\"><strong>Sodium Percarbonate</strong></a><strong> </strong>(non-chlorine oxygen bleach, whitener)</p><p><strong>Sodium Bicarbonate</strong> (odor remover)</p><p><a href=\"/blogs/ingredients/what-is-sodium-gluconate\" target=\"_blank\" title=\"What is Sodium Gluconate and what does it do in products?\"><strong>Sodium Gluconate</strong></a><strong> </strong>(salt, binds metals together)</p><p><a href=\"/blogs/ingredients/what-is-sodium-chloride\" target=\"_blank\" title=\"What is Sodium Chloride and what does it do in products?\"><strong>Sodium Chloride</strong></a><strong> </strong>(salt, water softener)</p><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bWgyMK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Un-Bleach",
+            "icon": "plant",
+            "row_content": "<p>Un-Bleach Ingredient:</p><p>100% <a href=\"/blogs/ingredients-we-stand-by/what-is-sodium-percarbonate-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Sodium Percarbonate and what does it do in products?\"><strong>Sodium Percarbonate</strong></a></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_EwtzGg",
+        "collapsible_row_THmAMN",
+        "collapsible_row_9LANMK",
+        "collapsible_row_84N6Hw",
+        "collapsible_row_mhmF3f",
+        "collapsible_row_R3VQH3",
+        "collapsible_row_bWgyMK"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Powder Products",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "row",
+        "container_color_scheme": "scheme-fce67c10-f267-4233-a76d-748e5aca8d49",
+        "color_scheme": "scheme-434ca482-719d-4587-a82b-0cc063b73cf5",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "image_with_text_xQbTx9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_3JiPfD": {
+          "type": "heading",
+          "settings": {
+            "heading": "We Publish the Proof",
+            "heading_size": "h2"
+          }
+        },
+        "text_Dh46wY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Independently tested. Fully disclosed.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_eAF3CN": {
+          "type": "button",
+          "settings": {
+            "button_label": "Lab Results",
+            "button_link": "shopify://pages/lab-results",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_3JiPfD",
+        "text_Dh46wY",
+        "button_eAF3CN"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/DevintheScienceGuy_copy_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-fce67c10-f267-4233-a76d-748e5aca8d49",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_Ry9XTF",
+    "rich_text_UPKXAn",
+    "collapsible_content_wG6Ytp",
+    "collapsible_content_QctRYU",
+    "image_with_text_xQbTx9"
+  ]
+}

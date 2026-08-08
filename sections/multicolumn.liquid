@@ -13,6 +13,14 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .multicolumn-card.content-container:after {
+    box-shadow: none !important;
+  }
+
+  .multicolumn-card__image-wrapper--quarter-width {
+    width: 25%;
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -97,6 +105,8 @@
                         assign image_width = 0.5
                       elsif section.settings.image_width == 'third'
                         assign image_width = 0.33
+                      elsif section.settings.image_width == 'quarter'
+                        assign image_width = 0.25
                       else
                         assign image_width = 1
                       endif
@@ -241,6 +251,10 @@
       "type": "select",
       "id": "image_width",
       "options": [
+        {
+          "value": "quarter",
+          "label": "One-fourth width"
+        },
         {
           "value": "third",
           "label": "t:sections.multicolumn.settings.image_width.options__1.label"

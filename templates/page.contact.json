@@ -9,27 +9,27 @@
  */
 {
   "sections": {
-    "rich_text_kQLMmb": {
+    "rich_text_NYDtgB": {
       "type": "rich-text",
       "blocks": {
-        "heading_6P4gLR": {
+        "heading_Nig6Cx": {
           "type": "heading",
           "settings": {
             "heading": "Contact Us",
             "heading_size": "h1"
           }
         },
-        "text_jbAtUq": {
+        "text_iAgCB7": {
           "type": "text",
           "disabled": true,
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         },
-        "button_PJE3hD": {
+        "button_CzWw9y": {
           "type": "button",
           "settings": {
-            "button_label": "Find Frequently Asked Questions in our Help Center",
+            "button_label": "Find Answers in our Help Center",
             "button_link": "shopify://pages/faqs",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -39,9 +39,9 @@
         }
       },
       "block_order": [
-        "heading_6P4gLR",
-        "text_jbAtUq",
-        "button_PJE3hD"
+        "heading_Nig6Cx",
+        "text_iAgCB7",
+        "button_CzWw9y"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -49,16 +49,6 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "custom_liquid_yccEwx": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<script defer src=\"https://contact.gorgias.help/api/contact-forms/loader.js?v=3\" data-gorgias-loader-contact-form data-gorgias-contact-form-uid=\"4m0vfkbs\"></script>",
-        "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -71,21 +61,48 @@
         "padding_bottom": 36
       }
     },
+    "custom_liquid_tK7C6r": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<script defer src=\"https://contact.gorgias.help/api/contact-forms/loader.js?v=3\" data-gorgias-loader-contact-form data-gorgias-contact-form-uid=\"4m0vfkbs\"></script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/760_refill_RS_3bc04811-8fd4-4774-a35d-f8873e661e0e.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "form": {
       "type": "contact-form",
       "disabled": true,
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "color_scheme": "background-1",
+        "heading": "Questions or comments? Get in touch and we'll be happy to help.",
+        "heading_size": "h2",
+        "color_scheme": "scheme-1",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "rich_text_wPKkGf": {
+    "rich_text_Qzf8VD": {
       "type": "rich-text",
       "blocks": {
-        "heading_zGFe3U": {
+        "heading_BPXXHR": {
           "type": "heading",
           "disabled": true,
           "settings": {
@@ -93,13 +110,13 @@
             "heading_size": "h1"
           }
         },
-        "text_hxrznW": {
+        "text_Jzfbk7": {
           "type": "text",
           "settings": {
-            "text": "<p> Kindness and clear communication speed up our team members' ability to answer questions and resolve issues.  We thank you for your patience as we work together for a positive outcome.</p><p>We look forward to assisting you!</p><p><strong>Our Location: </strong>403 North Oak Avenue, Mansfield, Missouri 65704</p><p><br/><strong>Wholesale Support:</strong> support@rusticstrengthwholesale.com</p><p><strong>Hours:</strong> M-F 9am-4pm, Central Time</p><p><strong>If you are experiencing an emergency call 911 or your poison control center</strong></p>"
+            "text": "<p>Kindness and clear communication speed up our team members ability to answer questions and resolve issues. We thank you for your patience as we work together for a positive outcome.</p><p>We look forward to assisting you!</p><p><strong>Our Location: </strong>403 North Oak Avenue, Mansfield, Missouri 65704</p><p></p><p><strong>Wholesale Support: </strong>support@rusticstrengthwholesale.com</p><p>417-701-9309</p><p><strong>Hours: </strong>Monday - Friday, 9am-4pm, Central Time</p><p><strong>If you are experiencing an emergency, call 911 or your poison control center</strong></p>"
           }
         },
-        "button_QdPEhr": {
+        "button_8B7MAe": {
           "type": "button",
           "disabled": true,
           "settings": {
@@ -113,9 +130,9 @@
         }
       },
       "block_order": [
-        "heading_zGFe3U",
-        "text_hxrznW",
-        "button_QdPEhr"
+        "heading_BPXXHR",
+        "text_Jzfbk7",
+        "button_8B7MAe"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -127,34 +144,35 @@
         "padding_bottom": 52
       }
     },
-    "newsletter_YBbBKY": {
+    "newsletter_nBCxrk": {
       "type": "newsletter",
       "blocks": {
-        "heading_AGM7Br": {
+        "heading_pkPbh7": {
           "type": "heading",
           "settings": {
             "heading": "Subscribe to our emails",
             "heading_size": "h1"
           }
         },
-        "paragraph_8Cc7iy": {
+        "paragraph_BKELqy": {
           "type": "paragraph",
           "settings": {
             "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
           }
         },
-        "email_form_FGnUzy": {
+        "email_form_8pHrzV": {
           "type": "email_form",
           "settings": {}
         }
       },
       "block_order": [
-        "heading_AGM7Br",
-        "paragraph_8Cc7iy",
-        "email_form_FGnUzy"
+        "heading_pkPbh7",
+        "paragraph_BKELqy",
+        "email_form_8pHrzV"
       ],
+      "name": "t:sections.newsletter.presets.name",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -162,11 +180,12 @@
     }
   },
   "order": [
-    "rich_text_kQLMmb",
-    "custom_liquid_yccEwx",
+    "rich_text_NYDtgB",
     "main",
+    "custom_liquid_tK7C6r",
+    "image_banner",
     "form",
-    "rich_text_wPKkGf",
-    "newsletter_YBbBKY"
+    "rich_text_Qzf8VD",
+    "newsletter_nBCxrk"
   ]
 }

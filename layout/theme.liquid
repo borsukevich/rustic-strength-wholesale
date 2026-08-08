@@ -39,11 +39,184 @@
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    {% unless request.design_mode %}
-      <!-- Widget : FREE Face Bar w/ Nourish Purchase -->
-      <div data-rebuy-id="278769"></div>
-      <!-- End Widget : FREE Face Bar w/ Nourish Purchase -->
-    {% endunless %}
+    <!-- Meta Pixel & Beacon Event Suppression Proxy -->
+    <script>
+      (function() {
+        try {
+          if (sessionStorage.getItem('ws_flagged_spam') === 'true') {
+            const blockedEvents = ['Lead', 'CompleteRegistration', 'Wholesale Application Submitted'];
+            let activeFbq = window.fbq;
+
+            const wrapFbq = (original) => {
+              if (!original || original.isProxied) return original;
+              
+              const proxy = function() {
+                const args = Array.prototype.slice.call(arguments);
+                const eventName = args[1];
+                
+                if (blockedEvents.includes(eventName)) {
+                  console.warn('Honeypot flag active: Suppressing conversion event:', eventName);
+                  return;
+                }
+                
+                return original.apply(this, arguments);
+              };
+              
+              Object.assign(proxy, original);
+              proxy.isProxied = true;
+              return proxy;
+            };
+
+            if (activeFbq) {
+              window.fbq = wrapFbq(activeFbq);
+            } else {
+              Object.defineProperty(window, 'fbq', {
+                configurable: true,
+                enumerable: true,
+                get: function() { return activeFbq; },
+                set: function(newVal) { activeFbq = wrapFbq(newVal); }
+              });
+            }
+
+            let active_Fbq = window._fbq;
+            if (active_Fbq) {
+              window._fbq = wrapFbq(active_Fbq);
+            } else {
+              Object.defineProperty(window, '_fbq', {
+                configurable: true,
+                enumerable: true,
+                get: function() { return active_Fbq; },
+                set: function(newVal) { active_Fbq = wrapFbq(newVal); }
+              });
+            }
+
+            const interceptQueue = (q) => {
+              if (!q || q.isProxied) return q;
+              
+              const filtered = q.filter(item => !blockedEvents.includes(item[1]));
+              q.length = 0;
+              filtered.forEach(item => q.push(item));
+
+              const originalPush = q.push;
+              q.push = function() {
+                const args = Array.prototype.slice.call(arguments);
+                const eventName = args[1];
+                if (blockedEvents.includes(eventName)) {
+                  console.warn('Suppressed queued event:', eventName);
+                  return;
+                }
+                return originalPush.apply(this, arguments);
+              };
+              q.isProxied = true;
+              return q;
+            };
+
+            if (window.fbq && window.fbq.queue) {
+              interceptQueue(window.fbq.queue);
+            }
+
+            const OriginalImage = window.Image;
+            window.Image = function() {
+              const img = new OriginalImage(...arguments);
+              Object.defineProperty(img, 'src', {
+                get: function() {
+                  return img.getAttribute('src');
+                },
+                set: function(val) {
+                  if (typeof val === 'string' && val.includes('facebook.com/tr') && val.includes('ev=Lead')) {
+                    console.warn('Suppressed Image constructor Facebook Lead beacon:', val);
+                    return;
+                  }
+                  img.setAttribute('src', val);
+                }
+              });
+              return img;
+            };
+
+            const originalImageSrcDescriptor = Object.getOwnPropertyDescriptor(HTMLImageElement.prototype, 'src');
+            if (originalImageSrcDescriptor && originalImageSrcDescriptor.set) {
+              Object.defineProperty(HTMLImageElement.prototype, 'src', {
+                get: function() {
+                  return originalImageSrcDescriptor.get.call(this);
+                },
+                set: function(val) {
+                  if (typeof val === 'string' && val.includes('facebook.com/tr') && val.includes('ev=Lead')) {
+                    console.warn('Suppressed HTMLImageElement Facebook Lead beacon:', val);
+                    return;
+                  }
+                  originalImageSrcDescriptor.set.call(this, val);
+                }
+              });
+            }
+
+            if (navigator.sendBeacon) {
+              const originalSendBeacon = navigator.sendBeacon;
+              navigator.sendBeacon = function(url) {
+                if (typeof url === 'string' && url.includes('facebook.com/tr') && url.includes('ev=Lead')) {
+                  console.warn('Suppressed sendBeacon Facebook Lead call:', url);
+                  return true;
+                }
+                return originalSendBeacon.apply(this, arguments);
+              };
+            }
+
+            if (window.fetch) {
+              const originalFetch = window.fetch;
+              window.fetch = function(input) {
+                let url = '';
+                if (typeof input === 'string') {
+                  url = input;
+                } else if (input && input.url) {
+                  url = input.url;
+                }
+                if (url.includes('facebook.com/tr') && url.includes('ev=Lead')) {
+                  console.warn('Suppressed fetch Facebook Lead call:', url);
+                  return Promise.resolve(new Response('', { status: 200, statusText: 'OK' }));
+                }
+                return originalFetch.apply(this, arguments);
+              };
+            }
+          }
+        } catch (e) {
+          console.error('Spam suppression proxy setup failed:', e);
+        }
+      })();
+    </script>
+
+    <script>
+      (function() {
+        const OriginalDateTimeFormat = Intl.DateTimeFormat;
+        function normalizeTimezone(tz) {
+          if (typeof tz !== 'string' && typeof tz !== 'number') return tz;
+          const str = String(tz).trim();
+          
+          const match = str.match(/^([+-])?(\d{1,2})(?::(\d{2}))?$/);
+          if (match) {
+            const sign = match[1] === '+' ? '-' : '+';
+            const hours = parseInt(match[2], 10);
+            if (hours === 0) return 'UTC';
+            return `Etc/GMT${sign}${hours}`;
+          }
+          return tz;
+        }
+        Intl.DateTimeFormat = function(locales, options) {
+          if (options && options.timeZone) {
+            const normalized = normalizeTimezone(options.timeZone);
+            try {
+              return new OriginalDateTimeFormat(locales, { ...options, timeZone: normalized });
+            } catch (e) {
+              const fallbackOptions = { ...options };
+              delete fallbackOptions.timeZone;
+              return new OriginalDateTimeFormat(locales, fallbackOptions);
+            }
+          }
+          return new OriginalDateTimeFormat(locales, options);
+        };
+        Intl.DateTimeFormat.prototype = OriginalDateTimeFormat.prototype;
+        Intl.DateTimeFormat.supportedLocalesOf = OriginalDateTimeFormat.supportedLocalesOf;
+      })();
+    </script>
+
     {{ content_for_header }}
 
     {%- liquid
@@ -315,13 +488,16 @@
           'fbclid',
         ];
 
+        let hasNewTracking = false;
+
         trackingParams.forEach((param) => {
           if (urlParams.has(param)) {
             sessionStorage.setItem('ws_' + param, urlParams.get(param));
+            hasNewTracking = true;
           }
         });
 
-        if (!sessionStorage.getItem('ws_landing_page')) {
+        if (hasNewTracking || !sessionStorage.getItem('ws_landing_page')) {
           sessionStorage.setItem('ws_landing_page', window.location.href);
         }
 
@@ -347,11 +523,7 @@
     {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      {% capture content_markup %}
-        {{ content_for_layout }}
-      {% endcapture %}
-
-      {% include 'wlm-body' %}
+      {{ content_for_layout }}
     </main>
 
     {% sections 'footer-group' %}
@@ -424,10 +596,10 @@
 
         const replacePriceText = () => {
           const prices = document.querySelectorAll('.rebuy-product-price .rebuy-money');
-
+          
           prices.forEach(price => {
             const priceContainer = price.closest('.rebuy-product-price');
-
+            
             if (priceContainer && !priceContainer.classList.contains('wholesale-hidden')) {
               priceContainer.innerHTML = '<a href="{{ routes.account_login_url }}" class="login-link-price">Please login for pricing</a>';
               priceContainer.classList.add('wholesale-hidden');
@@ -438,7 +610,7 @@
         let debounceTimer;
         const observer = new MutationObserver((mutations) => {
           let hasNewNodes = false;
-
+          
           mutations.forEach((mutation) => {
             if (mutation.addedNodes.length > 0) {
               hasNewNodes = true;
@@ -464,7 +636,7 @@
 
     {% unless customer %}
       <style>
-        form[data-type='add-to-cart-form'],
+        form[data-type="add-to-cart-form"],
         .rebuy-product-actions,
         .appattic_price_span,
         .quick-add,
@@ -481,19 +653,43 @@
       </style>
     {% endunless %}
 
-    {%- if customer.tags contains 'B2B' -%}
-      {%- render 'rebuy-b2b' -%}
-      {%- render 'rebuy-extensions' -%}
+    {%- if customer.tags contains "B2B" -%}
+      {%- render "rebuy-b2b" -%}
+      {%- render "rebuy-extensions" -%}
     {%- endif -%}
 
-    <!-- Widget : FREE Face Bar w/ Nourish Purchase -->
-    <div data-rebuy-id="278769"></div>
-    <!-- End Widget : FREE Face Bar w/ Nourish Purchase -->
-
-    {%- if template == 'page.Forms - B2B Wholesale Application' -%}
+    {%- if template == 'page.b2b-application-form' -%}
       <script>
         document.addEventListener('DOMContentLoaded', function () {
           const targetTag = 'shopify-forms-embed';
+
+          try {
+            sessionStorage.removeItem('ws_flagged_spam');
+          } catch (e) {}
+
+          const getSafeSessionItem = (key) => {
+            try {
+              return sessionStorage.getItem(key) || '';
+            } catch (e) {
+              return '';
+            }
+          };
+
+          const setSafeSessionItem = (key, val) => {
+            try {
+              sessionStorage.setItem(key, val);
+            } catch (e) {}
+          };
+
+          const getSafeCookieVal = (name) => {
+            try {
+              const value = `; ${document.cookie}`;
+              const parts = value.split(`; ${name}=`);
+              return parts.length === 2 ? parts.pop().split(';').shift() : '';
+            } catch (e) {
+              return '';
+            }
+          };
 
           function initiateHoneypotAndUtms(embedEl) {
             if (!embedEl || !embedEl.shadowRoot) {
@@ -506,58 +702,160 @@
               return false;
             }
 
+            const trackingFields = [
+              { id: 'attribution#utm_source', val: getSafeSessionItem('ws_utm_source') },
+              { id: 'attribution#utm_medium', val: getSafeSessionItem('ws_utm_medium') },
+              { id: 'attribution#utm_campaign', val: getSafeSessionItem('ws_utm_campaign') },
+              { id: 'attribution#meta_tracking_data', val: (() => {
+                  return `fbp:${getSafeCookieVal('_fbp')}||fbc:${getSafeCookieVal('_fbc')}||ua:${navigator.userAgent}`;
+                })()
+              }
+            ];
+
+            const hideTrackingFields = () => {
+              const formLabels = embedEl.shadowRoot.querySelectorAll('label, span');
+              formLabels.forEach(label => {
+                const labelText = (label.textContent || '').toLowerCase();
+                if (
+                  labelText.includes('attribution utm') || 
+                  labelText.includes('meta tracking data') || 
+                  labelText.includes('attribution hashed email')
+                ) {
+                  const fieldRow = label.closest('._formFieldContainer_1mxsl_5') || label.parentElement;
+                  if (fieldRow) {
+                    fieldRow.style.setProperty('display', 'none', 'important');
+                  }
+                }
+              });
+            };
+
+            const setupStaticFields = () => {
+              trackingFields.forEach(field => {
+                const input = embedEl.shadowRoot.getElementById(field.id);
+                if (input) {
+                  if (!input.value || input.value !== field.val) {
+                    input.value = field.val;
+                    input.dispatchEvent(new Event('input', { bubbles: true }));
+                    input.dispatchEvent(new Event('change', { bubbles: true }));
+                  }
+                }
+              });
+            };
+
+            hideTrackingFields();
+            setupStaticFields();
+
             if (embedEl.shadowRoot.getElementById('ws_honeypot_wrapper')) {
               return true;
             }
 
             const honeypotWrapper = document.createElement('div');
-
             honeypotWrapper.id = 'ws_honeypot_wrapper';
             honeypotWrapper.style.cssText =
-              'position: absolute !important; left: -9999px !important; top: -9999px !important; opacity: 0 !important; pointer-events: none !important; z-index: -1 !important;';
+              'position: absolute !important; left: -9999px !important; top: -9999px !important; opacity: 0 !important; pointer-events: none !important; z-1 !important;';
 
             honeypotWrapper.innerHTML = `
-              <label for="form_secondary_email_verification">Secondary Contact Email (Leave Blank)</label>
-              <input id="form_secondary_email_verification" type="text" name="secondary_email_verification" autocomplete="off" tabindex="-1">
+              <label for="form_ws_alt_routing_num">System Route ID (Leave Blank)</label>
+              <input id="form_ws_alt_routing_num" type="text" name="ws_alt_routing_num" autocomplete="new-password" tabindex="-1">
             `;
             appForm.prepend(honeypotWrapper);
 
-            const trackingParams = [
-              'utm_source',
-              'utm_medium',
-              'utm_campaign',
-              'utm_content',
-              'utm_term',
-              'gclid',
-              'fbclid',
-              'landing_page',
-              'referrer',
-            ];
+            async function computeEmailHash(emailStr) {
+              const msgBuffer = new TextEncoder().encode(emailStr.toLowerCase().trim());
+              const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+              const hashArray = Array.from(new Uint8Array(hashBuffer));
+              return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            }
 
-            trackingParams.forEach((param) => {
-              const storedValue = sessionStorage.getItem('ws_' + param) || '';
-              const hiddenInput = document.createElement('input');
+            const emailInput = embedEl.shadowRoot.getElementById('email');
+            if (emailInput) {
+              emailInput.addEventListener('input', async function () {
+                const currentEmail = emailInput.value.trim();
+                if (currentEmail) {
+                  const generatedHash = await computeEmailHash(currentEmail);
+                  const hashedInput = embedEl.shadowRoot.getElementById('attribution#hashed_email');
+                  if (hashedInput && hashedInput.value !== generatedHash) {
+                    hashedInput.value = generatedHash;
+                    hashedInput.dispatchEvent(new Event('input', { bubbles: true }));
+                    hashedInput.dispatchEvent(new Event('change', { bubbles: true }));
+                  }
+                }
+              });
+            }
 
-              hiddenInput.type = 'hidden';
-              hiddenInput.id = 'ws_hidden_' + param;
-              hiddenInput.name = 'customer[note][' + param + ']';
-              hiddenInput.value = storedValue;
+            function forceReactValueUpdate(element, newValue) {
+              const prototype = element.tagName === 'TEXTAREA' ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
+              const descriptor = Object.getOwnPropertyDescriptor(prototype, 'value');
+              if (descriptor && descriptor.set) {
+                descriptor.set.call(element, newValue);
+                element.dispatchEvent(new Event('input', { bubbles: true }));
+                element.dispatchEvent(new Event('change', { bubbles: true }));
+              }
+            }
 
-              appForm.appendChild(hiddenInput);
-            });
+            function evaluateHoneypotSpam() {
+              const honeypotInput = embedEl.shadowRoot.getElementById('form_ws_alt_routing_num');
+              if (honeypotInput && honeypotInput.value.trim() !== '') {
+                setSafeSessionItem('ws_flagged_spam', 'true');
+
+                const metaTrackingField = embedEl.shadowRoot.getElementById('attribution#meta_tracking_data');
+                if (metaTrackingField && !metaTrackingField.value.includes('spam:true')) {
+                  const updatedMetaValue = metaTrackingField.value + '||spam:true';
+                  forceReactValueUpdate(metaTrackingField, updatedMetaValue);
+                }
+              }
+            }
+
+            const honeypotInput = embedEl.shadowRoot.getElementById('form_ws_alt_routing_num');
+            if (honeypotInput) {
+              honeypotInput.addEventListener('input', evaluateHoneypotSpam);
+              honeypotInput.addEventListener('change', evaluateHoneypotSpam);
+              honeypotInput.addEventListener('blur', evaluateHoneypotSpam);
+            }
+
+            const submitButton = appForm.querySelector('[data-testid="btn-form-submit"]') || appForm.querySelector('button[type="submit"]');
+            if (submitButton) {
+              submitButton.addEventListener('pointerdown', evaluateHoneypotSpam);
+              submitButton.addEventListener('click', evaluateHoneypotSpam);
+            }
 
             appForm.addEventListener('submit', function (e) {
-              const honeypotInput = embedEl.shadowRoot.getElementById('form_secondary_email_verification');
+              evaluateHoneypotSpam();
 
+              const honeypotInput = embedEl.shadowRoot.getElementById('form_ws_alt_routing_num');
               if (honeypotInput && honeypotInput.value.trim() !== '') {
-                e.preventDefault();
-                e.stopPropagation();
+                return;
+              }
 
-                appForm.innerHTML = `
-                  <div style="padding: 24px; color: #2e7d32; background-color: #edf7ed; border: 1px solid #2e7d32; border-radius: 6px; text-align: center; font-weight: 500; font-family: inherit;">
-                    Thank you for your application! We will review your business credentials shortly.
-                  </div>
-                `;
+              if (appForm.dataset.tracked === 'true') {
+                return;
+              }
+              appForm.dataset.tracked = 'true';
+              setTimeout(() => { appForm.dataset.tracked = 'false'; }, 3000);
+
+              const emailValue = emailInput ? emailInput.value.trim() : '';
+              if (emailValue) {
+                const klaviyo = window.klaviyo || window._learnq || [];
+                const trackingParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid', 'landing_page', 'referrer'];
+                const utmData = {};
+
+                trackingParams.forEach((param) => {
+                  utmData[param] = getSafeSessionItem('ws_' + param);
+                });
+
+                utmData['landing_page'] = getSafeSessionItem('ws_landing_page') || window.location.href;
+
+                const profileProperties = { '$email': emailValue };
+                trackingParams.forEach((param) => {
+                  if (utmData[param] !== '') {
+                    profileProperties[param] = utmData[param];
+                  }
+                });
+
+                if (typeof klaviyo.push === 'function') {
+                  klaviyo.push(['identify', profileProperties]);
+                  klaviyo.push(['track', 'Wholesale Application Submitted', utmData]);
+                }
               }
             });
 

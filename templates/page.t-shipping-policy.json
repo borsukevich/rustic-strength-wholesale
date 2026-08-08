@@ -1,0 +1,255 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_Fnn9WN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_n8RPwg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shipping Policy",
+            "heading_size": "h2"
+          }
+        },
+        "text_NH77WW": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>IMPORTANT! PLEASE READ FULLY</strong></p>"
+          }
+        },
+        "text_qMPyqP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Accurate address and phone number information is crucial for successful delivery.<br/>Refill Shop Owners are responsible for verifying these details on each order.</p><p>Policy only available on <a href=\"http://rusticstrengthwholesale.com/\">RusticStrengthWholesale.com </a></p><p>Policy applies for only continental USA. <br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_n8RPwg",
+        "text_NH77WW",
+        "text_qMPyqP"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_8HqJki": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_ywwMCw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Free & Flat Rate Shipping",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": "free-flat-rate-shipping-1"
+          }
+        },
+        "collapsible_row_4XiCgd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Domestic Shipping Policy",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": "domestic-shipping-policy"
+          }
+        },
+        "collapsible_row_fJzW9z": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Tracking",
+            "icon": "check_mark",
+            "row_content": "<p><strong>Shipment confirmation & Order tracking</strong></p><p>You will receive a Shipment Confirmation email once your order has shipped containing your tracking number(s). The tracking number will be active within 24 hours.</p><p>We send out tracking information with every order.  Please follow the link to track your packages.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_ywwMCw",
+        "collapsible_row_4XiCgd",
+        "collapsible_row_fJzW9z"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "General Shipping Information",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_jBwy4a": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_YpV4Yq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Receiving UPS Deliveries",
+            "icon": "truck",
+            "row_content": "<p><strong>FOR UPS DELIVERIES</strong></p><p><br/>UPS delivery days include Monday - Friday and Saturday (in select areas), excluding UPS holidays. UPS may make up to three delivery attempts at its discretion at your address on regular UPS delivery days. After the final attempt, undeliverable parcels will be returned to the sender.<br/>In the event that the parcel is returned to Rustic Strength, you will be responsible for any associated charges.<br/>To prevent your parcel from being returned or to make alternate delivery arrangements, track your parcel. If you want to collect your parcel at a UPS Customer Centre, your request must be received by 7 p.m.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_cpjLMx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Receiving XPO/ Freight Deliveries",
+            "icon": "truck",
+            "row_content": "<h3>FOR XPO/FREIGHT DELIVERIES - XPO Freight Tracking</h3><p><strong>Delivery Timing:<br/></strong>We try to time the shipment to arrive on days you are open, but delays can change the delivery date. Transit times can vary depending on holidays, weather conditions, and other factors. It is your responsibility to be at your facility at the time of arrival, even if you are not open.</p><p><span style=\"text-decoration:underline\"><strong>XPO Delivery Notification:</strong></span></p><p>XPO will anticipate the delivery date and contact you when the pallet is nearing your location. </p><p>XPO will inform you of the scheduled arrival day.</p><p>They will ask for your preferred delivery time and deliver within a 3-hour window. This is a time range, not a guaranteed time, due to other deliveries in the region.</p><p><span style=\"text-decoration:underline\"><strong>Delivery Scheduling Options:</strong></span></p><p>If you cannot accept delivery on the scheduled arrival day, you can reschedule for the next business day.</p><p>Rescheduling beyond the next business day will incur a daily storage fee of $66.25/day for the first three days, followed by $221.00/day thereafter.</p><p><em>Example: The pallet is set to arrive on Tuesday. You can set the delivery appointment window for Tuesday or Wednesday. If you set the appointment for Friday, the daily storage fee of $66.25/day for the first three days, followed by $221.00/day thereafter, will be incurred and we will charge you for this storage fee.</em></p><h3><strong>WHAT TO EXPECT AT THE TIME OF DELIVERY</strong></h3><p><strong>Liftgate Delivery:</strong></p><p>The delivery truck will be equipped with a liftgate and hand truck (2-wheeled dolly).</p><p>The liftgate will lower your pallet from the truck to ground level.</p><p><strong>Offloading and Placement:</strong></p><p>The driver will offload the contents of the pallet.</p><p>The driver will move the offloaded items inside the first door of your store, ONLY.</p><p>They only move the pallet or items across the first threshold. If this threshold is upstairs or in any other way not immediately accessible, the driver will leave the pallet as close as possible to the threshold.</p><p><strong>XPO Limitations:</strong></p><p>XPO adheres to strict delivery guidelines.</p><p>Drivers are unable to provide services beyond the described offloading and placement.</p><p><em>Example: The driver is moving a box. They are not allowed to set the box on a shelf, even if the shelf is right next to your door.</em></p><p><strong>We appreciate XPO's friendly staff and reliable service. However, they operate under strict policies. Requesting services beyond the standard delivery scope may result in additional shipping charges (see driver detention).</strong><br/>If the pallet is not delivered in 3-4 business days, please call your local terminal and speak to a human about the anticipated delivery time. The easiest way to find the number for your local terminal is to Google search “XPO freight terminal (enter your city and state)”</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_HQMrBQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Potential Additional Charges",
+            "icon": "truck",
+            "row_content": "",
+            "page": "potential-additional-charges"
+          }
+        },
+        "collapsible_row_zwKFwG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "At the time of Delivery",
+            "icon": "truck",
+            "row_content": "<p>Make sure all items are present and undamaged before signing the paperwork. If there are any issues, have the driver notate them on the delivery ticket. If there is no notation on the paperwork, we are not able to file a claim for reimbursement of damaged or missing items.</p><h5><strong>PLEASE NOTIFY THE CARRIER IF</strong></h5><p>The XPO driver does not bring items inside through the first door.<br/></p><p>If no hand truck was used to move the items off the truck (this is not for your use but for the XPO driver). Please have your own hand truck available for moving items around inside your store.<br/></p><p>An appointment (XPO only) was not set before the driver showing up (if requested).</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_YpV4Yq",
+        "collapsible_row_cpjLMx",
+        "collapsible_row_HQMrBQ",
+        "collapsible_row_zwKFwG"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Receiving Deliveries",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_Qdt3xM": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_BVLGr7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "UPS",
+            "icon": "plant",
+            "row_content": "<p>We utilize cardboard and paper packing materials for all of our shipping boxes. Our boxes are secured using an eco friendly paper tape.</p><p>When possible, we use  our own, in-house recycled cardboard as packing material.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_JEm9hK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "XPO/ Freight",
+            "icon": "plant",
+            "row_content": "<p><strong>Pallet wrap</strong>:<br/>You'll find some of your pallet items are pallet-wrapped to keep them secure and clean during transit. Good news: this wrap is industrially biodegradable and won't leave behind microplastics! After unpacking, please help us complete the cycle by sending the used wrap back with your next Close The Loop return.<br/></p><p><strong>Ratchet Straps</strong>:<br/>Our ratchet straps are reusable and can be purchased for ongoing use with our Close The Loop system. To ensure your straps are returned to you specifically, please mark them with your name using a marker or paint pen after you receive your order. This will help us avoid confusion with the straps from our other Close The Loop participants. Ratchet straps are used with barrels only!<br/></p><p><strong>Gaylord boxes</strong>:<br/>Gaylord boxes are available for purchase as an alternative to pallet wrapping. They are ideal for items unsuitable for ratchet straps, such as eco jugs, buckets, bag-in-box, and miscellaneous items. Please note:  barrels cannot be placed inside these boxes. For example, an order of three barrels and twelve eco jugs would require two separate pallets. If you purchase a Gaylord box, the eco jugs will be placed inside it.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_BVLGr7",
+        "collapsible_row_JEm9hK"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Shipping Material Used",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_33XgqK": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_VBexYU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "International Shipping Policy",
+            "icon": "plane",
+            "row_content": "<h2>International Shipping Policy</h2><p>We can ship internationally.  Please contact support@rusticstrengthwholesale.com for more information.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_VBexYU"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Non-Continental U.S. + International Shipping",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_Fnn9WN",
+    "collapsible_content_8HqJki",
+    "collapsible_content_jBwy4a",
+    "collapsible_content_Qdt3xM",
+    "collapsible_content_33XgqK"
+  ]
+}

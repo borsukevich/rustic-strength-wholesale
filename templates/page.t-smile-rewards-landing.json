@@ -1,0 +1,903 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "178155455124c501ba": {
+      "type": "apps",
+      "blocks": {
+        "smile_io_smile_landing_page_header_kMjEK4": {
+          "type": "shopify://apps/smile-io/blocks/smile-landing-page-header/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "disabled": true,
+          "settings": {
+            "primary_colour": "#4b4c46",
+            "secondary_colour": "#fff",
+            "background_image": "shopify://shop_images/2_b32464b2-2424-4712-80d3-c734400029d6.jpg",
+            "title_text": "Wholesale Partner Perks",
+            "description_text": "Businesses earn reward points on every purchase. Redeem for discounts on future purchases and more.",
+            "join_button_text": "Join now",
+            "login_button_text": "Log in",
+            "is_previewing_logged_in_state": true,
+            "discover_button_text": "Discover the loyalty program"
+          }
+        }
+      },
+      "block_order": [
+        "smile_io_smile_landing_page_header_kMjEK4"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "image_banner_zYTJXh": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_RGgiCY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Partner Perks Rewards",
+            "heading_size": "h1"
+          }
+        },
+        "text_WqEGmJ": {
+          "type": "text",
+          "settings": {
+            "text": "Earn points on every purchase. Redeem for discounts on future purchases.",
+            "text_style": "body"
+          }
+        },
+        "buttons_FnGghE": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Discover the loyalty program",
+            "button_link_1": "https://account.rusticstrengthwholesale.com/",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_RGgiCY",
+        "text_WqEGmJ",
+        "buttons_FnGghE"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/2_b32464b2-2424-4712-80d3-c734400029d6.jpg",
+        "image_overlay_opacity": 30,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "left",
+        "show_text_below": true,
+        "content_max_width": 800
+      }
+    },
+    "1758115415a209fc7a": {
+      "type": "apps",
+      "blocks": {
+        "smile_io_smile_landing_page_how_it_works_HAwmgg": {
+          "type": "shopify://apps/smile-io/blocks/smile-landing-page-how-it-works/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#333",
+            "secondary_colour": "#fff",
+            "title_text": "How it works",
+            "step1_heading_text": "Join",
+            "step1_description_text": "Existing partners are auto-enrolled and can sign in now to start earning. Haven't placed an order? Enroll now!",
+            "step2_heading_text": "Earn",
+            "step2_description_text": "Earn points for every time you shop. Plus you can earn for following us on social, referrals + more.",
+            "step3_heading_text": "Redeem",
+            "step3_description_text": "Apply points at check out, or redeem for discounts on your next purchase."
+          }
+        }
+      },
+      "block_order": [
+        "smile_io_smile_landing_page_how_it_works_HAwmgg"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "image_with_text_a6gnRD": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_PMVeWg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Earn points for every order",
+            "heading_size": "h2"
+          }
+        },
+        "text_DajWn8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The more you spend, the more you save.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_PQ6ypg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Ways to earn",
+            "button_link": "https://rusticstrengthwholesale.com/#smile-points-activity-rules",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PMVeWg",
+        "text_DajWn8",
+        "button_PQ6ypg"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/7_1615bf16-2f77-407f-9501-3e80de75f491.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_7TJkUM": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_gHDBnK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Redeem points for rewards",
+            "heading_size": "h2"
+          }
+        },
+        "text_GJdRjV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Redeem points on your next purchase, or save them up for higher value rewards.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_cmJBbr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Ways to redeem",
+            "button_link": "https://rusticstrengthwholesale.com/#smile-points-products",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gHDBnK",
+        "text_GJdRjV",
+        "button_cmJBbr"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/12.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_TbGpGk": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_gU8F8c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/10_4c49f1d3-8529-4e3c-9413-a054a21e864e.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_QxPjDz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/100_f15565a8-5bfd-49fb-aafd-1ca9eb507280.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qWBR4D": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1000_4f71f32a-a0a4-4588-a939-cea781a66bee.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_gU8F8c",
+        "column_QxPjDz",
+        "column_qWBR4D"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Redeem for Discounts",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_pU9LRJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ELbHL8": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Redeem for Discounts",
+            "heading_size": "h1"
+          }
+        },
+        "text_LgjYqb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Redeem your Partner Points for exclusive discounts. <br/>It’s easy — just start shopping + apply your discount at checkout! </p><p></p>"
+          }
+        },
+        "button_BnK8gd": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ELbHL8",
+        "text_LgjYqb",
+        "button_BnK8gd"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_A39hyz": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_hFnVMK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Loyalty = More Buying Power",
+            "heading_size": "h2"
+          }
+        },
+        "text_wLNaKP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With each purchase, partners automatically advance up our tier system and earn back <em>even</em> <em>more </em>points. Learn more about qualifying for tiers below in our FAQ.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_atBgkQ": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_hFnVMK",
+        "text_wLNaKP",
+        "button_atBgkQ"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Tiers_ae040db8-aaeb-4fc0-a5e7-e4fd1d878da1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_GNpJVF": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Xf9PWG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sustainability Earns Points, too.",
+            "heading_size": "h2"
+          }
+        },
+        "text_gk6Xnp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Earn points for every container you return! Join our Close The Loop Program and help the planet while rewarding yourself.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_tJyzAh": {
+          "type": "button",
+          "settings": {
+            "button_label": "See Program for Details",
+            "button_link": "shopify://pages/close-the-loop-program™",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Xf9PWG",
+        "text_gk6Xnp",
+        "button_tJyzAh"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/CloseTheLoopAnimation_FORGIF-high-ezgif.com-optimize.gif",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_tkwjJz": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_CBiriy": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are Partner Perks? And how do I sign up?",
+            "icon": "question_mark",
+            "row_content": "<p>Partner Perks is our loyalty program that rewards you for shopping with us! It's FREE and easy to join! Your can sign up by creating an account - all we need is your name and email address. If you already have a Rustic Strength Wholesale account, simply login and click \"<a href=\"https://rusticstrengthwholesale.com/pages/wholesale-partner-perks/#smile-home\" target=\"_blank\" title=\"https://rusticstrengthwholesale.com/pages/wholesale-partner-perks/#smile-home\">Enroll Now</a>\" from your dashboard.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tyzXE7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Having trouble signing in after creating your account?",
+            "icon": "question_mark",
+            "row_content": "<p>Ensure that you are logged into your account. Click on the person icon at the top right of your screen to receive your 6 digit login code. A unique code will be sent to your email each time you login to Rustic Strength Wholesale. </p><p>Still not working? <a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact Us\">Contact Support</a>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_hy3yfL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I am already a Wholesale Partner, do I need a separate login for Rewards?",
+            "icon": "question_mark",
+            "row_content": "<p>No, you will login to your account normally. You can click on the Rewards button at the lower right-hand corner of the screen to view your rewards, ways to earn and ways to redeem.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ghRdbY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is your login form or password not submitting?",
+            "icon": "question_mark",
+            "row_content": "<p>Our website requires your browser to allow cookies in order to login. If you are unable to login even after using the unique 6-digit code you received in your email, you likely have cookies disabled on your browser. If you are using a browser that automatically blocks cookies (ex. DuckDuckGo), please use a standard browser and try again.</p><p>* In Chrome, go to Preferences&gt;Privacy and Security&gt; change to \"Allow all Cookies\"</p><p>* In Safari, go to Preferences&gt; Privacy&gt; be sure to uncheck \"Block all Cookies\"</p><p>* On an iPhone, go to Settings&gt; Safari &gt; un-toggle \"Block all Cookies\"</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_CBiriy",
+        "collapsible_row_tyzXE7",
+        "collapsible_row_hy3yfL",
+        "collapsible_row_ghRdbY"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Partner Perks Rewards FAQ",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_fUt8Yg": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_nVgpRt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I know how many points I have? Where can I see my points in my account?",
+            "icon": "question_mark",
+            "row_content": "<p>Your total points will be shown at the top of your account page, above your order history. </p><p>You can also view your Points balance by clicking on the <a href=\"https://rusticstrengthwholesale.com/pages/wholesale-partner-perks/#smile-home\" target=\"_blank\" title=\"https://rusticstrengthwholesale.com/pages/wholesale-partner-perks/#smile-home\">Rewards Button</a> at the lower right-hand corner of our website.</p><p>You must be logged in to see your points balance. </p><p>If your balance is not displaying properly, be sure you are using a browser that allows cookies and that your settings allow cookies. If you have a popup blocker turned on, this can also cause points not to display.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_76BegH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I earn points + how do points for dollars spent work?",
+            "icon": "question_mark",
+            "row_content": "<p>Depending on the tier you're in, you'll earn at least 1 point for each dollar spent or more. </p><p>Copper Tier - $1 = 1 Point</p><p>Bronze Tier - $1 = 2 Points</p><p>Silver Tier - $1 = 3 Points</p><p>Gold Tier - $1 = 4 Points</p><p>Platinum Tier - $1 = 5 Points</p><p>Diamond Tier - $1 = 6 Points</p><p>Titanium Tier - $1 = 7 Points</p><p>We will also have special Points Days where your points earnings can double, triple or more.</p><p>Points are awarded on the subtotal of the order (after discounts & gift cards, and before taxes & shipping).</p><p>Points can also be earned in a number of other ways, including sending in your Close the Loop containers and celebrating our Partnership Anniversary. You can always check out the <a href=\"https://rusticstrengthwholesale.com/pages/wholesale-partner-perks/#smile-points-activity-rules\" target=\"_blank\" title=\"https://rusticstrengthwholesale.com/pages/wholesale-partner-perks/#smile-points-activity-rules\">Rewards Page</a> for all the ways to earn!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_fmyVaD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How many points do I need to redeem for rewards or to make a purchase? And do points expire?",
+            "icon": "question_mark",
+            "row_content": "<p>100 Points = $1</p><p>You may apply points in multiples of 100 to any order. Or you may redeem them for Gifts, by choosing your Gift from the Points Redemption page.</p><p>All unredeemed points will expire on a rolling basis for customers who have not engaged in points activity for 6 months (180 days) or more. <strong>Put simply, your points won't expire if you continue to earn points within 6 month periods.</strong> Points are earned through placing orders or our <a href=\"https://rusticstrengthwholesale.com/pages/wholesale-partner-perks/#smile-points-products\" target=\"_blank\" title=\"https://rusticstrengthwholesale.com/pages/wholesale-partner-perks/#smile-points-products\">other ways to earn</a>.</p><p>Rewards Members will be notified by email, of points expiring 60 days and again, 3 days before they expire.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_kcJxhD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why didn't I earn points on my purchase?",
+            "icon": "question_mark",
+            "row_content": "<p>Points will be applied to your account after your order is fulfilled. </p><p>If your order has been delivered and you do not see your points, check that you shopped using the same email and login that you use for your Points account. If you find that you have more than one account, we can merge them for you.</p><p>Please reach out to (support@rusticstrengthwholesale.com)</p><p>Be sure to use the same email address when shopping.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bRBnB6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Its our Partnership Anniversary and I didn't get my reward.",
+            "icon": "question_mark",
+            "row_content": "<p>Anniversary points will not appear in your account until 30 days after you submit the date as a fraud prevention measure. If you do not see the points 30 days later, please <a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact Us\">contact support</a>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_3gFpPQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What happens to my points if I return a product or an order is cancelled?",
+            "icon": "question_mark",
+            "row_content": "<p>Any product that is returned or any order that is cancelled will reverse or decrease the points you received from that purchase. If you moved up a tier on that order, your tier will also be adjusted accordingly.</p><p>If an order is placed using Perks Points and then you complete a return, you forfeit points used.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_hDezt8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I earned points but I don't know how to redeem them towards my purchase. How do I checkout using Points?",
+            "icon": "question_mark",
+            "row_content": "<p>Before or during checkout be sure to log in so you're able to choose your reward. Ready to redeem points? You have two options for points redemption:</p><p>Option 1: From the Rewards Redemption page, you can choose the gifts or coupons that you would like to purchase with points. Simply add them to your cart.</p><p>Option 2: From your shopping cart, click on the \"Redeem Points\" button and enter the number of points you would like to apply toward your order.</p><p><em>Please note - if you leave the screen or if you are unable to use points on your purchase, they will be issued to you in an email as a coupon. The system is unable to return the points to your points balance automatically.  If you would like to return your points to the total balance, please contact </em><a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact Us\"><em>Customer Care</em></a><em>.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_CKGJhB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I redeemed points for a coupon but it didn't apply to my order.",
+            "icon": "question_mark",
+            "row_content": "<p>If you redeemed points for a coupon but didn't use the coupon code at checkout, your code is still valid and can be redeemed at a later date. You will receive an email with the code in case you don't complete your purchase immediately after redeeming.</p><p>To use, you will need to enter the coupon code at checkout.</p><p>Can't find the email? <a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact Us\">Let us know</a> and we will be happy to resend it to you. </p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_nVgpRt",
+        "collapsible_row_76BegH",
+        "collapsible_row_fmyVaD",
+        "collapsible_row_kcJxhD",
+        "collapsible_row_bRBnB6",
+        "collapsible_row_3gFpPQ",
+        "collapsible_row_hDezt8",
+        "collapsible_row_CKGJhB"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Points",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_rUb3eA": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_faimfm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do Tiers work?",
+            "icon": "question_mark",
+            "row_content": "<p>We have 7 Tiers: Copper, Bronze, Silver, Gold, Platinum, Diamond and Titanium. When you sign up for the program, you are automatically in the Bronze Tier just for signing up! Starting that date you will start accruing points immediately! Tier status is calculated by <strong>Calendar Year</strong>. When you reach a certain Tier, you will remain there (or move up if your spending increases you to the next Tier), for the remainder of the year <strong>and for the next year.</strong></p><p>Our Tiers are based on the amount of money spent and each new Tier has new benefits to unlock!</p><ul><li>Copper - $0 - $999 (active enrollment is required to receive benefits)</li></ul><p></p><ul><li>Bronze - $1,000 - $4,999</li></ul><p></p><ul><li>Silver - $5,000 - $9,999</li></ul><p></p><ul><li>Gold - $10,000 - $49,999</li></ul><p></p><ul><li>Platinum - $50,000 - $99,999</li></ul><p></p><ul><li>Diamond - $100,000 - 249,999</li></ul><p></p><ul><li>Titanium - $250,000 +</li></ul><p>Redeeming your points will not affect your Tier status.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_y6UwNj": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do Tiers expire or reset?",
+            "icon": "question_mark",
+            "row_content": "<p>Yes, Tier status is based on a 12 month calendar period.</p><p>For example, if you spent enough to reach the Diamond tier in November of 2025, you will enjoy the benefits of Diamond tier status for the rest of 2025 and all of 2026.</p><p>Then, during the calendar year of 2026, you will have to spend enough to re-qualify for the Diamond tier for 2027. If you do not, the tier status will be recalculated based on the money that you <em>did</em> spend in that 2026 calendar year. </p><p><em>Remember, the amount you spend on our products (after discounts) qualifies you for tiers. This does not include money spent on taxes or shipping.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_4RXT7t": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I placed a large order that took me from the Silver Tier directly to the Platinum Tier, why didn't I receive my Gold Tier rewards?",
+            "icon": "question_mark",
+            "row_content": "<p>You will only receive the rewards for the Tier that you have entered. Because you jumped over the Gold Tier and did not enter it, you will not receive the entry rewards for that Tier. You will only receive the Platinum Tier entry reward(s).</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_faimfm",
+        "collapsible_row_y6UwNj",
+        "collapsible_row_4RXT7t"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Tiers",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_4ktQr9": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_i8YVHG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I forgot to sign in and just made a purchase, will I still earn points for my order?",
+            "icon": "question_mark",
+            "row_content": "<p>To ensure that you will accrue points correctly, please make sure the same email address is used for your payment method an your Rewards account. We do recommend being logged in to one single account for purchases in order to ensure orders are counted towards your Tier status. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GUpLUr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What happens to my points if I return a product or an order is cancelled?",
+            "icon": "question_mark",
+            "row_content": "<p>Any product that is returned or any order that is cancelled will reverse or decrease the points you received from that purchase. If you moved up a tier on that order, your tier will also be adjusted accordingly.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_i8YVHG",
+        "collapsible_row_GUpLUr"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Orders + Returns",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_grP7YA": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_FPN9yT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Rewards Program Terms + Conditions",
+            "icon": "clipboard",
+            "row_content": "<p><strong>Welcome to the Rustic Strength Partner Perks Rewards Program!</strong></p><p>This Program allows businesses who partner with Rustic Strength (\"Partner\", \"you\", or \"your\") to earn points for qualifying purchases made on our website (www.rusticstrengthwholesale.com).<br/>These points can then be redeemed for various rewards and benefits offered by<br/>Rustic Strength.</p><p><strong>1. Membership</strong></p><p><strong>Free to Join:</strong> There is no fee to join the Program.</p><p><strong>Eligibility: </strong>To be eligible, you must be a registered business entity with a valid business address.</p><p><strong>Enrollment: </strong> To enroll, visit RusticStrengthWholesale.com and click the “Join Now”     button.</p><p><strong>Account Information:</strong> You are responsible for maintaining the accuracy and completeness of the information associated with your account. You can    access and update your account information by logging into your account.</p><p><strong>Canceling Membership:</strong> You may cancel your membership at any time by emailing us at support@rusticstrengthwholesale.com Upon cancellation, any unused points in your account will be forfeited.</p><p><strong>2. Earning Points</strong></p><p><strong>Qualifying Purchases:</strong> Points can only be earned on qualifying purchases made on<br/>     www.rusticstrengthwholesale.com. Qualifying purchases may include any products designated by Rustic Strength. Shipping fees and taxes are not eligible for points.</p><p><strong>Earning Rate:</strong> The rate at which you earn points will be based on your tier level within the Program. Tier levels and their corresponding earning    rates will be clearly outlined on the Program website.</p><p><strong>Glass (0 – 999 points) - </strong>$1 = 1 point</p><p><strong>Bronze (1,000 – 4,999 points) -</strong> $1 = 2 points</p><p><strong>Silver (5,000 – 9,999 points) - </strong>$1 = 3 points</p><p><strong>Gold (10,000 –</strong> <strong>49,999 points) - </strong>$1 = 4 points</p><p><strong>Platinum (50,000 – 99,999 points) - </strong>$1 – 5 points</p><p><strong>Diamond (100,000 –</strong> <strong>249,999 points) - </strong>$1 = 6 points</p><p><strong>Titanium (250,000 + ) -</strong> $1 = 7 points</p><p><strong>Point Tracking:</strong> Points are typically added to your account within 24 hours of your order being <em><strong>shipped</strong></em>. You can track your points balance by logging into your account.</p><p><strong>3. Redeeming Points</strong></p><p><strong>Redemption Options:</strong> You can redeem your points for various rewards and benefits offered by Rustic Strength, such as discounts on future purchases,      exclusive merchandise, or free shipping. Rewards will change periodically.<br/>     Available redemption options and their point requirements will be displayed on the Program website.</p><p><strong>Redemption Process:</strong> To redeem points, log into your account and visit the   redemption section. Select the desired reward and follow the instructions for redemption.</p><p><strong>Restrictions: </strong>Points can only be redeemed for authorized rewards. Points cannot be redeemed for cash or gift cards. Points have no cash value.</p><p><strong>4. General Terms</strong></p><p><strong>Acceptance: </strong>By participating in the Program, you agree to be bound by these Terms & Conditions.</p><p><strong>Changes to the Program:</strong> Rustic Strength reserves the right to modify or change the Program, including the point earning rate, redemption options, and tier structure, at any time without prior notice.</p><p><strong>Termination: </strong> Rustic Strength reserves the right to suspend or terminate your membership and/or the Program at any time for any reason.</p><p><strong>Inactive Accounts:</strong> If your account is inactive for a period of 6 months (180 days) your points may be forfeited.</p><p><strong>Promotional Offers:</strong> Rustic Strength may offer promotional point bonuses or other benefits from time to time. These promotions will have specific terms and conditions that will be communicated at the time of the offer.</p><p><strong>Governing Law:</strong> These Terms & Conditions shall be governed by and construed in accordance with the laws of the United States and the State of Missouri.</p><p><strong>5. Additional Information</strong></p><p>For more information about the Rustic Strength Partner Perks<br/>Rewards Program, please visit our website or <a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact Us\">contact us</a> </p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_FPN9yT"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Terms + Conditions",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_mDGyJ7": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_xNaEKi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry-detergent"
+          }
+        },
+        "featured_collection_zcVQnE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dish-soap"
+          }
+        },
+        "featured_collection_p9mctj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "essential-oils"
+          }
+        },
+        "featured_collection_HrgADB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-scent"
+          }
+        },
+        "featured_collection_Hx3hEn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hand-soap"
+          }
+        },
+        "featured_collection_BwARac": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "household-goods"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_xNaEKi",
+        "featured_collection_zcVQnE",
+        "featured_collection_p9mctj",
+        "featured_collection_HrgADB",
+        "featured_collection_Hx3hEn",
+        "featured_collection_BwARac"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop Top Categories",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_dXRf4z": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_DNaADJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design.png",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_4tmXPJ": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled_129e331e-5fd0-42c2-8e5d-dcc50570e10b.png",
+            "title": "",
+            "text": "",
+            "link_label": "Private Label Information",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_4wULwL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Untitled_580d6abd-1ae3-4e38-9bc8-b083c07a3b45.png",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_GGmjWc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_nWHg4f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_a3XzDy": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_c7Dmww": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blog Center",
+            "link": "shopify://pages/blog-landing-page"
+          }
+        },
+        "column_FMPrgk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        }
+      },
+      "block_order": [
+        "column_DNaADJ",
+        "column_4tmXPJ",
+        "column_4wULwL",
+        "column_GGmjWc",
+        "column_nWHg4f",
+        "column_a3XzDy",
+        "column_c7Dmww",
+        "column_FMPrgk"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "178155455124c501ba",
+    "image_banner_zYTJXh",
+    "1758115415a209fc7a",
+    "image_with_text_a6gnRD",
+    "image_with_text_7TJkUM",
+    "multicolumn_TbGpGk",
+    "rich_text_pU9LRJ",
+    "image_with_text_A39hyz",
+    "image_with_text_GNpJVF",
+    "collapsible_content_tkwjJz",
+    "collapsible_content_fUt8Yg",
+    "collapsible_content_rUb3eA",
+    "collapsible_content_4ktQr9",
+    "collapsible_content_grP7YA",
+    "collection_list_mDGyJ7",
+    "multicolumn_dXRf4z"
+  ]
+}

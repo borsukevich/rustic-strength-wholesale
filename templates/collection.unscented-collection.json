@@ -14,308 +14,228 @@
       "disabled": true,
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": true,
-        "color_scheme": "background-2"
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
       }
     },
-    "e66bba48-2aef-43a8-ac28-5afda5eabc9e": {
-      "type": "image-banner",
+    "rich_text_gUUN8m": {
+      "type": "rich-text",
       "blocks": {
-        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-0": {
+        "heading_aF8HDR": {
           "type": "heading",
           "settings": {
-            "heading": "MUD SEASON Must-Haves",
+            "heading": "shop all unscented products",
             "heading_size": "h1"
           }
         },
-        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-1": {
+        "text_Bp4Ubc": {
           "type": "text",
-          "settings": {
-            "text": "SAVE 5% ON EACH, WHEN YOU BUY FOUR PRODUCTS",
-            "text_style": "body"
-          }
-        },
-        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-2": {
-          "type": "buttons",
           "disabled": true,
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_hb3FAX": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-0",
-        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-1",
-        "template--16309498577136__e66bba48-2aef-43a8-ac28-5afda5eabc9e-16699142062e211a88-2"
+        "heading_aF8HDR",
+        "text_Bp4Ubc",
+        "button_hb3FAX"
       ],
-      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Mud_Season_Banner_Expanded.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "small",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-3",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
-      }
-    },
-    "7d3c2ec6-7db3-4f14-913f-f3516dd45313": {
-      "type": "image-banner",
-      "blocks": {
-        "template--16810216161520__7d3c2ec6-7db3-4f14-913f-f3516dd45313-heading-1": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Discover your essential oil",
-            "heading_size": "h1"
-          }
-        },
-        "template--16810216161520__7d3c2ec6-7db3-4f14-913f-f3516dd45313-text-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "template--16810216161520__7d3c2ec6-7db3-4f14-913f-f3516dd45313-buttons-1": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16810216161520__7d3c2ec6-7db3-4f14-913f-f3516dd45313-heading-1",
-        "template--16810216161520__7d3c2ec6-7db3-4f14-913f-f3516dd45313-text-1",
-        "template--16810216161520__7d3c2ec6-7db3-4f14-913f-f3516dd45313-buttons-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Front.jpg",
-        "image_overlay_opacity": 60,
-        "image_height": "medium",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 20
       }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 24,
-        "columns_desktop": 4,
+        "products_per_page": 36,
+        "columns_desktop": 5,
         "columns_mobile": "2",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
+        "quick_add": "bulk",
         "enable_filtering": true,
-        "filter_type": "horizontal",
+        "filter_type": "drawer",
         "enable_sorting": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "1698255345d44ce2f1": {
+    "apps_7wCTCq": {
       "type": "apps",
       "blocks": {
-        "ac2deb59-e515-425c-80ed-2275146f0527": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "judge_me_reviews_testimonials_carousel_LwTYxd": {
+          "type": "shopify://apps/judge-me-reviews/blocks/testimonials_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "maxwidth": 2000
+            "show_sample_reviews": false,
+            "reviews_selection": "all",
+            "products": [],
+            "star_rating": "4_to_5_star",
+            "max_reviews": 30,
+            "quote_marks_size": "small",
+            "product_name_text_size": "small",
+            "verified_badge_style": "text",
+            "card_height": "compact",
+            "text_size": "small",
+            "stars_size": "large",
+            "arrows_position": "sides",
+            "max_width": 1200,
+            "corner_styling": "round",
+            "quote_marks_style": "basic",
+            "card_color": "#ffffff",
+            "stars_and_quote_marks_color": "#cdc48c",
+            "text_color": "#2f2f30",
+            "arrows_color": "#696563",
+            "show_border": false,
+            "border_color": "#108474",
+            "show_drop_shadow": false,
+            "transition_speed": 8,
+            "header_text": "Businesses are saying",
+            "show_average_rating": false,
+            "rating_display": "default"
+          }
+        },
+        "judge_me_reviews_store_summary_cBa4hd": {
+          "type": "shopify://apps/judge-me-reviews/blocks/store_summary/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "data_source": "real",
+            "theme": "expanded",
+            "button_theme_color": "#ffffff",
+            "button_theme_text_color": "#000000",
+            "show_keywords": true,
+            "keywords_visibility": "shown",
+            "show_button": true,
+            "button_visibility": "shown",
+            "alignment": "center",
+            "title_size": "default",
+            "text_size": "large",
+            "corner_styling": "round",
+            "widget_color": "#f4f4f4",
+            "text_color": "#2f2f30",
+            "lighter_text_color": "#696563",
+            "button_color": "#2f2f30",
+            "button_text_color": "#ffffff",
+            "show_sentiment_colors": true,
+            "max_width": 1200,
+            "heading_text": "Businesses rate this store",
+            "button_text": "See AI reviews summary"
           }
         }
       },
       "block_order": [
-        "ac2deb59-e515-425c-80ed-2275146f0527"
+        "judge_me_reviews_testimonials_carousel_LwTYxd",
+        "judge_me_reviews_store_summary_cBa4hd"
       ],
       "settings": {
         "include_margins": true
       }
     },
-    "collection_list_TNxKAd": {
+    "blocks_YmDWTA": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_f9eba0d_jAt476": {
+          "type": "ai_gen_block_f9eba0d",
+          "settings": {
+            "desktop_height": 50,
+            "mobile_height": 30,
+            "show_label": false,
+            "show_border": false,
+            "border_thickness": 1,
+            "border_style": "solid",
+            "border_color": "#e0e0e0",
+            "color_scheme": "scheme-1"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_f9eba0d_jAt476"
+      ],
+      "name": "Spacer",
+      "settings": {}
+    },
+    "collection_list_NeNbHM": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_JRMa8e": {
+        "featured_collection_CXyz6z": {
           "type": "featured_collection",
           "settings": {
-            "collection": "heritage-bar-soap"
+            "collection": "affordable-effective"
           }
         },
-        "featured_collection_xJjEVd": {
+        "featured_collection_QaaJAB": {
           "type": "featured_collection",
           "settings": {
-            "collection": "body-care"
+            "collection": "custom-scent"
           }
         },
-        "featured_collection_DFb7dX": {
+        "featured_collection_dcidrc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dish-soap"
+          }
+        },
+        "featured_collection_6VnXWV": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry-detergent"
+          }
+        },
+        "featured_collection_zeqKwE": {
           "type": "featured_collection",
           "settings": {
             "collection": "household-goods"
           }
         },
-        "featured_collection_gjy4VY": {
+        "featured_collection_3XmkHW": {
           "type": "featured_collection",
           "settings": {
-            "collection": "starter-kits-bundles"
-          }
-        },
-        "featured_collection_AGYNLd": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "essential-oils"
-          }
-        },
-        "featured_collection_63VPxd": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "laundry-detergent"
+            "collection": "seasonal-scents"
           }
         }
       },
       "block_order": [
-        "featured_collection_JRMa8e",
-        "featured_collection_xJjEVd",
-        "featured_collection_DFb7dX",
-        "featured_collection_gjy4VY",
-        "featured_collection_AGYNLd",
-        "featured_collection_63VPxd"
+        "featured_collection_CXyz6z",
+        "featured_collection_QaaJAB",
+        "featured_collection_dcidrc",
+        "featured_collection_6VnXWV",
+        "featured_collection_zeqKwE",
+        "featured_collection_3XmkHW"
       ],
+      "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "title": "Explore more high purity cleaning + wellness",
-        "heading_size": "h1",
+        "title": "Shop Top Categories",
+        "heading_size": "h2",
         "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "",
+        "columns_desktop": 6,
+        "color_scheme": "scheme-1",
         "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "slideshow_QUJGaF": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_X8fwjg": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Summer_Collection_Shop_Banner.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_PWPYM9": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image_overlay_opacity": 0,
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_X8fwjg",
-        "slide_PWPYM9"
-      ],
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "image_with_text_thCzPV": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_HtgXwd": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get Rewarded for Sustainability.",
-            "heading_size": "h1"
-          }
-        },
-        "text_NYKRFi": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Earn points for every container you return! Redeem points for store credit and exclusive discounts. Join our <em>Close The Loop Program</em> and help the planet while rewarding yourself.</h3>",
-            "text_style": "body"
-          }
-        },
-        "button_dwFpB4": {
-          "type": "button",
-          "settings": {
-            "button_label": "Close The Loop program details",
-            "button_link": "shopify://pages/close-the-loop-program™",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_HtgXwd",
-        "text_NYKRFi",
-        "button_dwFpB4"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/ClosedLoopPromo_2024_2-ezgif.com-optimize.gif",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -323,12 +243,10 @@
   },
   "order": [
     "banner",
-    "e66bba48-2aef-43a8-ac28-5afda5eabc9e",
-    "7d3c2ec6-7db3-4f14-913f-f3516dd45313",
+    "rich_text_gUUN8m",
     "product-grid",
-    "1698255345d44ce2f1",
-    "collection_list_TNxKAd",
-    "slideshow_QUJGaF",
-    "image_with_text_thCzPV"
+    "apps_7wCTCq",
+    "blocks_YmDWTA",
+    "collection_list_NeNbHM"
   ]
 }

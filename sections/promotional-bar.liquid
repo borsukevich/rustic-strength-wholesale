@@ -1,0 +1,939 @@
+{%- if section.settings.section_show_on_desktop or section.settings.section_show_on_mobile -%}
+  {%- if section.settings.show_on_home_page_only == false or template == 'index' -%}
+    {%- liquid
+      assign full_start_date = ''
+      if section.settings.start_date != blank
+        assign full_start_date = section.settings.start_date | append: ' ' | append: section.settings.start_time
+      endif
+
+      assign full_end_date = ''
+      if section.settings.end_date != blank
+        assign full_end_date = section.settings.end_date | append: ' ' | append: section.settings.end_time
+      endif
+
+      assign color_overlay = section.settings.color_overlay
+    -%}
+
+    {%- style -%}
+      :root {
+        --bs-gutter-x: 1.5rem;
+        --color-overlay-background: 0, 0, 0;
+      }
+
+      .promotional-bar .button-reset {
+        background: transparent;
+        border: 0;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+        color: inherit;
+        width: auto;
+        min-width: auto;
+        min-height: auto;
+      }
+
+      .promotional-bar .button-reset:before,
+      .promotional-bar .button-reset:after {
+        content: none;
+      }
+
+      .section {
+        --border-radius-multiplier: 1;
+        position: relative;
+      }
+
+      .section:not(.section--no-spacing) {
+        padding-top: calc(var(--section-pt-mb, var(--section-pt)) * 1px) !important;
+        padding-bottom: calc(var(--section-pb-mb, var(--section-pb)) * 1px) !important;
+      }
+
+      @media (min-width: 768px) {
+        .section { --border-radius-multiplier: 3; }
+        .section:not(.section--no-spacing) {
+          padding-top: calc(var(--section-pt) * 1px) !important;
+          padding-bottom: calc(var(--section-pb) * 1px) !important;
+        }
+      }
+
+      .promotional-bar .flex { display: flex; }
+      .promotional-bar .flex-column { flex-direction: column; }
+      .promotional-bar .align-center { align-items: center; }
+      .promotional-bar .justify-center { justify-content: center; }
+      .promotional-bar .justify-start { justify-content: flex-start; }
+      .promotional-bar .justify-end { justify-content: flex-end; }
+      .promotional-bar .justify-between { justify-content: space-between; }
+      .promotional-bar .w-full { width: 100%; }
+      .promotional-bar .block { display: block; }
+      .promotional-bar .hide { display: none; }
+      .promotional-bar .relative { position: relative; }
+      .promotional-bar .absolute { position: absolute; }
+      .promotional-bar .inset-0 { inset: 0; }
+      .promotional-bar .shrink-0 { flex-shrink: 0; }
+      .promotional-bar .z-10 { z-index: 10; }
+      .promotional-bar .z-20 { z-index: 20; }
+      .promotional-bar .z-30 { z-index: 30; }
+      .promotional-bar .z-40 { z-index: 40; }
+      .promotional-bar .object-fit-cover { object-fit: cover; }
+
+      .promotional-bar .text-center { text-align: center; }
+      .promotional-bar .text-left { text-align: left; }
+      .promotional-bar .text-right { text-align: right; }
+      .promotional-bar .font-medium { font-weight: 500; }
+      .promotional-bar .line-clamp-2 { -webkit-box-orient: vertical; display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; }
+      .promotional-bar .fs-custom { font-size: calc(var(--font-size-mb, var(--font-size)) * 1px); }
+      .promotional-bar .button-reset { background: transparent; border: 0; padding: 0; border-radius: 0; box-shadow: none; color: inherit; }
+      .promotional-bar .button { appearance: none; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; text-decoration: none; min-width: auto; min-height: auto; }
+
+      @media (min-width: 768px) {
+        .promotional-bar .flex-md-row { flex-direction: row; }
+        .promotional-bar .flex-md-column { flex-direction: column; }
+        .promotional-bar .flex-md { display: flex; }
+        .promotional-bar .justify-md-center { justify-content: center; }
+        .promotional-bar .justify-md-start { justify-content: flex-start; }
+        .promotional-bar .justify-md-end { justify-content: flex-end; }
+        .promotional-bar .justify-md-between { justify-content: space-between; }
+        .promotional-bar .text-md-center { text-align: center; }
+        .promotional-bar .text-md-left { text-align: left; }
+        .promotional-bar .text-md-right { text-align: right; }
+        .promotional-bar .fs-custom { font-size: calc(var(--font-size) * 1px); }
+      }
+
+      .promotional-bar[data-id="{{ section.id }}"] {
+        --color-overlay-background: {{ color_overlay.red }}, {{ color_overlay.green }}, {{ color_overlay.blue }};
+
+        display: block;
+        position: relative;
+        overflow: hidden;
+        {% if section.settings.make_whole_clickable and section.settings.button_link != blank %}
+          cursor: pointer;
+        {% endif %}
+      }
+
+      .promotional-bar[data-id="{{ section.id }}"].promotional-bar--overlay::after {
+        {%- assign overlay_alpha = section.settings.overlay_opacity | divided_by: 100.0 -%}
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-color: rgba(var(--color-overlay-background), {{ overlay_alpha }});
+        pointer-events: none;
+      }
+
+      .promotional-bar[data-id="{{ section.id }}"] .promotional-bar__content-wrapper {
+        max-width: {{ section.settings.max_content_width }}px;
+        margin: 0 auto;
+        gap: {{ section.settings.spacing_on_mobile }}px;
+      }
+
+      .promotional-bar[data-id="{{ section.id }}"] .promotional-bar__button {
+        padding: 0.5rem 1rem;
+        border-radius: var(--buttons-radius-outset, 4px);
+        font-size: 1.2rem;
+        text-transform: {{ section.settings.button_text_transform }};
+      }
+
+      .promotional-bar[data-id="{{ section.id }}"].hidden {
+        display: none !important;
+      }
+
+      .promotional-bar[data-id="{{ section.id }}"] .promotional-bar__close-button {
+        position: absolute;
+        top: 50%;
+        right: 0.5rem;
+        padding: 0.6rem;
+        cursor: pointer;
+        line-height: 1;
+        transform: translateY(-50%);
+      }
+
+      .promotional-bar[data-id="{{ section.id }}"] .promotional-bar__close-button svg {
+        width: 18px;
+        height: 18px;
+        display: block;
+      }
+
+      @media (min-width: 768px) {
+        .promotional-bar[data-id="{{ section.id }}"] .promotional-bar__content-wrapper {
+          gap: {{ section.settings.spacing_on_desktop }}px;
+          padding-right: 4rem;
+        }
+
+        .promotional-bar[data-id="{{ section.id }}"] .promotional-bar__button {
+          padding: 0.7rem 2rem;
+          font-size: 1.4rem;
+        }
+
+        .promotional-bar[data-id="{{ section.id }}"] .promotional-bar__close-button {
+          right: 1rem;
+        }
+      }
+
+      {%- liquid
+        assign justify_md = 'center'
+        if section.settings.alignment_desktop == 'left'
+          assign justify_md = 'start'
+        elsif section.settings.alignment_desktop == 'right'
+          assign justify_md = 'end'
+        elsif section.settings.alignment_desktop == 'space-between'
+          assign justify_md = 'between'
+        endif
+
+        assign justify_sm = 'center'
+        if section.settings.alignment_mobile == 'left'
+          assign justify_sm = 'start'
+        elsif section.settings.alignment_mobile == 'right'
+          assign justify_sm = 'end'
+        elsif section.settings.alignment_mobile == 'space-between'
+          assign justify_sm = 'between'
+        endif
+      -%}
+    {%- endstyle -%}
+
+    <promotional-bar-component
+      class="promotional-bar section block w-full {% render 'section-classes', section %}{% if section.settings.overlay_opacity > 0 %} promotional-bar--overlay{% endif %}"
+      data-id="{{ section.id }}"
+      style="{% render 'section-style', section %}"
+      data-enable-scheduling="{{ section.settings.enable_scheduling }}"
+      data-start="{{ full_start_date }}"
+      data-end="{{ full_end_date }}"
+      data-timezone="{{ section.settings.timezone }}"
+    >
+      {%- if section.settings.image != blank -%}
+        {{
+          section.settings.image
+          | image_url: width: 3840
+          | image_tag:
+            loading: 'eager',
+            fetchpriority: 'high',
+            decoding: 'async',
+            sizes: '100vw',
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            alt: section.settings.image.alt,
+            class: 'absolute inset-0 w-full h-full object-fit-cover z-0'
+        }}
+      {%- endif -%}
+
+      <div class="container-wide relative z-10">
+        {%- if section.settings.make_whole_clickable and section.settings.button_link != blank -%}
+          <a
+            href="{{ section.settings.button_link }}"
+            {% if section.settings.open_new_tab %}
+              target="_blank"
+            {% endif %}
+            class="absolute inset-0 z-20 no-underline"
+          ></a>
+        {%- endif -%}
+
+        <div
+          class="
+            promotional-bar__content-wrapper flex
+            {% if section.settings.layout_mobile == 'vertical' %}flex-column{% else %}flex-row{% endif %}
+            {% if section.settings.layout_desktop == 'vertical' %}flex-md-column{% else %}flex-md-row{% endif %}
+            align-center
+            justify-{{ justify_sm }}
+            justify-md-{{ justify_md }}
+          "
+        >
+          <div class="text-{{ section.settings.alignment_mobile }} text-md-{{ section.settings.alignment_desktop }}">
+            <div
+              class="fs-custom line-clamp-2 font-medium"
+              style="--font-size: {{ section.settings.text_font_size_on_desktop }}; --font-size-mb: {{ section.settings.text_font_size_on_mobile }};"
+            >
+              {{- section.settings.text -}}
+            </div>
+          </div>
+
+          {%- if section.settings.show_button and section.settings.button_text != blank -%}
+            <div class="relative z-30 flex align-center shrink-0{% unless section.settings.show_button_on_mobile %} hide flex-md{% endunless %}">
+              <a
+                href="{{ section.settings.button_link }}"
+                {% if section.settings.open_new_tab %}
+                  target="_blank"
+                {% endif %}
+                class="promotional-bar__button no-underline button button-{{ section.settings.button_style }} button-sm"
+              >
+                <span class="button__flair"></span>
+                <span class="button__inner">{{- section.settings.button_text -}}</span>
+              </a>
+            </div>
+          {%- endif -%}
+
+          {%- if section.settings.enable_close_button -%}
+            <button
+              type="button"
+              class="promotional-bar__close-button button button-reset z-40 js-close-button"
+              aria-label="Close bar"
+            >
+              <svg focusable="false" width="16" height="16" class="shrink-0" viewBox="0 0 20 20">
+                <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          {%- endif -%}
+        </div>
+      </div>
+    </promotional-bar-component>
+
+    <script>
+      if (!customElements.get('promotional-bar-component')) {
+        customElements.define(
+          'promotional-bar-component',
+          class extends HTMLElement {
+            constructor() {
+              super();
+              this.timerInterval = null;
+              this.isClosedByUser = false;
+            }
+
+            connectedCallback() {
+              this.enableScheduling = this.dataset.enableScheduling === 'true';
+              const closeButton = this.querySelector('.js-close-button');
+              
+              if (closeButton) {
+                closeButton.addEventListener('click', () => {
+                  this.classList.add('hidden');
+                  this.isClosedByUser = true;
+                });
+              }
+
+              if (!this.enableScheduling) {
+                return;
+              }
+
+              this.startDateStr = this.dataset.start;
+              this.endDateStr = this.dataset.end;
+
+              this.evaluateSchedule();
+              this.timerInterval = setInterval(() => {
+                this.evaluateSchedule();
+              }, 1000);
+            }
+
+            disconnectedCallback() {
+              if (this.timerInterval) {
+                clearInterval(this.timerInterval);
+              }
+            }
+
+            evaluateSchedule() {
+              if (this.isClosedByUser) return;
+
+              if (this.startDateStr) {
+                const startDistance = this._getDistance(this.startDateStr);
+                if (startDistance > 0) {
+                  this.classList.add('hidden');
+                  return;
+                }
+              }
+
+              if (this.endDateStr) {
+                const endDistance = this._getDistance(this.endDateStr);
+                if (endDistance < 0) {
+                  this.classList.add('hidden');
+                  if (this.timerInterval) clearInterval(this.timerInterval);
+                  return;
+                }
+              }
+
+              this.classList.remove('hidden');
+            }
+
+            _getDistance(dateStr) {
+              if (!dateStr) return -1;
+
+              const parts = dateStr.split(' ');
+              if (parts.length < 2) return -1;
+
+              const dateParts = parts[0].split('-');
+              const timeParts = parts[1].split(':');
+
+              const year = parseInt(dateParts[2]);
+              const month = parseInt(dateParts[0]);
+              const day = parseInt(dateParts[1]);
+              const hour = parseInt(timeParts[0]);
+              const minute = parseInt(timeParts[1]);
+
+              if (isNaN(year) || isNaN(month) || isNaN(day) || isNaN(hour) || isNaN(minute)) {
+                return -1;
+              }
+
+              const wallClockUtc = Date.UTC(year, month - 1, day, hour, minute, 0);
+              const tz = this.dataset.timezone || 'UTC';
+
+              if (tz === 'UTC') {
+                return wallClockUtc - Date.now();
+              }
+
+              try {
+                const formatter = new Intl.DateTimeFormat('en-US', {
+                  timeZone: tz,
+                  year: 'numeric', month: 'numeric', day: 'numeric',
+                  hour: 'numeric', minute: 'numeric', second: 'numeric', hourCycle: 'h23'
+                });
+
+                const partsArr = formatter.formatToParts(new Date(wallClockUtc));
+                const tzParts = {};
+                partsArr.forEach(p => tzParts[p.type] = p.value);
+
+                const localUtc = Date.UTC(
+                  parseInt(tzParts.year),
+                  parseInt(tzParts.month) - 1,
+                  parseInt(tzParts.day),
+                  parseInt(tzParts.hour),
+                  parseInt(tzParts.minute),
+                  0
+                );
+
+                const timezoneOffsetMs = wallClockUtc - localUtc;
+                const targetUtcTimestamp = wallClockUtc + timezoneOffsetMs;
+
+                return targetUtcTimestamp - Date.now();
+              } catch (e) {
+                console.error('Timezone error:', e);
+                return wallClockUtc - Date.now();
+              }
+            }
+          }
+        );
+      }
+    </script>
+  {%- endif -%}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Promotional bar",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_on_home_page_only",
+      "label": "Show on home page only",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_close_button",
+      "label": "Add ability to close bar",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Scheduling"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_scheduling",
+      "label": "Enable scheduling",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "start_date",
+      "label": "Start date",
+      "info": "Format: MM-DD-YYYY. Leave empty to start immediately.",
+      "default": "12-30-2025",
+      "visible_if": "{{ section.settings.enable_scheduling }}"
+    },
+    {
+      "type": "select",
+      "id": "start_time",
+      "label": "Start time",
+      "options": [
+        { "value": "0:00", "label": "12:00 AM" },
+        { "value": "0:15", "label": "12:15 AM" },
+        { "value": "0:30", "label": "12:30 AM" },
+        { "value": "0:45", "label": "12:45 AM" },
+        { "value": "1:00", "label": "1:00 AM" },
+        { "value": "1:15", "label": "1:15 AM" },
+        { "value": "1:30", "label": "1:30 AM" },
+        { "value": "1:45", "label": "1:45 AM" },
+        { "value": "2:00", "label": "2:00 AM" },
+        { "value": "2:15", "label": "2:15 AM" },
+        { "value": "2:30", "label": "2:30 AM" },
+        { "value": "2:45", "label": "2:45 AM" },
+        { "value": "3:00", "label": "3:00 AM" },
+        { "value": "3:15", "label": "3:15 AM" },
+        { "value": "3:30", "label": "3:30 AM" },
+        { "value": "3:45", "label": "3:45 AM" },
+        { "value": "4:00", "label": "4:00 AM" },
+        { "value": "4:15", "label": "4:15 AM" },
+        { "value": "4:30", "label": "4:30 AM" },
+        { "value": "4:45", "label": "4:45 AM" },
+        { "value": "5:00", "label": "5:00 AM" },
+        { "value": "5:15", "label": "5:15 AM" },
+        { "value": "5:30", "label": "5:30 AM" },
+        { "value": "5:45", "label": "5:45 AM" },
+        { "value": "6:00", "label": "6:00 AM" },
+        { "value": "6:15", "label": "6:15 AM" },
+        { "value": "6:30", "label": "6:30 AM" },
+        { "value": "6:45", "label": "6:45 AM" },
+        { "value": "7:00", "label": "7:00 AM" },
+        { "value": "7:15", "label": "7:15 AM" },
+        { "value": "7:30", "label": "7:30 AM" },
+        { "value": "7:45", "label": "7:45 AM" },
+        { "value": "8:00", "label": "8:00 AM" },
+        { "value": "8:15", "label": "8:15 AM" },
+        { "value": "8:30", "label": "8:30 AM" },
+        { "value": "8:45", "label": "8:45 AM" },
+        { "value": "9:00", "label": "9:00 AM" },
+        { "value": "9:15", "label": "9:15 AM" },
+        { "value": "9:30", "label": "9:30 AM" },
+        { "value": "9:45", "label": "9:45 AM" },
+        { "value": "10:00", "label": "10:00 AM" },
+        { "value": "10:15", "label": "10:15 AM" },
+        { "value": "10:30", "label": "10:30 AM" },
+        { "value": "10:45", "label": "10:45 AM" },
+        { "value": "11:00", "label": "11:00 AM" },
+        { "value": "11:15", "label": "11:15 AM" },
+        { "value": "11:30", "label": "11:30 AM" },
+        { "value": "11:45", "label": "11:45 AM" },
+        { "value": "12:00", "label": "12:00 PM" },
+        { "value": "12:15", "label": "12:15 PM" },
+        { "value": "12:30", "label": "12:30 PM" },
+        { "value": "12:45", "label": "12:45 PM" },
+        { "value": "13:00", "label": "1:00 PM" },
+        { "value": "13:15", "label": "1:15 PM" },
+        { "value": "13:30", "label": "1:30 PM" },
+        { "value": "13:45", "label": "1:45 PM" },
+        { "value": "14:00", "label": "2:00 PM" },
+        { "value": "14:15", "label": "2:15 PM" },
+        { "value": "14:30", "label": "2:30 PM" },
+        { "value": "14:45", "label": "2:45 PM" },
+        { "value": "15:00", "label": "3:00 PM" },
+        { "value": "15:15", "label": "3:15 PM" },
+        { "value": "15:30", "label": "3:30 PM" },
+        { "value": "15:45", "label": "3:45 PM" },
+        { "value": "16:00", "label": "4:00 PM" },
+        { "value": "16:15", "label": "4:15 PM" },
+        { "value": "16:30", "label": "4:30 PM" },
+        { "value": "16:45", "label": "4:45 PM" },
+        { "value": "17:00", "label": "5:00 PM" },
+        { "value": "17:15", "label": "5:15 PM" },
+        { "value": "17:30", "label": "5:30 PM" },
+        { "value": "17:45", "label": "5:45 PM" },
+        { "value": "18:00", "label": "6:00 PM" },
+        { "value": "18:15", "label": "6:15 PM" },
+        { "value": "18:30", "label": "6:30 PM" },
+        { "value": "18:45", "label": "6:45 PM" },
+        { "value": "19:00", "label": "7:00 PM" },
+        { "value": "19:15", "label": "7:15 PM" },
+        { "value": "19:30", "label": "7:30 PM" },
+        { "value": "19:45", "label": "7:45 PM" },
+        { "value": "20:00", "label": "8:00 PM" },
+        { "value": "20:15", "label": "8:15 PM" },
+        { "value": "20:30", "label": "8:30 PM" },
+        { "value": "20:45", "label": "8:45 PM" },
+        { "value": "21:00", "label": "9:00 PM" },
+        { "value": "21:15", "label": "9:15 PM" },
+        { "value": "21:30", "label": "9:30 PM" },
+        { "value": "21:45", "label": "9:45 PM" },
+        { "value": "22:00", "label": "10:00 PM" },
+        { "value": "22:15", "label": "10:15 PM" },
+        { "value": "22:30", "label": "10:30 PM" },
+        { "value": "22:45", "label": "10:45 PM" },
+        { "value": "23:00", "label": "11:00 PM" },
+        { "value": "23:15", "label": "11:15 PM" },
+        { "value": "23:30", "label": "11:30 PM" },
+        { "value": "23:45", "label": "11:45 PM" }
+      ],
+      "default": "0:00",
+      "visible_if": "{{ section.settings.enable_scheduling }}"
+    },
+    {
+      "type": "text",
+      "id": "end_date",
+      "label": "End date",
+      "info": "Format: MM-DD-YYYY. Leave empty to run forever.",
+      "default": "12-31-2030",
+      "visible_if": "{{ section.settings.enable_scheduling }}"
+    },
+    {
+      "type": "select",
+      "id": "end_time",
+      "label": "End time",
+      "options": [
+        { "value": "0:00", "label": "12:00 AM" },
+        { "value": "0:15", "label": "12:15 AM" },
+        { "value": "0:30", "label": "12:30 AM" },
+        { "value": "0:45", "label": "12:45 AM" },
+        { "value": "1:00", "label": "1:00 AM" },
+        { "value": "1:15", "label": "1:15 AM" },
+        { "value": "1:30", "label": "1:30 AM" },
+        { "value": "1:45", "label": "1:45 AM" },
+        { "value": "2:00", "label": "2:00 AM" },
+        { "value": "2:15", "label": "2:15 AM" },
+        { "value": "2:30", "label": "2:30 AM" },
+        { "value": "2:45", "label": "2:45 AM" },
+        { "value": "3:00", "label": "3:00 AM" },
+        { "value": "3:15", "label": "3:15 AM" },
+        { "value": "3:30", "label": "3:30 AM" },
+        { "value": "3:45", "label": "3:45 AM" },
+        { "value": "4:00", "label": "4:00 AM" },
+        { "value": "4:15", "label": "4:15 AM" },
+        { "value": "4:30", "label": "4:30 AM" },
+        { "value": "4:45", "label": "4:45 AM" },
+        { "value": "5:00", "label": "5:00 AM" },
+        { "value": "5:15", "label": "5:15 AM" },
+        { "value": "5:30", "label": "5:30 AM" },
+        { "value": "5:45", "label": "5:45 AM" },
+        { "value": "6:00", "label": "6:00 AM" },
+        { "value": "6:15", "label": "6:15 AM" },
+        { "value": "6:30", "label": "6:30 AM" },
+        { "value": "6:45", "label": "6:45 AM" },
+        { "value": "7:00", "label": "7:00 AM" },
+        { "value": "7:15", "label": "7:15 AM" },
+        { "value": "7:30", "label": "7:30 AM" },
+        { "value": "7:45", "label": "7:45 AM" },
+        { "value": "8:00", "label": "8:00 AM" },
+        { "value": "8:15", "label": "8:15 AM" },
+        { "value": "8:30", "label": "8:30 AM" },
+        { "value": "8:45", "label": "8:45 AM" },
+        { "value": "9:00", "label": "9:00 AM" },
+        { "value": "9:15", "label": "9:15 AM" },
+        { "value": "9:30", "label": "9:30 AM" },
+        { "value": "9:45", "label": "9:45 AM" },
+        { "value": "10:00", "label": "10:00 AM" },
+        { "value": "10:15", "label": "10:15 AM" },
+        { "value": "10:30", "label": "10:30 AM" },
+        { "value": "10:45", "label": "10:45 AM" },
+        { "value": "11:00", "label": "11:00 AM" },
+        { "value": "11:15", "label": "11:15 AM" },
+        { "value": "11:30", "label": "11:30 AM" },
+        { "value": "11:45", "label": "11:45 AM" },
+        { "value": "12:00", "label": "12:00 PM" },
+        { "value": "12:15", "label": "12:15 PM" },
+        { "value": "12:30", "label": "12:30 PM" },
+        { "value": "12:45", "label": "12:45 PM" },
+        { "value": "13:00", "label": "1:00 PM" },
+        { "value": "13:15", "label": "1:15 PM" },
+        { "value": "13:30", "label": "1:30 PM" },
+        { "value": "13:45", "label": "1:45 PM" },
+        { "value": "14:00", "label": "2:00 PM" },
+        { "value": "14:15", "label": "2:15 PM" },
+        { "value": "14:30", "label": "2:30 PM" },
+        { "value": "14:45", "label": "2:45 PM" },
+        { "value": "15:00", "label": "3:00 PM" },
+        { "value": "15:15", "label": "3:15 PM" },
+        { "value": "15:30", "label": "3:30 PM" },
+        { "value": "15:45", "label": "3:45 PM" },
+        { "value": "16:00", "label": "4:00 PM" },
+        { "value": "16:15", "label": "4:15 PM" },
+        { "value": "16:30", "label": "4:30 PM" },
+        { "value": "16:45", "label": "4:45 PM" },
+        { "value": "17:00", "label": "5:00 PM" },
+        { "value": "17:15", "label": "5:15 PM" },
+        { "value": "17:30", "label": "5:30 PM" },
+        { "value": "17:45", "label": "5:45 PM" },
+        { "value": "18:00", "label": "6:00 PM" },
+        { "value": "18:15", "label": "6:15 PM" },
+        { "value": "18:30", "label": "6:30 PM" },
+        { "value": "18:45", "label": "6:45 PM" },
+        { "value": "19:00", "label": "7:00 PM" },
+        { "value": "19:15", "label": "7:15 PM" },
+        { "value": "19:30", "label": "7:30 PM" },
+        { "value": "19:45", "label": "7:45 PM" },
+        { "value": "20:00", "label": "8:00 PM" },
+        { "value": "20:15", "label": "8:15 PM" },
+        { "value": "20:30", "label": "8:30 PM" },
+        { "value": "20:45", "label": "8:45 PM" },
+        { "value": "21:00", "label": "9:00 PM" },
+        { "value": "21:15", "label": "9:15 PM" },
+        { "value": "21:30", "label": "9:30 PM" },
+        { "value": "21:45", "label": "9:45 PM" },
+        { "value": "22:00", "label": "10:00 PM" },
+        { "value": "22:15", "label": "10:15 PM" },
+        { "value": "22:30", "label": "10:30 PM" },
+        { "value": "22:45", "label": "10:45 PM" },
+        { "value": "23:00", "label": "11:00 PM" },
+        { "value": "23:15", "label": "11:15 PM" },
+        { "value": "23:30", "label": "11:30 PM" },
+        { "value": "23:45", "label": "11:45 PM" }
+      ],
+      "default": "0:00",
+      "visible_if": "{{ section.settings.enable_scheduling }}"
+    },
+    {
+      "type": "select",
+      "id": "timezone",
+      "label": "Time zone",
+      "options": [
+        { "value": "America/New_York", "label": "Eastern Time (ET)" },
+        { "value": "America/Chicago", "label": "Central Time (CT)" },
+        { "value": "America/Denver", "label": "Mountain Time (MT)" },
+        { "value": "America/Los_Angeles", "label": "Pacific Time (PT)" },
+        { "value": "UTC", "label": "GMT (UTC)" }
+      ],
+      "default": "America/New_York",
+      "visible_if": "{{ section.settings.enable_scheduling }}"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "layout_desktop",
+      "label": "Layout on desktop",
+      "options": [
+        { "value": "horizontal", "label": "Horizontal" },
+        { "value": "vertical", "label": "Vertical" }
+      ],
+      "default": "horizontal"
+    },
+    {
+      "type": "select",
+      "id": "layout_mobile",
+      "label": "Layout on mobile",
+      "options": [
+        { "value": "horizontal", "label": "Horizontal" },
+        { "value": "vertical", "label": "Vertical" }
+      ],
+      "default": "horizontal"
+    },
+    {
+      "type": "range",
+      "id": "spacing_on_desktop",
+      "label": "Spacing on desktop",
+      "default": 25,
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "spacing_on_mobile",
+      "label": "Spacing on mobile",
+      "default": 15,
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "max_content_width",
+      "label": "Maximum content width",
+      "default": 1200,
+      "min": 600,
+      "max": 1600,
+      "step": 20,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "Promotional text goes here."
+    },
+    {
+      "type": "range",
+      "id": "text_font_size_on_desktop",
+      "label": "Text font size on desktop",
+      "default": 16,
+      "min": 12,
+      "max": 22,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "text_font_size_on_mobile",
+      "label": "Text font size on mobile",
+      "default": 12,
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "alignment_desktop",
+      "label": "Alignment on desktop",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" },
+        { "value": "space-between", "label": "Space between" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "alignment_mobile",
+      "label": "Alignment on mobile",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" },
+        { "value": "space-between", "label": "Space between" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "label": "Show button",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button_on_mobile",
+      "label": "Show button on mobile",
+      "default": true,
+      "visible_if": "{{ section.settings.show_button }}"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button label",
+      "default": "Shop",
+      "visible_if": "{{ section.settings.show_button }}"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link",
+      "visible_if": "{{ section.settings.show_button }}"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button style",
+      "options": [
+        { "value": "primary", "label": "Primary" },
+        { "value": "outline", "label": "Outline" }
+      ],
+      "default": "primary",
+      "visible_if": "{{ section.settings.show_button }}"
+    },
+    {
+      "type": "select",
+      "id": "button_text_transform",
+      "label": "Text transform",
+      "default": "unset",
+      "options": [
+        { "value": "unset", "label": "Default" },
+        { "value": "lowercase", "label": "Lowercase" },
+        { "value": "capitalize", "label": "Capitalize" },
+        { "value": "uppercase", "label": "Uppercase" }
+      ],
+      "visible_if": "{{ section.settings.show_button }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_new_tab",
+      "label": "Open the link in a new tab",
+      "default": true,
+      "visible_if": "{{ section.settings.show_button }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "make_whole_clickable",
+      "label": "Make the whole bar clickable",
+      "default": false,
+      "visible_if": "{{ section.settings.show_button }}"
+    },
+    {
+      "type": "header",
+      "content": "Appearance"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-22b523ce-adb9-4f08-a326-9544fe490b1e"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Overlay opacity",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "color_overlay",
+      "label": "Overlay color",
+      "default": "#171717"
+    },
+    {
+      "type": "header",
+      "content": "Section settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "section_show_on_desktop",
+      "label": "Show on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "section_show_on_mobile",
+      "label": "Show on mobile",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_on_desktop",
+      "label": "Top spacing on desktop",
+      "default": 10,
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_on_desktop",
+      "label": "Bottom spacing on desktop",
+      "default": 10,
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_on_mobile",
+      "label": "Top spacing on mobile",
+      "default": 10,
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_on_mobile",
+      "label": "Bottom spacing on mobile",
+      "default": 10,
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Promotional bar"
+    }
+  ]
+}
+{% endschema %}

@@ -9,10 +9,10 @@
  */
 {
   "sections": {
-    "b3677308-87b6-47b9-995d-478aac92671b": {
+    "image_banner_NhgaAD": {
       "type": "image-banner",
       "blocks": {
-        "template--16769179582704__b3677308-87b6-47b9-995d-478aac92671b-16878989393f0ab5cc-0": {
+        "heading_y3B63D": {
           "type": "heading",
           "disabled": true,
           "settings": {
@@ -20,7 +20,7 @@
             "heading_size": "h1"
           }
         },
-        "template--16769179582704__b3677308-87b6-47b9-995d-478aac92671b-16878989393f0ab5cc-1": {
+        "text_QaW6Xq": {
           "type": "text",
           "disabled": true,
           "settings": {
@@ -28,7 +28,7 @@
             "text_style": "body"
           }
         },
-        "template--16769179582704__b3677308-87b6-47b9-995d-478aac92671b-16878989393f0ab5cc-2": {
+        "buttons_D7DAya": {
           "type": "buttons",
           "disabled": true,
           "settings": {
@@ -42,88 +42,53 @@
         }
       },
       "block_order": [
-        "template--16769179582704__b3677308-87b6-47b9-995d-478aac92671b-16878989393f0ab5cc-0",
-        "template--16769179582704__b3677308-87b6-47b9-995d-478aac92671b-16878989393f0ab5cc-1",
-        "template--16769179582704__b3677308-87b6-47b9-995d-478aac92671b-16878989393f0ab5cc-2"
+        "heading_y3B63D",
+        "text_QaW6Xq",
+        "buttons_D7DAya"
       ],
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/Affordable_Effective_Banner.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image_height": "small",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": false,
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
-        "show_text_below": false
-      }
-    },
-    "related-products": {
-      "type": "related-products",
-      "disabled": true,
-      "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "columns_mobile": "2",
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 28
+        "show_text_below": true,
+        "content_max_width": 800
       }
     },
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
         },
         "price": {
           "type": "price",
           "settings": {}
         },
-        "variant_picker": {
+        "price_panda_price_per_unit_product_block_6Fb3GT": {
+          "type": "shopify://apps/price-panda-price-per-unit/blocks/productBlock/8fe89266-7c30-4ab1-946d-3dcc05d9c8b2",
+          "settings": {}
+        },
+        "variant_picker_baqgrH": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "dropdown",
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector": {
+        "quantity_selector_fFPAYP": {
           "type": "quantity_selector",
           "settings": {}
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "rebuy_personalization_engine_rebuy_widget_j7jUwC": {
+        "rebuy_personalization_engine_rebuy_widget_TCc7fH": {
           "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
           "settings": {
             "enabled": true,
@@ -132,379 +97,454 @@
             "collection_id_enabled": false
           }
         },
+        "buy_buttons_BkQNGe": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "judge_me_reviews_review_snippet_widget_Y39V7h": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "reviews_selection": "auto",
+            "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
+            "min_star_rating": "inherit",
+            "show_review_media": true,
+            "max_reviews": 5,
+            "review_length": "medium",
+            "text_size": "medium",
+            "max_width": 1100,
+            "max_image_size": "small",
+            "arrows_visibility": "always_shown",
+            "transition_speed": 5,
+            "corner_styling": "inherit",
+            "text_color": "",
+            "card_color": "",
+            "stars_color": "",
+            "arrows_color": "",
+            "arrows_background_color": ""
+          }
+        },
         "description": {
           "type": "description",
           "settings": {}
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Directions",
+            "icon": "washing",
+            "content": "<p>Amount of Detergent to Use<br/>1 oz light soiled / small load<br/>2 oz active wear / medium load<br/>4 oz heavy soiled / large load <br/><br/>If you have lots of bubbles in your washing machine, decrease detergent amount. <br/>100% biodegradable. <br/>Septic & greywater-safe. </p>",
+            "page": ""
+          }
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Ingredients",
-            "icon": "leaf",
-            "content": "High-Purity Water, Sodium Coco-Sulfate, Cocamidopropyl Hydroxysultaine,  Cocamidopropyl Betaine, Sodium Citrate, Sodium Gluconate, Sodium Carbonate, Essential Oils and/or Phthalate-Free Fragrance Oils,  Phenoxythanol, caprylyl Glycol (preservatives used sparingly, prevents bacteria from growing in container)",
+            "icon": "plant",
+            "content": "<p>High-purity water, sodium coco-sulfate, cocamidopropyl hydroxysultaine, cocamidopropyl betaine, sodium citrate, sodium gluconate, sodium carbonate, essential oils and/ or phthalate-free fragrance oils, phenoxyethanol, caprylyl glycol</p>",
             "page": ""
           }
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Scent Ingredients",
-            "icon": "plant",
-            "content": "<p>{{ product.metafields.my_fields.scent_ingredients | metafield_tag }}</p>",
+            "heading": "Scent",
+            "icon": "leaf",
+            "content": "<p><em>All of our scents are made with  –</em></p><p><strong>Pure essential oils</strong> • hand selected by us from small farms all around the world.</p><p><em>and/or</em></p><p><strong>Phthalate-free fragrance oils</strong> • aromatic compounds made of GRAS safe synthetics. Certified free of the 624 carcinogens and 323 reproductive/developmental toxins listed under the <a href=\"https://oehha.ca.gov/proposition-65/proposition-65-list\" target=\"_blank\">Prop 65 act</a>.</p>",
             "page": ""
           }
         },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Ingredient Description",
-            "icon": "clipboard",
-            "content": "<p>{{ product.metafields.my_fields.ingredient_description | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
+        "collapsible_tab_whxLRN": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Instructions",
-            "icon": "heart",
-            "content": "<p>Amount of Detergent to Use<br/>1 oz light soiled / small load<br/>2 oz active wear / medium load<br/>4 oz heavy soiled / large load <br/><br/>If you have lots of bubbles in your washing machine, decrease detergent amount. <br/>100% biodegradable. <br/>Septic & greywater-safe. </p>",
+            "heading": "Ingredient Descriptions",
+            "icon": "eye",
+            "content": "<p><a href=\"/blogs/ingredients-we-stand-by/what-is-charcoal-filtered-deionized-water-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a> (charcoal-filtered, reverse osmosis,<br/>UV-treated water)</p><p><strong>Sodium Coco-Sulfate</strong> (coconut-based surfactant)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-cocamidopropyl-hydroxysultaine-sultaine-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Cocamidopropyl Hydroxysultaine (Sultaine) and what does it do in products?\"><strong>Cocamidopropyl Hydroxysultaine</strong></a> (coconut-based surfactant)</p><p><strong>Cocamidopropyl Betaine</strong> (coconut-based surfactant)</p><p><strong>Sodium Citrate</strong> (booster and stabilizer)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-sodium-gluconate-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Sodium Gluconate and what does it do in products?\"><strong>Sodium Gluconate</strong></a> (binds ions)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-sodium-carbonate-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Sodium Carbonate and what does it do in products?\"><strong>Sodium Carbonate</strong></a> (cleaning booster)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-are-essential-oils\" target=\"_blank\" title=\"What are Essential Oils?\"><strong>Essential Oils</strong></a> and/ or <a href=\"/blogs/tips-tricks/why-we-scent-safely-and-how-to-boost-your-laundrys-smell\" target=\"_blank\" title=\"Why We Scent Safely and How To Boost Your Laundry's Smell\"><strong>Phthalate-Free Fragrance Oils</strong></a> (scent)</p><p><a href=\"/blogs/ingredients-we-stand-by/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" target=\"_blank\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol </strong></a><strong>& Caprylyl Glycol </strong>(preservatives used<br/>sparingly, prevents bacteria from growing in container)</p>",
             "page": ""
           }
         },
-        "fc0233ef-ed1d-47be-898d-569b36d52e32": {
+        "collapsible_tab_D4NhUJ": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Tips for displaying",
-            "icon": "check_mark",
-            "content": "<p>{{ product.metafields.my_fields.tricks | metafield_tag }}</p>",
+            "heading": "What are the differences between the Economy Line and Rustic Strength's Main Line?",
+            "icon": "question_mark",
+            "content": "<p><em><strong>Rustic Strength</strong></em> is plant-based and 100% biodegradable. It has highly concentrated active ingredients with little to no impurities. It doesn't take as much product to do the job effectively. These concentrated, high-quality, active ingredients are reflected in the price.</p><p><em><strong>Affordable • Effective • Plant-Based</strong></em> is also plant-based and 100% biodegradable. While its active ingredients are not as concentrated, it still does the job. These ingredients are of higher quality than those in Seventh Generation and are far superior to the toxic ingredients used by mega corporations like Unilever and P&G.</p>",
             "page": ""
           }
         },
-        "0ebd724d-4223-4871-b5e4-f5371d971a61": {
+        "collapsible_tab_Reditz": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Product Tips",
-            "icon": "star",
-            "content": "<p>{{ product.metafields.my_fields.tips | metafield_tag }}</p>",
+            "heading": "Does this product come with a pump?",
+            "icon": "question_mark",
+            "content": "<p>We do not automatically provide a pump or spout with our products because our goal is to reduce waste.</p><p>If you would like a pump or spout, we offer options as an add-on in our accessory section. </p><ul><li><a href=\"/products/1-gallon-glass-or-plastic-container-pump\" target=\"_blank\" title=\"Pump | fits 1 Gallon Glass or Plastic Jug\">Gallon (Glass or Plastic) Jug Pump</a></li><li><a href=\"/pages/how-to-assemble-the-wide-mouth-jar-pump\" target=\"_blank\" title=\"Wide-Mouth Jar Pump Help\">1 Gallon Wide Mouth Jar Pump</a></li><li><a href=\"/pages/eco-jug-help\" target=\"_blank\" title=\"Eco-Jug Help\">Eco Jug Accessories</a></li><li><a href=\"/products/bucket-dispenser-pump-5-gallon\" target=\"_blank\" title=\"Bucket Pump | fits 5 Gallon Bucket\">Bucket Pump</a></li><li><a href=\"/collections/drum-pumps\" target=\"_blank\" title=\"drum pumps\">Drum Pumps</a></li></ul>",
             "page": ""
           }
         },
-        "1c5d861c-0cb9-4a38-9952-c3e5c95b1fa3": {
-          "type": "collapsible_tab",
-          "disabled": true,
+        "gorgias_live_chat_helpdesk_spq_LAHx4e": {
+          "type": "shopify://apps/gorgias-live-chat-helpdesk/blocks/spq/a66db725-7b96-4e3f-916e-6c8e6f87aaaa",
           "settings": {
-            "heading": "How is this different than Rustic Strength brand soap?",
-            "icon": "lightning_bolt",
-            "content": "<p><em><strong>Rustic Strength</strong></em> is plant-based and 100% biodegradable.  It has highly concentrated active ingredients with little to no impurities. It doesn’t take as much product to do the job effectively.  These concentrated, high-quality, active ingredients are reflected in the price.<br/></p><p><em><strong>Affordable </strong></em>•<em><strong> Effective </strong></em>•<em><strong> Plant-Based</strong></em> is also plant-based and 100% biodegradable. While its active ingredients are not as concentrated, it still does the job. These ingredients are of higher quality than those in <em>Seventh Generation</em> and are <em>far</em> superior to the toxic ingredients used by mega corporations like <em>Unilever</em> and <em>P&G</em>.</p>",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-            "share_label": "Share"
+            "text_style": "none",
+            "icon_color": "#1e242e",
+            "font_color": "#1e242e",
+            "show_icons": true,
+            "font_size": 16,
+            "font_weight": "500",
+            "border_radius": 8,
+            "font_family": "inherit"
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
-        "caption",
         "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "rebuy_personalization_engine_rebuy_widget_j7jUwC",
+        "price_panda_price_per_unit_product_block_6Fb3GT",
+        "variant_picker_baqgrH",
+        "quantity_selector_fFPAYP",
+        "rebuy_personalization_engine_rebuy_widget_TCc7fH",
+        "buy_buttons_BkQNGe",
+        "judge_me_reviews_review_snippet_widget_Y39V7h",
         "description",
+        "collapsible-row-1",
         "collapsible-row-0",
         "collapsible-row-2",
-        "collapsible-row-1",
-        "collapsible-row-3",
-        "fc0233ef-ed1d-47be-898d-569b36d52e32",
-        "0ebd724d-4223-4871-b5e4-f5371d971a61",
-        "1c5d861c-0cb9-4a38-9952-c3e5c95b1fa3",
-        "share"
+        "collapsible_tab_whxLRN",
+        "collapsible_tab_D4NhUJ",
+        "collapsible_tab_Reditz",
+        "gorgias_live_chat_helpdesk_spq_LAHx4e"
       ],
       "settings": {
         "enable_sticky_info": true,
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "media_size": "small",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
         "gallery_layout": "thumbnail_slider",
-        "mobile_thumbnails": "show",
-        "media_position": "left",
+        "mobile_thumbnails": "hide",
+        "media_position": "right",
         "image_zoom": "lightbox",
         "hide_variants": true,
-        "enable_video_looping": false,
-        "padding_top": 20,
+        "enable_video_looping": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_FHp7MF": {
+      "type": "rich-text",
+      "blocks": {
+        "button_adFAmL": {
+          "type": "button",
+          "name": "Product SDS",
+          "settings": {
+            "button_label": "📋Bubble Bath SDS",
+            "button_link": "https://cdn.shopify.com/s/files/1/0344/1809/8221/files/Bubble_Bath_SDS.pdf?v=1758138349",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_adFAmL"
+      ],
+      "disabled": true,
+      "name": "MSDS Button",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 0,
         "padding_bottom": 20
       }
     },
-    "16980974376644c8bc": {
+    "quick-order-list": {
+      "type": "quick-order-list",
+      "settings": {
+        "variants_per_page": 50,
+        "show_image": true,
+        "show_sku": true,
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 16
+      }
+    },
+    "multicolumn_K7CERA": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_7CN7gH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Comparison_Chart.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_kTgQ8q": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ComparisonText.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_txfLdP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/RS_Affordable_Effective_Text.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_7CN7gH",
+        "column_kTgQ8q",
+        "column_txfLdP"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_3DtRAV": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Founder Alicia Adamson answers \"Why Affordable • Effective\"?",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/SLTbkW6cGIo",
+        "cover_image": "shopify://shop_images/Thumb_5_Small_2baed30c-ae9d-4c11-9708-9f0ff5de70f3.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "Industry favorites",
+        "heading_size": "h2",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 44
+      }
+    },
+    "1762450183b75e33a7": {
       "type": "apps",
       "blocks": {
-        "6ea58749-c544-4bc1-b11c-eebbe6624ee9": {
+        "rebuy_personalization_engine_rebuy_widget_crUR8M": {
           "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
           "settings": {
             "enabled": true,
             "id": "109995",
+            "product_id_enabled": true,
+            "collection_id_enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_crUR8M"
+      ],
+      "disabled": true,
+      "name": "Rebuy 109995",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "175623938176d21caa": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_BDFTHC": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "154086",
             "product_id_enabled": true,
             "collection_id_enabled": false
           }
         }
       },
       "block_order": [
-        "6ea58749-c544-4bc1-b11c-eebbe6624ee9"
+        "rebuy_personalization_engine_rebuy_widget_BDFTHC"
       ],
+      "disabled": true,
+      "name": "Rebuy 154086",
       "settings": {
         "include_margins": true
       }
     },
-    "1649954547ee9ee859": {
-      "type": "collapsible-content",
-      "blocks": {
-        "164995454784ae9827-0": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Directions",
-            "icon": "check_mark",
-            "row_content": "<p>{{ product.metafields.my_fields.directions | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "164995454784ae9827-1": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Tips",
-            "icon": "check_mark",
-            "row_content": "<p>{{ product.metafields.my_fields.tips | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "164995454784ae9827-2": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Tricks",
-            "icon": "check_mark",
-            "row_content": "<p>{{ product.metafields.my_fields.tricks | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "164995454784ae9827-3": {
-          "type": "collapsible_row",
-          "disabled": true,
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "164995454784ae9827-0",
-        "164995454784ae9827-1",
-        "164995454784ae9827-2",
-        "164995454784ae9827-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "caption": "",
-        "heading": "Suggested Use",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "container_color_scheme": "background-2",
-        "color_scheme": "background-1",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "cec9f026-9c9c-4fd3-8954-6d08955cd46b": {
-      "type": "video",
-      "settings": {
-        "heading": "Founder Alicia Adamson answers \"Why Affordable •  Effective\"?",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://youtu.be/SLTbkW6cGIo",
-        "cover_image": "shopify://shop_images/Thumb_5_Small_2baed30c-ae9d-4c11-9708-9f0ff5de70f3.jpg",
-        "description": "",
-        "full_width": true,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "383b8e0f-c929-423e-81ab-a79632a26756": {
-      "type": "slideshow",
-      "blocks": {
-        "1e0a0b01-33b1-4cb1-bfe6-151f8be84d7f": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Email.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "background-1"
-          }
-        },
-        "template--16769179582704__383b8e0f-c929-423e-81ab-a79632a26756-168796395454d21f93-0": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Comparison_Chart_5f684443-38e0-4316-a273-31754db98066.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "background-1"
-          }
-        },
-        "template--16769179582704__383b8e0f-c929-423e-81ab-a79632a26756-168796395454d21f93-1": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Comparison_Text.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "background-1"
-          }
-        },
-        "fc925d65-0a09-4064-8708-ac0d7abe0090": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/RS_Affordable_Effective_Text.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "background-1"
-          }
-        }
-      },
-      "block_order": [
-        "1e0a0b01-33b1-4cb1-bfe6-151f8be84d7f",
-        "template--16769179582704__383b8e0f-c929-423e-81ab-a79632a26756-168796395454d21f93-0",
-        "template--16769179582704__383b8e0f-c929-423e-81ab-a79632a26756-168796395454d21f93-1",
-        "fc925d65-0a09-4064-8708-ac0d7abe0090"
-      ],
-      "settings": {
-        "layout": "grid",
-        "slide_height": "adapt_image",
-        "slider_visual": "dots",
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "image-with-text": {
-      "type": "image-with-text",
-      "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Don't Forget",
-            "heading_size": "h1"
-          }
-        },
-        "image-with-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pumps and spouts are sold separate of each item.  This is to help reduce waste in the environment and your store.  <br/><a href=\"/collections/pumps-and-spouts-for-containers\" title=\"Spouts and Pumps\">Purchase pumps or spouts here</a></p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/CarboyWithEasySpout.jpg",
-        "height": "small",
-        "desktop_image_width": "small",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "background-2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "169506015643fd97f9": {
+    "1754511058878b6d45": {
       "type": "apps",
       "blocks": {
-        "c9603476-a7f4-4a8e-99fc-0c6cbc4f2a34": {
+        "judge_me_reviews_review_widget_iFYbEr": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
             "max_width": 1200,
             "show_shop_reviews": false,
-            "empty_state": "empty_widget"
+            "empty_state": "hide_widget"
+          }
+        },
+        "judge_me_reviews_testimonials_carousel_cLLgDj": {
+          "type": "shopify://apps/judge-me-reviews/blocks/testimonials_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+            "show_sample_reviews": true,
+            "reviews_selection": "current_product",
+            "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
+            "star_rating": "4_to_5_star",
+            "max_reviews": 30,
+            "quote_marks_size": "small",
+            "product_name_text_size": "small",
+            "verified_badge_style": "icon",
+            "card_height": "medium",
+            "text_size": "small",
+            "stars_size": "medium",
+            "arrows_position": "bottom",
+            "max_width": 1100,
+            "corner_styling": "soft",
+            "quote_marks_style": "serif",
+            "card_color": "#f9f9f9",
+            "stars_and_quote_marks_color": "#a7b099",
+            "text_color": "#2f2f30",
+            "arrows_color": "#a7b099",
+            "show_border": false,
+            "border_color": "#108474",
+            "show_drop_shadow": false,
+            "transition_speed": 5,
+            "header_text": "Customers are saying",
+            "show_average_rating": true,
+            "rating_display": "default"
           }
         }
       },
       "block_order": [
-        "c9603476-a7f4-4a8e-99fc-0c6cbc4f2a34"
+        "judge_me_reviews_review_widget_iFYbEr",
+        "judge_me_reviews_testimonials_carousel_cLLgDj"
       ],
+      "name": "Judge.Me Testimonial",
       "settings": {
         "include_margins": true
+      }
+    },
+    "collection_list_hXEcJK": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_Ge9qYg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "body-care"
+          }
+        },
+        "featured_collection_J6bcK9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "essential-oils"
+          }
+        },
+        "featured_collection_DWYgnF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hair-care-products"
+          }
+        },
+        "featured_collection_JNA3DX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hand-soap"
+          }
+        },
+        "featured_collection_d4eqhh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dish-soap"
+          }
+        },
+        "featured_collection_i8UCBF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry-detergent"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Ge9qYg",
+        "featured_collection_J6bcK9",
+        "featured_collection_DWYgnF",
+        "featured_collection_JNA3DX",
+        "featured_collection_d4eqhh",
+        "featured_collection_i8UCBF"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
-    "b3677308-87b6-47b9-995d-478aac92671b",
-    "related-products",
+    "image_banner_NhgaAD",
     "main",
-    "16980974376644c8bc",
-    "1649954547ee9ee859",
-    "cec9f026-9c9c-4fd3-8954-6d08955cd46b",
-    "383b8e0f-c929-423e-81ab-a79632a26756",
-    "image-with-text",
-    "169506015643fd97f9"
+    "rich_text_FHp7MF",
+    "quick-order-list",
+    "multicolumn_K7CERA",
+    "video_3DtRAV",
+    "related-products",
+    "1762450183b75e33a7",
+    "175623938176d21caa",
+    "1754511058878b6d45",
+    "collection_list_hXEcJK"
   ]
 }

@@ -1,0 +1,403 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_BE8Ytx": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_NqddLV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Downloadable Assets",
+            "heading_size": "h1"
+          }
+        },
+        "text_hcJdzy": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_6dfRjM": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NqddLV",
+        "text_hcJdzy",
+        "buttons_6dfRjM"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/1_An_Image_size_1584x396_px_b2b8933b-9a1a-49f4-a092-c920e6d79f40.png",
+        "image_overlay_opacity": 20,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false,
+        "content_max_width": 800
+      }
+    },
+    "rich_text_LgdX6j": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GVY3JD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rustic Strength Brand Kit",
+            "heading_size": "h1"
+          }
+        },
+        "button_LLg9ED": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download the Brand Kit",
+            "button_link": "https://drive.google.com/drive/folders/1JSoc-5-wCJI1XNbrF09FhnAq2lq461wm?usp=drive_link",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "text_MipN7b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Inside this toolkit, you’ll find everything you need to showcase our brand with accuracy and impact. </p><p><strong>Bring Rustic Strength to life in your store and online with these ready-to-use brand assets:</strong></p><p>✨ <strong>Logos</strong> – Ensure brand consistency across every touchpoint<br/><br/>🎨 <strong>Color Palettes</strong> – Capture the clean, vibrant spirit of Rustic Strength<br/><br/>🌿 <strong>Lifestyle Images</strong> – Showcase our products in action and inspire customers</p><p><strong>Use these assets to create:</strong><br/><br/>🛍️ Signage & shelf talkers<br/><br/>💻 Website features & emails<br/><br/>📱 Social media posts<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GVY3JD",
+        "button_LLg9ED",
+        "text_MipN7b"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_FJUphp": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Fkk9Wf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Downloadable Labels",
+            "heading_size": "h2"
+          }
+        },
+        "text_izJrzp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The refill industry is booming and with that comes regulations.  As the primary manufacturer of household goods for refill shops we want to make sure that you, the retailer, are adhering to industry standards.  One required practice that may be overlooked or even missed is the labeling of products before they leave the store.  <br/><br/><strong>ALL products have to have a label on them with certain requirements. </strong></p><p>We have made this really easy for you to do.  We have converted our labels to meet those requirements.  Simply hand write how many ounces your customer has purchased on this label before their container leaves your store.</p><p>Please allow up to one business day to be granted access.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_VnTdTz": {
+          "type": "button",
+          "settings": {
+            "button_label": "Request Access",
+            "button_link": "https://drive.google.com/drive/folders/13nR8D2XZAjwDf1Onl3OZmJFqH70ZZ8tA?usp=drive_link",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Fkk9Wf",
+        "text_izJrzp",
+        "button_VnTdTz"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Label_Pile.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "color_scheme": "scheme-13df7ca3-181d-4c91-91be-660492569192",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_yMKUJP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JYMBRw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CTL_StatsIG2024_5.jpg",
+            "title": "#ZeroWasteAchievement",
+            "text": "<p>Thank you to our amazing customers and refill partners! Together, we are making a difference and closing the loop on plastic waste!</p>",
+            "link_label": "Share",
+            "link": "https://www.instagram.com/p/C4s9o8Xu85p/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+          }
+        },
+        "column_PVDPia": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Title3.png",
+            "title": "#PodsvsPurity",
+            "text": "<p>Discover the science behind the high-purity ingredients in our detergent versus laundry pods.</p>",
+            "link_label": "Share",
+            "link": ""
+          }
+        },
+        "column_gRwNGB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Title.png",
+            "title": "#UnleashUnBleach",
+            "text": "<p>Are you STILL using toxic chlorine bleach? Unlock a healthier home, and unleash the power of Un-Bleach.</p>",
+            "link_label": "Share",
+            "link": "https://www.instagram.com/p/C4Q0BB6uC3U/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+          }
+        }
+      },
+      "block_order": [
+        "column_JYMBRw",
+        "column_PVDPia",
+        "column_gRwNGB"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Social Sharing",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_bgewmG": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RfPRyR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1_a19fe0e3-89f4-4276-9ade-a2cc422fe19d.jpg",
+            "title": "Ethoxylated Alcohols",
+            "text": "<p>Ethoxylation may leave behind traces of known carcinogens.</p>",
+            "link_label": "Download",
+            "link": ""
+          }
+        },
+        "column_fyTJ9t": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Cocoamidopropyl_Betaine.jpg",
+            "title": "Coming Soon",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_BL8gBn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sodium_Borate_0a33815e-596f-4753-ae8d-438f02c67774.jpg",
+            "title": "Coming Soon",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_RfPRyR",
+        "column_fyTJ9t",
+        "column_BL8gBn"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Ingredients to Avoid in Laundry Detergent",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_kYMhEz": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JqwUkJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design.png",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_AQCbEW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Untitled_580d6abd-1ae3-4e38-9bc8-b083c07a3b45.png",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_bpcVt7": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_fCR6b9": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled_129e331e-5fd0-42c2-8e5d-dcc50570e10b.png",
+            "title": "",
+            "text": "",
+            "link_label": "Private Label Information",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_jCGYt8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_DNGrUz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_F4DBAJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blog Center",
+            "link": "shopify://pages/blog-landing-page"
+          }
+        },
+        "column_hzCbGR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        }
+      },
+      "block_order": [
+        "column_JqwUkJ",
+        "column_AQCbEW",
+        "column_bpcVt7",
+        "column_fCR6b9",
+        "column_jCGYt8",
+        "column_DNGrUz",
+        "column_F4DBAJ",
+        "column_hzCbGR"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_BE8Ytx",
+    "rich_text_LgdX6j",
+    "image_with_text_FJUphp",
+    "multicolumn_yMKUJP",
+    "multicolumn_bgewmG",
+    "multicolumn_kYMhEz"
+  ]
+}
