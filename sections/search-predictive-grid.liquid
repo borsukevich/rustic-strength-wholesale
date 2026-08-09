@@ -1,0 +1,161 @@
+{%- if predictive_search.performed -%}
+  {%- liquid
+    assign queries = predictive_search.resources.queries
+    assign products = predictive_search.resources.products
+    assign collections = predictive_search.resources.collections
+    assign articles = predictive_search.resources.articles
+    assign pages = predictive_search.resources.pages
+
+    assign queries_count = queries.size
+    assign products_count = products.size
+    assign collections_count = collections.size
+    assign articles_count = articles.size
+    assign pages_count = pages.size
+
+    assign total_count = products_count | plus: collections_count | plus: articles_count | plus: pages_count
+  -%}
+
+  <div id="shopify-section-search-predictive-grid">
+    {%- if queries_count > 0 -%}
+      <div class="search-drawer__suggestions-block">
+        <h3 class="search-drawer__section-title">Suggestions</h3>
+        <ul class="search-drawer__suggestions-list">
+          {%- for query in queries -%}
+            <li>
+              <a href="{{ query.url }}" class="search-drawer__suggestion-link">
+                {{ query.styled_text }}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    {%- endif -%}
+
+    {%- if total_count > 0 -%}
+      <search-tabs class="search-tabs">
+        <div class="search-tabs__nav" role="tablist">
+          {%- if products_count > 0 -%}
+            <button type="button" class="search-tabs__tab active" data-tab="products" role="tab">
+              <span>Products</span>
+              <span class="search-tabs__count">{{ products_count }}</span>
+            </button>
+          {%- endif -%}
+
+          {%- if collections_count > 0 -%}
+            <button
+              type="button"
+              class="search-tabs__tab{% if products_count == 0 %} active{% endif %}"
+              data-tab="collections"
+              role="tab"
+            >
+              <span>Collections</span>
+              <span class="search-tabs__count">{{ collections_count }}</span>
+            </button>
+          {%- endif -%}
+
+          {%- if articles_count > 0 -%}
+            <button
+              type="button"
+              class="search-tabs__tab{% if products_count == 0 and collections_count == 0 %} active{% endif %}"
+              data-tab="articles"
+              role="tab"
+            >
+              <span>Articles</span>
+              <span class="search-tabs__count">{{ articles_count }}</span>
+            </button>
+          {%- endif -%}
+
+          {%- if pages_count > 0 -%}
+            <button
+              type="button"
+              class="search-tabs__tab{% if products_count == 0 and collections_count == 0 and articles_count == 0 %} active{% endif %}"
+              data-tab="pages"
+              role="tab"
+            >
+              <span>Pages</span>
+              <span class="search-tabs__count">{{ pages_count }}</span>
+            </button>
+          {%- endif -%}
+        </div>
+
+        {%- if products_count > 0 -%}
+          <div id="tab-panel-products" class="search-tabs__panel active" role="tabpanel">
+            <div class="search-results__grid">
+              {%- for product in products limit: 10 -%}
+                {%- render 'card-product',
+                  card_product: product,
+                  media_aspect_ratio: 'square',
+                  show_secondary_image: true,
+                  show_vendor: false,
+                  show_rating: false,
+                  section_id: 'search-predictive-grid'
+                -%}
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- endif -%}
+
+        {%- if collections_count > 0 -%}
+          <div
+            id="tab-panel-collections"
+            class="search-tabs__panel{% if products_count == 0 %} active{% endif %}"
+            role="tabpanel"
+          >
+            <ul class="search-results__list">
+              {%- for collection in collections -%}
+                <li>
+                  <a href="{{ collection.url }}" class="search-results__item-link">
+                    <span class="h5" style="margin: 0;">{{ collection.title }}</span>
+                  </a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
+
+        {%- if articles_count > 0 -%}
+          <div
+            id="tab-panel-articles"
+            class="search-tabs__panel{% if products_count == 0 and collections_count == 0 %} active{% endif %}"
+            role="tabpanel"
+          >
+            <div class="search-results__grid">
+              {%- for article in articles -%}
+                {%- render 'article-card',
+                  article: article,
+                  show_image: true,
+                  show_date: true,
+                  show_author: false
+                -%}
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- endif -%}
+
+        {%- if pages_count > 0 -%}
+          <div
+            id="tab-panel-pages"
+            class="search-tabs__panel{% if products_count == 0 and collections_count == 0 and articles_count == 0 %} active{% endif %}"
+            role="tabpanel"
+          >
+            <ul class="search-results__list">
+              {%- for page in pages -%}
+                <li>
+                  <a href="{{ page.url }}" class="search-results__item-link">
+                    <span class="h5" style="margin: 0;">{{ page.title }}</span>
+                  </a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
+      </search-tabs>
+    {%- else -%}
+      <div class="search-drawer__empty">
+        <p class="h4" style="margin-bottom: 0.5rem;">
+          {{ 'templates.search.no_results' | t: terms: predictive_search.terms }}
+        </p>
+      </div>
+    {%- endif -%}
+  </div>
+{%- endif -%}

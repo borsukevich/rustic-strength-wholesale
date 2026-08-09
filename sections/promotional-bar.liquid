@@ -1,4 +1,12 @@
-{%- if section.settings.section_show_on_desktop or section.settings.section_show_on_mobile -%}
+{%- capture show_bar -%}
+  {%- unless section.settings.hide_for_logged_in and customer -%}
+    {%- if section.settings.section_show_on_desktop or section.settings.section_show_on_mobile -%}
+      true
+    {%- endif -%}
+  {%- endunless -%}
+{%- endcapture -%}
+
+{%- if show_bar contains 'true' -%}
   {%- if section.settings.show_on_home_page_only == false or template == 'index' -%}
     {%- liquid
       assign full_start_date = ''
@@ -287,7 +295,7 @@
             connectedCallback() {
               this.enableScheduling = this.dataset.enableScheduling === 'true';
               const closeButton = this.querySelector('.js-close-button');
-              
+
               if (closeButton) {
                 closeButton.addEventListener('click', () => {
                   this.classList.add('hidden');
@@ -366,13 +374,18 @@
               try {
                 const formatter = new Intl.DateTimeFormat('en-US', {
                   timeZone: tz,
-                  year: 'numeric', month: 'numeric', day: 'numeric',
-                  hour: 'numeric', minute: 'numeric', second: 'numeric', hourCycle: 'h23'
+                  year: 'numeric',
+                  month: 'numeric',
+                  day: 'numeric',
+                  hour: 'numeric',
+                  minute: 'numeric',
+                  second: 'numeric',
+                  hourCycle: 'h23',
                 });
 
                 const partsArr = formatter.formatToParts(new Date(wallClockUtc));
                 const tzParts = {};
-                partsArr.forEach(p => tzParts[p.type] = p.value);
+                partsArr.forEach((p) => (tzParts[p.type] = p.value));
 
                 const localUtc = Date.UTC(
                   parseInt(tzParts.year),
@@ -876,6 +889,12 @@
     {
       "type": "header",
       "content": "Section settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_for_logged_in",
+      "label": "Hide for logged in customers",
+      "default": true
     },
     {
       "type": "checkbox",

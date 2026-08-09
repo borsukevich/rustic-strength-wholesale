@@ -1,0 +1,198 @@
+{{ 'component-search-drawer.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'search-drawer.js' | asset_url }}" defer="defer"></script>
+
+<search-drawer class="drawer drawer--right search-drawer">
+  <div id="SearchDrawer-Overlay" class="search-drawer__overlay"></div>
+  <div
+    class="drawer__inner gradient color-{{ section.settings.color_scheme | default: 'scheme-1' }}"
+    role="dialog"
+    aria-modal="true"
+    aria-label="{{ 'general.search.search' | t }}"
+    tabindex="-1"
+  >
+    <div class="search-drawer__header-row">
+      <button class="drawer__close" type="button" aria-label="{{ 'accessibility.close' | t }}">
+        <span class="svg-wrapper">
+          {{- 'icon-close.svg' | inline_asset_content -}}
+        </span>
+      </button>
+      <span class="search-drawer__vertical-label">{{ 'general.search.search' | t | upcase }}</span>
+    </div>
+
+    <div class="search-drawer__form-wrapper">
+      <form
+        action="{{ routes.search_url }}"
+        method="get"
+        role="search"
+        id="SearchDrawerForm"
+        class="search-drawer__form"
+      >
+        <div class="search-drawer__input-field">
+          <input
+            type="search"
+            name="q"
+            id="SearchDrawerInput"
+            class="search-drawer__input"
+            placeholder="{{ 'general.search.search' | t }}"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="false"
+          >
+          <input type="hidden" name="options[prefix]" value="last">
+          <button
+            type="button"
+            data-clear-button
+            class="search-drawer__clear-btn hidden"
+            aria-label="Clear all"
+          >
+            Clear all
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="search-drawer__body">
+      <div id="search-drawer-default-content">
+        {%- if section.settings.popular_terms != blank -%}
+          <div class="search-drawer__block">
+            {%- if section.settings.popular_terms_heading != blank -%}
+              <h3 class="search-drawer__section-title">{{ section.settings.popular_terms_heading }}</h3>
+            {%- endif -%}
+
+            <ul class="search-drawer__pills">
+              {%- assign popular_terms = section.settings.popular_terms | split: ',' -%}
+
+              {%- for term in popular_terms -%}
+                {%- assign cleaned_term = term | strip -%}
+
+                {%- if cleaned_term != blank -%}
+                  <li>
+                    <button type="button" class="search-drawer__pill-btn" data-term="{{ cleaned_term }}">
+                      {{ cleaned_term }}
+                    </button>
+                  </li>
+                {%- endif -%}
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
+
+        {%- if section.settings.featured_links != blank and section.settings.featured_links.links.size > 0 -%}
+          <div class="search-drawer__block">
+            {%- if section.settings.featured_links_heading != blank -%}
+              <h3 class="search-drawer__section-title">{{ section.settings.featured_links_heading }}</h3>
+            {%- endif -%}
+
+            <ul class="search-results__list">
+              {%- for link in section.settings.featured_links.links -%}
+                <li>
+                  <a href="{{ link.url }}" class="search-results__item-link">
+                    {{ link.title }}
+                  </a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
+
+        {%- assign featured_products = section.settings.featured_products -%}
+
+        {%- if featured_products != blank and featured_products.count > 0 -%}
+          <div class="search-drawer__block" style="margin-top: 2rem;">
+            {%- if section.settings.featured_collection_heading != blank -%}
+              <h3 class="search-drawer__section-title">{{ section.settings.featured_collection_heading }}</h3>
+            {%- endif -%}
+
+            <div class="search-results__grid">
+              {%- for product in featured_products limit: section.settings.maximum_products_count_to_show -%}
+                {%- render 'card-product',
+                  card_product: product,
+                  media_aspect_ratio: 'square',
+                  show_secondary_image: true,
+                  show_vendor: false,
+                  show_rating: false,
+                  section_id: section.id
+                -%}
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+
+      <div id="predictive-search-results-container" class="hidden"></div>
+    </div>
+
+    <div class="search-drawer__footer">
+      <button
+        type="submit"
+        class="button search-drawer__submit-btn button--full-width"
+        form="SearchDrawerForm"
+      >
+        <span>View all Results</span>
+        <span class="svg-wrapper" style="margin-left: 0.8rem;">
+          {{- 'icon-arrow.svg' | inline_asset_content -}}
+        </span>
+      </button>
+    </div>
+  </div>
+</search-drawer>
+
+{% schema %}
+{
+  "name": "Search Drawer",
+  "tag": "aside",
+  "class": "search-drawer-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "popular_terms_heading",
+      "label": "Popular searches heading",
+      "default": "Popular Searches"
+    },
+    {
+      "type": "textarea",
+      "id": "popular_terms",
+      "label": "Popular searches (comma separated)",
+      "default": "Detergent, Dish Soap, Spray, Cleaner"
+    },
+    {
+      "type": "text",
+      "id": "featured_links_heading",
+      "label": "Quick links heading",
+      "default": "Quick Links"
+    },
+    {
+      "type": "link_list",
+      "id": "featured_links",
+      "label": "Quick links menu"
+    },
+    {
+      "type": "text",
+      "id": "featured_collection_heading",
+      "label": "Featured products heading",
+      "default": "Trending Products"
+    },
+    {
+      "type": "product_list",
+      "id": "featured_products",
+      "label": "Featured products"
+    },
+    {
+      "type": "range",
+      "id": "maximum_products_count_to_show",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "label": "Maximum products to show",
+      "default": 4
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    }
+  ]
+}
+{% endschema %}
