@@ -24,19 +24,40 @@
         "featured_collection_UnnNxL": {
           "type": "featured_collection",
           "settings": {
-            "collection": "nourish-botanicals-retail-ready"
+            "collection": "rustic-strength-laundry-retail-ready"
           }
         },
         "featured_collection_6diVRy": {
           "type": "featured_collection",
           "settings": {
-            "collection": "all-retail-ready-cases-copy"
+            "collection": "rustic-strength-cleaning-retail-ready"
+          }
+        },
+        "featured_collection_W7aLi7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rustic-strength-home-pet-retail-ready"
+          }
+        },
+        "featured_collection_eeQtNy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bath-body-retail-ready"
+          }
+        },
+        "featured_collection_Rwmgpj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hair-care-retail-ready"
           }
         }
       },
       "block_order": [
         "featured_collection_UnnNxL",
-        "featured_collection_6diVRy"
+        "featured_collection_6diVRy",
+        "featured_collection_W7aLi7",
+        "featured_collection_eeQtNy",
+        "featured_collection_Rwmgpj"
       ],
       "name": "Submenu Categories",
       "settings": {
@@ -128,6 +149,9 @@
             "show_sample_reviews": false,
             "reviews_selection": "all",
             "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
             "star_rating": "4_to_5_star",
             "max_reviews": 30,
             "quote_marks_size": "small",

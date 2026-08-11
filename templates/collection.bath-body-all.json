@@ -21,12 +21,6 @@
     "collection_list_jBn4it": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_jBYP9b": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "nourish-botanicals"
-          }
-        },
         "featured_collection_PtneWb": {
           "type": "featured_collection",
           "settings": {
@@ -53,7 +47,6 @@
         }
       },
       "block_order": [
-        "featured_collection_jBYP9b",
         "featured_collection_PtneWb",
         "featured_collection_EwgmtC",
         "featured_collection_TVn6Hy",
@@ -149,6 +142,9 @@
             "show_sample_reviews": false,
             "reviews_selection": "all",
             "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
             "star_rating": "4_to_5_star",
             "max_reviews": 30,
             "quote_marks_size": "small",

@@ -21,22 +21,10 @@
     "collection_list_DfxzcT": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_fFbRzq": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "nourish-botanicals-hair-care"
-          }
-        },
         "featured_collection_VK7h73": {
           "type": "featured_collection",
           "settings": {
             "collection": "rustic-strength-hair-care"
-          }
-        },
-        "featured_collection_DXnXLe": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "nourish-botanicals-hair-care-retail-ready"
           }
         },
         "featured_collection_zD9FWf": {
@@ -47,9 +35,7 @@
         }
       },
       "block_order": [
-        "featured_collection_fFbRzq",
         "featured_collection_VK7h73",
-        "featured_collection_DXnXLe",
         "featured_collection_zD9FWf"
       ],
       "name": "t:sections.collection-list.presets.name",
@@ -142,6 +128,9 @@
             "show_sample_reviews": false,
             "reviews_selection": "all",
             "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
             "star_rating": "4_to_5_star",
             "max_reviews": 30,
             "quote_marks_size": "small",

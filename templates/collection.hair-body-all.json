@@ -27,22 +27,10 @@
             "collection": "rustic-strength-hair-care"
           }
         },
-        "featured_collection_pR4CRE": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "nourish-botanicals-hair-care"
-          }
-        },
         "featured_collection_PtneWb": {
           "type": "featured_collection",
           "settings": {
             "collection": "rustic-strength-bath-body"
-          }
-        },
-        "featured_collection_cqFiVC": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "nourish-bath-body"
           }
         },
         "featured_collection_hf49mR": {
@@ -55,9 +43,7 @@
       },
       "block_order": [
         "featured_collection_jBYP9b",
-        "featured_collection_pR4CRE",
         "featured_collection_PtneWb",
-        "featured_collection_cqFiVC",
         "featured_collection_hf49mR"
       ],
       "name": "t:sections.collection-list.presets.name",
