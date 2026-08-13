@@ -52,7 +52,6 @@ class SearchDrawer extends HTMLElement {
     const rebuyBlock = this.querySelector('#search-drawer-rebuy-block');
     if (!rebuyBlock || this.hasExtractedRebuy) return;
 
-    // Check periodically without triggering DOM mutation loops
     let attempts = 0;
     const interval = setInterval(() => {
       attempts++;
@@ -91,7 +90,7 @@ class SearchDrawer extends HTMLElement {
     const extractedHandles = [];
 
     rebuyProducts.forEach((item, index) => {
-      if (index >= 6) return;
+      if (index >= 8) return;
 
       const linkEl = item.querySelector('a.rebuy-quick-view__image-link, a.rebuy-product-title, a[href*="/products/"]');
       const titleEl = item.querySelector('.rebuy-product-title, img[alt]');
@@ -238,7 +237,7 @@ class SearchDrawer extends HTMLElement {
     const queryKey = encodeURIComponent(searchTerm);
 
     fetch(
-      `${window.Shopify.routes.root}search/suggest?q=${queryKey}&resources[options][fields]=title,tag,vendor,product_type,variants.title,variants.sku&resources[options][prefix]=last&resources[options][unavailable_products]=last&resources[type]=query,product,collection,page,article&section_id=search-predictive-grid`
+      `${window.Shopify.routes.root}search/suggest?q=${queryKey}&resources[options][limit]=10&resources[options][fields]=title,tag,vendor,product_type,variants.title,variants.sku&resources[options][prefix]=last&resources[options][unavailable_products]=last&resources[type]=query,product,collection,page,article&section_id=search-predictive-grid`
     )
       .then((response) => {
         if (!response.ok) {

@@ -104,7 +104,7 @@
             data-rebuy-enabled="true"
           >
             <h3 class="search-drawer__section-title" id="search-drawer-rebuy-heading">
-              {{ section.settings.featured_collection_heading | default: 'Trending Products' }}
+              {{ section.settings.featured_collection_heading }}
             </h3>
             <div class="search-results__grid" id="search-drawer-rebuy-grid"></div>
           </div>
@@ -202,10 +202,10 @@
       "type": "range",
       "id": "maximum_products_count_to_show",
       "min": 2,
-      "max": 6,
+      "max": 10,
       "step": 1,
       "label": "Maximum products to show",
-      "default": 4
+      "default": 8
     },
     {
       "type": "color_scheme",

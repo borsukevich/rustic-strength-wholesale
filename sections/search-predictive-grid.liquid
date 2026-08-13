@@ -102,7 +102,7 @@
             role="tabpanel"
           >
             <ul class="search-results__list">
-              {%- for collection in collections -%}
+              {%- for collection in collections limit: 10 -%}
                 <li>
                   <a href="{{ collection.url }}" class="search-results__item-link">
                     <span class="h5" style="margin: 0;">{{ collection.title }}</span>
@@ -120,7 +120,7 @@
             role="tabpanel"
           >
             <div class="search-results__grid">
-              {%- for article in articles -%}
+              {%- for article in articles limit: 10 -%}
                 {%- render 'article-card',
                   article: article,
                   show_image: true,
@@ -139,7 +139,7 @@
             role="tabpanel"
           >
             <ul class="search-results__list">
-              {%- for page in pages -%}
+              {%- for page in pages limit: 10 -%}
                 <li>
                   <a href="{{ page.url }}" class="search-results__item-link">
                     <span class="h5" style="margin: 0;">{{ page.title }}</span>
