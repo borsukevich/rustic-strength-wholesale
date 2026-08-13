@@ -96,10 +96,24 @@
           </div>
         {%- endif -%}
 
+        {%- if section.settings.enable_rebuy_recommendations -%}
+          <div
+            id="search-drawer-rebuy-block"
+            class="search-drawer__block hidden"
+            style="margin-top: 2rem;"
+            data-rebuy-enabled="true"
+          >
+            <h3 class="search-drawer__section-title" id="search-drawer-rebuy-heading">
+              {{ section.settings.featured_collection_heading | default: 'Trending Products' }}
+            </h3>
+            <div class="search-results__grid" id="search-drawer-rebuy-grid"></div>
+          </div>
+        {%- endif -%}
+
         {%- assign featured_products = section.settings.featured_products -%}
 
         {%- if featured_products != blank and featured_products.count > 0 -%}
-          <div class="search-drawer__block" style="margin-top: 2rem;">
+          <div id="search-drawer-static-featured" class="search-drawer__block" style="margin-top: 2rem;">
             {%- if section.settings.featured_collection_heading != blank -%}
               <h3 class="search-drawer__section-title">{{ section.settings.featured_collection_heading }}</h3>
             {%- endif -%}
@@ -144,6 +158,12 @@
   "tag": "aside",
   "class": "search-drawer-section",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_rebuy_recommendations",
+      "label": "Show Rebuy AI products",
+      "default": true
+    },
     {
       "type": "text",
       "id": "popular_terms_heading",

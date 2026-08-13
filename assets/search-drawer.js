@@ -45,6 +45,118 @@ class SearchDrawer extends HTMLElement {
     }
 
     this.setupPopularTerms();
+    this.initRebuyObserver();
+  }
+
+  initRebuyObserver() {
+    const rebuyBlock = this.querySelector('#search-drawer-rebuy-block');
+    if (!rebuyBlock || this.hasExtractedRebuy) return;
+
+    // Check periodically without triggering DOM mutation loops
+    let attempts = 0;
+    const interval = setInterval(() => {
+      attempts++;
+      if (this.extractRebuyProducts() || attempts >= 15) {
+        clearInterval(interval);
+      }
+    }, 400);
+  }
+
+  extractRebuyProducts() {
+    if (this.hasExtractedRebuy) return true;
+
+    const rebuyBlock = this.querySelector('#search-drawer-rebuy-block');
+    const rebuyGrid = this.querySelector('#search-drawer-rebuy-grid');
+    const staticBlock = this.querySelector('#search-drawer-static-featured');
+
+    if (!rebuyBlock || !rebuyGrid) return false;
+
+    const rebuyProducts = document.querySelectorAll(
+      '#rebuy-quick-view-dropdown-search .rebuy-quick-view__product, .rebuy-quick-view-dropdown .rebuy-quick-view__product, .rebuy-quick-view__product-section .rebuy-quick-view__product'
+    );
+
+    if (!rebuyProducts || rebuyProducts.length === 0) {
+      return false;
+    }
+
+    this.hasExtractedRebuy = true;
+
+    const rebuyTitleEl = document.querySelector('#rebuy-quick-view-dropdown-search .rebuy-quick-view__title, .rebuy-quick-view-dropdown__title');
+    const headingEl = this.querySelector('#search-drawer-rebuy-heading');
+    if (rebuyTitleEl && rebuyTitleEl.textContent.trim() && headingEl) {
+      headingEl.textContent = rebuyTitleEl.textContent.trim();
+    }
+
+    let itemsHTML = '';
+    const extractedHandles = [];
+
+    rebuyProducts.forEach((item, index) => {
+      if (index >= 6) return;
+
+      const linkEl = item.querySelector('a.rebuy-quick-view__image-link, a.rebuy-product-title, a[href*="/products/"]');
+      const titleEl = item.querySelector('.rebuy-product-title, img[alt]');
+      const imgEl = item.querySelector('img.rebuy-quick-view_image, img');
+      const priceEl = item.querySelector('.price, .rebuy-money');
+
+      if (!linkEl) return;
+
+      const rawHref = linkEl.getAttribute('href') || '';
+      const title = (titleEl ? (titleEl.textContent || titleEl.getAttribute('alt') || '') : '').trim();
+      const imgSrc = imgEl ? (imgEl.getAttribute('src') || '') : '';
+      const imgSet = imgEl ? (imgEl.getAttribute('srcset') || '') : '';
+      const priceText = priceEl ? priceEl.innerText.trim() : '';
+
+      const handleMatch = rawHref.match(/\/products\/([^\/?#]+)/);
+      const handle = handleMatch ? handleMatch[1] : '';
+      if (handle) extractedHandles.push(handle);
+
+      itemsHTML += `
+        <div class="card-wrapper underline-links-hover">
+          <div class="card card--standard card--media">
+            <div class="card__inner color-scheme-1 gradient ratio" style="--ratio-percent: 100%;">
+              <div class="card__media" style="width: 100%; height: 100%;">
+                <div class="media media--transparent media--hover-effect" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                  <img src="${imgSrc}" srcset="${imgSet}" alt="${title}" loading="lazy" class="motion-reduce" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+                </div>
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="card__information">
+                <h3 class="card__heading h5" style="font-size: 1.3rem; margin-top: 0.6rem; margin-bottom: 0.4rem; font-weight: 500;">
+                  <a href="${rawHref}" class="full-unstyled-link" style="text-decoration: none; color: inherit;">${title}</a>
+                </h3>
+                <div class="card-information">
+                  <div class="price">
+                    <div class="price__container">
+                      <div class="price__regular">
+                        <span class="price-item price-item--regular" style="font-size: 1.3rem; font-weight: 600;">${priceText}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+
+    if (itemsHTML) {
+      rebuyGrid.innerHTML = itemsHTML;
+      rebuyBlock.classList.remove('hidden');
+      if (staticBlock) {
+        staticBlock.classList.add('hidden');
+      }
+
+      if (extractedHandles.length > 0 && typeof window.updateSearchPrices === 'function') {
+        const fakeProducts = extractedHandles.map((h) => ({ handle: h }));
+        window.updateSearchPrices(fakeProducts, 'rebuy-ai');
+      }
+
+      return true;
+    }
+
+    return false;
   }
 
   setupPopularTerms() {
@@ -64,6 +176,8 @@ class SearchDrawer extends HTMLElement {
 
   open(triggeredBy) {
     if (triggeredBy) this.activeElement = triggeredBy;
+
+    this.extractRebuyProducts();
 
     setTimeout(() => {
       this.classList.add('animate', 'active', 'open');
