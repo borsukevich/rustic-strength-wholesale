@@ -237,7 +237,7 @@ class SearchDrawer extends HTMLElement {
     const queryKey = encodeURIComponent(searchTerm);
 
     fetch(
-      `${window.Shopify.routes.root}search/suggest?q=${queryKey}&resources[options][limit]=10&resources[options][fields]=title,tag,vendor,product_type,variants.title,variants.sku&resources[options][prefix]=last&resources[options][unavailable_products]=last&resources[type]=query,product,collection,page,article&section_id=search-predictive-grid`
+      `${window.Shopify.routes.root}search/suggest?q=${queryKey}&resources[limit]=10&resources[limit_scope]=each&resources[options][fields]=title,tag,vendor,product_type,variants.title,variants.sku&resources[options][prefix]=last&resources[options][unavailable_products]=last&resources[type]=query,product,collection,page,article&section_id=search-predictive-grid`
     )
       .then((response) => {
         if (!response.ok) {
