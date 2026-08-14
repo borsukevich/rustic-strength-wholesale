@@ -128,19 +128,19 @@ class SearchDrawer extends HTMLElement {
       }
 
       itemsHTML += `
-        <div class="card-wrapper underline-links-hover">
-          <div class="card card--standard card--media">
-            <div class="card__inner color-scheme-1 gradient ratio" style="--ratio-percent: 100%;">
-              <div class="card__media" style="width: 100%; height: 100%;">
-                <div class="media media--transparent media--hover-effect" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                  <img src="${imgSrc}" srcset="${imgSet}" alt="${title}" loading="lazy" class="motion-reduce" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+        <div class="card-wrapper product-card-wrapper underline-links-hover">
+          <div class="card card--card card--media color-scheme-1 gradient card--extend-height" style="--ratio-percent: 100%;">
+            <div class="card__inner ratio" style="--ratio-percent: 100%;">
+              <div class="card__media">
+                <div class="media media--transparent media--hover-effect">
+                  <img src="${imgSrc}" srcset="${imgSet}" alt="${title}" loading="lazy" class="motion-reduce" style="object-fit: contain;">
                 </div>
               </div>
             </div>
             <div class="card__content">
               <div class="card__information">
-                <h3 class="card__heading h5" style="font-size: 1.3rem; margin-top: 0.6rem; margin-bottom: 0.4rem; font-weight: 500;">
-                  <a href="${rawHref}" class="full-unstyled-link" style="text-decoration: none; color: inherit;">${title}</a>
+                <h3 class="card__heading h5">
+                  <a href="${rawHref}" class="full-unstyled-link">${title}</a>
                 </h3>
                 <div class="card-information">
                   ${priceHTML}
