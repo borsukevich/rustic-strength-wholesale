@@ -1,7 +1,11 @@
 {{ 'component-search-drawer.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'search-drawer.js' | asset_url }}" defer="defer"></script>
 
-<search-drawer class="drawer drawer--right search-drawer">
+<search-drawer
+  class="drawer drawer--right search-drawer"
+  data-customer-logged-in="{% if customer %}true{% else %}false{% endif %}"
+  data-login-url="{{ routes.account_login_url }}"
+>
   <div id="SearchDrawer-Overlay" class="search-drawer__overlay"></div>
   <div
     class="drawer__inner gradient color-{{ section.settings.color_scheme | default: 'scheme-1' }}"

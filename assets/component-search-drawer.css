@@ -376,3 +376,11 @@ search-drawer.drawer.open .drawer__inner {
   padding: 4rem 2rem;
   color: rgba(var(--color-foreground, 43, 43, 43), 0.7);
 }
+
+.login-link-price {
+  display: block !important;
+  font-size: 1.3rem;
+  color: rgba(var(--color-link), var(--alpha-link));
+  text-decoration: underline;
+  margin-top: 0.4rem;
+}

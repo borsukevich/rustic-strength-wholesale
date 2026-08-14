@@ -89,6 +89,9 @@ class SearchDrawer extends HTMLElement {
     let itemsHTML = '';
     const extractedHandles = [];
 
+    const isCustomerLoggedIn = this.getAttribute('data-customer-logged-in') === 'true' || Boolean(window.isCustomerLoggedIn);
+    const loginUrl = this.getAttribute('data-login-url') || (window.routes && window.routes.account_login_url) || '/account/login';
+
     rebuyProducts.forEach((item, index) => {
       if (index >= 8) return;
 
@@ -109,6 +112,21 @@ class SearchDrawer extends HTMLElement {
       const handle = handleMatch ? handleMatch[1] : '';
       if (handle) extractedHandles.push(handle);
 
+      let priceHTML = '';
+      if (isCustomerLoggedIn) {
+        priceHTML = `
+          <div class="price">
+            <div class="price__container">
+              <div class="price__regular">
+                <span class="price-item price-item--regular" style="font-size: 1.3rem; font-weight: 600;">${priceText}</span>
+              </div>
+            </div>
+          </div>
+        `;
+      } else {
+        priceHTML = `<a href="${loginUrl}" class="login-link-price">Login for Wholesale Pricing</a>`;
+      }
+
       itemsHTML += `
         <div class="card-wrapper underline-links-hover">
           <div class="card card--standard card--media">
@@ -125,13 +143,7 @@ class SearchDrawer extends HTMLElement {
                   <a href="${rawHref}" class="full-unstyled-link" style="text-decoration: none; color: inherit;">${title}</a>
                 </h3>
                 <div class="card-information">
-                  <div class="price">
-                    <div class="price__container">
-                      <div class="price__regular">
-                        <span class="price-item price-item--regular" style="font-size: 1.3rem; font-weight: 600;">${priceText}</span>
-                      </div>
-                    </div>
-                  </div>
+                  ${priceHTML}
                 </div>
               </div>
             </div>
@@ -147,7 +159,7 @@ class SearchDrawer extends HTMLElement {
         staticBlock.classList.add('hidden');
       }
 
-      if (extractedHandles.length > 0 && typeof window.updateSearchPrices === 'function') {
+      if (isCustomerLoggedIn && extractedHandles.length > 0 && typeof window.updateSearchPrices === 'function') {
         const fakeProducts = extractedHandles.map((h) => ({ handle: h }));
         window.updateSearchPrices(fakeProducts, 'rebuy-ai');
       }
