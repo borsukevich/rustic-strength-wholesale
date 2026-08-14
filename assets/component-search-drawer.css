@@ -1,7 +1,12 @@
 #rebuy-quick-view-dropdown-search,
 [id="rebuy-quick-view-dropdown-search"],
+#rebuy-smart-search-results-dropdown,
+[id="rebuy-smart-search-results-dropdown"],
+[id*="rebuy-smart-search"],
 .rebuy-quick-view-dropdown-search,
-.rebuy-search-dropdown {
+.rebuy-smart-search-results-dropdown,
+.rebuy-search-dropdown,
+.rebuy-smart-search {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;

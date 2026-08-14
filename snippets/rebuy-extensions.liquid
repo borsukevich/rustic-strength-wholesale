@@ -1,8 +1,13 @@
 <style>
   #rebuy-quick-view-dropdown-search,
   [id="rebuy-quick-view-dropdown-search"],
+  #rebuy-smart-search-results-dropdown,
+  [id="rebuy-smart-search-results-dropdown"],
+  [id*="rebuy-smart-search"],
   .rebuy-quick-view-dropdown-search,
-  .rebuy-search-dropdown {
+  .rebuy-smart-search-results-dropdown,
+  .rebuy-search-dropdown,
+  .rebuy-smart-search {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
@@ -11,64 +16,6 @@
     width: 0 !important;
     overflow: hidden !important;
   }
-
-  {%- if request.page_type == 'search' -%}
-    .template-search__header,
-    .template-search__search,
-    .template-search #product-grid,
-    .template-search .template-search__results {
-      display: none !important;
-    }
-
-    #rebuy-smart-search-results-dropdown,
-    [id="rebuy-smart-search-results-dropdown"],
-    [id*="rebuy-smart-search"],
-    .rebuy-smart-search-results-dropdown {
-      display: block !important;
-      visibility: visible !important;
-      opacity: 1 !important;
-      pointer-events: auto !important;
-      height: auto !important;
-      width: 100% !important;
-      max-width: 1200px !important;
-      margin: 2rem auto !important;
-      padding-top: 1px !important;
-      padding-bottom: 30px !important;
-      padding-left: 1.5rem !important;
-      padding-right: 1.5rem !important;
-      position: relative !important;
-      overflow: visible !important;
-    }
-
-    .rebuy-smart-search-results-page-dropdown__input {
-      padding-top: 10px !important;
-      padding-bottom: 10px !important;
-    }
-
-    .rebuy-search-filter i {
-      margin-left: 10px;
-      transform: translateY(1px);
-    }
-
-    #rebuy-smart-search-sort-options {
-      margin-top: 10px !important;
-      background-position: calc(100% - 13px) calc(0.85em + 2px), calc(100% - 8px) calc(0.85em + 2px), calc(100% - -0.1em) 0.5em;
-      padding: 5px 10px !important;
-    }
-
-    .rebuy-smart-search-results-page-dropdown__sort-by-label {
-      color: rgb(var(--color-foreground)) !important;
-    }
-  {%- else -%}
-    #rebuy-smart-search-results-dropdown,
-    [id="rebuy-smart-search-results-dropdown"],
-    .rebuy-smart-search-results-dropdown {
-      display: none !important;
-      visibility: hidden !important;
-      opacity: 0 !important;
-      pointer-events: none !important;
-    }
-  {%- endif -%}
 </style>
 <script>
   function updateSearchPrices(products, type) {
