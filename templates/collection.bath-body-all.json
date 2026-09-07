@@ -33,24 +33,25 @@
             "collection": "rustic-strength-bath-body"
           }
         },
-        "featured_collection_TVn6Hy": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "aromatherapy"
-          }
-        },
-        "featured_collection_mdfbRb": {
+        "featured_collection_B8YU9L": {
           "type": "featured_collection",
           "settings": {
             "collection": "bath-body-accessories"
+          }
+        },
+        "featured_collection_TVn6Hy": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "aromatherapy"
           }
         }
       },
       "block_order": [
         "featured_collection_PtneWb",
         "featured_collection_EwgmtC",
-        "featured_collection_TVn6Hy",
-        "featured_collection_mdfbRb"
+        "featured_collection_B8YU9L",
+        "featured_collection_TVn6Hy"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
@@ -116,7 +117,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 100,
+        "products_per_page": 200,
         "columns_desktop": 5,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
@@ -253,7 +254,7 @@
         "featured_collection_6VnXWV": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "laundry-detergent-1"
           }
         },
         "featured_collection_zeqKwE": {

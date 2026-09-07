@@ -124,7 +124,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 36,
+        "products_per_page": 200,
         "columns_desktop": 5,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
@@ -137,6 +137,92 @@
         "enable_filtering": true,
         "filter_type": "drawer",
         "enable_sorting": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_carousel_3UekVz": {
+      "type": "video-carousel",
+      "blocks": {
+        "video_kPQyEH": {
+          "type": "video",
+          "settings": {
+            "title": "Which Drum Pump is right for me?",
+            "caption": "",
+            "cover_image": "shopify://shop_images/which_drum_pump.png",
+            "video_file": "",
+            "video_url": "https://www.youtube.com/shorts/6uYqhRK6W3o"
+          }
+        },
+        "video_qQ7EDN": {
+          "type": "video",
+          "settings": {
+            "title": "How to Install a Drum Pump",
+            "caption": "",
+            "cover_image": "shopify://shop_images/install_drum_pump.png",
+            "video_file": "",
+            "video_url": "https://www.youtube.com/shorts/bwZJv1WqCJs"
+          }
+        },
+        "video_emYiWp": {
+          "type": "video",
+          "settings": {
+            "title": "How to Install an Economy Eco-Jug Pump",
+            "caption": "",
+            "cover_image": "shopify://shop_images/economy_pump_help.png",
+            "video_file": "",
+            "video_url": "https://www.youtube.com/shorts/BesatYbEQM0"
+          }
+        },
+        "video_k3PNaA": {
+          "type": "video",
+          "settings": {
+            "title": "How to Install a Premium Eco-Jug Pump",
+            "caption": "",
+            "cover_image": "shopify://shop_images/Premium_Pump_still_5a7ec179-02c1-4cce-b391-9dedef7fc315.jpg",
+            "video_file": "",
+            "video_url": "https://www.youtube.com/shorts/hm1f40TWT70"
+          }
+        },
+        "video_jYGnAK": {
+          "type": "video",
+          "settings": {
+            "title": "How to Install an Eco-Jug Spout",
+            "caption": "",
+            "cover_image": "shopify://shop_images/Filling_Jug_Of_Laundry_Detergent_2_1X1_98824445-3c76-47fb-bf95-d8d07b5a8b65.jpg",
+            "video_file": "",
+            "video_url": "https://www.youtube.com/shorts/hm1f40TWT70"
+          }
+        },
+        "video_QzREaT": {
+          "type": "video",
+          "settings": {
+            "title": "How to Assemble a Wide-Mouth Pump Cap",
+            "caption": "",
+            "cover_image": "shopify://shop_images/wide_mouth_cap_assy.png",
+            "video_file": "",
+            "video_url": "https://www.youtube.com/shorts/O_mDwvyf7M8"
+          }
+        }
+      },
+      "block_order": [
+        "video_kPQyEH",
+        "video_qQ7EDN",
+        "video_emYiWp",
+        "video_k3PNaA",
+        "video_jYGnAK",
+        "video_QzREaT"
+      ],
+      "disabled": true,
+      "name": "Video Carousel",
+      "settings": {
+        "heading": "how-to videos",
+        "heading_size": "h1",
+        "subheading": "",
+        "text_alignment": "left",
+        "aspect_ratio": "1:1",
+        "columns_desktop": 4,
+        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -261,7 +347,7 @@
         "featured_collection_6VnXWV": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "laundry-detergent-1"
           }
         },
         "featured_collection_zeqKwE": {
@@ -305,6 +391,7 @@
     "collection_list_cbTGPA",
     "rich_text_4tVwiG",
     "product-grid",
+    "video_carousel_3UekVz",
     "apps_XYx4jK",
     "blocks_YmDWTA",
     "collection_list_NeNbHM"

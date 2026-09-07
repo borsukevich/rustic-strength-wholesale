@@ -33,12 +33,6 @@
             "collection": "rustic-strength-cleaning-retail-ready"
           }
         },
-        "featured_collection_W7aLi7": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "rustic-strength-home-pet-retail-ready"
-          }
-        },
         "featured_collection_eeQtNy": {
           "type": "featured_collection",
           "settings": {
@@ -47,6 +41,7 @@
         },
         "featured_collection_Rwmgpj": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "hair-care-retail-ready"
           }
@@ -55,7 +50,6 @@
       "block_order": [
         "featured_collection_UnnNxL",
         "featured_collection_6diVRy",
-        "featured_collection_W7aLi7",
         "featured_collection_eeQtNy",
         "featured_collection_Rwmgpj"
       ],
@@ -123,7 +117,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 36,
+        "products_per_page": 200,
         "columns_desktop": 5,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
@@ -260,7 +254,7 @@
         "featured_collection_6VnXWV": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "laundry-detergent-1"
           }
         },
         "featured_collection_zeqKwE": {

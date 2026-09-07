@@ -62,16 +62,16 @@
             "min_star_rating": "inherit",
             "show_review_media": true,
             "max_reviews": 5,
-            "review_length": "medium",
-            "text_size": "medium",
+            "review_length": "small",
+            "text_size": "small",
             "max_width": 1100,
             "max_image_size": "small",
             "arrows_visibility": "always_shown",
             "transition_speed": 5,
-            "corner_styling": "inherit",
+            "corner_styling": "round",
             "text_color": "",
-            "card_color": "",
-            "stars_color": "",
+            "card_color": "#f4f4f4",
+            "stars_color": "#bcad68",
             "arrows_color": "",
             "arrows_background_color": ""
           }
@@ -113,7 +113,7 @@
           "settings": {
             "heading": "Ingredient Descriptions",
             "icon": "eye",
-            "content": "<p>Organic Trade Association. GMO-Free. 100% biodegradable.<br/>Septic & greywater-safe</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\">Water</a></p><p><a href=\"/blogs/ingredients/what-is-coconut-oil-and-what-does-it-do-in-hair-products\" title=\"What is Coconut Oil and what does it do in hair products?\">Organic Coconut Oil</a></p><p>Organic Extra Virgin Olive Oil</p><p>Organic Castor Oil</p><p>Organic Sunflower Oil</p><p><a href=\"/blogs/ingredients/unlock-the-soothing-power-of-aloe-vera-leaf-juice-for-hair-and-skin-your-ultimate-guide\" title=\"Unlock the Soothing Power of Aloe Vera Leaf Juice for Hair and Skin: Your Ultimate Guide\">Organic Aloe</a></p><p>Potassium Hydroxide</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\">Citric Acid</a></p>",
+            "content": "<p>Organic Trade Association. GMO-Free. 100% biodegradable.<br/>Septic & greywater-safe</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\">Water</a></p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-coconut-oil-and-what-does-it-do-in-hair-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-coconut-oil-and-what-does-it-do-in-hair-products\">Organic Coconut Oil</a></p><p>Organic Extra Virgin Olive Oil</p><p>Organic Castor Oil</p><p>Organic Sunflower Oil</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/unlock-the-soothing-power-of-aloe-vera-leaf-juice-for-hair-and-skin-your-ultimate-guide\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/unlock-the-soothing-power-of-aloe-vera-leaf-juice-for-hair-and-skin-your-ultimate-guide\">Organic Aloe</a></p><p>Potassium Hydroxide</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\">Citric Acid</a></p>",
             "page": ""
           }
         },
@@ -299,53 +299,53 @@
         "include_margins": true
       }
     },
-    "collection_list_hXEcJK": {
+    "collection_list_NNqC6T": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_Ge9qYg": {
+        "featured_collection_j7cGWK": {
           "type": "featured_collection",
           "settings": {
-            "collection": "body-care"
+            "collection": "shop-all-laundry"
           }
         },
-        "featured_collection_J6bcK9": {
+        "featured_collection_fjpzLt": {
           "type": "featured_collection",
           "settings": {
-            "collection": "essential-oils"
+            "collection": "all-cleaning-products"
           }
         },
-        "featured_collection_DWYgnF": {
+        "featured_collection_JXUKQ6": {
           "type": "featured_collection",
           "settings": {
-            "collection": "hair-care-products"
+            "collection": "all-bath-body"
           }
         },
-        "featured_collection_JNA3DX": {
+        "featured_collection_UeFTVW": {
           "type": "featured_collection",
           "settings": {
             "collection": "hand-soap"
           }
         },
-        "featured_collection_d4eqhh": {
+        "featured_collection_BiWnFC": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dish-soap"
+            "collection": "all-dish-soap"
           }
         },
-        "featured_collection_i8UCBF": {
+        "featured_collection_qdjFK9": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "all-surface-floor"
           }
         }
       },
       "block_order": [
-        "featured_collection_Ge9qYg",
-        "featured_collection_J6bcK9",
-        "featured_collection_DWYgnF",
-        "featured_collection_JNA3DX",
-        "featured_collection_d4eqhh",
-        "featured_collection_i8UCBF"
+        "featured_collection_j7cGWK",
+        "featured_collection_fjpzLt",
+        "featured_collection_JXUKQ6",
+        "featured_collection_UeFTVW",
+        "featured_collection_BiWnFC",
+        "featured_collection_qdjFK9"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
@@ -370,6 +370,6 @@
     "1762450183b75e33a7",
     "175623938176d21caa",
     "1754511058878b6d45",
-    "collection_list_hXEcJK"
+    "collection_list_NNqC6T"
   ]
 }

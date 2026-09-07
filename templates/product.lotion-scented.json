@@ -62,16 +62,16 @@
             "min_star_rating": "inherit",
             "show_review_media": true,
             "max_reviews": 5,
-            "review_length": "medium",
-            "text_size": "medium",
+            "review_length": "small",
+            "text_size": "small",
             "max_width": 1100,
             "max_image_size": "small",
             "arrows_visibility": "always_shown",
             "transition_speed": 5,
-            "corner_styling": "inherit",
+            "corner_styling": "round",
             "text_color": "",
-            "card_color": "",
-            "stars_color": "",
+            "card_color": "#f4f4f4",
+            "stars_color": "#bcad68",
             "arrows_color": "",
             "arrows_background_color": ""
           }
@@ -112,7 +112,7 @@
           "settings": {
             "heading": "Ingredient Descriptions",
             "icon": "eye",
-            "content": "<p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><a href=\"/blogs/ingredients/your-ultimate-guide-to-food-grade-cold-pressed-avocado-oil\" title=\"Your Ultimate Guide to Food Grade, Cold Pressed Avocado Oil\"><strong>Persea Gratissima (Avocado) Oil</strong> </a><br/> (cold-pressed, nutrient packed oil)</p><p><a href=\"/blogs/ingredients/what-is-cetearyl-alcohol-and-what-does-it-do-in-hair-and-skin-products\" title=\"What is Cetearyl Alcohol and what does it do in hair and skin products?\"><strong>Cetearyl Alcohol</strong></a> (gives skin soft feel)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-cetyl-alcohol-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Cetyl Alcohol and what does it do in products?\"><strong>Cetyl Alcohol</strong></a> (soft feel)</p><p><a href=\"/blogs/ingredients/what-is-cetyl-alcohol-and-what-does-it-do-in-products\" title=\"What is Cetyl Alcohol and what does it do in products?\"><strong>Stearic Acid </strong></a>(veggie-based, satiny feel)</p><p><a href=\"/blogs/ingredients/what-is-glycerin-and-what-does-it-do-in-products\" title=\"What is Glycerin and what does it do in products?\"><strong>Vegetable Glycerin (Glycerin)</strong></a> (veggie-based, moisturizes skin. USP, kosher quality.)</p><p><a href=\"/blogs/ingredients/what-is-glyceryl-stearate-and-what-does-it-do-in-products\" title=\"What is Glyceryl Stearate and what does it do in products?\"><strong>Glyceryl Stearate </strong></a>(veggie-based, moisturizer)</p><p><strong>Caprylyl Glycol,</strong><a href=\"/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong> Phenoxyethanol</strong></a> (preservatives used sparingly, prevents bacteria from growing in container) </p><p><a href=\"/blogs/ingredients/what-are-essential-oils\" title=\"What are Essential Oils?\"><strong>Essential Oils</strong></a><strong> and/or </strong><a href=\"/blogs/ingredients/what-are-fragrance-oils\" title=\"What are Fragrance Oils?\"><strong>Phthalate-Free Fragrance Oils</strong></a><strong> </strong>(scent)</p>",
+            "content": "<p><a href=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\"><strong>High-Purity Water</strong></a><strong> </strong>• charcoal-filtered, reverse osmosis, UV-sanitized</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/your-ultimate-guide-to-food-grade-cold-pressed-avocado-oil\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/your-ultimate-guide-to-food-grade-cold-pressed-avocado-oil\"><strong>Persea Gratissima (Avocado) Oil</strong></a><br/>• cold-pressed, nutrient packed oil</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/cetearyl-alcohol-the-truth-behind-this-common-skincare-ingredient\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/cetearyl-alcohol-the-truth-behind-this-common-skincare-ingredient\"><strong>Cetearyl Alcohol</strong></a> • gives skin soft feel</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/is-cetyl-alcohol-safe-benefits-for-skin-sustainability\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/is-cetyl-alcohol-safe-benefits-for-skin-sustainability\"><strong>Cetyl Alcohol</strong></a> • soft feel</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-stearic-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-stearic-acid-and-what-does-it-do-in-products\"><strong>Stearic Acid</strong></a><strong> </strong>• veggie-based, satiny feel</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-glycerin-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-glycerin-and-what-does-it-do-in-products\"><strong>Vegetable Glycerin (Glycerin)</strong></a> • veggie-based, moisturizes skin. USP, kosher quality.</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-glyceryl-stearate-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-glyceryl-stearate-and-what-does-it-do-in-products\"><strong>Glyceryl Stearate </strong></a>• veggie-based, moisturizer</p><p><strong>Caprylyl Glycol, </strong><a href=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\"><strong>Phenoxyethanol</strong></a> • preservatives used sparingly, prevents bacteria from growing in container)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-are-essential-oils\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-are-essential-oils\"><strong>Essential Oils </strong></a>and/or<a href=\"https://rusticstrength.com/blogs/ingredients/what-are-fragrance-oils\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-are-fragrance-oils\"><strong> Phthalate-Free Fragrance Oils </strong></a>• scent</p>",
             "page": ""
           }
         },
@@ -299,53 +299,53 @@
         "include_margins": true
       }
     },
-    "collection_list_hXEcJK": {
+    "collection_list_mQimJk": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_Ge9qYg": {
+        "featured_collection_Uzmh6Q": {
           "type": "featured_collection",
           "settings": {
-            "collection": "body-care"
+            "collection": "shop-all-laundry"
           }
         },
-        "featured_collection_J6bcK9": {
+        "featured_collection_8HYw7D": {
           "type": "featured_collection",
           "settings": {
-            "collection": "essential-oils"
+            "collection": "all-cleaning-products"
           }
         },
-        "featured_collection_DWYgnF": {
+        "featured_collection_mbBRcD": {
           "type": "featured_collection",
           "settings": {
-            "collection": "hair-care-products"
+            "collection": "all-bath-body"
           }
         },
-        "featured_collection_JNA3DX": {
+        "featured_collection_dqFEVX": {
           "type": "featured_collection",
           "settings": {
             "collection": "hand-soap"
           }
         },
-        "featured_collection_d4eqhh": {
+        "featured_collection_axRLQ8": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dish-soap"
+            "collection": "all-dish-soap"
           }
         },
-        "featured_collection_i8UCBF": {
+        "featured_collection_8gN7NE": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "all-surface-floor"
           }
         }
       },
       "block_order": [
-        "featured_collection_Ge9qYg",
-        "featured_collection_J6bcK9",
-        "featured_collection_DWYgnF",
-        "featured_collection_JNA3DX",
-        "featured_collection_d4eqhh",
-        "featured_collection_i8UCBF"
+        "featured_collection_Uzmh6Q",
+        "featured_collection_8HYw7D",
+        "featured_collection_mbBRcD",
+        "featured_collection_dqFEVX",
+        "featured_collection_axRLQ8",
+        "featured_collection_8gN7NE"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
@@ -370,6 +370,6 @@
     "1762450183b75e33a7",
     "175623938176d21caa",
     "1754511058878b6d45",
-    "collection_list_hXEcJK"
+    "collection_list_mQimJk"
   ]
 }

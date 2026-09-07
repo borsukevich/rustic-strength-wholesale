@@ -62,16 +62,16 @@
             "min_star_rating": "inherit",
             "show_review_media": true,
             "max_reviews": 5,
-            "review_length": "medium",
-            "text_size": "medium",
+            "review_length": "small",
+            "text_size": "small",
             "max_width": 1100,
             "max_image_size": "small",
             "arrows_visibility": "always_shown",
             "transition_speed": 5,
-            "corner_styling": "inherit",
+            "corner_styling": "round",
             "text_color": "",
-            "card_color": "",
-            "stars_color": "",
+            "card_color": "#f4f4f4",
+            "stars_color": "#bcad68",
             "arrows_color": "",
             "arrows_background_color": ""
           }
@@ -113,7 +113,7 @@
           "settings": {
             "heading": "Ingredient Descriptions",
             "icon": "eye",
-            "content": "<p><a href=\"/blogs/ingredients/what-is-sodium-carbonate\" target=\"_blank\" title=\"What is Sodium Carbonate and what does it do in products?\"><strong>Sodium Carbonate</strong></a><strong> </strong>(washing soda, cleaner)</p><p><a href=\"/blogs/ingredients/what-is-sodium-percarbonate\" target=\"_blank\" title=\"What is Sodium Percarbonate and what does it do in products?\"><strong>Sodium Percarbonate</strong></a><strong> </strong>(non-chlorine oxygen bleach, whitener)</p><p><strong>Sodium Bicarbonate</strong> (odor remover)</p><p><a href=\"/blogs/ingredients/what-is-sodium-gluconate\" target=\"_blank\" title=\"What is Sodium Gluconate and what does it do in products?\"><strong>Sodium Gluconate</strong></a><strong> </strong>(salt, binds metals together)</p><p><a href=\"/blogs/ingredients/what-is-sodium-chloride\" target=\"_blank\" title=\"What is Sodium Chloride and what does it do in products?\"><strong>Sodium Chloride</strong></a><strong> </strong>(salt, water softener)</p><p></p>",
+            "content": "<p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-carbonate\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-carbonate\"><strong>Sodium Carbonate</strong></a><strong> </strong>(washing soda, cleaner)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-percarbonate\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-percarbonate\"><strong>Sodium Percarbonate</strong></a><strong> </strong>(non-chlorine oxygen bleach, whitener)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-bicarbonate\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-bicarbonate\"><strong>Sodium Bicarbonate</strong></a> (odor remover)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-gluconate\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-gluconate\"><strong>Sodium Gluconate</strong></a><strong> </strong>(salt, binds metals together)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-chloride\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-chloride\"><strong>Sodium Chloride</strong></a><strong> </strong>(salt, water softener)</p>",
             "page": ""
           }
         },
@@ -294,53 +294,53 @@
         "include_margins": true
       }
     },
-    "collection_list_hXEcJK": {
+    "collection_list_M6hCyy": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_Ge9qYg": {
+        "featured_collection_wmdFAz": {
           "type": "featured_collection",
           "settings": {
-            "collection": "body-care"
+            "collection": "shop-all-laundry"
           }
         },
-        "featured_collection_J6bcK9": {
+        "featured_collection_Uy6bzD": {
           "type": "featured_collection",
           "settings": {
-            "collection": "essential-oils"
+            "collection": "all-cleaning-products"
           }
         },
-        "featured_collection_DWYgnF": {
+        "featured_collection_8nwe7n": {
           "type": "featured_collection",
           "settings": {
-            "collection": "hair-care-products"
+            "collection": "all-bath-body"
           }
         },
-        "featured_collection_JNA3DX": {
+        "featured_collection_hbDMbm": {
           "type": "featured_collection",
           "settings": {
             "collection": "hand-soap"
           }
         },
-        "featured_collection_d4eqhh": {
+        "featured_collection_JapXGY": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dish-soap"
+            "collection": "all-dish-soap"
           }
         },
-        "featured_collection_i8UCBF": {
+        "featured_collection_Gc8LPU": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "all-surface-floor"
           }
         }
       },
       "block_order": [
-        "featured_collection_Ge9qYg",
-        "featured_collection_J6bcK9",
-        "featured_collection_DWYgnF",
-        "featured_collection_JNA3DX",
-        "featured_collection_d4eqhh",
-        "featured_collection_i8UCBF"
+        "featured_collection_wmdFAz",
+        "featured_collection_Uy6bzD",
+        "featured_collection_8nwe7n",
+        "featured_collection_hbDMbm",
+        "featured_collection_JapXGY",
+        "featured_collection_Gc8LPU"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
@@ -366,6 +366,6 @@
     "1762450183b75e33a7",
     "175623938176d21caa",
     "1754511058878b6d45",
-    "collection_list_hXEcJK"
+    "collection_list_M6hCyy"
   ]
 }

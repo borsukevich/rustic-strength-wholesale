@@ -47,7 +47,7 @@
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "title": "rustic strength hair & body care collections",
+        "title": "hair & body care collections",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 5,
@@ -65,7 +65,7 @@
         "heading_AiLaeX": {
           "type": "heading",
           "settings": {
-            "heading": "shop all rustic strength hair & body care",
+            "heading": "shop all hair & body care",
             "heading_size": "h1"
           }
         },
@@ -109,7 +109,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 100,
+        "products_per_page": 200,
         "columns_desktop": 5,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
@@ -246,7 +246,7 @@
         "featured_collection_6VnXWV": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "laundry-detergent-1"
           }
         },
         "featured_collection_zeqKwE": {

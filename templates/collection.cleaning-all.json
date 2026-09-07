@@ -41,6 +41,7 @@
         },
         "featured_collection_mcxKUn": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "castile-soap"
           }
@@ -61,7 +62,7 @@
       ],
       "name": "Submenu Categories",
       "settings": {
-        "title": "cleaning collections",
+        "title": "cleaning & home collections",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 5,
@@ -79,7 +80,7 @@
         "heading_rPQ7XU": {
           "type": "heading",
           "settings": {
-            "heading": "shop all cleaning",
+            "heading": "shop all cleaning & home",
             "heading_size": "h1"
           }
         },
@@ -123,7 +124,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 36,
+        "products_per_page": 200,
         "columns_desktop": 5,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
@@ -149,6 +150,9 @@
             "show_sample_reviews": false,
             "reviews_selection": "all",
             "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
             "star_rating": "4_to_5_star",
             "max_reviews": 30,
             "quote_marks_size": "small",
@@ -257,7 +261,7 @@
         "featured_collection_6VnXWV": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "laundry-detergent-1"
           }
         },
         "featured_collection_zeqKwE": {

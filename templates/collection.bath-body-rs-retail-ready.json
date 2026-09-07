@@ -59,7 +59,7 @@
         "heading_cmLXTq": {
           "type": "heading",
           "settings": {
-            "heading": "shop all rustic strength hair care retail-ready cases",
+            "heading": "shop all bath & body retail-ready cases",
             "heading_size": "h1"
           }
         },
@@ -103,7 +103,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 36,
+        "products_per_page": 200,
         "columns_desktop": 5,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
@@ -240,7 +240,7 @@
         "featured_collection_6VnXWV": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "laundry-detergent-1"
           }
         },
         "featured_collection_zeqKwE": {

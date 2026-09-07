@@ -202,9 +202,11 @@
             "card_list": [
               "laundry-heavy-metals",
               "laundry-glyphosate",
-              "laundry-pesticides"
+              "laundry-pesticides",
+              "laundry-1-4-dioxane",
+              "laundry-phthalates"
             ],
-            "shop_link": "shopify://collections/laundry-detergent-copy",
+            "shop_link": "shopify://collections/shop-all-laundry",
             "shop_link_label": "Shop Laundry Products"
           }
         },
@@ -247,16 +249,18 @@
       "blocks": {
         "tag_row_nHFrzq": {
           "type": "tag_row",
+          "disabled": true,
           "settings": {
-            "label": "Next screens",
-            "tags": "Phthalates; 1,4-dioxane; Parabens"
+            "label": "",
+            "tags": ""
           }
         },
         "tag_row_grGwgH": {
           "type": "tag_row",
+          "disabled": true,
           "settings": {
-            "label": "Next lines",
-            "tags": "Dish soap; Hand & body; Castile soap"
+            "label": "",
+            "tags": ""
           }
         }
       },
@@ -293,7 +297,7 @@
         "text_WaGdRU": {
           "type": "text",
           "settings": {
-            "text": "<p>*None detected means below the lab's detection limit, which is not the same as a flat zero. ppm, ppb, and mg per square decimeter are units of concentration. For scale, 10 ppb is roughly 10 drops in an Olympic pool.</p>"
+            "text": "<p>*None detected means below the lab's detection limit, which is not the same as a flat zero. ppm and mg per square decimeter are units of concentration. For scale, one drop of water in an Olympic pool is about 0.01 ppm.</p>"
           }
         }
       },
@@ -371,7 +375,7 @@
         "featured_collection_AzHkzG": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "laundry-detergent-1"
           }
         },
         "featured_collection_ctdhJT": {

@@ -74,16 +74,16 @@
             "min_star_rating": "inherit",
             "show_review_media": true,
             "max_reviews": 5,
-            "review_length": "medium",
-            "text_size": "medium",
+            "review_length": "small",
+            "text_size": "small",
             "max_width": 1100,
             "max_image_size": "small",
             "arrows_visibility": "always_shown",
             "transition_speed": 5,
-            "corner_styling": "inherit",
+            "corner_styling": "round",
             "text_color": "",
-            "card_color": "",
-            "stars_color": "",
+            "card_color": "#f4f4f4",
+            "stars_color": "#bcad68",
             "arrows_color": "",
             "arrows_background_color": ""
           }
@@ -124,7 +124,7 @@
           "settings": {
             "heading": "Ingredient Descriptions",
             "icon": "eye",
-            "content": "<p><a href=\"/blogs/ingredients/what-is-ethyl-alcohol\" title=\"What is Ethyl Alcohol and what does it do in products?\"><strong>Ethyl Alcohol</strong></a> (deodorizer)</p><p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><strong>Sorbitan Oleate Decyglucoside Crosspolymer</strong> (solubilizer and emulsifier)</p><p><a href=\"/blogs/ingredients/what-are-essential-oils\" title=\"What are Essential Oils?\"><strong>Essential Oils</strong></a> and/or <a href=\"/blogs/ingredients/what-are-fragrance-oils\" title=\"What are Fragrance Oils?\"><strong>Phthalate-Free Fragrance Oils</strong></a> that are GRAS safe (scent)</p><p>Rustic Strength fragrance oils are 100% certified free of the 624 carcinogens<br/>and 323 reproductive/ developmental toxins listed under California’s Prop 65<br/>act.</p>",
+            "content": "<p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-ethyl-alcohol\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-ethyl-alcohol\"><strong>Ethyl Alcohol</strong></a> (deodorizer)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><strong>Sorbitan Oleate Decyglucoside Crosspolymer</strong> (solubilizer and emulsifier)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-are-essential-oils\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-are-essential-oils\"><strong>Essential Oils</strong></a> and/or <a href=\"https://rusticstrength.com/blogs/ingredients/what-is-potassium-sorbate\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-potassium-sorbate\"><strong>Phthalate-Free Fragrance Oils</strong></a> that are GRAS safe (scent)</p><p>Rustic Strength fragrance oils are 100% certified free of the 624 carcinogens<br/>and 323 reproductive/ developmental toxins listed under California’s Prop 65<br/>act.</p>",
             "page": ""
           }
         },
@@ -322,53 +322,53 @@
         "include_margins": true
       }
     },
-    "collection_list_hXEcJK": {
+    "collection_list_8FT3p4": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_Ge9qYg": {
+        "featured_collection_QkLHrN": {
           "type": "featured_collection",
           "settings": {
-            "collection": "body-care"
+            "collection": "shop-all-laundry"
           }
         },
-        "featured_collection_J6bcK9": {
+        "featured_collection_aDQePq": {
           "type": "featured_collection",
           "settings": {
-            "collection": "essential-oils"
+            "collection": "all-cleaning-products"
           }
         },
-        "featured_collection_DWYgnF": {
+        "featured_collection_LBjfRt": {
           "type": "featured_collection",
           "settings": {
-            "collection": "hair-care-products"
+            "collection": "all-bath-body"
           }
         },
-        "featured_collection_JNA3DX": {
+        "featured_collection_C7wcqj": {
           "type": "featured_collection",
           "settings": {
             "collection": "hand-soap"
           }
         },
-        "featured_collection_d4eqhh": {
+        "featured_collection_mBTnqD": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dish-soap"
+            "collection": "all-dish-soap"
           }
         },
-        "featured_collection_i8UCBF": {
+        "featured_collection_9CX7xe": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "all-surface-floor"
           }
         }
       },
       "block_order": [
-        "featured_collection_Ge9qYg",
-        "featured_collection_J6bcK9",
-        "featured_collection_DWYgnF",
-        "featured_collection_JNA3DX",
-        "featured_collection_d4eqhh",
-        "featured_collection_i8UCBF"
+        "featured_collection_QkLHrN",
+        "featured_collection_aDQePq",
+        "featured_collection_LBjfRt",
+        "featured_collection_C7wcqj",
+        "featured_collection_mBTnqD",
+        "featured_collection_9CX7xe"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
@@ -393,6 +393,6 @@
     "1762450183b75e33a7",
     "175623938176d21caa",
     "1754511058878b6d45",
-    "collection_list_hXEcJK"
+    "collection_list_8FT3p4"
   ]
 }

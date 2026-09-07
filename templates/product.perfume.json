@@ -62,16 +62,16 @@
             "min_star_rating": "inherit",
             "show_review_media": true,
             "max_reviews": 5,
-            "review_length": "medium",
-            "text_size": "medium",
+            "review_length": "small",
+            "text_size": "small",
             "max_width": 1100,
             "max_image_size": "small",
             "arrows_visibility": "always_shown",
             "transition_speed": 5,
-            "corner_styling": "inherit",
+            "corner_styling": "round",
             "text_color": "",
-            "card_color": "",
-            "stars_color": "",
+            "card_color": "#f4f4f4",
+            "stars_color": "#bcad68",
             "arrows_color": "",
             "arrows_background_color": ""
           }
@@ -94,7 +94,7 @@
           "settings": {
             "heading": "Ingredients",
             "icon": "plant",
-            "content": "<p><strong>SD Alcohol 40</strong> (Alcohol Denat.)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-are-essential-oils\" target=\"_blank\" title=\"What are Essential Oils?\"><strong>Essential Oils</strong></a> & <a href=\"/blogs/tips-tricks/why-we-scent-safely-and-how-to-boost-your-laundrys-smell\" target=\"_blank\" title=\"Why We Scent Safely and How To Boost Your Laundry's Smell\">P<strong>hthalate-Free Fragrance Oils</strong></a></p>",
+            "content": "<p><strong>SD Alcohol 40</strong> (Alcohol Denat.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-are-essential-oils\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-are-essential-oils\"><strong>Essential Oils</strong></a> & <a href=\"https://rusticstrength.com/blogs/ingredients/what-are-fragrance-oils\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-are-fragrance-oils\"><strong>Phthalate-Free Fragrance Oils</strong></a></p>",
             "page": ""
           }
         },
@@ -103,7 +103,7 @@
           "settings": {
             "heading": "Scent",
             "icon": "leaf",
-            "content": "<p><em>All of our scents are made with  –</em></p><p><strong>Pure essential oils</strong> • hand selected by us from small farms all around the world.</p><p><em>and/or</em></p><p><strong>Phthalate-free fragrance oils</strong> • aromatic compounds made of GRAS safe synthetics. Certified free of the 624 carcinogens and 323 reproductive/developmental toxins listed under the <a href=\"https://oehha.ca.gov/proposition-65/proposition-65-list\" target=\"_blank\">Prop 65 act</a>.</p>",
+            "content": "<p><em>All of our scents are made with proprietary blends using –</em></p><p><strong>Pure essential oils</strong> • hand selected by us from small farms all around the world.</p><p><em>and/or</em></p><p><strong>Phthalate-free fragrance oils</strong> • aromatic compounds made of GRAS safe synthetics. Certified free of the 624 carcinogens and 323 reproductive/developmental toxins listed under the <a href=\"https://oehha.ca.gov/proposition-65/proposition-65-list\" target=\"_blank\">Prop 65 act</a>.</p>",
             "page": ""
           }
         },
@@ -315,53 +315,53 @@
         "include_margins": true
       }
     },
-    "collection_list_hXEcJK": {
+    "collection_list_fXqRce": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_Ge9qYg": {
+        "featured_collection_zyiKkc": {
           "type": "featured_collection",
           "settings": {
-            "collection": "body-care"
+            "collection": "shop-all-laundry"
           }
         },
-        "featured_collection_J6bcK9": {
+        "featured_collection_gtJh9z": {
           "type": "featured_collection",
           "settings": {
-            "collection": "essential-oils"
+            "collection": "all-cleaning-products"
           }
         },
-        "featured_collection_DWYgnF": {
+        "featured_collection_JW9gcQ": {
           "type": "featured_collection",
           "settings": {
-            "collection": "hair-care-products"
+            "collection": "all-bath-body"
           }
         },
-        "featured_collection_JNA3DX": {
+        "featured_collection_TMhmBp": {
           "type": "featured_collection",
           "settings": {
             "collection": "hand-soap"
           }
         },
-        "featured_collection_d4eqhh": {
+        "featured_collection_B7h9tn": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dish-soap"
+            "collection": "all-dish-soap"
           }
         },
-        "featured_collection_i8UCBF": {
+        "featured_collection_VP7Eqp": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "all-surface-floor"
           }
         }
       },
       "block_order": [
-        "featured_collection_Ge9qYg",
-        "featured_collection_J6bcK9",
-        "featured_collection_DWYgnF",
-        "featured_collection_JNA3DX",
-        "featured_collection_d4eqhh",
-        "featured_collection_i8UCBF"
+        "featured_collection_zyiKkc",
+        "featured_collection_gtJh9z",
+        "featured_collection_JW9gcQ",
+        "featured_collection_TMhmBp",
+        "featured_collection_B7h9tn",
+        "featured_collection_VP7Eqp"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
@@ -386,6 +386,6 @@
     "1762450183b75e33a7",
     "175623938176d21caa",
     "1754511058878b6d45",
-    "collection_list_hXEcJK"
+    "collection_list_fXqRce"
   ]
 }

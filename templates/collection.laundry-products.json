@@ -24,19 +24,19 @@
         "featured_collection_rPqR6J": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
-          }
-        },
-        "featured_collection_9GVmpR": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "laundry-boosters"
+            "collection": "laundry-detergents"
           }
         },
         "featured_collection_z4czUb": {
           "type": "featured_collection",
           "settings": {
             "collection": "fabric-softener"
+          }
+        },
+        "featured_collection_9GVmpR": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry-boosters"
           }
         },
         "featured_collection_DQfrbj": {
@@ -48,13 +48,13 @@
       },
       "block_order": [
         "featured_collection_rPqR6J",
-        "featured_collection_9GVmpR",
         "featured_collection_z4czUb",
+        "featured_collection_9GVmpR",
         "featured_collection_DQfrbj"
       ],
       "name": "Submenu Categories",
       "settings": {
-        "title": "laundy collections",
+        "title": "laundry collections",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 6,
@@ -116,7 +116,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 36,
+        "products_per_page": 200,
         "columns_desktop": 5,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
@@ -142,6 +142,9 @@
             "show_sample_reviews": false,
             "reviews_selection": "all",
             "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
             "star_rating": "4_to_5_star",
             "max_reviews": 30,
             "quote_marks_size": "small",
@@ -250,7 +253,7 @@
         "featured_collection_6VnXWV": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "laundry-detergent-1"
           }
         },
         "featured_collection_zeqKwE": {

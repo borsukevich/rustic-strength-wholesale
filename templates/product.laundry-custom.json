@@ -80,16 +80,16 @@
             "min_star_rating": "inherit",
             "show_review_media": true,
             "max_reviews": 5,
-            "review_length": "medium",
-            "text_size": "medium",
+            "review_length": "small",
+            "text_size": "small",
             "max_width": 1100,
             "max_image_size": "small",
             "arrows_visibility": "always_shown",
             "transition_speed": 5,
-            "corner_styling": "inherit",
+            "corner_styling": "round",
             "text_color": "",
-            "card_color": "",
-            "stars_color": "",
+            "card_color": "#f4f4f4",
+            "stars_color": "#bcad68",
             "arrows_color": "",
             "arrows_background_color": ""
           }
@@ -130,7 +130,7 @@
           "settings": {
             "heading": "Ingredient Descriptions",
             "icon": "eye",
-            "content": "<p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><strong>Cocamidopropyl Betaine (</strong>Naturally derived from coconut and palm-free. It is an environmentally friendly, high-foaming, and biodegradable surfactant.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-cocamidopropyl-hydroxysultaine-sultaine-and-what-does-it-do-in-products?_pos=1&_sid=72f5ba39a&_ss=r\" target=\"_blank\"><strong>Cocamidopropyl Hydroxysultaine </strong></a>(Naturally derived from coconut, palm-free, it is an environmentally friendly and biodegradable surfactant with high foaming and mild chemistry.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-c14-16-alpha-olefin-sulfonate-aos-40-and-what-does-it-do\" target=\"_blank\"><strong>Sodium C14-C16 Olefin Sulfonate </strong></a>(Derived from coconuts, palm-free, this mild-surfactant helps to lift dirt and debris from surfaces, so the water can whisk them away. Biodegradable. )</p><p><a href=\"/blogs/ingredients/what-is-coco-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Coco-Glucoside and what does it do in products?\"><strong>Coco-Glucoside </strong></a>(A plant-derived, biodegradable surfactant. It is mild and safe for sensitive skin.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-glycerin-and-what-does-it-do-in-products?_pos=1&_sid=873f11cd7&_ss=r\"><strong>Vegetable Glycerin</strong></a> (Derived from vegetables. It is biodegradable and helps the plant surfactants do their job. Food-grade & USP kosher.)</p><p><strong>Sodium Citrate (</strong>Natural mineral, helps grab onto and remove pollutants.)</p><p><strong>Caprylyl Glycol, </strong><a href=\"/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a><strong> (</strong>Safe preservatives used sparingly, prevents bacteria from growing in container.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-polysorbate-20-and-what-does-it-do-in-products?_pos=1&_sid=633b8b42f&_ss=r\" target=\"_blank\"><strong>Polysorbate 20 </strong></a>(Plant-based performance stabilizer. Helps in the spreadability of liquids and stabilizes the formula when adding essential oils and phthalate-free fragrances. <em>Biodegradable. USP kosher. Food-Grade. Dioxane-free. )</em></p><p> <a href=\"https://rusticstrength.com/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products?_pos=1&_sid=c51e07020&_ss=r\" target=\"_blank\"><strong>Caprylyl Capryl Glucoside </strong></a>(A biodegradable plant-based surfactant with mild chemistry and sensitive skin compatibility.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-dimethyl-9-decenamide-and-what-does-it-do?_pos=1&_sid=cc46b9ea9&_ss=r\" target=\"_blank\"><strong>Dimethyl 9-Decenamide </strong></a>(A plant-based, biodegradable nonionic surfactant that helps clean and removes grease and other substances.)</p><p><a href=\"/blogs/ingredients/what-is-sodium-gluconate\" target=\"_blank\" title=\"What is Sodium Gluconate and what does it do in products?\"><strong>Sodium Gluconate</strong></a><strong> (</strong>Natural mineral, helps grab onto and remove foreign contaminants.)</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Citric Acid and what does it do in products?\"><strong>Citric Acid</strong></a> (balances pH)</p>",
+            "content": "<p><a href=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\"><strong>High-Purity Water </strong></a>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/cocamidopropyl-betaine-in-household-cleaning-products-and-personal-care-items-what-you-need-to-know\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/cocamidopropyl-betaine-in-household-cleaning-products-and-personal-care-items-what-you-need-to-know\"><strong>Cocamidopropyl Betaine</strong></a><strong> (</strong>Naturally derived from coconut and palm-free. It is an environmentally friendly, high-foaming, and biodegradable surfactant.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-cocamidopropyl-hydroxysultaine-sultaine-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-cocamidopropyl-hydroxysultaine-sultaine-and-what-does-it-do-in-products\"><strong>Cocamidopropyl Hydroxysultaine </strong></a>(Naturally derived from coconut, palm-free, it is an environmentally friendly and biodegradable surfactant with high foaming and mild chemistry.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-c14-16-alpha-olefin-sulfonate-aos-40-and-what-does-it-do\" target=\"_blank\"><strong>Sodium C14-C16 Olefin Sulfonate </strong></a>(Derived from coconuts, palm-free, this mild-surfactant helps to lift dirt and debris from surfaces, so the water can whisk them away. Biodegradable. )</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-coco-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-coco-glucoside-and-what-does-it-do-in-products\"><strong>Coco-Glucoside </strong></a>(A plant-derived, biodegradable surfactant. It is mild and safe for sensitive skin.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-glycerin-and-what-does-it-do-in-products?_pos=1&_sid=873f11cd7&_ss=r\" target=\"_blank\"><strong>Vegetable Glycerin</strong></a> (Derived from vegetables. It is biodegradable and helps the plant surfactants do their job. Food-grade & USP kosher.)</p><p><strong>Sodium Citrate (</strong>Natural mineral, helps grab onto and remove pollutants.)</p><p><strong>Caprylyl Glycol, </strong><a href=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\"><strong>Phenoxyethanol</strong></a><strong> (</strong>Safe preservatives used sparingly, prevents bacteria from growing in container.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-polysorbate-20-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-polysorbate-20-and-what-does-it-do-in-products\"><strong>Polysorbate 20 </strong></a>(Plant-based performance stabilizer. Helps in the spreadability of liquids and stabilizes the formula when adding essential oils and phthalate-free fragrances. <em>Biodegradable. USP kosher. Food-Grade. Dioxane-free. )</em></p><p> <a href=\"https://rusticstrength.com/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products?_pos=1&_sid=c51e07020&_ss=r\" target=\"_blank\"><strong>Caprylyl Capryl Glucoside </strong></a>(A biodegradable plant-based surfactant with mild chemistry and sensitive skin compatibility.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-dimethyl-9-decenamide-and-what-does-it-do?_pos=1&_sid=cc46b9ea9&_ss=r\" target=\"_blank\"><strong>Dimethyl 9-Decenamide </strong></a>(A plant-based, biodegradable nonionic surfactant that helps clean and removes grease and other substances.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-gluconate\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-gluconate\"><strong>Sodium Gluconate</strong></a><strong> (</strong>Natural mineral, helps grab onto and remove foreign contaminants.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\"><strong>Citric Acid</strong></a> (balances pH)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-are-essential-oils\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-are-essential-oils\"><strong>Essential Oil </strong></a>and/or<a href=\"https://rusticstrength.com/blogs/ingredients/what-are-fragrance-oils\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-are-fragrance-oils\"><strong>Phthalate-Free Fragrance Oil </strong></a>(scent, if scented)</p>",
             "page": ""
           }
         },
@@ -353,53 +353,53 @@
         "include_margins": true
       }
     },
-    "collection_list_hXEcJK": {
+    "collection_list_awkpWY": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_Ge9qYg": {
+        "featured_collection_N8pBmD": {
           "type": "featured_collection",
           "settings": {
-            "collection": "body-care"
+            "collection": "shop-all-laundry"
           }
         },
-        "featured_collection_J6bcK9": {
+        "featured_collection_WgaRGK": {
           "type": "featured_collection",
           "settings": {
-            "collection": "essential-oils"
+            "collection": "all-cleaning-products"
           }
         },
-        "featured_collection_DWYgnF": {
+        "featured_collection_zfM6KV": {
           "type": "featured_collection",
           "settings": {
-            "collection": "hair-care-products"
+            "collection": "all-bath-body"
           }
         },
-        "featured_collection_JNA3DX": {
+        "featured_collection_GmJTXA": {
           "type": "featured_collection",
           "settings": {
             "collection": "hand-soap"
           }
         },
-        "featured_collection_d4eqhh": {
+        "featured_collection_crQGmA": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dish-soap"
+            "collection": "all-dish-soap"
           }
         },
-        "featured_collection_i8UCBF": {
+        "featured_collection_C4Wzq6": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "all-surface-floor"
           }
         }
       },
       "block_order": [
-        "featured_collection_Ge9qYg",
-        "featured_collection_J6bcK9",
-        "featured_collection_DWYgnF",
-        "featured_collection_JNA3DX",
-        "featured_collection_d4eqhh",
-        "featured_collection_i8UCBF"
+        "featured_collection_N8pBmD",
+        "featured_collection_WgaRGK",
+        "featured_collection_zfM6KV",
+        "featured_collection_GmJTXA",
+        "featured_collection_crQGmA",
+        "featured_collection_C4Wzq6"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
@@ -424,6 +424,6 @@
     "1762450183b75e33a7",
     "175623938176d21caa",
     "1754511058878b6d45",
-    "collection_list_hXEcJK"
+    "collection_list_awkpWY"
   ]
 }

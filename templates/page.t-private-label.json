@@ -79,6 +79,7 @@
         },
         "collapsible_row_7jAzQU": {
           "type": "collapsible_row",
+          "disabled": true,
           "settings": {
             "heading": "Blank Product ( No Label )",
             "icon": "price_tag",

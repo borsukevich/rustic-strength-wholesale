@@ -62,16 +62,16 @@
             "min_star_rating": "inherit",
             "show_review_media": true,
             "max_reviews": 5,
-            "review_length": "medium",
-            "text_size": "medium",
+            "review_length": "small",
+            "text_size": "small",
             "max_width": 1100,
             "max_image_size": "small",
             "arrows_visibility": "always_shown",
             "transition_speed": 5,
-            "corner_styling": "inherit",
+            "corner_styling": "round",
             "text_color": "",
-            "card_color": "",
-            "stars_color": "",
+            "card_color": "#f4f4f4",
+            "stars_color": "#bcad68",
             "arrows_color": "",
             "arrows_background_color": ""
           }
@@ -112,7 +112,7 @@
           "settings": {
             "heading": "Ingredient Descriptions",
             "icon": "eye",
-            "content": "<p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-cetearyl-alcohol-and-what-does-it-do-in-hair-and-skin-products\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-cetearyl-alcohol-and-what-does-it-do-in-hair-and-skin-products\"><strong>Cetearyl Alcohol</strong></a> (softens hair)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-coconut-oil-and-what-does-it-do-in-hair-products\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-coconut-oil-and-what-does-it-do-in-hair-products\"><strong>Cocos Nucifera (Coconut) Oil</strong></a><strong> </strong><br/>( moisturizes and seals)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-shea-butter-and-what-does-it-do-in-hair-products\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-shea-butter-and-what-does-it-do-in-hair-products\"><strong>Butyrospermum Parkii (Shea Butter)</strong> <strong>Fruit</strong></a><strong> </strong>(moisturizes)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-cetyl-alcohol-and-what-does-it-do-in-products\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-cetyl-alcohol-and-what-does-it-do-in-products\"><strong>Cetyl Alcohol</strong></a><strong> </strong>(softens, smooths hair)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-stearic-acid-and-what-does-it-do-in-products\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-stearic-acid-and-what-does-it-do-in-products\"><strong>Stearic Acid</strong></a><strong> </strong>(veggie-based, gives satin feel)</p><p><a href=\"/blogs/ingredients/what-is-polysorbate-20-and-what-does-it-do-in-products\" title=\"What is Food-Grade Polysorbate 20 and what does it do in products?\"><strong>Polysorbate 20</strong></a> (plant-based formula stabilizer. USP, food-grade, kosher quality, containing no dioxane)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-glyceryl-stearate-and-what-does-it-do-in-products\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-glyceryl-stearate-and-what-does-it-do-in-products\"><strong>Glyceryl Stearate</strong></a> (veggie-based, protective barrier. PEG-free )</p><p><strong>Caprylyl Glycol, Decylene Glycol</strong> (preservatives used sparingly, prevents bacteria from growing in container)</p><p><a href=\"/blogs/ingredients/what-is-sodium-gluconate\" title=\"What is Sodium Gluconate and what does it do in products?\"><strong>Sodium Gluconate</strong></a><strong> </strong>(helps hydrate scalp and follicles)</p><p><strong>Sodium Hydroxide </strong>(balances to pet-safe pH)</p>",
+            "content": "<p><a href=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\"><strong>High-Purity Water</strong></a><strong> </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-ethyl-alcohol\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-ethyl-alcohol\"><strong>Alcohol (Ethyl)</strong></a><strong> </strong>(Speeds drying.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products\"><strong>Capryl Caprylyl Glucoside</strong></a><strong> </strong>(A biodegradable plant-based surfactant with mild chemistry and sensitive skin compatibility.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-coco-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-coco-glucoside-and-what-does-it-do-in-products\"><strong>Coco- Glucoside</strong></a><strong> </strong>(A plant-derived, biodegradable surfactant. It is mild and safe for sensitive skin.)</p><p><strong>Sodium Citrate </strong>(Mineral based. Helps grab and remove minerals.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-gluconate\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-gluconate\"><strong>Sodium Gluconate</strong></a><strong> </strong>(Mineral based. Helps grab and remove metals.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\"><strong>Phenoxyethanol</strong></a><strong> & Caprylyl Glycol</strong> (gentle preservatives, used sparingly to prevent bacteria growth)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\"><strong>Citric Acid</strong></a><strong> </strong>(neutralizes pH)</p><p>Scent: Pet Safe Phthalate Free Fragrance Oil</p>",
             "page": ""
           }
         },
@@ -388,53 +388,53 @@
         "include_margins": true
       }
     },
-    "collection_list_hXEcJK": {
+    "collection_list_XziMYQ": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_Ge9qYg": {
+        "featured_collection_8yjqkm": {
           "type": "featured_collection",
           "settings": {
-            "collection": "body-care"
+            "collection": "shop-all-laundry"
           }
         },
-        "featured_collection_J6bcK9": {
+        "featured_collection_y6iMX9": {
           "type": "featured_collection",
           "settings": {
-            "collection": "essential-oils"
+            "collection": "all-cleaning-products"
           }
         },
-        "featured_collection_DWYgnF": {
+        "featured_collection_n4jN4C": {
           "type": "featured_collection",
           "settings": {
-            "collection": "hair-care-products"
+            "collection": "all-bath-body"
           }
         },
-        "featured_collection_JNA3DX": {
+        "featured_collection_UW4RKN": {
           "type": "featured_collection",
           "settings": {
             "collection": "hand-soap"
           }
         },
-        "featured_collection_d4eqhh": {
+        "featured_collection_EQt4iY": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dish-soap"
+            "collection": "all-dish-soap"
           }
         },
-        "featured_collection_i8UCBF": {
+        "featured_collection_tqdzYV": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "all-surface-floor"
           }
         }
       },
       "block_order": [
-        "featured_collection_Ge9qYg",
-        "featured_collection_J6bcK9",
-        "featured_collection_DWYgnF",
-        "featured_collection_JNA3DX",
-        "featured_collection_d4eqhh",
-        "featured_collection_i8UCBF"
+        "featured_collection_8yjqkm",
+        "featured_collection_y6iMX9",
+        "featured_collection_n4jN4C",
+        "featured_collection_UW4RKN",
+        "featured_collection_EQt4iY",
+        "featured_collection_tqdzYV"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
@@ -460,6 +460,6 @@
     "1762450183b75e33a7",
     "175623938176d21caa",
     "1754511058878b6d45",
-    "collection_list_hXEcJK"
+    "collection_list_XziMYQ"
   ]
 }

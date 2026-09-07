@@ -371,7 +371,7 @@
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/rank_11_smaller.jpg",
-        "height": "small",
+        "height": "medium",
         "desktop_image_width": "small",
         "layout": "image_first",
         "image_behavior": "none",
@@ -469,7 +469,7 @@
         "featured_collection_UHMq3d": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent-copy"
+            "collection": "shop-all-laundry"
           }
         },
         "featured_collection_XUBAYx": {

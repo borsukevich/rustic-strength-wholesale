@@ -78,12 +78,14 @@
         },
         "featured_collection_gRP8Dy": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "honey-comb"
           }
         },
         "featured_collection_Wqg99G": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "crystal-creek"
           }
@@ -168,7 +170,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 36,
+        "products_per_page": 200,
         "columns_desktop": 5,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
@@ -305,7 +307,7 @@
         "featured_collection_6VnXWV": {
           "type": "featured_collection",
           "settings": {
-            "collection": "laundry-detergent"
+            "collection": "laundry-detergent-1"
           }
         },
         "featured_collection_zeqKwE": {

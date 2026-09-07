@@ -312,12 +312,11 @@
         },
         "column_fCR6b9": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Copy_of_Copy_of_Untitled_129e331e-5fd0-42c2-8e5d-dcc50570e10b.png",
             "title": "",
             "text": "",
-            "link_label": "Private Label Information",
+            "link_label": "Labels & Guidelines",
             "link": "shopify://pages/private-label-information"
           }
         },
@@ -333,6 +332,7 @@
         },
         "column_DNGrUz": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
             "title": "",
