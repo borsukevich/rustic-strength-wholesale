@@ -1,0 +1,136 @@
+{{ 'component-retail-crossover-modal.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'retail-crossover-modal.js' | asset_url }}" defer="defer"></script>
+
+{%- if section.settings.enable -%}
+  <retail-crossover-modal
+    id="RetailCrossoverModal"
+    class="retail-crossover-modal"
+    data-url-trigger="{{ section.settings.url_trigger_param | escape }}"
+    data-suppress-session="{% if section.settings.suppress_session %}true{% else %}false{% endif %}"
+  >
+    <div class="retail-crossover-modal__overlay" id="RetailCrossoverModal-Overlay"></div>
+    
+    <div
+      class="retail-crossover-modal__dialog global-settings-popup gradient color-{{ section.settings.color_scheme | default: 'scheme-4' }}"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="RetailCrossoverModal-Heading"
+      aria-describedby="RetailCrossoverModal-Body"
+      tabindex="-1"
+    >
+      <button
+        type="button"
+        class="retail-crossover-modal__close"
+        aria-label="{{ 'accessibility.close' | t }}"
+        data-action="close"
+      >
+        <span class="svg-wrapper">
+          {{- 'icon-close.svg' | inline_asset_content -}}
+        </span>
+      </button>
+
+      <div class="retail-crossover-modal__content">
+        <h2 id="RetailCrossoverModal-Heading" class="retail-crossover-modal__heading h2">
+          {{ section.settings.heading | escape }}
+        </h2>
+
+        <div id="RetailCrossoverModal-Body" class="retail-crossover-modal__body rte">
+          <p>{{ section.settings.body_text | escape }}</p>
+        </div>
+
+        <div class="retail-crossover-modal__actions">
+          <button
+            type="button"
+            class="button button--primary retail-crossover-modal__btn-primary"
+            data-action="continue"
+          >
+            <span>{{ section.settings.button_primary_text | escape }}</span>
+            
+            <svg class="icon icon-external-link" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </button>
+
+          <button
+            type="button"
+            class="button button--secondary retail-crossover-modal__btn-secondary"
+            data-action="close"
+          >
+            <span>{{ section.settings.button_secondary_text | escape }}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </retail-crossover-modal>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Retail Crossover Pop-up",
+  "tag": "aside",
+  "class": "retail-crossover-section",
+  "enabled_on": {
+    "groups": ["custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable",
+      "label": "Enable crossover pop-up",
+      "default": true
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-4"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Heading to our retail site"
+    },
+    {
+      "type": "textarea",
+      "id": "body_text",
+      "label": "Body text",
+      "default": "This will open in a new tab. These prices are for individual shoppers, not your wholesale rates — your wholesale tab stays open right here to come back to."
+    },
+    {
+      "type": "text",
+      "id": "button_primary_text",
+      "label": "Primary button text",
+      "default": "Continue in new tab"
+    },
+    {
+      "type": "text",
+      "id": "button_secondary_text",
+      "label": "Secondary button text",
+      "default": "Go back"
+    },
+    {
+      "type": "text",
+      "id": "url_trigger_param",
+      "label": "URL trigger query param or text",
+      "default": "ref=wholesale",
+      "info": "Links containing this parameter or text will trigger the pop-up."
+    },
+    {
+      "type": "checkbox",
+      "id": "suppress_session",
+      "label": "Remember consent during session",
+      "default": true,
+      "info": "When enabled, visitors will only see the pop-up once per session. Subsequent crossover clicks will open directly in a new tab."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Retail Crossover Pop-up"
+    }
+  ]
+}
+{% endschema %}

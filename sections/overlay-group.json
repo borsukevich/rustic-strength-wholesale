@@ -1,0 +1,23 @@
+{
+  "name": "Overlay Group",
+  "type": "custom.overlay",
+  "sections": {
+    "retail-crossover-modal": {
+      "type": "retail-crossover-modal",
+      "settings": {
+        "enable": true,
+        "color_scheme": "scheme-4",
+        "heading": "Heading to our retail site",
+        "body_text": "This will open in a new tab. These prices are for individual shoppers, not your wholesale rates — your wholesale tab stays open right here to come back to.",
+        "button_primary_text": "Continue in new tab",
+        "button_secondary_text": "Go back",
+        "url_trigger_param": "ref=wholesale",
+        "suppress_session": true
+      }
+    }
+  },
+  "order": [
+    "retail-crossover-modal"
+  ]
+}
+

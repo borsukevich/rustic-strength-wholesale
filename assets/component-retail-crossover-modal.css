@@ -1,0 +1,167 @@
+.retail-crossover-section {
+  display: contents;
+}
+
+retail-crossover-modal.retail-crossover-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity var(--duration-default, 0.25s) ease, visibility var(--duration-default, 0.25s) ease;
+}
+
+retail-crossover-modal.retail-crossover-modal.open {
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+.retail-crossover-modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  cursor: pointer;
+  z-index: 1;
+  display: block !important;
+}
+
+.retail-crossover-modal__dialog {
+  position: relative;
+  z-index: 2;
+  width: calc(100% - 3.2rem);
+  max-width: 440px;
+  margin: 1.6rem;
+  padding: 3rem 2.6rem 2.6rem;
+  outline: none;
+  transform: scale(0.95) translateY(10px);
+  transition: transform var(--duration-default, 0.25s) cubic-bezier(0.16, 1, 0.3, 1), opacity var(--duration-default, 0.25s) ease;
+}
+
+retail-crossover-modal.retail-crossover-modal.open .retail-crossover-modal__dialog {
+  transform: scale(1) translateY(0);
+}
+
+.retail-crossover-modal__close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  width: 4.4rem;
+  height: 4.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: rgb(var(--color-foreground));
+  opacity: 0.65;
+  border-radius: 50%;
+  transition: opacity var(--duration-short, 0.15s) ease, background-color var(--duration-short, 0.15s) ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.retail-crossover-modal__close:hover,
+.retail-crossover-modal__close:focus-visible {
+  opacity: 1;
+  background-color: rgba(var(--color-foreground), 0.08);
+}
+
+.retail-crossover-modal__close .svg-wrapper,
+.retail-crossover-modal__close svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: block;
+  pointer-events: none;
+}
+
+.retail-crossover-modal__heading {
+  margin: 0 0 1.2rem 0;
+  padding-right: 3.2rem;
+}
+
+.retail-crossover-modal__body {
+  margin: 0 0 2.4rem 0;
+  color: rgba(var(--color-foreground), 0.85);
+}
+
+.retail-crossover-modal__body p {
+  margin: 0;
+}
+
+.retail-crossover-modal__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.retail-crossover-modal__btn-primary {
+  gap: 0.8rem;
+  flex: 1 1 auto;
+}
+
+.retail-crossover-modal__btn-primary svg.icon-external-link {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: currentColor;
+  flex-shrink: 0;
+}
+
+.retail-crossover-modal__btn-secondary {
+  flex: 0 0 auto;
+}
+
+@media screen and (max-width: 749px) {
+  retail-crossover-modal.retail-crossover-modal {
+    align-items: flex-end;
+  }
+
+  .retail-crossover-modal__dialog {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 20px 20px 0 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 2.6rem 2rem calc(2.4rem + env(safe-area-inset-bottom, 0px));
+    transform: translateY(100%);
+    transition: transform var(--duration-default, 0.3s) cubic-bezier(0.16, 1, 0.3, 1), opacity var(--duration-default, 0.25s) ease;
+  }
+
+  retail-crossover-modal.retail-crossover-modal.open .retail-crossover-modal__dialog {
+    transform: translateY(0);
+  }
+
+  .retail-crossover-modal__actions {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .retail-crossover-modal__actions .button,
+  .retail-crossover-modal__btn-primary,
+  .retail-crossover-modal__btn-secondary {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+}
