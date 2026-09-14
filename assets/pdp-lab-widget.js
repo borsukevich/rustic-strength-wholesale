@@ -57,6 +57,9 @@
       if (this.parentElement !== document.body) {
         this.moveOutsideSection();
       }
+      const tabsWrapper = this.querySelector(".lab-drawer__tabs-wrapper");
+      if (tabsWrapper) tabsWrapper.scrollLeft = 0;
+
       setTimeout(() => {
         this.classList.add("animate", "active", "open");
       });
@@ -123,6 +126,10 @@
           tab.classList.remove("is-active");
         }
       });
+
+      if (selectedTab && typeof selectedTab.scrollIntoView === "function") {
+        selectedTab.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      }
 
       let activeCoaUrl = "";
       this.panels.forEach((panel) => {
