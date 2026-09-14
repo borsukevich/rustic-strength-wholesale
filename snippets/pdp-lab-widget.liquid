@@ -239,7 +239,7 @@
             {%- endfor -%}
           {%- elsif is_dioxane_phthalates -%}
             {%- liquid
-              assign dp_cards = 'laundry-1-4-dioxane|laundry-phthalates' | split: '|'
+              assign dp_cards = 'laundry-1-4-dioxane' | split: '|'
             -%}
             {%- assign first_tab = true -%}
             {%- for dp_handle in dp_cards -%}
@@ -668,7 +668,7 @@
           {%- endfor -%}
         {%- elsif is_dioxane_phthalates -%}
           {%- liquid
-            assign dp_cards = 'laundry-1-4-dioxane|laundry-phthalates' | split: '|'
+            assign dp_cards = 'laundry-1-4-dioxane' | split: '|'
           -%}
           {%- assign first_panel = true -%}
           {%- for dp_handle in dp_cards -%}

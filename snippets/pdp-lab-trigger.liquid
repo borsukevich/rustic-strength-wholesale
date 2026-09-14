@@ -45,8 +45,8 @@
     assign trigger_description = "No detectable PFAS (total fluorine screen)."
   elsif is_paper and trigger_description == blank or trigger_description == "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, or phthalates." or trigger_description == "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, phthalates, or PFAS."
     assign trigger_description = "No detectable heavy metals, formaldehyde, PCP, or PFAS."
-  elsif is_dioxane_phthalates and trigger_description == blank or trigger_description == "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, or phthalates." or trigger_description == "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, phthalates, or PFAS."
-    assign trigger_description = "No detectable 1,4-dioxane or phthalates."
+  elsif is_dioxane_phthalates and trigger_description == blank or trigger_description == "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, or phthalates." or trigger_description == "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, phthalates, or PFAS." or trigger_description == "No detectable 1,4-dioxane or phthalates."
+    assign trigger_description = "No detectable 1,4-dioxane."
   elsif trigger_description == "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, or phthalates." or trigger_description == blank
     assign trigger_description = "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, phthalates, or PFAS."
   endif

@@ -148,7 +148,7 @@
         "lab_testing_widget": {
           "type": "lab-testing-widget",
           "settings": {
-            "trigger_description": "No detectable 1,4-dioxane or phthalates.",
+            "trigger_description": "No detectable 1,4-dioxane.",
             "base_formula_note": "We tested our unscented base formula, the same base every scent is built on, so these results cover this product."
           }
         }
