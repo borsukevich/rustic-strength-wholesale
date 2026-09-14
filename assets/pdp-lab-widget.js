@@ -3,18 +3,20 @@
     constructor() {
       super();
 
-      if (this.parentElement !== document.body) {
-        this.moveOutsideSection();
-      }
-
       this.tabs = this.querySelectorAll("[data-pdp-lab-tab]");
       this.panels = this.querySelectorAll("[data-pdp-lab-panel]");
-      this.overlay = this.querySelector(".cart-drawer__overlay, .drawer__overlay");
+      this.overlay = this.querySelector(".lab-drawer__overlay, .cart-drawer__overlay, .drawer__overlay");
       this.closeBtns = this.querySelectorAll(".drawer__close, [data-close]");
       this.activeTrigger = null;
 
       this.initTabs();
       this.initEvents();
+    }
+
+    connectedCallback() {
+      if (this.parentElement !== document.body) {
+        this.moveOutsideSection();
+      }
     }
 
     moveOutsideSection() {
@@ -30,7 +32,13 @@
 
     initEvents() {
       this.addEventListener("keyup", (evt) => {
-        if (evt.code === "Escape" && this.classList.contains("active")) {
+        if (evt.code === "Escape" && (this.classList.contains("active") || this.classList.contains("open"))) {
+          this.close();
+        }
+      });
+
+      this.addEventListener("click", (evt) => {
+        if (evt.target === this || evt.target === this.overlay) {
           this.close();
         }
       });
@@ -46,8 +54,11 @@
 
     open(trigger) {
       if (trigger) this.activeTrigger = trigger;
+      if (this.parentElement !== document.body) {
+        this.moveOutsideSection();
+      }
       setTimeout(() => {
-        this.classList.add("animate", "active");
+        this.classList.add("animate", "active", "open");
       });
       document.body.classList.add("overflow-hidden");
 
@@ -67,7 +78,7 @@
     }
 
     close() {
-      this.classList.remove("active");
+      this.classList.remove("active", "open", "animate");
       document.body.classList.remove("overflow-hidden");
 
       if (typeof removeTrapFocus === "function" && this.activeTrigger) {
@@ -171,7 +182,7 @@
       if (drawer && typeof drawer.open === "function") {
         drawer.open(trigger);
       } else if (drawer) {
-        drawer.classList.add("animate", "active");
+        drawer.classList.add("animate", "active", "open");
         document.body.classList.add("overflow-hidden");
       }
 
