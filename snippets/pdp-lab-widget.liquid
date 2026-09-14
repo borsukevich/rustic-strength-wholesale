@@ -1,53 +1,54 @@
+{{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
 {{ 'pdp-lab-widget.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'pdp-lab-widget.js' | asset_url }}" defer="defer"></script>
 
 {%- liquid
   assign widget_block = block
   if widget_block == blank
-    assign widget_block = section.blocks | where: "type", "lab-testing-widget" | first
+    assign widget_block = section.blocks | where: 'type', 'lab-testing-widget' | first
   endif
 
-  assign drawer_heading = widget_block.settings.drawer_heading | default: "Third-Party Lab Tested"
-  assign drawer_subline = widget_block.settings.drawer_subline | default: "Independently tested by ISO/IEC 17025 accredited laboratories."
+  assign drawer_heading = widget_block.settings.drawer_heading | default: 'Third-Party Lab Tested'
+  assign drawer_subline = widget_block.settings.drawer_subline | default: 'Independently tested by ISO/IEC 17025 accredited laboratories.'
   assign base_formula_note = widget_block.settings.base_formula_note
-  assign why_we_test_heading = widget_block.settings.why_we_test_heading | default: "Why we test"
-  assign scale_heading = widget_block.settings.scale_heading | default: "Understanding detection limits"
+  assign why_we_test_heading = widget_block.settings.why_we_test_heading | default: 'Why we test'
+  assign scale_heading = widget_block.settings.scale_heading | default: 'Understanding detection limits'
   assign scale_description = widget_block.settings.scale_description | default: "None detected means below the lab's detection limit, not a flat zero. For scale, one drop of water in an Olympic pool is about 0.01 ppm."
-  assign coa_button_label = widget_block.settings.coa_button_label | default: "View Certificate of Analysis"
-  assign view_all_link_text = widget_block.settings.view_all_link_text | default: "See all our lab results"
-  assign view_all_link_url = widget_block.settings.view_all_link_url | default: "/pages/lab-results"
+  assign coa_button_label = widget_block.settings.coa_button_label | default: 'View Certificate of Analysis'
+  assign view_all_link_text = widget_block.settings.view_all_link_text | default: 'See all our lab results'
+  assign view_all_link_url = widget_block.settings.view_all_link_url | default: '/pages/lab-results'
 
   assign is_liquid_laundry = false
-  if product.tags contains "laundry" or product.handle contains "laundry" or product.title contains "Laundry" or product.type contains "Laundry"
+  if product.tags contains 'laundry' or product.handle contains 'laundry' or product.title contains 'Laundry' or product.type contains 'Laundry'
     assign is_liquid_laundry = true
   endif
 
   assign is_lotion = false
-  if product.tags contains "lotion" or product.handle contains "lotion" or product.title contains "Lotion" or product.type contains "Lotion"
+  if product.tags contains 'lotion' or product.handle contains 'lotion' or product.title contains 'Lotion' or product.type contains 'Lotion'
     assign is_lotion = true
   endif
 
   assign is_paper = false
-  if product.tags contains "paper" or product.handle contains "paper" or product.handle contains "bamboo" or product.type contains "Paper" or product.title contains "Paper"
+  if product.tags contains 'paper' or product.handle contains 'paper' or product.handle contains 'bamboo' or product.type contains 'Paper' or product.title contains 'Paper'
     assign is_paper = true
   endif
 
   assign is_dioxane_phthalates = false
-  if product.handle contains "soap" or product.title contains "Soap" or product.type contains "Soap"
+  if product.handle contains 'soap' or product.title contains 'Soap' or product.type contains 'Soap'
     assign is_dioxane_phthalates = true
-  elsif product.handle contains "shampoo" or product.title contains "Shampoo" or product.type contains "Shampoo"
+  elsif product.handle contains 'shampoo' or product.title contains 'Shampoo' or product.type contains 'Shampoo'
     assign is_dioxane_phthalates = true
-  elsif product.handle contains "body-wash" or product.title contains "Body Wash" or product.type contains "Body Wash"
+  elsif product.handle contains 'body-wash' or product.title contains 'Body Wash' or product.type contains 'Body Wash'
     assign is_dioxane_phthalates = true
-  elsif product.handle contains "bubble-bath" or product.title contains "Bubble Bath" or product.type contains "Bubble Bath"
+  elsif product.handle contains 'bubble-bath' or product.title contains 'Bubble Bath' or product.type contains 'Bubble Bath'
     assign is_dioxane_phthalates = true
-  elsif product.handle contains "dish" or product.title contains "Dish" or product.type contains "Dish"
+  elsif product.handle contains 'dish' or product.title contains 'Dish' or product.type contains 'Dish'
     assign is_dioxane_phthalates = true
-  elsif product.handle contains "lots-of-purpose" or product.title contains "Lots of Purpose" or product.handle contains "multi-purpose"
+  elsif product.handle contains 'lots-of-purpose' or product.title contains 'Lots of Purpose' or product.handle contains 'multi-purpose'
     assign is_dioxane_phthalates = true
-  elsif product.handle contains "floor" or product.title contains "Floor" or product.type contains "Floor"
+  elsif product.handle contains 'floor' or product.title contains 'Floor' or product.type contains 'Floor'
     assign is_dioxane_phthalates = true
-  elsif product.handle contains "pet" or product.title contains "Pet" or product.type contains "Pet"
+  elsif product.handle contains 'pet' or product.title contains 'Pet' or product.type contains 'Pet'
     assign is_dioxane_phthalates = true
   endif
 
@@ -55,12 +56,12 @@
     assign is_dioxane_phthalates = false
   endif
 
-  if is_lotion and base_formula_note == blank or base_formula_note == "We tested our unscented base formula, the same base every scent is built on, so these results cover this product."
-    assign base_formula_note = "We tested our unscented lotion base, the same base every lotion scent is built on, and screened it for PFAS. So this result covers the entire lotion line."
-  elsif is_paper and base_formula_note == blank or base_formula_note == "We tested our unscented base formula, the same base every scent is built on, so these results cover this product."
-    assign base_formula_note = "Our bamboo paper line, screened for the contaminants that matter most in paper."
+  if is_lotion and base_formula_note == blank or base_formula_note == 'We tested our unscented base formula, the same base every scent is built on, so these results cover this product.'
+    assign base_formula_note = 'We tested our unscented lotion base, the same base every lotion scent is built on, and screened it for PFAS. So this result covers the entire lotion line.'
+  elsif is_paper and base_formula_note == blank or base_formula_note == 'We tested our unscented base formula, the same base every scent is built on, so these results cover this product.'
+    assign base_formula_note = 'Our bamboo paper line, screened for the contaminants that matter most in paper.'
   elsif base_formula_note == blank
-    assign base_formula_note = "We tested our unscented base formula, the same base every scent is built on, so these results cover this product."
+    assign base_formula_note = 'We tested our unscented base formula, the same base every scent is built on, so these results cover this product.'
   endif
 
   assign resolved_cards = blank
@@ -81,72 +82,72 @@
       endif
     endfor
   elsif is_lotion
-    assign first_card = shop.metaobjects.lab_result_card["lotion-pfas"]
+    assign first_card = shop.metaobjects.lab_result_card['lotion-pfas']
     if first_card == blank
-      assign first_card = shop.metaobjects.lab_result_card["laundry-pfas"]
+      assign first_card = shop.metaobjects.lab_result_card['laundry-pfas']
     endif
     if first_card == blank
       assign first_card = shop.metaobjects.lab_result_card.pfas
     endif
-    assign first_tab_handle = "lotion-pfas"
+    assign first_tab_handle = 'lotion-pfas'
     assign first_coa_url = first_card.report_pdf.value.url
   elsif is_paper
-    assign first_card = shop.metaobjects.lab_result_card["paper-heavy-metals"]
-    assign first_tab_handle = "paper-heavy-metals"
+    assign first_card = shop.metaobjects.lab_result_card['paper-heavy-metals']
+    assign first_tab_handle = 'paper-heavy-metals'
     assign first_coa_url = first_card.report_pdf.value.url
   elsif is_dioxane_phthalates
-    assign first_card = shop.metaobjects.lab_result_card["laundry-1-4-dioxane"]
+    assign first_card = shop.metaobjects.lab_result_card['laundry-1-4-dioxane']
     if first_card == blank
-      assign first_card = shop.metaobjects.lab_result_card["1-4-dioxane"]
+      assign first_card = shop.metaobjects.lab_result_card['1-4-dioxane']
     endif
-    assign first_tab_handle = "laundry-1-4-dioxane"
+    assign first_tab_handle = 'laundry-1-4-dioxane'
     assign first_coa_url = first_card.report_pdf.value.url
   else
-    assign first_card = shop.metaobjects.lab_result_card["laundry-heavy-metals"]
+    assign first_card = shop.metaobjects.lab_result_card['laundry-heavy-metals']
     if first_card == blank
-      assign first_card = shop.metaobjects.lab_result_card["heavy-metals"]
+      assign first_card = shop.metaobjects.lab_result_card['heavy-metals']
     endif
-    assign first_tab_handle = "laundry-heavy-metals"
+    assign first_tab_handle = 'laundry-heavy-metals'
     assign first_coa_url = first_card.report_pdf.value.url
   endif
 -%}
 
 <lab-drawer
   id="LabDrawer-{{ product.id }}"
-  class="lab-drawer"
+  class="drawer"
   role="dialog"
   aria-modal="true"
   aria-label="{{ product.title | escape }} - {{ drawer_heading | escape }}"
   data-product-title="{{ product.title | escape }}"
   data-product-id="{{ product.id }}"
 >
-  <div class="lab-drawer__overlay" tabindex="-1" aria-hidden="true"></div>
+  <div id="LabDrawer-Overlay-{{ product.id }}" class="cart-drawer__overlay"></div>
 
-  <div class="lab-drawer__panel">
-    <div class="lab-drawer__header">
+  <div
+    class="drawer__inner gradient color-{{ settings.cart_color_scheme | default: 'scheme-1' }}"
+    tabindex="-1"
+  >
+    <div class="drawer__header">
+      <h2 class="drawer__heading">{{ drawer_heading }}</h2>
       <button
+        class="drawer__close"
         type="button"
-        class="lab-drawer__close"
-        data-close
-        aria-label="Close lab results"
+        onclick="this.closest('lab-drawer').close()"
+        aria-label="{{ 'accessibility.close' | t }}"
       >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
+        <span class="svg-wrapper">
+          {{- 'icon-close.svg' | inline_asset_content -}}
+        </span>
       </button>
-
-      <h3 class="lab-drawer__header-heading">
-        {{ drawer_heading }}
-      </h3>
-      <div style="width: 3.6rem;" aria-hidden="true"></div>
     </div>
 
-    <div class="lab-drawer__body">
-      <h2 class="lab-drawer__product-title">{{ product.title }}</h2>
-      {%- if drawer_subline != blank -%}
-        <p class="lab-drawer__subline">{{ drawer_subline }}</p>
-      {%- endif -%}
+    <div class="drawer__contents lab-drawer__contents">
+      <div class="lab-drawer__header-info">
+        <h3 class="lab-drawer__product-title">{{ product.title }}</h3>
+        {%- if drawer_subline != blank -%}
+          <p class="lab-drawer__subline">{{ drawer_subline }}</p>
+        {%- endif -%}
+      </div>
 
       {%- if base_formula_note != blank -%}
         <div class="lab-drawer__base-notice">
@@ -183,9 +184,9 @@
             {%- endfor -%}
           {%- elsif is_lotion -%}
             {%- liquid
-              assign lot_card = shop.metaobjects.lab_result_card["lotion-pfas"]
+              assign lot_card = shop.metaobjects.lab_result_card['lotion-pfas']
               if lot_card == blank
-                assign lot_card = shop.metaobjects.lab_result_card["laundry-pfas"]
+                assign lot_card = shop.metaobjects.lab_result_card['laundry-pfas']
               endif
               if lot_card == blank
                 assign lot_card = shop.metaobjects.lab_result_card.pfas
@@ -208,7 +209,7 @@
             {%- endif -%}
           {%- elsif is_paper -%}
             {%- liquid
-              assign p_cards = "paper-heavy-metals|paper-formaldehyde|paper-pcp|paper-pfas" | split: "|"
+              assign p_cards = 'paper-heavy-metals|paper-formaldehyde|paper-pcp|paper-pfas' | split: '|'
             -%}
             {%- assign first_tab = true -%}
             {%- for p_handle in p_cards -%}
@@ -232,16 +233,16 @@
             {%- endfor -%}
           {%- elsif is_dioxane_phthalates -%}
             {%- liquid
-              assign dp_cards = "laundry-1-4-dioxane|laundry-phthalates" | split: "|"
+              assign dp_cards = 'laundry-1-4-dioxane|laundry-phthalates' | split: '|'
             -%}
             {%- assign first_tab = true -%}
             {%- for dp_handle in dp_cards -%}
               {%- liquid
                 assign dp_card = shop.metaobjects.lab_result_card[dp_handle]
                 if dp_card == blank
-                  if dp_handle == "laundry-1-4-dioxane"
-                    assign dp_card = shop.metaobjects.lab_result_card["1-4-dioxane"]
-                  elsif dp_handle == "laundry-phthalates"
+                  if dp_handle == 'laundry-1-4-dioxane'
+                    assign dp_card = shop.metaobjects.lab_result_card['1-4-dioxane']
+                  elsif dp_handle == 'laundry-phthalates'
                     assign dp_card = shop.metaobjects.lab_result_card.phthalates
                   endif
                 endif
@@ -265,7 +266,7 @@
             {%- endfor -%}
           {%- else -%}
             {%- liquid
-              assign l_cards = "laundry-heavy-metals|laundry-glyphosate|laundry-pesticides|laundry-1-4-dioxane|laundry-phthalates|laundry-pfas" | split: "|"
+              assign l_cards = 'laundry-heavy-metals|laundry-glyphosate|laundry-pesticides|laundry-1-4-dioxane|laundry-phthalates|laundry-pfas' | split: '|'
             -%}
             {%- assign first_tab = true -%}
             {%- for l_handle in l_cards -%}
@@ -273,27 +274,27 @@
                 assign l_card = shop.metaobjects.lab_result_card[l_handle]
                 if l_card == blank
                   case l_handle
-                    when "laundry-heavy-metals"
-                      assign l_card = shop.metaobjects.lab_result_card["heavy-metals"]
-                    when "laundry-glyphosate"
+                    when 'laundry-heavy-metals'
+                      assign l_card = shop.metaobjects.lab_result_card['heavy-metals']
+                    when 'laundry-glyphosate'
                       assign l_card = shop.metaobjects.lab_result_card.glyphosate
-                    when "laundry-pesticides"
-                      assign l_card = shop.metaobjects.lab_result_card["pesticides-and-herbicides"]
-                    when "laundry-1-4-dioxane"
-                      assign l_card = shop.metaobjects.lab_result_card["laundry-1-4-dioxane"]
+                    when 'laundry-pesticides'
+                      assign l_card = shop.metaobjects.lab_result_card['pesticides-and-herbicides']
+                    when 'laundry-1-4-dioxane'
+                      assign l_card = shop.metaobjects.lab_result_card['laundry-1-4-dioxane']
                       if l_card == blank
-                        assign l_card = shop.metaobjects.lab_result_card["1-4-dioxane"]
+                        assign l_card = shop.metaobjects.lab_result_card['1-4-dioxane']
                       endif
                       if l_card == blank
-                        assign l_card = shop.metaobjects.lab_result_card["laundry-1,4-dioxane"]
+                        assign l_card = shop.metaobjects.lab_result_card['laundry-1,4-dioxane']
                       endif
                       if l_card == blank
-                        assign l_card = shop.metaobjects.lab_result_card["1,4-dioxane"]
+                        assign l_card = shop.metaobjects.lab_result_card['1,4-dioxane']
                       endif
-                    when "laundry-phthalates"
+                    when 'laundry-phthalates'
                       assign l_card = shop.metaobjects.lab_result_card.phthalates
-                    when "laundry-pfas"
-                      assign l_card = shop.metaobjects.lab_result_card["laundry-pfas"]
+                    when 'laundry-pfas'
+                      assign l_card = shop.metaobjects.lab_result_card['laundry-pfas']
                       if l_card == blank
                         assign l_card = shop.metaobjects.lab_result_card.pfas
                       endif
@@ -346,7 +347,16 @@
                 {%- if card.result_statement.value != blank -%}
                   <div class="pdp-lab-summary-strip">
                     <span class="pdp-lab-summary-strip__icon" aria-hidden="true">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                         <path d="m9 12 2 2 4-4"/>
                       </svg>
@@ -394,7 +404,16 @@
                           <span class="pdp-lab-result-item__name">{{ compound }}</span>
                           <span class="pdp-lab-result-item__status">
                             <span class="pdp-lab-result-item__icon" aria-hidden="true">
-                              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                              <svg
+                                width="15"
+                                height="15"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
                                 <polyline points="20 6 9 17 4 12"></polyline>
                               </svg>
                             </span>
@@ -417,9 +436,9 @@
           {%- endfor -%}
         {%- elsif is_lotion -%}
           {%- liquid
-            assign lot_card = shop.metaobjects.lab_result_card["lotion-pfas"]
+            assign lot_card = shop.metaobjects.lab_result_card['lotion-pfas']
             if lot_card == blank
-              assign lot_card = shop.metaobjects.lab_result_card["laundry-pfas"]
+              assign lot_card = shop.metaobjects.lab_result_card['laundry-pfas']
             endif
             if lot_card == blank
               assign lot_card = shop.metaobjects.lab_result_card.pfas
@@ -442,7 +461,16 @@
               {%- if lot_card.result_statement.value != blank -%}
                 <div class="pdp-lab-summary-strip">
                   <span class="pdp-lab-summary-strip__icon" aria-hidden="true">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
                       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                       <path d="m9 12 2 2 4-4"/>
                     </svg>
@@ -490,7 +518,16 @@
                         <span class="pdp-lab-result-item__name">{{ compound }}</span>
                         <span class="pdp-lab-result-item__status">
                           <span class="pdp-lab-result-item__icon" aria-hidden="true">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
                               <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
                           </span>
@@ -511,7 +548,7 @@
           {%- endif -%}
         {%- elsif is_paper -%}
           {%- liquid
-            assign p_cards = "paper-heavy-metals|paper-formaldehyde|paper-pcp|paper-pfas" | split: "|"
+            assign p_cards = 'paper-heavy-metals|paper-formaldehyde|paper-pcp|paper-pfas' | split: '|'
           -%}
           {%- assign first_panel = true -%}
           {%- for p_handle in p_cards -%}
@@ -536,7 +573,16 @@
                 {%- if p_card.result_statement.value != blank -%}
                   <div class="pdp-lab-summary-strip">
                     <span class="pdp-lab-summary-strip__icon" aria-hidden="true">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                         <path d="m9 12 2 2 4-4"/>
                       </svg>
@@ -584,7 +630,16 @@
                           <span class="pdp-lab-result-item__name">{{ compound }}</span>
                           <span class="pdp-lab-result-item__status">
                             <span class="pdp-lab-result-item__icon" aria-hidden="true">
-                              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                              <svg
+                                width="15"
+                                height="15"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
                                 <polyline points="20 6 9 17 4 12"></polyline>
                               </svg>
                             </span>
@@ -607,16 +662,16 @@
           {%- endfor -%}
         {%- elsif is_dioxane_phthalates -%}
           {%- liquid
-            assign dp_cards = "laundry-1-4-dioxane|laundry-phthalates" | split: "|"
+            assign dp_cards = 'laundry-1-4-dioxane|laundry-phthalates' | split: '|'
           -%}
           {%- assign first_panel = true -%}
           {%- for dp_handle in dp_cards -%}
             {%- liquid
               assign dp_card = shop.metaobjects.lab_result_card[dp_handle]
               if dp_card == blank
-                if dp_handle == "laundry-1-4-dioxane"
-                  assign dp_card = shop.metaobjects.lab_result_card["1-4-dioxane"]
-                elsif dp_handle == "laundry-phthalates"
+                if dp_handle == 'laundry-1-4-dioxane'
+                  assign dp_card = shop.metaobjects.lab_result_card['1-4-dioxane']
+                elsif dp_handle == 'laundry-phthalates'
                   assign dp_card = shop.metaobjects.lab_result_card.phthalates
                 endif
               endif
@@ -641,7 +696,16 @@
                 {%- if dp_card.result_statement.value != blank -%}
                   <div class="pdp-lab-summary-strip">
                     <span class="pdp-lab-summary-strip__icon" aria-hidden="true">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                         <path d="m9 12 2 2 4-4"/>
                       </svg>
@@ -689,7 +753,16 @@
                           <span class="pdp-lab-result-item__name">{{ compound }}</span>
                           <span class="pdp-lab-result-item__status">
                             <span class="pdp-lab-result-item__icon" aria-hidden="true">
-                              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                              <svg
+                                width="15"
+                                height="15"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
                                 <polyline points="20 6 9 17 4 12"></polyline>
                               </svg>
                             </span>
@@ -712,7 +785,7 @@
           {%- endfor -%}
         {%- else -%}
           {%- liquid
-            assign l_cards = "laundry-heavy-metals|laundry-glyphosate|laundry-pesticides|laundry-1-4-dioxane|laundry-phthalates|laundry-pfas" | split: "|"
+            assign l_cards = 'laundry-heavy-metals|laundry-glyphosate|laundry-pesticides|laundry-1-4-dioxane|laundry-phthalates|laundry-pfas' | split: '|'
           -%}
           {%- assign first_panel = true -%}
           {%- for l_handle in l_cards -%}
@@ -720,27 +793,27 @@
               assign l_card = shop.metaobjects.lab_result_card[l_handle]
               if l_card == blank
                 case l_handle
-                  when "laundry-heavy-metals"
-                    assign l_card = shop.metaobjects.lab_result_card["heavy-metals"]
-                  when "laundry-glyphosate"
+                  when 'laundry-heavy-metals'
+                    assign l_card = shop.metaobjects.lab_result_card['heavy-metals']
+                  when 'laundry-glyphosate'
                     assign l_card = shop.metaobjects.lab_result_card.glyphosate
-                  when "laundry-pesticides"
-                    assign l_card = shop.metaobjects.lab_result_card["pesticides-and-herbicides"]
-                  when "laundry-1-4-dioxane"
-                    assign l_card = shop.metaobjects.lab_result_card["laundry-1-4-dioxane"]
+                  when 'laundry-pesticides'
+                    assign l_card = shop.metaobjects.lab_result_card['pesticides-and-herbicides']
+                  when 'laundry-1-4-dioxane'
+                    assign l_card = shop.metaobjects.lab_result_card['laundry-1-4-dioxane']
                     if l_card == blank
-                      assign l_card = shop.metaobjects.lab_result_card["1-4-dioxane"]
+                      assign l_card = shop.metaobjects.lab_result_card['1-4-dioxane']
                     endif
                     if l_card == blank
-                      assign l_card = shop.metaobjects.lab_result_card["laundry-1,4-dioxane"]
+                      assign l_card = shop.metaobjects.lab_result_card['laundry-1,4-dioxane']
                     endif
                     if l_card == blank
-                      assign l_card = shop.metaobjects.lab_result_card["1,4-dioxane"]
+                      assign l_card = shop.metaobjects.lab_result_card['1,4-dioxane']
                     endif
-                  when "laundry-phthalates"
+                  when 'laundry-phthalates'
                     assign l_card = shop.metaobjects.lab_result_card.phthalates
-                  when "laundry-pfas"
-                    assign l_card = shop.metaobjects.lab_result_card["laundry-pfas"]
+                  when 'laundry-pfas'
+                    assign l_card = shop.metaobjects.lab_result_card['laundry-pfas']
                     if l_card == blank
                       assign l_card = shop.metaobjects.lab_result_card.pfas
                     endif
@@ -767,7 +840,16 @@
                 {%- if l_card.result_statement.value != blank -%}
                   <div class="pdp-lab-summary-strip">
                     <span class="pdp-lab-summary-strip__icon" aria-hidden="true">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                         <path d="m9 12 2 2 4-4"/>
                       </svg>
@@ -815,7 +897,16 @@
                           <span class="pdp-lab-result-item__name">{{ compound }}</span>
                           <span class="pdp-lab-result-item__status">
                             <span class="pdp-lab-result-item__icon" aria-hidden="true">
-                              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                              <svg
+                                width="15"
+                                height="15"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
                                 <polyline points="20 6 9 17 4 12"></polyline>
                               </svg>
                             </span>
@@ -840,11 +931,11 @@
       </div>
     </div>
 
-    <div class="lab-drawer__footer">
+    <div class="drawer__footer lab-drawer__footer">
       <a
         href="{{ first_coa_url }}"
         id="LabDrawer-CTA-{{ product.id }}"
-        class="lab-drawer__cta"
+        class="button button--primary button--full-width lab-drawer__cta"
         data-lab-drawer-cta
         data-coa-link
         data-category="{{ first_tab_handle }}"
@@ -855,7 +946,17 @@
         {% endif %}
       >
         <span>{{ coa_button_label }}</span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          style="margin-left: 8px;"
+        >
           <line x1="5" y1="12" x2="19" y2="12"></line>
           <polyline points="12 5 19 12 12 19"></polyline>
         </svg>

@@ -9,8 +9,8 @@
 
       this.tabs = this.querySelectorAll("[data-pdp-lab-tab]");
       this.panels = this.querySelectorAll("[data-pdp-lab-panel]");
-      this.overlay = this.querySelector(".lab-drawer__overlay");
-      this.closeBtns = this.querySelectorAll("[data-close]");
+      this.overlay = this.querySelector(".cart-drawer__overlay, .drawer__overlay");
+      this.closeBtns = this.querySelectorAll(".drawer__close, [data-close]");
       this.activeTrigger = null;
 
       this.initTabs();
@@ -29,6 +29,12 @@
     }
 
     initEvents() {
+      this.addEventListener("keyup", (evt) => {
+        if (evt.code === "Escape" && this.classList.contains("active")) {
+          this.close();
+        }
+      });
+
       if (this.overlay) {
         this.overlay.addEventListener("click", () => this.close());
       }
@@ -36,30 +42,37 @@
       this.closeBtns.forEach((btn) => {
         btn.addEventListener("click", () => this.close());
       });
-
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && (this.classList.contains("is-open") || this.classList.contains("open"))) {
-          this.close();
-        }
-      });
     }
 
     open(trigger) {
-      this.activeTrigger = trigger;
-      this.classList.add("is-open", "open");
-      document.body.style.overflow = "hidden";
+      if (trigger) this.activeTrigger = trigger;
+      setTimeout(() => {
+        this.classList.add("animate", "active");
+      });
+      document.body.classList.add("overflow-hidden");
 
-      const firstTab = this.querySelector("[data-pdp-lab-tab].is-active") || this.tabs[0];
-      if (firstTab) {
-        firstTab.focus();
-      }
+      this.addEventListener(
+        "transitionend",
+        () => {
+          const containerToTrapFocusOn = this.querySelector(".drawer__inner");
+          const focusElement = this.querySelector(".drawer__close") || this.querySelector(".drawer__inner");
+          if (typeof trapFocus === "function" && containerToTrapFocusOn && focusElement) {
+            trapFocus(containerToTrapFocusOn, focusElement);
+          } else if (focusElement) {
+            focusElement.focus();
+          }
+        },
+        { once: true }
+      );
     }
 
     close() {
-      this.classList.remove("is-open", "open");
-      document.body.style.overflow = "";
+      this.classList.remove("active");
+      document.body.classList.remove("overflow-hidden");
 
-      if (this.activeTrigger && typeof this.activeTrigger.focus === "function") {
+      if (typeof removeTrapFocus === "function" && this.activeTrigger) {
+        removeTrapFocus(this.activeTrigger);
+      } else if (this.activeTrigger && typeof this.activeTrigger.focus === "function") {
         this.activeTrigger.focus();
       }
     }
@@ -158,8 +171,8 @@
       if (drawer && typeof drawer.open === "function") {
         drawer.open(trigger);
       } else if (drawer) {
-        drawer.classList.add("is-open", "open");
-        document.body.style.overflow = "hidden";
+        drawer.classList.add("animate", "active");
+        document.body.classList.add("overflow-hidden");
       }
 
       const productTitle = drawer?.dataset.productTitle || "";

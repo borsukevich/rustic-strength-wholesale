@@ -41,7 +41,7 @@
 
     <!-- Meta Pixel & Beacon Event Suppression Proxy -->
     <script>
-      (function() {
+      (function () {
         try {
           if (sessionStorage.getItem('ws_flagged_spam') === 'true') {
             const blockedEvents = ['Lead', 'CompleteRegistration', 'Wholesale Application Submitted'];
@@ -49,19 +49,19 @@
 
             const wrapFbq = (original) => {
               if (!original || original.isProxied) return original;
-              
-              const proxy = function() {
+
+              const proxy = function () {
                 const args = Array.prototype.slice.call(arguments);
                 const eventName = args[1];
-                
+
                 if (blockedEvents.includes(eventName)) {
                   console.warn('Honeypot flag active: Suppressing conversion event:', eventName);
                   return;
                 }
-                
+
                 return original.apply(this, arguments);
               };
-              
+
               Object.assign(proxy, original);
               proxy.isProxied = true;
               return proxy;
@@ -73,8 +73,12 @@
               Object.defineProperty(window, 'fbq', {
                 configurable: true,
                 enumerable: true,
-                get: function() { return activeFbq; },
-                set: function(newVal) { activeFbq = wrapFbq(newVal); }
+                get: function () {
+                  return activeFbq;
+                },
+                set: function (newVal) {
+                  activeFbq = wrapFbq(newVal);
+                },
               });
             }
 
@@ -85,20 +89,24 @@
               Object.defineProperty(window, '_fbq', {
                 configurable: true,
                 enumerable: true,
-                get: function() { return active_Fbq; },
-                set: function(newVal) { active_Fbq = wrapFbq(newVal); }
+                get: function () {
+                  return active_Fbq;
+                },
+                set: function (newVal) {
+                  active_Fbq = wrapFbq(newVal);
+                },
               });
             }
 
             const interceptQueue = (q) => {
               if (!q || q.isProxied) return q;
-              
-              const filtered = q.filter(item => !blockedEvents.includes(item[1]));
+
+              const filtered = q.filter((item) => !blockedEvents.includes(item[1]));
               q.length = 0;
-              filtered.forEach(item => q.push(item));
+              filtered.forEach((item) => q.push(item));
 
               const originalPush = q.push;
-              q.push = function() {
+              q.push = function () {
                 const args = Array.prototype.slice.call(arguments);
                 const eventName = args[1];
                 if (blockedEvents.includes(eventName)) {
@@ -116,19 +124,19 @@
             }
 
             const OriginalImage = window.Image;
-            window.Image = function() {
+            window.Image = function () {
               const img = new OriginalImage(...arguments);
               Object.defineProperty(img, 'src', {
-                get: function() {
+                get: function () {
                   return img.getAttribute('src');
                 },
-                set: function(val) {
+                set: function (val) {
                   if (typeof val === 'string' && val.includes('facebook.com/tr') && val.includes('ev=Lead')) {
                     console.warn('Suppressed Image constructor Facebook Lead beacon:', val);
                     return;
                   }
                   img.setAttribute('src', val);
-                }
+                },
               });
               return img;
             };
@@ -136,22 +144,22 @@
             const originalImageSrcDescriptor = Object.getOwnPropertyDescriptor(HTMLImageElement.prototype, 'src');
             if (originalImageSrcDescriptor && originalImageSrcDescriptor.set) {
               Object.defineProperty(HTMLImageElement.prototype, 'src', {
-                get: function() {
+                get: function () {
                   return originalImageSrcDescriptor.get.call(this);
                 },
-                set: function(val) {
+                set: function (val) {
                   if (typeof val === 'string' && val.includes('facebook.com/tr') && val.includes('ev=Lead')) {
                     console.warn('Suppressed HTMLImageElement Facebook Lead beacon:', val);
                     return;
                   }
                   originalImageSrcDescriptor.set.call(this, val);
-                }
+                },
               });
             }
 
             if (navigator.sendBeacon) {
               const originalSendBeacon = navigator.sendBeacon;
-              navigator.sendBeacon = function(url) {
+              navigator.sendBeacon = function (url) {
                 if (typeof url === 'string' && url.includes('facebook.com/tr') && url.includes('ev=Lead')) {
                   console.warn('Suppressed sendBeacon Facebook Lead call:', url);
                   return true;
@@ -162,7 +170,7 @@
 
             if (window.fetch) {
               const originalFetch = window.fetch;
-              window.fetch = function(input) {
+              window.fetch = function (input) {
                 let url = '';
                 if (typeof input === 'string') {
                   url = input;
@@ -184,12 +192,12 @@
     </script>
 
     <script>
-      (function() {
+      (function () {
         const OriginalDateTimeFormat = Intl.DateTimeFormat;
         function normalizeTimezone(tz) {
           if (typeof tz !== 'string' && typeof tz !== 'number') return tz;
           const str = String(tz).trim();
-          
+
           const match = str.match(/^([+-])?(\d{1,2})(?::(\d{2}))?$/);
           if (match) {
             const sign = match[1] === '+' ? '-' : '+';
@@ -199,7 +207,7 @@
           }
           return tz;
         }
-        Intl.DateTimeFormat = function(locales, options) {
+        Intl.DateTimeFormat = function (locales, options) {
           if (options && options.timeZone) {
             const normalized = normalizeTimezone(options.timeZone);
             try {
@@ -597,10 +605,10 @@
 
         const replacePriceText = () => {
           const prices = document.querySelectorAll('.rebuy-product-price .rebuy-money');
-          
+
           prices.forEach(price => {
             const priceContainer = price.closest('.rebuy-product-price');
-            
+
             if (priceContainer && !priceContainer.classList.contains('wholesale-hidden')) {
               priceContainer.innerHTML = '<a href="{{ routes.account_login_url }}" class="login-link-price">Please login for pricing</a>';
               priceContainer.classList.add('wholesale-hidden');
@@ -611,7 +619,7 @@
         let debounceTimer;
         const observer = new MutationObserver((mutations) => {
           let hasNewNodes = false;
-          
+
           mutations.forEach((mutation) => {
             if (mutation.addedNodes.length > 0) {
               hasNewNodes = true;
@@ -637,7 +645,7 @@
 
     {% unless customer %}
       <style>
-        form[data-type="add-to-cart-form"],
+        form[data-type='add-to-cart-form'],
         .rebuy-product-actions,
         .appattic_price_span,
         .quick-add,
@@ -655,9 +663,9 @@
       </style>
     {% endunless %}
 
-    {%- if customer.tags contains "B2B" -%}
-      {%- render "rebuy-b2b" -%}
-      {%- render "rebuy-extensions" -%}
+    {%- if customer.tags contains 'B2B' -%}
+      {%- render 'rebuy-b2b' -%}
+      {%- render 'rebuy-extensions' -%}
     {%- endif -%}
 
     {%- if template == 'page.b2b-application-form' -%}
@@ -708,19 +716,21 @@
               { id: 'attribution#utm_source', val: getSafeSessionItem('ws_utm_source') },
               { id: 'attribution#utm_medium', val: getSafeSessionItem('ws_utm_medium') },
               { id: 'attribution#utm_campaign', val: getSafeSessionItem('ws_utm_campaign') },
-              { id: 'attribution#meta_tracking_data', val: (() => {
+              {
+                id: 'attribution#meta_tracking_data',
+                val: (() => {
                   return `fbp:${getSafeCookieVal('_fbp')}||fbc:${getSafeCookieVal('_fbc')}||ua:${navigator.userAgent}`;
-                })()
-              }
+                })(),
+              },
             ];
 
             const hideTrackingFields = () => {
               const formLabels = embedEl.shadowRoot.querySelectorAll('label, span');
-              formLabels.forEach(label => {
+              formLabels.forEach((label) => {
                 const labelText = (label.textContent || '').toLowerCase();
                 if (
-                  labelText.includes('attribution utm') || 
-                  labelText.includes('meta tracking data') || 
+                  labelText.includes('attribution utm') ||
+                  labelText.includes('meta tracking data') ||
                   labelText.includes('attribution hashed email')
                 ) {
                   const fieldRow = label.closest('._formFieldContainer_1mxsl_5') || label.parentElement;
@@ -732,7 +742,7 @@
             };
 
             const setupStaticFields = () => {
-              trackingFields.forEach(field => {
+              trackingFields.forEach((field) => {
                 const input = embedEl.shadowRoot.getElementById(field.id);
                 if (input) {
                   if (!input.value || input.value !== field.val) {
@@ -766,7 +776,7 @@
               const msgBuffer = new TextEncoder().encode(emailStr.toLowerCase().trim());
               const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
               const hashArray = Array.from(new Uint8Array(hashBuffer));
-              return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+              return hashArray.map((b) => b.toString(16).padStart(2, '0')).join('');
             }
 
             const emailInput = embedEl.shadowRoot.getElementById('email');
@@ -786,7 +796,8 @@
             }
 
             function forceReactValueUpdate(element, newValue) {
-              const prototype = element.tagName === 'TEXTAREA' ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
+              const prototype =
+                element.tagName === 'TEXTAREA' ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
               const descriptor = Object.getOwnPropertyDescriptor(prototype, 'value');
               if (descriptor && descriptor.set) {
                 descriptor.set.call(element, newValue);
@@ -815,7 +826,9 @@
               honeypotInput.addEventListener('blur', evaluateHoneypotSpam);
             }
 
-            const submitButton = appForm.querySelector('[data-testid="btn-form-submit"]') || appForm.querySelector('button[type="submit"]');
+            const submitButton =
+              appForm.querySelector('[data-testid="btn-form-submit"]') ||
+              appForm.querySelector('button[type="submit"]');
             if (submitButton) {
               submitButton.addEventListener('pointerdown', evaluateHoneypotSpam);
               submitButton.addEventListener('click', evaluateHoneypotSpam);
@@ -833,12 +846,24 @@
                 return;
               }
               appForm.dataset.tracked = 'true';
-              setTimeout(() => { appForm.dataset.tracked = 'false'; }, 3000);
+              setTimeout(() => {
+                appForm.dataset.tracked = 'false';
+              }, 3000);
 
               const emailValue = emailInput ? emailInput.value.trim() : '';
               if (emailValue) {
                 const klaviyo = window.klaviyo || window._learnq || [];
-                const trackingParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid', 'landing_page', 'referrer'];
+                const trackingParams = [
+                  'utm_source',
+                  'utm_medium',
+                  'utm_campaign',
+                  'utm_content',
+                  'utm_term',
+                  'gclid',
+                  'fbclid',
+                  'landing_page',
+                  'referrer',
+                ];
                 const utmData = {};
 
                 trackingParams.forEach((param) => {
@@ -847,7 +872,7 @@
 
                 utmData['landing_page'] = getSafeSessionItem('ws_landing_page') || window.location.href;
 
-                const profileProperties = { '$email': emailValue };
+                const profileProperties = { $email: emailValue };
                 trackingParams.forEach((param) => {
                   if (utmData[param] !== '') {
                     profileProperties[param] = utmData[param];
@@ -889,93 +914,90 @@
         });
       </script>
     {%- endif -%}
-<script>
-  // 1. Intercept the Add to Cart button click in global Capture Mode
-  window.addEventListener('submit', function(e) {
-    const form = e.target;
-    
-    if (form && form.action && form.action.includes('/cart/add') && !form.closest('.quick-order-list') && !form.closest('[data-quick-order]')) {
-      e.preventDefault();
-      e.stopPropagation();
+    <script>
+      window.addEventListener(
+        'submit',
+        function (e) {
+          const form = e.target;
 
-      // Find the main submit button inside this specific form to change its text later
-      const submitButton = form.querySelector('[type="submit"], .product-form__submit');
-      const originalText = submitButton ? submitButton.innerText : 'Add to Cart';
+          if (
+            form &&
+            form.action &&
+            form.action.includes('/cart/add') &&
+            !form.closest('.quick-order-list') &&
+            !form.closest('[data-quick-order]')
+          ) {
+            e.preventDefault();
+            e.stopPropagation();
 
-      // Provide immediate feedback on click so they know it registered
-      if (submitButton) {
-        submitButton.disabled = true;
-        submitButton.innerText = 'Adding...';
-      }
+            const submitButton = form.querySelector('[type="submit"], .product-form__submit');
+            const originalText = submitButton ? submitButton.innerText : 'Add to Cart';
 
-      // Send the item data in a silent background context
-      fetch(window.Shopify.routes.root + 'cart/add.js', {
-        method: 'POST',
-        body: new FormData(form)
-      })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Product added silently via background API.');
-        
-        // VISUAL INDICATOR: Show "Added!" feedback to the user instantly
-        if (submitButton) {
-          submitButton.innerText = '✓ Added!';
-          
-          // Revert the button back to normal after 2 seconds
-          setTimeout(function() {
-            submitButton.disabled = false;
-            submitButton.innerText = originalText;
-          }, 2000);
-        }
+            if (submitButton) {
+              submitButton.disabled = true;
+              submitButton.innerText = 'Adding...';
+            }
 
-        // Quietly ping Rebuy to update item counts, tiers, and the header badge
-        if (window.Rebuy && window.Rebuy.Cart) {
-          window.Rebuy.Cart.getCart();
-        }
-      })
-      .catch(error => {
-        console.error('Silent add failed:', error);
-        if (submitButton) {
-          submitButton.disabled = false;
-          submitButton.innerText = originalText;
-        }
-      });
-    }
-  }, true); 
+            fetch(window.Shopify.routes.root + 'cart/add.js', {
+              method: 'POST',
+              body: new FormData(form),
+            })
+              .then((response) => response.json())
+              .then((data) => {
+                if (submitButton) {
+                  submitButton.innerText = '✓ Added!';
 
-  // 2. Safely manage Rebuy drawer triggers
-  document.addEventListener('DOMContentLoaded', function() {
-    
-    document.addEventListener('rebuy:smartcart.ready', function(event) {
-      if (window.Rebuy && window.Rebuy.SmartCart && !window.Rebuy.SmartCart.isOverridden) {
-        
-        const originalShow = window.Rebuy.SmartCart.show;
-        
-        window.Rebuy.SmartCart.show = function(force) {
-          if (force === true) {
-            originalShow.call(window.Rebuy.SmartCart);
-          } else {
-            console.log('Automated Rebuy open hook silenced.');
+                  setTimeout(function () {
+                    submitButton.disabled = false;
+                    submitButton.innerText = originalText;
+                  }, 2000);
+                }
+
+                if (window.Rebuy && window.Rebuy.Cart) {
+                  window.Rebuy.Cart.getCart();
+                }
+              })
+              .catch((error) => {
+                console.error('Silent add failed:', error);
+                if (submitButton) {
+                  submitButton.disabled = false;
+                  submitButton.innerText = originalText;
+                }
+              });
           }
-        };
+        },
+        true
+      );
 
-        window.Rebuy.SmartCart.isOverridden = true;
-      }
-    });
+      document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('rebuy:smartcart.ready', function (event) {
+          if (window.Rebuy && window.Rebuy.SmartCart && !window.Rebuy.SmartCart.isOverridden) {
+            const originalShow = window.Rebuy.SmartCart.show;
 
-    // 3. Connect your functioning manual header click layout
-    document.querySelectorAll('a[href="/cart"], .header__cart-icon, [data-cart-trigger], .cart-link').forEach(function(cartIcon) {
-      cartIcon.addEventListener('click', function(e) {
-        if (window.Rebuy && window.Rebuy.SmartCart) {
-          e.preventDefault();
-          e.stopPropagation();
-          window.Rebuy.SmartCart.show(true); 
-        }
+            window.Rebuy.SmartCart.show = function (force) {
+              if (force === true) {
+                originalShow.call(window.Rebuy.SmartCart);
+              } else {
+                console.log('Automated Rebuy open hook silenced.');
+              }
+            };
+
+            window.Rebuy.SmartCart.isOverridden = true;
+          }
+        });
+
+        document
+          .querySelectorAll('a[href="/cart"], .header__cart-icon, [data-cart-trigger], .cart-link')
+          .forEach(function (cartIcon) {
+            cartIcon.addEventListener('click', function (e) {
+              if (window.Rebuy && window.Rebuy.SmartCart) {
+                e.preventDefault();
+                e.stopPropagation();
+                window.Rebuy.SmartCart.show(true);
+              }
+            });
+          });
       });
-    });
-
-  });
-</script>
-
+    </script>
   </body>
 </html>
