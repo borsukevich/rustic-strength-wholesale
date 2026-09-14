@@ -85,7 +85,7 @@
           "settings": {
             "heading": "Directions",
             "icon": "washing",
-            "content": "<p>For use in Automatic Dishwashers:</p><p>Gently squeeze bottle to dispense. </p><p>Fill detergent receptacle of your dishwasher up to the fill line. <em>Amount will vary by dishwasher model, each manufacturer creates a receptacle that’s perfectly sized for the most efficient clean.</em> </p><p>If desired, fill pre-wash compartment.<br/></p>",
+            "content": "<p>For use in Automatic Dishwashers:</p><p>Gently squeeze bottle to dispense. </p><p>Fill detergent receptacle of your dishwasher up to the fill line. <em>Amount will vary by dishwasher model, each manufacturer creates a receptacle that\u2019s perfectly sized for the most efficient\u00a0clean.</em> </p><p>If desired, fill pre-wash compartment.<br/></p>",
             "page": ""
           }
         },
@@ -103,7 +103,7 @@
           "settings": {
             "heading": "Scent",
             "icon": "leaf",
-            "content": "<p><a href=\"/products/lemon-orange-grapefruit-lime-essential-oil\" title=\"Lemon, Orange, Grapefruit & Lime Essential Oil Blend\"><strong>Sunburst Citrus</strong></a> - </p><p>Citrus Limon (Lemon) Oil, Citrus Sinensis (Sweet Orange) Oil Citrus Paradisi (Grapefruit) Oil, Citrus Aurantifolia (Lime) Oil, Limonene<br/></p><p><em>Dishwasher Gel is scented with  –</em></p><p><strong>Pure essential oils</strong> that are hand selected by us from small farms all around the world.</p>",
+            "content": "<p><a href=\"/products/lemon-orange-grapefruit-lime-essential-oil\" title=\"Lemon, Orange, Grapefruit & Lime Essential Oil Blend\"><strong>Sunburst Citrus</strong></a> - </p><p>Citrus Limon (Lemon) Oil, Citrus Sinensis (Sweet Orange) Oil Citrus Paradisi (Grapefruit) Oil, Citrus Aurantifolia (Lime) Oil, Limonene<br/></p><p><em>Dishwasher Gel is scented with  \u2013</em></p><p><strong>Pure essential oils</strong>\u00a0that are hand selected by us from small farms all around the world.</p>",
             "page": ""
           }
         },
@@ -112,7 +112,7 @@
           "settings": {
             "heading": "Ingredient Descriptions",
             "icon": "eye",
-            "content": "<p><a href=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\">High-Purity Water</a><strong> </strong>• charcoal-filtered, reverse osmosis, UV-sanitized</p><p>Tetrasodium Glutamate Diacetate (plant-based cleaner)</p><p>Octyl Dimethyl Amine Oxide (plant-based cleaner)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\">Citric Acid</a> (earth mineral)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-metasilicate\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-metasilicate\">Sodium Metasilicate</a> (earth mineral)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\">Phenoxyethanol</a> (safe preservative)</p><p>Caprylyl Glycol (safe preservative)</p><p><a href=\"https://rusticstrengthwholesale.com/products/lemon-lime-orange-grapefruit-essential-oil-blend\" target=\"_blank\" title=\"https://rusticstrengthwholesale.com/products/lemon-lime-orange-grapefruit-essential-oil-blend\">Sunburst Citrus</a> Essential Oil Blend (scent)</p>",
+            "content": "<p><a href=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\">High-Purity Water</a><strong>\u00a0</strong>\u2022 charcoal-filtered, reverse osmosis, UV-sanitized</p><p>Tetrasodium Glutamate Diacetate (plant-based cleaner)</p><p>Octyl Dimethyl Amine\u00a0Oxide (plant-based cleaner)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\">Citric Acid</a>\u00a0(earth mineral)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-metasilicate\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-metasilicate\">Sodium Metasilicate</a>\u00a0(earth mineral)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\">Phenoxyethanol</a>\u00a0(safe preservative)</p><p>Caprylyl Glycol (safe preservative)</p><p><a href=\"https://rusticstrengthwholesale.com/products/lemon-lime-orange-grapefruit-essential-oil-blend\" target=\"_blank\" title=\"https://rusticstrengthwholesale.com/products/lemon-lime-orange-grapefruit-essential-oil-blend\">Sunburst Citrus</a>\u00a0Essential Oil Blend (scent)</p>",
             "page": ""
           }
         },
@@ -137,6 +137,13 @@
             "border_radius": 8,
             "font_family": "inherit"
           }
+        },
+        "lab_testing_widget": {
+          "type": "lab-testing-widget",
+          "settings": {
+            "trigger_description": "No detectable 1,4-dioxane or phthalates.",
+            "base_formula_note": "We tested our unscented base formula, the same base every scent is built on, so these results cover this product."
+          }
         }
       },
       "block_order": [
@@ -147,6 +154,7 @@
         "quantity_selector_fFPAYP",
         "rebuy_personalization_engine_rebuy_widget_TCc7fH",
         "buy_buttons_BkQNGe",
+        "lab_testing_widget",
         "judge_me_reviews_review_snippet_widget_eQEKBT",
         "description",
         "collapsible-row-1",
@@ -179,7 +187,7 @@
           "type": "button",
           "name": "Product SDS",
           "settings": {
-            "button_label": "📋Bubble Bath SDS",
+            "button_label": "\ud83d\udccbBubble Bath SDS",
             "button_link": "https://cdn.shopify.com/s/files/1/0344/1809/8221/files/Bubble_Bath_SDS.pdf?v=1758138349",
             "button_style_secondary": false,
             "button_label_2": "",

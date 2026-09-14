@@ -1,0 +1,106 @@
+{%- liquid
+  assign trigger_heading = block.settings.trigger_heading
+  assign trigger_badge_label = block.settings.trigger_badge_label
+  assign trigger_description = block.settings.trigger_description
+
+  assign is_liquid_laundry = false
+  if product.tags contains "laundry" or product.handle contains "laundry" or product.title contains "Laundry" or product.type contains "Laundry"
+    assign is_liquid_laundry = true
+  endif
+
+  assign is_lotion = false
+  if product.tags contains "lotion" or product.handle contains "lotion" or product.title contains "Lotion" or product.type contains "Lotion"
+    assign is_lotion = true
+  endif
+
+  assign is_paper = false
+  if product.tags contains "paper" or product.handle contains "paper" or product.handle contains "bamboo" or product.type contains "Paper" or product.title contains "Paper"
+    assign is_paper = true
+  endif
+
+  assign is_dioxane_phthalates = false
+  if product.handle contains "soap" or product.title contains "Soap" or product.type contains "Soap"
+    assign is_dioxane_phthalates = true
+  elsif product.handle contains "shampoo" or product.title contains "Shampoo" or product.type contains "Shampoo"
+    assign is_dioxane_phthalates = true
+  elsif product.handle contains "body-wash" or product.title contains "Body Wash" or product.type contains "Body Wash"
+    assign is_dioxane_phthalates = true
+  elsif product.handle contains "bubble-bath" or product.title contains "Bubble Bath" or product.type contains "Bubble Bath"
+    assign is_dioxane_phthalates = true
+  elsif product.handle contains "dish" or product.title contains "Dish" or product.type contains "Dish"
+    assign is_dioxane_phthalates = true
+  elsif product.handle contains "lots-of-purpose" or product.title contains "Lots of Purpose" or product.handle contains "multi-purpose"
+    assign is_dioxane_phthalates = true
+  elsif product.handle contains "floor" or product.title contains "Floor" or product.type contains "Floor"
+    assign is_dioxane_phthalates = true
+  elsif product.handle contains "pet" or product.title contains "Pet" or product.type contains "Pet"
+    assign is_dioxane_phthalates = true
+  endif
+
+  if is_lotion or is_liquid_laundry or is_paper
+    assign is_dioxane_phthalates = false
+  endif
+
+  if is_lotion and trigger_description == blank or trigger_description == "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, or phthalates." or trigger_description == "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, phthalates, or PFAS."
+    assign trigger_description = "No detectable PFAS (total fluorine screen)."
+  elsif is_paper and trigger_description == blank or trigger_description == "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, or phthalates." or trigger_description == "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, phthalates, or PFAS."
+    assign trigger_description = "No detectable heavy metals, formaldehyde, PCP, or PFAS."
+  elsif is_dioxane_phthalates and trigger_description == blank or trigger_description == "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, or phthalates." or trigger_description == "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, phthalates, or PFAS."
+    assign trigger_description = "No detectable 1,4-dioxane or phthalates."
+  elsif trigger_description == "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, or phthalates." or trigger_description == blank
+    assign trigger_description = "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, phthalates, or PFAS."
+  endif
+-%}
+
+<div class="product__lab-trigger" {{ block.shopify_attributes }}>
+  <a
+    href="#LabDrawer-{{ product.id }}"
+    role="button"
+    drawer-id="LabDrawer-{{ product.id }}"
+    aria-controls="LabDrawer-{{ product.id }}"
+    aria-expanded="false"
+    class="pdp-lab-trigger no-underline"
+    data-pdp-lab-trigger
+  >
+    <span class="pdp-lab-trigger__icon" aria-hidden="true">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        <path d="m9 12 2 2 4-4"/>
+      </svg>
+    </span>
+
+    <span class="pdp-lab-trigger__content">
+      <span class="pdp-lab-trigger__headline">
+        {{ trigger_heading | default: "Third-Party Lab Tested" }}
+        <span class="pdp-lab-trigger__badge">{{ trigger_badge_label | default: "Verified" }}</span>
+      </span>
+      <span class="pdp-lab-trigger__description">
+        {{ trigger_description }}
+      </span>
+    </span>
+
+    <span class="pdp-lab-trigger__arrow" aria-hidden="true">
+      <svg
+        width="14"
+        height="14"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="m9 18 6-6-6-6"/>
+      </svg>
+    </span>
+  </a>
+</div>

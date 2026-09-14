@@ -127,7 +127,7 @@
           "settings": {
             "heading": "Where are your Bamboo Products sourced?",
             "icon": "plant",
-            "content": "<p>ALL bamboo products come from China or Vietnam because they are the largest producers of bamboo. The type of bamboo used does not contribute to deforestation and does not threaten pandas’ food source.</p><p>The USA does not currently grow the amount needed to produce pulp for paper products. There are only 3 species grown in the USA and there are over 1400 species in the world and China has the best-growing conditions for bamboo. </p><p>The USA has destroyed most of its natural resources for bamboo by expanding cities, making towns, growing food crops, and building roads. If and when the USA produces enough bamboo to make the pulp, we will source from here.</p><p>We currently source our alpaca and wool dryer balls from small business owners in the USA vs China like other companies. We source 99% of our materials from the USA and we manufacture everything in the USA.</p>",
+            "content": "<p>ALL bamboo products come from China or Vietnam because they are the largest producers of bamboo. The type of bamboo used does not contribute to deforestation and does not threaten pandas\u2019 food source.</p><p>The USA does not currently grow the amount needed to produce pulp for paper products. There are only 3 species grown in the USA and there are over 1400 species in the world and China has the best-growing conditions for bamboo. </p><p>The USA has destroyed most of its natural resources for bamboo by expanding cities, making towns, growing food crops, and building roads. If and when the USA produces enough bamboo to make the pulp, we will source from here.</p><p>We currently source our alpaca and wool dryer balls from small business owners in the USA vs China like other companies. We source 99% of our materials from the USA and we manufacture everything in the USA.</p>",
             "page": ""
           }
         },
@@ -152,6 +152,13 @@
             "border_radius": 8,
             "font_family": "inherit"
           }
+        },
+        "lab_testing_widget": {
+          "type": "lab-testing-widget",
+          "settings": {
+            "trigger_description": "No detectable heavy metals, formaldehyde, PCP, or PFAS.",
+            "base_formula_note": "Our bamboo paper line, screened for the contaminants that matter most in paper."
+          }
         }
       },
       "block_order": [
@@ -162,6 +169,7 @@
         "quantity_selector_fFPAYP",
         "rebuy_personalization_engine_rebuy_widget_TCc7fH",
         "buy_buttons_BkQNGe",
+        "lab_testing_widget",
         "judge_me_reviews_review_snippet_widget_cBPp84",
         "description",
         "collapsible-row-1",
@@ -195,7 +203,7 @@
           "type": "button",
           "name": "Product SDS",
           "settings": {
-            "button_label": "📋Bubble Bath SDS",
+            "button_label": "\ud83d\udccbBubble Bath SDS",
             "button_link": "https://cdn.shopify.com/s/files/1/0344/1809/8221/files/Bubble_Bath_SDS.pdf?v=1758138349",
             "button_style_secondary": false,
             "button_label_2": "",

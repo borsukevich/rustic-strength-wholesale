@@ -204,10 +204,153 @@
               "laundry-glyphosate",
               "laundry-pesticides",
               "laundry-1-4-dioxane",
-              "laundry-phthalates"
+              "laundry-phthalates",
+              "laundry-pfas"
             ],
             "shop_link": "shopify://collections/shop-all-laundry",
             "shop_link_label": "Shop Laundry Products"
+          }
+        },
+        "product_line_hand_soap": {
+          "type": "product_line",
+          "settings": {
+            "product_line_name": "Hand Soap",
+            "scope_note": "We tested our unscented base formula, the same base every scent is built on. So these results cover the entire hand soap line.",
+            "card_list": [
+              "laundry-1-4-dioxane",
+              "laundry-phthalates"
+            ],
+            "shop_link": "shopify://collections/hand-soap",
+            "shop_link_label": "Shop Hand Soap Products"
+          }
+        },
+        "product_line_dish_soap": {
+          "type": "product_line",
+          "settings": {
+            "product_line_name": "Dish Soap",
+            "scope_note": "We tested our unscented base formula, the same base every scent is built on. So these results cover the entire dish soap line.",
+            "card_list": [
+              "laundry-1-4-dioxane",
+              "laundry-phthalates"
+            ],
+            "shop_link": "shopify://collections/dish-soap",
+            "shop_link_label": "Shop Dish Soap Products"
+          }
+        },
+        "product_line_shampoo": {
+          "type": "product_line",
+          "settings": {
+            "product_line_name": "Shampoo",
+            "scope_note": "We tested our unscented base formula, the same base every scent is built on. So these results cover the entire shampoo line.",
+            "card_list": [
+              "laundry-1-4-dioxane",
+              "laundry-phthalates"
+            ],
+            "shop_link": "shopify://collections/hair-rs",
+            "shop_link_label": "Shop Shampoo Products"
+          }
+        },
+        "product_line_body_wash": {
+          "type": "product_line",
+          "settings": {
+            "product_line_name": "Body Wash",
+            "scope_note": "We tested our unscented base formula, the same base every scent is built on. So these results cover the entire body wash line.",
+            "card_list": [
+              "laundry-1-4-dioxane",
+              "laundry-phthalates"
+            ],
+            "shop_link": "shopify://collections/body-wash-rs",
+            "shop_link_label": "Shop Body Wash Products"
+          }
+        },
+        "product_line_bubble_bath": {
+          "type": "product_line",
+          "settings": {
+            "product_line_name": "Bubble Bath",
+            "scope_note": "We tested our unscented base formula, the same base every scent is built on. So these results cover the entire bubble bath line.",
+            "card_list": [
+              "laundry-1-4-dioxane",
+              "laundry-phthalates"
+            ],
+            "shop_link": "shopify://collections/bubble-bath",
+            "shop_link_label": "Shop Bubble Bath Products"
+          }
+        },
+        "product_line_automatic_dishwasher_gel": {
+          "type": "product_line",
+          "settings": {
+            "product_line_name": "Automatic Dishwasher Gel",
+            "scope_note": "Tested on our base formula, covering our entire automatic dishwasher line.",
+            "card_list": [
+              "laundry-1-4-dioxane",
+              "laundry-phthalates"
+            ],
+            "shop_link": "shopify://collections/automatic-dishwasher",
+            "shop_link_label": "Shop Dishwasher Products"
+          }
+        },
+        "product_line_lots_of_purpose": {
+          "type": "product_line",
+          "settings": {
+            "product_line_name": "Lots of Purpose",
+            "scope_note": "We tested our unscented base formula, the same base every scent is built on. So these results cover the entire Lots of Purpose line.",
+            "card_list": [
+              "laundry-1-4-dioxane",
+              "laundry-phthalates"
+            ],
+            "shop_link": "shopify://collections/lots-of-purpose",
+            "shop_link_label": "Shop Lots of Purpose Products"
+          }
+        },
+        "product_line_lots_of_purpose_concentrate": {
+          "type": "product_line",
+          "settings": {
+            "product_line_name": "Lots of Purpose Concentrate",
+            "scope_note": "We tested our unscented base formula, the same base every scent is built on. So these results cover the entire Lots of Purpose Concentrate line.",
+            "card_list": [
+              "laundry-1-4-dioxane",
+              "laundry-phthalates"
+            ],
+            "shop_link": "shopify://collections/lots-of-purpose",
+            "shop_link_label": "Shop Lots of Purpose Concentrate"
+          }
+        },
+        "product_line_floor_cleaner": {
+          "type": "product_line",
+          "settings": {
+            "product_line_name": "Floor Cleaner",
+            "scope_note": "Tested on our base formula, covering our entire floor cleaner line.",
+            "card_list": [
+              "laundry-1-4-dioxane",
+              "laundry-phthalates"
+            ],
+            "shop_link": "shopify://collections/floor-cleaner",
+            "shop_link_label": "Shop Floor Cleaner Products"
+          }
+        },
+        "product_line_pet_shampoo": {
+          "type": "product_line",
+          "settings": {
+            "product_line_name": "Pet Shampoo",
+            "scope_note": "We tested our unscented base formula, the same base every scent is built on. So these results cover the entire pet shampoo line.",
+            "card_list": [
+              "laundry-1-4-dioxane",
+              "laundry-phthalates"
+            ],
+            "shop_link": "shopify://collections/pet-shampoo",
+            "shop_link_label": "Shop Pet Shampoo Products"
+          }
+        },
+        "product_line_lotion": {
+          "type": "product_line",
+          "settings": {
+            "product_line_name": "Lotion",
+            "scope_note": "We tested our unscented lotion base, the same base every lotion scent is built on, and screened it for PFAS. So this result covers the entire lotion line.",
+            "card_list": [
+              "lotion-pfas"
+            ],
+            "shop_link": "shopify://collections/lotion-rs",
+            "shop_link_label": "Shop Lotion Products"
           }
         },
         "product_line_MrXiqW": {
@@ -228,6 +371,17 @@
       },
       "block_order": [
         "product_line_GEcBq3",
+        "product_line_hand_soap",
+        "product_line_dish_soap",
+        "product_line_shampoo",
+        "product_line_body_wash",
+        "product_line_bubble_bath",
+        "product_line_automatic_dishwasher_gel",
+        "product_line_lots_of_purpose",
+        "product_line_lots_of_purpose_concentrate",
+        "product_line_floor_cleaner",
+        "product_line_pet_shampoo",
+        "product_line_lotion",
         "product_line_MrXiqW"
       ],
       "name": "Lab results grid",

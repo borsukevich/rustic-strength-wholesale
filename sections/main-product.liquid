@@ -477,6 +477,8 @@
 
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+                            {%- when 'lab-testing-widget' -%}
+                {% render 'pdp-lab-trigger', product: product, block: block %}
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,
@@ -712,6 +714,11 @@
       </modal-dialog>
     {%- endfor -%}
 
+    {%- assign lab_widget_block = section.blocks | where: 'type', 'lab-testing-widget' | first -%}
+    {%- if lab_widget_block != blank -%}
+      {% render 'pdp-lab-widget', product: product, block: lab_widget_block %}
+    {%- endif -%}
+
     {%- if product.media.size > 0 -%}
       <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
       <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
@@ -904,6 +911,100 @@
             }
           ],
           "default": "circle"
+        }
+      ]
+    },
+    {
+      "type": "lab-testing-widget",
+      "name": "Lab Testing Widget",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Block"
+        },
+        {
+          "type": "text",
+          "id": "trigger_heading",
+          "label": "Heading",
+          "default": "Third-Party Lab Tested"
+        },
+        {
+          "type": "text",
+          "id": "trigger_badge_label",
+          "label": "Badge",
+          "default": "Verified"
+        },
+        {
+          "type": "text",
+          "id": "trigger_description",
+          "label": "Description",
+          "default": "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, phthalates, or PFAS."
+        },
+        {
+          "type": "header",
+          "content": "Drawer"
+        },
+        {
+          "type": "text",
+          "id": "drawer_heading",
+          "label": "Drawer heading",
+          "default": "Third-Party Lab Tested"
+        },
+        {
+          "type": "text",
+          "id": "drawer_subline",
+          "label": "Text",
+          "default": "Independently tested by ISO/IEC 17025 accredited laboratories."
+        },
+        {
+          "type": "textarea",
+          "id": "base_formula_note",
+          "label": "Notice",
+          "default": "We tested our unscented base formula, the same base every scent is built on, so these results cover this product."
+        },
+        {
+          "type": "header",
+          "content": "Explainer"
+        },
+        {
+          "type": "text",
+          "id": "why_we_test_heading",
+          "label": "Why we test heading",
+          "default": "Why we test"
+        },
+        {
+          "type": "text",
+          "id": "scale_heading",
+          "label": "Heading",
+          "default": "Understanding detection limits"
+        },
+        {
+          "type": "textarea",
+          "id": "scale_description",
+          "label": "Text",
+          "default": "None detected means below the lab's detection limit, not a flat zero. For scale, one drop of water in an Olympic pool is about 0.01 ppm."
+        },
+        {
+          "type": "header",
+          "content": "Footer"
+        },
+        {
+          "type": "text",
+          "id": "coa_button_label",
+          "label": "Button label",
+          "default": "View Certificate of Analysis"
+        },
+        {
+          "type": "text",
+          "id": "view_all_link_text",
+          "label": "View all results link text",
+          "default": "See all our lab results"
+        },
+        {
+          "type": "url",
+          "id": "view_all_link_url",
+          "label": "View all results link URL"
         }
       ]
     },
