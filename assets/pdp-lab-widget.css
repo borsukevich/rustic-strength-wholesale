@@ -480,6 +480,8 @@ lab-drawer .lab-drawer__contents {
   gap: 0.6rem;
   font-size: 1.3rem;
   color: rgba(var(--lab-text), 0.8);
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .pdp-lab-result-item__icon {
