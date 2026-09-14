@@ -114,6 +114,46 @@
         "content_max_width": 800
       }
     },
+    "image_banner_zHECQD": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_bKie3x": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet Franki, our helpful Ai Agent",
+            "heading_size": "h1"
+          }
+        },
+        "text_jcJVxm": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bKie3x",
+        "text_jcJVxm"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/socialmedia-chaos_0ca8b973-8f27-4695-a356-5432a791ef19.png",
+        "image_overlay_opacity": 20,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true,
+        "content_max_width": 800
+      }
+    },
     "multicolumn_HPXGDK": {
       "type": "multicolumn",
       "blocks": {
@@ -130,7 +170,7 @@
           "type": "column",
           "settings": {
             "title": "Zero-Waste Solutions",
-            "text": "<p>At Rustic Strength, we focus on everyday essentials your customers actually need—like our best-selling laundry detergent. Thanks to our pioneering Close the Loop Program, and the support of partners like you, empty containers are returned, sanitized, refilled, and reused. Together we are reducing waste and protecting our planet.</p>",
+            "text": "<p>At Rustic Strength, we focus on everyday essentials your customers actually need, like our best-selling laundry detergent. Thanks to our pioneering Close the Loop Program, and the support of partners like you, empty containers are returned, sanitized, refilled, and reused. Together we are reducing waste and protecting our planet.</p>",
             "link_label": "",
             "link": ""
           }
@@ -168,43 +208,53 @@
         "padding_bottom": 36
       }
     },
-    "image_banner_zHECQD": {
-      "type": "image-banner",
+    "image_with_text_R7wn3K": {
+      "type": "image-with-text",
       "blocks": {
-        "heading_bKie3x": {
+        "heading_wBGXxw": {
           "type": "heading",
           "settings": {
-            "heading": "Meet Franki, our helpful Ai Agent",
+            "heading": "We know you'll have lots of questions!",
             "heading_size": "h1"
           }
         },
-        "text_jcJVxm": {
+        "text_G7e8dj": {
           "type": "text",
+          "settings": {
+            "text": "<h2>Meet Franki, our helpful Automated Assistant.</h2>",
+            "text_style": "subtitle"
+          }
+        },
+        "button_Ai9phP": {
+          "type": "button",
           "disabled": true,
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "heading_bKie3x",
-        "text_jcJVxm"
+        "heading_wBGXxw",
+        "text_G7e8dj",
+        "button_Ai9phP"
       ],
-      "name": "t:sections.image-banner.presets.name",
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/socialmedia-chaos_0ca8b973-8f27-4695-a356-5432a791ef19.png",
-        "image_overlay_opacity": 20,
-        "image_height": "small",
+        "image": "shopify://shop_images/ChatGPT_Image_May_6_2026_01_45_03_PM.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
         "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-5",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true,
-        "content_max_width": 800
+        "content_layout": "no-overlap",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text_GWVa7H": {
@@ -221,6 +271,7 @@
         },
         "heading_chyWyJ": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "We know you'll have lots of questions!",
             "heading_size": "h1"
@@ -229,7 +280,7 @@
         "text_fRgBPN": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Franki,Ai</strong> our Ai assistant, is here to help you 24/7. She can answer hundreds of your most common questions and even assist with tasks like:</p><ul><li>Canceling orders</li><li>Updating addresses</li><li>Starting a Customer Care request</li></ul><p>For the best results, please be clear and kind with your requests.</p><p></p><h3><strong>Need to Contact Us?</strong></h3><p></p><p>If your question is more complex, our team is ready to help. Please use one of the following methods:</p><p><strong>Customer Care Tickets:</strong> Start a new request using the <strong>\"Contact Us\"</strong> link at the bottom of every page or by using the form in our Help Center. We answer inquiries Monday - Friday, from 9 a.m. to 4 p.m. (excluding holidays).</p><p><strong>Wholesale Support:</strong> For our wholesale partners, please use the dedicated email: <strong>support@rusticstrengthwholesale.com</strong>.</p><p><strong>A friendly reminder:</strong> Submitting multiple tickets or contacting us through more than one channel can cause delays and lead to confusing resolutions. We appreciate your patience with our small team!</p>"
+            "text": "<p><strong>Franki,Ai</strong> our Automated Assistant, is here to help you 24/7. She can answer hundreds of your most common questions and even assist with tasks like:</p><ul><li>Canceling orders</li><li>Updating addresses</li><li>Starting a Customer Care request</li></ul><p>For the best results, please be clear and kind with your requests. </p><p></p><h3><strong>Need to Contact Us?</strong></h3><p></p><p>If your question is more complex, our team is ready to help. Please use one of the following methods:</p><p><strong>Customer Care Tickets:</strong> Start a new request using the <strong>\"Contact Us\"</strong> link at the bottom of every page or by using the form in our Help Center. We answer inquiries<strong> Monday - Friday, from 9 a.m. to 4 p.m. </strong>(excluding holidays).</p><p>You can help us support you by giving Franki detailed information. This will help us to investigate any issues before contacting you, leading to better and more efficient solutions.</p><p><strong>Wholesale Support:</strong> For email inquiries, please use the dedicated email: <strong>support@rusticstrengthwholesale.com</strong>.</p><p><strong>A friendly reminder:</strong> Submitting multiple tickets or contacting us through more than one channel can cause delays and lead to confusing resolutions. We appreciate your patience with our small team!</p>"
           }
         },
         "button_9RTffL": {
@@ -258,7 +309,7 @@
         "full_width": true,
         "full_width_content": false,
         "hide_side_padding_mobile": false,
-        "padding_top": 40,
+        "padding_top": 4,
         "padding_bottom": 52
       }
     },
@@ -305,8 +356,19 @@
             "link": "shopify://pages/wholesale-partner-perks"
           }
         },
+        "column_Pd96d8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_2288_x_1500_px.png",
+            "title": "",
+            "text": "",
+            "link_label": "Third Party Lab Results",
+            "link": "https://rusticstrengthwholesale.com/pages/lab-results"
+          }
+        },
         "column_EtkebT": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
             "title": "",
@@ -351,6 +413,7 @@
         "column_jNLeh8",
         "column_TW7BPB",
         "column_LHn3nr",
+        "column_Pd96d8",
         "column_EtkebT",
         "column_MzAE4B",
         "column_jp4pwt",
@@ -369,6 +432,60 @@
         "background_style": "primary",
         "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_knPHCG": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_CwVTn9": {
+          "type": "column",
+          "settings": {
+            "title": "Wholesale Agreement",
+            "text": "<p>Outlines the terms for Rustic Strength wholesale partners, including ordering, resale, pricing, shipping, product handling, branding, claims, and liability.</p>",
+            "link_label": "Read the Policy",
+            "link": "https://rusticstrengthwholesale.com/pages/wholesale-agreement"
+          }
+        },
+        "column_P3RyaE": {
+          "type": "column",
+          "settings": {
+            "title": "Sanitization Standards Policy",
+            "text": "<p>Sets clear sanitation and hygiene standards for wholesale refill partners to help ensure Rustic Strength products are handled, stored, and sold in a clean, safe environment.</p>",
+            "link_label": "Read the Policy",
+            "link": "https://rusticstrengthwholesale.com/pages/sanitization-standards-policy"
+          }
+        },
+        "column_TwNcMC": {
+          "type": "column",
+          "settings": {
+            "title": "Shipping & Delivery Policy",
+            "text": "<p>Outlines wholesale shipping rates, processing times, delivery expectations, freight requirements, damages, claims, additional fees, and international shipping responsibilities.</p>",
+            "link_label": "Read the Policy",
+            "link": "https://rusticstrengthwholesale.com/policies/shipping-policy"
+          }
+        }
+      },
+      "block_order": [
+        "column_CwVTn9",
+        "column_P3RyaE",
+        "column_TwNcMC"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Important Policies to Understand",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "See All Company Policies",
+        "button_link": "#shopify-section-sections--23846871630064__footer\")",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -574,10 +691,12 @@
     "main",
     "rich_text_6Aniwh",
     "image_banner_qgpcMM",
-    "multicolumn_HPXGDK",
     "image_banner_zHECQD",
+    "multicolumn_HPXGDK",
+    "image_with_text_R7wn3K",
     "rich_text_GWVa7H",
     "multicolumn_iVRzNM",
+    "multicolumn_knPHCG",
     "image_with_text_LqanGC",
     "featured_collection_dDWR7t",
     "rich_text_MdLrqE",

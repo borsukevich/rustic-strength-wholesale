@@ -77,7 +77,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Sell With Confidence",
-            "button_link_1": "shopify://pages/blog-landing-page",
+            "button_link_1": "shopify://pages/new-b2b-welcome",
             "button_style_secondary_1": false,
             "button_label_2": "Apply for Wholesale Pricing",
             "button_link_2": "shopify://pages/wholesale-application-landing-page",

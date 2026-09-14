@@ -86,6 +86,7 @@
         "link_list",
         "link_list_VimC3i"
       ],
+      "custom_css": [],
       "settings": {
         "color_scheme": "scheme-5",
         "newsletter_enable": true,

@@ -889,5 +889,93 @@
         });
       </script>
     {%- endif -%}
+<script>
+  // 1. Intercept the Add to Cart button click in global Capture Mode
+  window.addEventListener('submit', function(e) {
+    const form = e.target;
+    
+    if (form && form.action && form.action.includes('/cart/add') && !form.closest('.quick-order-list') && !form.closest('[data-quick-order]')) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      // Find the main submit button inside this specific form to change its text later
+      const submitButton = form.querySelector('[type="submit"], .product-form__submit');
+      const originalText = submitButton ? submitButton.innerText : 'Add to Cart';
+
+      // Provide immediate feedback on click so they know it registered
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.innerText = 'Adding...';
+      }
+
+      // Send the item data in a silent background context
+      fetch(window.Shopify.routes.root + 'cart/add.js', {
+        method: 'POST',
+        body: new FormData(form)
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Product added silently via background API.');
+        
+        // VISUAL INDICATOR: Show "Added!" feedback to the user instantly
+        if (submitButton) {
+          submitButton.innerText = '✓ Added!';
+          
+          // Revert the button back to normal after 2 seconds
+          setTimeout(function() {
+            submitButton.disabled = false;
+            submitButton.innerText = originalText;
+          }, 2000);
+        }
+
+        // Quietly ping Rebuy to update item counts, tiers, and the header badge
+        if (window.Rebuy && window.Rebuy.Cart) {
+          window.Rebuy.Cart.getCart();
+        }
+      })
+      .catch(error => {
+        console.error('Silent add failed:', error);
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.innerText = originalText;
+        }
+      });
+    }
+  }, true); 
+
+  // 2. Safely manage Rebuy drawer triggers
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    document.addEventListener('rebuy:smartcart.ready', function(event) {
+      if (window.Rebuy && window.Rebuy.SmartCart && !window.Rebuy.SmartCart.isOverridden) {
+        
+        const originalShow = window.Rebuy.SmartCart.show;
+        
+        window.Rebuy.SmartCart.show = function(force) {
+          if (force === true) {
+            originalShow.call(window.Rebuy.SmartCart);
+          } else {
+            console.log('Automated Rebuy open hook silenced.');
+          }
+        };
+
+        window.Rebuy.SmartCart.isOverridden = true;
+      }
+    });
+
+    // 3. Connect your functioning manual header click layout
+    document.querySelectorAll('a[href="/cart"], .header__cart-icon, [data-cart-trigger], .cart-link').forEach(function(cartIcon) {
+      cartIcon.addEventListener('click', function(e) {
+        if (window.Rebuy && window.Rebuy.SmartCart) {
+          e.preventDefault();
+          e.stopPropagation();
+          window.Rebuy.SmartCart.show(true); 
+        }
+      });
+    });
+
+  });
+</script>
+
   </body>
 </html>

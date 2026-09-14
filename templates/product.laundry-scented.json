@@ -35,17 +35,12 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "icon_with_text_4MzpVQ": {
-          "type": "icon-with-text",
+        "text_njb3m6": {
+          "type": "text",
           "disabled": true,
           "settings": {
-            "layout": "horizontal",
-            "icon_1": "shirt",
-            "heading_1": "shop more laundry without leaving this page",
-            "icon_2": "none",
-            "heading_2": "",
-            "icon_3": "none",
-            "heading_3": ""
+            "text": "<a href=\"//*[@id=&quot;shopify-section-template--23846872449264__quick-order-list&quot;]\" title=\"//*[@id=&quot;shopify-section-template--23846872449264__quick-order-list&quot;]\">Shop More</a> Laundry without leaving this page.",
+            "text_style": "body"
           }
         },
         "rebuy_personalization_engine_rebuy_widget_TCc7fH": {
@@ -171,7 +166,7 @@
         "price_panda_price_per_unit_product_block_6Fb3GT",
         "variant_picker_baqgrH",
         "quantity_selector_fFPAYP",
-        "icon_with_text_4MzpVQ",
+        "text_njb3m6",
         "rebuy_personalization_engine_rebuy_widget_TCc7fH",
         "buy_buttons_BkQNGe",
         "lab_testing_widget",
