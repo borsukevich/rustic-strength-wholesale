@@ -1,0 +1,360 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn_FhHdUy": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Cja7fT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Which_Drum_Pump_video_cover_still.png",
+            "title": "Which Drum Pump is right for me?",
+            "text": "",
+            "link_label": "",
+            "link": "https://www.youtube.com/shorts/6uYqhRK6W3o"
+          }
+        },
+        "column_pAhy6M": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/opening_a_drum.png",
+            "title": "How to Open a Drum and install a Drum Pump",
+            "text": "",
+            "link_label": "Watch the Video",
+            "link": "https://www.youtube.com/shorts/bwZJv1WqCJs"
+          }
+        },
+        "column_ychFwk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot-2025-05-29-at-3.16.32-PM.png",
+            "title": "How to Strap Returns to a Pallet",
+            "text": "",
+            "link_label": "Watch the Video",
+            "link": "https://1drv.ms/v/c/9cfc93a46f5db64f/IQA6pBvRyQHLRo-6Ljj89qtiAXWbTz3jVqH84hT0XEm_0PA?e=Ua5ftL"
+          }
+        },
+        "column_7mbVQX": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Premium_Pump_still.jpg",
+            "title": "How-To Install a Premium Drum Pump",
+            "text": "",
+            "link_label": "Watch the Video",
+            "link": "https://www.youtube.com/shorts/bwZJv1WqCJs"
+          }
+        },
+        "column_mQVnte": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "How to Install an Economy Drum Pump",
+            "text": "",
+            "link_label": "Watch the Video",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Cja7fT",
+        "column_pAhy6M",
+        "column_ychFwk",
+        "column_7mbVQX",
+        "column_mQVnte"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "How-To Videos",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "circle",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-3",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_Thixhw": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_XczLzr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Diagram_30_Gallon_Drum_Size.png",
+            "title": "30 Gallon Drum Details",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_T49M4h": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Diagram_55_Gallon_Drum_Size.png",
+            "title": "55 Gallon Drum Details",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_XczLzr",
+        "column_T49M4h"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Drum Specs",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_Un43y8": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "drum-accessory-collection",
+        "products_to_show": 10,
+        "title": "drum accessory collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_dpJAaE": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_AzHkzG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry-detergent-1"
+          }
+        },
+        "featured_collection_ctdhJT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hand-soap"
+          }
+        },
+        "featured_collection_wirQM7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dish-soap"
+          }
+        },
+        "featured_collection_V83h3F": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "household-goods"
+          }
+        },
+        "featured_collection_QLbzKm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-scent"
+          }
+        },
+        "featured_collection_DE9bUj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "body-care"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_AzHkzG",
+        "featured_collection_ctdhJT",
+        "featured_collection_wirQM7",
+        "featured_collection_V83h3F",
+        "featured_collection_QLbzKm",
+        "featured_collection_DE9bUj"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop Top Categories",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_pDwpqY": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RCLdhQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design.png",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_WhdeDw": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Untitled_580d6abd-1ae3-4e38-9bc8-b083c07a3b45.png",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_XFRxKQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_wehmLr": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled_129e331e-5fd0-42c2-8e5d-dcc50570e10b.png",
+            "title": "",
+            "text": "",
+            "link_label": "Private Label Information",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_zahWXF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_9xCiVB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_Lw4zfN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blog Center",
+            "link": "shopify://pages/blog-landing-page"
+          }
+        },
+        "column_XiEUPq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        }
+      },
+      "block_order": [
+        "column_RCLdhQ",
+        "column_WhdeDw",
+        "column_XFRxKQ",
+        "column_wehmLr",
+        "column_zahWXF",
+        "column_9xCiVB",
+        "column_Lw4zfN",
+        "column_XiEUPq"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_FhHdUy",
+    "multicolumn_Thixhw",
+    "featured_collection_Un43y8",
+    "collection_list_dpJAaE",
+    "multicolumn_pDwpqY"
+  ]
+}

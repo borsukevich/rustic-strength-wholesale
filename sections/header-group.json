@@ -56,6 +56,7 @@
     },
     "countdown_timer_bar_a6hUwU": {
       "type": "countdown-timer-bar",
+      "disabled": true,
       "name": "Countdown timer bar",
       "settings": {
         "show_on_home_page_only": false,
@@ -144,7 +145,7 @@
         "announcement_q3xfMm": {
           "type": "announcement",
           "settings": {
-            "text": "Shop Limited-Edition Autumn Scents 🍁",
+            "text": "Shop Limited-Edition Winter Scents ❄️",
             "link": ""
           }
         },

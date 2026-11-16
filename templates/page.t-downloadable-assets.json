@@ -114,24 +114,24 @@
         "padding_bottom": 52
       }
     },
-    "image_with_text_FJUphp": {
+    "image_with_text_bfhm6L": {
       "type": "image-with-text",
       "blocks": {
-        "heading_Fkk9Wf": {
+        "heading_mLMJqt": {
           "type": "heading",
           "settings": {
             "heading": "Downloadable Labels",
             "heading_size": "h2"
           }
         },
-        "text_izJrzp": {
+        "text_cfzVaE": {
           "type": "text",
           "settings": {
             "text": "<p>The refill industry is booming and with that comes regulations.  As the primary manufacturer of household goods for refill shops we want to make sure that you, the retailer, are adhering to industry standards.  One required practice that may be overlooked or even missed is the labeling of products before they leave the store.  <br/><br/><strong>ALL products have to have a label on them with certain requirements. </strong></p><p>We have made this really easy for you to do.  We have converted our labels to meet those requirements.  Simply hand write how many ounces your customer has purchased on this label before their container leaves your store.</p><p>Please allow up to one business day to be granted access.</p>",
             "text_style": "body"
           }
         },
-        "button_VnTdTz": {
+        "button_L7kqMm": {
           "type": "button",
           "settings": {
             "button_label": "Request Access",
@@ -141,13 +141,13 @@
         }
       },
       "block_order": [
-        "heading_Fkk9Wf",
-        "text_izJrzp",
-        "button_VnTdTz"
+        "heading_mLMJqt",
+        "text_cfzVaE",
+        "button_L7kqMm"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Label_Pile.png",
+        "image": "shopify://shop_images/Label_Pile_Downloadable_Labels.png",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -395,7 +395,7 @@
     "main",
     "image_banner_BE8Ytx",
     "rich_text_LgdX6j",
-    "image_with_text_FJUphp",
+    "image_with_text_bfhm6L",
     "multicolumn_yMKUJP",
     "multicolumn_bgewmG",
     "multicolumn_kYMhEz"

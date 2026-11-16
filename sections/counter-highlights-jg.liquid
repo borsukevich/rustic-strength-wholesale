@@ -1,0 +1,247 @@
+{%- liquid
+  assign valid_counter_count = 0
+  for block in section.blocks
+    if block.settings.number != blank and block.settings.text != blank
+      assign valid_counter_count = valid_counter_count | plus: 1
+    endif
+  endfor
+-%}
+
+{%- if valid_counter_count > 0 -%}
+  <section
+    id="CounterHighlights-{{ section.id }}"
+    class="counter-highlights color-{{ section.settings.color_scheme }}"
+    data-counter-highlights
+    data-carousel="{{ section.settings.mobile_carousel }}"
+    style="
+      --ch-padding-top: {{ section.settings.padding_top }}px;
+      --ch-padding-bottom: {{ section.settings.padding_bottom }}px;
+      --ch-padding-top-mobile: {{ section.settings.padding_top_mobile }}px;
+      --ch-padding-bottom-mobile: {{ section.settings.padding_bottom_mobile }}px;
+      --ch-counter-size: {{ section.settings.counter_size }}px;
+      --ch-counter-size-mobile: {{ section.settings.counter_size_mobile }}px;
+      --ch-text-size: {{ section.settings.text_size }}px;
+      --ch-text-size-mobile: {{ section.settings.text_size_mobile }}px;
+      --ch-gap: {{ section.settings.counter_gap }}px;
+      --ch-gap-mobile: {{ section.settings.counter_gap_mobile }}px;
+      --ch-mobile-columns: {{ section.settings.mobile_columns }};
+    "
+  >
+    <div class="counter-highlights__container{% if section.settings.wide_layout %} counter-highlights__container--wide{% endif %}">
+      {%- if section.settings.layout == 'image' and section.settings.image_position == 'left' and section.settings.image != blank -%}
+        <div class="counter-highlights__image-wrap counter-highlights__image-wrap--lead">
+          {{ section.settings.image | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '400, 600, 900, 1200, 1400', sizes: '(min-width: 990px) 40vw, 100vw', class: 'counter-highlights__image', alt: section.settings.image.alt | escape }}
+        </div>
+      {%- endif -%}
+
+      <div class="counter-highlights__content{% if section.settings.layout == 'side' %} counter-highlights__content--side{% elsif section.settings.layout == 'image' %} counter-highlights__content--image{% endif %}">
+        {%- if section.settings.heading != blank or section.settings.subheading != blank or section.settings.intro != blank or section.settings.button_label != blank -%}
+          <div class="counter-highlights__header counter-highlights__header--{{ section.settings.header_alignment }}">
+            {%- if section.settings.subheading != blank -%}<p class="counter-highlights__subheading">{{ section.settings.subheading | escape }}</p>{%- endif -%}
+            {%- if section.settings.heading != blank -%}<h2 class="counter-highlights__heading">{{ section.settings.heading }}</h2>{%- endif -%}
+            {%- if section.settings.intro != blank -%}<div class="counter-highlights__intro rte">{{ section.settings.intro }}</div>{%- endif -%}
+            {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
+              <a class="counter-highlights__button" href="{{ section.settings.button_link }}">{{ section.settings.button_label | escape }}</a>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+
+        <div class="counter-highlights__items{% if section.settings.layout == 'stacked' %} counter-highlights__items--stacked{% endif %}{% if section.settings.mobile_carousel %} counter-highlights__items--carousel{% endif %}" data-counter-items>
+          {%- for block in section.blocks -%}
+            {%- assign counter_number = block.settings.number | plus: 0 -%}
+            {%- if block.settings.number != blank and block.settings.text != blank -%}
+              <div class="counter-highlights__item" {{ block.shopify_attributes }}>
+                <p class="counter-highlights__value">
+                  <span data-counter-value data-end-value="{{ counter_number }}" data-duration="{{ block.settings.duration }}">0</span><span>{{ block.settings.unit | escape }}</span>
+                </p>
+                <div class="counter-highlights__label rte">{{ block.settings.text }}</div>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+
+        {%- if section.settings.mobile_carousel and valid_counter_count > 1 -%}
+          <div class="counter-highlights__pagination" data-counter-pagination aria-label="Counter slides">
+            {%- for block in section.blocks -%}
+              {%- if block.settings.number != blank and block.settings.text != blank -%}
+                <button type="button" class="counter-highlights__dot{% if forloop.first %} is-active{% endif %}" aria-label="Go to counter {{ forloop.index }}" data-counter-dot="{{ forloop.index0 }}"></button>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+
+      {%- if section.settings.layout == 'image' and section.settings.image_position == 'right' and section.settings.image != blank -%}
+        <div class="counter-highlights__image-wrap counter-highlights__image-wrap--trail">
+          {{ section.settings.image | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '400, 600, 900, 1200, 1400', sizes: '(min-width: 990px) 40vw, 100vw', class: 'counter-highlights__image', alt: section.settings.image.alt | escape }}
+        </div>
+      {%- endif -%}
+    </div>
+  </section>
+{%- endif -%}
+
+{% style %}
+  #CounterHighlights-{{ section.id }} { padding-block: var(--ch-padding-top) var(--ch-padding-bottom); color: rgb(var(--color-foreground)); background: rgb(var(--color-background)); }
+  #CounterHighlights-{{ section.id }} .counter-highlights__container { width: min(100% - 4rem, 120rem); margin-inline: auto; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__container--wide { width: min(100% - 4rem, 160rem); }
+  #CounterHighlights-{{ section.id }} .counter-highlights__header { margin-bottom: 3.2rem; display: flex; flex-direction: column; gap: 1rem; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__header--left { text-align: left; align-items: flex-start; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__header--center { text-align: center; align-items: center; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__header--right { text-align: right; align-items: flex-end; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__subheading { margin: 0; opacity: .75; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__heading { margin: 0; font-size: clamp(2.4rem, 4vw, 4.8rem); line-height: 1.12; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__intro { max-width: 70rem; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__button { display: inline-flex; align-items: center; justify-content: center; padding: 1.1rem 2.2rem; border: .1rem solid currentColor; border-radius: {{ section.settings.button_radius }}px; color: inherit; text-decoration: none; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__items { display: grid; grid-template-columns: repeat({{ section.settings.desktop_columns }}, minmax(0, 1fr)); gap: var(--ch-gap); }
+  #CounterHighlights-{{ section.id }} .counter-highlights__items--stacked { grid-template-columns: 1fr; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__item { min-width: 0; text-align: {{ section.settings.counter_alignment }}; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__value { display: flex; align-items: baseline; justify-content: {% if section.settings.counter_alignment == 'left' %}flex-start{% elsif section.settings.counter_alignment == 'right' %}flex-end{% else %}center{% endif %}; gap: .08em; margin: 0 0 1rem; font-size: var(--ch-counter-size); line-height: 1; font-weight: 700; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__label { font-size: var(--ch-text-size); line-height: 1.35; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__image-wrap { overflow: hidden; border-radius: {{ section.settings.image_radius }}px; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__image { display: block; width: 100%; height: 100%; object-fit: cover; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__content--side { display: grid; grid-template-columns: minmax(20rem, .75fr) minmax(0, 1.5fr); align-items: center; gap: 4rem; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__content--side .counter-highlights__header { margin: 0; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__content--image { display: flex; flex-direction: column; justify-content: center; gap: 3rem; }
+  #CounterHighlights-{{ section.id }} .counter-highlights__pagination { display: none; }
+  @media screen and (min-width: 990px) {
+    #CounterHighlights-{{ section.id }} .counter-highlights__container:has(.counter-highlights__content--image):has(.counter-highlights__image-wrap) { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 4rem; align-items: center; }
+    #CounterHighlights-{{ section.id }} .counter-highlights__container:has(.counter-highlights__content--image) .counter-highlights__image-wrap--lead { grid-column: 1; grid-row: 1; }
+    #CounterHighlights-{{ section.id }} .counter-highlights__container:has(.counter-highlights__content--image) .counter-highlights__image-wrap--trail { grid-column: 2; grid-row: 1; }
+    #CounterHighlights-{{ section.id }} .counter-highlights__container:has(.counter-highlights__image-wrap--lead) .counter-highlights__content--image { grid-column: 2; grid-row: 1; }
+    #CounterHighlights-{{ section.id }} .counter-highlights__container:has(.counter-highlights__image-wrap--trail) .counter-highlights__content--image { grid-column: 1; grid-row: 1; }
+  }
+  @media screen and (max-width: 989px) {
+    #CounterHighlights-{{ section.id }} { padding-block: var(--ch-padding-top-mobile) var(--ch-padding-bottom-mobile); }
+    #CounterHighlights-{{ section.id }} .counter-highlights__container, #CounterHighlights-{{ section.id }} .counter-highlights__container--wide { width: min(100% - 3rem, 80rem); }
+    #CounterHighlights-{{ section.id }} .counter-highlights__items { grid-template-columns: repeat(var(--ch-mobile-columns), minmax(0, 1fr)); gap: var(--ch-gap-mobile); }
+    #CounterHighlights-{{ section.id }} .counter-highlights__value { font-size: var(--ch-counter-size-mobile); }
+    #CounterHighlights-{{ section.id }} .counter-highlights__label { font-size: var(--ch-text-size-mobile); }
+    #CounterHighlights-{{ section.id }} .counter-highlights__content--side { grid-template-columns: 1fr; gap: 2.5rem; }
+    #CounterHighlights-{{ section.id }} .counter-highlights__content--side .counter-highlights__header { margin-bottom: 0; }
+    #CounterHighlights-{{ section.id }} .counter-highlights__content--image { display: flex; flex-direction: column; gap: 2.5rem; }
+    #CounterHighlights-{{ section.id }} .counter-highlights__image-wrap { order: 0; }
+    #CounterHighlights-{{ section.id }} .counter-highlights__content--image .counter-highlights__header { order: 1; margin: 0; }
+    #CounterHighlights-{{ section.id }} .counter-highlights__content--image .counter-highlights__items { order: 2; width: 100%; }
+    #CounterHighlights-{{ section.id }} .counter-highlights__items--carousel { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; margin-inline: -1.5rem; padding-inline: 1.5rem; }
+    #CounterHighlights-{{ section.id }} .counter-highlights__items--carousel::-webkit-scrollbar { display: none; }
+    #CounterHighlights-{{ section.id }} .counter-highlights__items--carousel .counter-highlights__item { flex: 0 0 calc((100% - (var(--ch-gap-mobile) * (var(--ch-mobile-columns) - 1))) / var(--ch-mobile-columns)); scroll-snap-align: start; }
+    #CounterHighlights-{{ section.id }} .counter-highlights__pagination { display: flex; justify-content: center; gap: .8rem; margin-top: 2rem; }
+    #CounterHighlights-{{ section.id }} .counter-highlights__dot { width: .8rem; height: .8rem; padding: 0; border: 0; border-radius: 50%; background: currentColor; opacity: .3; cursor: pointer; }
+    #CounterHighlights-{{ section.id }} .counter-highlights__dot.is-active { opacity: 1; }
+  }
+  @media (prefers-reduced-motion: reduce) { #CounterHighlights-{{ section.id }} *, #CounterHighlights-{{ section.id }} *::before, #CounterHighlights-{{ section.id }} *::after { scroll-behavior: auto !important; } }
+{% endstyle %}
+
+<script>
+  (() => {
+    const init = (section) => {
+      if (!section || section.dataset.initialized === 'true') return;
+      section.dataset.initialized = 'true';
+      const counters = [...section.querySelectorAll('[data-counter-value]')];
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const animateCounter = (el) => {
+        if (el.dataset.counted === 'true') return;
+        el.dataset.counted = 'true';
+        const end = Number(el.dataset.endValue);
+        if (!Number.isFinite(end)) { el.textContent = el.dataset.endValue; return; }
+        const duration = Math.max(0, Number(el.dataset.duration) || 0) * 1000;
+        if (reducedMotion || duration === 0) { el.textContent = end.toLocaleString(); return; }
+        const startTime = performance.now();
+        const step = (now) => {
+          const progress = Math.min((now - startTime) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(end * eased).toLocaleString();
+          if (progress < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      };
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+          if (entry.isIntersecting) { counters.forEach(animateCounter); observer.disconnect(); }
+        }), { threshold: 0.25 });
+        observer.observe(section);
+      } else counters.forEach(animateCounter);
+
+      const items = section.querySelector('[data-counter-items]');
+      const dots = [...section.querySelectorAll('[data-counter-dot]')];
+      if (!items || !dots.length) return;
+      dots.forEach((dot) => dot.addEventListener('click', () => {
+        const item = items.children[Number(dot.dataset.counterDot)];
+        if (item) items.scrollTo({ left: item.offsetLeft - items.offsetLeft, behavior: reducedMotion ? 'auto' : 'smooth' });
+      }));
+      let ticking = false;
+      items.addEventListener('scroll', () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const itemWidth = items.firstElementChild?.getBoundingClientRect().width || 1;
+          const gap = parseFloat(getComputedStyle(items).columnGap) || 0;
+          const active = Math.round(items.scrollLeft / (itemWidth + gap));
+          dots.forEach((dot, index) => dot.classList.toggle('is-active', index === active));
+          ticking = false;
+        });
+      }, { passive: true });
+    };
+    const start = () => document.querySelectorAll('[data-counter-highlights]').forEach(init);
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+    document.addEventListener('shopify:section:load', (event) => init(event.target.querySelector('[data-counter-highlights]')));
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Counter highlights",
+  "tag": "section",
+  "class": "section-counter-highlights",
+  "settings": [
+    { "type": "select", "id": "layout", "label": "Desktop layout", "options": [{ "value": "columns", "label": "Counters in columns" }, { "value": "stacked", "label": "Counters stacked" }, { "value": "side", "label": "Text beside counters" }, { "value": "image", "label": "Image beside content" }], "default": "columns" },
+    { "type": "select", "id": "desktop_columns", "label": "Counters per row on desktop", "options": [{ "value": "2", "label": "2" }, { "value": "3", "label": "3" }, { "value": "4", "label": "4" }], "default": "4" },
+    { "type": "select", "id": "mobile_columns", "label": "Counters per row on mobile", "options": [{ "value": "1", "label": "1" }, { "value": "2", "label": "2" }], "default": "1" },
+    { "type": "checkbox", "id": "mobile_carousel", "label": "Show counters as a carousel on mobile", "default": false },
+    { "type": "header", "content": "Image layout" },
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "select", "id": "image_position", "label": "Image position", "options": [{ "value": "left", "label": "Left" }, { "value": "right", "label": "Right" }], "default": "left" },
+    { "type": "range", "id": "image_radius", "label": "Image corner radius", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 8 },
+    { "type": "header", "content": "Section content" },
+    { "type": "text", "id": "subheading", "label": "Subheading" },
+    { "type": "inline_richtext", "id": "heading", "label": "Heading", "default": "Counter highlights" },
+    { "type": "richtext", "id": "intro", "label": "Text" },
+    { "type": "text", "id": "button_label", "label": "Button label" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "select", "id": "header_alignment", "label": "Heading alignment", "options": [{ "value": "left", "label": "Left" }, { "value": "center", "label": "Center" }, { "value": "right", "label": "Right" }], "default": "center" },
+    { "type": "select", "id": "counter_alignment", "label": "Counter alignment", "options": [{ "value": "left", "label": "Left" }, { "value": "center", "label": "Center" }, { "value": "right", "label": "Right" }], "default": "center" },
+    { "type": "range", "id": "button_radius", "label": "Button corner radius", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 0 },
+    { "type": "header", "content": "Counter appearance" },
+    { "type": "range", "id": "counter_size", "label": "Counter size on desktop", "min": 40, "max": 100, "step": 1, "unit": "px", "default": 70 },
+    { "type": "range", "id": "counter_size_mobile", "label": "Counter size on mobile", "min": 30, "max": 80, "step": 1, "unit": "px", "default": 50 },
+    { "type": "range", "id": "text_size", "label": "Label size on desktop", "min": 14, "max": 32, "step": 1, "unit": "px", "default": 20 },
+    { "type": "range", "id": "text_size_mobile", "label": "Label size on mobile", "min": 14, "max": 28, "step": 1, "unit": "px", "default": 18 },
+    { "type": "range", "id": "counter_gap", "label": "Spacing between counters on desktop", "min": 10, "max": 80, "step": 2, "unit": "px", "default": 40 },
+    { "type": "range", "id": "counter_gap_mobile", "label": "Spacing between counters on mobile", "min": 10, "max": 60, "step": 2, "unit": "px", "default": 20 },
+    { "type": "header", "content": "Section spacing and colors" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
+    { "type": "checkbox", "id": "wide_layout", "label": "Use wide content width", "default": false },
+    { "type": "range", "id": "padding_top", "label": "Top padding on desktop", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 72 },
+    { "type": "range", "id": "padding_bottom", "label": "Bottom padding on desktop", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 72 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Top padding on mobile", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 48 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Bottom padding on mobile", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 48 }
+  ],
+  "blocks": [
+    { "type": "counter", "name": "Counter", "limit": 4, "settings": [
+      { "type": "number", "id": "number", "label": "Number", "default": 100 },
+      { "type": "text", "id": "unit", "label": "Unit or suffix", "info": "For example: %, +, or k+" },
+      { "type": "inline_richtext", "id": "text", "label": "Label", "default": "Example achievement" },
+      { "type": "range", "id": "duration", "label": "Count-up duration", "min": 1, "max": 5, "step": 0.5, "unit": "s", "default": 2 }
+    ] },
+    { "type": "@app" }
+  ],
+  "presets": [
+    { "name": "Counter highlights", "blocks": [
+      { "type": "counter", "settings": { "number": 100, "unit": "k+", "text": "Products sold" } },
+      { "type": "counter", "settings": { "number": 98, "unit": "%", "text": "Customer satisfaction" } },
+      { "type": "counter", "settings": { "number": 10, "unit": "+", "text": "Years of experience" } },
+      { "type": "counter", "settings": { "number": 24, "unit": "h", "text": "Fast support" } }
+    ] }
+  ]
+}
+{% endschema %}

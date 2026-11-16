@@ -5,7 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <link rel="canonical" href="{{ canonical_url }}">
+        {% if request.page_type == 'blog' %}
+      {% assign noindex_blogs = 'news,tips-tricks,our-packaging,you-will-never-find-these-in-our-products,ingredients-we-stand-by,soap,company' | split: ',' %}
+      {% if noindex_blogs contains blog.handle %}
+        <meta name="robots" content="noindex, follow">
+      {% endif %}
+    {% endif %}
+    {%- assign custom_canonical = article.metafields.custom.canonical_url.value -%}
+    {%- if request.page_type == 'article' and custom_canonical != blank -%}
+      <link rel="canonical" href="{{ custom_canonical | escape }}">
+    {%- else -%}
+      <link rel="canonical" href="{{ canonical_url | escape }}">
+    {%- endif -%}
+
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -41,7 +53,7 @@
 
     <!-- Meta Pixel & Beacon Event Suppression Proxy -->
     <script>
-      (function() {
+      (function () {
         try {
           if (sessionStorage.getItem('ws_flagged_spam') === 'true') {
             const blockedEvents = ['Lead', 'CompleteRegistration', 'Wholesale Application Submitted'];
@@ -49,19 +61,19 @@
 
             const wrapFbq = (original) => {
               if (!original || original.isProxied) return original;
-              
-              const proxy = function() {
+
+              const proxy = function () {
                 const args = Array.prototype.slice.call(arguments);
                 const eventName = args[1];
-                
+
                 if (blockedEvents.includes(eventName)) {
                   console.warn('Honeypot flag active: Suppressing conversion event:', eventName);
                   return;
                 }
-                
+
                 return original.apply(this, arguments);
               };
-              
+
               Object.assign(proxy, original);
               proxy.isProxied = true;
               return proxy;
@@ -73,8 +85,12 @@
               Object.defineProperty(window, 'fbq', {
                 configurable: true,
                 enumerable: true,
-                get: function() { return activeFbq; },
-                set: function(newVal) { activeFbq = wrapFbq(newVal); }
+                get: function () {
+                  return activeFbq;
+                },
+                set: function (newVal) {
+                  activeFbq = wrapFbq(newVal);
+                },
               });
             }
 
@@ -85,20 +101,24 @@
               Object.defineProperty(window, '_fbq', {
                 configurable: true,
                 enumerable: true,
-                get: function() { return active_Fbq; },
-                set: function(newVal) { active_Fbq = wrapFbq(newVal); }
+                get: function () {
+                  return active_Fbq;
+                },
+                set: function (newVal) {
+                  active_Fbq = wrapFbq(newVal);
+                },
               });
             }
 
             const interceptQueue = (q) => {
               if (!q || q.isProxied) return q;
-              
-              const filtered = q.filter(item => !blockedEvents.includes(item[1]));
+
+              const filtered = q.filter((item) => !blockedEvents.includes(item[1]));
               q.length = 0;
-              filtered.forEach(item => q.push(item));
+              filtered.forEach((item) => q.push(item));
 
               const originalPush = q.push;
-              q.push = function() {
+              q.push = function () {
                 const args = Array.prototype.slice.call(arguments);
                 const eventName = args[1];
                 if (blockedEvents.includes(eventName)) {
@@ -116,19 +136,19 @@
             }
 
             const OriginalImage = window.Image;
-            window.Image = function() {
+            window.Image = function () {
               const img = new OriginalImage(...arguments);
               Object.defineProperty(img, 'src', {
-                get: function() {
+                get: function () {
                   return img.getAttribute('src');
                 },
-                set: function(val) {
+                set: function (val) {
                   if (typeof val === 'string' && val.includes('facebook.com/tr') && val.includes('ev=Lead')) {
                     console.warn('Suppressed Image constructor Facebook Lead beacon:', val);
                     return;
                   }
                   img.setAttribute('src', val);
-                }
+                },
               });
               return img;
             };
@@ -136,22 +156,22 @@
             const originalImageSrcDescriptor = Object.getOwnPropertyDescriptor(HTMLImageElement.prototype, 'src');
             if (originalImageSrcDescriptor && originalImageSrcDescriptor.set) {
               Object.defineProperty(HTMLImageElement.prototype, 'src', {
-                get: function() {
+                get: function () {
                   return originalImageSrcDescriptor.get.call(this);
                 },
-                set: function(val) {
+                set: function (val) {
                   if (typeof val === 'string' && val.includes('facebook.com/tr') && val.includes('ev=Lead')) {
                     console.warn('Suppressed HTMLImageElement Facebook Lead beacon:', val);
                     return;
                   }
                   originalImageSrcDescriptor.set.call(this, val);
-                }
+                },
               });
             }
 
             if (navigator.sendBeacon) {
               const originalSendBeacon = navigator.sendBeacon;
-              navigator.sendBeacon = function(url) {
+              navigator.sendBeacon = function (url) {
                 if (typeof url === 'string' && url.includes('facebook.com/tr') && url.includes('ev=Lead')) {
                   console.warn('Suppressed sendBeacon Facebook Lead call:', url);
                   return true;
@@ -162,7 +182,7 @@
 
             if (window.fetch) {
               const originalFetch = window.fetch;
-              window.fetch = function(input) {
+              window.fetch = function (input) {
                 let url = '';
                 if (typeof input === 'string') {
                   url = input;
@@ -184,12 +204,12 @@
     </script>
 
     <script>
-      (function() {
+      (function () {
         const OriginalDateTimeFormat = Intl.DateTimeFormat;
         function normalizeTimezone(tz) {
           if (typeof tz !== 'string' && typeof tz !== 'number') return tz;
           const str = String(tz).trim();
-          
+
           const match = str.match(/^([+-])?(\d{1,2})(?::(\d{2}))?$/);
           if (match) {
             const sign = match[1] === '+' ? '-' : '+';
@@ -199,7 +219,7 @@
           }
           return tz;
         }
-        Intl.DateTimeFormat = function(locales, options) {
+        Intl.DateTimeFormat = function (locales, options) {
           if (options && options.timeZone) {
             const normalized = normalizeTimezone(options.timeZone);
             try {
@@ -488,23 +508,54 @@
           'fbclid',
         ];
 
+        const getSafeStore = (storage, key) => {
+          try {
+            return storage.getItem(key) || '';
+          } catch (e) {
+            return '';
+          }
+        };
+
+        const setSafeStore = (storage, key, val) => {
+          try {
+            storage.setItem(key, val);
+          } catch (e) {}
+        };
+
         let hasNewTracking = false;
 
         trackingParams.forEach((param) => {
           if (urlParams.has(param)) {
-            sessionStorage.setItem('ws_' + param, urlParams.get(param));
-            hasNewTracking = true;
+            const val = urlParams.get(param);
+            if (val) {
+              setSafeStore(sessionStorage, 'ws_' + param, val);
+              setSafeStore(localStorage, 'ws_' + param, val);
+              hasNewTracking = true;
+
+              if (!getSafeStore(localStorage, 'ws_first_' + param)) {
+                setSafeStore(localStorage, 'ws_first_' + param, val);
+              }
+            }
           }
         });
 
-        if (hasNewTracking || !sessionStorage.getItem('ws_landing_page')) {
-          sessionStorage.setItem('ws_landing_page', window.location.href);
+        const currentLanding = window.location.href;
+        if (hasNewTracking || !getSafeStore(sessionStorage, 'ws_landing_page')) {
+          setSafeStore(sessionStorage, 'ws_landing_page', currentLanding);
+          setSafeStore(localStorage, 'ws_landing_page', currentLanding);
+        }
+        if (!getSafeStore(localStorage, 'ws_first_landing_page')) {
+          setSafeStore(localStorage, 'ws_first_landing_page', currentLanding);
         }
 
-        if (!sessionStorage.getItem('ws_referrer') && document.referrer) {
-          const currentHost = window.location.hostname;
-          if (!document.referrer.includes(currentHost)) {
-            sessionStorage.setItem('ws_referrer', document.referrer);
+        const currentRef = document.referrer;
+        if (currentRef && !currentRef.includes(window.location.hostname)) {
+          if (!getSafeStore(sessionStorage, 'ws_referrer')) {
+            setSafeStore(sessionStorage, 'ws_referrer', currentRef);
+            setSafeStore(localStorage, 'ws_referrer', currentRef);
+          }
+          if (!getSafeStore(localStorage, 'ws_first_referrer')) {
+            setSafeStore(localStorage, 'ws_first_referrer', currentRef);
           }
         }
       })();
@@ -597,10 +648,10 @@
 
         const replacePriceText = () => {
           const prices = document.querySelectorAll('.rebuy-product-price .rebuy-money');
-          
+
           prices.forEach(price => {
             const priceContainer = price.closest('.rebuy-product-price');
-            
+
             if (priceContainer && !priceContainer.classList.contains('wholesale-hidden')) {
               priceContainer.innerHTML = '<a href="{{ routes.account_login_url }}" class="login-link-price">Please login for pricing</a>';
               priceContainer.classList.add('wholesale-hidden');
@@ -611,7 +662,7 @@
         let debounceTimer;
         const observer = new MutationObserver((mutations) => {
           let hasNewNodes = false;
-          
+
           mutations.forEach((mutation) => {
             if (mutation.addedNodes.length > 0) {
               hasNewNodes = true;
@@ -637,7 +688,7 @@
 
     {% unless customer %}
       <style>
-        form[data-type="add-to-cart-form"],
+        form[data-type='add-to-cart-form'],
         .rebuy-product-actions,
         .appattic_price_span,
         .quick-add,
@@ -655,9 +706,9 @@
       </style>
     {% endunless %}
 
-    {%- if customer.tags contains "B2B" -%}
-      {%- render "rebuy-b2b" -%}
-      {%- render "rebuy-extensions" -%}
+    {%- if customer.tags contains 'B2B' -%}
+      {%- render 'rebuy-b2b' -%}
+      {%- render 'rebuy-extensions' -%}
     {%- endif -%}
 
     {%- if template == 'page.b2b-application-form' -%}
@@ -683,6 +734,32 @@
             } catch (e) {}
           };
 
+          const getSafeTrackingItem = (param) => {
+            try {
+              return (
+                sessionStorage.getItem('ws_' + param) ||
+                localStorage.getItem('ws_' + param) ||
+                localStorage.getItem('ws_first_' + param) ||
+                ''
+              );
+            } catch (e) {
+              return '';
+            }
+          };
+
+          const getSafeFirstTrackingItem = (param) => {
+            try {
+              return (
+                localStorage.getItem('ws_first_' + param) ||
+                sessionStorage.getItem('ws_' + param) ||
+                localStorage.getItem('ws_' + param) ||
+                ''
+              );
+            } catch (e) {
+              return '';
+            }
+          };
+
           const getSafeCookieVal = (name) => {
             try {
               const value = `; ${document.cookie}`;
@@ -692,6 +769,17 @@
               return '';
             }
           };
+
+          function forceReactValueUpdate(element, newValue) {
+            const prototype =
+              element.tagName === 'TEXTAREA' ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
+            const descriptor = Object.getOwnPropertyDescriptor(prototype, 'value');
+            if (descriptor && descriptor.set) {
+              descriptor.set.call(element, newValue);
+              element.dispatchEvent(new Event('input', { bubbles: true }));
+              element.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+          }
 
           function initiateHoneypotAndUtms(embedEl) {
             if (!embedEl || !embedEl.shadowRoot) {
@@ -705,25 +793,39 @@
             }
 
             const trackingFields = [
-              { id: 'attribution#utm_source', val: getSafeSessionItem('ws_utm_source') },
-              { id: 'attribution#utm_medium', val: getSafeSessionItem('ws_utm_medium') },
-              { id: 'attribution#utm_campaign', val: getSafeSessionItem('ws_utm_campaign') },
-              { id: 'attribution#meta_tracking_data', val: (() => {
+              { id: 'attribution#utm_source', val: getSafeTrackingItem('utm_source') },
+              { id: 'attribution#utm_medium', val: getSafeTrackingItem('utm_medium') },
+              { id: 'attribution#utm_campaign', val: getSafeTrackingItem('utm_campaign') },
+              { id: 'attribution#utm_content', val: getSafeTrackingItem('utm_content') },
+              { id: 'attribution#utm_term', val: getSafeTrackingItem('utm_term') },
+              { id: 'attribution#first_utm_source', val: getSafeFirstTrackingItem('utm_source') },
+              { id: 'attribution#first_utm_medium', val: getSafeFirstTrackingItem('utm_medium') },
+              { id: 'attribution#first_utm_campaign', val: getSafeFirstTrackingItem('utm_campaign') },
+              { id: 'attribution#first_utm_content', val: getSafeFirstTrackingItem('utm_content') },
+              { id: 'attribution#first_utm_term', val: getSafeFirstTrackingItem('utm_term') },
+              {
+                id: 'attribution#meta_tracking_data',
+                val: (() => {
                   return `fbp:${getSafeCookieVal('_fbp')}||fbc:${getSafeCookieVal('_fbc')}||ua:${navigator.userAgent}`;
-                })()
-              }
+                })(),
+              },
             ];
 
             const hideTrackingFields = () => {
               const formLabels = embedEl.shadowRoot.querySelectorAll('label, span');
-              formLabels.forEach(label => {
+              formLabels.forEach((label) => {
                 const labelText = (label.textContent || '').toLowerCase();
                 if (
-                  labelText.includes('attribution utm') || 
-                  labelText.includes('meta tracking data') || 
-                  labelText.includes('attribution hashed email')
+                  labelText.includes('attribution utm') ||
+                  labelText.includes('meta tracking data') ||
+                  labelText.includes('attribution hashed email') ||
+                  labelText.includes('first touch') ||
+                  labelText.includes('attribution')
                 ) {
-                  const fieldRow = label.closest('._formFieldContainer_1mxsl_5') || label.parentElement;
+                  const fieldRow =
+                    label.closest('._formFieldContainer_1mxsl_5') ||
+                    label.closest('[data-testid*="field"]') ||
+                    label.parentElement;
                   if (fieldRow) {
                     fieldRow.style.setProperty('display', 'none', 'important');
                   }
@@ -732,13 +834,11 @@
             };
 
             const setupStaticFields = () => {
-              trackingFields.forEach(field => {
+              trackingFields.forEach((field) => {
                 const input = embedEl.shadowRoot.getElementById(field.id);
-                if (input) {
+                if (input && field.val) {
                   if (!input.value || input.value !== field.val) {
-                    input.value = field.val;
-                    input.dispatchEvent(new Event('input', { bubbles: true }));
-                    input.dispatchEvent(new Event('change', { bubbles: true }));
+                    forceReactValueUpdate(input, field.val);
                   }
                 }
               });
@@ -753,12 +853,13 @@
 
             const honeypotWrapper = document.createElement('div');
             honeypotWrapper.id = 'ws_honeypot_wrapper';
+            honeypotWrapper.setAttribute('aria-hidden', 'true');
             honeypotWrapper.style.cssText =
-              'position: absolute !important; left: -9999px !important; top: -9999px !important; opacity: 0 !important; pointer-events: none !important; z-1 !important;';
+              'position: absolute !important; left: -9999px !important; top: -9999px !important; opacity: 0 !important; pointer-events: none !important; z-index: -1 !important; height: 0 !important; width: 0 !important; overflow: hidden !important;';
 
             honeypotWrapper.innerHTML = `
               <label for="form_ws_alt_routing_num">System Route ID (Leave Blank)</label>
-              <input id="form_ws_alt_routing_num" type="text" name="ws_alt_routing_num" autocomplete="new-password" tabindex="-1">
+              <input id="form_ws_alt_routing_num" type="text" name="ws_alt_routing_num" autocomplete="off" data-lpignore="true" data-1p-ignore="true" tabindex="-1">
             `;
             appForm.prepend(honeypotWrapper);
 
@@ -766,7 +867,7 @@
               const msgBuffer = new TextEncoder().encode(emailStr.toLowerCase().trim());
               const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
               const hashArray = Array.from(new Uint8Array(hashBuffer));
-              return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+              return hashArray.map((b) => b.toString(16).padStart(2, '0')).join('');
             }
 
             const emailInput = embedEl.shadowRoot.getElementById('email');
@@ -777,22 +878,10 @@
                   const generatedHash = await computeEmailHash(currentEmail);
                   const hashedInput = embedEl.shadowRoot.getElementById('attribution#hashed_email');
                   if (hashedInput && hashedInput.value !== generatedHash) {
-                    hashedInput.value = generatedHash;
-                    hashedInput.dispatchEvent(new Event('input', { bubbles: true }));
-                    hashedInput.dispatchEvent(new Event('change', { bubbles: true }));
+                    forceReactValueUpdate(hashedInput, generatedHash);
                   }
                 }
               });
-            }
-
-            function forceReactValueUpdate(element, newValue) {
-              const prototype = element.tagName === 'TEXTAREA' ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
-              const descriptor = Object.getOwnPropertyDescriptor(prototype, 'value');
-              if (descriptor && descriptor.set) {
-                descriptor.set.call(element, newValue);
-                element.dispatchEvent(new Event('input', { bubbles: true }));
-                element.dispatchEvent(new Event('change', { bubbles: true }));
-              }
             }
 
             function evaluateHoneypotSpam() {
@@ -815,7 +904,9 @@
               honeypotInput.addEventListener('blur', evaluateHoneypotSpam);
             }
 
-            const submitButton = appForm.querySelector('[data-testid="btn-form-submit"]') || appForm.querySelector('button[type="submit"]');
+            const submitButton =
+              appForm.querySelector('[data-testid="btn-form-submit"]') ||
+              appForm.querySelector('button[type="submit"]');
             if (submitButton) {
               submitButton.addEventListener('pointerdown', evaluateHoneypotSpam);
               submitButton.addEventListener('click', evaluateHoneypotSpam);
@@ -833,22 +924,36 @@
                 return;
               }
               appForm.dataset.tracked = 'true';
-              setTimeout(() => { appForm.dataset.tracked = 'false'; }, 3000);
+              setTimeout(() => {
+                appForm.dataset.tracked = 'false';
+              }, 3000);
 
               const emailValue = emailInput ? emailInput.value.trim() : '';
               if (emailValue) {
                 const klaviyo = window.klaviyo || window._learnq || [];
-                const trackingParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid', 'landing_page', 'referrer'];
+                const trackingParams = [
+                  'utm_source',
+                  'utm_medium',
+                  'utm_campaign',
+                  'utm_content',
+                  'utm_term',
+                  'gclid',
+                  'fbclid',
+                ];
                 const utmData = {};
 
                 trackingParams.forEach((param) => {
-                  utmData[param] = getSafeSessionItem('ws_' + param);
+                  utmData[param] = getSafeTrackingItem(param);
+                  utmData['first_' + param] = getSafeFirstTrackingItem(param);
                 });
 
-                utmData['landing_page'] = getSafeSessionItem('ws_landing_page') || window.location.href;
+                utmData['landing_page'] = getSafeTrackingItem('landing_page') || window.location.href;
+                utmData['first_landing_page'] = getSafeFirstTrackingItem('landing_page') || window.location.href;
+                utmData['referrer'] = getSafeTrackingItem('referrer');
+                utmData['first_referrer'] = getSafeFirstTrackingItem('referrer');
 
-                const profileProperties = { '$email': emailValue };
-                trackingParams.forEach((param) => {
+                const profileProperties = { $email: emailValue };
+                Object.keys(utmData).forEach((param) => {
                   if (utmData[param] !== '') {
                     profileProperties[param] = utmData[param];
                   }
@@ -889,5 +994,90 @@
         });
       </script>
     {%- endif -%}
+    <script>
+      window.addEventListener(
+        'submit',
+        function (e) {
+          const form = e.target;
+
+          if (
+            form &&
+            form.action &&
+            form.action.includes('/cart/add') &&
+            !form.closest('.quick-order-list') &&
+            !form.closest('[data-quick-order]')
+          ) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const submitButton = form.querySelector('[type="submit"], .product-form__submit');
+            const originalText = submitButton ? submitButton.innerText : 'Add to Cart';
+
+            if (submitButton) {
+              submitButton.disabled = true;
+              submitButton.innerText = 'Adding...';
+            }
+
+            fetch(window.Shopify.routes.root + 'cart/add.js', {
+              method: 'POST',
+              body: new FormData(form),
+            })
+              .then((response) => response.json())
+              .then((data) => {
+                if (submitButton) {
+                  submitButton.innerText = '✓ Added!';
+
+                  setTimeout(function () {
+                    submitButton.disabled = false;
+                    submitButton.innerText = originalText;
+                  }, 2000);
+                }
+
+                if (window.Rebuy && window.Rebuy.Cart) {
+                  window.Rebuy.Cart.getCart();
+                }
+              })
+              .catch((error) => {
+                console.error('Silent add failed:', error);
+                if (submitButton) {
+                  submitButton.disabled = false;
+                  submitButton.innerText = originalText;
+                }
+              });
+          }
+        },
+        true
+      );
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('rebuy:smartcart.ready', function (event) {
+          if (window.Rebuy && window.Rebuy.SmartCart && !window.Rebuy.SmartCart.isOverridden) {
+            const originalShow = window.Rebuy.SmartCart.show;
+
+            window.Rebuy.SmartCart.show = function (force) {
+              if (force === true) {
+                originalShow.call(window.Rebuy.SmartCart);
+              } else {
+                console.log('Automated Rebuy open hook silenced.');
+              }
+            };
+
+            window.Rebuy.SmartCart.isOverridden = true;
+          }
+        });
+
+        document
+          .querySelectorAll('a[href="/cart"], .header__cart-icon, [data-cart-trigger], .cart-link')
+          .forEach(function (cartIcon) {
+            cartIcon.addEventListener('click', function (e) {
+              if (window.Rebuy && window.Rebuy.SmartCart) {
+                e.preventDefault();
+                e.stopPropagation();
+                window.Rebuy.SmartCart.show(true);
+              }
+            });
+          });
+      });
+    </script>
   </body>
 </html>

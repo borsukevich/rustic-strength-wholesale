@@ -79,7 +79,7 @@
             "title": "1,4 Dioxane",
             "text": "<p>Synthetic, cancer-linked impurity: <strong>Avoided</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-is-1-4-dioxane-and-what-are-the-health-concerns"
+            "link": "https://rusticstrength.com/blogs/what-we-avoid/what-is-1-4-dioxane-and-what-are-the-health-concerns?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_ytziWN": {
@@ -89,7 +89,7 @@
             "title": "Ammonia",
             "text": "<p>Nitrogen and hydrogen, toxic and harmful: <strong>Avoided</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-is-ammonia-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/what-we-avoid/what-is-ammonia-and-what-does-it-do-in-products?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_zCgkey": {
@@ -99,7 +99,7 @@
             "title": "Artificial Fabric Softeners",
             "text": "<p>Chemical based, irritate and harm: <strong>Avoided</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-artificial-fabric-softeners-and-what-are-the-health-concerns"
+            "link": "https://rusticstrength.com/blogs/what-we-avoid/what-are-artificial-fabric-softeners-and-what-are-the-health-concerns?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_PUaNPL": {
@@ -109,7 +109,7 @@
             "title": "Chlorine Bleach",
             "text": "<p>Chemical compound, harsh and irritating: <strong>Avoided</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-is-bleach-and-what-are-the-health-concerns"
+            "link": "https://rusticstrength.com/blogs/what-we-avoid/what-is-bleach-and-what-are-the-health-concerns?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_EpPqfq": {
@@ -119,7 +119,17 @@
             "title": "Dyes",
             "text": "<p>Synthetic chemicals, cause irritation and toxicity: <strong>Avoided</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-the-health-concerns-of-products-containing-dyes-and-added-colors"
+            "link": "https://rusticstrength.com/blogs/what-we-avoid/what-are-the-health-concerns-of-products-containing-dyes-and-added-colors?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_38tBcP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Ethoxylated-Alcohol_Free_d62173ce-74a7-4e40-8df4-1b92a858c861.png",
+            "title": "Ethoxylated Alcohol",
+            "text": "<p>Alcohol reacted, cancer-link byproduct: <strong>Avoided</strong></p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/what-we-avoid/what-is-ethoxylated-alcohol-and-what-are-the-health-concerns?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_k4nWqz": {
@@ -129,7 +139,7 @@
             "title": "Fillers",
             "text": "<p>Various substances, reduce product effectiveness: <strong>Avoided</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-fillers-and-what-are-the-health-concerns"
+            "link": "https://rusticstrength.com/blogs/what-we-avoid/what-are-fillers-and-what-are-the-health-concerns?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_zEHtpK": {
@@ -139,7 +149,7 @@
             "title": "Gluten",
             "text": "<p>Wheat protein, potential skin allergen: <strong>Avoided</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-is-gluten-and-what-are-the-health-concerns"
+            "link": "https://rusticstrength.com/blogs/what-we-avoid/what-is-gluten-and-what-are-the-health-concerns?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_F9nWbU": {
@@ -149,7 +159,7 @@
             "title": "Optical Brighteners",
             "text": "<p>Absorbing chemicals, irritation and biaccumulation: <strong>Avoided</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-optical-brighteners-and-what-are-the-health-concerns"
+            "link": "https://rusticstrength.com/blogs/what-we-avoid/what-are-optical-brighteners-and-what-are-the-health-concerns?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_Ef9dXH": {
@@ -159,7 +169,7 @@
             "title": "Parabens",
             "text": "<p>Chemical preservatives, hormone and health concerns: <strong>Avoided</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-parabens-and-what-are-the-health-concerns"
+            "link": "https://rusticstrength.com/blogs/what-we-avoid/what-are-parabens-and-what-are-the-health-concerns?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_BBzHUQ": {
@@ -169,7 +179,7 @@
             "title": "Petroleum",
             "text": "<p>Earth-extracted oil, potential health concerns: <strong>Avoided</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-is-petroleum-and-what-are-the-health-concerns"
+            "link": "https://rusticstrength.com/blogs/what-we-avoid/what-is-petroleum-and-what-are-the-health-concerns?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_KaqPGH": {
@@ -179,7 +189,7 @@
             "title": "Phosphates",
             "text": "<p>Phosphoric compounds, kidney/ environmental concerns: <strong>Avoided</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-phosphates-and-what-are-the-health-concerns"
+            "link": "https://rusticstrength.com/blogs/what-we-avoid/what-are-phosphates-and-what-are-the-health-concerns?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_GK7zMb": {
@@ -189,7 +199,7 @@
             "title": "Phthalates",
             "text": "<p>Man-made chemicals, hormone disruption and health risks: <strong>Avoided</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-phthalates-and-what-are-the-health-concerns"
+            "link": "https://rusticstrength.com/blogs/what-we-avoid/what-are-phthalates-and-what-are-the-health-concerns?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_TbxTGJ": {
@@ -199,7 +209,7 @@
             "title": "SLS and SLES",
             "text": "<p>Synthetic cleaners, irritate and pollute: <strong>Avoided</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-sls-and-sles-and-what-are-the-health-concerns"
+            "link": "https://rusticstrength.com/blogs/what-we-avoid/what-are-sls-and-sles-and-what-are-the-health-concerns?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_jwCihJ": {
@@ -209,7 +219,7 @@
             "title": "Sulfates",
             "text": "<p>Chemical cleaners, cause irritation and dryness: <strong>Avoided</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products/what-are-sulfates-and-what-are-the-health-concerns"
+            "link": "https://rusticstrength.com/blogs/what-we-avoid/what-are-sulfates-and-what-are-the-health-concerns?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         }
       },
@@ -219,6 +229,7 @@
         "column_zCgkey",
         "column_PUaNPL",
         "column_EpPqfq",
+        "column_38tBcP",
         "column_k4nWqz",
         "column_zEHtpK",
         "column_F9nWbU",
@@ -247,55 +258,78 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_cyPNBK": {
+    "multicolumn_P9qiGE": {
       "type": "multicolumn",
       "blocks": {
-        "column_AwJiPf": {
+        "column_8Ez3Kb": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/rusticflo_91021_Editorial_illustration_of_person_replacing_ch_2_08ad338b-c25a-42d3-93dd-2c0c80739cec.png",
-            "title": "Ingredients We Use",
+            "image": "shopify://shop_images/checklist-blog.png",
+            "title": "Business Tips",
             "text": "",
-            "link_label": "Learn Why",
-            "link": "shopify://blogs/ingredients-we-stand-by"
+            "link_label": "Get Advice",
+            "link": "shopify://blogs/business-tips"
           }
         },
-        "column_PaEfyg": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/wanderingperson_dbe4c6e9-fb9c-4c6f-b4cc-75befe171e09.png",
-            "title": "The Toxic Truth",
-            "text": "",
-            "link_label": "Deep Dive",
-            "link": "shopify://blogs/news"
-          }
-        },
-        "column_KCVMiX": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Sustainability.jpg",
-            "title": "Our Sustainability",
-            "text": "",
-            "link_label": "Get Circular",
-            "link": "shopify://blogs/our-packaging"
-          }
-        },
-        "column_4NGLBB": {
+        "column_QpErzr": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/rusticflo_91021_Flat_2-D_editorial_illustration_New-Yorker_styl_961f6b7d-8411-49cf-bcae-a53ace2ff789.png",
             "title": "Tips + Guides",
             "text": "",
             "link_label": "Clean Smart",
-            "link": "shopify://blogs/tips-tricks"
+            "link": "shopify://pages/tips-guides"
+          }
+        },
+        "column_ynWHEX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/wanderingperson_dbe4c6e9-fb9c-4c6f-b4cc-75befe171e09.png",
+            "title": "The Toxic Truth",
+            "text": "",
+            "link_label": "Deep Dive",
+            "link": "shopify://pages/the-toxic-truth"
+          }
+        },
+        "column_NgRnqt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_modern_2-D_editorial_illustration--sleek_lab__3_7e6af2cf-c2c7-456d-a2d9-fdfa1c76a3f6.png",
+            "title": "Ingredients We Use",
+            "text": "",
+            "link_label": "Learn Why",
+            "link": "shopify://pages/ingredients-we-use"
+          }
+        },
+        "column_HA6AgU": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/avoid.jpg",
+            "title": "Ingredients We Avoid",
+            "text": "",
+            "link_label": "Avoid Toxins",
+            "link": "shopify://pages/ingredients-we-avoid"
+          }
+        },
+        "column_P7R8Dw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sustainability.jpg",
+            "title": "Our Sustainability",
+            "text": "",
+            "link_label": "Get Circular",
+            "link": "shopify://pages/our-sustainability"
           }
         }
       },
       "block_order": [
-        "column_AwJiPf",
-        "column_PaEfyg",
-        "column_KCVMiX",
-        "column_4NGLBB"
+        "column_8Ez3Kb",
+        "column_QpErzr",
+        "column_ynWHEX",
+        "column_NgRnqt",
+        "column_HA6AgU",
+        "column_P7R8Dw"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -305,7 +339,7 @@
         "image_ratio": "circle",
         "button_label": "All Blogs",
         "button_link": "shopify://pages/blog-landing-page",
-        "columns_desktop": 4,
+        "columns_desktop": 5,
         "column_alignment": "left",
         "background_style": "primary",
         "color_scheme": "scheme-1",
@@ -320,6 +354,6 @@
     "main",
     "image_banner_GHdj4Y",
     "multicolumn_xh8CHX",
-    "multicolumn_cyPNBK"
+    "multicolumn_P9qiGE"
   ]
 }

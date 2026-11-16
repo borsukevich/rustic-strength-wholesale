@@ -78,7 +78,7 @@
             "title": "Aloe Vera",
             "text": "<p>Hydrates, soothes and promotes healthy skin and hair. <strong>Used in our Nourish Botanicals products.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/unlock-the-soothing-power-of-aloe-vera-leaf-juice-for-hair-and-skin-your-ultimate-guide"
+            "link": "https://rusticstrength.com/blogs/ingredients/unlock-the-soothing-power-of-aloe-vera-leaf-juice-for-hair-and-skin-your-ultimate-guide?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_WcTnFa": {
@@ -87,7 +87,7 @@
             "title": "Avocado Oil",
             "text": "<p><br/>Nourishes and hydrates skin & hair. <strong>Used in our Lotions and Conditioners</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/your-ultimate-guide-to-food-grade-cold-pressed-avocado-oil"
+            "link": "https://rusticstrength.com/blogs/ingredients/your-ultimate-guide-to-food-grade-cold-pressed-avocado-oil?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_4XzE3P": {
@@ -96,7 +96,7 @@
             "title": "Caprylyl Capryl Glucoside",
             "text": "<p>Plant-based, oil dissolver and foamer. <strong>Used in our liquid cleaners.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_QrFf6w": {
@@ -105,7 +105,7 @@
             "title": "Cetearyl Alcohol",
             "text": "<p>Blended fats, softens and stabilizes. <strong>Used in our conditioners and lotions.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-cetearyl-alcohol-and-what-does-it-do-in-hair-and-skin-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/cetearyl-alcohol-the-truth-behind-this-common-skincare-ingredient?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_ki6K4k": {
@@ -114,16 +114,7 @@
             "title": "Cetyl Alcohol",
             "text": "<p>Plant-based, waxy softener. <strong>Used in our hair & skin care.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-cetyl-alcohol-and-what-does-it-do-in-products"
-          }
-        },
-        "column_mhmLaR": {
-          "type": "column",
-          "settings": {
-            "title": "Charcoal Filtered Deionized Water",
-            "text": "<p>Purified water, clean and pure. <strong>Used in all liquid & cream products.</strong></p>",
-            "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-charcoal-filtered-deionized-water-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/is-cetyl-alcohol-safe-benefits-for-skin-sustainability?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_atAB8D": {
@@ -132,7 +123,25 @@
             "title": "Citric Acid",
             "text": "<p>Corn-fermented, pH control and preserves. <strong>Used in select self-care & household cleaners.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-citric-acid-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_ehA69R": {
+          "type": "column",
+          "settings": {
+            "title": "Cocamidopropyl Betaine",
+            "text": "<p>Mild Surfactant derived from coconut oil. <strong>Used in self-care & household cleaners.</strong></p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/ingredients/cocamidopropyl-betaine-in-household-cleaning-products-and-personal-care-items-what-you-need-to-know?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_VbfNmz": {
+          "type": "column",
+          "settings": {
+            "title": "Cocamidopropyl Hydroxysultaine",
+            "text": "<p>Coconut-made, gentle foam booster. <strong>Used in our cleaning, hair & skin care.</strong></p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-cocamidopropyl-hydroxysultaine-sultaine-and-what-does-it-do-in-products?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_iyxpLm": {
@@ -141,7 +150,7 @@
             "title": "Coconut Oil",
             "text": "<p>Coconut fruit, nourishes and protects hair. <strong>Used in our conditioners.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-coconut-oil-and-what-does-it-do-in-hair-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-coconut-oil-and-what-does-it-do-in-hair-products?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_KhaLXh": {
@@ -150,7 +159,7 @@
             "title": "Coco-Glucoside",
             "text": "<p>Plant-derived, gentle cleansing and foaming. <strong>Used in our liquid products.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-coco-glucoside-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-coco-glucoside-and-what-does-it-do-in-products?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_aQpad6": {
@@ -159,7 +168,7 @@
             "title": "Dimethyl 9-Decenamide",
             "text": "<p>Plant-derived, tough grease remover. <strong>Used in our laundry detergent.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-dimethyl-9-decenamide-and-what-does-it-do"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-dimethyl-9-decenamide-and-what-does-it-do?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_MzWcLN": {
@@ -168,7 +177,7 @@
             "title": "Essential Oils",
             "text": "<p>Concentrated plants, scent and benefits. <strong>Used when scent is selected.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-are-essential-oils"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-are-essential-oils?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_Lp6DrH": {
@@ -177,7 +186,7 @@
             "title": "Ethyl Alcohol",
             "text": "<p>Fermented grains, dissolves and dries. <strong>Used in our household cleaning products.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-ethyl-alcohol-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-ethyl-alcohol?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_MUKyNj": {
@@ -186,7 +195,7 @@
             "title": "Glyceryl Stearate",
             "text": "<p>Plant oils, softens and mixes. <strong>Used in our conditioners & lotions.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-glyceryl-stearate-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-glyceryl-stearate-and-what-does-it-do-in-products?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_YEJNMA": {
@@ -195,7 +204,7 @@
             "title": "Phthalate Free Fragramce Oils",
             "text": "<p>Artificial scents, provide lasting fragrance. <strong>Used when chosen as a scent.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-are-fragrance-oils"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-are-fragrance-oils?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_FaHd8q": {
@@ -204,7 +213,7 @@
             "title": "Phenoxyethanol",
             "text": "<p>Prevents bacterial growth and extends shelf life. <strong>Used in our cleaning & personal care products.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/phenoxyethanol-in-personal-care-products-what-you-need-to-know"
+            "link": "https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_pjKHxa": {
@@ -213,7 +222,7 @@
             "title": "Potassium Sorbate",
             "text": "<p>Food-safe, stops mold growth. <strong>Used in select hair & skin care products.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-potassium-sorbate-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-potassium-sorbate?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_CPUFgy": {
@@ -222,7 +231,7 @@
             "title": "Food-Grade Polysorbate 20",
             "text": "<p>Plant derived emulsifier & stabilizer. <strong>Used in liquid cleaning and personal care products.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-food-grade-polysorbate-20-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-polysorbate-20-and-what-does-it-do-in-products?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_aX7Etm": {
@@ -231,7 +240,7 @@
             "title": "Salt",
             "text": "<p>Earth mineral, water softener that enhances cleaning. <strong>Used in powdered detergents.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-salt-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-salt?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_6FQkGP": {
@@ -240,7 +249,16 @@
             "title": "Shea Butter",
             "text": "<p>Shea nuts, moisturizes skin and hair. <strong>Used in our conditioners & lotions.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-shea-butter-and-what-does-it-do-in-hair-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-shea-butter-and-what-does-it-do-in-hair-products?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_ehgqG8": {
+          "type": "column",
+          "settings": {
+            "title": "Sodium Benzoate",
+            "text": "<p>Plant-derived, stops microbial growth. <strong>Used in select hair & skin care products.</strong></p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-sodium-benzoate?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_Hr9EiD": {
@@ -249,7 +267,7 @@
             "title": "Sodium Bicarbonate",
             "text": "<p>Mineral-based, softens and cleans. <strong>Used in select powdered cleaners.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-sodium-bicarbonate-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-sodium-bicarbonate?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_TUiU9Q": {
@@ -258,7 +276,7 @@
             "title": "Sodium C14-16 Alpha Olefin Sulfonate",
             "text": "<p>Coconut-derived, gentle dirt remover. <strong>Used in our liquid cleaners.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-sodium-c14-16-alpha-olefin-sulfonate-aos-40-and-what-does-it-do"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-sodium-c14-16-alpha-olefin-sulfonate-aos-40-and-what-does-it-do?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_e3QBcR": {
@@ -267,7 +285,7 @@
             "title": "Sodium Carbonate",
             "text": "<p>Mineral-based, softens and cleans. <strong>Used in select powdered cleaners.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-sodium-carbonate-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-sodium-carbonate?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_jWPJH8": {
@@ -276,7 +294,7 @@
             "title": "Sodium Chloride",
             "text": "<p>Earth-derived, thickens and preserves. <strong>Used in our household cleaners.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-sodium-chloride-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-sodium-chloride?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_PPkttn": {
@@ -285,7 +303,7 @@
             "title": "Sodium Gluconate",
             "text": "<p>Fermented sugar, binds and cleans. <strong>Used in most liquid cleaners.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-sodium-gluconate-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-sodium-gluconate?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_Wim9gN": {
@@ -294,7 +312,7 @@
             "title": "Sodium Metasilicate",
             "text": "<p>Mineral-based, powerful stain remover. <strong>Used in Auto Dishwasher Powder.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-sodium-metasilicate-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-sodium-metasilicate?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_iRxeQP": {
@@ -303,7 +321,7 @@
             "title": "Sodium Percarbonate",
             "text": "<p>Soda ash and peroxide, cleans powerfully. <strong>Used in our powdered cleaners.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-sodium-percarbonate-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-sodium-percarbonate?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_MM3xjV": {
@@ -312,7 +330,7 @@
             "title": "Stearic Acid",
             "text": "<p>Plant-derived, binds and protects. <strong>Used in our conditioners & lotions.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-stearic-acid-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-stearic-acid-and-what-does-it-do-in-products?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         },
         "column_GVmcGb": {
@@ -321,7 +339,16 @@
             "title": "Vegetable Glycerin",
             "text": "<p>Vegetable-based, retains skin moisture. <strong>Used in our liquid cleaners & lotion.</strong></p>",
             "link_label": "Read more",
-            "link": "shopify://blogs/ingredients-we-stand-by/what-is-glycerin-and-what-does-it-do-in-products"
+            "link": "https://rusticstrength.com/blogs/ingredients/what-is-glycerin-and-what-does-it-do-in-products?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_mhmLaR": {
+          "type": "column",
+          "settings": {
+            "title": "High-Purity Water",
+            "text": "<p>Purified water, clean and pure. <strong>Used in all liquid & cream products.</strong></p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water?ref=wholesale&utm_source=wholesale&utm_medium=referral"
           }
         }
       },
@@ -331,8 +358,9 @@
         "column_4XzE3P",
         "column_QrFf6w",
         "column_ki6K4k",
-        "column_mhmLaR",
         "column_atAB8D",
+        "column_ehA69R",
+        "column_VbfNmz",
         "column_iyxpLm",
         "column_KhaLXh",
         "column_aQpad6",
@@ -345,6 +373,7 @@
         "column_CPUFgy",
         "column_aX7Etm",
         "column_6FQkGP",
+        "column_ehgqG8",
         "column_Hr9EiD",
         "column_TUiU9Q",
         "column_e3QBcR",
@@ -353,7 +382,8 @@
         "column_Wim9gN",
         "column_iRxeQP",
         "column_MM3xjV",
-        "column_GVmcGb"
+        "column_GVmcGb",
+        "column_mhmLaR"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -373,55 +403,78 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_H6PYEX": {
+    "multicolumn_3qmNj3": {
       "type": "multicolumn",
       "blocks": {
-        "column_BwepfE": {
+        "column_drKqrk": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/avoid.jpg",
-            "title": "Ingredients We Avoid",
+            "image": "shopify://shop_images/checklist-blog.png",
+            "title": "Business Tips",
             "text": "",
-            "link_label": "Avoid Toxins",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products"
+            "link_label": "Get Advice",
+            "link": "shopify://blogs/business-tips"
           }
         },
-        "column_wjdBhH": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/wanderingperson_dbe4c6e9-fb9c-4c6f-b4cc-75befe171e09.png",
-            "title": "The Toxic Truth",
-            "text": "",
-            "link_label": "Deep Dive",
-            "link": "shopify://blogs/news"
-          }
-        },
-        "column_nRKWz3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Sustainability.jpg",
-            "title": "Our Sustainability",
-            "text": "",
-            "link_label": "Get Circular",
-            "link": "shopify://blogs/our-packaging"
-          }
-        },
-        "column_4VFYDU": {
+        "column_gy7YPK": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/rusticflo_91021_Flat_2-D_editorial_illustration_New-Yorker_styl_961f6b7d-8411-49cf-bcae-a53ace2ff789.png",
             "title": "Tips + Guides",
             "text": "",
             "link_label": "Clean Smart",
-            "link": "shopify://blogs/tips-tricks"
+            "link": "shopify://pages/tips-guides"
+          }
+        },
+        "column_PmYDDr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/wanderingperson_dbe4c6e9-fb9c-4c6f-b4cc-75befe171e09.png",
+            "title": "The Toxic Truth",
+            "text": "",
+            "link_label": "Deep Dive",
+            "link": "shopify://pages/the-toxic-truth"
+          }
+        },
+        "column_eDi98V": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_modern_2-D_editorial_illustration--sleek_lab__3_7e6af2cf-c2c7-456d-a2d9-fdfa1c76a3f6.png",
+            "title": "Ingredients We Use",
+            "text": "",
+            "link_label": "Learn Why",
+            "link": "shopify://pages/ingredients-we-use"
+          }
+        },
+        "column_aqedYm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/avoid.jpg",
+            "title": "Ingredients We Avoid",
+            "text": "",
+            "link_label": "Avoid Toxins",
+            "link": "shopify://pages/ingredients-we-avoid"
+          }
+        },
+        "column_Wnk8LC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sustainability.jpg",
+            "title": "Our Sustainability",
+            "text": "",
+            "link_label": "Get Circular",
+            "link": "shopify://pages/our-sustainability"
           }
         }
       },
       "block_order": [
-        "column_BwepfE",
-        "column_wjdBhH",
-        "column_nRKWz3",
-        "column_4VFYDU"
+        "column_drKqrk",
+        "column_gy7YPK",
+        "column_PmYDDr",
+        "column_eDi98V",
+        "column_aqedYm",
+        "column_Wnk8LC"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -431,7 +484,7 @@
         "image_ratio": "circle",
         "button_label": "All Blogs",
         "button_link": "shopify://pages/blog-landing-page",
-        "columns_desktop": 4,
+        "columns_desktop": 5,
         "column_alignment": "left",
         "background_style": "primary",
         "color_scheme": "scheme-1",
@@ -446,6 +499,6 @@
     "main",
     "image_banner_FUAfMW",
     "multicolumn_ibyYfQ",
-    "multicolumn_H6PYEX"
+    "multicolumn_3qmNj3"
   ]
 }

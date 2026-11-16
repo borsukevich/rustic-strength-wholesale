@@ -54,6 +54,7 @@
         "text_QUiAKL",
         "buttons_TTDned"
       ],
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/CloseTheLoop_1x1_8604aa37-7c0d-42df-865c-cbb45cde4e53.jpg",
@@ -121,6 +122,195 @@
         "mobile_content_alignment": "center",
         "show_text_below": false,
         "content_max_width": 800
+      }
+    },
+    "image_banner_xkx89q": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_bV3czj": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_dTFgnQ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_yLgJgK": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_bV3czj",
+        "text_dTFgnQ",
+        "buttons_yLgJgK"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/30Sep26_CTL_Update_banner_5bcb5a7c-275b-446d-809e-5640c14fced9.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true,
+        "content_max_width": 800
+      }
+    },
+    "counter_highlights_jg_xnKhPn": {
+      "type": "counter-highlights-jg",
+      "blocks": {
+        "counter_aHRi6r": {
+          "type": "counter",
+          "settings": {
+            "number": 11296,
+            "unit": "+",
+            "text": "gallon containers",
+            "duration": 2.5
+          }
+        },
+        "counter_crWRWm": {
+          "type": "counter",
+          "settings": {
+            "number": 12208,
+            "unit": "+",
+            "text": "5-gallon containers",
+            "duration": 2.5
+          }
+        },
+        "counter_aKX9Ba": {
+          "type": "counter",
+          "settings": {
+            "number": 2506,
+            "unit": "+",
+            "text": "barrels",
+            "duration": 2.5
+          }
+        }
+      },
+      "block_order": [
+        "counter_aHRi6r",
+        "counter_crWRWm",
+        "counter_aKX9Ba"
+      ],
+      "name": "Counter highlights",
+      "settings": {
+        "layout": "columns",
+        "desktop_columns": "3",
+        "mobile_columns": "1",
+        "mobile_carousel": false,
+        "image": "shopify://shop_images/container_outlines_2100x500_1f83a13b-bf70-486c-9480-fae598e1aaa1.png",
+        "image_position": "left",
+        "image_radius": 8,
+        "subheading": "DATA AS OF 9/30/26",
+        "heading": "Together, we have reused",
+        "intro": "",
+        "button_label": "",
+        "button_link": "",
+        "header_alignment": "center",
+        "counter_alignment": "center",
+        "button_radius": 0,
+        "counter_size": 100,
+        "counter_size_mobile": 43,
+        "text_size": 32,
+        "text_size_mobile": 18,
+        "counter_gap": 80,
+        "counter_gap_mobile": 24,
+        "color_scheme": "scheme-9a280e18-2e7a-496c-abf1-ba200c564d4f",
+        "wide_layout": false,
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "image_banner_d7Geak": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_HeEkxn": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_4E9TTz": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_n88GEg": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HeEkxn",
+        "text_4E9TTz",
+        "buttons_n88GEg"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/container_outlines_neutral_background_2100x300_08032461-d1a5-4d5a-a9cd-f93d245a2f65.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true,
+        "content_max_width": 800
+      }
+    },
+    "video_c6zM8R": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Our Packaging Journey",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/FXunlcfZKzA",
+        "cover_image": "shopify://shop_images/CTL_video_intro.png",
+        "description": "Rustic Strength, Our Packaging Journey video describing packaging we have tried and why we choose the packaging we have. We explain how this packaging supports our mission and works in our Close the Loop program.",
+        "full_width": false,
+        "color_scheme": "scheme-5",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "multicolumn_qtqYbU": {
@@ -1013,6 +1203,10 @@
     "main",
     "image_banner_XEGT3a",
     "image_banner_bBmHqK",
+    "image_banner_xkx89q",
+    "counter_highlights_jg_xnKhPn",
+    "image_banner_d7Geak",
+    "video_c6zM8R",
     "multicolumn_qtqYbU",
     "image_with_text_JMBiM4",
     "image_with_text_Y3cVc6",

@@ -198,9 +198,9 @@
     {%- endstyle -%}
 
     <promotional-bar-component
-      class="promotional-bar section block w-full {% render 'section-classes', section %}{% if section.settings.overlay_opacity > 0 %} promotional-bar--overlay{% endif %}"
+      class="promotional-bar section block w-full {% render 'section-classes' %}{% if section.settings.overlay_opacity > 0 %} promotional-bar--overlay{% endif %}"
       data-id="{{ section.id }}"
-      style="{% render 'section-style', section %}"
+      style="{% render 'section-style' %}"
       data-enable-scheduling="{{ section.settings.enable_scheduling }}"
       data-start="{{ full_start_date }}"
       data-end="{{ full_end_date }}"
@@ -956,3 +956,16 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'section-classes', section %}"
+  to: "{% render 'section-classes' %}"
+  position: 7813..7843
+- from: "{% render 'section-style', section %}"
+  to: "{% render 'section-style' %}"
+  position: 7972..8000
+{% endcomment %}

@@ -24,31 +24,37 @@
         "featured_collection_UfPEkH": {
           "type": "featured_collection",
           "settings": {
-            "collection": "glass-and-plastic-containers"
+            "collection": "hand-soap-retail-ready-cases"
           }
         },
         "featured_collection_daRXmd": {
           "type": "featured_collection",
           "settings": {
-            "collection": "spouts-pumps-caps-copy"
+            "collection": "dish-soap-retail-ready-cases"
           }
         },
         "featured_collection_n4iYX8": {
           "type": "featured_collection",
           "settings": {
-            "collection": "spouts-pumps-caps-copy-1"
+            "collection": "surface-floor-retail-ready-cases"
           }
         },
         "featured_collection_8BcUy8": {
           "type": "featured_collection",
           "settings": {
-            "collection": "spouts-pumps-caps-copy-2"
+            "collection": "castile-soap-retail-ready-cases"
           }
         },
         "featured_collection_FKCh6t": {
           "type": "featured_collection",
           "settings": {
-            "collection": "tools"
+            "collection": "pet-care-retail-ready-cases"
+          }
+        },
+        "featured_collection_8wUiJG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "panda-eco-paper"
           }
         }
       },
@@ -57,15 +63,15 @@
         "featured_collection_daRXmd",
         "featured_collection_n4iYX8",
         "featured_collection_8BcUy8",
-        "featured_collection_FKCh6t"
+        "featured_collection_FKCh6t",
+        "featured_collection_8wUiJG"
       ],
-      "disabled": true,
       "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "title": "collections",
+        "title": "cleaning & home retail-ready collections",
         "heading_size": "h1",
         "image_ratio": "square",
-        "columns_desktop": 5,
+        "columns_desktop": 6,
         "color_scheme": "scheme-3",
         "show_view_all": false,
         "columns_mobile": "2",

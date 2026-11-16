@@ -193,9 +193,9 @@
     {%- endstyle -%}
 
     <countdown-banner
-      class="countdown-timer-bar block w-full {% render 'section-classes', section %}{% if section.settings.overlay_opacity > 0 %} countdown-timer-bar--overlay{% endif %}"
+      class="countdown-timer-bar block w-full {% render 'section-classes' %}{% if section.settings.overlay_opacity > 0 %} countdown-timer-bar--overlay{% endif %}"
       data-id="{{ section.id }}"
-      style="{% render 'section-style', section %}"
+      style="{% render 'section-style' %}"
       data-start="{{ full_start_date }}"
       data-end="{{ full_end_date }}"
       data-timezone="{{ section.settings.timezone }}"
@@ -924,3 +924,16 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'section-classes', section %}"
+  to: "{% render 'section-classes' %}"
+  position: 7216..7246
+- from: "{% render 'section-style', section %}"
+  to: "{% render 'section-style' %}"
+  position: 7379..7407
+{% endcomment %}

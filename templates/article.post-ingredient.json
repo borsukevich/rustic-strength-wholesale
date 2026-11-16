@@ -44,24 +44,6 @@
       ],
       "settings": {}
     },
-    "featured_blog_MLzPem": {
-      "type": "featured-blog",
-      "name": "t:sections.featured-blog.presets.name",
-      "settings": {
-        "blog": "ingredients-we-stand-by",
-        "post_limit": 3,
-        "heading": "Related Articles",
-        "heading_size": "h2",
-        "columns_desktop": 3,
-        "show_view_all": true,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn_9DRe6i": {
       "type": "multicolumn",
       "blocks": {
@@ -167,7 +149,6 @@
   },
   "order": [
     "main",
-    "featured_blog_MLzPem",
     "multicolumn_9DRe6i"
   ]
 }

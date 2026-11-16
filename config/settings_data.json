@@ -226,13 +226,18 @@
           "position": "right"
         }
       },
-      "10641372206048101839": {
-        "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
-        "disabled": true,
-        "settings": {}
-      },
       "319724205969189013": {
         "type": "shopify://apps/hulk-form-builder/blocks/app-embed/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+        "disabled": false,
+        "settings": {}
+      },
+      "2783554875815837874": {
+        "type": "shopify://apps/avada-accessibility/blocks/app-embed/0ab9368b-426b-42b4-93ea-63d9c8e88707",
+        "disabled": false,
+        "settings": {}
+      },
+      "10641372206048101839": {
+        "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
         "disabled": false,
         "settings": {}
       }
@@ -355,6 +360,17 @@
           "text": "#262626",
           "button": "#a48a7a",
           "button_label": "#2f2f30",
+          "secondary_button_label": "#5d5957",
+          "shadow": "#5d5957"
+        }
+      },
+      "scheme-9a280e18-2e7a-496c-abf1-ba200c564d4f": {
+        "settings": {
+          "background": "#e4e2de",
+          "background_gradient": "",
+          "text": "#606756",
+          "button": "#b7aca2",
+          "button_label": "#a7b099",
           "secondary_button_label": "#5d5957",
           "shadow": "#5d5957"
         }
@@ -553,5 +569,10 @@
       },
       "content_for_index": []
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "main .rte a[href]:not( .button, .card *, .product-card *, .collection-card *, nav *, [role=\"navigation\"] * ) {color: rgb(70, 120, 134); text-decoration: underline;}"
+    ]
   }
 }

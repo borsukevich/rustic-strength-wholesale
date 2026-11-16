@@ -34,8 +34,15 @@
             "collection": "aromatherapy"
           }
         },
+        "featured_collection_wqKfmD": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "linen-spray"
+          }
+        },
         "featured_collection_XdbNKK": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "room-linen-sprays"
           }
@@ -44,6 +51,7 @@
       "block_order": [
         "featured_collection_xyHwai",
         "featured_collection_qMmqUf",
+        "featured_collection_wqKfmD",
         "featured_collection_XdbNKK"
       ],
       "name": "Submenu Categories",

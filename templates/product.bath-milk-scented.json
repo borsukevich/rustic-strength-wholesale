@@ -35,13 +35,12 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "rebuy_personalization_engine_rebuy_widget_TCc7fH": {
-          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+        "text_iXwPYR": {
+          "type": "text",
+          "disabled": true,
           "settings": {
-            "enabled": true,
-            "id": "149854",
-            "product_id_enabled": true,
-            "collection_id_enabled": false
+            "text": "<a href=\"#shopify-section-template--23846873235696__rich_text_6dpKQT\" title=\"#shopify-section-template--23846873235696__rich_text_6dpKQT\">Shop bulk variants</a> without leaving this page <strong>↓</strong>",
+            "text_style": "body"
           }
         },
         "buy_buttons_BkQNGe": {
@@ -49,6 +48,15 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
+          }
+        },
+        "rebuy_personalization_engine_rebuy_widget_TCc7fH": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "149854",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
           }
         },
         "judge_me_reviews_review_snippet_widget_wAN7Je": {
@@ -131,8 +139,9 @@
         "price_panda_price_per_unit_product_block_6Fb3GT",
         "variant_picker_baqgrH",
         "quantity_selector_fFPAYP",
-        "rebuy_personalization_engine_rebuy_widget_TCc7fH",
+        "text_iXwPYR",
         "buy_buttons_BkQNGe",
+        "rebuy_personalization_engine_rebuy_widget_TCc7fH",
         "judge_me_reviews_review_snippet_widget_wAN7Je",
         "description",
         "collapsible-row-1",
@@ -191,6 +200,54 @@
     "1758138687f48ea8c5": {
       "type": "_blocks",
       "settings": {}
+    },
+    "rich_text_6dpKQT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_D4MNxG": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_jGEmhH": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>bulk</p>"
+          }
+        },
+        "button_FAa4iA": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_D4MNxG",
+        "text_jGEmhH",
+        "button_FAa4iA"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_content": false,
+        "hide_side_padding_mobile": false,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
     },
     "quick-order-list": {
       "type": "quick-order-list",
@@ -354,6 +411,7 @@
     "main",
     "rich_text_FHp7MF",
     "1758138687f48ea8c5",
+    "rich_text_6dpKQT",
     "quick-order-list",
     "related-products",
     "1762450183b75e33a7",

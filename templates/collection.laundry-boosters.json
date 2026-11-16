@@ -38,12 +38,19 @@
           "settings": {
             "collection": "essential-oils"
           }
+        },
+        "featured_collection_96fkmP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dryer-balls-sheets"
+          }
         }
       },
       "block_order": [
         "featured_collection_xyHwai",
         "featured_collection_qMmqUf",
-        "featured_collection_XdbNKK"
+        "featured_collection_XdbNKK",
+        "featured_collection_96fkmP"
       ],
       "name": "Submenu Categories",
       "settings": {

@@ -176,8 +176,8 @@
 {%- endstyle -%}
 
 <div
-  class="{% render 'section-classes', section %}"
-  style="{% render 'section-style', section %}"
+  class="{% render 'section-classes' %}"
+  style="{% render 'section-style' %}"
   data-section-id="{{ section.id }}"
 >
   <div class="page-width relative">
@@ -527,3 +527,16 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'section-classes', section %}"
+  to: "{% render 'section-classes' %}"
+  position: 4376..4406
+- from: "{% render 'section-style', section %}"
+  to: "{% render 'section-style' %}"
+  position: 4417..4445
+{% endcomment %}

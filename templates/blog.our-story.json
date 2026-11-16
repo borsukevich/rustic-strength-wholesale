@@ -114,7 +114,7 @@
         "image_ratio": "circle",
         "button_label": "",
         "button_link": "",
-        "columns_desktop": 6,
+        "columns_desktop": 5,
         "column_alignment": "left",
         "background_style": "primary",
         "color_scheme": "",

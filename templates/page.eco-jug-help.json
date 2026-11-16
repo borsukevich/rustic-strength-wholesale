@@ -47,7 +47,7 @@
             "title": "How-To Install an Eco-Jug Premium Pump",
             "text": "",
             "link_label": "Watch the Video",
-            "link": "https://www.youtube.com/shorts/O_mDwvyf7M8"
+            "link": "https://www.youtube.com/shorts/hm1f40TWT70"
           }
         }
       },
@@ -70,6 +70,63 @@
         "color_scheme": "scheme-3",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_KjT93X": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_HAadj4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Diagram_Eco_Jug_Spout_Size.png",
+            "title": "5 Gallon Eco Jug Horizontal Measurements",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_kMrnUT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Diagram_Eco_Jug_Pump_Size.png",
+            "title": "5 Gallon Eco Jug Vertical Measurements",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_bqchND": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_HAadj4",
+        "column_kMrnUT",
+        "column_bqchND"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Eco Jug Specs",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -283,6 +340,7 @@
   "order": [
     "main",
     "multicolumn_FhHdUy",
+    "multicolumn_KjT93X",
     "featured_collection_Un43y8",
     "collection_list_dpJAaE",
     "multicolumn_pDwpqY"

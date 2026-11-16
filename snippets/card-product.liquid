@@ -289,7 +289,16 @@
           </div>
         </div>
         {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
-        {% if quick_add == 'standard' %}
+        {% if card_product.tags contains 'no_quick_add' %}
+  <div class="quick-add">
+    <a
+      href="{{ card_product.url }}"
+      class="quick-add__submit button button--full-width button--secondary"
+    >
+      Customize scent
+    </a>
+  </div>
+{% elsif quick_add == 'standard' %}
           <div class="quick-add no-js-hidden">
             {%- liquid
               assign qty_rules = false

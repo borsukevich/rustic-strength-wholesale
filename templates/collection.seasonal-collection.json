@@ -47,7 +47,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Laundry_Detergent_Pumpkin_Harvest_Garden_3X2_8df41f19-75e8-4e8a-883c-ff180444a415.jpg",
+        "image": "shopify://shop_images/Lifestyle_Silver_Spruce_Collection_WS_3x2_8893690f-401c-4ae7-a9e5-372275f3b933.jpg",
         "image_overlay_opacity": 30,
         "image_height": "small",
         "image_behavior": "none",
@@ -64,16 +64,29 @@
     "collection_list_zzqYMg": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_JKw97y": {
+        "featured_collection_kpQbFQ": {
           "type": "featured_collection",
           "settings": {
-            "collection": "pumpkin-harvest"
+            "collection": "winter-berry"
+          }
+        },
+        "featured_collection_EBmRgc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "silver-spruce"
           }
         },
         "featured_collection_emRkE4": {
           "type": "featured_collection",
           "settings": {
             "collection": "warm-flannel"
+          }
+        },
+        "featured_collection_JKw97y": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "pumpkin-harvest"
           }
         },
         "featured_collection_gRP8Dy": {
@@ -92,8 +105,10 @@
         }
       },
       "block_order": [
-        "featured_collection_JKw97y",
+        "featured_collection_kpQbFQ",
+        "featured_collection_EBmRgc",
         "featured_collection_emRkE4",
+        "featured_collection_JKw97y",
         "featured_collection_gRP8Dy",
         "featured_collection_Wqg99G"
       ],

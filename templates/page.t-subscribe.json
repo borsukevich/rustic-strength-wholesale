@@ -170,6 +170,7 @@
         "text_UchfwL",
         "button_kFAaGa"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "left",

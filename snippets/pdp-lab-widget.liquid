@@ -1,0 +1,978 @@
+{{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
+{{ 'pdp-lab-widget.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'pdp-lab-widget.js' | asset_url }}" defer="defer"></script>
+
+<style>
+  lab-drawer.drawer {
+    visibility: hidden;
+  }
+</style>
+
+{%- liquid
+  assign widget_block = block
+  if widget_block == blank
+    assign widget_block = section.blocks | where: 'type', 'lab-testing-widget' | first
+  endif
+
+  assign drawer_heading = widget_block.settings.drawer_heading | default: 'Third-Party Lab Tested'
+  assign drawer_subline = widget_block.settings.drawer_subline | default: 'Independently tested by ISO/IEC 17025 accredited laboratories.'
+  assign base_formula_note = widget_block.settings.base_formula_note
+  assign why_we_test_heading = widget_block.settings.why_we_test_heading | default: 'Why we test'
+  assign scale_heading = widget_block.settings.scale_heading | default: 'Understanding detection limits'
+  assign scale_description = widget_block.settings.scale_description | default: "None detected means below the lab's detection limit, not a flat zero. For scale, one drop of water in an Olympic pool is about 0.01 ppm."
+  assign coa_button_label = widget_block.settings.coa_button_label | default: 'View Certificate of Analysis'
+  assign view_all_link_text = widget_block.settings.view_all_link_text | default: 'See all our lab results'
+  assign view_all_link_url = widget_block.settings.view_all_link_url | default: '/pages/lab-results'
+
+  assign is_liquid_laundry = false
+  if product.tags contains 'laundry' or product.handle contains 'laundry' or product.title contains 'Laundry' or product.type contains 'Laundry'
+    assign is_liquid_laundry = true
+  endif
+
+  assign is_lotion = false
+  if product.tags contains 'lotion' or product.handle contains 'lotion' or product.title contains 'Lotion' or product.type contains 'Lotion'
+    assign is_lotion = true
+  endif
+
+  assign is_paper = false
+  if product.tags contains 'paper' or product.handle contains 'paper' or product.handle contains 'bamboo' or product.type contains 'Paper' or product.title contains 'Paper'
+    assign is_paper = true
+  endif
+
+  assign is_dioxane_phthalates = false
+  if product.handle contains 'soap' or product.title contains 'Soap' or product.type contains 'Soap'
+    assign is_dioxane_phthalates = true
+  elsif product.handle contains 'shampoo' or product.title contains 'Shampoo' or product.type contains 'Shampoo'
+    assign is_dioxane_phthalates = true
+  elsif product.handle contains 'body-wash' or product.title contains 'Body Wash' or product.type contains 'Body Wash'
+    assign is_dioxane_phthalates = true
+  elsif product.handle contains 'bubble-bath' or product.title contains 'Bubble Bath' or product.type contains 'Bubble Bath'
+    assign is_dioxane_phthalates = true
+  elsif product.handle contains 'dish' or product.title contains 'Dish' or product.type contains 'Dish'
+    assign is_dioxane_phthalates = true
+  elsif product.handle contains 'lots-of-purpose' or product.title contains 'Lots of Purpose' or product.handle contains 'multi-purpose'
+    assign is_dioxane_phthalates = true
+  elsif product.handle contains 'floor' or product.title contains 'Floor' or product.type contains 'Floor'
+    assign is_dioxane_phthalates = true
+  elsif product.handle contains 'pet' or product.title contains 'Pet' or product.type contains 'Pet'
+    assign is_dioxane_phthalates = true
+  endif
+
+  if is_liquid_laundry or is_lotion or is_paper
+    assign is_dioxane_phthalates = false
+  endif
+
+  if is_lotion and base_formula_note == blank or base_formula_note == 'We tested our unscented base formula, the same base every scent is built on, so these results cover this product.'
+    assign base_formula_note = 'We tested our unscented lotion base, the same base every lotion scent is built on, and screened it for PFAS. So this result covers the entire lotion line.'
+  elsif is_paper and base_formula_note == blank or base_formula_note == 'We tested our unscented base formula, the same base every scent is built on, so these results cover this product.'
+    assign base_formula_note = 'Our bamboo paper line, screened for the contaminants that matter most in paper.'
+  elsif base_formula_note == blank
+    assign base_formula_note = 'We tested our unscented base formula, the same base every scent is built on, so these results cover this product.'
+  endif
+
+  assign resolved_cards = blank
+  if product.metafields.custom.lab_results.value != blank
+    assign resolved_cards = product.metafields.custom.lab_results.value
+  elsif product.metafields.custom.lab_result_cards.value != blank
+    assign resolved_cards = product.metafields.custom.lab_result_cards.value
+  endif
+
+  assign first_coa_url = blank
+  assign first_tab_handle = blank
+  if resolved_cards != blank
+    for card in resolved_cards
+      if card != blank
+        assign first_tab_handle = card.handle | default: card.category.value | handle
+        assign first_coa_url = card.report_pdf.value.url
+        break
+      endif
+    endfor
+  elsif is_lotion
+    assign first_card = shop.metaobjects.lab_result_card['lotion-pfas']
+    if first_card == blank
+      assign first_card = shop.metaobjects.lab_result_card['laundry-pfas']
+    endif
+    if first_card == blank
+      assign first_card = shop.metaobjects.lab_result_card.pfas
+    endif
+    assign first_tab_handle = 'lotion-pfas'
+    assign first_coa_url = first_card.report_pdf.value.url
+  elsif is_paper
+    assign first_card = shop.metaobjects.lab_result_card['paper-heavy-metals']
+    assign first_tab_handle = 'paper-heavy-metals'
+    assign first_coa_url = first_card.report_pdf.value.url
+  elsif is_dioxane_phthalates
+    assign first_card = shop.metaobjects.lab_result_card['laundry-1-4-dioxane']
+    if first_card == blank
+      assign first_card = shop.metaobjects.lab_result_card['1-4-dioxane']
+    endif
+    assign first_tab_handle = 'laundry-1-4-dioxane'
+    assign first_coa_url = first_card.report_pdf.value.url
+  else
+    assign first_card = shop.metaobjects.lab_result_card['laundry-heavy-metals']
+    if first_card == blank
+      assign first_card = shop.metaobjects.lab_result_card['heavy-metals']
+    endif
+    assign first_tab_handle = 'laundry-heavy-metals'
+    assign first_coa_url = first_card.report_pdf.value.url
+  endif
+-%}
+
+<lab-drawer
+  id="LabDrawer-{{ product.id }}"
+  class="drawer drawer--right lab-drawer"
+  role="dialog"
+  aria-modal="true"
+  aria-label="{{ product.title | escape }} - {{ drawer_heading | escape }}"
+  data-product-title="{{ product.title | escape }}"
+  data-product-id="{{ product.id }}"
+>
+  <div id="LabDrawer-Overlay-{{ product.id }}" class="lab-drawer__overlay"></div>
+
+  <div
+    class="drawer__inner gradient color-{{ settings.cart_color_scheme | default: 'scheme-1' }}"
+    tabindex="-1"
+  >
+    <div class="drawer__header">
+      <h2 class="drawer__heading">{{ drawer_heading }}</h2>
+      <button
+        class="drawer__close"
+        type="button"
+        onclick="this.closest('lab-drawer').close()"
+        aria-label="{{ 'accessibility.close' | t }}"
+      >
+        <span class="svg-wrapper">
+          {{- 'icon-close.svg' | inline_asset_content -}}
+        </span>
+      </button>
+    </div>
+
+    <div class="drawer__contents lab-drawer__contents">
+      <div class="lab-drawer__header-info">
+        <h3 class="lab-drawer__product-title">{{ product.title }}</h3>
+        {%- if drawer_subline != blank -%}
+          <p class="lab-drawer__subline">{{ drawer_subline }}</p>
+        {%- endif -%}
+      </div>
+
+      {%- if base_formula_note != blank -%}
+        <div class="lab-drawer__base-notice">
+          {{ base_formula_note }}
+        </div>
+      {%- endif -%}
+
+      <div class="lab-drawer__tabs-wrapper">
+        <div
+          class="lab-drawer__tabs"
+          role="tablist"
+          aria-label="Lab test categories"
+        >
+          {%- if resolved_cards != blank -%}
+            {%- assign first_tab = true -%}
+            {%- for card in resolved_cards -%}
+              {%- if card != blank -%}
+                {%- assign tab_handle = card.handle | default: card.category.value | handle -%}
+                <button
+                  type="button"
+                  role="tab"
+                  class="lab-drawer__tab{% if first_tab %} is-active{% endif %}"
+                  id="Tab-{{ tab_handle }}-{{ product.id }}"
+                  data-pdp-lab-tab
+                  data-target-tab="{{ tab_handle }}"
+                  aria-selected="{% if first_tab %}true{% else %}false{% endif %}"
+                  aria-controls="Panel-{{ tab_handle }}-{{ product.id }}"
+                  tabindex="{% if first_tab %}0{% else %}-1{% endif %}"
+                >
+                  {{ card.category.value }}
+                </button>
+                {%- assign first_tab = false -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- elsif is_lotion -%}
+            {%- liquid
+              assign lot_card = shop.metaobjects.lab_result_card['lotion-pfas']
+              if lot_card == blank
+                assign lot_card = shop.metaobjects.lab_result_card['laundry-pfas']
+              endif
+              if lot_card == blank
+                assign lot_card = shop.metaobjects.lab_result_card.pfas
+              endif
+            -%}
+            {%- if lot_card != blank -%}
+              <button
+                type="button"
+                role="tab"
+                class="lab-drawer__tab is-active"
+                id="Tab-lotion-pfas-{{ product.id }}"
+                data-pdp-lab-tab
+                data-target-tab="lotion-pfas"
+                aria-selected="true"
+                aria-controls="Panel-lotion-pfas-{{ product.id }}"
+                tabindex="0"
+              >
+                {{ lot_card.category.value }}
+              </button>
+            {%- endif -%}
+          {%- elsif is_paper -%}
+            {%- liquid
+              assign p_cards = 'paper-heavy-metals|paper-formaldehyde|paper-pcp|paper-pfas' | split: '|'
+            -%}
+            {%- assign first_tab = true -%}
+            {%- for p_handle in p_cards -%}
+              {%- assign p_card = shop.metaobjects.lab_result_card[p_handle] -%}
+              {%- if p_card != blank -%}
+                <button
+                  type="button"
+                  role="tab"
+                  class="lab-drawer__tab{% if first_tab %} is-active{% endif %}"
+                  id="Tab-{{ p_handle }}-{{ product.id }}"
+                  data-pdp-lab-tab
+                  data-target-tab="{{ p_handle }}"
+                  aria-selected="{% if first_tab %}true{% else %}false{% endif %}"
+                  aria-controls="Panel-{{ p_handle }}-{{ product.id }}"
+                  tabindex="{% if first_tab %}0{% else %}-1{% endif %}"
+                >
+                  {{ p_card.category.value }}
+                </button>
+                {%- assign first_tab = false -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- elsif is_dioxane_phthalates -%}
+            {%- liquid
+              assign dp_cards = 'laundry-1-4-dioxane' | split: '|'
+            -%}
+            {%- assign first_tab = true -%}
+            {%- for dp_handle in dp_cards -%}
+              {%- liquid
+                assign dp_card = shop.metaobjects.lab_result_card[dp_handle]
+                if dp_card == blank
+                  if dp_handle == 'laundry-1-4-dioxane'
+                    assign dp_card = shop.metaobjects.lab_result_card['1-4-dioxane']
+                  elsif dp_handle == 'laundry-phthalates'
+                    assign dp_card = shop.metaobjects.lab_result_card.phthalates
+                  endif
+                endif
+              -%}
+              {%- if dp_card != blank -%}
+                <button
+                  type="button"
+                  role="tab"
+                  class="lab-drawer__tab{% if first_tab %} is-active{% endif %}"
+                  id="Tab-{{ dp_handle }}-{{ product.id }}"
+                  data-pdp-lab-tab
+                  data-target-tab="{{ dp_handle }}"
+                  aria-selected="{% if first_tab %}true{% else %}false{% endif %}"
+                  aria-controls="Panel-{{ dp_handle }}-{{ product.id }}"
+                  tabindex="{% if first_tab %}0{% else %}-1{% endif %}"
+                >
+                  {{ dp_card.category.value }}
+                </button>
+                {%- assign first_tab = false -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- else -%}
+            {%- liquid
+              assign l_cards = 'laundry-heavy-metals|laundry-glyphosate|laundry-pesticides|laundry-1-4-dioxane|laundry-phthalates|laundry-pfas' | split: '|'
+            -%}
+            {%- assign first_tab = true -%}
+            {%- for l_handle in l_cards -%}
+              {%- liquid
+                assign l_card = shop.metaobjects.lab_result_card[l_handle]
+                if l_card == blank
+                  case l_handle
+                    when 'laundry-heavy-metals'
+                      assign l_card = shop.metaobjects.lab_result_card['heavy-metals']
+                    when 'laundry-glyphosate'
+                      assign l_card = shop.metaobjects.lab_result_card.glyphosate
+                    when 'laundry-pesticides'
+                      assign l_card = shop.metaobjects.lab_result_card['pesticides-and-herbicides']
+                    when 'laundry-1-4-dioxane'
+                      assign l_card = shop.metaobjects.lab_result_card['laundry-1-4-dioxane']
+                      if l_card == blank
+                        assign l_card = shop.metaobjects.lab_result_card['1-4-dioxane']
+                      endif
+                      if l_card == blank
+                        assign l_card = shop.metaobjects.lab_result_card['laundry-1,4-dioxane']
+                      endif
+                      if l_card == blank
+                        assign l_card = shop.metaobjects.lab_result_card['1,4-dioxane']
+                      endif
+                    when 'laundry-phthalates'
+                      assign l_card = shop.metaobjects.lab_result_card.phthalates
+                    when 'laundry-pfas'
+                      assign l_card = shop.metaobjects.lab_result_card['laundry-pfas']
+                      if l_card == blank
+                        assign l_card = shop.metaobjects.lab_result_card.pfas
+                      endif
+                  endcase
+                endif
+              -%}
+              {%- if l_card != blank -%}
+                <button
+                  type="button"
+                  role="tab"
+                  class="lab-drawer__tab{% if first_tab %} is-active{% endif %}"
+                  id="Tab-{{ l_handle }}-{{ product.id }}"
+                  data-pdp-lab-tab
+                  data-target-tab="{{ l_handle }}"
+                  aria-selected="{% if first_tab %}true{% else %}false{% endif %}"
+                  aria-controls="Panel-{{ l_handle }}-{{ product.id }}"
+                  tabindex="{% if first_tab %}0{% else %}-1{% endif %}"
+                >
+                  {{ l_card.category.value }}
+                </button>
+                {%- assign first_tab = false -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+        </div>
+      </div>
+
+      <div class="lab-drawer__panels">
+        {%- if resolved_cards != blank -%}
+          {%- assign first_panel = true -%}
+          {%- for card in resolved_cards -%}
+            {%- if card != blank -%}
+              {%- liquid
+                assign tab_handle = card.handle | default: card.category.value | handle
+                assign comp_list = card.tested_compounds.value | default: card.compounds.value | default: card.analytes.value
+                assign method_note = card.method_note.value | default: card.method.value
+              -%}
+              <div
+                class="lab-drawer__panel-content{% if first_panel %} is-active{% endif %}"
+                id="Panel-{{ tab_handle }}-{{ product.id }}"
+                data-pdp-lab-panel
+                data-tab-category="{{ tab_handle }}"
+                data-coa-url="{{ card.report_pdf.value.url }}"
+                role="tabpanel"
+                aria-labelledby="Tab-{{ tab_handle }}-{{ product.id }}"
+                {% unless first_panel %}
+                  hidden
+                {% endunless %}
+              >
+                {%- if card.result_statement.value != blank -%}
+                  <div class="pdp-lab-summary-strip">
+                    <span class="pdp-lab-summary-strip__icon" aria-hidden="true">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                      </svg>
+                    </span>
+                    <span class="pdp-lab-summary-strip__text">{{ card.result_statement.value }}</span>
+                  </div>
+                {%- endif -%}
+
+                <div class="pdp-lab-card-box">
+                  <div class="pdp-lab-card-header">
+                    <h4 class="pdp-lab-card-category">{{ card.category.value }}</h4>
+                    <span class="pdp-lab-card-badge">None Detected</span>
+                  </div>
+
+                  {%- if card.why_we_test.value != blank -%}
+                    <div class="pdp-lab-card-why">
+                      <strong>{{ why_we_test_heading }}:</strong> {{ card.why_we_test.value | capitalize }}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if method_note != blank -%}
+                    <div class="pdp-lab-method-note">
+                      {{ method_note }}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if card.detection_sensitivity.value != blank or scale_description != blank -%}
+                    <div class="pdp-lab-scale-box">
+                      {%- if scale_heading != blank -%}
+                        <h5 class="pdp-lab-scale-box__heading">{{ scale_heading }}</h5>
+                      {%- endif -%}
+                      {%- if card.detection_sensitivity.value != blank -%}
+                        <div class="pdp-lab-card-sensitivity">{{ card.detection_sensitivity.value }}</div>
+                      {%- endif -%}
+                      {%- if scale_description != blank -%}
+                        <p class="pdp-lab-scale-box__text">{{ scale_description }}</p>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if comp_list != blank -%}
+                    <div class="pdp-lab-results-list">
+                      {%- for compound in comp_list -%}
+                        <div class="pdp-lab-result-item">
+                          <span class="pdp-lab-result-item__name">{{ compound }}</span>
+                          <span class="pdp-lab-result-item__status">
+                            <span class="pdp-lab-result-item__icon" aria-hidden="true">
+                              <svg
+                                width="15"
+                                height="15"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                              </svg>
+                            </span>
+                            None detected
+                          </span>
+                        </div>
+                      {%- endfor -%}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if card.lab_details.value != blank -%}
+                    <p class="pdp-lab-accreditation-line">
+                      {{ card.lab_details.value }}
+                    </p>
+                  {%- endif -%}
+                </div>
+              </div>
+              {%- assign first_panel = false -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- elsif is_lotion -%}
+          {%- liquid
+            assign lot_card = shop.metaobjects.lab_result_card['lotion-pfas']
+            if lot_card == blank
+              assign lot_card = shop.metaobjects.lab_result_card['laundry-pfas']
+            endif
+            if lot_card == blank
+              assign lot_card = shop.metaobjects.lab_result_card.pfas
+            endif
+          -%}
+          {%- if lot_card != blank -%}
+            {%- liquid
+              assign lot_comp_list = lot_card.tested_compounds.value | default: lot_card.compounds.value | default: lot_card.analytes.value
+              assign lot_method_note = lot_card.method_note.value | default: lot_card.method.value
+            -%}
+            <div
+              class="lab-drawer__panel-content is-active"
+              id="Panel-lotion-pfas-{{ product.id }}"
+              data-pdp-lab-panel
+              data-tab-category="lotion-pfas"
+              data-coa-url="{{ lot_card.report_pdf.value.url }}"
+              role="tabpanel"
+              aria-labelledby="Tab-lotion-pfas-{{ product.id }}"
+            >
+              {%- if lot_card.result_statement.value != blank -%}
+                <div class="pdp-lab-summary-strip">
+                  <span class="pdp-lab-summary-strip__icon" aria-hidden="true">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                      <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                  </span>
+                  <span class="pdp-lab-summary-strip__text">{{ lot_card.result_statement.value }}</span>
+                </div>
+              {%- endif -%}
+
+              <div class="pdp-lab-card-box">
+                <div class="pdp-lab-card-header">
+                  <h4 class="pdp-lab-card-category">{{ lot_card.category.value }}</h4>
+                  <span class="pdp-lab-card-badge">None Detected</span>
+                </div>
+
+                {%- if lot_card.why_we_test.value != blank -%}
+                  <div class="pdp-lab-card-why">
+                    <strong>{{ why_we_test_heading }}:</strong> {{ lot_card.why_we_test.value | capitalize }}
+                  </div>
+                {%- endif -%}
+
+                {%- if lot_method_note != blank -%}
+                  <div class="pdp-lab-method-note">
+                    {{ lot_method_note }}
+                  </div>
+                {%- endif -%}
+
+                {%- if lot_card.detection_sensitivity.value != blank or scale_description != blank -%}
+                  <div class="pdp-lab-scale-box">
+                    {%- if scale_heading != blank -%}
+                      <h5 class="pdp-lab-scale-box__heading">{{ scale_heading }}</h5>
+                    {%- endif -%}
+                    {%- if lot_card.detection_sensitivity.value != blank -%}
+                      <div class="pdp-lab-card-sensitivity">{{ lot_card.detection_sensitivity.value }}</div>
+                    {%- endif -%}
+                    {%- if scale_description != blank -%}
+                      <p class="pdp-lab-scale-box__text">{{ scale_description }}</p>
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+
+                {%- if lot_comp_list != blank -%}
+                  <div class="pdp-lab-results-list">
+                    {%- for compound in lot_comp_list -%}
+                      <div class="pdp-lab-result-item">
+                        <span class="pdp-lab-result-item__name">{{ compound }}</span>
+                        <span class="pdp-lab-result-item__status">
+                          <span class="pdp-lab-result-item__icon" aria-hidden="true">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                          </span>
+                          None detected
+                        </span>
+                      </div>
+                    {%- endfor -%}
+                  </div>
+                {%- endif -%}
+
+                {%- if lot_card.lab_details.value != blank -%}
+                  <p class="pdp-lab-accreditation-line">
+                    {{ lot_card.lab_details.value }}
+                  </p>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+        {%- elsif is_paper -%}
+          {%- liquid
+            assign p_cards = 'paper-heavy-metals|paper-formaldehyde|paper-pcp|paper-pfas' | split: '|'
+          -%}
+          {%- assign first_panel = true -%}
+          {%- for p_handle in p_cards -%}
+            {%- assign p_card = shop.metaobjects.lab_result_card[p_handle] -%}
+            {%- if p_card != blank -%}
+              {%- liquid
+                assign p_comp_list = p_card.tested_compounds.value | default: p_card.compounds.value | default: p_card.analytes.value
+                assign p_method_note = p_card.method_note.value | default: p_card.method.value
+              -%}
+              <div
+                class="lab-drawer__panel-content{% if first_panel %} is-active{% endif %}"
+                id="Panel-{{ p_handle }}-{{ product.id }}"
+                data-pdp-lab-panel
+                data-tab-category="{{ p_handle }}"
+                data-coa-url="{{ p_card.report_pdf.value.url }}"
+                role="tabpanel"
+                aria-labelledby="Tab-{{ p_handle }}-{{ product.id }}"
+                {% unless first_panel %}
+                  hidden
+                {% endunless %}
+              >
+                {%- if p_card.result_statement.value != blank -%}
+                  <div class="pdp-lab-summary-strip">
+                    <span class="pdp-lab-summary-strip__icon" aria-hidden="true">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                      </svg>
+                    </span>
+                    <span class="pdp-lab-summary-strip__text">{{ p_card.result_statement.value }}</span>
+                  </div>
+                {%- endif -%}
+
+                <div class="pdp-lab-card-box">
+                  <div class="pdp-lab-card-header">
+                    <h4 class="pdp-lab-card-category">{{ p_card.category.value }}</h4>
+                    <span class="pdp-lab-card-badge">None Detected</span>
+                  </div>
+
+                  {%- if p_card.why_we_test.value != blank -%}
+                    <div class="pdp-lab-card-why">
+                      <strong>{{ why_we_test_heading }}:</strong> {{ p_card.why_we_test.value | capitalize }}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if p_method_note != blank -%}
+                    <div class="pdp-lab-method-note">
+                      {{ p_method_note }}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if p_card.detection_sensitivity.value != blank or scale_description != blank -%}
+                    <div class="pdp-lab-scale-box">
+                      {%- if scale_heading != blank -%}
+                        <h5 class="pdp-lab-scale-box__heading">{{ scale_heading }}</h5>
+                      {%- endif -%}
+                      {%- if p_card.detection_sensitivity.value != blank -%}
+                        <div class="pdp-lab-card-sensitivity">{{ p_card.detection_sensitivity.value }}</div>
+                      {%- endif -%}
+                      {%- if scale_description != blank -%}
+                        <p class="pdp-lab-scale-box__text">{{ scale_description }}</p>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if p_comp_list != blank -%}
+                    <div class="pdp-lab-results-list">
+                      {%- for compound in p_comp_list -%}
+                        <div class="pdp-lab-result-item">
+                          <span class="pdp-lab-result-item__name">{{ compound }}</span>
+                          <span class="pdp-lab-result-item__status">
+                            <span class="pdp-lab-result-item__icon" aria-hidden="true">
+                              <svg
+                                width="15"
+                                height="15"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                              </svg>
+                            </span>
+                            None detected
+                          </span>
+                        </div>
+                      {%- endfor -%}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if p_card.lab_details.value != blank -%}
+                    <p class="pdp-lab-accreditation-line">
+                      {{ p_card.lab_details.value }}
+                    </p>
+                  {%- endif -%}
+                </div>
+              </div>
+              {%- assign first_panel = false -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- elsif is_dioxane_phthalates -%}
+          {%- liquid
+            assign dp_cards = 'laundry-1-4-dioxane' | split: '|'
+          -%}
+          {%- assign first_panel = true -%}
+          {%- for dp_handle in dp_cards -%}
+            {%- liquid
+              assign dp_card = shop.metaobjects.lab_result_card[dp_handle]
+              if dp_card == blank
+                if dp_handle == 'laundry-1-4-dioxane'
+                  assign dp_card = shop.metaobjects.lab_result_card['1-4-dioxane']
+                elsif dp_handle == 'laundry-phthalates'
+                  assign dp_card = shop.metaobjects.lab_result_card.phthalates
+                endif
+              endif
+            -%}
+            {%- if dp_card != blank -%}
+              {%- liquid
+                assign dp_comp_list = dp_card.tested_compounds.value | default: dp_card.compounds.value | default: dp_card.analytes.value
+                assign dp_method_note = dp_card.method_note.value | default: dp_card.method.value
+              -%}
+              <div
+                class="lab-drawer__panel-content{% if first_panel %} is-active{% endif %}"
+                id="Panel-{{ dp_handle }}-{{ product.id }}"
+                data-pdp-lab-panel
+                data-tab-category="{{ dp_handle }}"
+                data-coa-url="{{ dp_card.report_pdf.value.url }}"
+                role="tabpanel"
+                aria-labelledby="Tab-{{ dp_handle }}-{{ product.id }}"
+                {% unless first_panel %}
+                  hidden
+                {% endunless %}
+              >
+                {%- if dp_card.result_statement.value != blank -%}
+                  <div class="pdp-lab-summary-strip">
+                    <span class="pdp-lab-summary-strip__icon" aria-hidden="true">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                      </svg>
+                    </span>
+                    <span class="pdp-lab-summary-strip__text">{{ dp_card.result_statement.value }}</span>
+                  </div>
+                {%- endif -%}
+
+                <div class="pdp-lab-card-box">
+                  <div class="pdp-lab-card-header">
+                    <h4 class="pdp-lab-card-category">{{ dp_card.category.value }}</h4>
+                    <span class="pdp-lab-card-badge">None Detected</span>
+                  </div>
+
+                  {%- if dp_card.why_we_test.value != blank -%}
+                    <div class="pdp-lab-card-why">
+                      <strong>{{ why_we_test_heading }}:</strong> {{ dp_card.why_we_test.value | capitalize }}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if dp_method_note != blank -%}
+                    <div class="pdp-lab-method-note">
+                      {{ dp_method_note }}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if dp_card.detection_sensitivity.value != blank or scale_description != blank -%}
+                    <div class="pdp-lab-scale-box">
+                      {%- if scale_heading != blank -%}
+                        <h5 class="pdp-lab-scale-box__heading">{{ scale_heading }}</h5>
+                      {%- endif -%}
+                      {%- if dp_card.detection_sensitivity.value != blank -%}
+                        <div class="pdp-lab-card-sensitivity">{{ dp_card.detection_sensitivity.value }}</div>
+                      {%- endif -%}
+                      {%- if scale_description != blank -%}
+                        <p class="pdp-lab-scale-box__text">{{ scale_description }}</p>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if dp_comp_list != blank -%}
+                    <div class="pdp-lab-results-list">
+                      {%- for compound in dp_comp_list -%}
+                        <div class="pdp-lab-result-item">
+                          <span class="pdp-lab-result-item__name">{{ compound }}</span>
+                          <span class="pdp-lab-result-item__status">
+                            <span class="pdp-lab-result-item__icon" aria-hidden="true">
+                              <svg
+                                width="15"
+                                height="15"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                              </svg>
+                            </span>
+                            None detected
+                          </span>
+                        </div>
+                      {%- endfor -%}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if dp_card.lab_details.value != blank -%}
+                    <p class="pdp-lab-accreditation-line">
+                      {{ dp_card.lab_details.value }}
+                    </p>
+                  {%- endif -%}
+                </div>
+              </div>
+              {%- assign first_panel = false -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- else -%}
+          {%- liquid
+            assign l_cards = 'laundry-heavy-metals|laundry-glyphosate|laundry-pesticides|laundry-1-4-dioxane|laundry-phthalates|laundry-pfas' | split: '|'
+          -%}
+          {%- assign first_panel = true -%}
+          {%- for l_handle in l_cards -%}
+            {%- liquid
+              assign l_card = shop.metaobjects.lab_result_card[l_handle]
+              if l_card == blank
+                case l_handle
+                  when 'laundry-heavy-metals'
+                    assign l_card = shop.metaobjects.lab_result_card['heavy-metals']
+                  when 'laundry-glyphosate'
+                    assign l_card = shop.metaobjects.lab_result_card.glyphosate
+                  when 'laundry-pesticides'
+                    assign l_card = shop.metaobjects.lab_result_card['pesticides-and-herbicides']
+                  when 'laundry-1-4-dioxane'
+                    assign l_card = shop.metaobjects.lab_result_card['laundry-1-4-dioxane']
+                    if l_card == blank
+                      assign l_card = shop.metaobjects.lab_result_card['1-4-dioxane']
+                    endif
+                    if l_card == blank
+                      assign l_card = shop.metaobjects.lab_result_card['laundry-1,4-dioxane']
+                    endif
+                    if l_card == blank
+                      assign l_card = shop.metaobjects.lab_result_card['1,4-dioxane']
+                    endif
+                  when 'laundry-phthalates'
+                    assign l_card = shop.metaobjects.lab_result_card.phthalates
+                  when 'laundry-pfas'
+                    assign l_card = shop.metaobjects.lab_result_card['laundry-pfas']
+                    if l_card == blank
+                      assign l_card = shop.metaobjects.lab_result_card.pfas
+                    endif
+                endcase
+              endif
+            -%}
+            {%- if l_card != blank -%}
+              {%- liquid
+                assign l_comp_list = l_card.tested_compounds.value | default: l_card.compounds.value | default: l_card.analytes.value
+                assign l_method_note = l_card.method_note.value | default: l_card.method.value
+              -%}
+              <div
+                class="lab-drawer__panel-content{% if first_panel %} is-active{% endif %}"
+                id="Panel-{{ l_handle }}-{{ product.id }}"
+                data-pdp-lab-panel
+                data-tab-category="{{ l_handle }}"
+                data-coa-url="{{ l_card.report_pdf.value.url }}"
+                role="tabpanel"
+                aria-labelledby="Tab-{{ l_handle }}-{{ product.id }}"
+                {% unless first_panel %}
+                  hidden
+                {% endunless %}
+              >
+                {%- if l_card.result_statement.value != blank -%}
+                  <div class="pdp-lab-summary-strip">
+                    <span class="pdp-lab-summary-strip__icon" aria-hidden="true">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                      </svg>
+                    </span>
+                    <span class="pdp-lab-summary-strip__text">{{ l_card.result_statement.value }}</span>
+                  </div>
+                {%- endif -%}
+
+                <div class="pdp-lab-card-box">
+                  <div class="pdp-lab-card-header">
+                    <h4 class="pdp-lab-card-category">{{ l_card.category.value }}</h4>
+                    <span class="pdp-lab-card-badge">None Detected</span>
+                  </div>
+
+                  {%- if l_card.why_we_test.value != blank -%}
+                    <div class="pdp-lab-card-why">
+                      <strong>{{ why_we_test_heading }}:</strong> {{ l_card.why_we_test.value | capitalize }}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if l_method_note != blank -%}
+                    <div class="pdp-lab-method-note">
+                      {{ l_method_note }}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if l_card.detection_sensitivity.value != blank or scale_description != blank -%}
+                    <div class="pdp-lab-scale-box">
+                      {%- if scale_heading != blank -%}
+                        <h5 class="pdp-lab-scale-box__heading">{{ scale_heading }}</h5>
+                      {%- endif -%}
+                      {%- if l_card.detection_sensitivity.value != blank -%}
+                        <div class="pdp-lab-card-sensitivity">{{ l_card.detection_sensitivity.value }}</div>
+                      {%- endif -%}
+                      {%- if scale_description != blank -%}
+                        <p class="pdp-lab-scale-box__text">{{ scale_description }}</p>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if l_comp_list != blank -%}
+                    <div class="pdp-lab-results-list">
+                      {%- for compound in l_comp_list -%}
+                        <div class="pdp-lab-result-item">
+                          <span class="pdp-lab-result-item__name">{{ compound }}</span>
+                          <span class="pdp-lab-result-item__status">
+                            <span class="pdp-lab-result-item__icon" aria-hidden="true">
+                              <svg
+                                width="15"
+                                height="15"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                              </svg>
+                            </span>
+                            None detected
+                          </span>
+                        </div>
+                      {%- endfor -%}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if l_card.lab_details.value != blank -%}
+                    <p class="pdp-lab-accreditation-line">
+                      {{ l_card.lab_details.value }}
+                    </p>
+                  {%- endif -%}
+                </div>
+              </div>
+              {%- assign first_panel = false -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div class="drawer__footer lab-drawer__footer">
+      <a
+        href="{{ first_coa_url }}"
+        id="LabDrawer-CTA-{{ product.id }}"
+        class="button button--primary button--full-width lab-drawer__cta"
+        data-lab-drawer-cta
+        data-coa-link
+        data-category="{{ first_tab_handle }}"
+        target="_blank"
+        rel="noopener"
+        {% if first_coa_url == blank %}
+          disabled style="pointer-events: none; opacity: 0.5;"
+        {% endif %}
+      >
+        <span>{{ coa_button_label }}</span>
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          style="margin-left: 8px;"
+        >
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+
+      {%- if view_all_link_text != blank and view_all_link_url != blank -%}
+        <a href="{{ view_all_link_url }}" class="lab-drawer__view-all">
+          {{ view_all_link_text }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</lab-drawer>

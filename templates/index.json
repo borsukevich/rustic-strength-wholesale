@@ -77,7 +77,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Sell With Confidence",
-            "button_link_1": "shopify://pages/blog-landing-page",
+            "button_link_1": "shopify://pages/new-b2b-welcome",
             "button_style_secondary_1": false,
             "button_label_2": "Apply for Wholesale Pricing",
             "button_link_2": "shopify://pages/wholesale-application-landing-page",
@@ -358,7 +358,7 @@
           "type": "button",
           "settings": {
             "button_label": "Read more",
-            "button_link": "shopify://blogs/company/named-one-of-the-midwest-s-fastest-growing-private-companies-by-inc",
+            "button_link": "https://rusticstrength.com/blogs/news/named-one-of-the-midwest-s-fastest-growing-private-companies-by-inc?ref=wholesale&utm_source=wholesale&utm_medium=referral?",
             "button_style_secondary": false
           }
         }
@@ -646,9 +646,10 @@
     },
     "featured_blog_iftjHd": {
       "type": "featured-blog",
+      "disabled": true,
       "name": "t:sections.featured-blog.presets.name",
       "settings": {
-        "blog": "ingredients-we-stand-by",
+        "blog": "business-tips",
         "post_limit": 4,
         "heading": "become an expert",
         "heading_size": "h2",
@@ -662,86 +663,94 @@
         "padding_bottom": 20
       }
     },
-    "multicolumn2": {
+    "multicolumn_iCMdTN": {
       "type": "multicolumn",
       "blocks": {
-        "column11": {
+        "column_U48qaa": {
           "type": "column",
           "settings": {
-            "title": "Add educational content",
-            "text": "<p>Provide content for your customers that sets their business up for success</p>",
-            "link_label": "Read now",
-            "link": ""
+            "image": "shopify://shop_images/checklist-blog.png",
+            "title": "Business Tips",
+            "text": "",
+            "link_label": "Get Advice",
+            "link": "shopify://blogs/business-tips"
           }
         },
-        "column12": {
+        "column_LbgGjY": {
           "type": "column",
           "settings": {
-            "title": "Add educational content",
-            "text": "<p>Provide content for your customers that sets their business up for success</p>",
-            "link_label": "Read now",
-            "link": ""
+            "image": "shopify://shop_images/rusticflo_91021_Flat_2-D_editorial_illustration_New-Yorker_styl_961f6b7d-8411-49cf-bcae-a53ace2ff789.png",
+            "title": "Tips + Guides",
+            "text": "",
+            "link_label": "Clean Smart",
+            "link": "shopify://pages/tips-guides"
           }
         },
-        "column13": {
+        "column_3jwnKe": {
           "type": "column",
           "settings": {
-            "title": "Add educational content",
-            "text": "<p>Provide content for your customers that sets their business up for success</p>",
-            "link_label": "Read now",
-            "link": ""
+            "image": "shopify://shop_images/wanderingperson_dbe4c6e9-fb9c-4c6f-b4cc-75befe171e09.png",
+            "title": "The Toxic Truth",
+            "text": "",
+            "link_label": "Deep Dive",
+            "link": "shopify://pages/the-toxic-truth"
           }
         },
-        "column14": {
+        "column_fwpHMU": {
           "type": "column",
           "settings": {
-            "title": "Add educational content",
-            "text": "<p>Provide content for your customers that sets their business up for success</p>",
-            "link_label": "Read now",
-            "link": ""
+            "image": "shopify://shop_images/rusticflo_91021_modern_2-D_editorial_illustration--sleek_lab__3_7e6af2cf-c2c7-456d-a2d9-fdfa1c76a3f6.png",
+            "title": "Ingredients We Use",
+            "text": "",
+            "link_label": "Learn Why",
+            "link": "shopify://pages/ingredients-we-use"
+          }
+        },
+        "column_YXFbnf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/avoid.jpg",
+            "title": "Ingredients We Avoid",
+            "text": "",
+            "link_label": "Avoid Toxins",
+            "link": "shopify://pages/ingredients-we-avoid"
+          }
+        },
+        "column_NThJwB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sustainability.jpg",
+            "title": "Our Sustainability",
+            "text": "",
+            "link_label": "Get Circular",
+            "link": "shopify://pages/our-sustainability"
           }
         }
       },
       "block_order": [
-        "column11",
-        "column12",
-        "column13",
-        "column14"
+        "column_U48qaa",
+        "column_LbgGjY",
+        "column_3jwnKe",
+        "column_fwpHMU",
+        "column_YXFbnf",
+        "column_NThJwB"
       ],
-      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "You're set up for success",
+        "title": "become an expert",
         "heading_size": "h2",
         "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 4,
+        "image_ratio": "circle",
+        "button_label": "All Blogs",
+        "button_link": "shopify://pages/blog-landing-page",
+        "columns_desktop": 6,
         "column_alignment": "left",
         "background_style": "primary",
-        "color_scheme": "scheme-3",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 48
-      }
-    },
-    "1754513623109f0024": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_featured_carousel_aYCRCM": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 4000
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_featured_carousel_aYCRCM"
-      ],
-      "disabled": true,
-      "settings": {
-        "include_margins": true
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "1755023383f5da658f": {
@@ -884,8 +893,7 @@
     "collection_list",
     "multicolumn1",
     "featured_blog_iftjHd",
-    "multicolumn2",
-    "1754513623109f0024",
+    "multicolumn_iCMdTN",
     "1755023383f5da658f",
     "image_banner_VaQyqL",
     "featured_collection2"

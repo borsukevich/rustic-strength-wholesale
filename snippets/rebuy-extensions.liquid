@@ -59,4 +59,9 @@
   document.addEventListener('rebuy:smartsearch.resultsPage.productsChange', (event) => {
     setTimeout(() => { updateSearchPrices(event.detail.products, "RESULTSPAGE"); }, 500)
   });
+  document.addEventListener('rebuy:smartcart.ready', function(event) {
+    Rebuy.SmartCart.skip_open = true;
+});
+
+
 </script>

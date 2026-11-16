@@ -1,0 +1,441 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_FUAfMW": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_PKc3qj": {
+          "type": "heading",
+          "settings": {
+            "heading": "the toxic truth",
+            "heading_size": "hxl"
+          }
+        },
+        "text_d6DiJM": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "buttons_eh6Ffh": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PKc3qj",
+        "text_d6DiJM",
+        "buttons_eh6Ffh"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/wanderingperson_dbe4c6e9-fb9c-4c6f-b4cc-75befe171e09.png",
+        "image_overlay_opacity": 30,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true,
+        "content_max_width": 800
+      }
+    },
+    "multicolumn_ibyYfQ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nEJn7h": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_Editorial-style_2D_illustration_of_a_tired_wo_1_abb1ad87-fd58-45af-bcab-baf122909663.png",
+            "title": "How to Relieve Your Toxin Burden",
+            "text": "<p>Overwhelmed by toxic ingredients in everyday products? Learn how small, strategic swaps in your cleaning and personal care routine can lighten your toxin load.</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/toxic-truths/how-to-relieve-your-toxin-burden?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_jDyQV3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/socialmedia-chaos_0ca8b973-8f27-4695-a356-5432a791ef19.png",
+            "title": "Stop Letting Facebook Groups Decide What's Safe...",
+            "text": "<p>Relying on Facebook groups for family safety advice can be risky. Learn how to make informed, evidence-based decisions for your family's health</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/toxic-truths/stop-letting-facebook-groups-decide-whats-safe-for-your-family?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_Kh3pFW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ingredients_we_avoid.jpg",
+            "title": "How Big Bargain Detergent Brands Contaminate America's Drinking Water",
+            "text": "<p>Discover how major bargain detergent brands have contributed to the contamination of America's Drinking water</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/toxic-truths/how-big-bargain-detergent-brands-contaminated-america-s-drinking-water?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_JtrTJ9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/NY_ban_blog.jpg",
+            "title": "Cancer-Linked 1, 4 Dioxane Triggers NY Detergent...",
+            "text": "<p>Discover the hidden dangers of 1, 4-dioxane - a toxic contaminant found in household products - and why Rustic Strength avoids this harmful chemical to keep&nbsp;</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/toxic-truths/what-is-1-4-dioxane-and-why-dont-we-use-it-in-our-products?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_dCzhhD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/hidden_hijacker_blog.jpg",
+            "title": "The Hidden Hormonal Hijackers: Phthalates and Your...",
+            "text": "<p>Discover how phthalates, common hidden chemicals in everyday products, disrupt your hormones and impact your health.</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/toxic-truths/the-hidden-hormonal-hijackers-phthalates-and-your-health?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_wY38iF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/wanderingperson_dbe4c6e9-fb9c-4c6f-b4cc-75befe171e09.png",
+            "title": "You Shouldn't Have to Be a Chemist to Choose a...",
+            "text": "<p>Choosing safe soap shouldn't require a chemistry degree. Discover how to identify clean, non-toxic ingredients for healthier skin and peace</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/toxic-truths/you-shouldn-t-have-to-be-a-chemist-to-choose-a-safe-soap?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_HzknXC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/greenwash_image.webp",
+            "title": "The Ultimate Guide to Identifying and Avoiding...",
+            "text": "<p>Greenwashing is when a business provides deceptive or misleading information about how their products could be environmentally sound. Many</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/toxic-truths/what-is-greenwashing?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_UbnK4j": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/toxin_free_blog.jpg",
+            "title": "Is 'Toxin-Free' Always Safer? Let's Separate the...",
+            "text": "<p>Is \"toxin-free\" just a marketing buzzword or a real safety promise? Discover how to spot greenwashing and choose truly safe, transparent</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/toxic-truths/is-toxin-free-always-safer-let-s-separate-the-hype-from-science?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_HdwMgy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/toilet_paper_blog.jpg",
+            "title": "Is Your Toilet Paper Hiding a Secret? How to Avoid...",
+            "text": "<p>Discover the hidden dangers in everyday toilet paper and learn how \"forever chemicals\" may affect your health. Explore safer, eco-friendly</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/toxic-truths/is-your-toilet-paper-hiding-a-secret-how-to-avoid-forever-chemicals-for-a-healthier-bathroom-routine?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_EU9d3W": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Cleanerblog_c292fbca-c532-4d1f-98bc-cf7a61641d62.webp",
+            "title": "Are your cleaners making you sick?",
+            "text": "<p>As we go about our daily routines, we often use household cleaners without giving them much thought. However, what many of us may not</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/toxic-truths/are-your-cleaners-making-you-sick-1?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_ARfJYQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ingredient_look.webp",
+            "title": "Harmful Ingredients to avoid in Laundry Detergent",
+            "text": "<p>Think your \"clean\" detergent is truly clean? Uncover the hidden toxins - like dyes, parabens, and fillers - lurking in everyday</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/toxic-truths/ingredients-to-avoid?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_eqQq8V": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_nEJn7h",
+        "column_jDyQV3",
+        "column_Kh3pFW",
+        "column_JtrTJ9",
+        "column_dCzhhD",
+        "column_wY38iF",
+        "column_HzknXC",
+        "column_UbnK4j",
+        "column_HdwMgy",
+        "column_EU9d3W",
+        "column_ARfJYQ",
+        "column_eqQq8V"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_cgK8BJ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_wDYY3K": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/checklist-blog.png",
+            "title": "Business Tips",
+            "text": "",
+            "link_label": "Get Advice",
+            "link": "shopify://blogs/business-tips"
+          }
+        },
+        "column_mkzgDA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_Flat_2-D_editorial_illustration_New-Yorker_styl_961f6b7d-8411-49cf-bcae-a53ace2ff789.png",
+            "title": "Tips + Guides",
+            "text": "",
+            "link_label": "Clean Smart",
+            "link": "shopify://pages/tips-guides"
+          }
+        },
+        "column_AqQfwC": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/wanderingperson_dbe4c6e9-fb9c-4c6f-b4cc-75befe171e09.png",
+            "title": "The Toxic Truth",
+            "text": "",
+            "link_label": "Deep Dive",
+            "link": "shopify://pages/the-toxic-truth"
+          }
+        },
+        "column_TFayCt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_modern_2-D_editorial_illustration--sleek_lab__3_7e6af2cf-c2c7-456d-a2d9-fdfa1c76a3f6.png",
+            "title": "Ingredients We Use",
+            "text": "",
+            "link_label": "Learn Why",
+            "link": "shopify://pages/ingredients-we-use"
+          }
+        },
+        "column_7cX3J8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/avoid.jpg",
+            "title": "Ingredients We Avoid",
+            "text": "",
+            "link_label": "Avoid Toxins",
+            "link": "shopify://pages/ingredients-we-avoid"
+          }
+        },
+        "column_n4PPGH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sustainability.jpg",
+            "title": "Our Sustainability",
+            "text": "",
+            "link_label": "Get Circular",
+            "link": "shopify://pages/our-sustainability"
+          }
+        }
+      },
+      "block_order": [
+        "column_wDYY3K",
+        "column_mkzgDA",
+        "column_AqQfwC",
+        "column_TFayCt",
+        "column_7cX3J8",
+        "column_n4PPGH"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "More Blogs",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "circle",
+        "button_label": "All Blogs",
+        "button_link": "shopify://pages/blog-landing-page",
+        "columns_desktop": 5,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_z36WB8": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GRNUWe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design.png",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_3MFe8B": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Untitled_580d6abd-1ae3-4e38-9bc8-b083c07a3b45.png",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_t7WqnW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_E7Cx4b": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled_129e331e-5fd0-42c2-8e5d-dcc50570e10b.png",
+            "title": "",
+            "text": "",
+            "link_label": "Private Label Information",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_WaF4dj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_W4hbQk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_JPJ68i": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blog Center",
+            "link": "shopify://pages/blog-landing-page"
+          }
+        },
+        "column_cywMmJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        }
+      },
+      "block_order": [
+        "column_GRNUWe",
+        "column_3MFe8B",
+        "column_t7WqnW",
+        "column_E7Cx4b",
+        "column_WaF4dj",
+        "column_W4hbQk",
+        "column_JPJ68i",
+        "column_cywMmJ"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_FUAfMW",
+    "multicolumn_ibyYfQ",
+    "multicolumn_cgK8BJ",
+    "multicolumn_z36WB8"
+  ]
+}

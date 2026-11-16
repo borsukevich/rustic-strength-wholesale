@@ -69,6 +69,23 @@
             "show_gift_card_recipient": true
           }
         },
+        "lab_testing_widget": {
+          "type": "lab-testing-widget",
+          "settings": {
+            "trigger_heading": "Third-Party Lab Tested",
+            "trigger_badge_label": "Verified",
+            "trigger_description": "No detectable 1,4-dioxane.",
+            "drawer_heading": "Third-Party Lab Tested",
+            "drawer_subline": "Independently tested by ISO/IEC 17025 accredited laboratories.",
+            "base_formula_note": "We tested our unscented base formula, the same base every scent is built on, so these results cover this product.",
+            "why_we_test_heading": "Why we test",
+            "scale_heading": "Understanding detection limits",
+            "scale_description": "None detected means below the lab's detection limit, not a flat zero. For scale, one drop of water in an Olympic pool is about 0.01 ppm.",
+            "coa_button_label": "View Certificate of Analysis",
+            "view_all_link_text": "See all our lab results",
+            "view_all_link_url": ""
+          }
+        },
         "judge_me_reviews_review_snippet_widget_wbpnfn": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
@@ -176,6 +193,7 @@
         "quantity_selector_fFPAYP",
         "rebuy_personalization_engine_rebuy_widget_TCc7fH",
         "buy_buttons_BkQNGe",
+        "lab_testing_widget",
         "judge_me_reviews_review_snippet_widget_wbpnfn",
         "description",
         "collapsible-row-1",
@@ -236,6 +254,7 @@
     },
     "quick-order-list": {
       "type": "quick-order-list",
+      "disabled": true,
       "settings": {
         "variants_per_page": 50,
         "show_image": true,

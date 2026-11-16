@@ -103,7 +103,7 @@
           "settings": {
             "heading": "Scent",
             "icon": "leaf",
-            "content": "<p><em>Lots of Purpose Cleaner scents are made with  –</em></p><p><strong>Pure essential oils</strong> that are hand selected by us from small farms all around the world.</p>",
+            "content": "<p><em>Lots of Purpose Cleaner scents are made with  \u2013</em></p><p><strong>Pure essential oils</strong>\u00a0that are hand selected by us from small farms all around the world.</p>",
             "page": ""
           }
         },
@@ -112,7 +112,7 @@
           "settings": {
             "heading": "Ingredient Descriptions",
             "icon": "eye",
-            "content": "<p><a href=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\"><strong>High-Purity Water</strong></a><strong> </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-ethyl-alcohol\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-ethyl-alcohol\"><strong>Alcohol (Ethyl)</strong></a><strong> </strong>(Speeds drying.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products\"><strong>Capryl Caprylyl Glucoside</strong></a><strong> </strong>(A biodegradable plant-based surfactant with mild chemistry and sensitive skin compatibility.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-coco-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-coco-glucoside-and-what-does-it-do-in-products\"><strong>Coco- Glucoside</strong></a><strong> </strong>(A plant-derived, biodegradable surfactant. It is mild and safe for sensitive skin.)</p><p><strong>Sodium Citrate </strong>(Mineral based. Helps grab and remove minerals.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-gluconate\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-gluconate\"><strong>Sodium Gluconate</strong></a><strong> </strong>(Mineral based. Helps grab and remove metals.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\"><strong>Phenoxyethanol</strong></a><strong> & Caprylyl Glycol</strong> (gentle preservatives, used sparingly to prevent bacteria growth)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\"><strong>Citric Acid</strong></a><strong> </strong>(neutralizes pH)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-are-essential-oils\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-are-essential-oils\"><strong>Essential Oil </strong></a>(scent, if scented)</p>",
+            "content": "<p><a href=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\"><strong>High-Purity Water</strong></a><strong>\u00a0</strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-ethyl-alcohol\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-ethyl-alcohol\"><strong>Alcohol (Ethyl)</strong></a><strong>\u00a0</strong>(Speeds drying.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-caprylyl-capryl-glucoside-and-what-does-it-do-in-products\"><strong>Capryl Caprylyl Glucoside</strong></a><strong>\u00a0</strong>(A biodegradable plant-based surfactant with mild chemistry and\u00a0sensitive skin compatibility.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-coco-glucoside-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-coco-glucoside-and-what-does-it-do-in-products\"><strong>Coco- Glucoside</strong></a><strong>\u00a0</strong>(A plant-derived, biodegradable surfactant. It is mild and safe for sensitive skin.)</p><p><strong>Sodium Citrate\u00a0</strong>(Mineral based. Helps grab and remove minerals.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-gluconate\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-gluconate\"><strong>Sodium Gluconate</strong></a><strong>\u00a0</strong>(Mineral based. Helps grab and remove metals.)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\"><strong>Phenoxyethanol</strong></a><strong>\u00a0& Caprylyl Glycol</strong>\u00a0(gentle preservatives, used sparingly to prevent bacteria growth)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\"><strong>Citric Acid</strong></a><strong>\u00a0</strong>(neutralizes pH)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-are-essential-oils\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-are-essential-oils\"><strong>Essential Oil </strong></a>(scent, if scented)</p>",
             "page": ""
           }
         },
@@ -137,6 +137,13 @@
             "border_radius": 8,
             "font_family": "inherit"
           }
+        },
+        "lab_testing_widget": {
+          "type": "lab-testing-widget",
+          "settings": {
+            "trigger_description": "No detectable 1,4-dioxane.",
+            "base_formula_note": "We tested our unscented base formula, the same base every scent is built on, so these results cover this product."
+          }
         }
       },
       "block_order": [
@@ -147,6 +154,7 @@
         "quantity_selector_fFPAYP",
         "rebuy_personalization_engine_rebuy_widget_TCc7fH",
         "buy_buttons_BkQNGe",
+        "lab_testing_widget",
         "judge_me_reviews_review_snippet_widget_U6pjKY",
         "description",
         "collapsible-row-1",
@@ -179,7 +187,7 @@
           "type": "button",
           "name": "Product SDS",
           "settings": {
-            "button_label": "📋Lots of Purpose Cleaner SDS",
+            "button_label": "\ud83d\udccbLots of Purpose Cleaner SDS",
             "button_link": "https://cdn.shopify.com/s/files/1/0344/1809/8221/files/Lots_Of_Purpose_SDS.pdf?v=1774467027",
             "button_style_secondary": false,
             "button_label_2": "",

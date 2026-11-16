@@ -21,16 +21,22 @@
     "collection_list_jBn4it": {
       "type": "collection-list",
       "blocks": {
+        "featured_collection_EwgmtC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rustic-strength-bath-body"
+          }
+        },
         "featured_collection_PtneWb": {
           "type": "featured_collection",
           "settings": {
             "collection": "rustic-strength-hair-care"
           }
         },
-        "featured_collection_EwgmtC": {
+        "featured_collection_PCNPRY": {
           "type": "featured_collection",
           "settings": {
-            "collection": "rustic-strength-bath-body"
+            "collection": "hand-soap"
           }
         },
         "featured_collection_B8YU9L": {
@@ -48,8 +54,9 @@
         }
       },
       "block_order": [
-        "featured_collection_PtneWb",
         "featured_collection_EwgmtC",
+        "featured_collection_PtneWb",
+        "featured_collection_PCNPRY",
         "featured_collection_B8YU9L",
         "featured_collection_TVn6Hy"
       ],

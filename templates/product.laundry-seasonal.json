@@ -64,6 +64,23 @@
             "show_gift_card_recipient": true
           }
         },
+        "lab_testing_widget": {
+          "type": "lab-testing-widget",
+          "settings": {
+            "trigger_heading": "Third-Party Lab Tested",
+            "trigger_badge_label": "Verified",
+            "trigger_description": "No detectable heavy metals, glyphosate, pesticides, 1,4-dioxane, phthalates, or PFAS.",
+            "drawer_heading": "Third-Party Lab Tested",
+            "drawer_subline": "Independently tested by ISO/IEC 17025 accredited laboratories.",
+            "base_formula_note": "We tested our unscented base formula, the same base every scent is built on, so these results cover this product.",
+            "why_we_test_heading": "Why we test",
+            "scale_heading": "Understanding detection limits",
+            "scale_description": "None detected means below the lab's detection limit, not a flat zero. For scale, one drop of water in an Olympic pool is about 0.01 ppm.",
+            "coa_button_label": "View Certificate of Analysis",
+            "view_all_link_text": "See all our lab results",
+            "view_all_link_url": ""
+          }
+        },
         "judge_me_reviews_review_snippet_widget_kNbP8C": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
@@ -134,7 +151,7 @@
           "settings": {
             "heading": "Laundry Tips",
             "icon": "question_mark",
-            "content": "<p><strong>Stain removal.</strong> Simply place a little detergent directly on the stain and scrub the fabric together.  Some stains respond better with cold-water vs hot water.  For more details on a specific stain removal, please see our helpful <a href=\"/blogs/tips-tricks\" title=\"Tips + Guides\">Stain Removal Blogs</a>.</p><p>Remove the toughest stains with <a href=\"/products/oxyboost\" title=\"Oxy Boost Stain Remover\"><span style=\"text-decoration:underline\"><strong>Oxy Boost</strong></span> </a>and <a href=\"/products/un-bleach\" title=\"Un-Bleach\"><span style=\"text-decoration:underline\"><strong>Un-Bleach</strong></span></a>. </p><p>Soften hard water and clean with <a href=\"/products/epicwashingsoda\" title=\"Epic Washing Soda\"><span style=\"text-decoration:underline\"><strong>Epic Washing Soda</strong></span></a>. </p><p>Soften fabrics and remove odors with <a href=\"/products/organicfabricsoftener\" title=\"Fabric Softener\"><span style=\"text-decoration:underline\"><strong>Fabric Softener</strong></span></a>. </p><p>Remove wrinkles and static with <a href=\"/products/alpaca-dryer-balls-3-pack\" title=\"Alpaca Dryer Balls ( 3 pack )\"><span style=\"text-decoration:underline\"><strong>Alpaca Dyer Balls</strong></span></a>. </p><p>Dilute our <a href=\"/products/castilesoap\" title=\"Castile Soap - Ultra Concentrate | Unscented\"><span style=\"text-decoration:underline\"><strong>Castile Soap</strong></span></a> with distilled water for a re-useable baby wipe solution. </p>",
+            "content": "<p><strong>Stain removal.</strong> Simply place a little detergent directly on the stain and scrub the fabric together. &nbsp;Some stains respond better with cold-water vs hot water. &nbsp;For more details on a specific stain removal, please see our helpful <a href=\"https://rusticstrength.com/blogs/tips-tricks/stain-removal-tips?ref=wholesale&utm_source=wholesale&utm_medium=referral\" target=\"_blank\" title=\"Stain Removal Guide blog\">Stain Removal Blogs.</a></p><p>Remove the toughest stains with&nbsp;<a href=\"/products/oxyboost-stain-remover\" target=\"_blank\" title=\"Oxy Boost Stain Remover\"><span style=\"text-decoration:underline\"><strong>Oxy Boost</strong></span>&nbsp;</a>and&nbsp;<a href=\"/products/un-bleach\" title=\"Un-Bleach\"><span style=\"text-decoration:underline\"><strong>Un-Bleach</strong></span></a>.&nbsp;</p><p>Soften hard water and clean with&nbsp;<a href=\"/products/epic-washing-soda\" target=\"_blank\" title=\"Epic Washing Soda\"><span style=\"text-decoration:underline\"><strong>Epic Washing Soda</strong></span></a>.&nbsp;</p><p>Soften fabrics and remove odors with&nbsp;<a href=\"/collections/fabric-softener\" target=\"_blank\" title=\"fabric softener\"><span style=\"text-decoration:underline\"><strong>Fabric Softener</strong></span></a>.&nbsp;</p><p>Remove wrinkles and static with&nbsp;<a href=\"/collections/dryer-balls-sheets\" target=\"_blank\" title=\"dryer balls\"><span style=\"text-decoration:underline\"><strong>US Sourced Dyer Balls</strong></span></a>.&nbsp;</p><p>Dilute our&nbsp;<a href=\"/collections/castile-soap\" target=\"_blank\" title=\"castile soap\"><span style=\"text-decoration:underline\"><strong>Castile Soap</strong></span></a>&nbsp;with distilled water for a re-useable baby wipe solution.&nbsp;</p>",
             "page": ""
           }
         },
@@ -170,6 +187,7 @@
         "icon_with_text_4MzpVQ",
         "rebuy_personalization_engine_rebuy_widget_TCc7fH",
         "buy_buttons_BkQNGe",
+        "lab_testing_widget",
         "judge_me_reviews_review_snippet_widget_kNbP8C",
         "description",
         "collapsible-row-1",
@@ -204,7 +222,7 @@
           "name": "Lab Results",
           "settings": {
             "button_label": "Lab Results",
-            "button_link": "shopify://pages/lab-results",
+            "button_link": "shopify://pages/third-party-testing",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",

@@ -57,7 +57,7 @@
             "reviews_selection": "custom",
             "products": [
               "dish-soap-16-oz-pump-bottle",
-              "dishes-great-soap-scented",
+              "dish-soap-custom-made-scent",
               "dish-soap-mama-baby-safe",
               "dish-soap-scented",
               "dish-soap-unscented"
@@ -144,6 +144,13 @@
             "border_radius": 8,
             "font_family": "inherit"
           }
+        },
+        "lab_testing_widget": {
+          "type": "lab-testing-widget",
+          "settings": {
+            "trigger_description": "No detectable 1,4-dioxane.",
+            "base_formula_note": "We tested our unscented base formula, the same base every scent is built on, so these results cover this product."
+          }
         }
       },
       "block_order": [
@@ -154,6 +161,7 @@
         "quantity_selector_fFPAYP",
         "rebuy_personalization_engine_rebuy_widget_TCc7fH",
         "buy_buttons_BkQNGe",
+        "lab_testing_widget",
         "judge_me_reviews_review_snippet_widget_a6bBWF",
         "description",
         "collapsible-row-1",

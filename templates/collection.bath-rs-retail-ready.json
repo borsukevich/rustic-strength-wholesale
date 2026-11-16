@@ -24,19 +24,26 @@
         "featured_collection_UfPEkH": {
           "type": "featured_collection",
           "settings": {
-            "collection": "avocado-lotion"
+            "collection": "rustic-strength-bath-body-retail-ready-copy"
           }
         },
         "featured_collection_daRXmd": {
           "type": "featured_collection",
           "settings": {
-            "collection": "nourish-botanicals-body-lotion"
+            "collection": "body-care-retail-ready"
+          }
+        },
+        "featured_collection_ycienB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hair-care-retail-ready"
           }
         }
       },
       "block_order": [
         "featured_collection_UfPEkH",
-        "featured_collection_daRXmd"
+        "featured_collection_daRXmd",
+        "featured_collection_ycienB"
       ],
       "disabled": true,
       "name": "t:sections.collection-list.presets.name",

@@ -236,6 +236,7 @@
     },
     "quick-order-list": {
       "type": "quick-order-list",
+      "disabled": true,
       "settings": {
         "variants_per_page": 50,
         "show_image": true,

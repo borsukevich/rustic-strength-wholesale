@@ -30,19 +30,19 @@
         "featured_collection_daRXmd": {
           "type": "featured_collection",
           "settings": {
-            "collection": "spouts-pumps-caps-copy"
+            "collection": "spouts-pumps"
           }
         },
         "featured_collection_n4iYX8": {
           "type": "featured_collection",
           "settings": {
-            "collection": "spouts-pumps-caps-copy-1"
+            "collection": "sprayers"
           }
         },
         "featured_collection_8BcUy8": {
           "type": "featured_collection",
           "settings": {
-            "collection": "spouts-pumps-caps-copy-2"
+            "collection": "caps"
           }
         },
         "featured_collection_FKCh6t": {
@@ -59,6 +59,7 @@
         "featured_collection_8BcUy8",
         "featured_collection_FKCh6t"
       ],
+      "disabled": true,
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "collections",
@@ -123,7 +124,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 36,
+        "products_per_page": 200,
         "columns_desktop": 5,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
@@ -149,6 +150,9 @@
             "show_sample_reviews": false,
             "reviews_selection": "all",
             "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
             "star_rating": "4_to_5_star",
             "max_reviews": 30,
             "quote_marks_size": "small",

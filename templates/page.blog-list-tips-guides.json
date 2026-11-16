@@ -1,0 +1,397 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_FUAfMW": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_PKc3qj": {
+          "type": "heading",
+          "settings": {
+            "heading": "tips + guides",
+            "heading_size": "hxl"
+          }
+        },
+        "text_d6DiJM": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "buttons_eh6Ffh": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PKc3qj",
+        "text_d6DiJM",
+        "buttons_eh6Ffh"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Dishwasher-ConventionalVSMindful_cb90621a-92c7-4cfd-85e9-20c56b13f2a7.webp",
+        "image_overlay_opacity": 30,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true,
+        "content_max_width": 800
+      }
+    },
+    "multicolumn_ibyYfQ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nEJn7h": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Laundry_Line_Line_Up_3X2_6fee2f34-4c35-4735-8b0f-0973dfe9d1f5.jpg",
+            "title": "What Rustic Strength Laundry Products Should I...",
+            "text": "<p>Not sure which laundry products you actually need? this simple guide breaks down exactly what each product does - so you can build</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/tips-tricks/what-rustic-strength-laundry-products-should-i-buy?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_jDyQV3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/scent_bottles_citrus_herbs.webp",
+            "title": "Why We Scent Safely and How to Boost Your Laundry",
+            "text": "<p>Fragrance safety matters. Learn why we use essential oils and phthalate-free fragrance oils, and get tips on naturally boosting your</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/tips-tricks/why-we-scent-safely-and-how-to-boost-your-laundrys-smell?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_Kh3pFW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/unbleach_blog.jpg",
+            "title": "Unbleach (Oxygen Bleach): Uses, Recipes, and",
+            "text": "<p>Discover how UN-Bleach transforms your laundry routine with natural stain removal and brightening power. Learn easy recipes and tips</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/tips-tricks/unbleach-uses-recipes-and-stain-removal-guide?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_JtrTJ9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/FillingJugOfLaundryDetergent_4_3X2_23badca2-5db7-40f0-8624-09bc31c0fee4.jpg",
+            "title": "Eco-Jug Spouts - How to Get Started and Prevent...",
+            "text": "<p>Get directions and tips to get started with your eco-jug, install your pump or spout and to prevent drips</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/tips-tricks/eco-jug-spouts-how-to-get-started-and-prevent-leaks?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_dCzhhD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/alpaca_dryer_5.jpg",
+            "title": "Wool vs Alpaca Dryer Balls: What's the Difference?",
+            "text": "<p>Wool dryer balls and alpaca dryer balls are both natural alternatives to traditional dryer sheets and fabric softeners. They offer similar</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/tips-tricks/wool-vs-alpaca-dryer-balls-what-s-the-difference?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_wY38iF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Castile_Promo-low.gif",
+            "title": "The Uses and Benefits of Castile Soap",
+            "text": "<p>Castile Soap can be utilized in many different scenarios, from personal hygiene for you and bath soap for your pets; to decontaminating fresh fruits and&nbsp;</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/tips-tricks/castile-soap-uses-and-benefits?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_HzknXC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Firefly_pretty_rustic_bohemian_linen_dress_has_a_wine_stain_on_it_that_a_woman_is_trying_to_get_ou_31b414d8-1327-485a-8ef8-4a6f1c46d5a7.webp",
+            "title": "Stain Removal Tips",
+            "text": "<p>Often times, detergent itself isn't enough for stains. Here are our tips and tricks for removing the most common clothing stains.</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/tips-tricks/stain-removal-tips?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        },
+        "column_UbnK4j": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Dishwasher-ConventionalVSMindful_cb90621a-92c7-4cfd-85e9-20c56b13f2a7.webp",
+            "title": "Why does Rustic Strength's natural dish detergent work differently",
+            "text": "<p>Discover why Rustic Strength's natural dish detergent cleans effectively without harsh chemicals. Learn how it works differently from</p>",
+            "link_label": "Read more",
+            "link": "https://rusticstrength.com/blogs/tips-tricks/automatic-dishwasher-powder-why-does-rustic-strength-s-natural-dish-detergent-work-differently-than-conventional-brands?ref=wholesale&utm_source=wholesale&utm_medium=referral"
+          }
+        }
+      },
+      "block_order": [
+        "column_nEJn7h",
+        "column_jDyQV3",
+        "column_Kh3pFW",
+        "column_JtrTJ9",
+        "column_dCzhhD",
+        "column_wY38iF",
+        "column_HzknXC",
+        "column_UbnK4j"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_DDE4Ld": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_FWWgkw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/checklist-blog.png",
+            "title": "Business Tips",
+            "text": "",
+            "link_label": "Get Advice",
+            "link": "shopify://blogs/business-tips"
+          }
+        },
+        "column_YccqPN": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_Flat_2-D_editorial_illustration_New-Yorker_styl_961f6b7d-8411-49cf-bcae-a53ace2ff789.png",
+            "title": "Tips + Guides",
+            "text": "",
+            "link_label": "Clean Smart",
+            "link": "shopify://pages/tips-guides"
+          }
+        },
+        "column_4CXWgB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/wanderingperson_dbe4c6e9-fb9c-4c6f-b4cc-75befe171e09.png",
+            "title": "The Toxic Truth",
+            "text": "",
+            "link_label": "Deep Dive",
+            "link": "shopify://pages/the-toxic-truth"
+          }
+        },
+        "column_ntABA8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/rusticflo_91021_modern_2-D_editorial_illustration--sleek_lab__3_7e6af2cf-c2c7-456d-a2d9-fdfa1c76a3f6.png",
+            "title": "Ingredients We Use",
+            "text": "",
+            "link_label": "Learn Why",
+            "link": "shopify://pages/ingredients-we-use"
+          }
+        },
+        "column_xprft3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/avoid.jpg",
+            "title": "Ingredients We Avoid",
+            "text": "",
+            "link_label": "Avoid Toxins",
+            "link": "shopify://pages/ingredients-we-avoid"
+          }
+        },
+        "column_n9UFmt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sustainability.jpg",
+            "title": "Our Sustainability",
+            "text": "",
+            "link_label": "Get Circular",
+            "link": "shopify://pages/our-sustainability"
+          }
+        }
+      },
+      "block_order": [
+        "column_FWWgkw",
+        "column_YccqPN",
+        "column_4CXWgB",
+        "column_ntABA8",
+        "column_xprft3",
+        "column_n9UFmt"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "More Blogs",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "circle",
+        "button_label": "All Blogs",
+        "button_link": "shopify://pages/blog-landing-page",
+        "columns_desktop": 5,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_z36WB8": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GRNUWe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design.png",
+            "title": "",
+            "text": "",
+            "link_label": "Help Center",
+            "link": "shopify://pages/faqs"
+          }
+        },
+        "column_3MFe8B": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Untitled_580d6abd-1ae3-4e38-9bc8-b083c07a3b45.png",
+            "title": "",
+            "text": "",
+            "link_label": "Close the Loop™",
+            "link": "shopify://pages/close-the-loop-program™"
+          }
+        },
+        "column_t7WqnW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Downloadable Assets",
+            "link": "shopify://pages/downloadable-assets"
+          }
+        },
+        "column_E7Cx4b": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Untitled_129e331e-5fd0-42c2-8e5d-dcc50570e10b.png",
+            "title": "",
+            "text": "",
+            "link_label": "Private Label Information",
+            "link": "shopify://pages/private-label-information"
+          }
+        },
+        "column_WaF4dj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Partner Perks Rewards",
+            "link": "shopify://pages/wholesale-partner-perks"
+          }
+        },
+        "column_W4hbQk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Promote Your Store",
+            "link": "shopify://pages/help-us-promote-your-shop"
+          }
+        },
+        "column_JPJ68i": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Copy_of_Untitled_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blog Center",
+            "link": "shopify://pages/blog-landing-page"
+          }
+        },
+        "column_cywMmJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Copy_of_Copy_of_Untitled.png",
+            "title": "",
+            "text": "",
+            "link_label": "Retail Pricing Tool",
+            "link": "shopify://pages/retail-pricing-tool"
+          }
+        }
+      },
+      "block_order": [
+        "column_GRNUWe",
+        "column_3MFe8B",
+        "column_t7WqnW",
+        "column_E7Cx4b",
+        "column_WaF4dj",
+        "column_W4hbQk",
+        "column_JPJ68i",
+        "column_cywMmJ"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Merchant Tools",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5a7bf07e-51bb-46e8-9aa4-d42580d6a365",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_FUAfMW",
+    "multicolumn_ibyYfQ",
+    "multicolumn_DDE4Ld",
+    "multicolumn_z36WB8"
+  ]
+}

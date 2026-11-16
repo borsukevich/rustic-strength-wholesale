@@ -191,6 +191,13 @@
     color: rgb(var(--color-heading));
   }
 
+  .lab-card__method-note {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: rgba(var(--color-text), 0.7);
+    margin: -1rem 0 2rem 0;
+  }
+
   .lab-card__details {
     font-size: 1.2rem;
     line-height: 1.5;
@@ -282,8 +289,8 @@
 {%- endstyle -%}
 
 <div
-  class="{% render 'section-classes', section %}"
-  style="{% render 'section-style', section %}"
+  class="{% render 'section-classes' %}"
+  style="{% render 'section-style' %}"
   data-section-id="{{ section.id }}"
 >
   <div class="page-width relative">
@@ -390,6 +397,11 @@
                       <p class="lab-card__why-we-test"><strong>Why we test:</strong> {{ card.why_we_test.value }}</p>
                     {%- endif -%}
 
+                    {%- assign method_note = card.method_note.value | default: card.method.value -%}
+                    {%- if method_note != blank -%}
+                      <p class="lab-card__method-note">{{ method_note }}</p>
+                    {%- endif -%}
+
                     {%- if card.lab_details.value != blank -%}
                       <p class="lab-card__details">{{ card.lab_details.value }}</p>
                     {%- endif -%}
@@ -443,6 +455,23 @@
                         "name": {{ card.category.value | json }},
                         "value": "None detected",
                         "description": {{ card.result_statement.value | append: " (Sensitivity: " | append: card.detection_sensitivity.value | append: ")" | json }}
+                        {%- assign method_note = card.method_note.value | default: card.method.value | default: card.measurement_technique.value -%}
+                        {%- if method_note != blank -%}
+                          ,"measurementTechnique": {{ method_note | json }}
+                        {%- endif -%}
+                        {%- if card.lab_details.value != blank -%}
+                          ,"valueReference": {
+                            "@type": "PropertyValue",
+                            "name": "Tested by",
+                            "value": {{ card.lab_details.value | json }}
+                          }
+                        {%- endif -%}
+                        {%- if card.report_pdf.value.url != blank -%}
+                          ,"subjectOf": {
+                            "@type": "DigitalDocument",
+                            "url": {{ card.report_pdf.value.url | json }}
+                          }
+                        {%- endif -%}
                       }
                     {%- endif -%}
                   {%- endfor -%}
@@ -601,7 +630,7 @@
     {
       "type": "product_line",
       "name": "Product line",
-      "limit": 12,
+      "limit": 30,
       "settings": [
         {
           "type": "text",
@@ -639,3 +668,16 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'section-classes', section %}"
+  to: "{% render 'section-classes' %}"
+  position: 6578..6608
+- from: "{% render 'section-style', section %}"
+  to: "{% render 'section-style' %}"
+  position: 6619..6647
+{% endcomment %}

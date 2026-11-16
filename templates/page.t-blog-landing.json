@@ -27,7 +27,7 @@
             "title": "Our Sustainability",
             "text": "",
             "link_label": "Get Circular",
-            "link": "shopify://blogs/our-packaging"
+            "link": "shopify://pages/our-sustainability"
           }
         },
         "column_z8LJ8w": {
@@ -37,7 +37,7 @@
             "title": "Tips + Guides",
             "text": "",
             "link_label": "Clean Smart",
-            "link": "shopify://blogs/tips-tricks"
+            "link": "shopify://pages/tips-guides"
           }
         },
         "column_xVaPYH": {
@@ -47,7 +47,7 @@
             "title": "The Toxic Truth",
             "text": "",
             "link_label": "Deep Dive",
-            "link": "shopify://blogs/news"
+            "link": "shopify://pages/the-toxic-truth"
           }
         },
         "column_4EPMEy": {
@@ -57,7 +57,7 @@
             "title": "Our Story",
             "text": "",
             "link_label": "Sickness to Strength",
-            "link": "shopify://blogs/company"
+            "link": "shopify://pages/our-story"
           }
         },
         "column_9GLkNU": {
@@ -67,7 +67,7 @@
             "title": "Ingredients We Use",
             "text": "",
             "link_label": "Learn why",
-            "link": "shopify://blogs/ingredients-we-stand-by"
+            "link": "shopify://pages/ingredients-we-use"
           }
         },
         "column_eXMjEU": {
@@ -77,7 +77,7 @@
             "title": "Ingredients We Avoid",
             "text": "",
             "link_label": "Avoid Toxins",
-            "link": "shopify://blogs/you-will-never-find-these-in-our-products"
+            "link": "shopify://pages/ingredients-we-avoid"
           }
         }
       },
@@ -107,97 +107,21 @@
         "padding_bottom": 36
       }
     },
-    "featured_blog_JtQdD9": {
+    "featured_blog_4BUfKm": {
       "type": "featured-blog",
       "name": "t:sections.featured-blog.presets.name",
       "settings": {
-        "blog": "news",
-        "post_limit": 4,
-        "heading": "Trending Articles",
+        "blog": "business-tips",
+        "post_limit": 3,
+        "heading": "Business Tips",
         "heading_size": "h2",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "show_view_all": true,
         "show_image": true,
         "show_date": false,
         "show_author": false,
         "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "featured_blog_ggHjA7": {
-      "type": "featured-blog",
-      "disabled": true,
-      "name": "t:sections.featured-blog.presets.name",
-      "settings": {
-        "blog": "our-packaging",
-        "post_limit": 4,
-        "heading": "Our Sustainability",
-        "heading_size": "h2",
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "featured_blog_GEBzXm": {
-      "type": "featured-blog",
-      "disabled": true,
-      "name": "t:sections.featured-blog.presets.name",
-      "settings": {
-        "blog": "tips-tricks",
-        "post_limit": 4,
-        "heading": "Tips + Guides",
-        "heading_size": "h2",
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "featured_blog_PVdmxJ": {
-      "type": "featured-blog",
-      "disabled": true,
-      "name": "t:sections.featured-blog.presets.name",
-      "settings": {
-        "blog": "ingredients-we-stand-by",
-        "post_limit": 4,
-        "heading": "Ingredients We Use",
-        "heading_size": "h2",
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "featured_blog_GVzLp9": {
-      "type": "featured-blog",
-      "disabled": true,
-      "name": "t:sections.featured-blog.presets.name",
-      "settings": {
-        "blog": "you-will-never-find-these-in-our-products",
-        "post_limit": 4,
-        "heading": "Ingredients We Avoid",
-        "heading_size": "h2",
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 36,
+        "padding_top": 20,
         "padding_bottom": 36
       }
     },
@@ -529,11 +453,7 @@
   "order": [
     "main",
     "multicolumn_6efJ3y",
-    "featured_blog_JtQdD9",
-    "featured_blog_ggHjA7",
-    "featured_blog_GEBzXm",
-    "featured_blog_PVdmxJ",
-    "featured_blog_GVzLp9",
+    "featured_blog_4BUfKm",
     "rich_text_b34PX6",
     "collection_list_PzYAzN",
     "multicolumn_XjqFK7",

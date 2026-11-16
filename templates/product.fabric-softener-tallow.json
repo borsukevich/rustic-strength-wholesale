@@ -70,8 +70,8 @@
             "transition_speed": 5,
             "corner_styling": "round",
             "text_color": "",
-            "card_color": "#F4F4F4",
-            "stars_color": "#BCAD68",
+            "card_color": "#f4f4f4",
+            "stars_color": "#bcad68",
             "arrows_color": "",
             "arrows_background_color": ""
           }
@@ -103,7 +103,7 @@
           "settings": {
             "heading": "Ingredient Description",
             "icon": "eye",
-            "content": "<p><a href=\"/blogs/ingredients/charcoal-filtered-deionized-water\" title=\"What is High-Purity Water (charcoal-filtered, reverse osmosis, UV-treated) and what does it do in products?\"><strong>High-Purity Water</strong></a><strong>  </strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p>Beef Tallow (Grass-Fed, Regenerative)</p><p>Hydrogenated Tallow Dimethyl Ammonium Chloride</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-food-grade-polysorbate-20-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Food-Grade Polysorbate 20 and what does it do in products?\"><strong>Polysorbate 20</strong></a></p><p><a href=\"/blogs/ingredients-we-stand-by/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" target=\"_blank\" title=\"Phenoxyethanol in Personal Care Products: What You Need to Know\"><strong>Phenoxyethanol</strong></a></p><p>Caprylyl Glycol</p><p><a href=\"/blogs/ingredients-we-stand-by/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"What is Citric Acid and what does it do in products?\"><strong>Citric Acid</strong></a></p>",
+            "content": "<p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-high-purity-water?ref=wholesale&utm_source=wholesale&utm_medium=referral\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-high-purity-water?ref=wholesale&utm_source=wholesale&utm_medium=referral\"><strong>High-Purity Water </strong></a><strong>&nbsp;</strong>(charcoal-filtered, reverse osmosis, UV-sanitized)</p><p>Beef Tallow (Grass-Fed, Regenerative)</p><p>Hydrogenated Tallow Dimethyl Ammonium Chloride</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-polysorbate-20-and-what-does-it-do-in-products?ref=wholesale&utm_source=wholesale&utm_medium=referral\" target=\"_blank\" title=\"What is Food Grade Polysorbate 20 blog\"><strong>Polysorbate 20</strong></a></p><p><a href=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know?ref=wholesale&utm_source=wholesale&utm_medium=referral\" target=\"_blank\" title=\"Phenoxyethanol in Personal Care Products blog\"><strong>Phenoxyethanol</strong></a></p><p>Caprylyl Glycol</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products?ref=wholesale&utm_source=wholesale&utm_medium=referral\" target=\"_blank\" title=\"Everything you need to know about Citric Acid blog\"><strong>Citric Acid</strong></a></p>",
             "page": ""
           }
         },

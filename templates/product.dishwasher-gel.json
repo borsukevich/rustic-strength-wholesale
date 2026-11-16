@@ -51,6 +51,23 @@
             "show_gift_card_recipient": true
           }
         },
+        "lab_testing_widget": {
+          "type": "lab-testing-widget",
+          "settings": {
+            "trigger_heading": "Third-Party Lab Tested",
+            "trigger_badge_label": "Verified",
+            "trigger_description": "No detectable 1,4-dioxane.",
+            "drawer_heading": "Third-Party Lab Tested",
+            "drawer_subline": "Independently tested by ISO/IEC 17025 accredited laboratories.",
+            "base_formula_note": "We tested our unscented base formula, the same base every scent is built on, so these results cover this product.",
+            "why_we_test_heading": "Why we test",
+            "scale_heading": "Understanding detection limits",
+            "scale_description": "None detected means below the lab's detection limit, not a flat zero. For scale, one drop of water in an Olympic pool is about 0.01 ppm.",
+            "coa_button_label": "View Certificate of Analysis",
+            "view_all_link_text": "See all our lab results",
+            "view_all_link_url": ""
+          }
+        },
         "judge_me_reviews_review_snippet_widget_eQEKBT": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
@@ -112,7 +129,7 @@
           "settings": {
             "heading": "Ingredient Descriptions",
             "icon": "eye",
-            "content": "<p><a href=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\">High-Purity Water</a><strong> </strong>• charcoal-filtered, reverse osmosis, UV-sanitized</p><p>Tetrasodium Glutamate Diacetate (plant-based cleaner)</p><p>Octyl Dimethyl Amine Oxide (plant-based cleaner)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\">Citric Acid</a> (earth mineral)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-metasilicate\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-metasilicate\">Sodium Metasilicate</a> (earth mineral)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" target=\"_blank\" title=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\">Phenoxyethanol</a> (safe preservative)</p><p>Caprylyl Glycol (safe preservative)</p><p><a href=\"https://rusticstrengthwholesale.com/products/lemon-lime-orange-grapefruit-essential-oil-blend\" target=\"_blank\" title=\"https://rusticstrengthwholesale.com/products/lemon-lime-orange-grapefruit-essential-oil-blend\">Sunburst Citrus</a> Essential Oil Blend (scent)</p>",
+            "content": "<p><a href=\"https://rusticstrength.com/blogs/ingredients/charcoal-filtered-deionized-water\" target=\"_blank\" title=\"Rustic Strength, High-Purity Water blog\">High-Purity Water</a><strong>&nbsp;</strong>• charcoal-filtered, reverse osmosis, UV-sanitized</p><p>Tetrasodium Glutamate Diacetate (plant-based cleaner)</p><p>Octyl Dimethyl Amine&nbsp;Oxide (plant-based cleaner)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-citric-acid-and-what-does-it-do-in-products\" target=\"_blank\" title=\"Rustic Strength, Everything you need to know about Citric Acid blog\">Citric Acid</a>&nbsp;(shine enhancer)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/what-is-sodium-metasilicate\" target=\"_blank\" title=\"Rustic Strength, Sodium Metasilicate blog\">Sodium Metasilicate</a>&nbsp;(grease lifter)</p><p><a href=\"https://rusticstrength.com/blogs/ingredients/phenoxyethanol-in-personal-care-products-what-you-need-to-know\" target=\"_blank\" title=\"Rustic Strength, Phenoxyethanol blog\">Phenoxyethanol</a>&nbsp;(safe preservative)</p><p>Caprylyl Glycol (safe preservative)</p><p><a href=\"/products/sunburst-citrus-essential-oil-blend\" target=\"_blank\" title=\"Sunburst Citrus Essential Oil Blend\">Sunburst Citrus</a>&nbsp;Essential Oil Blend (scent)</p>",
             "page": ""
           }
         },
@@ -147,6 +164,7 @@
         "quantity_selector_fFPAYP",
         "rebuy_personalization_engine_rebuy_widget_TCc7fH",
         "buy_buttons_BkQNGe",
+        "lab_testing_widget",
         "judge_me_reviews_review_snippet_widget_eQEKBT",
         "description",
         "collapsible-row-1",
