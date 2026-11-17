@@ -496,6 +496,67 @@
     </script>
 
     <script>
+      window.rsPrivacyConsent = (() => {
+        const TRACKING_KEYS = [
+          'utm_source',
+          'utm_medium',
+          'utm_campaign',
+          'utm_content',
+          'utm_term',
+          'gclid',
+          'fbclid',
+          'landing_page',
+          'referrer',
+        ];
+
+        const isMarketingAllowed = () => {
+          const cp = window.Shopify?.customerPrivacy;
+
+          if (navigator.globalPrivacyControl === true) {
+            if (
+              cp &&
+              typeof cp.saleOfDataAllowed === 'function' &&
+              typeof cp.marketingAllowed === 'function' &&
+              cp.saleOfDataAllowed() === true &&
+              cp.marketingAllowed() === true
+            ) {
+              return true;
+            }
+
+            return false;
+          }
+
+          if (!cp) {
+            return true;
+          }
+
+          if (typeof cp.saleOfDataAllowed === 'function' && cp.saleOfDataAllowed() === false) {
+            return false;
+          }
+
+          if (typeof cp.marketingAllowed === 'function' && cp.marketingAllowed() === false) {
+            return false;
+          }
+
+          return true;
+        };
+
+        const clearStoredTracking = () => {
+          TRACKING_KEYS.forEach((param) => {
+            try {
+              sessionStorage.removeItem('ws_' + param);
+              localStorage.removeItem('ws_' + param);
+              localStorage.removeItem('ws_first_' + param);
+            } catch (e) {}
+          });
+        };
+
+        return {
+          isMarketingAllowed,
+          clearStoredTracking,
+        };
+      })();
+
       (function () {
         const urlParams = new URLSearchParams(window.location.search);
         const trackingParams = [
@@ -522,42 +583,146 @@
           } catch (e) {}
         };
 
-        let hasNewTracking = false;
+        let isApplyingGpc = false;
 
-        trackingParams.forEach((param) => {
-          if (urlParams.has(param)) {
-            const val = urlParams.get(param);
-            if (val) {
-              setSafeStore(sessionStorage, 'ws_' + param, val);
-              setSafeStore(localStorage, 'ws_' + param, val);
-              hasNewTracking = true;
+        const denyGoogleConsentForGpc = () => {
+          window.dataLayer = window.dataLayer || [];
 
-              if (!getSafeStore(localStorage, 'ws_first_' + param)) {
-                setSafeStore(localStorage, 'ws_first_' + param, val);
+          const gtagCall = function () {
+            window.dataLayer.push(arguments);
+          };
+
+          gtagCall('consent', 'update', {
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            analytics_storage: 'denied',
+            functionality_storage: 'denied',
+            personalization_storage: 'denied',
+            security_storage: 'granted',
+          });
+        };
+
+        const enforceGpcOptOut = () => {
+          if (navigator.globalPrivacyControl !== true || isApplyingGpc) {
+            return;
+          }
+
+          const cp = window.Shopify?.customerPrivacy;
+
+          if (!cp || typeof cp.setTrackingConsent !== 'function') {
+            return;
+          }
+
+          const consent = typeof cp.currentVisitorConsent === 'function' ? cp.currentVisitorConsent() : {};
+
+          if (
+            consent.sale_of_data === 'yes' &&
+            consent.marketing === 'yes' &&
+            consent.analytics === 'yes'
+          ) {
+            return;
+          }
+
+          const needsFullOptOut =
+            consent.marketing !== 'no' ||
+            consent.analytics !== 'no' ||
+            consent.preferences !== 'no' ||
+            consent.sale_of_data !== 'no';
+
+          if (!needsFullOptOut) {
+            return;
+          }
+
+          isApplyingGpc = true;
+          denyGoogleConsentForGpc();
+          window.rsPrivacyConsent.clearStoredTracking();
+
+          cp.setTrackingConsent(
+            {
+              marketing: false,
+              analytics: false,
+              preferences: false,
+              sale_of_data: false,
+            },
+            () => {
+              isApplyingGpc = false;
+              syncUtmTracking();
+            }
+          );
+        };
+
+        const syncUtmTracking = () => {
+          if (!window.rsPrivacyConsent.isMarketingAllowed()) {
+            window.rsPrivacyConsent.clearStoredTracking();
+            enforceGpcOptOut();
+
+            return;
+          }
+
+          let hasNewTracking = false;
+
+          trackingParams.forEach((param) => {
+            if (urlParams.has(param)) {
+              const val = urlParams.get(param);
+
+              if (val) {
+                setSafeStore(sessionStorage, 'ws_' + param, val);
+                setSafeStore(localStorage, 'ws_' + param, val);
+                hasNewTracking = true;
+
+                if (!getSafeStore(localStorage, 'ws_first_' + param)) {
+                  setSafeStore(localStorage, 'ws_first_' + param, val);
+                }
               }
             }
+          });
+
+          const currentLanding = window.location.href;
+
+          if (hasNewTracking || !getSafeStore(sessionStorage, 'ws_landing_page')) {
+            setSafeStore(sessionStorage, 'ws_landing_page', currentLanding);
+            setSafeStore(localStorage, 'ws_landing_page', currentLanding);
           }
+
+          if (!getSafeStore(localStorage, 'ws_first_landing_page')) {
+            setSafeStore(localStorage, 'ws_first_landing_page', currentLanding);
+          }
+
+          const currentRef = document.referrer;
+
+          if (currentRef && !currentRef.includes(window.location.hostname)) {
+            if (!getSafeStore(sessionStorage, 'ws_referrer')) {
+              setSafeStore(sessionStorage, 'ws_referrer', currentRef);
+              setSafeStore(localStorage, 'ws_referrer', currentRef);
+            }
+
+            if (!getSafeStore(localStorage, 'ws_first_referrer')) {
+              setSafeStore(localStorage, 'ws_first_referrer', currentRef);
+            }
+          }
+        };
+
+        if (navigator.globalPrivacyControl === true) {
+          window.rsPrivacyConsent.clearStoredTracking();
+          denyGoogleConsentForGpc();
+        }
+
+        if (window.Shopify && typeof window.Shopify.loadFeatures === 'function') {
+          window.Shopify.loadFeatures([{ name: 'consent-tracking-api', version: '0.1' }], (error) => {
+            if (!error) {
+              enforceGpcOptOut();
+              syncUtmTracking();
+            }
+          });
+        } else {
+          syncUtmTracking();
+        }
+
+        document.addEventListener('visitorConsentCollected', () => {
+          enforceGpcOptOut();
+          syncUtmTracking();
         });
-
-        const currentLanding = window.location.href;
-        if (hasNewTracking || !getSafeStore(sessionStorage, 'ws_landing_page')) {
-          setSafeStore(sessionStorage, 'ws_landing_page', currentLanding);
-          setSafeStore(localStorage, 'ws_landing_page', currentLanding);
-        }
-        if (!getSafeStore(localStorage, 'ws_first_landing_page')) {
-          setSafeStore(localStorage, 'ws_first_landing_page', currentLanding);
-        }
-
-        const currentRef = document.referrer;
-        if (currentRef && !currentRef.includes(window.location.hostname)) {
-          if (!getSafeStore(sessionStorage, 'ws_referrer')) {
-            setSafeStore(sessionStorage, 'ws_referrer', currentRef);
-            setSafeStore(localStorage, 'ws_referrer', currentRef);
-          }
-          if (!getSafeStore(localStorage, 'ws_first_referrer')) {
-            setSafeStore(localStorage, 'ws_first_referrer', currentRef);
-          }
-        }
       })();
     </script>
   </head>
@@ -792,22 +957,30 @@
               return false;
             }
 
+            const trackingAllowed = window.rsPrivacyConsent?.isMarketingAllowed() !== false;
+
             const trackingFields = [
-              { id: 'attribution#utm_source', val: getSafeTrackingItem('utm_source') },
-              { id: 'attribution#utm_medium', val: getSafeTrackingItem('utm_medium') },
-              { id: 'attribution#utm_campaign', val: getSafeTrackingItem('utm_campaign') },
-              { id: 'attribution#utm_content', val: getSafeTrackingItem('utm_content') },
-              { id: 'attribution#utm_term', val: getSafeTrackingItem('utm_term') },
-              { id: 'attribution#first_utm_source', val: getSafeFirstTrackingItem('utm_source') },
-              { id: 'attribution#first_utm_medium', val: getSafeFirstTrackingItem('utm_medium') },
-              { id: 'attribution#first_utm_campaign', val: getSafeFirstTrackingItem('utm_campaign') },
-              { id: 'attribution#first_utm_content', val: getSafeFirstTrackingItem('utm_content') },
-              { id: 'attribution#first_utm_term', val: getSafeFirstTrackingItem('utm_term') },
+              { id: 'attribution#utm_source', val: trackingAllowed ? getSafeTrackingItem('utm_source') : '' },
+              { id: 'attribution#utm_medium', val: trackingAllowed ? getSafeTrackingItem('utm_medium') : '' },
+              { id: 'attribution#utm_campaign', val: trackingAllowed ? getSafeTrackingItem('utm_campaign') : '' },
+              { id: 'attribution#utm_content', val: trackingAllowed ? getSafeTrackingItem('utm_content') : '' },
+              { id: 'attribution#utm_term', val: trackingAllowed ? getSafeTrackingItem('utm_term') : '' },
+              { id: 'attribution#first_utm_source', val: trackingAllowed ? getSafeFirstTrackingItem('utm_source') : '' },
+              { id: 'attribution#first_utm_medium', val: trackingAllowed ? getSafeFirstTrackingItem('utm_medium') : '' },
+              {
+                id: 'attribution#first_utm_campaign',
+                val: trackingAllowed ? getSafeFirstTrackingItem('utm_campaign') : '',
+              },
+              {
+                id: 'attribution#first_utm_content',
+                val: trackingAllowed ? getSafeFirstTrackingItem('utm_content') : '',
+              },
+              { id: 'attribution#first_utm_term', val: trackingAllowed ? getSafeFirstTrackingItem('utm_term') : '' },
               {
                 id: 'attribution#meta_tracking_data',
-                val: (() => {
-                  return `fbp:${getSafeCookieVal('_fbp')}||fbc:${getSafeCookieVal('_fbc')}||ua:${navigator.userAgent}`;
-                })(),
+                val: trackingAllowed
+                  ? `fbp:${getSafeCookieVal('_fbp')}||fbc:${getSafeCookieVal('_fbc')}||ua:${navigator.userAgent}`
+                  : '',
               },
             ];
 
@@ -929,7 +1102,8 @@
               }, 3000);
 
               const emailValue = emailInput ? emailInput.value.trim() : '';
-              if (emailValue) {
+
+              if (emailValue && window.rsPrivacyConsent?.isMarketingAllowed() !== false) {
                 const klaviyo = window.klaviyo || window._learnq || [];
                 const trackingParams = [
                   'utm_source',

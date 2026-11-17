@@ -292,22 +292,25 @@
 
       if (whatVal === '') return;
 
-      const klaviyo = window.klaviyo || window._learnq || [];
-
-      if (window._learnq && typeof window._learnq.push === 'function') {
-        window._learnq.push(['account', 'XhPTSU']);
-      }
-
       const hasEmail = emailVal !== '';
-      if (hasEmail) {
-        klaviyo.push(['identify', { '$email': emailVal }]);
-      }
 
-      klaviyo.push(['track', 'Requested Test', {
-        'Requested Test': whatVal,
-        'Source': 'Lab Results page',
-        'Provided Email': hasEmail
-      }]);
+      if (window.rsPrivacyConsent?.isMarketingAllowed() !== false) {
+        const klaviyo = window.klaviyo || window._learnq || [];
+
+        if (window._learnq && typeof window._learnq.push === 'function') {
+          window._learnq.push(['account', 'XhPTSU']);
+        }
+
+        if (hasEmail) {
+          klaviyo.push(['identify', { '$email': emailVal }]);
+        }
+
+        klaviyo.push(['track', 'Requested Test', {
+          'Requested Test': whatVal,
+          'Source': 'Lab Results page',
+          'Provided Email': hasEmail
+        }]);
+      }
 
       const suggestBox = document.getElementById('suggest-box-{{ section.id }}');
       if (suggestBox) {
