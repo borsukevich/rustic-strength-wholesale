@@ -2314,9 +2314,14 @@ input[type='checkbox'] {
   z-index: 3;
 }
 
+.section-header.menu-open,
+.section-header:has(details[open]) {
+  z-index: 5;
+}
+
 .shopify-section-header-sticky {
   position: sticky;
-  top: 0;
+  top: var(--countdown-timer-bar-height, 0px);
 }
 
 .shopify-section-header-hidden {
@@ -2324,7 +2329,7 @@ input[type='checkbox'] {
 }
 
 .shopify-section-header-hidden.menu-open {
-  top: 0;
+  top: var(--countdown-timer-bar-height, 0px);
 }
 
 .section-header.animate {

@@ -1330,3 +1330,70 @@ class CartPerformance {
     );
   }
 }
+
+window.rsSyncStickyHeaderBars = (() => {
+  const SELECTOR =
+    '.shopify-section-group-header-group countdown-banner[data-sticky="true"], ' +
+    '.shopify-section-group-header-group promotional-bar-component[data-sticky="true"]';
+
+  let resizeObserver = null;
+  let listenersBound = false;
+
+  const sync = () => {
+    const bars = Array.from(document.querySelectorAll(SELECTOR));
+    let offset = 0;
+
+    bars.forEach((bar) => {
+      const sectionEl = bar.closest('.shopify-section');
+
+      if (!sectionEl) {
+        return;
+      }
+
+      const isHidden =
+        bar.classList.contains('hidden') ||
+        window.getComputedStyle(bar).display === 'none' ||
+        bar.offsetHeight === 0;
+
+      if (isHidden) {
+        sectionEl.style.top = '';
+        return;
+      }
+
+      sectionEl.style.top = `${offset}px`;
+      offset += bar.offsetHeight;
+    });
+
+    document.documentElement.style.setProperty('--countdown-timer-bar-height', `${offset}px`);
+  };
+
+  const observeBars = () => {
+    if (typeof ResizeObserver === 'function') {
+      if (!resizeObserver) {
+        resizeObserver = new ResizeObserver(sync);
+      } else {
+        resizeObserver.disconnect();
+      }
+
+      document.querySelectorAll(SELECTOR).forEach((bar) => resizeObserver.observe(bar));
+    }
+
+    if (!listenersBound) {
+      listenersBound = true;
+      window.addEventListener('resize', sync);
+      document.addEventListener('shopify:section:load', sync);
+      document.addEventListener('shopify:section:unload', sync);
+    }
+  };
+
+  return () => {
+    observeBars();
+    sync();
+  };
+})();
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', window.rsSyncStickyHeaderBars);
+} else {
+  window.rsSyncStickyHeaderBars();
+}

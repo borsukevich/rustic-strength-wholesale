@@ -121,6 +121,14 @@
         }
       }
 
+      #shopify-section-{{ section.id }} {
+        {% if section.settings.make_sticky %}
+          position: sticky;
+          top: 0;
+          z-index: 4 !important;
+        {% endif %}
+      }
+
       .countdown-timer-bar[data-id="{{ section.id }}"] {
         --color-overlay-background: {{ color_overlay.red }}, {{ color_overlay.green }}, {{ color_overlay.blue }};
 
@@ -199,6 +207,7 @@
       data-start="{{ full_start_date }}"
       data-end="{{ full_end_date }}"
       data-timezone="{{ section.settings.timezone }}"
+      data-sticky="{{ section.settings.make_sticky }}"
     >
       {%- if section.settings.image != blank -%}
         {{
@@ -321,18 +330,24 @@
 
               if (!this.endDateStr || this._getDistance(this.endDateStr) < 0) {
                 this.classList.add('hidden');
+                window.rsSyncStickyHeaderBars?.();
                 return;
               }
 
               if (this.startDateStr && this._getDistance(this.startDateStr) > 0) {
                 this.classList.add('hidden');
+                window.rsSyncStickyHeaderBars?.();
                 return;
               }
 
-              this.closeButton = this.querySelector('.js-close-button');
-
-              if (this.closeButton) {
-                this.closeButton.addEventListener('click', () => this.classList.add('hidden'));
+              if (!this._closeDelegated) {
+                this._closeDelegated = true;
+                this.addEventListener('click', (event) => {
+                  if (event.target.closest('.js-close-button')) {
+                    this.classList.add('hidden');
+                    window.rsSyncStickyHeaderBars?.();
+                  }
+                });
               }
 
               this.updateTimer();
@@ -340,12 +355,16 @@
               this.timerInterval = setInterval(() => {
                 this.updateTimer();
               }, 1000);
+
+              window.rsSyncStickyHeaderBars?.();
+              requestAnimationFrame(() => window.rsSyncStickyHeaderBars?.());
             }
 
             disconnectedCallback() {
               if (this.timerInterval) {
                 clearInterval(this.timerInterval);
               }
+              window.rsSyncStickyHeaderBars?.();
             }
 
             _getDistance(dateStr) {
@@ -410,6 +429,7 @@
 
               if (distance < 0) {
                 this.classList.add('hidden');
+                window.rsSyncStickyHeaderBars?.();
 
                 if (this.timerInterval) {
                   clearInterval(this.timerInterval);
@@ -828,6 +848,12 @@
       "label": "Make the whole timer clickable",
       "default": false,
       "visible_if": "{{ section.settings.show_button }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "make_sticky",
+      "label": "Make bar sticky on scroll",
+      "default": false
     },
     {
       "type": "header",
