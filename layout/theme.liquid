@@ -237,6 +237,289 @@
       })();
     </script>
 
+    <script>
+      (function () {
+        const ANALYTICS_PATTERNS = [
+          'google-analytics.com',
+          'googletagmanager.com/gtag/destination',
+          'googletagmanager.com/gtag/js?id=ua',
+          'googletagmanager.com/gtag/js?id=g-',
+          'static.hotjar.com/c/hotjar',
+          'clarity.ms',
+        ];
+
+        const MARKETING_PATTERNS = [
+          'connect.facebook.net',
+          'facebook.com/tr',
+          'googletagmanager.com/gtm.js',
+          'googletagmanager.com/gtag/js?id=aw',
+          'googletagmanager.com/gtag/js?id=gt-',
+          'googleadservices.com',
+          'googleads.g.doubleclick.net',
+          'doubleclick.net',
+          'google.com/ccm',
+          'google.com/pagead',
+          'pagead2.googlesyndication.com',
+          'triplewhale.com',
+          'js.go2sdk.com',
+          'aspireiq.go2cloud.org',
+          'attribution-guru',
+          '/apps/ag/',
+          'klaviyo.com',
+          'analytics.tiktok.com',
+          's.pinimg.com',
+          'ct.pinterest.com',
+          'redditstatic.com',
+          'alb.reddit.com',
+          'bat.bing.com',
+          'pop-convert.com',
+          'pop-convert-88',
+          't.vibe.co',
+          's.adroll.com',
+          'static.ads-twitter.com',
+          'intg.snapchat.com',
+        ];
+
+        const readStoredConsent = () => {
+          try {
+            const match = document.cookie.match(/(?:^|;\s*)_pandectes_gdpr=([^;]+)/);
+
+            if (!match) {
+              return null;
+            }
+
+            return JSON.parse(atob(decodeURIComponent(match[1])));
+          } catch (e) {
+            return null;
+          }
+        };
+
+        const isExplicitAllow = (stored) =>
+          Boolean(stored && stored.status === 'allow' && stored.method === 'explicit' && Number(stored.preferences) === 0);
+
+        const pushDeniedGtag = () => {
+          window.dataLayer = window.dataLayer || [];
+
+          const gtagCall = function () {
+            window.dataLayer.push(arguments);
+          };
+
+          gtagCall('consent', 'default', {
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            analytics_storage: 'denied',
+            functionality_storage: 'denied',
+            personalization_storage: 'denied',
+            security_storage: 'granted',
+          });
+
+          gtagCall('consent', 'update', {
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            analytics_storage: 'denied',
+            functionality_storage: 'denied',
+            personalization_storage: 'denied',
+            security_storage: 'granted',
+          });
+        };
+
+        const writeGpcOptOutCookie = () => {
+          const payload = {
+            status: 'deny',
+            timestamp: Math.floor(Date.now() / 1000),
+            preferences: 7,
+            method: 'explicit',
+            version: '5',
+            cookieDomain: '',
+          };
+
+          document.cookie =
+            '_pandectes_gdpr=' +
+            btoa(JSON.stringify(payload)) +
+            '; path=/; max-age=31536000; SameSite=Lax';
+        };
+
+        const initialStored = readStoredConsent();
+        const gpcActive = navigator.globalPrivacyControl === true;
+
+        if (gpcActive && !isExplicitAllow(initialStored)) {
+          if (!initialStored || Number(initialStored.preferences) !== 7) {
+            writeGpcOptOutCookie();
+          }
+
+          pushDeniedGtag();
+        }
+
+        const getDeniedCategoryForUrl = (rawUrl) => {
+          if (!rawUrl || typeof rawUrl !== 'string') {
+            return 0;
+          }
+
+          const stored = readStoredConsent();
+
+          if (!stored) {
+            if (gpcActive) {
+              const lu = rawUrl.toLowerCase();
+
+              if (MARKETING_PATTERNS.some((p) => lu.includes(p))) {
+                return 4;
+              }
+
+              if (ANALYTICS_PATTERNS.some((p) => lu.includes(p))) {
+                return 2;
+              }
+            }
+
+            return 0;
+          }
+
+          const prefs = Number(stored.preferences);
+
+          if (!Number.isFinite(prefs) || prefs === 0) {
+            return 0;
+          }
+
+          const lu = rawUrl.toLowerCase();
+
+          if ((prefs & 4) !== 0 && MARKETING_PATTERNS.some((p) => lu.includes(p))) {
+            return 4;
+          }
+
+          if ((prefs & 2) !== 0 && ANALYTICS_PATTERNS.some((p) => lu.includes(p))) {
+            return 2;
+          }
+
+          return 0;
+        };
+
+        if (!getDeniedCategoryForUrl('https://connect.facebook.net') && !getDeniedCategoryForUrl('https://google-analytics.com')) {
+          return;
+        }
+
+        const blockScriptNode = (node) => {
+          if (!node || node.nodeType !== 1) {
+            return;
+          }
+
+          if (node.tagName === 'SCRIPT') {
+            const src = node.getAttribute('src') || node.src || '';
+            const category = getDeniedCategoryForUrl(src);
+
+            if (category) {
+              node.type = 'javascript/blocked';
+              node.setAttribute('data-cookiecategory', String(category));
+              node.setAttribute('data-src', src);
+              node.removeAttribute('src');
+            }
+          }
+        };
+
+        const observer = new MutationObserver((mutations) => {
+          for (const mutation of mutations) {
+            for (const node of mutation.addedNodes) {
+              blockScriptNode(node);
+            }
+          }
+        });
+
+        observer.observe(document, { childList: true, subtree: true });
+
+        const origCreateElement = document.createElement;
+        document.createElement = function (tagName, options) {
+          const el = origCreateElement.call(document, tagName, options);
+
+          if (String(tagName).toLowerCase() === 'script') {
+            const desc = Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype, 'src');
+
+            if (desc && desc.set) {
+              try {
+                Object.defineProperty(el, 'src', {
+                  set(val) {
+                    const category = getDeniedCategoryForUrl(String(val));
+
+                    if (category) {
+                      el.type = 'javascript/blocked';
+                      el.setAttribute('data-cookiecategory', String(category));
+                      el.setAttribute('data-src', String(val));
+                      return;
+                    }
+
+                    desc.set.call(el, val);
+                  },
+                  get: desc.get,
+                  configurable: true,
+                });
+              } catch (e) {}
+            }
+          }
+
+          return el;
+        };
+
+        const imgDesc = Object.getOwnPropertyDescriptor(HTMLImageElement.prototype, 'src');
+
+        if (imgDesc && imgDesc.set) {
+          try {
+            Object.defineProperty(HTMLImageElement.prototype, 'src', {
+              set(val) {
+                if (getDeniedCategoryForUrl(String(val))) {
+                  return;
+                }
+
+                imgDesc.set.call(this, val);
+              },
+              get: imgDesc.get,
+              configurable: true,
+            });
+          } catch (e) {}
+        }
+
+        const origFetch = window.fetch;
+
+        if (origFetch) {
+          window.fetch = function (input, init) {
+            const url = typeof input === 'string' ? input : input?.url || '';
+
+            if (getDeniedCategoryForUrl(url)) {
+              return Promise.resolve(new Response('', { status: 204 }));
+            }
+
+            return origFetch.call(this, input, init);
+          };
+        }
+
+        const origXhrOpen = XMLHttpRequest.prototype.open;
+        const origXhrSend = XMLHttpRequest.prototype.send;
+
+        XMLHttpRequest.prototype.open = function (method, url, ...rest) {
+          this._rsConsentBlocked = Boolean(getDeniedCategoryForUrl(String(url)));
+          return origXhrOpen.call(this, method, url, ...rest);
+        };
+
+        XMLHttpRequest.prototype.send = function (body) {
+          if (this._rsConsentBlocked) {
+            return;
+          }
+
+          return origXhrSend.call(this, body);
+        };
+
+        if (typeof navigator.sendBeacon === 'function') {
+          const origBeacon = navigator.sendBeacon.bind(navigator);
+
+          navigator.sendBeacon = function (url, data) {
+            if (getDeniedCategoryForUrl(String(url))) {
+              return true;
+            }
+
+            return origBeacon(url, data);
+          };
+        }
+      })();
+    </script>
+
     {{ content_for_header }}
 
     {%- liquid
