@@ -1,0 +1,199 @@
+{%- liquid
+  assign target_product = section.settings.product | default: product
+  assign section_form_id = section.settings.target_form_id | default: 'byos-section-form-' | append: section.id
+-%}
+
+<section
+  id="ByosScentPickerSection-{{ section.id }}"
+  class="color-{{ section.settings.color_scheme }}"
+>
+  <div class="page-width" style="padding-top: 2.4rem; padding-bottom: 2.4rem;">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="h3" style="margin-bottom: 1.4rem;">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+
+    {%- if target_product != blank -%}
+      <product-form class="product-form" data-section-id="{{ section.id }}">
+        {%- form 'product', target_product, id: section_form_id, novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+          <input type="hidden" name="id" value="{{ target_product.selected_or_first_available_variant.id }}">
+
+          {%- render 'byos-scent-picker',
+            product: target_product,
+            product_form_id: section_form_id,
+            section_id: section.id,
+            settings_source: section.settings,
+            force_render: section.settings.force_render
+          -%}
+
+          {%- if section.settings.show_submit_button -%}
+            <div style="margin-top: 1.6rem;">
+              <button type="submit" name="add" class="product-form__submit button button--full-width button--primary">
+                <span>{{ section.settings.submit_label | default: 'Add Custom Blend to Cart' }}</span>
+                {%- render 'loading-spinner' -%}
+              </button>
+            </div>
+          {%- endif -%}
+        {%- endform -%}
+      </product-form>
+    {%- elsif request.design_mode -%}
+      <p style="font-size: 1.4rem; opacity: 0.72;">Select a BYOS product or connect a dynamic product source to preview the Native BYOS Scent Picker.</p>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BYOS Scent Picker",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "text",
+      "id": "target_form_id",
+      "label": "External form ID (optional)"
+    },
+    {
+      "type": "checkbox",
+      "id": "force_render",
+      "label": "Always render (ignore SKU check)",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_submit_button",
+      "label": "Show Add to Cart button",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "submit_label",
+      "label": "Submit button label",
+      "default": "Add Custom Blend to Cart"
+    },
+    {
+      "type": "text",
+      "id": "scent_1_label",
+      "label": "Scent 1 display label",
+      "default": "Custom Scent 1"
+    },
+    {
+      "type": "text",
+      "id": "scent_1_placeholder",
+      "label": "Scent 1 placeholder",
+      "default": "Choose your 1st scent"
+    },
+    {
+      "type": "text",
+      "id": "scent_1_property_label",
+      "label": "Scent 1 cart/order property key",
+      "default": "Scent 1"
+    },
+    {
+      "type": "text",
+      "id": "scent_2_label",
+      "label": "Scent 2 display label",
+      "default": "Blends with 1st Scent"
+    },
+    {
+      "type": "text",
+      "id": "scent_2_placeholder",
+      "label": "Scent 2 placeholder",
+      "default": "Choose your 2nd scent or None"
+    },
+    {
+      "type": "text",
+      "id": "scent_2_property_label",
+      "label": "Scent 2 cart/order property key",
+      "default": "Scent 2"
+    },
+    {
+      "type": "text",
+      "id": "no_second_scent_value",
+      "label": "No second scent value",
+      "default": "None"
+    },
+    {
+      "type": "text",
+      "id": "no_second_scent_helper",
+      "label": "No second scent helper description",
+      "default": "Single scent blend — full strength Scent 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_search",
+      "label": "Enable scent search box",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "description_mode",
+      "label": "Scent descriptions",
+      "options": [
+        {
+          "value": "meaningful",
+          "label": "Blends and unique notes"
+        },
+        {
+          "value": "all",
+          "label": "All descriptions"
+        },
+        {
+          "value": "blends_only",
+          "label": "Blends only"
+        },
+        {
+          "value": "none",
+          "label": "Hidden"
+        }
+      ],
+      "default": "meaningful",
+      "info": "Blends and unique notes hides duplicate category text while keeping Cherry and blend notes."
+    },
+    {
+      "type": "select",
+      "id": "swatch_display",
+      "label": "Scent swatches",
+      "options": [
+        {
+          "value": "image",
+          "label": "Image badges"
+        },
+        {
+          "value": "image_contain",
+          "label": "Full artwork (no crop)"
+        },
+        {
+          "value": "color",
+          "label": "Color circles only"
+        },
+        {
+          "value": "none",
+          "label": "Hidden"
+        }
+      ],
+      "default": "image",
+      "info": "Replace swatch images in Content -> Metaobjects -> Custom scent."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "BYOS Scent Picker"
+    }
+  ]
+}
+{% endschema %}

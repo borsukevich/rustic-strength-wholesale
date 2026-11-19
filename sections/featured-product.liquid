@@ -399,6 +399,14 @@
                     block: block,
                     product_form_id: product_form_id
                   %}
+                {%- when 'scent_picker' -%}
+                  {% render 'byos-scent-picker',
+                    product: product,
+                    block: block,
+                    product_form_id: product_form_id,
+                    section_id: section.id,
+                    shopify_attributes: block.shopify_attributes
+                  %}
                 {%- when 'buy_buttons' -%}
                   {%- render 'buy-buttons',
                     block: block,
@@ -658,6 +666,73 @@
             }
           ],
           "default": "circle"
+        }
+      ]
+    },
+    {
+      "type": "scent_picker",
+      "name": "BYOS Scent Picker",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "scent_1_label",
+          "label": "Scent 1 display label",
+          "default": "Custom Scent 1"
+        },
+        {
+          "type": "text",
+          "id": "scent_1_placeholder",
+          "label": "Scent 1 placeholder",
+          "default": "Choose your 1st scent"
+        },
+        {
+          "type": "text",
+          "id": "scent_2_label",
+          "label": "Scent 2 display label",
+          "default": "Blends with 1st Scent"
+        },
+        {
+          "type": "text",
+          "id": "scent_2_placeholder",
+          "label": "Scent 2 placeholder",
+          "default": "Choose your 2nd scent or None"
+        },
+        {
+          "type": "checkbox",
+          "id": "force_render",
+          "label": "Always render (ignore BYOS SKU check)",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_search",
+          "label": "Enable scent search box",
+          "default": true
+        },
+        {
+          "type": "select",
+          "id": "description_mode",
+          "label": "Scent descriptions",
+          "options": [
+            { "value": "meaningful", "label": "Blends and unique notes" },
+            { "value": "all", "label": "All descriptions" },
+            { "value": "blends_only", "label": "Blends only" },
+            { "value": "none", "label": "Hidden" }
+          ],
+          "default": "meaningful"
+        },
+        {
+          "type": "select",
+          "id": "swatch_display",
+          "label": "Scent swatches",
+          "options": [
+            { "value": "image", "label": "Image badges" },
+            { "value": "image_contain", "label": "Full artwork (no crop)" },
+            { "value": "color", "label": "Color circles only" },
+            { "value": "none", "label": "Hidden" }
+          ],
+          "default": "image"
         }
       ]
     },

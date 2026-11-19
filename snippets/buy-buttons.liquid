@@ -22,7 +22,27 @@
       if block.settings.show_dynamic_checkout and gift_card_recipient_feature_active == false
         assign show_dynamic_checkout = true
       endif
+
+      capture is_byos_raw
+        render 'byos-product-check', product: product
+      endcapture
+
+      assign is_byos_product = false
+      if is_byos_raw == 'true'
+        assign is_byos_product = true
+        assign show_dynamic_checkout = false
+      endif
+
+      assign scent_picker_block_count = section.blocks | where: 'type', 'scent_picker' | size
     -%}
+
+    {%- if is_byos_product and scent_picker_block_count == 0 -%}
+      {%- render 'byos-scent-picker',
+        product: product,
+        product_form_id: product_form_id,
+        section_id: section.id
+      -%}
+    {%- endif -%}
 
     <product-form
       class="product-form"

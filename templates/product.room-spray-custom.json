@@ -36,10 +36,17 @@
             "heading_3": ""
           }
         },
-        "globo_product_options_app_block_TRtfFq": {
-          "type": "shopify://apps/globo-product-options/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+        "scent_picker_byos": {
+          "type": "scent_picker",
           "settings": {
-            "product": ""
+            "scent_1_label": "Custom Scent 1",
+            "scent_1_placeholder": "Choose your 1st scent",
+            "scent_2_label": "Blends with 1st Scent",
+            "scent_2_placeholder": "Choose your 2nd scent or None",
+            "force_render": false,
+            "enable_search": true,
+            "description_mode": "meaningful",
+            "swatch_display": "image"
           }
         },
         "variant_picker_baqgrH": {
@@ -171,7 +178,7 @@
         "price",
         "price_panda_price_per_unit_product_block_6Fb3GT",
         "icon_with_text_TfEraD",
-        "globo_product_options_app_block_TRtfFq",
+        "scent_picker_byos",
         "variant_picker_baqgrH",
         "quantity_selector_fFPAYP",
         "rebuy_personalization_engine_rebuy_widget_TCc7fH",

@@ -20,11 +20,14 @@
   }
 {%- endstyle -%}
 
+{%- capture is_byos_raw -%}{%- render 'byos-product-check', product: product -%}{%- endcapture -%}
+{%- unless is_byos_raw == 'true' -%}
 {% render 'quick-order-list',
   product: product,
   show_image: section.settings.show_image,
   show_sku: section.settings.show_sku
 %}
+{%- endunless -%}
 
 {% schema %}
 {

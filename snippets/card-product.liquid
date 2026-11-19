@@ -289,7 +289,8 @@
           </div>
         </div>
         {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
-        {% if card_product.tags contains 'no_quick_add' %}
+        {%- capture is_byos_card_raw -%}{%- render 'byos-product-check', product: card_product -%}{%- endcapture -%}
+        {% if card_product.tags contains 'no_quick_add' or is_byos_card_raw == 'true' %}
   <div class="quick-add">
     <a
       href="{{ card_product.url }}"

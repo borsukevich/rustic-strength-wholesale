@@ -1,0 +1,20 @@
+{%- liquid
+  assign is_byos = false
+
+  if product != blank
+    if product.metafields.custom.scent_picker_enabled.value == true
+      assign is_byos = true
+    else
+      for variant in product.variants
+        assign sku_down = variant.sku | default: '' | downcase
+
+        if sku_down contains 'byos'
+          assign is_byos = true
+          break
+        endif
+      endfor
+    endif
+  endif
+
+  echo is_byos
+-%}

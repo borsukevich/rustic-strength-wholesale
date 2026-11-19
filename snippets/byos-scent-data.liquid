@@ -1,0 +1,128 @@
+{%- liquid
+  assign active_store_channel = store_channel | default: 'b2b' | strip | downcase
+  assign metaobject_scents = shop.metaobjects.custom_scent.values
+  assign has_metaobjects = false
+
+  if metaobject_scents != blank and metaobject_scents.size > 0
+    assign has_metaobjects = true
+  endif
+
+  assign allowed_keys = '|'
+  assign has_allowlist = false
+
+  if product != blank and product.metafields.custom.allowed_scents != blank and product.metafields.custom.allowed_scents.value != blank
+    for item in product.metafields.custom.allowed_scents.value
+      assign item_handle = item.system.handle | default: item.handle | default: item | handleize
+      assign item_name = item.name.value | default: item.title.value | default: item | strip | downcase
+
+      if item_handle != blank
+        assign has_allowlist = true
+        assign allowed_keys = allowed_keys | append: item_handle | append: '|'
+      endif
+
+      if item_name != blank
+        assign has_allowlist = true
+        assign allowed_keys = allowed_keys | append: item_name | append: '|'
+      endif
+    endfor
+  endif
+
+  assign excluded_keys = '|'
+
+  if product != blank and product.metafields.custom.excluded_scents != blank and product.metafields.custom.excluded_scents.value != blank
+    for item in product.metafields.custom.excluded_scents.value
+      assign item_handle = item.system.handle | default: item.handle | default: item | handleize
+      assign item_name = item.name.value | default: item.title.value | default: item | strip | downcase
+
+      if item_handle != blank
+        assign excluded_keys = excluded_keys | append: item_handle | append: '|'
+      endif
+
+      if item_name != blank
+        assign excluded_keys = excluded_keys | append: item_name | append: '|'
+      endif
+    endfor
+  endif
+-%}
+
+{%- assign first_output = true -%}
+{
+  "source": {% if has_metaobjects %}"metaobject"{% else %}"empty"{% endif %},
+  "scents": [
+    {%- if has_metaobjects -%}
+      {%- for scent in metaobject_scents -%}
+        {%- liquid
+          assign is_active = true
+
+          if scent.active != blank and scent.active.value == false
+            assign is_active = false
+          endif
+
+          unless is_active
+            continue
+          endunless
+
+          if active_store_channel == 'b2c' and scent.hide_on_b2c != blank and scent.hide_on_b2c.value == true
+            continue
+          endif
+
+          if active_store_channel == 'b2b' and scent.hide_on_b2b != blank and scent.hide_on_b2b.value == true
+            continue
+          endif
+
+          assign is_single_scent = false
+
+          if scent.single_scent_only != blank and scent.single_scent_only.value == true
+            assign is_single_scent = true
+          endif
+
+          assign scent_name = scent.name.value | default: scent.system.handle | strip
+          assign scent_handle = scent.system.handle | default: scent_name | handleize
+          assign scent_name_down = scent_name | downcase
+
+          assign token_handle = '|' | append: scent_handle | append: '|'
+          assign token_name = '|' | append: scent_name_down | append: '|'
+
+          if has_allowlist
+            unless allowed_keys contains token_handle or allowed_keys contains token_name
+              continue
+            endunless
+          endif
+
+          if excluded_keys contains token_handle or excluded_keys contains token_name
+            continue
+          endif
+
+          assign swatch_url = ''
+
+          if scent.swatch_image != blank and scent.swatch_image.value != blank
+            assign swatch_url = scent.swatch_image.value | image_url: width: 160
+          endif
+
+          assign scent_category = scent.category.value | default: '' | strip
+          assign scent_description = scent.description.value | default: '' | strip
+          assign scent_color = scent.swatch_color.value | default: '#5a6548' | strip
+          assign scent_mood = scent.mood.value | default: '' | strip
+          assign scent_phrase = scent.scent_phrase.value | default: '' | strip
+          assign scent_order = scent.sort_order.value | default: forloop.index
+        -%}
+
+        {%- unless first_output -%},{%- endunless -%}
+        {%- assign first_output = false -%}
+
+        {
+          "handle": {{ scent_handle | json }},
+          "name": {{ scent_name | json }},
+          "category": {{ scent_category | json }},
+          "description": {{ scent_description | json }},
+          "swatchUrl": {{ swatch_url | json }},
+          "swatchColor": {{ scent_color | json }},
+          "mood": {{ scent_mood | json }},
+          "scentPhrase": {{ scent_phrase | json }},
+          "singleScentOnly": {{ is_single_scent | json }},
+          "sortOrder": {{ scent_order | plus: 0 }}
+        }
+      {%- endfor -%}
+    {%- endif -%}
+  ]
+}

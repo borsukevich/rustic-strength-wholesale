@@ -187,7 +187,7 @@
       },
       "3720565183479497137": {
         "type": "shopify://apps/globo-product-options/blocks/app-embed-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       },
       "124348908681409149": {
