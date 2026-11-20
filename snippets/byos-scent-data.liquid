@@ -1,5 +1,4 @@
 {%- liquid
-  assign active_store_channel = store_channel | default: 'b2b' | strip | downcase
   assign metaobject_scents = shop.metaobjects.custom_scent.values
   assign has_metaobjects = false
 
@@ -61,14 +60,6 @@
           unless is_active
             continue
           endunless
-
-          if active_store_channel == 'b2c' and scent.hide_on_b2c != blank and scent.hide_on_b2c.value == true
-            continue
-          endif
-
-          if active_store_channel == 'b2b' and scent.hide_on_b2b != blank and scent.hide_on_b2b.value == true
-            continue
-          endif
 
           assign is_single_scent = false
 
