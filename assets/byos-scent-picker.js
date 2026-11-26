@@ -1069,6 +1069,14 @@
           const method = (init?.method || (typeof input !== 'string' ? input?.method : '') || 'GET').toUpperCase();
 
           if (method === 'POST' && /\/cart\/add(\.js)?(\?|$)/.test(url) && this.pickers.size > 0) {
+            if (init?.body && window.RusticByosCartHelper?.patchPayloadBody) {
+              const patchedBody = window.RusticByosCartHelper.patchPayloadBody(init.body, url);
+
+              if (patchedBody !== init.body) {
+                init = { ...init, body: patchedBody };
+              }
+            }
+
             const blockedPicker = this._findViolatingCartAdd(init?.body);
 
             if (blockedPicker) {

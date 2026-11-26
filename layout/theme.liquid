@@ -1479,7 +1479,15 @@
               method: 'POST',
               body: new FormData(form),
             })
-              .then((response) => response.json())
+              .then(async (response) => {
+                const data = await response.json().catch(() => ({}));
+
+                if (!response.ok || (data && typeof data.status === 'number' && data.status >= 400)) {
+                  throw new Error(data?.description || data?.message || 'Add to cart failed');
+                }
+
+                return data;
+              })
               .then((data) => {
                 if (submitButton) {
                   submitButton.innerText = '✓ Added!';
@@ -1536,5 +1544,6 @@
           });
       });
     </script>
+    {%- render 'byos-cart-guard' -%}
   </body>
 </html>

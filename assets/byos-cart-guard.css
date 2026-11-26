@@ -1,0 +1,402 @@
+.byos-cg-item-alert {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  margin-top: 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background-color: #fbf4e4;
+  border: 1px solid #d9b66c;
+  color: #4b3914;
+  font-size: 12.5px;
+  line-height: 1.35;
+}
+
+.byos-cg-item-alert__text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.byos-cg-item-alert__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #8f5f0c;
+}
+
+.button.byos-cg-item-alert__btn {
+  min-height: 34px;
+  min-width: 0;
+  padding: 7px 14px;
+  font-size: 12.5px;
+  line-height: 1.2;
+  white-space: nowrap;
+  border-radius: calc(var(--buttons-radius-outset, 8px) / 2);
+}
+
+.button.byos-cg-item-alert__btn:hover,
+.byos-cg-modal__close:hover,
+.button.byos-cg-modal__btn-remove:hover,
+.button.byos-cg-modal__btn-save:hover {
+  outline: none !important;
+}
+
+.button.byos-cg-item-alert__btn:not([disabled]):hover::after,
+.button.byos-cg-modal__btn-remove:not([disabled]):hover::after,
+.button.byos-cg-modal__btn-save:not([disabled]):hover::after {
+  --border-offset: 0px;
+}
+
+.button.byos-cg-item-alert__btn:focus-visible,
+.byos-cg-modal__close:focus-visible,
+.button.byos-cg-modal__btn-remove:focus-visible,
+.button.byos-cg-modal__btn-save:focus-visible {
+  outline: 2px solid #5d6455;
+  outline-offset: 2px;
+}
+
+.byos-cg-footer-alert {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 14px !important;
+  border-radius: 10px;
+  background-color: #fbf4e4;
+  border: 1px solid #d9b66c;
+  color: #4b3914;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+#rebuy-cart [data-rebuy-cart-anchor="footer"] > .byos-cg-footer-alert {
+  width: auto;
+  max-width: 100%;
+  margin: 0 16px 10px;
+}
+
+.byos-cg-footer-alert__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #8f5f0c;
+}
+
+html.byos-cg-has-missing .rebuy-cart__shop-pay-button,
+html.byos-cg-has-missing #main-cart-footer .additional-checkout-buttons,
+html.byos-cg-has-missing #main-cart-footer .shopify-cleanslate,
+html.byos-cg-has-missing cart-drawer .additional-checkout-buttons {
+  display: none !important;
+}
+
+.byos-cg-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: transparent;
+  visibility: hidden;
+  pointer-events: none;
+  transition: visibility 0.4s ease;
+}
+
+.byos-cg-modal.is-visible {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.byos-cg-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  display: block !important;
+  background: rgba(var(--color-foreground, 47, 47, 43), 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.byos-cg-modal.is-visible .byos-cg-modal__backdrop {
+  opacity: 1;
+}
+
+.byos-cg-modal__dialog {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  background-color: #ffffff;
+  color: #2f2f2b;
+  border-radius: 16px;
+  border: 1px solid rgba(93, 100, 85, 0.2);
+  box-shadow: 0 22px 54px rgba(20, 20, 16, 0.24);
+  overflow: visible;
+  transform: scale(0.925);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.byos-cg-modal.is-visible .byos-cg-modal__dialog {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.byos-cg-modal__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+.byos-cg-modal__title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.byos-cg-modal__step {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background-color: #eef1ea;
+  color: #3f4830;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.byos-cg-modal__step[hidden] {
+  display: none !important;
+}
+
+.byos-cg-modal__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: #23271e;
+}
+
+.byos-cg-modal__subtitle {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: #5b5b55;
+}
+
+.byos-cg-modal__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 6px;
+  border: 0 !important;
+  border-radius: 0;
+  background: transparent;
+  color: #2f2f2b;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.byos-cg-modal__close svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.byos-cg-modal__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background-color: #f7f4f2;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+.byos-cg-modal__item-thumb {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  flex-shrink: 0;
+}
+
+.byos-cg-modal__item-thumb[hidden] {
+  display: none !important;
+}
+
+.byos-cg-modal__item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.byos-cg-modal__item-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  flex: 1;
+}
+
+.byos-cg-modal__item-title {
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #23271e;
+}
+
+.byos-cg-modal__item-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 12.5px;
+  line-height: 1.3;
+  color: #5b5b55;
+}
+
+.byos-cg-modal__body {
+  padding: 18px 20px;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+.byos-cg-modal__popover {
+  z-index: 40;
+}
+
+.byos-cg-modal__listbox {
+  max-height: 240px;
+}
+
+.byos-cg-modal__save-error {
+  margin-top: 14px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: #fdeceb;
+  border: 1px solid #e3a7a3;
+  color: #7d1d18;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.byos-cg-modal__save-error[hidden] {
+  display: none !important;
+}
+
+.byos-cg-modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 20px 18px;
+  border-top: 1px solid rgba(51, 51, 51, 0.1);
+  background-color: #ffffff;
+  border-radius: 0 0 16px 16px;
+}
+
+.button.byos-cg-modal__btn-remove {
+  min-height: 44px;
+  min-width: 0;
+  padding: 10px 18px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.button.byos-cg-modal__btn-save {
+  flex: 1;
+  min-height: 44px;
+  min-width: 0;
+  padding: 10px 18px;
+  font-size: 14px;
+}
+
+.button.byos-cg-modal__btn-save:disabled,
+.button.byos-cg-modal__btn-remove:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+@media (max-width: 767px) {
+  .byos-cg-modal {
+    padding: 12px 12px 76px;
+    align-items: center;
+  }
+
+  .byos-cg-modal__dialog {
+    max-width: 100%;
+    max-height: 82vh;
+    border-radius: 16px;
+    transform: translate3d(0, 24px, 0) scale(0.96);
+    opacity: 0;
+  }
+
+  .byos-cg-modal.is-visible .byos-cg-modal__dialog {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+
+  .byos-cg-modal__header {
+    padding: 15px 16px 12px;
+  }
+
+  .byos-cg-modal__title {
+    font-size: 18px;
+  }
+
+  .byos-cg-modal__item {
+    padding: 10px 16px;
+  }
+
+  .byos-cg-modal__body {
+    padding: 14px 16px;
+  }
+
+  .byos-cg-modal__listbox {
+    max-height: 185px;
+  }
+
+  .byos-cg-modal__footer {
+    padding: 12px 16px 16px;
+  }
+}
+
+html.byos-cg-modal-open #Sea-Accessibility__LoaderButton,
+html.byos-cg-modal-open #gorgias-chat-container {
+  z-index: 2147483600 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .byos-cg-modal,
+  .byos-cg-modal__backdrop,
+  .byos-cg-modal__dialog,
+  .button.byos-cg-item-alert__btn,
+  .byos-cg-modal__close,
+  .button.byos-cg-modal__btn-remove,
+  .button.byos-cg-modal__btn-save {
+    transition: none;
+  }
+}

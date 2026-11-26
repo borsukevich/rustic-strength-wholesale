@@ -1,0 +1,325 @@
+{%- liquid
+  capture scent_catalog_json
+    render 'byos-scent-data', store_channel: 'b2b'
+  endcapture
+
+  assign byos_collection = collections['custom-scent'] | default: collections['create-your-own-scented-products']
+  assign seen_byos_ids = '|'
+-%}
+
+<script type="application/json" id="byos-cart-guard-data">
+  {
+    "catalog": {{ scent_catalog_json | strip }},
+    "byosProducts": {
+      {%- assign first_bp = true -%}
+      {%- for pass in (1..2) -%}
+        {%- if pass == 1 -%}
+          {%- assign source_entries = byos_collection.products -%}
+        {%- else -%}
+          {%- assign source_entries = cart.items -%}
+        {%- endif -%}
+
+        {%- for entry in source_entries -%}
+          {%- liquid
+            if pass == 1
+              assign bp = entry
+            else
+              assign bp = entry.product
+            endif
+
+            if bp == blank
+              continue
+            endif
+
+            assign bp_token = '|' | append: bp.id | append: '|'
+
+            if seen_byos_ids contains bp_token
+              continue
+            endif
+
+            assign is_bp_byos = false
+
+            if pass == 1
+              assign is_bp_byos = true
+            else
+              capture bp_check_raw
+                render 'byos-product-check', product: bp
+              endcapture
+
+              if bp_check_raw == 'true'
+                assign is_bp_byos = true
+              endif
+            endif
+
+            unless is_bp_byos
+              continue
+            endunless
+
+            assign seen_byos_ids = seen_byos_ids | append: bp.id | append: '|'
+          -%}
+          {%- unless first_bp -%},{%- endunless -%}
+          {%- assign first_bp = false -%}
+          "{{ bp.id }}": {
+            "handle": {{ bp.handle | json }},
+            "title": {{ bp.title | json }},
+            "allowedKeys": [
+              {%- assign first_allowed = true -%}
+              {%- if bp.metafields.custom.allowed_scents != blank and bp.metafields.custom.allowed_scents.value != blank -%}
+                {%- for item in bp.metafields.custom.allowed_scents.value -%}
+                  {%- assign item_handle = item.system.handle | default: item.handle | default: item | handleize -%}
+                  {%- assign item_name = item.name.value | default: item.title.value | default: item | strip | downcase -%}
+                  {%- if item_handle != blank -%}
+                    {%- unless first_allowed -%},{%- endunless -%}{%- assign first_allowed = false -%}{{ item_handle | json }}
+                  {%- endif -%}
+                  {%- if item_name != blank and item_name != item_handle -%}
+                    {%- unless first_allowed -%},{%- endunless -%}{%- assign first_allowed = false -%}{{ item_name | json }}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
+            ],
+            "excludedKeys": [
+              {%- assign first_excluded = true -%}
+              {%- if bp.metafields.custom.excluded_scents != blank and bp.metafields.custom.excluded_scents.value != blank -%}
+                {%- for item in bp.metafields.custom.excluded_scents.value -%}
+                  {%- assign item_handle = item.system.handle | default: item.handle | default: item | handleize -%}
+                  {%- assign item_name = item.name.value | default: item.title.value | default: item | strip | downcase -%}
+                  {%- if item_handle != blank -%}
+                    {%- unless first_excluded -%},{%- endunless -%}{%- assign first_excluded = false -%}{{ item_handle | json }}
+                  {%- endif -%}
+                  {%- if item_name != blank and item_name != item_handle -%}
+                    {%- unless first_excluded -%},{%- endunless -%}{%- assign first_excluded = false -%}{{ item_name | json }}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
+            ]
+          }
+        {%- endfor -%}
+      {%- endfor -%}
+    },
+    "initialItems": [
+      {%- for item in cart.items -%}
+        {%- unless forloop.first -%},{%- endunless -%}
+        {
+          "key": {{ item.key | json }},
+          "product_id": {{ item.product_id | json }},
+          "variant_id": {{ item.variant_id | json }},
+          "handle": {{ item.product.handle | json }},
+          "product_title": {{ item.product.title | json }},
+          "variant_title": {{ item.variant.title | json }},
+          "quantity": {{ item.quantity | json }},
+          "sku": {{ item.sku | default: '' | json }},
+          "image": {% if item.image != blank %}{{ item.image | image_url: width: 160 | json }}{% else %}""{% endif %},
+          "selling_plan_id": {{ item.selling_plan_allocation.selling_plan.id | json }},
+          "selling_plan_name": {{ item.selling_plan_allocation.selling_plan.name | default: '' | json }},
+          "properties": {
+            {%- for prop in item.properties -%}
+              {%- unless forloop.first -%},{%- endunless -%}
+              {{ prop.first | json }}: {{ prop.last | json }}
+            {%- endfor -%}
+          }
+        }
+      {%- endfor -%}
+    ]
+  }
+</script>
+
+{{- 'byos-scent-picker.css' | asset_url | stylesheet_tag -}}
+{{- 'byos-cart-guard.css' | asset_url | stylesheet_tag -}}
+<script src="{{ 'byos-cart-guard.js' | asset_url }}" defer="defer"></script>
+
+<div
+  id="byos-cart-guard-modal"
+  class="byos-cg-modal"
+  role="dialog"
+  aria-modal="true"
+  aria-hidden="true"
+  aria-labelledby="byos-cg-modal-title"
+>
+  <div class="byos-cg-modal__backdrop" data-byos-cg-close></div>
+
+  <div class="byos-cg-modal__dialog" role="document">
+    <div class="byos-cg-modal__header">
+      <div class="byos-cg-modal__title-wrap">
+        <span class="byos-cg-modal__step" data-byos-cg-step hidden></span>
+        <h2 id="byos-cg-modal-title" class="byos-cg-modal__title">
+          Choose Your Custom Scents
+        </h2>
+        <p class="byos-cg-modal__subtitle" data-byos-cg-subtitle>
+          Your scent choices didn’t come through with this item — pick them below and we’ll make your order exactly right.
+        </p>
+      </div>
+
+      <button
+        type="button"
+        class="byos-cg-modal__close"
+        aria-label="{{ 'accessibility.close' | t }}"
+        data-byos-cg-close
+      >
+        {{- 'icon-close.svg' | inline_asset_content -}}
+      </button>
+    </div>
+
+    <div class="byos-cg-modal__item" data-byos-cg-item-card>
+      <div class="byos-cg-modal__item-thumb" data-byos-cg-thumb-wrap hidden>
+        <img class="byos-cg-modal__item-img" data-byos-cg-item-img src="" alt="" width="56" height="56">
+      </div>
+      <div class="byos-cg-modal__item-meta">
+        <div class="byos-cg-modal__item-title" data-byos-cg-item-title></div>
+        <div class="byos-cg-modal__item-details" data-byos-cg-item-details></div>
+      </div>
+    </div>
+
+    <div class="byos-cg-modal__body">
+      <div class="byos-scent-picker byos-cg-picker" data-byos-cg-picker>
+        {%- for slot in (1..2) -%}
+          {%- liquid
+            if slot == 1
+              assign field_label = 'Custom Scent 1'
+              assign field_placeholder = 'Choose your 1st scent'
+            else
+              assign field_label = 'Blends with 1st Scent'
+              assign field_placeholder = 'Choose your 2nd scent or None'
+            endif
+
+            assign label_id = 'byos-cg-label-' | append: slot
+            assign trigger_id = 'byos-cg-trigger-' | append: slot
+            assign listbox_id = 'byos-cg-listbox-' | append: slot
+            assign error_id = 'byos-cg-error-' | append: slot
+          -%}
+
+          <div
+            class="byos-scent-picker__field"
+            data-cg-slot="{{ slot }}"
+            data-placeholder="{{ field_placeholder | escape }}"
+          >
+            <div class="byos-scent-picker__header">
+              <label id="{{ label_id }}" for="{{ trigger_id }}" class="byos-scent-picker__label">
+                {{- field_label -}}
+              </label>
+              <span class="byos-scent-picker__required" aria-hidden="true">*</span>
+              <span class="byos-scent-picker__selected-value" data-cg-header-value></span>
+            </div>
+
+            <div class="byos-scent-picker__combobox-wrap">
+              <button
+                id="{{ trigger_id }}"
+                type="button"
+                class="byos-scent-picker__trigger"
+                role="combobox"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                aria-required="true"
+                aria-invalid="false"
+                aria-labelledby="{{ label_id }} {{ trigger_id }}"
+                aria-controls="{{ listbox_id }}"
+                aria-describedby="{{ error_id }}"
+                data-has-value="false"
+                data-cg-trigger
+              >
+                <span class="byos-scent-picker__trigger-content">
+                  <span class="byos-scent-picker__trigger-swatch" data-cg-trigger-swatch hidden></span>
+                  <span class="byos-scent-picker__trigger-text">
+                    <span class="byos-scent-picker__trigger-title" data-cg-trigger-title>
+                      {{- field_placeholder -}}
+                    </span>
+                    <span class="byos-scent-picker__trigger-sub" data-cg-trigger-sub></span>
+                  </span>
+                </span>
+
+                <span class="byos-scent-picker__chevron" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </button>
+
+              <div class="byos-scent-picker__popover byos-cg-modal__popover" data-cg-popover hidden>
+                <div class="byos-scent-picker__search-wrap">
+                  <span class="byos-scent-picker__search-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                      <circle cx="9" cy="9" r="6.25" stroke="currentColor" stroke-width="1.5"/>
+                      <path d="M13.8 13.8L17.5 17.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </span>
+                  <input
+                    type="search"
+                    class="byos-scent-picker__search-input"
+                    placeholder="Search scents..."
+                    aria-label="Search {{ field_label }}"
+                    autocomplete="off"
+                    data-cg-search
+                  >
+                  <button
+                    type="button"
+                    class="byos-scent-picker__search-clear"
+                    aria-label="Clear search"
+                    data-cg-search-clear
+                    hidden
+                  >
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path d="M2.5 2.5L9.5 9.5M9.5 2.5L2.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </button>
+                </div>
+
+                <ul
+                  id="{{ listbox_id }}"
+                  class="byos-scent-picker__listbox byos-cg-modal__listbox"
+                  role="listbox"
+                  aria-labelledby="{{ label_id }}"
+                  data-cg-listbox
+                ></ul>
+
+                <div class="byos-scent-picker__empty" data-cg-empty hidden>
+                  No matching scents found.
+                </div>
+              </div>
+            </div>
+
+            <div
+              id="{{ error_id }}"
+              class="byos-scent-picker__error"
+              role="alert"
+              data-cg-error
+              hidden
+            >
+              <span class="byos-scent-picker__error-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M10 6V10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <circle cx="10" cy="13.5" r="0.9" fill="currentColor"/>
+                </svg>
+              </span>
+              <span data-cg-error-text></span>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+
+      <div
+        class="byos-cg-modal__save-error"
+        role="alert"
+        data-byos-cg-save-error
+        hidden
+      ></div>
+    </div>
+
+    <div class="byos-cg-modal__footer">
+      <button
+        type="button"
+        class="button button--secondary byos-cg-modal__btn-remove"
+        data-byos-cg-remove
+      >
+        Remove item
+      </button>
+
+      <button
+        type="button"
+        class="button byos-cg-modal__btn-save"
+        data-byos-cg-save
+      >
+        <span data-byos-cg-save-label>Save Scents</span>
+      </button>
+    </div>
+  </div>
+</div>
